@@ -1,0 +1,5 @@
+hybrid:k=16,c=5 hybrid:k=16,c=5 425 575 hyb_ref2 400000000
+hybrid:k=16,c=5 hybrid_bi:k=16,c=5 400 600 bi_hyb2 400000000
+hybrid:k=16,c=5 hybrid_bi:k=32,c=6 0 400 bi_big 400000000
+ta hybrid_bi:k=16,c=5,val=1 400 600 bi_ta2 71000000
+hybrid:k=16,c=5 hybrid:k=32,c=6 400 600 big_hyb2 400000000

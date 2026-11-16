@@ -1,0 +1,39 @@
+2026-11-16T05:53:23.653069+00:00 RUNNING: seed base 1000000000, g=0..299, hero=g%4; one CPU process. All-pool reference uses seat seeds [BASE,g,7,p]; challengers use [BASE,g,5].
+2026-11-16T06:00:01.866890+00:00 CHECKPOINT: 10 complete paired games per arm; raw outcomes saved.
+2026-11-16T06:06:47.110375+00:00 CHECKPOINT: 20 complete paired games per arm; raw outcomes saved.
+2026-11-16T06:14:01.337761+00:00 CHECKPOINT: 30 complete paired games per arm; raw outcomes saved.
+2026-11-16T06:20:57.994976+00:00 CHECKPOINT: 40 complete paired games per arm; raw outcomes saved.
+2026-11-16T06:27:38.522099+00:00 CHECKPOINT: 50 complete paired games per arm; raw outcomes saved.
+2026-11-16T06:34:11.897890+00:00 CHECKPOINT: 60 complete paired games per arm; raw outcomes saved.
+2026-11-16T06:40:39.456135+00:00 CHECKPOINT: 70 complete paired games per arm; raw outcomes saved.
+2026-11-16T06:47:32.750175+00:00 CHECKPOINT: 80 complete paired games per arm; raw outcomes saved.
+2026-11-16T06:54:02.973450+00:00 CHECKPOINT: 90 complete paired games per arm; raw outcomes saved.
+2026-11-16T07:00:24.920194+00:00 CHECKPOINT: 100 complete paired games per arm; raw outcomes saved.
+2026-11-16T07:07:32.927604+00:00 CHECKPOINT: 110 complete paired games per arm; raw outcomes saved.
+2026-11-16T07:14:30.028930+00:00 CHECKPOINT: 120 complete paired games per arm; raw outcomes saved.
+2026-11-16T07:20:41.709896+00:00 CHECKPOINT: 130 complete paired games per arm; raw outcomes saved.
+2026-11-16T07:27:24.384101+00:00 CHECKPOINT: 140 complete paired games per arm; raw outcomes saved.
+2026-11-16T07:33:57.679858+00:00 CHECKPOINT: 150 complete paired games per arm; raw outcomes saved.
+2026-11-16T07:40:18.014337+00:00 CHECKPOINT: 160 complete paired games per arm; raw outcomes saved.
+2026-11-16T07:47:02.475420+00:00 CHECKPOINT: 170 complete paired games per arm; raw outcomes saved.
+2026-11-16T07:53:28.223261+00:00 CHECKPOINT: 180 complete paired games per arm; raw outcomes saved.
+2026-11-16T07:59:53.801225+00:00 CHECKPOINT: 190 complete paired games per arm; raw outcomes saved.
+2026-11-16T08:06:52.453606+00:00 CHECKPOINT: 200 complete paired games per arm; raw outcomes saved.
+2026-11-16T08:13:42.233026+00:00 CHECKPOINT: 210 complete paired games per arm; raw outcomes saved.
+2026-11-16T08:20:11.775619+00:00 CHECKPOINT: 220 complete paired games per arm; raw outcomes saved.
+2026-11-16T08:26:40.492567+00:00 CHECKPOINT: 230 complete paired games per arm; raw outcomes saved.
+2026-11-16T08:33:53.790069+00:00 CHECKPOINT: 240 complete paired games per arm; raw outcomes saved.
+2026-11-16T08:40:25.675027+00:00 CHECKPOINT: 250 complete paired games per arm; raw outcomes saved.
+2026-11-16T08:47:05.076626+00:00 CHECKPOINT: 260 complete paired games per arm; raw outcomes saved.
+2026-11-16T08:53:33.022219+00:00 CHECKPOINT: 270 complete paired games per arm; raw outcomes saved.
+2026-11-16T09:00:37.466559+00:00 CHECKPOINT: 280 complete paired games per arm; raw outcomes saved.
+2026-11-16T09:06:57.528569+00:00 CHECKPOINT: 290 complete paired games per arm; raw outcomes saved.
+2026-11-16T09:13:56.928463+00:00 CHECKPOINT: 300 complete paired games per arm; raw outcomes saved.
+2026-11-16T09:13:56.928463+00:00 COMPUTE COMPLETE: 300 games per arm; analyze and submit for review. No new selection was performed.
+READY FOR REVIEW
+Files changed: T2/run.py, T2/analyze.py; results/{0000..0299}_{ref,sanity,rb6,rb7}.json and summary.json.
+Exact compute command: cd engine/experiments/round8/T2; python run.py (started hidden with stdout/stderr redirection). Exact analysis: python analyze.py. All saved scores reconstructed from bids/tricks; hook, trick conservation and game totals validated for every raw outcome.
+Seed base: 1000000000; g=0..299; challenger seat g%4. n=300 complete paired games per arm. All bids identical across arms in all 300 games. 95% paired CIs = mean +/-1.96 SE across games. Results:
+{"sanity": {"n": 300, "score_mean_half95": [0.0, 0.0], "ties_win_mean_half95": [0.0, 0.0], "runtime_seconds_mean_half95": [9.065487655003865, 0.11956861645615714], "reference_runtime_seconds_mean_half95": [9.075696387290954, 0.12230403735807152], "identical_total_vectors": 300, "identical_bid_vectors": 300}, "rb6": {"n": 300, "score_mean_half95": [-0.74, 2.9567388637644316], "ties_win_mean_half95": [0.016666666666666666, 0.0566433685465235], "runtime_seconds_mean_half95": [9.18982197523117, 0.13146872247644878], "reference_runtime_seconds_mean_half95": [9.075696387290954, 0.12230403735807152], "identical_total_vectors": 0, "identical_bid_vectors": 300}, "rb7": {"n": 300, "score_mean_half95": [4.636666666666667, 3.229780387857152], "ties_win_mean_half95": [0.03333333333333333, 0.056926194336483445], "runtime_seconds_mean_half95": [12.771198809146881, 0.2238902283140303], "reference_runtime_seconds_mean_half95": [9.075696387290954, 0.12230403735807152], "identical_total_vectors": 0, "identical_bid_vectors": 300}, "rb7_minus_rb6": {"n": 300, "score_mean_half95": [5.376666666666667, 3.1191738392124044], "ties_win_mean_half95": [0.016666666666666666, 0.0588679404344982], "interpretation": "Predeclared depth control: same RB sampler settings and K32, c7 versus c6."}}
+Limitations: equal depth means K32c6 configuration, not equal wall-time budget. n=300 gives limited power for small gains; failure to separate from zero does not prove unexploitable. The c7 arm changes depth; score gains do not establish victory gains. These were predeclared tests on fresh seeds; no tuning on partial outcomes. Runtime includes concurrent worker load and is not a standalone benchmark. Await Claude validation before commit.
+Claude verdict VALIDATED in REVIEW.md; committed locally as 6ff48cf. Primary equal-depth result -0.74 +/-2.96 pts/game, n=300 (95% CI); deeper c7 +4.6367 +/-3.2298, depth contrast +5.3767 +/-3.1192, all n=300. No equal-depth exploitability claim; scores and win probability remain distinct.

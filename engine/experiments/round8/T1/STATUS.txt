@@ -1,0 +1,8 @@
+T1 audit integration (2026-11-16 ET)
+Applied audit qualifications to both handoffs and NOTES: PB scope; on-path NT uniqueness; P4 heuristic; hook incidence; same-suit/O assumptions; stale H1 numbers; same-hero paired ratio. No new empirical claims.
+READY FOR REVIEW
+Files changed: AGENTS.md, engine/AGENTS.md, engine/math/NOTES.md; T1/integrate.py; round7_audit/ to be committed only after validation.
+Exact commands: python engine/experiments/round8/T1/integrate.py (from project root; final n=6 hook CI corrected against F3 to 0.99); cd engine; python -m pytest -q -p no:cacheprovider. Tests: 249 passed, 1 optional OpenSpiel skip.
+Seed base: none new. n: existing audit n=4000 paired five-card deals; heuristic/omni ratio 0.296 [0.264,0.327], 95% paired bootstrap CI. Other qualifications retain source n and CIs.
+Limitations: documentation integration, no new experiments; M11 cross-policy ratio preserved as historical/descriptive; coalition optimum remains open. Await Claude validation before commit.
+2026-11-16 final handoff: Claude validated this task in REVIEW.md; committed locally as 8c353e7. No task compute remains. Seeds, n, 95% intervals (or exact-enumeration scope), commands and limitations are preserved in the review packets above. No push.

@@ -1,0 +1,18 @@
+{
+  "4242": {
+    "situations": 4160,
+    "cells": 104,
+    "situations_per_cell": 40,
+    "laws_counts_oracles_and_saved_moments_valid": true,
+    "rows_with_context_for_full_hook_audit": 0,
+    "limitation": "Legacy discovery prefix lacks hand/prior metadata; only legal-set shape checked there."
+  },
+  "4243": {
+    "situations": 4160,
+    "cells": 104,
+    "situations_per_cell": 40,
+    "laws_counts_oracles_and_saved_moments_valid": true,
+    "rows_with_context_for_full_hook_audit": 4160,
+    "limitation": null
+  }
+}

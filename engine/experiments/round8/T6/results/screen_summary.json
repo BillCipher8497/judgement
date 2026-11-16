@@ -1,0 +1,40 @@
+{
+  "seed_base": 1300000000,
+  "frozen_sha256": "e55548d7a5ad943a39883563d43b9c8cbb7376935488b6aeb81fd3fdfd9c403c",
+  "weights": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "score_delta_v2_minus_current": {
+    "mean": 0.0,
+    "half95": 0.0,
+    "n": 2000
+  },
+  "ties_win_delta": {
+    "mean": 0.0,
+    "half95": 0.0,
+    "n": 2000
+  },
+  "current_score": {
+    "mean": 159.887,
+    "half95": 1.2497715372629015,
+    "n": 2000
+  },
+  "v2_score": {
+    "mean": 159.887,
+    "half95": 1.2497715372629015,
+    "n": 2000
+  },
+  "current_ties_win": {
+    "mean": 0.253,
+    "half95": 0.019057689014024697,
+    "n": 2000
+  },
+  "v2_ties_win": {
+    "mean": 0.253,
+    "half95": 0.019057689014024697,
+    "n": 2000
+  }
+}

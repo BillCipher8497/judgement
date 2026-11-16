@@ -1,0 +1,43 @@
+x_ta 4000 46.1
+x_ta_plus 4000 51.9
+x_none 4000 47.0
+x_no_shed 4000 48.3
+x_no_lh 4000 51.3
+x_no_thm 4000 52.1
+x_no_wh 4000 52.5
+x_shed_only 4000 52.0
+x_lh_only 4000 47.5
+x_thm_only 4000 48.1
+x_wh_only 4000 51.4
+x_lh_all 4000 50.9
+x_plus_duck 4000 53.3
+x_plus_duck_last 4000 51.0
+x_plus_scarce 4000 51.4
+x_greedy 4000 40.2
+x_ta_spite 4000 50.2
+T1DONE
+pi n=5 S: 1000 deals 27.9s
+pi n=5 NT: 1000 deals 26.6s
+T4DONE
+x_hyb_c4 1000 190.3
+x_hyb_c5 1000 483.5
+x_hyb_c4_nt 1000 163.2
+x_hyb_c5_nt 1000 418.8
+T2DONE
+x_orc_n5 2000 368.1
+block 5 tables 300 73.4
+block 10 tables 600 145.9
+block 15 tables 900 225.9
+block 20 tables 1200 301.0
+block 25 tables 1500 371.8
+block 30 tables 1800 443.9
+block 35 tables 2100 516.3
+block 40 tables 2400 587.1
+block 45 tables 2700 662.0
+block 50 tables 3000 735.0
+block 55 tables 3300 807.9
+block 60 tables 3600 882.2
+MIXEDDONE
+x_orc_all 800 1134.0
+x_hyb_k32_c5 400 379.0
+ALLDONE

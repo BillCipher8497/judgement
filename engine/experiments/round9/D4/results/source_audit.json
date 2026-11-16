@@ -1,0 +1,9 @@
+{
+  "word_count": 407,
+  "new_strategy_rules": false,
+  "pagination_note": "Compact Markdown source; final pagination depends on renderer.",
+  "ordered_play_rules": 8,
+  "source_sha256": "DCC0394E50E33B7A54637A361C811D96A82177F44F257DEE694F680A0F3F1B38",
+  "card_sha256": "7E876206373E9DFF360430E746B4A6B7FAE245B608DB4B432F72B221035BDDD3",
+  "source": "experiments/guide/GUIDE.txt"
+}

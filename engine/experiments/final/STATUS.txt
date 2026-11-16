@@ -1,0 +1,13 @@
+experiments/final STATUS (append-only checkpoints)
+04:13 setup. judgement/policies/ta_plus3.py (TA+3 = ta_plus_v2 + M9 Prop L: at target & leading, >=2 sure losers (pw==0) -> lead highest-value one; ll=2 same-suit only).
+  agents.py (play kinds + ta_plus3, hybrid3, hyb3_oracle), run.py (seed-compatible with play/one_vs_three.py and phase4/q2_ladder.py; verified bit-identical
+  totals vs 1v3_x_ta_plus[:40], 1v3_x_hyb_c5[:4], q2_hyb_ref[:2]). queue.sh runs jobs.txt sequentially (1 process), sim deadline 06:30.
+  Jobs: F1 ta/ta_plus/ta_plus3/ta_plus3:ll=2 x10000 (seeds 71M+g), hybrid3 c5 x1500; F2 hybrid c5 g=1000..1499, hyb_oracle g=500..1499.
+04:26 F1 TA part DONE (10000 games each, seeds 71M+g, challenger seat g%4; f_ta_*.npz first 4000 bit-identical to play/1v3_x_ta, 1v3_x_ta_plus):
+  vs TA: TA+ v2 +7.40+-0.42/game, TA+3 (L any suit) +7.98+-0.43, TA+3 (L same suit) +7.56+-0.42.
+  paired vs TA+ v2: TA+3 +0.58+-0.11/game (dP(win) +0.006+-0.004; trump +0.025+-0.005/round, NT +0.015+-0.014, n<=5 exactly 0) -> M9's +0.030+-0.010/round confirmed in full games (~+0.023/round).
+  same-suit only +0.16+-0.06. Selected TA+3 = L any suit. results/final.json, final.md (analyze.py). Hybrid3 1500 running.
+06:50 (orchestrator, after agent cut off by usage limit) F2 DONE: combined with experiments/play runs, paired vs all-TA table f_ta_ta (seeds 71M+g):
+  Hybrid c5 K16 n=1500 +17.07+-1.32 P(win) .450; Hybrid+oracle n=1500 +20.46+-1.57 P(win) .481; Hybrid K32 n=1000 +19.78+-1.56 P(win) .487.
+  Hybrid3 (TA+3 phase) n=1500 +17.07+-1.32 — paired vs Hybrid -0.05+-0.64 (n=1000): lead-highest-sure-loser adds nothing inside Hybrid.
+  Tests: 211 passed.

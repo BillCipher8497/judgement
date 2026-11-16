@@ -1,0 +1,43 @@
+P1 likelihood validation (p1_calib.py; results/p1_calib.json)
+(i) self-play ModelBidder table: vectorised-likelihood argmax == actual bid: n=2: 1.0000 (900 bids), n=3: 1.0000 (900 bids), n=5: 1.0000 (900 bids), n=8: 1.0000 (900 bids), n=13: 1.0000 (900 bids)
+(ii) MC-oracle (uniform worlds, K=64) bids, 1800 rows: fitted tau=1.052 pts; log-loss 0.687 vs uniform-over-legal 1.754 nats; top-1 acc 0.728; seed mismatches 0
+reliability (bin, rows, mean pred, realised ± 95%): 0.0-0.1 8942 0.012 0.011±0.002; 0.1-0.2 731 0.145 0.149±0.026; 0.2-0.3 477 0.249 0.273±0.040; 0.3-0.4 417 0.348 0.372±0.046; 0.4-0.5 314 0.451 0.497±0.055; 0.5-0.6 296 0.547 0.595±0.056; 0.6-0.7 256 0.646 0.566±0.061; 0.7-0.8 171 0.748 0.725±0.067; 0.8-0.9 200 0.851 0.805±0.055; 0.9-1.0 574 0.977 0.951±0.018
+
+PHASE 3 STATUS (started 10:29 ET 2026-11-10)
+Review of previous partial attempt (experiments/round2_bid, judgement/bidding2):
+- KEPT: features_vec.hand_features_batch (tested == scalar), BidLikelihood (hard/soft), oracle.world_scores/best_of,
+  winmax.ScoreBank/WinMaxBidder (score model reviewed, logic OK), hook.HookSetter rule, p3 design, p2 branching design.
+- BUG FIXED: exact_posterior_worlds (rejection, 160k proposals max) returned as few as 1 eval world at the dealer seat
+  (n=3,5 pos 3); BidPhaseSampler hard mode topped up missing worlds with eps-only worlds (inconsistent with bids),
+  silently degrading the 'informed' oracle toward uniform exactly where bids are most informative.
+  -> new judgement/bidding2/seqsampler.py: sequential importance sampler (exact target, unbiased incremental weights),
+  posterior_worlds() = exact rejection then seq-IS top-up.  Verified vs rejection on posterior means (tests/test_phase3_bidding.py).
+- FIXED: response curve dropped situations where no earlier bid could be shifted both ways (e.g. all prior bids 0):
+  now one-sided finite difference when needed; also d=0 recomputed on the same footing.
+- FIXED: seeds via SeedSequence instead of Python hash(); P2 now logs per-decision standings/P(hit)/P(win) for the variance test.
+- ADDED: likelihood calibration (fitted temperature) p1_calib.py; soft-likelihood arm in P1.
+- Not reused: previous numbers (all rerun under experiments/phase3).
+
+P1 DONE 11:00 (p1_main.py, 1508s; results/p1_raw.json, tables_p1.txt, summary_p1.json). 1800 situations (120 per n x pos), seed 20261111.
+P1a pooled: ΔEV(I−U) = +0.30 ± 0.05/round (seat2 +0.21±0.08, seat3 +0.30±0.09, dealer +0.39±0.10); soft-tau arm S−U +0.28±0.05;
+  I−M (vs ModelBidder) +0.25±0.05; U−M −0.05±0.06 (uniform oracle no better than the model bidder). |b_I−b_M| = 0/1/2 in 75/20/5%.
+  Eval: 150 exact-posterior worlds/situation; 60/1800 rows needed seq-IS top-up (rejection got <150).
+P1b slopes d b*/dΣprior (600 situations): table −0.09±0.03, info −0.15±0.04, both −0.21±0.04, interaction −0.04±0.05 (≈additive), ModelBidder −0.19±0.04.
+  Information effect dominates except n=13 (info −0.01±0.10, table −0.14±0.09).
+
+P2 DONE 11:25 (p2_main.py, 10,000 games x 4 seat rotations, L=3000, seed 20261112; results/p2_raw.json, tables_p2.txt, summary_p2.json).
+k=3: ΔP(win) +0.0051±0.0018, Δscore −2.13±0.07/game. k=6: ΔP(win) +0.0060±0.0020, Δscore −2.94±0.09.
+By standing at take-over (k=3 / k=6): leader +0.0070±0.0050 / +0.0096±0.0052; 2nd +0.0115±0.0051 / +0.0083±0.0054;
+  3rd +0.0011±0.0030 / +0.0041±0.0037; last +0.0007±0.0013 / +0.0018±0.0020.  -> earlier 'leader +0.01, trailing ~0' partly confirmed:
+  2nd place gains as much as the leader; 3rd/last ~0 (base P(win) 0.04/0.005).
+Variance test: leaders deviate DOWN (Δbid −0.8, ΔP(hit) ≈0, Δsd −0.3); trailing deviate UP (P(higher) 0.87–1.00, Δbid +3.5..+5,
+  ΔP(hit) −0.28..−0.36, Δsd NEGATIVE −0.8..−1.8, ΔE −3..−4/round): trailing players buy long-shot upside (skew), not variance.
+Win model calibrated (pred vs realised P(win) within ~0.01 in every bin).
+
+P3 DONE 11:35 (p3_main.py, 3000 deals per n, K=150 exact-posterior dealer hands, seed 20261113; results/p3_raw.json, tables_p3.txt).
+Hook-setting does NOT pay. delta=1 (own model-EV sacrifice <=1 pt): seat3 −0.15±0.07, dealer −0.11±0.06, seats1+2 +0.05±0.06 (pooled 15k deals);
+  delta=3: seat3 −0.89±0.10, dealer −0.38±0.09, seats1+2 +0.16±0.08. Rule does raise dealer-hooked rate 0.325→0.384 (δ1) / 0.475 (δ3)
+  and hurts the dealer most at n=2 (−0.17/−0.42), but setter pays more than dealer loses at every n>=3.
+P4 partial: ta_spite (3000 games): Δscore +0.00±0.00 (spite only acts once own result is fixed), ΔP(win) +0.0006±0.0019;
+  greedy (3000): Δscore −43.4±0.6, ΔP(win) −0.230±0.003. oracle_i running (~10 s/game, K=48, ±2).
+

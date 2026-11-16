@@ -1,0 +1,16 @@
+2026-11-16 primary-source search log (web search/open/find; no simulation)
+"Oh Hell" card game artificial intelligence bidding research paper
+"Understanding the Success of Perfect Information Monte Carlo Sampling" AAAI
+"Information Set Monte Carlo Tree Search" Cowling Powley Whitehouse paper
+"Team-maxmin equilibria" von Stengel Koller 1997
+"Understanding the Success of Perfect Information Monte Carlo Sampling" site:aaai.org
+"Oh Hell" bidding filetype:pdf artificial intelligence
+"History Filtering in Imperfect Information Games"
+"Monte Carlo Sampling for Regret Minimization in Extensive Games" 2009 papers.nips.cc
+"Regret Minimization in Games with Incomplete Information" 2007 NIPS
+"Artificial Intelligence Driven Judgment Card Game" Parmar
+"Team-Maxmin Equilibria" stengel pdf lse
+
+Opened primary URLs in source_map.json. Inspected relevant PDF sections using open/find; RingSwap page screenshot requested for formula context. Author-team-maxmin PDF repeatedly timed out; publisher full fetch returned403. Use its indexed primary abstract only, not a claimed full theorem review. Secondary search results (including aggregators/social posts) excluded from technical evidence.
+
+Local OtherPaper.pdf: pdfinfo and full pypdf text extraction; all4 pages read via UTF8 PowerShell. Embedded PDF title/author are template placeholders. Initial pdftotext executable lookup failed; extraction print then hit a cp1252 Unicode console error after saving the complete local text. Subsequent UTF8 read succeeded. No full copyrighted text in committed results.

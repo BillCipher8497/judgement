@@ -1,0 +1,8 @@
+Mixed table, n = 765 games (seat permutation g%24, seeds 450000000+g); 95% CIs: Elo game-bootstrap (B=300), others 1.96 SE.
+
+| policy | Elo vs TA+ | score − TA+ (same game) | P(win) |
+|---|---|---|---|
+| TA | -63 [-87, -41] | -9.97 ± 3.13 | 0.111 ± 0.022 |
+| TA+ | +0 [+0, +0] | +0.00 ± 0.00 | 0.206 ± 0.029 |
+| Hybrid | +81 [+54, +107] | +11.08 ± 3.09 | 0.339 ± 0.033 |
+| Hybrid+oracle | +86 [+65, +111] | +12.28 ± 2.93 | 0.344 ± 0.033 |

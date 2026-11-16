@@ -1,0 +1,8 @@
+2026-11-16 D0 started. Primary contrast: documentation before/after only; remove duplicate summaries without changing any empirical claim. No compute experiment or seeds.
+READY FOR REVIEW
+Files changed: both AGENTS.md copies; round8/T7/handoff.py (prevent reintroducing duplicates); D0/repair.py and STATUS.txt.
+Commands: python engine/experiments/round9/D0/repair.py (twice); git diff --check. Both passes succeed with byte-identical handoffs and exactly one copy of each requested summary; second pass changes no content.
+Seed base/n/95% CI: not applicable, documentation correction only, no empirical estimates changed.
+Limitations: old round-8 document_checks.json remains a historical hash of its original outputs; no historical result records were rewritten. No policy or core edits. Await Claude validation before local commit.
+Saved D0/results/verification.json: both copies identical, one occurrence of each requested summary, post-repair hash, no empirical changes.
+2026-11-16 wrap-up: D0 externally VALIDATED by Claude in round9/REVIEW.md (both copies identical, each repeated summary once, no number changed). Commit only D0 and its previously completed handoff correction; all D1-D5 work stays uncommitted. No further AGENTS.md or EVIDENCE.md edits during pause.

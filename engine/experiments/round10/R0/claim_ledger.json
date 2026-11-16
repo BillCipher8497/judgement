@@ -1,0 +1,214 @@
+{
+  "role": "Publication subset: nine inherited reviewed claim groups; unreleased appendix and its local audit packets are excluded.",
+  "evidence_source": "paper/EVIDENCE.md",
+  "claims": [
+    {
+      "id": "C01",
+      "status": "Claude-validated exact proof/witness",
+      "kind": "exact",
+      "primary_sources": [
+        "math/NOTES.md",
+        "tests/test_round7_welfare.py"
+      ],
+      "draft_strings": [
+        "W = 40 + n \u2212 10M \u2212 U",
+        "W \u2264 30 + n",
+        "sampling CIs do not apply"
+      ],
+      "evidence_strings": [
+        "W = 40 + n \u2212 10M \u2212 U",
+        "W \u2264 30 + n"
+      ]
+    },
+    {
+      "id": "C02",
+      "status": "Claude-validated empirical reanalysis",
+      "kind": "paired games",
+      "n": 4000,
+      "coverage": 0.95,
+      "primary_sources": [
+        "experiments/round7_paper/results/welfare.json",
+        "experiments/surplus_hidden/sim.py",
+        "experiments/phase1/results/model_ta_final.json"
+      ],
+      "draft_strings": [
+        "51.661 \u00b1 1.105",
+        "40.015 \u00b1 0.605",
+        "171.708 \u00b1 1.985",
+        "154.425 \u00b1 1.628",
+        "17.282 \u00b1 0.440",
+        "n=4,000 paired full games",
+        "133,000,000+g",
+        "ta_plus_v2()",
+        "ModelBidder(model_ta_final.json)"
+      ],
+      "evidence_strings": [
+        "51.661 \u00b1 1.105",
+        "40.015 \u00b1 0.605",
+        "171.708 \u00b1 1.985",
+        "154.425 \u00b1 1.628",
+        "17.282 \u00b1 0.440"
+      ],
+      "primary_strings": [
+        "BASE_G = 133_000_000",
+        "SpoilerPolicy"
+      ]
+    },
+    {
+      "id": "C03",
+      "status": "Claude-validated descriptive policy ratios",
+      "kind": "paired deals",
+      "n_heuristic": 4000,
+      "n_pimc": 2000,
+      "coverage": 0.95,
+      "primary_sources": [
+        "experiments/round7_audit/results/a1_surplus.json",
+        "experiments/surplus_hidden/STATUS.txt"
+      ],
+      "draft_strings": [
+        "0.296 [0.264, 0.327]",
+        "0.356 [0.313, 0.398]",
+        "n=4,000 paired deals",
+        "n=2,000 paired deals",
+        "hidden-PIMC(K16)"
+      ],
+      "evidence_strings": [
+        "0.296 [0.264, 0.327]",
+        "0.356 [0.313, 0.398]"
+      ],
+      "primary_strings": [
+        "K=16"
+      ]
+    },
+    {
+      "id": "C04",
+      "status": "Claude-validated finite-game certificate",
+      "kind": "complete enumeration",
+      "n_per_regime": 2520,
+      "primary_sources": [
+        "experiments/round8/T5/results/certificate.json",
+        "math/NOTES.md"
+      ],
+      "draft_strings": [
+        "1257/140",
+        "946/105",
+        "all 2,520 ordered deals",
+        "no sampling CI applies"
+      ],
+      "evidence_strings": [
+        "1257/140",
+        "946/105",
+        "2,520 ordered deals"
+      ]
+    },
+    {
+      "id": "C05",
+      "status": "Claude-validated per-hand rollout diagnostic",
+      "kind": "hands",
+      "n": 1000,
+      "coverage": 0.95,
+      "primary_sources": [
+        "math/results/m10_summary.json",
+        "experiments/round7_audit/AUDIT.md"
+      ],
+      "draft_strings": [
+        "0.739 \u00b1 0.027",
+        "0.978 \u00b1 0.009",
+        "0.982 \u00b1 0.008",
+        "n=1,000 hands"
+      ],
+      "evidence_strings": [
+        "0.739 \u00b1 0.027",
+        "0.978 \u00b1 0.009",
+        "0.982 \u00b1 0.008"
+      ]
+    },
+    {
+      "id": "C06",
+      "status": "Claude-validated descriptive hook regimes",
+      "kind": "rounds or deal clusters as table labels",
+      "coverage": 0.95,
+      "primary_sources": [
+        "experiments/phase1/results/phase1_tables.md",
+        "experiments/phase2/results/summary_main.md"
+      ],
+      "draft_strings": [
+        "5.41 \u00b1 0.11",
+        "0.27 \u00b1 0.06",
+        "10.17 \u00b1 0.02",
+        "7.82 \u00b1 0.37",
+        "10,000 rounds",
+        "20,000 rounds",
+        "2,000 deals",
+        "600 deals"
+      ],
+      "evidence_strings": [
+        "5.41 \u00b1 0.11",
+        "0.27 \u00b1 0.06",
+        "10.17 \u00b1 0.02",
+        "7.82 \u00b1 0.37"
+      ]
+    },
+    {
+      "id": "C07",
+      "status": "Previously validated exact conditional threshold",
+      "kind": "exact",
+      "primary_sources": [
+        "math/NOTES.md"
+      ],
+      "draft_strings": [
+        "p>10/21",
+        "when both bids are legal",
+        "threshold is exact"
+      ],
+      "evidence_strings": [],
+      "primary_strings": [
+        "10/21"
+      ]
+    },
+    {
+      "id": "C08",
+      "status": "Claude-validated guide ratio, bot evaluation",
+      "kind": "paired games",
+      "n": 6000,
+      "coverage": 0.95,
+      "primary_sources": [
+        "experiments/guide/results/s3_summary.txt"
+      ],
+      "draft_strings": [
+        "0.808 [0.794, 0.822]",
+        "n=6,000 paired games"
+      ],
+      "evidence_strings": [
+        "0.808 [0.794, 0.822]"
+      ]
+    },
+    {
+      "id": "C09",
+      "status": "self-validated (Codex), whole-bidder intervention",
+      "kind": "paired games",
+      "n": 4000,
+      "coverage": 0.95,
+      "primary_sources": [
+        "experiments/round9/D2/results/summary.json",
+        "experiments/round9/reviews/results/D2_raw_audit.json",
+        "experiments/round9/REVIEW.md"
+      ],
+      "draft_strings": [
+        "5.05950 \u00b10.81963",
+        "n=4,000 paired games",
+        "comparator rather than an oracle"
+      ],
+      "evidence_strings": [
+        "5.05950 \u00b10.81963"
+      ]
+    }
+  ],
+  "mandatory_caveats": [
+    "not a submission-ready paper",
+    "or optimal punishers",
+    "per-hand rollout-fitted diagnostics",
+    "not human-learning evidence"
+  ],
+  "external_gate_ids": []
+}

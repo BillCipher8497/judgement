@@ -1,0 +1,15 @@
+{
+  "source": "paper/guide_card.md",
+  "source_sha256": "7e876206373e9dff360430e746b4a6b7fae245b608db4b432f72b221035bddd3",
+  "pdf_sha256": "120b95c79d5d25c73041c0d5404871410f78f982d0c97616d890812c45e16ae7",
+  "pages": 1,
+  "page_size": "A4",
+  "word_tokens": 395,
+  "all_source_words_preserved_in_order": true,
+  "font_sha256": {
+    "arial.ttf": "edfbd22a3d088fc2f5d7c79b8c9c732df6dc878a60f0a80be0f92a3c7a634404",
+    "arialbd.ttf": "4d59199834e7439c67ea4949407639961060b21b173833f566eb60ac6fd8f5af"
+  },
+  "new_strategy_or_empirical_results": false,
+  "visual_QA": "passed: Poppler1500px PNG inspected; all content legible, no clipping/overlap; one A4 page"
+}

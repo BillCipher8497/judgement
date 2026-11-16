@@ -1,0 +1,18 @@
+s_ta_gplay ta gplay 2000 18.0
+s_ta_gplay_p.shed_min0 ta gplay:p.shed_min=0 2000 17.8
+s_ta_gplay_p.shed_min13 ta gplay:p.shed_min=13 2000 17.4
+s_ta_gplay_p.shed_margin1 ta gplay:p.shed_margin=1 2000 17.9
+s_ta_gplay_p.lead01 ta gplay:p.lead0=1 2000 17.5
+s_ta_gplay_p.lead02 ta gplay:p.lead0=2 2000 17.7
+s_ta_gplay_p.nt_lead1 ta gplay:p.nt_lead=1 2000 17.9
+s_ta_gplay_p.r_try1 ta gplay:p.r_try=1 2000 17.4
+s_ta_gplay_p.track8 ta gplay:p.track=8 2000 18.0
+gplay                                    d/game vs gplay:  +0.00 +- 0.00   P(win) 0.272
+gplay:p.shed_min=0                       d/game vs gplay:  +1.53 +- 0.32   P(win) 0.290
+gplay:p.shed_min=13                      d/game vs gplay:  -0.39 +- 0.18   P(win) 0.269
+gplay:p.shed_margin=1                    d/game vs gplay:  -0.59 +- 0.29   P(win) 0.265
+gplay:p.lead0=1                          d/game vs gplay:  +0.00 +- 0.00   P(win) 0.272
+gplay:p.lead0=2                          d/game vs gplay:  +0.29 +- 0.41   P(win) 0.276
+gplay:p.nt_lead=1                        d/game vs gplay:  +0.77 +- 0.39   P(win) 0.274
+gplay:p.r_try=1                          d/game vs gplay:  +0.03 +- 0.28   P(win) 0.272
+gplay:p.track=8                          d/game vs gplay:  +0.13 +- 0.17   P(win) 0.278

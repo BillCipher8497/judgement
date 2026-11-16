@@ -1,0 +1,59 @@
+MATH LAYER STATUS (append-only log)
+====================================
+[~ET] M1 sim launched: math/m1_sim.py -> math/results/m1_raw_n{5,8,13}_{S,NT}.json (1000 hands each, R=300, paired TA/Greedy).
+[~ET] M2 DONE: math/m2_onecard.py -> math/results/m2_onecard.json (exact enumeration of all 6,497,400 ordered deals, integer arithmetic).
+  - Leader (pos0) P(win | trump rank r) = C(51-(14-r),3)/C(51,3): 3 -> .4744, 4 -> .5119; threshold 10/21=.4762 => bid 1 iff r>=4. Off-trump ace P=C(38,3)/C(51,3)=.4051 <10/21 => bid 0. NT leader: same formula/threshold.
+  - All later-seat strategies and seat values reproduce experiments/phase2/results/onecard.json EXACTLY (max |value diff| = 0.0, strategy match True, S and NT).
+  - Exact seat values, trump S: 1638607/216580=7.566, 30024697/3248700=9.242, 30507739/3248700=9.391, dealer 3734399/928200=4.023.
+    NT: 418063/54145=7.721, 37432/4165=8.987, 8.987, dealer 111934/54145=2.067.
+  - P(win|card,history) monotone in rank within suit in every information cell (checked exhaustively) => threshold strategies; no exact ties (21W=10T never occurs).
+  - Hook off (exact): dealer value S 9.501 (cost of hook 5.478), NT 8.987 (cost 6.920). Phase1 E5 measured n=1 +5.41 (n=1 is a trump round, D) -> exact 5.48 agrees.
+[~ET] M1 lemma check: math/m1_lemmas.py -> results/m1_lemmas.json: 39,150 PB vectors (random + adversarial hill-climb): log-concavity, L2 (b* in {m_hi, m_hi+1}, ratio rule), L3 all pass 100%; b*-mu in (-0.83, 0.94) => conjecture |b*-mu|<1 (b* in {floor mu, ceil mu}) holds on all.
+[~ET] M1 partial analysis (n=5 S/NT, n=8 S): dispersion mostly >1 (positive dependence), TA trump ~1.0-1.1, greedy trump ~1.3, NT ~1.6-1.8 both. Paired TA-greedy disp: n5 S -0.15, n8 S -0.31, n5 NT +0.21. Scripts m3_hook.py, m4_conservation.py written & smoke-tested; waiting for sim to finish (one process).
+[~ET] M1 DONE (6000 hands x 2 policies, R=300): results/m1_summary.json, m1_tables.txt.
+  - Dispersion Var_emp/Var_PB (mean over hands): TA trump n5/8/13 = 1.14/1.005/0.79 (frac under .29/.54/.83); Greedy trump 1.29/1.32/1.23; NT TA 1.78/1.72/1.55, NT greedy 1.57/1.40/1.73.
+  - Paired TA-Greedy disp: S n5 -.15±.02, n8 -.31±.02, n13 -.44±.03; NT n5 +.21±.03, n8 +.32±.03, n13 -.18±.03.
+  - Hypothesis (TA under-dispersed) holds for trump at n=13 (and long-trump>=5 hands: 0.85), not for NT (strong positive dependence: suit runs/lead control).
+  - PB-bid == emp-opt: TA .779 (trump .875, NT .683), greedy .731; noise floor A/B .93/.85. EV loss of PB bid TA .55±.03 (trump .13, NT .98), greedy .43±.03.
+  - Emp optimal bid within [mode, mode+1] 98-99.7% even for dependent laws. Bimodal: greedy 5.5%, TA 2.8%.
+  - Shading: PB reproduces ~half of down-shading at frac(mu) in [.5,.75) and none at [.75,1) (emp -0.24/-0.37 vs PB 0): residual = right skew from positive dependence.
+  - Cheap lookup bidder: match .545 (greedy) / .534 (TA) vs model bid .623 / .888 (TA biased: self-fulfilling at played bid). PB with TRUE p_i beats bidder model for greedy (.731 vs .623).
+[~ET] M3 DONE: results/m3_hook.json, m3_decay.json, m3_tables.txt. P(f=b*) reproduces E5 'no-hook frac Σbids==n' exactly (.554...). C_pred = 4.57,2.28,1.68,.87,.44,...,.19 vs measured 5.41,2.84,1.85,1.15,.70,...,.27: right shape, level x1.1-1.7 low (model underestimates gap; calibration bins: realized gap = pred + 0.5..1.4). Decay: P(f=b*) .55->.24 (x2.3), E[gap|hit] 8.25->.80 (x10), the latter matched by 1-parameter discretised Gaussian in dealer sigma (8.28->.63).
+[~ET] M4 DONE: math/m4_conservation.py -> results/m4_conservation.json (+ _ta_nohook.json). Independent errors e_i=t_i-b_i (pmf by bid class 0/1/2/3+, support |e|<=4, bid-0 can't go negative) conditioned on Σe = n-Σb, MLE.
+  - Hook games, per-player hit by Σb-n (-3,-2,-1,+1,+2,+3): emp .510/.563/.617/.570/.487/.421; class model .489/.537/.611/.604/.495/.433. Tent shape + level right; ±1 asymmetry missed (.007 vs .047).
+  - Decomposition: non-dealers are SYMMETRIC at ±1 (.630±.002 vs .629±.002); asymmetry is the dealer (.578 vs .394). 61% of +1 tables are hook-forced-UP dealers (hit .284±.004, n=42,323) vs forced-down .434±.006 (n=30,131). Dealers forced up more often (42k vs 30k) because of the (11+b)/(10+b) prize tilt (L2-ii).
+  - No-hook games: peak at 0 (.668), -1 .621 vs +1 .565 (intrinsic over-bid penalty); class model predicts .701/.609/.579 => captures ~half of the intrinsic asymmetry via bid-0 skew.
+  - M3/M4 link: bidder model overestimates hit prob when forced up (.310 vs realized .284) and underestimates at natural bid (.594 vs .610) => explains C_pred < measured.
+[~ET] M1b launched: math/m1_ta_oracle.py (TA bid-conditional oracle, 300 hands x 6 configs, cands model±2, R=200). Tests: tests/test_math_{pb,onecard,models}.py pass.
+[11:12 ET] M1b DONE: results/m1_ta_oracle.json/.txt (1800 hands, TA bid-conditional oracle, cands model±2, R=200). PB applied bid-by-bid (p_i^(b)) matches oracle .688±.021 vs bidder model .597±.023; EV loss .36±.04 vs .63±.05; δ at oracle bid trump .975, n13 S .81, NT 1.73. Oracle at truncated window edge 6.3%.
+[11:13 ET] Skew check: results/m1_skew.json - emp 3rd central moment 3-4x PB; shaded-down hands far more right-skewed.
+[11:13 ET] NOTES assembled: math/NOTES.md (all sections, proofs + tables). Remaining: full pytest, final report.
+==================== ROUND 2 (M5-M9) ====================
+[00:40 ET] Round 2 start. m5_sim.py launched (same deals/TA seeds as m1_sim; TA + TA+ play; per-rollout card-win masks; 1000 hands x R=300 x 6 configs).
+[01:18 ET] M5 sim DONE (results/m5_raw_n{5,8,13}_{S,NT}.npz; TA n=5 S reproduces m1 exactly: TV .072, PB match .878, loss .11).
+[01:18 ET] M6 DONE: math/m6_bound.py -> results/m6_bound.json. PROVED (via Hoeffding 1956 extremal theorem): mu <= m => P(m+1) <= m/(m+1) P(m),
+  hence b* < mu+1 for every PB; sharp: sup(b*-mu) = max_{m<N} (m+1)/(1+c_m(m+1)), c_m=(10+m)/(11+m) (N=1 .524, 2 .706, 5 .882, 13 .968),
+  approached by Bin(m+1, a) at a -> a*_m = c(m+1)/(1+c(m+1)). Verified: 13 x 3040 vectors (random + hill-climb), 0 violations; Bin attains to 1e-6.
+[01:18 ET] M7 DONE: math/m7_hookcal.py -> results/m7_hookcal.json (10,000 games, 250k dealer situations; factors fit on even games, tested on odd).
+  Raw A1 meas/pred 1.32 -> 3 pooled factors (nat x1.080, up x0.936, down x1.014) 1.06; n-bucket 1.08. Main error is the NATURAL bid
+  (model P(hit at b*) .753 vs real .857 at n=2; +3..+10 pts at every n), not forced-up: natural-only fix gives ~all of the improvement.
+[01:45 ET] M5 DONE: m5_analyze.py -> results/m5_summary.json, m5_tables.txt; m5_lead.py -> m5_lead.json (TA n=8, 300 hands).
+  NT: cross-suit share of δ-1 = .53/.52/.31 (n5/8/13) vs within .24/.20/.24. Lead check n8 NT: cross .527 = LL .142 + LF .432 + FF -.047.
+  Trump: TX (trump x side) negative, -.17 at n13; TT negative. Suit-block model NT: match .75->.87 / .72->.81 / .58->.66, EV loss .83->.32 / .72->.35 / 1.39->1.03.
+  Mechanism: lead-borne cross-suit complementarity (NT); cancelled by trump-vs-side substitution in trump rounds.
+[01:45 ET] M9 first run discarded (CRN bug: SeedSequence.spawn called twice on one object -> unpaired deals); fixed, rerunning.
+[01:52 ET] M8 DONE: m8_sim.py (300k deals x 81 bid vectors, TA) -> m8_eq.py / m8_index.py / m8_robust.py (results/m8_*.json, m8_tables.txt).
+  Eq seat values (held-out 150k) 7.09/7.89/8.21/5.35 (table 28.54); ModelBidder 6.86/7.86/8.11/5.62; hook cost eq 3.29+-.03, model 2.84+-.03 (= E5 2.84).
+  Myopic BR deviation costs .02-.03/round at seats 0-2; bids differ on 3-5% of deals. Best 1-D index rule (E[t|bid 0]) loses .02-.17/round.
+  Robust to start profile (<=1.6% bid disagreement). Leader bids 2 in 20% (trump A/K + any).
+[01:54 ET] M9 DONE: NOTES M9 (Lemma E first-divergence, Prop W keep-low at need 1 / keep-high at need=r, Prop L highest sure loser at target; proved under open-loop opponents).
+  m9_play.py (30k paired rounds each): W on TA +0.035+-.008/round (90 better / 4 worse); L_same on TA +0.012+-.006; L any-suit on TA+ +0.037+-.014 (candidate new TA+ component).
+[01:58 ET] M9 fresh-seed check (m9_play.py 60000 9191): L any-suit on TA+ +0.030+-.010/round, L_same +0.013+-.006 -> confirmed. Full pytest: 207 passed.
+[02:05 ET] M5 lead check extended to n=5,13 (results/m5_lead_extra.json): NT LF +.31/+.43/+.45 (n5/8/13) dominant, FF<0; trump n13 FF -.25.
+[00:03 ET] ROUND 3 start. H1: judgement/policies/spoiler.py (SpoilerPolicy), experiments/surplus_hidden/sim.py launched: rounds n=1..13 x 10000 deals x {self,s1,s2,s3} CRN (seed SeedSequence([131000000,n,d])), then 4000 games (seed 133000000+g).
+[00:18 ET] H1 main DONE (rounds 10000/n, games 4000): experiments/surplus_hidden/results/summary_main.{md,json}. Share s3 n2..6 .091/.155/.212/.257/.278 (PI .23/.50/.71/.81/.89); n13 .496; games share .311±.006, spoiler cost 40.0±0.6/game. Launched run_r3.sh: omni (cheating PI paranoid) + PIMC-paranoid(K=16) spoilers, then m10_sim (H2 data), then omni n8 / pimc n7.
+[00:32 ET] H1 strong spoilers DONE n=2..6 (omni 4000/n, n7 2000; PIMC-paranoid K=16 2000/n): results/summary_strong.md. Shares n=2..6 heur .092/.149/.239/.259/.317(n6 1000), PIMC .111/.170/.231/.305/.335, omni(cheating) .198/.469/.708/.854/.935 ~= PI .23/.50/.71/.81/.89 => PI surplus is information-borne. m10_sim (H2) started; queued omni n8, pimc n7, then run_r3b.sh (MC spoiler w/ hero model, n2..5, deadline 03:40).
+[01:06 ET] run_r3.sh ALLDONE (omni n8 1000, pimc n7 1000). summary_strong.md updated. run_r3b.sh: m10_analyze NT -> m10_sim trump S (n5,8, 500 hands) -> MC spoiler (deadline 03:30).
+[01:10 ET] H2 m10_analyze NT DONE: math/results/m10_tables.txt, m10_summary.json. Cross-fit bid-match gap (PB->A/B floor) closed: n5 LC1 .98 (TA) / 1.00 (TA+); n8 LC1 .71/.86, LCX .82/.81 (xTV gap .91/.90); n13 best LCS .66/.33 (shape wrong), LCX xTV gap .55/.46 but match .30/-.08 (SB .20/.20). Lead persistence .31/.29/.41; acf lag1-3 n5 .33/.14/.06, n13 .29/.06/-.04.
+[01:16 ET] MC spoiler (hero-model, K=8, n2..5, 1000 deals) DONE: shares .112/.157/.193/.278 (= heuristic). H2 trump contrast DONE (m10_tables_S.txt): lead persistence ~0 in S. H3 written (sandwich + info-free hero-led tricks + solver-verified counterexample). NOTES.md ROUND 3 section appended. Running full pytest.
+[01:16 ET] Full pytest: 231 passed. Round 3 DONE.

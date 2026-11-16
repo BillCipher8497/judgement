@@ -1,0 +1,40 @@
+PHASE 4 STATUS (append-only; started 00:40 ET 2026-11-11)
+00:41 Q2 queue launched (q2_ladder.py, seeds 400,000,000+g, chal seat g%4, round-robin 25-game chunks, stop 03:50): pools TA+ and Hybrid;
+  TA pool reuses experiments/play 1v3 results (seeds 71,000,000+g). Q2 is SIGSTOPped while Q1 compute runs (one process).
+00:55 Q1 code: judgement/cfr/toy.py (ToyGame + explicit Tree, forced moves compressed, infoset=(seat,hand,public seq)),
+  judgement/cfr/solve.py (numpy CFR+ simultaneous/linear avg; exact BR per infoset, restricted BR (bid-only/play-only), NashConv),
+  judgement/cfr/heuristics.py (greedy, TA-toy with exact uniform-world P(win), myopic bidder = argmax (10+b)P(t=b) under greedy rollouts).
+  tests/test_phase4_toy.py 13 pass: rules == main engine RoundState (legal bids/cards, trick winners, scores; 3p/4p, trump/NT, 1200 deals),
+  tree values == independent recursive evaluator, BR == brute force over all pure strategies (3p 1-card), BR policy value == BR value,
+  no random deviation beats BR, 2p zero-sum CFR+ NashConv<0.01 at T=200, myopic n=1 == 10/21 threshold.
+  Sizes: 3p 2x4 n=2: 2520 deals, 415k nodes, 10k infosets, 0.06 s/it; 4p 2x4 n=2: 2.05M nodes, 129k infosets, 0.55 s/it.
+01:00 Q1 main DONE (q1_toy.py, results/q1_<game>.json + _cfr_avg.npy, q1.log; 9 games, exact, deterministic). CFR+ avg NashConv (pts/round summed over seats):
+  2p_diff 2e-5@1000, 2p_raw 2e-5, 3p_t 4e-5, 3p_nt 0.0056 (plateau ~0.005 from T=200; current iterate 0.006), 3p_3x3_t 1.7e-4@500,
+  4p_n1_t 3e-5, 4p_n1_nt 2e-5, 4p_t 1.8e-4@500, 4p_nt 2.1e-4@500. Current iterate exactly 0 (pure equilibrium) in all but 3p_nt/3p_3x3.
+  Heuristic NashConv (TA play + myopic bid): 3p_t 1.90 (bid-only 0.88, play-only 1.32), 3p_nt 1.95 (1.87/0.07), 3p_3x3 3.06 (1.48/1.54),
+  4p_t 1.70 (0.62/1.04), 4p_nt 2.72 (2.56/0.18), 4p_n1_t 0.76 (bidding only), 4p_n1_nt 0. Greedy: 2.18/2.67/3.42/1.80/3.35.
+  n=1 seat 0: CFR bid == 10/21 threshold on every card (S and NT).  Q2 resumed.
+01:19 Q1 extras DONE (Q2 was paused 01:02-01:19).
+  3p_n3_t (3p, 3 suits x 3 ranks, 3 cards each, trump; 8.38M nodes, 1.84M infosets, T=100): CFR+ avg NashConv 0.0061 (cur 0.0060; mostly bid-side 0.005).
+    TA+myopic NC 3.76 (bid-only 1.72, play-only 2.26); greedy 4.42 (0.92/3.03); CFR play + myopic bid 1.71; TA play + CFR bid 2.95.
+  Equilibrium selection (q1_eqsel.py, warm start R0 = 1pt x chance mass x profile; results/q1_eqsel.json): all starts reach NC <= 3.4e-3 but
+    different payoff vectors: 3p_nt seat values 8.56-8.64 / 8.48-8.64 / 3.08-3.29 (spread up to 0.21 pts >> NC 2-4e-4);
+    3p_t spread <= 0.015; 4p_t <= 0.016; 4p_nt seat0 9.54 vs 9.67, dealer 2.16 vs 2.33. 3p_nt from uniform plateaus at 0.0056, warm starts reach 2-4e-4.
+  Q2 resumed 01:19.
+01:22 Q2 restarted with resume + 100-game chunks for the TA+-only tables (tap_ref, tap_ta); stop 03:40.
+01:23 Q1 tables: q1_report.py -> results/q1_summary.md (sections A-E). tests/test_phase4_ladder.py added. Full pytest: 207 passed (13 s).
+  Findings so far: (1) CFR+ NashConv -> ~0 in every toy incl. 3p/4p general-sum (2e-5..6e-3); current iterate is an exact pure equilibrium
+  in 7/10 games. (2) But equilibria are not unique: warm starts give eps-equilibria with different payoffs (3p_nt up to 0.21 pts/seat).
+  (3) TA+myopic NashConv 1.7-3.8 pts/round (per-seat 0.1-1.5); deviations: trump games play-heavy, NT games bid-heavy (4p_nt bid-only 2.56 of 2.72).
+  (4) seat-0 1-card bids == 10/21 rule exactly; later seats deviate from myopic (they use the info in earlier bids); dealers bid less than myopic
+      in n=1 (CFR 0.00 vs 0.10) but more in n=2 (0.94 vs 0.67-0.72) and mix (P(mix) 0.22-0.44).
+01:23 chain_q3.sh armed: kill Q2 at 03:25, Q3 mixed table (TA, TA+, Hybrid, Hybrid+oracle; seeds 450,000,000+g, perm g%24) until 04:05.
+01:25 q1_brbids.py (results/q1_brbids.json): bid-only BR vs TA+myopic changes 4-32% of reach-weighted bids, seat 0 ~never (gain 0 / 0.05); NT later seats exploit mostly by bidding LOWER (4p_nt seats 1/2: 13% down vs 4-6% up, mean bid 0.33-0.36 vs 0.46); 3p_t seat 1 bids up, dealer down.
+01:44 Q2 interim: TA+ pool n=100-450, Hybrid pool n=100 (see q2_ladder.md when final).
+03:26 Q2 stopped 03:25 by chain_q3.sh; final ladder results/q2_ladder.md/.json. Q3 running.
+04:06 Q3 DONE (765 games, results/q3_rating.md/.json): Elo vs TA+ [boot 95%]: TA -63 [-87,-41], Hybrid +81 [+54,+107], Hybrid+oracle +86 [+65,+111];
+  score vs TA+ same game: -9.97+-3.13 / +11.08+-3.09 / +12.28+-2.93; P(win) .111/.206/.339/.344. Hybrid+oracle - Hybrid not significant in a mixed table.
+  Q2 FINAL (q2_ladder.md): best challenger gain vs 3xTA +20.44+-2.67 (Hyb+oracle, n=500, play/ seeds), vs 3xTA+ +11.65+-2.09 (Hybrid, n=450;
+  Hyb+oracle +11.52+-2.94 n=425), vs 3xHybrid +0.13+-3.15 (Hyb+oracle, n=400): lower bounds shrink with pool strength; oracle-bidder bonus
+  +5.5 (TA pool) -> +2.5 (TA+) -> +0.1/+1.5 (Hybrid), consistent with its TA-opponent rollout model being mis-specified.
+  Final pytest: 207 passed. ALL DONE.

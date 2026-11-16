@@ -1,0 +1,10 @@
+{
+  "discovery_base": 1500000000,
+  "n_discovery_games": 4000,
+  "cells": [
+    "n2|trump|pos2",
+    "n7|trump|pos3",
+    "n10|trump|pos1"
+  ],
+  "raw_sha256": "f960607322f7d33dcb07d183e07dd8fbed89d16f1ba6a4636e67ad79dbaf7b01"
+}

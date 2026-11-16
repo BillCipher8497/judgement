@@ -1,0 +1,35 @@
+{
+  "no_simulation_or_seed_draw": true,
+  "rules_sha256": "F89916D039BDFD515DB015D59A5343F4C416B57C65C43CC7776A9D712CE5F6ED",
+  "protocol_sha256": "1A641EEAD336DC488DF4BF6C09625FB8D382181AC3750745467242BD96398B36",
+  "limits": "Protocol/source/schedule check only. Feature implementation, seed collision check, fitting and performance remain unexecuted.",
+  "pass": true,
+  "default_NT_schedule": [
+    {
+      "dealer": 0,
+      "round_index": 4,
+      "n": 9
+    },
+    {
+      "dealer": 1,
+      "round_index": 9,
+      "n": 4
+    },
+    {
+      "dealer": 2,
+      "round_index": 14,
+      "n": 3
+    },
+    {
+      "dealer": 3,
+      "round_index": 19,
+      "n": 8
+    },
+    {
+      "dealer": 0,
+      "round_index": 24,
+      "n": 13
+    }
+  ],
+  "checked_utc": "2026-11-16T21:35:17.4117834+00:00"
+}

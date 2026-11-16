@@ -1,0 +1,15 @@
+ROUND 7 PAPER AND WELFARE (append-only checkpoints)
+2026-11-15 ET: Restored 710 absent engine files from engine_snapshot.zip after hashing all existing snapshot files (no differences, no replacements). Created local Git baseline 7393363.
+Reviewed both handoffs; progress logs through round 6; math claims; hidden-info and strong-spoiler summaries; bot and guide results. Claude living report could not be accessed by the web tool.
+Scope: paper outline and evidence map; exact welfare identity and ceiling; paired welfare decomposition from existing H1 data. Core files and existing policies remain frozen.
+M11 exact count enumeration complete; welfare.json checkpoint saved.
+M11 all H1 round arrays validated; deal-level paired components saved.
+M11 H1 full games validated; CIs clustered by game, ties-as-win recomputed.
+M11 welfare summary complete; source hashes and all paired units preserved.
+M11 exact count enumeration complete; welfare.json checkpoint saved.
+M11 all H1 round arrays validated; deal-level paired components saved.
+M11 H1 full games validated; CIs clustered by game, ties-as-win recomputed.
+M11 welfare summary complete; source hashes and all paired units preserved.
+2026-11-15 ET: Paper outline and evidence map complete. M11 proof notes appended. Equal-S/NT five-card comparison: hidden/PI share ratio 0.28342 +/- 0.03431 (4000 hidden deals, 1000 PI deal clusters; descriptive, different policies). Legacy H1 split-tie values corrected from totals in new results only.
+Validation: python math/m11_welfare.py complete; final python -m pytest -q -p no:cacheprovider from engine/: 249 passed, 1 skipped (optional OpenSpiel), 48.31s. Initial attempts failed due to missing hypothesis and one command run from project root; dependency installed and correct engine command passes. No core files or existing policies modified.
+Handoff: next develop manuscript and controlled information comparison; external Claude audit track is active in experiments/round7_audit/ and is excluded from this session commit. Bidding and MCMC tracks reserved for external agents. No Codex simulations remain running.

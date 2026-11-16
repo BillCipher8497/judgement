@@ -1,0 +1,16 @@
+s_ta_gplay ta gplay 2000 17.1
+s_ta_gplay_p.trump_first0 ta gplay:p.trump_first=0 2000 17.4
+s_ta_gplay_p.r_lead_hi0 ta gplay:p.r_lead_hi=0 2000 17.8
+s_ta_gplay_p.r_must0 ta gplay:p.r_must=0 2000 18.0
+s_ta_gplay_p.r_lead_boss0 ta gplay:p.r_lead_boss=0 2000 18.2
+s_ta_gplay_p.r_lead_high0 ta gplay:p.r_lead_high=0 2000 18.1
+s_ta_ta ta ta 2000 17.4
+s_ta_tap3 ta tap3 2000 19.3
+gplay                                    d/game vs gplay:  +0.00 +- 0.00   P(win) 0.292
+gplay:p.trump_first=0                    d/game vs gplay:  -0.94 +- 0.28   P(win) 0.283
+gplay:p.r_lead_hi=0                      d/game vs gplay:  -0.36 +- 0.17   P(win) 0.288
+gplay:p.r_must=0                         d/game vs gplay:  -0.47 +- 0.18   P(win) 0.284
+gplay:p.r_lead_boss=0                    d/game vs gplay:  -0.58 +- 0.65   P(win) 0.284
+gplay:p.r_lead_high=0                    d/game vs gplay:  -2.66 +- 0.81   P(win) 0.269
+ta                                       d/game vs gplay:  -3.79 +- 1.07   P(win) 0.261
+tap3                                     d/game vs gplay:  +4.58 +- 0.84   P(win) 0.344

@@ -1,0 +1,7 @@
+g2 hybrid_rb:k=32,c=7 0 20 c2_rb_0 600000000
+g2 hybrid_rb:k=32,c=7 20 20 c2_rb_1 600000000
+g2 hybrid_rb:k=32,c=7 40 20 c2_rb_2 600000000
+g2 hybrid_rb:k=32,c=7 60 20 c2_rb_3 600000000
+g2 hybrid_rb:k=32,c=7 80 20 c2_rb_4 600000000
+g2 hybrid_rb:k=32,c=7 100 20 c2_rb_5 600000000
+g2 hybrid_rb:k=32,c=7 120 22 c2_rb_6 600000000

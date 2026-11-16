@@ -1,0 +1,289 @@
+{
+ "log": [
+  {
+   "step": "full fit",
+   "train": 6.393116666666667,
+   "test_loss_vs_mb": [
+    0.300775,
+    0.05123314280413622
+   ],
+   "w": {
+    "t_each": 2,
+    "t_hon": 1,
+    "t_guard": 0,
+    "s_A": 1,
+    "s_K2": 1,
+    "s_K1": 1,
+    "s_Q3": 1,
+    "short": 0,
+    "t_sub": 4,
+    "n_A": 2,
+    "n_K2": 1,
+    "n_K1": 2,
+    "n_Q3": 1,
+    "n_long": 0,
+    "n_sub": 99,
+    "small_cut": 0,
+    "small_A": 2,
+    "small_K": 1,
+    "prior_k": 4,
+    "hook_up": 0,
+    "round_up": 0
+   }
+  },
+  {
+   "step": "drop small rounds",
+   "cost_train": 0.0,
+   "train": 6.393116666666667,
+   "test_loss_vs_mb": [
+    0.300775,
+    0.05123314280413622
+   ],
+   "w": {
+    "t_each": 2,
+    "t_hon": 1,
+    "t_guard": 0,
+    "s_A": 1,
+    "s_K2": 1,
+    "s_K1": 1,
+    "s_Q3": 1,
+    "short": 0,
+    "t_sub": 4,
+    "n_A": 2,
+    "n_K2": 1,
+    "n_K1": 2,
+    "n_Q3": 1,
+    "n_long": 0,
+    "n_sub": 99,
+    "small_cut": 0,
+    "small_A": 2,
+    "small_K": 1,
+    "prior_k": 4,
+    "hook_up": 0,
+    "round_up": 0
+   }
+  },
+  {
+   "step": "drop short side suits with trumps",
+   "cost_train": 0.0,
+   "train": 6.393116666666667,
+   "test_loss_vs_mb": [
+    0.300775,
+    0.05123314280413622
+   ],
+   "w": {
+    "t_each": 2,
+    "t_hon": 1,
+    "t_guard": 0,
+    "s_A": 1,
+    "s_K2": 1,
+    "s_K1": 1,
+    "s_Q3": 1,
+    "short": 0,
+    "t_sub": 4,
+    "n_A": 2,
+    "n_K2": 1,
+    "n_K1": 2,
+    "n_Q3": 1,
+    "n_long": 0,
+    "n_sub": 99,
+    "small_cut": 0,
+    "small_A": 2,
+    "small_K": 1,
+    "prior_k": 4,
+    "hook_up": 0,
+    "round_up": 0
+   }
+  },
+  {
+   "step": "drop NT long suits",
+   "cost_train": 0.0,
+   "train": 6.393116666666667,
+   "test_loss_vs_mb": [
+    0.300775,
+    0.05123314280413622
+   ],
+   "w": {
+    "t_each": 2,
+    "t_hon": 1,
+    "t_guard": 0,
+    "s_A": 1,
+    "s_K2": 1,
+    "s_K1": 1,
+    "s_Q3": 1,
+    "short": 0,
+    "t_sub": 4,
+    "n_A": 2,
+    "n_K2": 1,
+    "n_K1": 2,
+    "n_Q3": 1,
+    "n_long": 0,
+    "n_sub": 99,
+    "small_cut": 0,
+    "small_A": 2,
+    "small_K": 1,
+    "prior_k": 4,
+    "hook_up": 0,
+    "round_up": 0
+   }
+  },
+  {
+   "step": "drop rounding / hook direction",
+   "cost_train": 0.0,
+   "train": 6.393116666666667,
+   "test_loss_vs_mb": [
+    0.300775,
+    0.05123314280413622
+   ],
+   "w": {
+    "t_each": 2,
+    "t_hon": 1,
+    "t_guard": 0,
+    "s_A": 1,
+    "s_K2": 1,
+    "s_K1": 1,
+    "s_Q3": 1,
+    "short": 0,
+    "t_sub": 4,
+    "n_A": 2,
+    "n_K2": 1,
+    "n_K1": 2,
+    "n_Q3": 1,
+    "n_long": 0,
+    "n_sub": 99,
+    "small_cut": 0,
+    "small_A": 2,
+    "small_K": 1,
+    "prior_k": 4,
+    "hook_up": 0,
+    "round_up": 0
+   }
+  },
+  {
+   "step": "drop queens with >=3",
+   "cost_train": 0.035183333333333344,
+   "train": 6.357933333333333,
+   "test_loss_vs_mb": [
+    0.337975,
+    0.05132532699833252
+   ],
+   "w": {
+    "t_each": 2,
+    "t_hon": 1,
+    "t_guard": 0,
+    "s_A": 1,
+    "s_K2": 1,
+    "s_K1": 1,
+    "s_Q3": 0,
+    "short": 0,
+    "t_sub": 4,
+    "n_A": 2,
+    "n_K2": 2,
+    "n_K1": 2,
+    "n_Q3": 0,
+    "n_long": 0,
+    "n_sub": 99,
+    "small_cut": 0,
+    "small_A": 2,
+    "small_K": 1,
+    "prior_k": 4,
+    "hook_up": 0,
+    "round_up": 0
+   }
+  },
+  {
+   "step": "drop earlier bids vs share",
+   "cost_train": 0.027183333333333337,
+   "train": 6.33075,
+   "test_loss_vs_mb": [
+    0.417225,
+    0.051774936936459355
+   ],
+   "w": {
+    "t_each": 2,
+    "t_hon": 1,
+    "t_guard": 0,
+    "s_A": 1,
+    "s_K2": 1,
+    "s_K1": 1,
+    "s_Q3": 0,
+    "short": 0,
+    "t_sub": 5,
+    "n_A": 2,
+    "n_K2": 2,
+    "n_K1": 0,
+    "n_Q3": 0,
+    "n_long": 0,
+    "n_sub": 99,
+    "small_cut": 0,
+    "small_A": 2,
+    "small_K": 1,
+    "prior_k": 99,
+    "hook_up": 0,
+    "round_up": 0
+   }
+  }
+ ],
+ "kept": [
+  "trump honours bonus",
+  "subtract per cards dealt",
+  "side kings"
+ ],
+ "final": {
+  "t_each": 2,
+  "t_hon": 1,
+  "t_guard": 0,
+  "s_A": 1,
+  "s_K2": 1,
+  "s_K1": 1,
+  "s_Q3": 0,
+  "short": 0,
+  "t_sub": 5,
+  "n_A": 2,
+  "n_K2": 2,
+  "n_K1": 0,
+  "n_Q3": 0,
+  "n_long": 0,
+  "n_sub": 99,
+  "small_cut": 0,
+  "small_A": 2,
+  "small_K": 1,
+  "prior_k": 99,
+  "hook_up": 0,
+  "round_up": 0
+ },
+ "line_value_test": {
+  "trump honours bonus": [
+   0.13985,
+   0.03771085607932755
+  ],
+  "subtract per cards dealt": [
+   0.15375,
+   0.0427442776435546
+  ],
+  "side kings": [
+   0.0447,
+   0.03770876755099741
+  ],
+  "count every trump": [
+   0.6799,
+   0.05582852567538013
+  ],
+  "count aces": [
+   0.28435,
+   0.03914421538341329
+  ]
+ },
+ "final_test": [
+  6.2379,
+  0.05570785965125813
+ ],
+ "mb_test": [
+  6.655125,
+  0.05543962841469398
+ ],
+ "final_loss_vs_mb": [
+  0.417225,
+  0.051774936936459355
+ ]
+}

@@ -1,0 +1,1 @@
+hybrid:k=16,c=5 hybrid_bi:k=32,c=6 400 600 bi_big2 400000000

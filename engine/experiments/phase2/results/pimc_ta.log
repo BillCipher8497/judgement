@@ -1,0 +1,8 @@
+n=2 S: 500 deals in 21.3s (total 21s)
+n=2 NT: 500 deals in 19.2s (total 41s)
+n=3 S: 500 deals in 44.6s (total 85s)
+n=3 NT: 500 deals in 42.5s (total 128s)
+n=4 S: 500 deals in 101.6s (total 229s)
+n=4 NT: 500 deals in 99.5s (total 329s)
+n=5 S: 500 deals in 315.6s (total 644s)
+n=5 NT: 500 deals in 275.4s (total 920s)

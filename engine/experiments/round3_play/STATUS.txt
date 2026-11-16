@@ -1,0 +1,49 @@
+experiments/round3_play STATUS (append-only checkpoints)
+00:02 R0 DONE. Rules check vs user-confirmed rules: MATCH, no core changes.
+  dealer rotates left (+1): rules.dealer_for_round = (first_dealer + r) % N; tests/test_rules.py::test_ladder_and_schedule (vs crossval naive_ref).
+  bid order left of dealer first, dealer last: tests/test_state.py::test_bidding_order_dealer_last; hook on last bidder: test_hook_n1, test_hook_edge_sums.
+  first lead left of dealer, winner leads: test_first_lead_left_of_dealer_and_winner_leads. follow suit, void -> any card (no must-trump): test_must_follow_suit.
+  score 10+bid / 0: test_scoring_modes('zero'); trump S,H,D,C,NT + ladder 13..1..13 (25 rounds): test_four_player_25_rounds, test_ladder_and_schedule.
+  Only difference: engine GameResult.wins splits ties 1/k (fractional_wins); ties-as-win recomputed from totals (r0_ties.py -> results/r0_ties.md/json).
+  First-place tie rate 1.5-2.8% of games (ref tables: TA 0.0187 n=10000, TA+ 0.0193 n=1500, Hybrid 0.0282 n=425).
+  P(win) levels rise by +0.003..+0.008 under ties-as-win; ΔP(win) vs pool changes by <=0.0043 everywhere (all well inside CIs);
+  e.g. TA+ vs TA +0.0797 -> +0.0801 (+-0.009, n=10000); Hybrid+oracle vs 3xHybrid -0.0025 -> -0.0050 (+-0.053, n=400). No conclusion changes.
+00:08 R1 setup. judgement/policies/hybrid_bi.py: HybridBIPolicy = Hybrid (TA+ early, PIMC at <=c cards, K worlds, max^n) with
+  worlds by SIR from p(h|obs) ∝ Uniform(h | own hand, played cards, voids) x prod_j L_j(bid_j | h_j ∪ played_j, prior bids, pos_j);
+  L = bidding2.BidLikelihood(model_ta_final, hard argmax, eps=0.02, hook-legal set for dealer); proposals = exact uniform HandSampler,
+  batches of 64 until ESS >= K or M = 512; systematic resampling. informed=False == HybridPolicy bit-identically (test).
+  agents.py (hybrid_bi[:k,c,eps,tau,unif,m,ess,val], hybrid_bi_orc), run.py (= final/run.py + sampler-stat log), queue.sh.
+  tests/test_round3_hybrid_bi.py (10 pass): true deal has max weight, worlds consistent, flat-lik ESS=M, informed places cards better,
+  uniform mode == Hybrid, legality, R2 tie objective >= split objective.
+  Queue (one process): bi_hyb (vs 3xHybrid, 400M seeds g<400, pairs with phase4 q2_hyb_ref), bi_ta (vs 3xTA, 71M, val=1),
+  big_hyb (Hybrid k=32,c=6 vs 3xHybrid), then R2 (r2_main.py, 10000 games, seed 20261112; split arm reproduces phase3 P2 exactly, checked g<8).
+00:32 R1 first results (analyze_r1.py -> results/r1.md/json; gain = chal seat total − pool policy same seat same seed):
+  3xHybrid (400M seeds, n=400, ref phase4 q2_hyb_ref): Hybrid-BI +5.22+-2.35 pts/game (trump rounds +4.74+-2.16, NT +0.48+-1.10),
+    ΔP(win) ties-as-win +0.020+-0.045. (Phase 4 best was Hybrid+oracle +0.13+-3.15.)  1.04 s/game extra over Hybrid table (2.6 s/game).
+  3xTA (71M seeds, n=400): Hybrid-BI +19.46+-2.54 vs TA; paired vs Hybrid c5 challenger on same games +2.42+-1.79, ΔP(win) +0.013+-0.047.
+  Sampler (26k PIMC decisions/run): median ESS 19 (K=16), ESS<16 in 15%, ESS<4 in 2%, 17% of decisions hit M=512 cap;
+    true deal always at max weight (1.0000, bi_ta, 25910 decisions) -> likelihood exact for ModelBidder opponents;
+    card-placement accuracy (fraction of opps' true remaining cards placed in the right hand) 0.218 informed vs 0.171 uniform (+0.047+-0.002).
+  Running: big_hyb (Hybrid k32 c6 vs 3xHybrid), then R2, then extensions to n=1000 (jobs2.txt: hyb_ref2, bi_hyb2, bi_ta2, big_hyb2, bio_hyb).
+01:13 big_hyb DONE (n=400, 5.4 s/game): Hybrid k32 c6 vs 3xHybrid +5.92+-2.77 pts/game (trump +3.69+-2.58, NT +2.23+-1.18),
+  ΔP(win) ties-as-win +0.048+-0.051.  Hybrid-BI − Hybrid k32c6 (both vs the same pool, same seeds) −0.70+-2.54.
+  => two different challengers each beat 3xHybrid by ~+5-6/game: Hybrid is exploitable; Phase-4 challengers (oracle bidder) were weak.
+  jobs2.txt revised: hyb_ref2 (ref games 425..999), bi_hyb2 (400..999), bi_big = Hybrid-BI k32 c6 (0..399), bi_ta2, big_hyb2 (cut at 04:20). bio_hyb dropped.
+  R2 running (2500/10000 games at 01:13).
+01:29 R2 DONE (r2_main.py, 10000 games x 4 hero seats, L=3000, seed 20261112, CRN; results/r2.md/json, r2_raw.npz; 20 min).
+  Split arm reproduces Phase-3 P2 exactly (ΔP split +0.0051 k=3 / +0.0060 k=6, Δscore −2.13 / −2.94).
+  Ties-as-win objective, evaluated ties-as-win: k=3 ΔP(win) +0.0072+-0.0019, Δscore −2.02+-0.07; k=6 +0.0070+-0.0021, −2.82+-0.08
+  (base P(first incl. ties) 0.2542 per seat). Old split-objective bidder under the ties-as-win metric: +0.0041+-0.0019 / +0.0050+-0.0021.
+  Paired tie − split objective: ties-as-win metric +0.0031+-0.0015 (k=3), +0.0020+-0.0016 (k=6); costs −0.002..−0.003 under split metric.
+02:20 hyb_ref2 + bi_hyb2 DONE: Hybrid-BI vs 3xHybrid n=1000: see r1.md (analyze_r1.py). bi_big (Hybrid-BI k32 c6) running.
+02:50 bi_big DONE (Hybrid-BI k32 c6 vs 3xHybrid, n=400, 4.6 s/game): +10.92+-2.86 pts/game, ΔP(win) ties-as-win +0.138+-0.053
+  (P(win) 0.400 vs ~0.26); minus Hybrid k32 c6 on same games +5.00+-2.75 -> BI and bigger search are ~additive.
+  Hybrid-BI k16 c5 vs 3xHybrid n=1000: +5.31+-1.59, ΔP(win) +0.050+-0.030; by round size n<=5 +1.30, n6-9 +2.27, n10-13 +1.74.
+  Running: bi_ta2, big_hyb2, then bi_big2 (400..999) until 04:20.
+04:20 ALL SIMS STOPPED (04:20). FINAL R1 (results/r1.md/json; gain vs pool policy in same seat, same seed; 95% CI over games):
+  vs 3xHybrid (400M seeds): Hybrid-BI k16c5 n=1000 +5.31+-1.59 pts/game, ΔP(win) tie +0.050+-0.030;
+    Hybrid k32c6 n=1000 +5.51+-1.71, +0.056+-0.033; Hybrid-BI k32c6 n=801 +10.63+-2.02, +0.135+-0.037 (P(win) 0.396);
+    Hybrid-BI k32c6 − Hybrid k32c6 (paired, n=801) +5.36+-1.89; Hybrid-BI − Hybrid k32c6 (n=1000) −0.21+-1.68.
+  vs 3xTA (71M seeds): Hybrid-BI n=1000 +20.74+-1.62, ΔP(win) +0.272+-0.032; − Hybrid c5 challenger on same games +3.37+-1.14, +0.055+-0.029.
+  Sampler: median ESS 19 (K=16) / 34 (K=32); ESS<4 in 2% / 4%; M cap hit 17% / 43%; true deal at max weight in 100% of 64,680 decisions.
+  pytest -q -p no:cacheprovider: 231 passed.

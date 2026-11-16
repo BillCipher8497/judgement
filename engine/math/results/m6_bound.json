@@ -1,0 +1,161 @@
+{
+ "H": 10,
+ "rows": [
+  {
+   "N": 1,
+   "sharp_sup": 0.5238095238095238,
+   "argmax_m": 0,
+   "a_star": 0.47619047619047616,
+   "gap_bin_at_a*+": 0.5238095228095239,
+   "max_gap_random": 0.5235167687591666,
+   "max_gap_hillclimb": 0.5238052719521774,
+   "max_ratio_viol_random": 0.0,
+   "max_ratio_viol_hillclimb": 0.0,
+   "n_vectors": 3040
+  },
+  {
+   "N": 2,
+   "sharp_sup": 0.7058823529411765,
+   "argmax_m": 1,
+   "a_star": 0.6470588235294118,
+   "gap_bin_at_a*+": 0.7058823509411765,
+   "max_gap_random": 0.6969419668557317,
+   "max_gap_hillclimb": 0.7058091827615556,
+   "max_ratio_viol_random": 0.0,
+   "max_ratio_viol_hillclimb": 0.0,
+   "n_vectors": 3040
+  },
+  {
+   "N": 3,
+   "sharp_sup": 0.7959183673469388,
+   "argmax_m": 2,
+   "a_star": 0.7346938775510204,
+   "gap_bin_at_a*+": 0.7959183643469387,
+   "max_gap_random": 0.7903302765235427,
+   "max_gap_hillclimb": 0.7956056084289553,
+   "max_ratio_viol_random": 0.0,
+   "max_ratio_viol_hillclimb": 0.0,
+   "n_vectors": 3040
+  },
+  {
+   "N": 4,
+   "sharp_sup": 0.8484848484848485,
+   "argmax_m": 3,
+   "a_star": 0.7878787878787878,
+   "gap_bin_at_a*+": 0.8484848444848487,
+   "max_gap_random": 0.8057107425772303,
+   "max_gap_hillclimb": 0.7955388750902066,
+   "max_ratio_viol_random": 0.0,
+   "max_ratio_viol_hillclimb": 0.0,
+   "n_vectors": 3040
+  },
+  {
+   "N": 5,
+   "sharp_sup": 0.8823529411764706,
+   "argmax_m": 4,
+   "a_star": 0.8235294117647058,
+   "gap_bin_at_a*+": 0.8823529361764706,
+   "max_gap_random": 0.8050613446958392,
+   "max_gap_hillclimb": 0.8803002124002841,
+   "max_ratio_viol_random": 0.0,
+   "max_ratio_viol_hillclimb": 0.0,
+   "n_vectors": 3040
+  },
+  {
+   "N": 6,
+   "sharp_sup": 0.9056603773584906,
+   "argmax_m": 5,
+   "a_star": 0.8490566037735849,
+   "gap_bin_at_a*+": 0.9056603713584908,
+   "max_gap_random": 0.8347477742354723,
+   "max_gap_hillclimb": 0.8812428556245093,
+   "max_ratio_viol_random": 0.0,
+   "max_ratio_viol_hillclimb": 0.0,
+   "n_vectors": 3040
+  },
+  {
+   "N": 7,
+   "sharp_sup": 0.9224806201550388,
+   "argmax_m": 6,
+   "a_star": 0.8682170542635659,
+   "gap_bin_at_a*+": 0.9224806131550389,
+   "max_gap_random": 0.8445784123884614,
+   "max_gap_hillclimb": 0.9209912875217778,
+   "max_ratio_viol_random": 0.0,
+   "max_ratio_viol_hillclimb": 0.0,
+   "n_vectors": 3040
+  },
+  {
+   "N": 8,
+   "sharp_sup": 0.935064935064935,
+   "argmax_m": 7,
+   "a_star": 0.8831168831168831,
+   "gap_bin_at_a*+": 0.9350649270649356,
+   "max_gap_random": 0.8490333462070874,
+   "max_gap_hillclimb": 0.8796605844028482,
+   "max_ratio_viol_random": 0.0,
+   "max_ratio_viol_hillclimb": 0.0,
+   "n_vectors": 3040
+  },
+  {
+   "N": 9,
+   "sharp_sup": 0.9447513812154698,
+   "argmax_m": 8,
+   "a_star": 0.8950276243093922,
+   "gap_bin_at_a*+": 0.944751372215471,
+   "max_gap_random": 0.8468505138476337,
+   "max_gap_hillclimb": 0.899162161789608,
+   "max_ratio_viol_random": 0.0,
+   "max_ratio_viol_hillclimb": 0.0,
+   "n_vectors": 3040
+  },
+  {
+   "N": 10,
+   "sharp_sup": 0.9523809523809523,
+   "argmax_m": 9,
+   "a_star": 0.9047619047619048,
+   "gap_bin_at_a*+": 0.9523809423809517,
+   "max_gap_random": 0.8762499519919853,
+   "max_gap_hillclimb": 0.8776225978134065,
+   "max_ratio_viol_random": 0.0,
+   "max_ratio_viol_hillclimb": 0.0,
+   "n_vectors": 3040
+  },
+  {
+   "N": 11,
+   "sharp_sup": 0.9585062240663901,
+   "argmax_m": 10,
+   "a_star": 0.9128630705394191,
+   "gap_bin_at_a*+": 0.9585062130663893,
+   "max_gap_random": 0.8294322674080128,
+   "max_gap_hillclimb": 0.8678440993499468,
+   "max_ratio_viol_random": 0.0,
+   "max_ratio_viol_hillclimb": 0.0,
+   "n_vectors": 3040
+  },
+  {
+   "N": 12,
+   "sharp_sup": 0.9635036496350364,
+   "argmax_m": 11,
+   "a_star": 0.9197080291970803,
+   "gap_bin_at_a*+": 0.9635036376350374,
+   "max_gap_random": 0.8442839222646956,
+   "max_gap_hillclimb": 0.891374021102604,
+   "max_ratio_viol_random": 0.0,
+   "max_ratio_viol_hillclimb": 0.0,
+   "n_vectors": 3040
+  },
+  {
+   "N": 13,
+   "sharp_sup": 0.9676375404530744,
+   "argmax_m": 12,
+   "a_star": 0.9255663430420712,
+   "gap_bin_at_a*+": 0.9676375274530749,
+   "max_gap_random": 0.8952677593632625,
+   "max_gap_hillclimb": 0.9248497689551787,
+   "max_ratio_viol_random": 0.0,
+   "max_ratio_viol_hillclimb": 0.0,
+   "n_vectors": 3040
+  }
+ ]
+}

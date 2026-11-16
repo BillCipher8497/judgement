@@ -1,0 +1,553 @@
+{
+ "S": {
+  "values_by_pos": [
+   7.565827869609382,
+   9.242065133745806,
+   9.390752916551236,
+   4.02326976944624
+  ],
+  "values_exact": [
+   "1638607/216580",
+   "30024697/3248700",
+   "30507739/3248700",
+   "3734399/928200"
+  ],
+  "hit_rate_by_pos": [
+   0.7409345276572167,
+   0.9072324314341121,
+   0.9226558315633946,
+   0.3964611998645612
+  ],
+  "table_value": 30.221915689352663,
+  "P(sum_bids=0)": 0.43588235294117644,
+  "P(sum_bids>=2)": 0.5641176470588235,
+  "strategy": {
+   "0": {
+    "-": {
+     "bid1": {
+      "S": "456789TJQKA"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 1.0,
+     "max_P_win": 1.0
+    }
+   },
+   "1": {
+    "0": {
+     "bid1": {
+      "S": "23456789TJQKA"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.7884615384615384,
+     "max_P_win": 1.0
+    },
+    "1": {
+     "bid1": {
+      "S": "TJQKA"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.21153846153846154,
+     "max_P_win": 1.0
+    }
+   },
+   "2": {
+    "00": {
+     "bid1": {
+      "S": "23456789TJQKA"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.5882352941176471,
+     "max_P_win": 1.0
+    },
+    "10": {
+     "bid1": {
+      "S": "TJQKA"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.192684766214178,
+     "max_P_win": 1.0
+    },
+    "01": {
+     "bid1": {
+      "S": "9TJQKA"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.2002262443438914,
+     "max_P_win": 1.0
+    },
+    "11": {
+     "bid1": {
+      "S": "KA"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.01885369532428356,
+     "max_P_win": 1.0
+    }
+   },
+   "3": {
+    "000": {
+     "bid1": "none",
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.43588235294117644,
+     "max_P_win": 1.0
+    },
+    "100": {
+     "bid1": {
+      "S": "23456789TJQKA",
+      "H": "23456789TJQKA",
+      "D": "23456789TJQKA",
+      "C": "23456789TJQKA"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.17518853695324282,
+     "max_P_win": 1.0
+    },
+    "010": {
+     "bid1": {
+      "S": "23456789TJQKA",
+      "H": "23456789TJQKA",
+      "D": "23456789TJQKA",
+      "C": "23456789TJQKA"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.17805429864253394,
+     "max_P_win": 1.0
+    },
+    "110": {
+     "bid1": {
+      "S": "KA"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.018310708898944192,
+     "max_P_win": 1.0
+    },
+    "001": {
+     "bid1": {
+      "S": "23456789TJQKA",
+      "H": "23456789TJQKA",
+      "D": "23456789TJQKA",
+      "C": "23456789TJQKA"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.15235294117647058,
+     "max_P_win": 1.0
+    },
+    "101": {
+     "bid1": {
+      "S": "KA"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.017496229260935144,
+     "max_P_win": 1.0
+    },
+    "011": {
+     "bid1": {
+      "S": "QKA"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.022171945701357467,
+     "max_P_win": 1.0
+    },
+    "111": {
+     "bid1": {
+      "S": "A"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.0005429864253393666,
+     "max_P_win": 1.0
+    }
+   }
+  },
+  "dealer_hook_cost_exact": 5.477972419737125
+ },
+ "S_nohook": {
+  "values_by_pos": [
+   7.565827869609382,
+   9.242065133745806,
+   9.390752916551236,
+   9.501242189183365
+  ],
+  "values_exact": [
+   "1638607/216580",
+   "30024697/3248700",
+   "30507739/3248700",
+   "8819053/928200"
+  ],
+  "hit_rate_by_pos": [
+   0.7409345276572167,
+   0.9072324314341121,
+   0.9226558315633946,
+   0.9337736633114785
+  ],
+  "table_value": 35.69988810908979,
+  "P(sum_bids=0)": 0.3206962785114046,
+  "P(sum_bids>=2)": 0.12131467971804107,
+  "strategy": {
+   "0": {
+    "-": {
+     "bid1": {
+      "S": "456789TJQKA"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 1.0,
+     "max_P_win": 1.0
+    }
+   },
+   "1": {
+    "0": {
+     "bid1": {
+      "S": "23456789TJQKA"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.7884615384615384,
+     "max_P_win": 1.0
+    },
+    "1": {
+     "bid1": {
+      "S": "TJQKA"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.21153846153846154,
+     "max_P_win": 1.0
+    }
+   },
+   "2": {
+    "00": {
+     "bid1": {
+      "S": "23456789TJQKA"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.5882352941176471,
+     "max_P_win": 1.0
+    },
+    "10": {
+     "bid1": {
+      "S": "TJQKA"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.192684766214178,
+     "max_P_win": 1.0
+    },
+    "01": {
+     "bid1": {
+      "S": "9TJQKA"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.2002262443438914,
+     "max_P_win": 1.0
+    },
+    "11": {
+     "bid1": {
+      "S": "KA"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.01885369532428356,
+     "max_P_win": 1.0
+    }
+   },
+   "3": {
+    "000": {
+     "bid1": {
+      "S": "23456789TJQKA"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.43588235294117644,
+     "max_P_win": 1.0
+    },
+    "100": {
+     "bid1": {
+      "S": "9TJQKA"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.17518853695324282,
+     "max_P_win": 1.0
+    },
+    "010": {
+     "bid1": {
+      "S": "89TJQKA"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.17805429864253394,
+     "max_P_win": 1.0
+    },
+    "110": {
+     "bid1": {
+      "S": "KA"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.018310708898944192,
+     "max_P_win": 1.0
+    },
+    "001": {
+     "bid1": {
+      "S": "89TJQKA"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.15235294117647058,
+     "max_P_win": 1.0
+    },
+    "101": {
+     "bid1": {
+      "S": "KA"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.017496229260935144,
+     "max_P_win": 1.0
+    },
+    "011": {
+     "bid1": {
+      "S": "QKA"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.022171945701357467,
+     "max_P_win": 1.0
+    },
+    "111": {
+     "bid1": {
+      "S": "A"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.0005429864253393666,
+     "max_P_win": 1.0
+    }
+   }
+  }
+ },
+ "NT": {
+  "values_by_pos": [
+   7.7211746236956325,
+   8.987274909963986,
+   8.987274909963986,
+   2.06730076646043
+  ],
+  "values_exact": [
+   "418063/54145",
+   "37432/4165",
+   "37432/4165",
+   "111934/54145"
+  ],
+  "hit_rate_by_pos": [
+   0.7095244251546773,
+   0.8987274909963986,
+   0.8987274909963986,
+   0.19938929417921014
+  ],
+  "table_value": 27.763025210084034,
+  "P(sum_bids=0)": 0.15384615384615385,
+  "P(sum_bids>=2)": 0.8461538461538461,
+  "strategy": {
+   "0": {
+    "-": {
+     "bid1": {
+      "S": "456789TJQKA",
+      "H": "456789TJQKA",
+      "D": "456789TJQKA",
+      "C": "456789TJQKA"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 1.0,
+     "max_P_win": 1.0
+    }
+   },
+   "1": {
+    "0": {
+     "bid1": "none",
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.15384615384615385,
+     "max_P_win": 0.25
+    },
+    "1": {
+     "bid1": "none",
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.8461538461538461,
+     "max_P_win": 0.23255813953488372
+    }
+   },
+   "2": {
+    "00": {
+     "bid1": "none",
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.15384615384615385,
+     "max_P_win": 0.25
+    },
+    "10": {
+     "bid1": "none",
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.8461538461538461,
+     "max_P_win": 0.23255813953488372
+    }
+   },
+   "3": {
+    "000": {
+     "bid1": "none",
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.15384615384615385,
+     "max_P_win": 0.25
+    },
+    "100": {
+     "bid1": {
+      "S": "23456789TJQKA",
+      "H": "23456789TJQKA",
+      "D": "23456789TJQKA",
+      "C": "23456789TJQKA"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.8461538461538461,
+     "max_P_win": 0.23255813953488372
+    }
+   }
+  },
+  "dealer_hook_cost_exact": 6.9199741435035556
+ },
+ "NT_nohook": {
+  "values_by_pos": [
+   7.7211746236956325,
+   8.987274909963986,
+   8.987274909963986,
+   8.987274909963986
+  ],
+  "values_exact": [
+   "418063/54145",
+   "37432/4165",
+   "37432/4165",
+   "37432/4165"
+  ],
+  "hit_rate_by_pos": [
+   0.7095244251546773,
+   0.8987274909963986,
+   0.8987274909963986,
+   0.8987274909963986
+  ],
+  "table_value": 34.68299935358759,
+  "P(sum_bids=0)": 0.15384615384615385,
+  "P(sum_bids>=2)": 0.0,
+  "strategy": {
+   "0": {
+    "-": {
+     "bid1": {
+      "S": "456789TJQKA",
+      "H": "456789TJQKA",
+      "D": "456789TJQKA",
+      "C": "456789TJQKA"
+     },
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 1.0,
+     "max_P_win": 1.0
+    }
+   },
+   "1": {
+    "0": {
+     "bid1": "none",
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.15384615384615385,
+     "max_P_win": 0.25
+    },
+    "1": {
+     "bid1": "none",
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.8461538461538461,
+     "max_P_win": 0.23255813953488372
+    }
+   },
+   "2": {
+    "00": {
+     "bid1": "none",
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.15384615384615385,
+     "max_P_win": 0.25
+    },
+    "10": {
+     "bid1": "none",
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.8461538461538461,
+     "max_P_win": 0.23255813953488372
+    }
+   },
+   "3": {
+    "000": {
+     "bid1": "none",
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.15384615384615385,
+     "max_P_win": 0.25
+    },
+    "100": {
+     "bid1": "none",
+     "monotone_in_rank": true,
+     "ties": 0,
+     "P(hist)": 0.8461538461538461,
+     "max_P_win": 0.23255813953488372
+    }
+   }
+  }
+ },
+ "leader_closed_form": {
+  "2": 0.43884753901560625,
+  "3": 0.4744297719087635,
+  "4": 0.5118847539015606,
+  "5": 0.5512605042016807,
+  "6": 0.5926050420168067,
+  "7": 0.6359663865546219,
+  "8": 0.6813925570228091,
+  "9": 0.7289315726290516,
+  "T": 0.7786314525810324,
+  "J": 0.8305402160864346,
+  "Q": 0.8847058823529412,
+  "K": 0.9411764705882353,
+  "A": 1.0
+ },
+ "leader_offsuit_trump_ace": 0.40509003601440574,
+ "threshold": 0.47619047619047616,
+ "phase2_compare": {
+  "S": {
+   "max_abs_value_diff": 0.0,
+   "strategy_match": true
+  },
+  "NT": {
+   "max_abs_value_diff": 0.0,
+   "strategy_match": true
+  }
+ }
+}

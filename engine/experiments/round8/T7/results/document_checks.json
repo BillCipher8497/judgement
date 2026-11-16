@@ -1,0 +1,11 @@
+{
+  "source_hashes_checked": 9,
+  "both_AGENTS_identical": true,
+  "evidence_hash_and_top_pool_numbers_match": true,
+  "final_suite_log": "256 passed, 1 optional OpenSpiel skip",
+  "output_sha256": {
+    "engine\\paper\\EVIDENCE.md": "0e2ee998a9bfafbfcc0aa4c9c42a22672f47579af9921ff62bbfc3d14723f476",
+    "AGENTS.md": "e9fe042a75381ce5b19153ec5b574d1797ddfb8e515391478575fbb7078cc65e",
+    "engine\\AGENTS.md": "e9fe042a75381ce5b19153ec5b574d1797ddfb8e515391478575fbb7078cc65e"
+  }
+}

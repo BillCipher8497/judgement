@@ -1,0 +1,6 @@
+engine_snapshot.zip
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.hypothesis/
+.venv/

@@ -1,0 +1,34 @@
+experiments/round5_bots STATUS (append-only checkpoints)
+23:12 SETUP. judgement/policies/hybrid_rb.py: HybridRBPolicy (subclass of HybridBIPolicy, same play path).
+  Per-opponent posterior over bidder types {model (ModelBidder argmax, eps .02), noisy p in {.1,.25,.5} (round4 NoisyBidder
+  semantics, exact), honour (vectorised GreedyPolicy.bid, exact), unknown (uniform legal)}; prior unknown .5, others .1 each.
+  Update: after each round the finished round's InfoState (kept by reference; all cards public) gives every opp's bid-time hand
+  -> exact Bayes update pi_j(t) *= P_t(b_j|H_j). World weight = prod_j sum_t pi_j(t) P_t(b_j|h_j u played_j).
+  ESS guard: if ESS < 4 after M=512 proposals, temper log-weights by largest beta in [0,1] restoring ESS>=4.
+  B2 ParticleWorlds: per-round pool of bid-time hands; exact rejection filter (played cards, voids) + top-up proposals until
+  ESS>=K or 512 new; pool cap 4096; same guard. hybrid_bipf = BI likelihood (posterior pinned to model, no guard) + pool.
+  agents.py (hybrid_rb[:k,c,eps,pf,u,essmin,m,fix,learn], hybrid_bipf; POOLS hyb/noisy/honour/mix), run.py (round4 seed scheme;
+  pool by name; mix = seats after challenger get [Hybrid, noisy, honour] rotated by g//4), queue.sh (ONE process), jobs.txt.
+  CRN check: plain Hybrid on noisy pool g0,1 reproduces round4 f_g1a_plain_0 totals exactly. RB ~1.9 s/game.
+  tests/test_round5_rb.py 7 pass (honour vectorisation == GreedyPolicy on 300 random hands; model/honour likelihood hit on real
+  bids; noisy probs normalised; posterior concentrates; temper; legal games; particle worlds consistent with public record).
+  Queue: B1 RB on hyb(400M)/noisy(500M)/honour(500M) g0..399 (pair with existing r3/r4 plain+BI); mix pool (700M) plain/BI/RB
+  g0..399; then B2 hybrid_rb pf=1 and hybrid_bipf on hyb pool g0..399.  Interleaved 100-game chunks, cut 03:10.
+23:20 queue running ~3 min/100-game job (1.8-1.9 s/game). Appended 26 extension jobs: mix RB learn=0 ablation g0..399; noisy/honour RB g400..499; mix plain/BI/RB g400..799; hyb RB/RB+PF/BI+PF g400..799.
+23:41 interim (n=200 hyb/noisy/honour, n=100 mix; analyze.py -> results/r5.md): RB−Hybrid hyb +6.0±3.7, noisy +3.7±3.7, honour +1.5±3.2, mix +5.7±5.5; RB−BI honour +7.8±3.6. Posterior mass on true type after round 8: model .65 (rest mostly noisy0.1), noisy .94, honour 1.00. RB ESS<4 0% after guard (raw 0.2-1.3%), M cap 4-14% (BI 17-21%).
+00:20 B1 main DONE (n=400 per pool; r5.md). Paired RB−Hybrid / RB−BI pts/game: hyb +5.38±2.44 / +0.16±2.28; noisy +2.63±2.55 / +1.41±2.54; honour +2.73±2.35 / +7.70±2.41; mix +3.19±2.62 / +2.28±2.37. B2 + extensions running.
+00:36 BUG in B2 ParticleWorlds: round key used id(InfoState) -> id reuse across rounds with same n resurrected stale particles (12 'hands must be disjoint' crashes in b2 jobs). Fixed (key = InfoState object), all b2 results deleted (possibly tainted), b2 g0..399 re-appended at end of queue; b2 g400..799 extension jobs already use fixed code. Regression test added.
+01:05 extensions: mix n=600: RB−Hybrid +3.74±2.15, RB−BI +2.46±2.03, ΔP(win) RB−Hybrid +0.060±0.043. No-learning ablation (prior mixture fixed, n=400): RB(no-learn)−Hybrid +0.99±2.59; RB−RB(no-learn) +2.20±2.34.
+02:23 QUEUE DONE, ALL SIMS STOPPED. 12 b2 crashes all from the pre-fix code (00:18-00:30); none after. FINAL (results/r5.md/json):
+  B1 paired Δ pts/game (95% CI), Hybrid-RB − Hybrid / − Hybrid-BI:
+    3xHybrid model bids (400M, n=800): +6.51±1.81 / +1.04±1.66   (BI − Hybrid same games +5.47±1.77)
+    3x noisy (500M, n=500):            +2.45±2.28 / +0.80±2.27   (BI − Hybrid +1.65±2.25)
+    3x honour (500M, n=500):           +2.72±2.14 / +6.71±2.20   (BI − Hybrid −3.99±2.16)
+    mixed 1-of-each (700M, n=800):     +3.58±1.83 / +2.13±1.76   (BI − Hybrid +1.44±1.78); ΔP(win) RB−Hybrid +0.066±0.038
+    no-learning ablation (mix, n=400): RB(prior mixture fixed) − Hybrid +0.99±2.59; RB − RB(no-learn) +2.20±2.34
+  Posterior mass on true type after round 3 / 8 / 24: honour .96/1.00/1.00, noisy (sum of noisy types) .81/.95/1.00,
+    model .43/.65/.92 (model+noisy0.1 .85/.93/1.00: a perfect ModelBidder is only slowly told apart from noisy0.1).
+  ESS: RB ESS<4 0.000 in all pools (guard tempered 0.2-1.3% of decisions); BI ESS<4 2-4%; M=512 cap RB 4-14% vs BI 17-21%.
+  B2 (3xHybrid, n=800, paired): RB+PF − RB −0.09±1.56; BI+PF − BI +0.11±1.58; s/game unchanged (1.9 vs 1.9).
+    Survivors: median 0, mean 10-11, >=K in 9% of decisions -> exact rejection filtering degenerates within ~1 trick.
+  pytest -q -p no:cacheprovider: 247 passed (02:25).

@@ -1,0 +1,24 @@
+experiments/round4 STATUS (append-only checkpoints)
+04:26 SETUP. agents.py: hyb_noisy (Hybrid k16c5 play, ModelBidder bid moved ±1 w.p. 0.3, random sign, hook/range-illegal ->
+  other sign -> else unchanged; own rng from agent seed so CRN holds), hyb_honour (Hybrid play, GreedyPolicy honour-count bid);
+  other kinds via round3_play/agents.py. run.py = round3 runner (same seeding scheme). driver.py: 2 procs, interleaved chunks.
+  G1 base 500,000,000: pools a=3x hyb_noisy, b=3x hyb_honour; arms ref(pool), plain Hybrid k16c5, BI k16c5 eps.02, BI eps.1;
+    4 chunks x 125 games (target n=500 per arm).  ~2.6 s/game.
+  G2 base 600,000,000: pool 3x Hybrid-BI k32c6; arms ref, plain Hybrid k32c6, Hybrid-BI k32c7 (chosen over oracle bidder:
+    phase4 oracle bidder gained ~0; deeper search gained +5). ~16 s/game (measured, 2 procs) -> 200/arm unaffordable after G1;
+    G2 runs in 20-game interleaved chunks until 06:30 cut.  tests/test_round4_agents.py (3 pass). analyze.py -> results/r4.md.
+04:47 G1 chunk 0 done (n=125/arm, both pools). Interim: noisy pool BI−plain +1.6±4.0, eps.1−plain −2.8±4.3;
+  honour pool BI−plain −8.1±4.6, eps.1−plain −4.4±4.6. Gains vs pool large (+15..+43) mainly because the pools bid badly. Continuing.
+05:16 G1 n=375 (noisy) / 250-281 (honour): noisy BI−plain +0.97±2.61, eps.1−plain +0.69±2.51; honour BI−plain −4.99±3.00,
+  eps.1−plain −2.42±3.33 (cf. exact-model pool 3xHybrid: BI−plain +5.31±1.59, n=1000, r1).
+05:41 G1 DONE (n=500/arm, both pools; results/r4.md/json; base 500M, CRN, seat g%4). Paired BI − plain Hybrid (k16c5):
+  noisy-bid pool:  BI eps.02 +1.65±2.25 pts/game, ΔP(win) +0.010±0.049; eps.1 +0.67±2.16, +0.022±0.049
+  honour-bid pool: BI eps.02 −3.99±2.16, −0.012±0.048;               eps.1 −2.49±2.26, −0.018±0.048
+  (exact-model 3xHybrid pool, r1: +5.31±1.59, n=1000).  eps.1 − eps.02: noisy −0.99±1.97, honour +1.51±1.90.
+  Gains vs pool: noisy +18.0 (plain) / +19.7 (BI) / +18.7 (eps.1); honour +38.4 / +34.4 / +35.9 (±~3) - pools' bad bids dominate.
+  Sampler: median ESS 19-20 (K=16) in all four arms; ESS<4 3.8-4.3% (eps.02) vs 1.6-2.0% (eps.1). G2 running.
+06:31 ALL SIMS STOPPED (06:30 cut). G2 (base 600M, pool 3x Hybrid-BI k32c6, CRN, seat g%4; ~13-17 s/game, scaled to n≈142):
+  plain Hybrid k32c6 vs pool −5.86±4.10 pts/game, ΔP(win) −0.126±0.072 (n=143)
+  Hybrid-BI k32c7 vs pool   +5.82±4.04, ΔP(win) +0.021±0.084 (n=142)  -> exploitability lower bound ~+5.8 pts/game (95% LB +1.8)
+  c7 − plain k32c6 (paired) +11.79±4.20, +0.141±0.080.  c7 sampler: median ESS 33, ESS<4 4.2%, M cap 46%.
+  pytest -q -p no:cacheprovider: 234 passed (05:42).

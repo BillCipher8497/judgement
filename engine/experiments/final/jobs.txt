@@ -1,0 +1,8 @@
+ta ta 0 10000 ta_ta 71000000
+ta ta_plus 0 10000 ta_tap 71000000
+ta ta_plus3 0 10000 ta_tap3 71000000
+ta ta_plus3:ll=2 0 10000 ta_tap3s 71000000
+ta hybrid3:k=16,c=5 0 1500 ta_hyb3 71000000
+ta hybrid:k=16,c=5 1000 500 ta_hyb_ext 71000000
+ta hyb_oracle:k=16,c=5,K=24,nmax=13 500 1000 ta_hybo_ext 71000000
+ta hybrid:k=32,c=5 400 600 ta_k32_ext 71000000

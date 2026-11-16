@@ -1,0 +1,205 @@
+{
+  "trump": 0,
+  "n_ordered_deals": 2520,
+  "nodes": 2048472,
+  "fixed": "TA hero; all bids myopic fixed; optimize spoilers play only",
+  "PI_min_hero_score": 8.978571428571424,
+  "baseline_TA_hero_score": 9.602380952380928,
+  "heuristic_independent_BR_to_TA": {
+    "hero_score": 8.978571428571406,
+    "individual_spoiler_BR_gains": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "sum_unilateral_gains": 0.0,
+    "joint_gain_lower_bound": 0.0,
+    "joint_gain_upper_bound_PI": 0.0,
+    "qualification": "Individual residual is not a joint coalition BR gap; PI upper bound may be loose."
+  },
+  "uncertainty": "Exact full-deck enumeration, no sampling CI; no random seeds.",
+  "checkpoints": [
+    {
+      "iteration": 1,
+      "hero_score": 9.34642857142857,
+      "individual_spoiler_BR_gains": [
+        0.12261904761905207,
+        0.12261904761905207,
+        0.12261904761905207
+      ],
+      "sum_unilateral_gains": 0.3678571428571562,
+      "joint_gain_lower_bound": 0.12261904761905207,
+      "joint_gain_upper_bound_PI": 0.36785714285714555,
+      "qualification": "Individual residual is not a joint coalition BR gap; PI upper bound may be loose.",
+      "current_after_update": {
+        "hero_score": 8.978571428571406,
+        "individual_spoiler_BR_gains": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sum_unilateral_gains": 0.0,
+        "joint_gain_lower_bound": 0.0,
+        "joint_gain_upper_bound_PI": 0.0,
+        "qualification": "Individual residual is not a joint coalition BR gap; PI upper bound may be loose."
+      },
+      "profile_file": "trump_0_t1_profile.npz"
+    },
+    {
+      "iteration": 10,
+      "hero_score": 8.985259740259712,
+      "individual_spoiler_BR_gains": [
+        0.0022294372294116016,
+        0.0022294372294116016,
+        0.0022294372294116016
+      ],
+      "sum_unilateral_gains": 0.006688311688234805,
+      "joint_gain_lower_bound": 0.0022294372294116016,
+      "joint_gain_upper_bound_PI": 0.0066883116882880955,
+      "qualification": "Individual residual is not a joint coalition BR gap; PI upper bound may be loose.",
+      "current_after_update": {
+        "hero_score": 8.978571428571406,
+        "individual_spoiler_BR_gains": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sum_unilateral_gains": 0.0,
+        "joint_gain_lower_bound": 0.0,
+        "joint_gain_upper_bound_PI": 0.0,
+        "qualification": "Individual residual is not a joint coalition BR gap; PI upper bound may be loose."
+      },
+      "profile_file": "trump_0_t10_profile.npz"
+    },
+    {
+      "iteration": 50,
+      "hero_score": 8.97885994397756,
+      "individual_spoiler_BR_gains": [
+        9.617180202603492e-05,
+        9.617180202603492e-05,
+        9.617180202603492e-05
+      ],
+      "sum_unilateral_gains": 0.0002885154060781048,
+      "joint_gain_lower_bound": 9.617180202603492e-05,
+      "joint_gain_upper_bound_PI": 0.0002885154061349482,
+      "qualification": "Individual residual is not a joint coalition BR gap; PI upper bound may be loose.",
+      "current_after_update": {
+        "hero_score": 8.978571428571406,
+        "individual_spoiler_BR_gains": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sum_unilateral_gains": 0.0,
+        "joint_gain_lower_bound": 0.0,
+        "joint_gain_upper_bound_PI": 0.0,
+        "qualification": "Individual residual is not a joint coalition BR gap; PI upper bound may be loose."
+      },
+      "profile_file": "trump_0_t50_profile.npz"
+    },
+    {
+      "iteration": 100,
+      "hero_score": 8.97864427157,
+      "individual_spoiler_BR_gains": [
+        2.4280999516790303e-05,
+        2.428099951856666e-05,
+        2.4280999516790303e-05
+      ],
+      "sum_unilateral_gains": 7.284299855214726e-05,
+      "joint_gain_lower_bound": 2.428099951856666e-05,
+      "joint_gain_upper_bound_PI": 7.28429985752399e-05,
+      "qualification": "Individual residual is not a joint coalition BR gap; PI upper bound may be loose.",
+      "current_after_update": {
+        "hero_score": 8.978571428571406,
+        "individual_spoiler_BR_gains": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sum_unilateral_gains": 0.0,
+        "joint_gain_lower_bound": 0.0,
+        "joint_gain_upper_bound_PI": 0.0,
+        "qualification": "Individual residual is not a joint coalition BR gap; PI upper bound may be loose."
+      },
+      "profile_file": "trump_0_t100_profile.npz"
+    },
+    {
+      "iteration": 250,
+      "hero_score": 8.978583153101868,
+      "individual_spoiler_BR_gains": [
+        3.908176809730435e-06,
+        3.908176809730435e-06,
+        3.908176809730435e-06
+      ],
+      "sum_unilateral_gains": 1.1724530429191304e-05,
+      "joint_gain_lower_bound": 3.908176809730435e-06,
+      "joint_gain_upper_bound_PI": 1.1724530443402159e-05,
+      "qualification": "Individual residual is not a joint coalition BR gap; PI upper bound may be loose.",
+      "current_after_update": {
+        "hero_score": 8.978571428571406,
+        "individual_spoiler_BR_gains": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sum_unilateral_gains": 0.0,
+        "joint_gain_lower_bound": 0.0,
+        "joint_gain_upper_bound_PI": 0.0,
+        "qualification": "Individual residual is not a joint coalition BR gap; PI upper bound may be loose."
+      },
+      "profile_file": "trump_0_t250_profile.npz"
+    },
+    {
+      "iteration": 500,
+      "hero_score": 8.978574365554596,
+      "individual_spoiler_BR_gains": [
+        9.789943895555098e-07,
+        9.789943895555098e-07,
+        9.789943895555098e-07
+      ],
+      "sum_unilateral_gains": 2.9369831686665293e-06,
+      "joint_gain_lower_bound": 9.789943895555098e-07,
+      "joint_gain_upper_bound_PI": 2.936983172219243e-06,
+      "qualification": "Individual residual is not a joint coalition BR gap; PI upper bound may be loose.",
+      "current_after_update": {
+        "hero_score": 8.978571428571406,
+        "individual_spoiler_BR_gains": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sum_unilateral_gains": 0.0,
+        "joint_gain_lower_bound": 0.0,
+        "joint_gain_upper_bound_PI": 0.0,
+        "qualification": "Individual residual is not a joint coalition BR gap; PI upper bound may be loose."
+      },
+      "profile_file": "trump_0_t500_profile.npz"
+    },
+    {
+      "iteration": 1000,
+      "hero_score": 8.978572163550705,
+      "individual_spoiler_BR_gains": [
+        2.449930764925057e-07,
+        2.449930782688625e-07,
+        2.449930764925057e-07
+      ],
+      "sum_unilateral_gains": 7.349792312538739e-07,
+      "joint_gain_lower_bound": 2.449930782688625e-07,
+      "joint_gain_upper_bound_PI": 7.349792809918654e-07,
+      "qualification": "Individual residual is not a joint coalition BR gap; PI upper bound may be loose.",
+      "current_after_update": {
+        "hero_score": 8.978571428571406,
+        "individual_spoiler_BR_gains": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sum_unilateral_gains": 0.0,
+        "joint_gain_lower_bound": 0.0,
+        "joint_gain_upper_bound_PI": 0.0,
+        "qualification": "Individual residual is not a joint coalition BR gap; PI upper bound may be loose."
+      },
+      "profile_file": "trump_0_t1000_profile.npz"
+    }
+  ]
+}

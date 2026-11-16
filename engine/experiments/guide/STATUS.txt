@@ -1,0 +1,46 @@
+23:28 setup: human_guide.py (HumanBidder, HumanPlayPolicy, HumanView), s1_data.py -> results/s1_train.pkl (60k situations, seed 5001, U-oracle K=48 on first 3000), s1_test.pkl (40k, seed 5002, oracle first 3000). run.py/pair.py 1v3 runner seed-compatible with experiments/final (BASE 71M).
+23:29 S1 stepwise done: final {'tA': 3, 'tK': 3, 'tQ': 2, 'tlen_free': 1, 'tlen_w': 2, 'sA': 2, 'sK2': 0, 'sK1': 0, 'sQ3': 0, 'ruff': 0, 'nA': 2, 'nK2': 0, 'nQ3': 0, 'nlong': 0, 'small_n': 0, 'small_cut': 0, 'prior_cut': 99, 'hook_up': 0, 'round_up': 0}
+23:31 S1 forward selection done: final {'t_each': 2, 't_hon': 0, 't_guard': 1, 's_A': 1, 's_K2': 0, 's_K1': 0, 's_Q3': 0, 'short': 0, 't_sub': 99, 'n_A': 2, 'n_K2': 0, 'n_K1': 0, 'n_Q3': 0, 'n_long': 0, 'n_sub': 99, 'small_cut': 0, 'small_A': 2, 'small_K': 1, 'prior_cut': 99, 'hook_up': 0, 'round_up': 0}
+23:31 S1 forward selection done: final {'t_each': 2, 't_hon': 0, 't_guard': 1, 's_A': 1, 's_K2': 0, 's_K1': 0, 's_Q3': 0, 'short': 0, 't_sub': 99, 'n_A': 2, 'n_K2': 0, 'n_K1': 0, 'n_Q3': 0, 'n_long': 0, 'n_sub': 99, 'small_cut': 0, 'small_A': 2, 'small_K': 1, 'prior_cut': 99, 'hook_up': 0, 'round_up': 0}
+23:32 S1 backward elimination done: kept ['trump honours bonus', 'subtract per cards dealt', 'side kings']; final {'t_each': 2, 't_hon': 1, 't_guard': 0, 's_A': 1, 's_K2': 1, 's_K1': 1, 's_Q3': 0, 'short': 0, 't_sub': 5, 'n_A': 3, 'n_K2': 1, 'n_K1': 1, 'n_Q3': 0, 'n_long': 0, 'n_sub': 99, 'small_cut': 0, 'small_A': 1, 'small_K': 1, 'prior_cut': 99, 'hook_up': 0, 'round_up': 0}; test loss vs MB (0.396, 0.051148503962446835)
+23:32 S1 backward elimination done: kept ['trump honours bonus', 'subtract per cards dealt', 'side kings']; final {'t_each': 2, 't_hon': 1, 't_guard': 0, 's_A': 1, 's_K2': 1, 's_K1': 1, 's_Q3': 0, 'short': 0, 't_sub': 5, 'n_A': 3, 'n_K2': 1, 'n_K1': 1, 'n_Q3': 0, 'n_long': 0, 'n_sub': 99, 'small_cut': 0, 'small_A': 1, 'small_K': 1, 'prior_cut': 99, 'hook_up': 0, 'round_up': 0}; test loss vs MB (0.396, 0.051148503962446835)
+23:34 S1 backward elimination done: kept ['trump honours bonus', 'subtract per cards dealt', 'side kings']; final {'t_each': 2, 't_hon': 1, 't_guard': 0, 's_A': 1, 's_K2': 1, 's_K1': 1, 's_Q3': 0, 'short': 0, 't_sub': 5, 'n_A': 3, 'n_K2': 2, 'n_K1': 1, 'n_Q3': 0, 'n_long': 0, 'n_sub': 8, 'small_cut': 0, 'small_A': 0, 'small_K': 0, 'prior_k': 99, 'hook_up': 0, 'round_up': 0}; test loss vs MB (0.4002, 0.05125257002733385)
+23:35 S1 backward elimination done: kept ['trump honours bonus', 'subtract per cards dealt', 'side kings']; final {'t_each': 2, 't_hon': 1, 't_guard': 0, 's_A': 1, 's_K2': 1, 's_K1': 1, 's_Q3': 0, 'short': 0, 't_sub': 5, 'n_A': 2, 'n_K2': 2, 'n_K1': 0, 'n_Q3': 0, 'n_long': 0, 'n_sub': 99, 'small_cut': 0, 'small_A': 2, 'small_K': 1, 'prior_k': 99, 'hook_up': 0, 'round_up': 0}; test loss vs MB (0.417225, 0.051774936936459355)
+23:35 S1 final rule evaluated: results/s1_final.json, s1_table.txt; overall loss vs MB +0.308 +- 0.051/round, match MB 0.615, match oracle 0.568 (MB itself 0.638)
+23:36 S1 DONE (s1_fit.py, s1_back.py backward elimination, s1_final.py; results/s1_back.json, s1_final.json, s1_table.txt).
+  Data: 60k train (seed 5001) / 40k test (seed 5002) bidding situations, counterfactual true-deal playouts of every candidate bid
+  (later seats MB, all play TA+3). Final rule (half-trick points): trump 2, trump A/K/Q +1, side A 1, side K 1; NT: A 2, K 1;
+  trump rounds -1 per 4 cards dealt; bid = points/2 down; -1 per 4 tricks earlier bids exceed share; hooked: odd->up, even->down.
+  TEST: loss vs ModelBidder +0.338+-0.051 /round (trump +0.302, NT ~+0.48); match MB 0.615; match U-oracle 0.559 (MB 0.638).
+  Ceiling check: per-(n,NT) real-valued OLS on the same human features loses 0.31 (0.18 with prior bids): the feature set, not integer
+  rounding, is the limit. Lines < 0.1: side Q (0.03) dropped; earlier-bids line 0.098 as-is / 0.024 refit, kept as optional.
+23:56 S2 screens (screen.py, SCREEN seeds BASE 91M, 2000 games, 1 vs 3 TA, MB bidding + guide play; results/screen1-5.log), paired:
+  fixes: follow with a boss that beats the winner (+1.5), ruff with lowest beating trump (+1.2); shed any card (not only Q+) +1.5;
+  NT no-boss lead highest +0.8; remember J too (track=J) +0.3; Prop-L lead-highest-beaten-card only in the 13-card round +0.3
+  (in all rounds -6.1!); r_try, r_draw, win/shed margins neutral or worse -> off/simplest.
+  MB bid + guide play: +3.79+-1.07/game vs TA (TA+3 +8.37 on the same screen games).
+  Now regenerating S1 data with the HERO playing the guide (s1g_train/test.pkl) to refit the count for guide play.
+00:17 S1 backward elimination done: kept ['trump honours bonus', 'subtract per cards dealt']; final {'t_each': 2, 't_hon': 1, 't_guard': 0, 's_A': 1, 's_K2': 0, 's_K1': 0, 's_Q3': 0, 'short': 0, 't_sub': 6, 'n_A': 2, 'n_K2': 0, 'n_K1': 0, 'n_Q3': 0, 'n_long': 0, 'n_sub': 99, 'small_cut': 0, 'small_A': 2, 'small_K': 1, 'prior_k': 99, 'hook_up': 0, 'round_up': 0}; test loss vs MB (0.29715, 0.05345600936226463)
+00:17 S1 final rule evaluated (s1g): results/s1g_final.json, s1g_table.txt; overall loss vs MB +0.171 +- 0.052/round, match MB 0.615, match oracle 0.579 (MB itself 0.627)
+00:17 S1 refit with guide play for the hero (s1g_train/test.pkl, seeds 6001/6002, same design): backward elimination (results/s1g_back.json)
+  reproduces the same rule structure; strict 0.1 bar would also drop side kings (test value ~0.06) and earlier-bids (0.06-0.08) -> kept as
+  OPTIONAL lines in GUIDE (default includes them). Current GUIDE_BID on s1g TEST (results/s1g_final.json, s1g_table.txt):
+  loss vs MB +0.171+-0.052/round (trump +0.203, NT +0.044+-0.129; n=13 NT -0.60: MB overbids for a guide player); match MB 0.615,
+  match U-oracle 0.579 (MB 0.627). Launching S3 (s3_run.sh 6000 games/job, BASE 71M, sequential).
+00:46 S1 backward elimination done: kept ['trump honours bonus', 'subtract per cards dealt']; final {'t_each': 2, 't_hon': 1, 't_guard': 0, 's_A': 1, 's_K2': 0, 's_K1': 0, 's_Q3': 0, 'short': 0, 't_sub': 6, 'n_A': 2, 'n_K2': 0, 'n_K1': 0, 'n_Q3': 0, 'n_long': 0, 'n_sub': 99, 'low_w': 0, 's_Q': 0, 's_J': 0, 'small_cut': 0, 'small_A': 0, 'small_K': 0, 'prior_k': 99, 'hook_up': 0, 'round_up': 0}; test loss vs MB (0.29715, 0.05345600936226463)
+00:52 S1 final rule evaluated (s1): results/s1_final.json, s1_table.txt; overall loss vs MB +0.338 +- 0.051/round, match MB 0.615, match oracle 0.559 (MB itself 0.638)
+00:53 S3 DONE (s3_run.sh, 6000 games/job, BASE 71M games 0..5999, challenger seat g%4, CRN paired vs the all-pool table;
+  results/g_f_*.npz, s3_summary.txt/json, s3_ablation.txt/json). 1v3 TA: guide -1.27+-0.79 (P(win) .243), TA+3 +7.79+-0.55 (.337),
+  greedy -43.32+-0.85 (.019), gbid +0.60, gplay +3.98. 1v3 TA+3: guide -9.26+-0.75 (.177), TA -9.67+-0.54, greedy -54.52.
+  Guide keeps 0.823 [0.809,0.837] (pool TA) / 0.830 [0.816,0.844] (pool TA+3) of TA+3's edge over greedy (TA itself: 0.848 / 0.823).
+  Loss split (pool TA): bidding 5.24+-0.67/game under guide play, play 3.81+-0.49 under MB bids. Rule ablations in s3_ablation.txt.
+  Post-S3 checks: bid family + low cards/Q/J lines (s1g_back2.log) +0.02-0.03/round n.s. -> rule unchanged; NT play variants
+  (screen6.log) n.s. -> defaults unchanged (re-run of guide 300 games bit-identical to S3 file).
+00:53 Simplified defaults (n.s. lines dropped): NT kings (0.02/round), lead-highest-beaten in 13-card round (+0.15+-0.13/game), remember J (+0.09+-0.11) -> guide now remembers A,K,Q only. v1 S3 guide files moved to results/s3_v1/; re-running all guide jobs (s3_run2.log).
+01:13 found gbid/gplay S3 files were from v1 defaults -> moved to s3_v1/, re-running those 4 jobs (s3_run3.log).
+01:18 S3 v2 (final defaults) DONE incl. re-run gbid/gplay: 1v3 TA guide -2.01+-0.78 P(win) .235; gbid +0.07+-0.77; gplay +3.48+-0.61;
+  1v3 TA+3: guide -10.32+-0.75 (.171), gbid -8.25, gplay -4.60. Guide keeps 0.808 [0.794,0.822] (pool TA) / 0.811 [0.797,0.824]
+  (pool TA+3) of TA+3's edge over greedy. Loss split vs TA: bidding 5.50-7.72, play 2.08-4.31 /game (order-dependent).
+  All-guide table 155.33/player/game (TA 161.84, TA+3 166.37); 1 TA+3 vs 3 guide +12.49+-0.78, P(win) .375.
+  S4: GUIDE.txt written.
+01:19 FINAL: tests/test_guide_bid.py no longer leaves experiments/guide modules in sys.modules (it broke test_final_ta_plus3 via the shared name 'common'). pytest -q -p no:cacheprovider: 247 passed. No sims running.

@@ -1,0 +1,6 @@
+n=2 done 72s
+n=3 done 161s
+n=5 done 287s
+n=8 done 489s
+n=13 done 915s
+total 915.6209359169006

@@ -1,0 +1,18 @@
+[project]
+name = "judgement-engine"
+version = "0.1.0"
+description = "Phase 0 rules engine for the trick-taking card game Judgement (Oh Hell)"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+test = ["pytest>=7", "hypothesis>=6"]
+crossval = ["open_spiel>=1.4"]
+
+[tool.setuptools]
+packages = ["judgement", "judgement.policies"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-p no:cacheprovider"

@@ -1,0 +1,6 @@
+n=1 S: 200 deals 0.2s
+n=1 NT: 200 deals 0.2s
+n=2 S: 200 deals 3.6s
+n=2 NT: 200 deals 3.7s
+n=3 S: 200 deals 79.1s
+n=3 NT: 200 deals 89.8s

@@ -1,0 +1,14 @@
+1 pred 4.57±0.09 meas 5.41±0.11 P(f=b*) 0.554 gap|hit 8.25 sd 0.29
+2 pred 2.28±0.05 meas 2.84±0.08 P(f=b*) 0.428 gap|hit 5.33 sd 0.45
+3 pred 1.68±0.04 meas 1.85±0.08 P(f=b*) 0.399 gap|hit 4.21 sd 0.67
+4 pred 0.87±0.03 meas 1.15±0.07 P(f=b*) 0.294 gap|hit 2.95 sd 0.75
+5 pred 0.44±0.02 meas 0.70±0.07 P(f=b*) 0.264 gap|hit 1.66 sd 0.75
+6 pred 0.34±0.01 meas 0.51±0.07 P(f=b*) 0.257 gap|hit 1.33 sd 0.81
+7 pred 0.27±0.01 meas 0.42±0.06 P(f=b*) 0.243 gap|hit 1.11 sd 0.88
+8 pred 0.26±0.01 meas 0.39±0.06 P(f=b*) 0.238 gap|hit 1.08 sd 1.05
+9 pred 0.21±0.01 meas 0.35±0.06 P(f=b*) 0.215 gap|hit 0.97 sd 1.10
+10 pred 0.22±0.01 meas 0.34±0.07 P(f=b*) 0.241 gap|hit 0.91 sd 1.04
+11 pred 0.23±0.01 meas 0.36±0.07 P(f=b*) 0.251 gap|hit 0.93 sd 1.10
+12 pred 0.24±0.01 meas 0.32±0.07 P(f=b*) 0.277 gap|hit 0.88 sd 1.14
+13 pred 0.19±0.01 meas 0.27±0.06 P(f=b*) 0.239 gap|hit 0.80 sd 1.27
+[5000, 5000]

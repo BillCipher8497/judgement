@@ -1,0 +1,28 @@
+experiments/round6 STATUS (append-only checkpoints)
+02:30 SETUP. judgement/policies/hybrid_rb2.py: HybridRB2Policy (subclass of HybridRBPolicy, same play/sampler/guard).
+  Per-opponent mixture = RB types {model, noisy.1/.25/.5, honour} + continuous grid + unknown. Grid component (a,d,T):
+  P(b|H) = (1-eps) softmax_legal(-|b - (a*mu(H)+d)|/T) + eps/|legal|, mu(H) = model expected tricks at its own argmax bid;
+  a in {.8,.9,1,1.1}, d in -2..2 step .25, T in {.15,.3,.5,.8,1.2,2} (408 comps). Prior: unknown .3, grid .3 (uniform), RB
+  types .08 each. Exact Bayes on revealed hands after every round (RB update path).
+  fit_study.py (synthetic guide bids, 4000 bids): best grid comp (a=.9,d=-.25,T=.8) ll/bid -1.07 vs model -2.66, noisy.5 -1.40,
+  unknown -1.99, honour -3.47 (centre mu slightly better than integer argmax m: -1.07 vs -1.11).
+  experiments/round6: agents.py (hybrid_rb2, hyb_guide = HumanBidder + Hybrid k16c5 play; POOLS + guide, g2), run.py (round5
+  runner, dict post logs), queue.sh (C2), queue2.sh (shared job list, atomic claims; 2 workers).
+  CRN check: plain Hybrid mix pool g0,1 reproduces round5 b1m_plain totals exactly. RB2 ~2.6 s/game (RB 1.8) with 2 procs busy.
+  Running: worker B = C2 (g2 pool 3x hybrid_bi k32c6, base 600M, challenger hybrid_rb:k=32,c=7, g0..141 = round4 c7 games),
+  then joins C1; worker A = C1 jobs_c1.txt: guide pool (base 900M) plain/RB/RB2 g0..499, mix (700M) RB2 g0..799,
+  hyb (400M) RB2 g0..799, interleaved 100-game chunks. Queue deadline 06:05.
+02:32 tests/test_round6_rb2.py 3 pass (probs normalised; RB columns == hybrid_rb.BidderTypes; posterior -> continuous family
+  with a<1 for guide bids, -> model/noisy.1 for model bids; hyb_guide uses HumanBidder; legal short game, post_log dicts).
+  online_study.py (results/online_study.json, S=200 25-round sequences, seed 11): predictive log-lik per bid of a single
+  opponent's bid before each update, RB2 − RB: guide bidder rounds 1-8 +0.187±0.030, rounds 9-25 +0.212±0.028 nats/bid
+  (RB2 -1.06 vs RB -1.27 late); model bidder -0.025±0.0003 / -0.0014±0.0001 (cost of the wider prior). P(exact bid) late
+  .477 vs .477 for guide: the gain is calibration of the spread, not top-1 accuracy. analyze.py -> results/r6.md/json.
+03:16 C2 RB K32c7 g0..141 DONE (12.3-13 s/game). Paired: RB c7 − pool +4.29±4.86 (n=142); RB c7 − BI c7 −1.53±4.22;
+  RB c7 − plain k32c6 +10.26±4.77. Appended to jobs_c1.txt: crn_c7 (2-game CRN check), RB2 K32c7 g0..141, then extension
+  g142..541 in 20-game chunks of ref (BI k32c6), BI c7, RB c7 (round-robin) until the 06:05 queue cut.
+  C1 interim (n=247-300): (a) guide RB2−Hybrid +3.50±2.93, RB2−RB +0.93±2.83, RB−Hybrid +2.58±2.80; (b) mix RB2−Hybrid
+  +4.84±2.78, RB2−RB +1.21±2.67; (c) hyb RB2−Hybrid +7.65±3.05, RB2−RB +1.54±3.17. RB2 3.3-3.9 s/game.
+06:10 (orchestrator) Agent cut off by usage limit at ~03:40; queue workers restarted 04:01 and ran to the 06:05 cut. Final tables: results/r6.md.
+  C1: RB2 ≈ RB everywhere (guide +0.37±2.20, mix +0.29±1.66, model −0.49±1.66). vs guide-bidding Hybrid pool: RB2 − Hybrid +2.74±2.23, RB − Hybrid +2.37±2.28 (n=500).
+  C2 (pool 3x Hybrid-BI K32c6): RB K32c7 +3.39±2.72 (n=422); BI K32c7 +2.75±2.54 (n=423); RB2 K32c7 +6.56±4.34 (n=142). The earlier +5.82 (n=142) shrank with more games.

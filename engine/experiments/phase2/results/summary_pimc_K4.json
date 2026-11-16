@@ -1,0 +1,28 @@
+[
+ {
+  "n": 4,
+  "trump": "NT",
+  "deals": 300,
+  "PIMC seat among heur: \u0394score": "-0.54 \u00b1 0.22 (n=300)",
+  "\u0394hit": "-0.050 \u00b1 0.020 (n=300)",
+  "heur seat among PIMC: \u0394score": "+0.53 \u00b1 0.32 (n=300)",
+  "\u0394hit ": "+0.048 \u00b1 0.029 (n=300)",
+  "table all-heur": "23.30",
+  "table all-PIMC": "21.74",
+  "all-PIMC \u2212 all-heur (table)": "-1.55 \u00b1 1.23 (n=300)",
+  "PIMC s/decision (P cond)": "0.001"
+ },
+ {
+  "n": 4,
+  "trump": "S",
+  "deals": 300,
+  "PIMC seat among heur: \u0394score": "+0.12 \u00b1 0.21 (n=300)",
+  "\u0394hit": "+0.007 \u00b1 0.019 (n=300)",
+  "heur seat among PIMC: \u0394score": "-0.07 \u00b1 0.31 (n=300)",
+  "\u0394hit ": "-0.003 \u00b1 0.028 (n=300)",
+  "table all-heur": "24.48",
+  "table all-PIMC": "24.68",
+  "all-PIMC \u2212 all-heur (table)": "+0.19 \u00b1 1.06 (n=300)",
+  "PIMC s/decision (P cond)": "0.001"
+ }
+]

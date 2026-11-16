@@ -1,0 +1,14 @@
+s_ta_gplay ta gplay 2000 17.6
+s_ta_gplay_p.win_margin1 ta gplay:p.win_margin=1 2000 17.4
+s_ta_gplay_p.win_margin-1 ta gplay:p.win_margin=-1 2000 19.4
+s_ta_gplay_p.win_margin9 ta gplay:p.win_margin=9 2000 17.6
+s_ta_gplay_p.r_draw1 ta gplay:p.r_draw=1 2000 17.9
+s_ta_gplay_p.shed_margin-1 ta gplay:p.shed_margin=-1 2000 18.1
+s_ta_gplay_p.r_hi_under0 ta gplay:p.r_hi_under=0 2000 17.8
+gplay                                    d/game vs gplay:  +0.00 +- 0.00   P(win) 0.290
+gplay:p.win_margin=1                     d/game vs gplay:  -0.02 +- 0.17   P(win) 0.292
+gplay:p.win_margin=-1                    d/game vs gplay:  -0.16 +- 0.23   P(win) 0.290
+gplay:p.win_margin=9                     d/game vs gplay:  -0.06 +- 0.20   P(win) 0.292
+gplay:p.r_draw=1                         d/game vs gplay:  -0.28 +- 0.14   P(win) 0.286
+gplay:p.shed_margin=-1                   d/game vs gplay:  -8.97 +- 0.74   P(win) 0.231
+gplay:p.r_hi_under=0                     d/game vs gplay: -26.16 +- 0.73   P(win) 0.086

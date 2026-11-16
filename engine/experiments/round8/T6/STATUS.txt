@@ -1,0 +1,200 @@
+T6 human bidding v2 preregistration, 2026-11-16 ET
+T2 and T4 are validated/done, T3 and T5 are running. T6 implementation begins; compute waits for a free slot (maximum two CPU jobs).
+New module only: judgement/policies/human_guide_v2.py; original bidder/play policies untouched. Four half-point features: capped side voids/singletons with at least two trumps and n>=5; NT long suit with A/K and an outside ace; NT long suit with ace and opening lead. Long-suit units capped at two. Coefficients are integers.
+Training: 60,000 independent S1-style true-deal situations, seed1250000000 (additional seed recorded in BOARD notes), real ladder/trump schedule, random bidding position, all legal counterfactual bids. Hero uses guide play; opponents use TA play and ModelBidder. Prior/remaining bids use the fixed model. Save every situation; score objectives paired on the same deal across candidate bids.
+Fit once on training only: void/singleton weights in {-1,0,1}; entry/lead weights in {-1,0,1,2}; maximize mean counterfactual score, break ties toward fewer/smaller nonzero weights. Selected-training CIs are descriptive, not validation.
+Freeze one candidate before screen/validation: screen 2,000 paired 1v3-TA games on1300000000; validate once on4,000 paired games on1400000000. Challenger seat g%4, candidate/current guide bids with identical guide play; deals/seat streams common. Even a null/negative screen proceeds to the predeclared validation; no tuning after the screen. Record frozen-parameter SHA256 in every game record. Final comparison: paired score difference and ties-as-win difference with game-level95% CIs. Do not promote guide changes without validation.
+Hard stop07:30 ET; per-situation/per-game-pair saves; incomplete tail quarantined on resume. No default weights in the existing guide change.
+Focused V2 test exit code 0; command python -m pytest -q -p no:cacheprovider tests/test_round8_human_v2.py from engine.
+2026-11-16T09:50:26.575984+00:00 Train: 500/60000 complete counterfactual situations.
+2026-11-16T09:50:28.333432+00:00 Train: 1000/60000 complete counterfactual situations.
+2026-11-16T09:50:30.078174+00:00 Train: 1500/60000 complete counterfactual situations.
+2026-11-16T09:50:31.807224+00:00 Train: 2000/60000 complete counterfactual situations.
+2026-11-16T09:50:33.515567+00:00 Train: 2500/60000 complete counterfactual situations.
+2026-11-16T09:50:35.214744+00:00 Train: 3000/60000 complete counterfactual situations.
+2026-11-16T09:50:36.933396+00:00 Train: 3500/60000 complete counterfactual situations.
+2026-11-16T09:50:38.652158+00:00 Train: 4000/60000 complete counterfactual situations.
+2026-11-16T09:50:40.408343+00:00 Train: 4500/60000 complete counterfactual situations.
+2026-11-16T09:50:42.119208+00:00 Train: 5000/60000 complete counterfactual situations.
+2026-11-16T09:50:44.140402+00:00 Train: 5500/60000 complete counterfactual situations.
+2026-11-16T09:50:45.942236+00:00 Train: 6000/60000 complete counterfactual situations.
+2026-11-16T09:50:47.698170+00:00 Train: 6500/60000 complete counterfactual situations.
+2026-11-16T09:50:49.469904+00:00 Train: 7000/60000 complete counterfactual situations.
+2026-11-16T09:50:51.210154+00:00 Train: 7500/60000 complete counterfactual situations.
+2026-11-16T09:50:53.009179+00:00 Train: 8000/60000 complete counterfactual situations.
+2026-11-16T09:50:54.799966+00:00 Train: 8500/60000 complete counterfactual situations.
+2026-11-16T09:50:56.573685+00:00 Train: 9000/60000 complete counterfactual situations.
+2026-11-16T09:50:58.370727+00:00 Train: 9500/60000 complete counterfactual situations.
+2026-11-16T09:51:00.117222+00:00 Train: 10000/60000 complete counterfactual situations.
+2026-11-16T09:51:01.917657+00:00 Train: 10500/60000 complete counterfactual situations.
+2026-11-16T09:51:03.721682+00:00 Train: 11000/60000 complete counterfactual situations.
+2026-11-16T09:51:05.497892+00:00 Train: 11500/60000 complete counterfactual situations.
+2026-11-16T09:51:07.295621+00:00 Train: 12000/60000 complete counterfactual situations.
+2026-11-16T09:51:09.093028+00:00 Train: 12500/60000 complete counterfactual situations.
+2026-11-16T09:51:10.854464+00:00 Train: 13000/60000 complete counterfactual situations.
+2026-11-16T09:51:12.658583+00:00 Train: 13500/60000 complete counterfactual situations.
+2026-11-16T09:51:14.317192+00:00 Train: 14000/60000 complete counterfactual situations.
+2026-11-16T09:51:16.221218+00:00 Train: 14500/60000 complete counterfactual situations.
+2026-11-16T09:51:18.211640+00:00 Train: 15000/60000 complete counterfactual situations.
+2026-11-16T09:51:20.096350+00:00 Train: 15500/60000 complete counterfactual situations.
+2026-11-16T09:51:21.999785+00:00 Train: 16000/60000 complete counterfactual situations.
+2026-11-16T09:51:23.818960+00:00 Train: 16500/60000 complete counterfactual situations.
+2026-11-16T09:51:25.617172+00:00 Train: 17000/60000 complete counterfactual situations.
+2026-11-16T09:51:27.425772+00:00 Train: 17500/60000 complete counterfactual situations.
+2026-11-16T09:51:29.153772+00:00 Train: 18000/60000 complete counterfactual situations.
+2026-11-16T09:51:30.928111+00:00 Train: 18500/60000 complete counterfactual situations.
+2026-11-16T09:51:32.710442+00:00 Train: 19000/60000 complete counterfactual situations.
+2026-11-16T09:51:34.508785+00:00 Train: 19500/60000 complete counterfactual situations.
+2026-11-16T09:51:36.376518+00:00 Train: 20000/60000 complete counterfactual situations.
+2026-11-16T09:51:38.159885+00:00 Train: 20500/60000 complete counterfactual situations.
+2026-11-16T09:51:40.005662+00:00 Train: 21000/60000 complete counterfactual situations.
+2026-11-16T09:51:41.789920+00:00 Train: 21500/60000 complete counterfactual situations.
+2026-11-16T09:51:43.595935+00:00 Train: 22000/60000 complete counterfactual situations.
+2026-11-16T09:51:45.416155+00:00 Train: 22500/60000 complete counterfactual situations.
+2026-11-16T09:51:47.213782+00:00 Train: 23000/60000 complete counterfactual situations.
+2026-11-16T09:51:49.000664+00:00 Train: 23500/60000 complete counterfactual situations.
+2026-11-16T09:51:50.843510+00:00 Train: 24000/60000 complete counterfactual situations.
+2026-11-16T09:51:52.642263+00:00 Train: 24500/60000 complete counterfactual situations.
+2026-11-16T09:51:54.404825+00:00 Train: 25000/60000 complete counterfactual situations.
+2026-11-16T09:51:56.232456+00:00 Train: 25500/60000 complete counterfactual situations.
+2026-11-16T09:51:58.068362+00:00 Train: 26000/60000 complete counterfactual situations.
+2026-11-16T09:51:59.963201+00:00 Train: 26500/60000 complete counterfactual situations.
+2026-11-16T09:52:01.759373+00:00 Train: 27000/60000 complete counterfactual situations.
+2026-11-16T09:52:03.626563+00:00 Train: 27500/60000 complete counterfactual situations.
+2026-11-16T09:52:05.440812+00:00 Train: 28000/60000 complete counterfactual situations.
+2026-11-16T09:52:07.275352+00:00 Train: 28500/60000 complete counterfactual situations.
+2026-11-16T09:52:09.153877+00:00 Train: 29000/60000 complete counterfactual situations.
+2026-11-16T09:52:11.026315+00:00 Train: 29500/60000 complete counterfactual situations.
+2026-11-16T09:52:12.849785+00:00 Train: 30000/60000 complete counterfactual situations.
+2026-11-16T09:52:14.793693+00:00 Train: 30500/60000 complete counterfactual situations.
+2026-11-16T09:52:16.642030+00:00 Train: 31000/60000 complete counterfactual situations.
+2026-11-16T09:52:18.559045+00:00 Train: 31500/60000 complete counterfactual situations.
+2026-11-16T09:52:20.486879+00:00 Train: 32000/60000 complete counterfactual situations.
+2026-11-16T09:52:22.405968+00:00 Train: 32500/60000 complete counterfactual situations.
+2026-11-16T09:52:24.290953+00:00 Train: 33000/60000 complete counterfactual situations.
+2026-11-16T09:52:26.193074+00:00 Train: 33500/60000 complete counterfactual situations.
+2026-11-16T09:52:28.054325+00:00 Train: 34000/60000 complete counterfactual situations.
+2026-11-16T09:52:29.958723+00:00 Train: 34500/60000 complete counterfactual situations.
+2026-11-16T09:52:31.800362+00:00 Train: 35000/60000 complete counterfactual situations.
+2026-11-16T09:52:33.655862+00:00 Train: 35500/60000 complete counterfactual situations.
+2026-11-16T09:52:35.500992+00:00 Train: 36000/60000 complete counterfactual situations.
+2026-11-16T09:52:37.399491+00:00 Train: 36500/60000 complete counterfactual situations.
+2026-11-16T09:52:39.222981+00:00 Train: 37000/60000 complete counterfactual situations.
+2026-11-16T09:52:41.074910+00:00 Train: 37500/60000 complete counterfactual situations.
+2026-11-16T09:52:42.987094+00:00 Train: 38000/60000 complete counterfactual situations.
+2026-11-16T09:52:44.870222+00:00 Train: 38500/60000 complete counterfactual situations.
+2026-11-16T09:52:46.715121+00:00 Train: 39000/60000 complete counterfactual situations.
+2026-11-16T09:52:48.578659+00:00 Train: 39500/60000 complete counterfactual situations.
+2026-11-16T09:52:50.452818+00:00 Train: 40000/60000 complete counterfactual situations.
+2026-11-16T09:52:52.298584+00:00 Train: 40500/60000 complete counterfactual situations.
+2026-11-16T09:52:54.205714+00:00 Train: 41000/60000 complete counterfactual situations.
+2026-11-16T09:52:56.022827+00:00 Train: 41500/60000 complete counterfactual situations.
+2026-11-16T09:52:57.914053+00:00 Train: 42000/60000 complete counterfactual situations.
+2026-11-16T09:53:00.140359+00:00 Train: 42500/60000 complete counterfactual situations.
+2026-11-16T09:53:02.035600+00:00 Train: 43000/60000 complete counterfactual situations.
+2026-11-16T09:53:04.010538+00:00 Train: 43500/60000 complete counterfactual situations.
+2026-11-16T09:53:05.870848+00:00 Train: 44000/60000 complete counterfactual situations.
+2026-11-16T09:53:07.699296+00:00 Train: 44500/60000 complete counterfactual situations.
+2026-11-16T09:53:09.546097+00:00 Train: 45000/60000 complete counterfactual situations.
+2026-11-16T09:53:11.329484+00:00 Train: 45500/60000 complete counterfactual situations.
+2026-11-16T09:53:13.116664+00:00 Train: 46000/60000 complete counterfactual situations.
+2026-11-16T09:53:14.958395+00:00 Train: 46500/60000 complete counterfactual situations.
+2026-11-16T09:53:16.843027+00:00 Train: 47000/60000 complete counterfactual situations.
+2026-11-16T09:53:18.752263+00:00 Train: 47500/60000 complete counterfactual situations.
+2026-11-16T09:53:20.606170+00:00 Train: 48000/60000 complete counterfactual situations.
+2026-11-16T09:53:22.516405+00:00 Train: 48500/60000 complete counterfactual situations.
+2026-11-16T09:53:24.421590+00:00 Train: 49000/60000 complete counterfactual situations.
+2026-11-16T09:53:26.329464+00:00 Train: 49500/60000 complete counterfactual situations.
+2026-11-16T09:53:28.125039+00:00 Train: 50000/60000 complete counterfactual situations.
+2026-11-16T09:53:29.991066+00:00 Train: 50500/60000 complete counterfactual situations.
+2026-11-16T09:53:31.879921+00:00 Train: 51000/60000 complete counterfactual situations.
+2026-11-16T09:53:33.721435+00:00 Train: 51500/60000 complete counterfactual situations.
+2026-11-16T09:53:35.579970+00:00 Train: 52000/60000 complete counterfactual situations.
+2026-11-16T09:53:37.388804+00:00 Train: 52500/60000 complete counterfactual situations.
+2026-11-16T09:53:39.208714+00:00 Train: 53000/60000 complete counterfactual situations.
+2026-11-16T09:53:41.085344+00:00 Train: 53500/60000 complete counterfactual situations.
+2026-11-16T09:53:42.930008+00:00 Train: 54000/60000 complete counterfactual situations.
+2026-11-16T09:53:44.780540+00:00 Train: 54500/60000 complete counterfactual situations.
+2026-11-16T09:53:46.600161+00:00 Train: 55000/60000 complete counterfactual situations.
+2026-11-16T09:53:48.446492+00:00 Train: 55500/60000 complete counterfactual situations.
+2026-11-16T09:53:50.247780+00:00 Train: 56000/60000 complete counterfactual situations.
+2026-11-16T09:53:52.133595+00:00 Train: 56500/60000 complete counterfactual situations.
+2026-11-16T09:53:53.951091+00:00 Train: 57000/60000 complete counterfactual situations.
+2026-11-16T09:53:55.749677+00:00 Train: 57500/60000 complete counterfactual situations.
+2026-11-16T09:53:57.517215+00:00 Train: 58000/60000 complete counterfactual situations.
+2026-11-16T09:53:59.318502+00:00 Train: 58500/60000 complete counterfactual situations.
+2026-11-16T09:54:01.105552+00:00 Train: 59000/60000 complete counterfactual situations.
+2026-11-16T09:54:02.948784+00:00 Train: 59500/60000 complete counterfactual situations.
+2026-11-16T09:54:04.777398+00:00 Train: 60000/60000 complete counterfactual situations.
+2026-11-16T09:54:05.452797+00:00 FROZEN before screening: {"config": {"weights": [0, 0, 0, 0], "training_seed": 1250000000, "training_n": 60000, "policy_source_sha256": "032f624700ea6be1944f66c4d7dce008360a18b42f981ec262816dfd20978252", "base_policy_sha256": "608bc2660665e70beae8825f7eda6588e90da9ec54b16af3e1b44f0f60adce80"}, "frozen_sha256": "e55548d7a5ad943a39883563d43b9c8cbb7376935488b6aeb81fd3fdfd9c403c", "selected_training": {"weights": [0, 0, 0, 0], "score": {"mean": 6.40665, "half95": 0.04495988131294357, "n": 60000}, "delta_vs_current": {"mean": 0.0, "half95": 0.0, "n": 60000}}, "qualification": "Selected-training CI is descriptive and selection-biased; use independent game validation."}
+2026-11-16T09:54:07.445854+00:00 screen: 100/2000 complete paired games.
+2026-11-16T09:54:09.436205+00:00 screen: 200/2000 complete paired games.
+2026-11-16T09:54:11.395897+00:00 screen: 300/2000 complete paired games.
+2026-11-16T09:54:13.515369+00:00 screen: 400/2000 complete paired games.
+2026-11-16T09:54:15.480294+00:00 screen: 500/2000 complete paired games.
+2026-11-16T09:54:17.506579+00:00 screen: 600/2000 complete paired games.
+2026-11-16T09:54:19.499757+00:00 screen: 700/2000 complete paired games.
+2026-11-16T09:54:21.484773+00:00 screen: 800/2000 complete paired games.
+2026-11-16T09:54:23.557619+00:00 screen: 900/2000 complete paired games.
+2026-11-16T09:54:25.645005+00:00 screen: 1000/2000 complete paired games.
+2026-11-16T09:54:27.648086+00:00 screen: 1100/2000 complete paired games.
+2026-11-16T09:54:29.675763+00:00 screen: 1200/2000 complete paired games.
+2026-11-16T09:54:31.680506+00:00 screen: 1300/2000 complete paired games.
+2026-11-16T09:54:33.672462+00:00 screen: 1400/2000 complete paired games.
+2026-11-16T09:54:35.726528+00:00 screen: 1500/2000 complete paired games.
+2026-11-16T09:54:37.925006+00:00 screen: 1600/2000 complete paired games.
+2026-11-16T09:54:39.978613+00:00 screen: 1700/2000 complete paired games.
+2026-11-16T09:54:42.002383+00:00 screen: 1800/2000 complete paired games.
+2026-11-16T09:54:44.059811+00:00 screen: 1900/2000 complete paired games.
+2026-11-16T09:54:46.135905+00:00 screen: 2000/2000 complete paired games.
+2026-11-16T09:54:46.140909+00:00 screen COMPLETE: {"seed_base": 1300000000, "frozen_sha256": "e55548d7a5ad943a39883563d43b9c8cbb7376935488b6aeb81fd3fdfd9c403c", "weights": [0, 0, 0, 0], "score_delta_v2_minus_current": {"mean": 0.0, "half95": 0.0, "n": 2000}, "ties_win_delta": {"mean": 0.0, "half95": 0.0, "n": 2000}, "current_score": {"mean": 159.887, "half95": 1.2497715372629015, "n": 2000}, "v2_score": {"mean": 159.887, "half95": 1.2497715372629015, "n": 2000}, "current_ties_win": {"mean": 0.253, "half95": 0.019057689014024697, "n": 2000}, "v2_ties_win": {"mean": 0.253, "half95": 0.019057689014024697, "n": 2000}}
+2026-11-16T09:54:48.156725+00:00 validation: 100/4000 complete paired games.
+2026-11-16T09:54:50.132133+00:00 validation: 200/4000 complete paired games.
+2026-11-16T09:54:52.111004+00:00 validation: 300/4000 complete paired games.
+2026-11-16T09:54:54.093913+00:00 validation: 400/4000 complete paired games.
+2026-11-16T09:54:56.105825+00:00 validation: 500/4000 complete paired games.
+2026-11-16T09:54:58.093631+00:00 validation: 600/4000 complete paired games.
+2026-11-16T09:55:00.119776+00:00 validation: 700/4000 complete paired games.
+2026-11-16T09:55:02.153034+00:00 validation: 800/4000 complete paired games.
+2026-11-16T09:55:04.117251+00:00 validation: 900/4000 complete paired games.
+2026-11-16T09:55:06.129161+00:00 validation: 1000/4000 complete paired games.
+2026-11-16T09:55:08.147785+00:00 validation: 1100/4000 complete paired games.
+2026-11-16T09:55:10.148924+00:00 validation: 1200/4000 complete paired games.
+2026-11-16T09:55:12.130723+00:00 validation: 1300/4000 complete paired games.
+2026-11-16T09:55:14.141088+00:00 validation: 1400/4000 complete paired games.
+2026-11-16T09:55:16.205820+00:00 validation: 1500/4000 complete paired games.
+2026-11-16T09:55:18.167406+00:00 validation: 1600/4000 complete paired games.
+2026-11-16T09:55:20.111965+00:00 validation: 1700/4000 complete paired games.
+2026-11-16T09:55:22.069920+00:00 validation: 1800/4000 complete paired games.
+2026-11-16T09:55:24.140825+00:00 validation: 1900/4000 complete paired games.
+2026-11-16T09:55:26.160979+00:00 validation: 2000/4000 complete paired games.
+2026-11-16T09:55:28.138131+00:00 validation: 2100/4000 complete paired games.
+2026-11-16T09:55:30.156829+00:00 validation: 2200/4000 complete paired games.
+2026-11-16T09:55:32.176187+00:00 validation: 2300/4000 complete paired games.
+2026-11-16T09:55:34.163591+00:00 validation: 2400/4000 complete paired games.
+2026-11-16T09:55:36.200452+00:00 validation: 2500/4000 complete paired games.
+2026-11-16T09:55:38.181282+00:00 validation: 2600/4000 complete paired games.
+2026-11-16T09:55:40.207554+00:00 validation: 2700/4000 complete paired games.
+2026-11-16T09:55:42.173030+00:00 validation: 2800/4000 complete paired games.
+2026-11-16T09:55:44.168140+00:00 validation: 2900/4000 complete paired games.
+2026-11-16T09:55:46.199032+00:00 validation: 3000/4000 complete paired games.
+2026-11-16T09:55:48.249141+00:00 validation: 3100/4000 complete paired games.
+2026-11-16T09:55:50.347516+00:00 validation: 3200/4000 complete paired games.
+2026-11-16T09:55:52.296141+00:00 validation: 3300/4000 complete paired games.
+2026-11-16T09:55:54.299743+00:00 validation: 3400/4000 complete paired games.
+2026-11-16T09:55:56.285269+00:00 validation: 3500/4000 complete paired games.
+2026-11-16T09:55:58.285360+00:00 validation: 3600/4000 complete paired games.
+2026-11-16T09:56:00.294756+00:00 validation: 3700/4000 complete paired games.
+2026-11-16T09:56:02.334927+00:00 validation: 3800/4000 complete paired games.
+2026-11-16T09:56:04.323568+00:00 validation: 3900/4000 complete paired games.
+2026-11-16T09:56:06.324167+00:00 validation: 4000/4000 complete paired games.
+2026-11-16T09:56:06.332168+00:00 validation COMPLETE: {"seed_base": 1400000000, "frozen_sha256": "e55548d7a5ad943a39883563d43b9c8cbb7376935488b6aeb81fd3fdfd9c403c", "weights": [0, 0, 0, 0], "score_delta_v2_minus_current": {"mean": 0.0, "half95": 0.0, "n": 4000}, "ties_win_delta": {"mean": 0.0, "half95": 0.0, "n": 4000}, "current_score": {"mean": 159.73575, "half95": 0.851957611252824, "n": 4000}, "v2_score": {"mean": 159.73575, "half95": 0.851957611252824, "n": 4000}, "current_ties_win": {"mean": 0.24225, "half95": 0.01327930159826692, "n": 4000}, "v2_ties_win": {"mean": 0.24225, "half95": 0.01327930159826692, "n": 4000}}
+2026-11-16T09:56:06.356165+00:00 READY FOR REVIEW
+Files changed: judgement/policies/human_guide_v2.py; tests/test_round8_human_v2.py; T6/run.py, STATUS and results/*.jsonl/*.json.
+Exact command: cd engine/experiments/round8/T6; python run.py.
+Seed bases and n: train1250M, 60000 situations; screen1300M, 2000 paired games; validation1400M, 4000 paired games; challenger g%4.
+Results (95% game-level CIs): {"fit": {"config": {"weights": [0, 0, 0, 0], "training_seed": 1250000000, "training_n": 60000, "policy_source_sha256": "032f624700ea6be1944f66c4d7dce008360a18b42f981ec262816dfd20978252", "base_policy_sha256": "608bc2660665e70beae8825f7eda6588e90da9ec54b16af3e1b44f0f60adce80"}, "frozen_sha256": "e55548d7a5ad943a39883563d43b9c8cbb7376935488b6aeb81fd3fdfd9c403c", "selected_training": {"weights": [0, 0, 0, 0], "score": {"mean": 6.40665, "half95": 0.04495988131294357, "n": 60000}, "delta_vs_current": {"mean": 0.0, "half95": 0.0, "n": 60000}}, "qualification": "Selected-training CI is descriptive and selection-biased; use independent game validation."}, "screen": {"seed_base": 1300000000, "frozen_sha256": "e55548d7a5ad943a39883563d43b9c8cbb7376935488b6aeb81fd3fdfd9c403c", "weights": [0, 0, 0, 0], "score_delta_v2_minus_current": {"mean": 0.0, "half95": 0.0, "n": 2000}, "ties_win_delta": {"mean": 0.0, "half95": 0.0, "n": 2000}, "current_score": {"mean": 159.887, "half95": 1.2497715372629015, "n": 2000}, "v2_score": {"mean": 159.887, "half95": 1.2497715372629015, "n": 2000}, "current_ties_win": {"mean": 0.253, "half95": 0.019057689014024697, "n": 2000}, "v2_ties_win": {"mean": 0.253, "half95": 0.019057689014024697, "n": 2000}}, "validation": {"seed_base": 1400000000, "frozen_sha256": "e55548d7a5ad943a39883563d43b9c8cbb7376935488b6aeb81fd3fdfd9c403c", "weights": [0, 0, 0, 0], "score_delta_v2_minus_current": {"mean": 0.0, "half95": 0.0, "n": 4000}, "ties_win_delta": {"mean": 0.0, "half95": 0.0, "n": 4000}, "current_score": {"mean": 159.73575, "half95": 0.851957611252824, "n": 4000}, "v2_score": {"mean": 159.73575, "half95": 0.851957611252824, "n": 4000}, "current_ties_win": {"mean": 0.24225, "half95": 0.01327930159826692, "n": 4000}, "v2_ties_win": {"mean": 0.24225, "half95": 0.01327930159826692, "n": 4000}}}
+Limitations: train uses true-deal counterfactual guide/TA play and selection-biased training estimates. Screen and validation use one unchanged frozen candidate; no tuning after screening. Four integer feature additions only; final guide defaults are unchanged and no human playtest occurred.
+Independent deployment/data check: python verify.py from T6. {"training_bids_checked": 60000, "vector_deployment_mismatches": 0, "frozen_sha256": "e55548d7a5ad943a39883563d43b9c8cbb7376935488b6aeb81fd3fdfd9c403c", "games": {"screen": {"complete_paired_games": 2000, "all_seeds_seats_scores_and_hashes_valid": true}, "validation": {"complete_paired_games": 4000, "all_seeds_seats_scores_and_hashes_valid": true}}}
+Supplementary review packet (Claude validated T6): files changed additionally T6/verify.py and results/verification.json. Exact command: cd engine/experiments/round8/T6; python verify.py (the first attempt omitted trump in its audit-only info object; corrected before successful check). Seed bases/n unchanged: train1250M/60000, screen1300M/2000, validation1400M/4000. Validation paired score and ties-win deltas both 0 +/- 0 (95% CI); all 60000 vector/deployment bids agree and all 6000 paired game records pass score/seed/seat/hash checks. Limitation: zero fitted weights imply identity by construction; fresh validation establishes no new improvement. The negative conclusion concerns this finite feature grid, not all possible uses of shape or lead.
+2026-11-16 final handoff: Claude validated this task in REVIEW.md; committed locally as 4912a9f. No task compute remains. Seeds, n, 95% intervals (or exact-enumeration scope), commands and limitations are preserved in the review packets above. No push.

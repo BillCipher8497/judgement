@@ -1,0 +1,5 @@
+numpy>=1.24
+pytest>=7
+hypothesis>=6
+# optional, for crossval/openspiel_check.py (tests skip it if absent)
+open_spiel>=1.4

@@ -1,0 +1,14 @@
+{
+ "W_on_TA": {
+  "rounds_better": 90,
+  "rounds_worse": 4
+ },
+ "Lsame_on_TA": {
+  "rounds_better": 41,
+  "rounds_worse": 15
+ },
+ "L_on_TA": {
+  "rounds_better": 156,
+  "rounds_worse": 86
+ }
+}

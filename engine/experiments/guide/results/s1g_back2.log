@@ -1,0 +1,86 @@
+start 0: 6.3663
+start 1: 5.7980
+start 2: 5.7715
+start 3: 6.0723
+start 4: 5.6332
+start 5: 5.5817
+start 6: 5.6663
+ILS 12: 6.3719
+ILS 18: 6.3765
+{'step': 'full fit', 'train': np.float64(6.3765), 'test_loss_vs_mb': (0.1401, 0.05286366487575566), 'w': {'t_each': 2, 't_hon': 1, 't_guard': 0, 's_A': 2, 's_K2': 1, 's_K1': 1, 's_Q3': 0, 'short': 0, 't_sub': 4, 'n_A': 2, 'n_K2': 1, 'n_K1': 1, 'n_Q3': 1, 'n_long': 0, 'n_sub': 99, 'low_w': 0, 's_Q': 0, 's_J': 0, 'small_cut': 3, 'small_A': 0, 'small_K': 0, 'prior_k': 5, 'hook_up': 0, 'round_up': 0}}
+   drop short side suits with trumps     costs +0.000
+   drop NT long suits                    costs +0.000
+   drop rounding / hook direction        costs +0.000
+   drop low cards (2-7)                  costs +0.000
+   drop side queens / jacks (any length) costs +0.000
+   drop queens with >=3                  costs +0.002
+   drop small rounds                     costs +0.023
+   drop earlier bids vs share            costs +0.062
+   drop side kings                       costs +0.106
+   drop trump honours bonus              costs +0.177
+   drop subtract per cards dealt         costs +0.283
+{'step': 'drop short side suits with trumps', 'cost_train': np.float64(0.0), 'train': np.float64(6.3765), 'test_loss_vs_mb': (0.1401, 0.05286366487575566), 'w': {'t_each': 2, 't_hon': 1, 't_guard': 0, 's_A': 2, 's_K2': 1, 's_K1': 1, 's_Q3': 0, 'short': 0, 't_sub': 4, 'n_A': 2, 'n_K2': 1, 'n_K1': 1, 'n_Q3': 1, 'n_long': 0, 'n_sub': 99, 'low_w': 0, 's_Q': 0, 's_J': 0, 'small_cut': 3, 'small_A': 0, 'small_K': 0, 'prior_k': 5, 'hook_up': 0, 'round_up': 0}}
+   drop NT long suits                    costs +0.000
+   drop rounding / hook direction        costs +0.000
+   drop low cards (2-7)                  costs +0.000
+   drop side queens / jacks (any length) costs +0.000
+   drop queens with >=3                  costs +0.002
+   drop small rounds                     costs +0.023
+   drop earlier bids vs share            costs +0.062
+   drop side kings                       costs +0.106
+   drop trump honours bonus              costs +0.177
+   drop subtract per cards dealt         costs +0.283
+{'step': 'drop NT long suits', 'cost_train': np.float64(0.0), 'train': np.float64(6.3765), 'test_loss_vs_mb': (0.1401, 0.05286366487575566), 'w': {'t_each': 2, 't_hon': 1, 't_guard': 0, 's_A': 2, 's_K2': 1, 's_K1': 1, 's_Q3': 0, 'short': 0, 't_sub': 4, 'n_A': 2, 'n_K2': 1, 'n_K1': 1, 'n_Q3': 1, 'n_long': 0, 'n_sub': 99, 'low_w': 0, 's_Q': 0, 's_J': 0, 'small_cut': 3, 'small_A': 0, 'small_K': 0, 'prior_k': 5, 'hook_up': 0, 'round_up': 0}}
+   drop rounding / hook direction        costs +0.000
+   drop low cards (2-7)                  costs +0.000
+   drop side queens / jacks (any length) costs +0.000
+   drop queens with >=3                  costs +0.002
+   drop small rounds                     costs +0.023
+   drop earlier bids vs share            costs +0.062
+   drop side kings                       costs +0.106
+   drop trump honours bonus              costs +0.177
+   drop subtract per cards dealt         costs +0.283
+{'step': 'drop rounding / hook direction', 'cost_train': np.float64(0.0), 'train': np.float64(6.3765), 'test_loss_vs_mb': (0.1401, 0.05286366487575566), 'w': {'t_each': 2, 't_hon': 1, 't_guard': 0, 's_A': 2, 's_K2': 1, 's_K1': 1, 's_Q3': 0, 'short': 0, 't_sub': 4, 'n_A': 2, 'n_K2': 1, 'n_K1': 1, 'n_Q3': 1, 'n_long': 0, 'n_sub': 99, 'low_w': 0, 's_Q': 0, 's_J': 0, 'small_cut': 3, 'small_A': 0, 'small_K': 0, 'prior_k': 5, 'hook_up': 0, 'round_up': 0}}
+   drop low cards (2-7)                  costs +0.000
+   drop side queens / jacks (any length) costs +0.000
+   drop queens with >=3                  costs +0.002
+   drop small rounds                     costs +0.023
+   drop earlier bids vs share            costs +0.062
+   drop side kings                       costs +0.106
+   drop trump honours bonus              costs +0.177
+   drop subtract per cards dealt         costs +0.283
+{'step': 'drop low cards (2-7)', 'cost_train': np.float64(0.0), 'train': np.float64(6.3765), 'test_loss_vs_mb': (0.1401, 0.05286366487575566), 'w': {'t_each': 2, 't_hon': 1, 't_guard': 0, 's_A': 2, 's_K2': 1, 's_K1': 1, 's_Q3': 0, 'short': 0, 't_sub': 4, 'n_A': 2, 'n_K2': 1, 'n_K1': 1, 'n_Q3': 1, 'n_long': 0, 'n_sub': 99, 'low_w': 0, 's_Q': 0, 's_J': 0, 'small_cut': 3, 'small_A': 0, 'small_K': 0, 'prior_k': 5, 'hook_up': 0, 'round_up': 0}}
+   drop side queens / jacks (any length) costs +0.000
+   drop queens with >=3                  costs +0.002
+   drop small rounds                     costs +0.023
+   drop earlier bids vs share            costs +0.062
+   drop side kings                       costs +0.106
+   drop trump honours bonus              costs +0.177
+   drop subtract per cards dealt         costs +0.283
+{'step': 'drop side queens / jacks (any length)', 'cost_train': np.float64(0.0), 'train': np.float64(6.3765), 'test_loss_vs_mb': (0.1401, 0.05286366487575566), 'w': {'t_each': 2, 't_hon': 1, 't_guard': 0, 's_A': 2, 's_K2': 1, 's_K1': 1, 's_Q3': 0, 'short': 0, 't_sub': 4, 'n_A': 2, 'n_K2': 1, 'n_K1': 1, 'n_Q3': 1, 'n_long': 0, 'n_sub': 99, 'low_w': 0, 's_Q': 0, 's_J': 0, 'small_cut': 3, 'small_A': 0, 'small_K': 0, 'prior_k': 5, 'hook_up': 0, 'round_up': 0}}
+   drop queens with >=3                  costs +0.002
+   drop small rounds                     costs +0.023
+   drop earlier bids vs share            costs +0.062
+   drop side kings                       costs +0.106
+   drop trump honours bonus              costs +0.177
+   drop subtract per cards dealt         costs +0.283
+{'step': 'drop queens with >=3', 'cost_train': np.float64(0.0019499999999998963), 'train': np.float64(6.37455), 'test_loss_vs_mb': (0.139725, 0.052788423240874335), 'w': {'t_each': 2, 't_hon': 1, 't_guard': 0, 's_A': 2, 's_K2': 1, 's_K1': 1, 's_Q3': 0, 'short': 0, 't_sub': 4, 'n_A': 2, 'n_K2': 1, 'n_K1': 1, 'n_Q3': 0, 'n_long': 0, 'n_sub': 99, 'low_w': 0, 's_Q': 0, 's_J': 0, 'small_cut': 3, 'small_A': 0, 'small_K': 0, 'prior_k': 5, 'hook_up': 0, 'round_up': 0}}
+   drop small rounds                     costs +0.023
+   drop earlier bids vs share            costs +0.064
+   drop side kings                       costs +0.113
+   drop trump honours bonus              costs +0.178
+   drop subtract per cards dealt         costs +0.283
+{'step': 'drop small rounds', 'cost_train': np.float64(0.022866666666667257), 'train': np.float64(6.351683333333333), 'test_loss_vs_mb': (0.1682, 0.051868030217315605), 'w': {'t_each': 2, 't_hon': 1, 't_guard': 0, 's_A': 1, 's_K2': 1, 's_K1': 1, 's_Q3': 0, 'short': 0, 't_sub': 5, 'n_A': 2, 'n_K2': 1, 'n_K1': 1, 'n_Q3': 0, 'n_long': 0, 'n_sub': 99, 'low_w': 0, 's_Q': 0, 's_J': 0, 'small_cut': 0, 'small_A': 0, 'small_K': 0, 'prior_k': 5, 'hook_up': 0, 'round_up': 0}}
+   drop earlier bids vs share            costs +0.069
+   drop side kings                       costs +0.085
+   drop trump honours bonus              costs +0.126
+   drop subtract per cards dealt         costs +0.224
+{'step': 'drop earlier bids vs share', 'cost_train': np.float64(0.06884999999999941), 'train': np.float64(6.2828333333333335), 'test_loss_vs_mb': (0.233175, 0.051977021256563394), 'w': {'t_each': 2, 't_hon': 1, 't_guard': 0, 's_A': 1, 's_K2': 1, 's_K1': 1, 's_Q3': 0, 'short': 0, 't_sub': 5, 'n_A': 2, 'n_K2': 1, 'n_K1': 2, 'n_Q3': 0, 'n_long': 0, 'n_sub': 99, 'low_w': 0, 's_Q': 0, 's_J': 0, 'small_cut': 0, 'small_A': 0, 'small_K': 0, 'prior_k': 99, 'hook_up': 0, 'round_up': 0}}
+   drop side kings                       costs +0.075
+   drop trump honours bonus              costs +0.154
+   drop subtract per cards dealt         costs +0.247
+{'step': 'drop side kings', 'cost_train': np.float64(0.07473333333333354), 'train': np.float64(6.2081), 'test_loss_vs_mb': (0.29715, 0.05345600936226463), 'w': {'t_each': 2, 't_hon': 1, 't_guard': 0, 's_A': 1, 's_K2': 0, 's_K1': 0, 's_Q3': 0, 'short': 0, 't_sub': 6, 'n_A': 2, 'n_K2': 0, 'n_K1': 0, 'n_Q3': 0, 'n_long': 0, 'n_sub': 99, 'low_w': 0, 's_Q': 0, 's_J': 0, 'small_cut': 0, 'small_A': 0, 'small_K': 0, 'prior_k': 99, 'hook_up': 0, 'round_up': 0}}
+   drop subtract per cards dealt         costs +0.191
+   drop trump honours bonus              costs +0.225
+FINAL {'t_each': 2, 't_hon': 1, 't_guard': 0, 's_A': 1, 's_K2': 0, 's_K1': 0, 's_Q3': 0, 'short': 0, 't_sub': 6, 'n_A': 2, 'n_K2': 0, 'n_K1': 0, 'n_Q3': 0, 'n_long': 0, 'n_sub': 99, 'low_w': 0, 's_Q': 0, 's_J': 0, 'small_cut': 0, 'small_A': 0, 'small_K': 0, 'prior_k': 99, 'hook_up': 0, 'round_up': 0} 
+values {'trump honours bonus': (0.22065, 0.037991326819498385), 'subtract per cards dealt': (0.17995, 0.03797679357714603), 'count every trump': (0.685875, 0.05437430016682827), 'count aces': (0.3198, 0.03717067476862599)}

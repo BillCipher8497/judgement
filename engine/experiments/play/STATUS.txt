@@ -1,0 +1,36 @@
+experiments/play STATUS (append-only checkpoints)
+22:15 ET setup. Reviewed prior partial work (round2_play, ta_plus.py, hybrid.py): code reused; all numbers re-run here on fresh seeds
+  (1v3 base 71,000,000+g, challenger seat g%4, paired vs all-TA table same game/seat; mixed 81,000,000+b).
+  hybrid.py: added pimc_in_nt flag (False -> TA+ for all of NT rounds). common.py: SmallRoundOracleBidder (bidding2 oracle for n<=nmax,
+  rollouts TA opponents + own TA+ play). Queue: run_all.sh -> results/run_all.log.
+22:15 T1 screen (seeds 91,000,000+g, 3000 g each, results/1v3_scr_*.npz, screen.log): new component win_high (win a trick you are taking
+  anyway with the sure winner of highest lead-P(win) you can spare) vs round-2 TA+: wh=1 +1.75+-0.18/game, wh=2 (also leading) +1.86+-0.22,
+  wh=2 margin -0.5 +2.16+-0.26 (best; -1: +1.80, -2: +1.62, unconditional +1.51). Selected wh=2, wm=-0.5 -> ta_plus_v2 (final TA+).
+  Round-2 TA+ on screen seeds: +5.29+-0.72 vs TA. Queue relaunched with final TA+ everywhere (hybrid base, oracle player).
+22:25 T1 DONE (4000 games each, seeds 71,000,000+g; results/1v3_x_*.npz, summary.md):
+  TA+ (final) +7.51+-0.66/game vs TA, dP(win) +0.079+-0.014 (P(win) 0.322 vs 0.243), hit 0.5994 vs 0.5754, overshoot share 0.615 vs 0.657.
+  Leave-one-out (Δ vs TA+): -shed -2.08+-0.30, -lead-high -3.65+-0.57, -theorems -0.33+-0.08, -win-high -2.11+-0.22 (= round-2 TA+, +5.39+-0.63).
+  Single components vs TA: shed +2.23, lead-high +3.16, theorems -0.03 (only helps in combination), win-high +1.54.
+  Add-ons: surplus-duck +0.00+-0.07, duck last-seat -0.01+-0.05, scarce -0.11+-0.15, lead-high in NT -0.51+-0.23 -> all stay off.
+  Sanity: all-off == TA exactly. Greedy/TA-spite also run (T3).
+22:32 T4 DONE (pi_agree.py 1000 deals x {S, NT}, n=5; results/pi_agree_dec.csv): non-indifferent decisions (7165):
+  TA 0.746+-0.010 (Phase-2 0.741 on the first 500), TA+ 0.737+-0.010, paired -0.009 (deal-cluster CI [-0.017,-0.001]).
+  Trump S: TA+ +0.013 [+0.001,+0.025]; NT: -0.029 [-0.041,-0.018]. NT loss is entirely the shed component (TA+-shed 0.785 = TA 0.784).
+  Under PI with oracle bids TA+ is not closer to max^n overall even though it scores +7.5/game in real play.
+22:58 T2 DONE (1000 games each, seeds 71,000,000+g, base = final TA+): Δ/game vs TA (vs TA+), s/game:
+  c4 +14.82+-1.50 (+6.98+-1.13) 0.19s; c5 +17.37+-1.61 (+9.54+-1.32) 0.48s; c4 TA+-in-NT +14.82+-1.47 (+6.99+-1.02) 0.16s;
+  c5 TA+-in-NT +15.91+-1.54 (+8.07+-1.24) 0.42s. P(win): c5 0.454+-0.031 (TA seat 0.24). Hit 0.630, overshoot share 0.580.
+  NT rounds: PIMC-in-NT +0.27/round vs TA+-in-NT +0.14 -> late-trick PIMC DOES help in NT (unlike Phase-2 full-round PIMC); keep it.
+  (nt=1 variants consume fewer policy-rng draws, so their trump rounds are not bit-identical CRN with nt=0; differences there are noise.)
+23:05 T3 1v3 part DONE except oracle all-rounds (running later): Greedy -43.43+-1.05, TA-spite +0.00+-0.00 (dP(win) +0.004+-0.003),
+  TA+ +7.51+-0.66, Hybrid c5 +17.37+-1.61, TA+ + bid-informed oracle bidder n<=5 (K=24, +-2; 2000 games, 0.18 s/game) +7.92+-1.04,
+  i.e. +0.71+-0.49/game over TA+ (+0.07/round in the 9 rounds n<=5). Mixed round robin running (6 policies, 60 games/block).
+23:25 T3 mixed round robin DONE (mixed.py; 3600 games = 60 blocks x 15 subsets x 4 rotations; seed 81,000,000+b; results/mixed.npz):
+  BT Elo vs TA [block-bootstrap 95%]: greedy -352 [-399,-316], ta_spite +10 [-3,+25], ta_plus +64 [+44,+86],
+  hybrid c4 +119 [+102,+140], tap_oracle(n<=5) +63 [+42,+86]. Score Δ vs TA per game: -46.8, +0.8, +8.0, +16.0, +9.0 (+-1.4..3.5).
+  Running: oracle all rounds (800 games, until 01:00 at latest), hybrid K=32 c5 (400).
+23:35 (clock; earlier stamps were estimates, ~10 min fast) run_all.sh ALLDONE. oracle all rounds (800 g, 1.42 s/game): +12.87+-1.95 vs TA,
+  +5.48+-1.68 vs TA+, P(win) 0.391+-0.034. Hybrid K=32 c5 (400 g) done. Launched run_extra.sh: hybrid c6 (500), hybrid c5 + oracle bidder (500).
+00:08 EXTRA DONE: hybrid c6 (500 g, 1.81 s/game) +17.01+-2.41 vs TA; c6 − c5 +0.02+-1.89 (no gain). Hybrid K=32 c5 − K=16 c5 +2.29+-1.64 (400 g).
+  Hybrid c5 + bid-informed oracle bidder (all rounds; 500 g, 1.89 s/game): +20.44+-2.67 vs TA, P(win) 0.524+-0.044; − hybrid c5 +3.45+-2.45.
+  FINAL: analyze.py -> results/summary.md / summary.json. pytest: 182 passed.

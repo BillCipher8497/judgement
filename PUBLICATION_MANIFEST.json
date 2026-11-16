@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-16",
+  "validation": "Claude-reviewed baseline plus selected separately self-validated Codex artifacts; limitations in PUBLICATION.md",
+  "base_commit": "11214fe1cc6df93361dc9f8b1d84384cfceb1ba4",
+  "selected_source_commit": "0f8c724666840b79f0bbaf0188b8612615ea374c",
+  "overlay_paths": [
+    "engine/experiments/round9/D1",
+    "engine/experiments/round9/D2",
+    "engine/experiments/round9/D4",
+    "engine/experiments/round9/common.py",
+    "engine/tests/test_round9_information.py",
+    "engine/paper/guide_card.md",
+    "engine/experiments/round9/reviews/audit_d1.py",
+    "engine/experiments/round9/reviews/audit_d2.py",
+    "engine/experiments/round9/reviews/multiplicity_d2.py",
+    "engine/experiments/round9/reviews/results/D1_raw_audit.json",
+    "engine/experiments/round9/reviews/results/D1_review_bootstrap.npz",
+    "engine/experiments/round9/reviews/results/D2_raw_audit.json",
+    "engine/experiments/round9/reviews/results/D2_multiplicity.json",
+    "engine/paper/RELATED_WORK_DRAFT.md",
+    "engine/experiments/round10/R1/source_map.json",
+    "engine/experiments/round10/R1/RELATED_WORK.md",
+    "engine/experiments/round10/R1/queries.txt",
+    "engine/experiments/round10/R4"
+  ],
+  "checks": {
+    "no_unreleased_proof_or_experiment_paths": true,
+    "no_m13_m14_math_sections": true,
+    "identical_agents": true,
+    "nine_claim_groups_supported": true,
+    "no_large_file_over100MiB": true,
+    "root_commit_without_private_ancestry": true
+  },
+  "file_count_before_manifest": 10689,
+  "largest_blobs": [
+    [
+      30457494,
+      "engine/experiments/round9/D2/results/raw_1500000000.jsonl"
+    ],
+    [
+      30453966,
+      "engine/experiments/round9/D2/results/raw_1510000000.jsonl"
+    ],
+    [
+      19979200,
+      "engine/experiments/round8/T6/results/train.jsonl"
+    ],
+    [
+      14263867,
+      "engine/experiments/round8/T3/results/raw_4243.jsonl"
+    ],
+    [
+      13682835,
+      "engine/experiments/round8/T3/results/raw_4242.jsonl"
+    ]
+  ]
+}

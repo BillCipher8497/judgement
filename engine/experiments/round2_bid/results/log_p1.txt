@@ -1,0 +1,19 @@
+n=1 pos=1 done  rows=120 rc=0  5s
+n=1 pos=2 done  rows=240 rc=0  8s
+n=1 pos=3 done  rows=360 rc=0  11s
+n=2 pos=1 done  rows=480 rc=0  19s
+n=2 pos=2 done  rows=600 rc=0  27s
+n=2 pos=3 done  rows=720 rc=0  34s
+n=3 pos=1 done  rows=840 rc=14  48s
+n=3 pos=2 done  rows=960 rc=42  65s
+n=3 pos=3 done  rows=1080 rc=76  79s
+n=5 pos=1 done  rows=1200 rc=100  108s
+n=5 pos=2 done  rows=1320 rc=139  145s
+n=5 pos=3 done  rows=1440 rc=179  176s
+n=8 pos=1 done  rows=1560 rc=211  250s
+n=8 pos=2 done  rows=1680 rc=251  324s
+n=8 pos=3 done  rows=1800 rc=291  403s
+n=13 pos=1 done  rows=1920 rc=291  496s
+n=13 pos=2 done  rows=2040 rc=291  591s
+n=13 pos=3 done  rows=2160 rc=291  697s
+total 696.9818775653839

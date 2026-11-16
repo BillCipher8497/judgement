@@ -1,0 +1,309 @@
+23:11:48 start b1h_rb_0
+b1h_rb_0 100 193.9
+23:15:03 start b1n_rb_0
+b1n_rb_0 100 177.0
+23:18:00 start b1o_rb_0
+b1o_rb_0 100 144.8
+23:20:25 start b1m_plain_0
+b1m_plain_0 100 140.8
+23:22:46 start b1m_bi_0
+b1m_bi_0 100 181.2
+23:25:48 start b1m_rb_0
+b1m_rb_0 100 171.9
+23:28:40 start b1h_rb_1
+b1h_rb_1 100 188.1
+23:31:49 start b1n_rb_1
+b1n_rb_1 100 176.5
+23:34:45 start b1o_rb_1
+b1o_rb_1 100 142.9
+23:37:08 start b1m_plain_1
+b1m_plain_1 100 141.2
+23:39:30 start b1m_bi_1
+b1m_bi_1 100 179.4
+23:42:30 start b1m_rb_1
+b1m_rb_1 100 173.6
+23:45:24 start b1h_rb_2
+b1h_rb_2 100 189.5
+23:48:33 start b1n_rb_2
+b1n_rb_2 100 178.7
+23:51:33 start b1o_rb_2
+b1o_rb_2 100 144.6
+23:53:57 start b1m_plain_2
+b1m_plain_2 100 142.0
+23:56:20 start b1m_bi_2
+b1m_bi_2 100 177.3
+23:59:17 start b1m_rb_2
+b1m_rb_2 100 167.9
+00:02:06 start b1h_rb_3
+b1h_rb_3 100 186.8
+00:05:13 start b1n_rb_3
+b1n_rb_3 100 178.0
+00:08:11 start b1o_rb_3
+b1o_rb_3 100 147.2
+00:10:39 start b1m_plain_3
+b1m_plain_3 100 139.5
+00:12:58 start b1m_bi_3
+b1m_bi_3 100 175.4
+00:15:54 start b1m_rb_3
+b1m_rb_3 100 166.4
+00:18:41 start b2_rbpf_0
+Traceback (most recent call last):
+  File "/home/claude/judgement-engine/experiments/round5_bots/run.py", line 73, in <module>
+    run(a[0], a[1], int(a[2]), int(a[3]), a[4], int(a[5]), float(a[6]) if len(a) > 6 else float("inf"))
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/judgement-engine/experiments/round5_bots/run.py", line 51, in run
+    res = play_game(rules, pols, seed=base + g, record_trace=False)
+  File "/home/claude/judgement-engine/judgement/engine.py", line 129, in play_game
+    rr = play_round(rules, policies, round_index=r, deal_rng=deal_rng, policy_rngs=prngs,
+                    record_trace=record_trace)
+  File "/home/claude/judgement-engine/judgement/engine.py", line 107, in play_round
+    run_round(st, policies, policy_rngs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/judgement-engine/judgement/engine.py", line 78, in run_round
+    c = policies[p].play(infos[p], legal, rngs[p])
+  File "/home/claude/judgement-engine/judgement/bidding/model.py", line 205, in play
+    return self.player.play(info, legal_mask, rng)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/judgement-engine/judgement/policies/hybrid_rb.py", line 269, in play
+    return super().play(info, legal_mask, rng)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/judgement-engine/judgement/policies/hybrid_bi.py", line 140, in play
+    sc = self._scores(info, legal_mask, worlds)
+  File "/home/claude/judgement-engine/judgement/policies/hybrid_bi.py", line 111, in _scores
+    st = state_from_info(info, w)
+  File "/home/claude/judgement-engine/judgement/state.py", line 393, in state_from_info
+    st = RoundState(rules, info.n_cards, info.trump, info.dealer, hands)
+  File "/home/claude/judgement-engine/judgement/state.py", line 39, in __init__
+    raise ValueError("hands must be disjoint, each with n_cards cards")
+ValueError: hands must be disjoint, each with n_cards cards
+00:20:44 start b2_bipf_0
+b2_bipf_0 100 186.4
+00:23:51 start b2_rbpf_1
+b2_rbpf_1 100 187.8
+00:26:59 start b2_bipf_1
+Traceback (most recent call last):
+  File "/home/claude/judgement-engine/experiments/round5_bots/run.py", line 73, in <module>
+    run(a[0], a[1], int(a[2]), int(a[3]), a[4], int(a[5]), float(a[6]) if len(a) > 6 else float("inf"))
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/judgement-engine/experiments/round5_bots/run.py", line 51, in run
+    res = play_game(rules, pols, seed=base + g, record_trace=False)
+  File "/home/claude/judgement-engine/judgement/engine.py", line 129, in play_game
+    rr = play_round(rules, policies, round_index=r, deal_rng=deal_rng, policy_rngs=prngs,
+                    record_trace=record_trace)
+  File "/home/claude/judgement-engine/judgement/engine.py", line 107, in play_round
+    run_round(st, policies, policy_rngs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/judgement-engine/judgement/engine.py", line 78, in run_round
+    c = policies[p].play(infos[p], legal, rngs[p])
+  File "/home/claude/judgement-engine/judgement/bidding/model.py", line 205, in play
+    return self.player.play(info, legal_mask, rng)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/judgement-engine/judgement/policies/hybrid_rb.py", line 269, in play
+    return super().play(info, legal_mask, rng)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/judgement-engine/judgement/policies/hybrid_bi.py", line 140, in play
+    sc = self._scores(info, legal_mask, worlds)
+  File "/home/claude/judgement-engine/judgement/policies/hybrid_bi.py", line 111, in _scores
+    st = state_from_info(info, w)
+  File "/home/claude/judgement-engine/judgement/state.py", line 393, in state_from_info
+    st = RoundState(rules, info.n_cards, info.trump, info.dealer, hands)
+  File "/home/claude/judgement-engine/judgement/state.py", line 39, in __init__
+    raise ValueError("hands must be disjoint, each with n_cards cards")
+ValueError: hands must be disjoint, each with n_cards cards
+00:27:27 start b2_rbpf_2
+Traceback (most recent call last):
+  File "/home/claude/judgement-engine/experiments/round5_bots/run.py", line 73, in <module>
+    run(a[0], a[1], int(a[2]), int(a[3]), a[4], int(a[5]), float(a[6]) if len(a) > 6 else float("inf"))
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/judgement-engine/experiments/round5_bots/run.py", line 51, in run
+    res = play_game(rules, pols, seed=base + g, record_trace=False)
+  File "/home/claude/judgement-engine/judgement/engine.py", line 129, in play_game
+    rr = play_round(rules, policies, round_index=r, deal_rng=deal_rng, policy_rngs=prngs,
+                    record_trace=record_trace)
+  File "/home/claude/judgement-engine/judgement/engine.py", line 107, in play_round
+    run_round(st, policies, policy_rngs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/judgement-engine/judgement/engine.py", line 78, in run_round
+    c = policies[p].play(infos[p], legal, rngs[p])
+  File "/home/claude/judgement-engine/judgement/bidding/model.py", line 205, in play
+    return self.player.play(info, legal_mask, rng)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/judgement-engine/judgement/policies/hybrid_rb.py", line 269, in play
+    return super().play(info, legal_mask, rng)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/judgement-engine/judgement/policies/hybrid_bi.py", line 140, in play
+    sc = self._scores(info, legal_mask, worlds)
+  File "/home/claude/judgement-engine/judgement/policies/hybrid_bi.py", line 111, in _scores
+    st = state_from_info(info, w)
+  File "/home/claude/judgement-engine/judgement/state.py", line 393, in state_from_info
+    st = RoundState(rules, info.n_cards, info.trump, info.dealer, hands)
+  File "/home/claude/judgement-engine/judgement/state.py", line 39, in __init__
+    raise ValueError("hands must be disjoint, each with n_cards cards")
+ValueError: hands must be disjoint, each with n_cards cards
+00:28:26 start b2_bipf_2
+Traceback (most recent call last):
+  File "/home/claude/judgement-engine/experiments/round5_bots/run.py", line 73, in <module>
+    run(a[0], a[1], int(a[2]), int(a[3]), a[4], int(a[5]), float(a[6]) if len(a) > 6 else float("inf"))
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/judgement-engine/experiments/round5_bots/run.py", line 51, in run
+    res = play_game(rules, pols, seed=base + g, record_trace=False)
+  File "/home/claude/judgement-engine/judgement/engine.py", line 129, in play_game
+    rr = play_round(rules, policies, round_index=r, deal_rng=deal_rng, policy_rngs=prngs,
+                    record_trace=record_trace)
+  File "/home/claude/judgement-engine/judgement/engine.py", line 107, in play_round
+    run_round(st, policies, policy_rngs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/judgement-engine/judgement/engine.py", line 78, in run_round
+    c = policies[p].play(infos[p], legal, rngs[p])
+  File "/home/claude/judgement-engine/judgement/bidding/model.py", line 205, in play
+    return self.player.play(info, legal_mask, rng)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/judgement-engine/judgement/policies/hybrid_rb.py", line 269, in play
+    return super().play(info, legal_mask, rng)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/judgement-engine/judgement/policies/hybrid_bi.py", line 140, in play
+    sc = self._scores(info, legal_mask, worlds)
+  File "/home/claude/judgement-engine/judgement/policies/hybrid_bi.py", line 111, in _scores
+    st = state_from_info(info, w)
+  File "/home/claude/judgement-engine/judgement/state.py", line 393, in state_from_info
+    st = RoundState(rules, info.n_cards, info.trump, info.dealer, hands)
+  File "/home/claude/judgement-engine/judgement/state.py", line 39, in __init__
+    raise ValueError("hands must be disjoint, each with n_cards cards")
+ValueError: hands must be disjoint, each with n_cards cards
+00:29:26 start b2_rbpf_3
+Traceback (most recent call last):
+  File "/home/claude/judgement-engine/experiments/round5_bots/run.py", line 73, in <module>
+    run(a[0], a[1], int(a[2]), int(a[3]), a[4], int(a[5]), float(a[6]) if len(a) > 6 else float("inf"))
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/judgement-engine/experiments/round5_bots/run.py", line 51, in run
+    res = play_game(rules, pols, seed=base + g, record_trace=False)
+  File "/home/claude/judgement-engine/judgement/engine.py", line 129, in play_game
+    rr = play_round(rules, policies, round_index=r, deal_rng=deal_rng, policy_rngs=prngs,
+                    record_trace=record_trace)
+  File "/home/claude/judgement-engine/judgement/engine.py", line 107, in play_round
+    run_round(st, policies, policy_rngs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/judgement-engine/judgement/engine.py", line 78, in run_round
+    c = policies[p].play(infos[p], legal, rngs[p])
+  File "/home/claude/judgement-engine/judgement/bidding/model.py", line 205, in play
+    return self.player.play(info, legal_mask, rng)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/judgement-engine/judgement/policies/hybrid_rb.py", line 269, in play
+    return super().play(info, legal_mask, rng)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/judgement-engine/judgement/policies/hybrid_bi.py", line 140, in play
+    sc = self._scores(info, legal_mask, worlds)
+  File "/home/claude/judgement-engine/judgement/policies/hybrid_bi.py", line 111, in _scores
+    st = state_from_info(info, w)
+  File "/home/claude/judgement-engine/judgement/state.py", line 393, in state_from_info
+    st = RoundState(rules, info.n_cards, info.trump, info.dealer, hands)
+  File "/home/claude/judgement-engine/judgement/state.py", line 39, in __init__
+    raise ValueError("hands must be disjoint, each with n_cards cards")
+ValueError: hands must be disjoint, each with n_cards cards
+00:29:40 start b2_bipf_3
+Traceback (most recent call last):
+  File "/home/claude/judgement-engine/experiments/round5_bots/run.py", line 73, in <module>
+    run(a[0], a[1], int(a[2]), int(a[3]), a[4], int(a[5]), float(a[6]) if len(a) > 6 else float("inf"))
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/judgement-engine/experiments/round5_bots/run.py", line 51, in run
+    res = play_game(rules, pols, seed=base + g, record_trace=False)
+  File "/home/claude/judgement-engine/judgement/engine.py", line 129, in play_game
+    rr = play_round(rules, policies, round_index=r, deal_rng=deal_rng, policy_rngs=prngs,
+                    record_trace=record_trace)
+  File "/home/claude/judgement-engine/judgement/engine.py", line 107, in play_round
+    run_round(st, policies, policy_rngs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/judgement-engine/judgement/engine.py", line 78, in run_round
+    c = policies[p].play(infos[p], legal, rngs[p])
+  File "/home/claude/judgement-engine/judgement/bidding/model.py", line 205, in play
+    return self.player.play(info, legal_mask, rng)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/judgement-engine/judgement/policies/hybrid_rb.py", line 269, in play
+    return super().play(info, legal_mask, rng)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/judgement-engine/judgement/policies/hybrid_bi.py", line 140, in play
+    sc = self._scores(info, legal_mask, worlds)
+  File "/home/claude/judgement-engine/judgement/policies/hybrid_bi.py", line 111, in _scores
+    st = state_from_info(info, w)
+  File "/home/claude/judgement-engine/judgement/state.py", line 393, in state_from_info
+    st = RoundState(rules, info.n_cards, info.trump, info.dealer, hands)
+  File "/home/claude/judgement-engine/judgement/state.py", line 39, in __init__
+    raise ValueError("hands must be disjoint, each with n_cards cards")
+ValueError: hands must be disjoint, each with n_cards cards
+00:32:31 start b1m_rbnl_0
+b1m_rbnl_0 100 153.2
+00:35:04 start b1m_rbnl_1
+b1m_rbnl_1 100 152.9
+00:37:37 start b1m_rbnl_2
+b1m_rbnl_2 100 153.1
+00:40:11 start b1m_rbnl_3
+b1m_rbnl_3 100 150.6
+00:42:42 start b1n_rb_4
+b1n_rb_4 100 172.9
+00:45:35 start b1o_rb_4
+b1o_rb_4 100 142.4
+00:47:58 start b1m_plain_4
+b1m_plain_4 100 141.4
+00:50:20 start b1m_bi_4
+b1m_bi_4 100 179.2
+00:53:19 start b1m_rb_4
+b1m_rb_4 100 172.4
+00:56:12 start b1m_plain_5
+b1m_plain_5 100 141.6
+00:58:34 start b1m_bi_5
+b1m_bi_5 100 181.7
+01:01:36 start b1m_rb_5
+b1m_rb_5 100 167.3
+01:04:24 start b1m_plain_6
+b1m_plain_6 100 140.7
+01:06:45 start b1m_bi_6
+b1m_bi_6 100 179.5
+01:09:44 start b1m_rb_6
+b1m_rb_6 100 169.8
+01:12:35 start b1m_plain_7
+b1m_plain_7 100 138.8
+01:14:54 start b1m_bi_7
+b1m_bi_7 100 175.3
+01:17:49 start b1m_rb_7
+b1m_rb_7 100 166.4
+01:20:36 start b1h_rb_4
+b1h_rb_4 100 184.4
+01:23:41 start b2_rbpf_4
+b2_rbpf_4 100 187.2
+01:26:48 start b2_bipf_4
+b2_bipf_4 100 189.8
+01:29:58 start b1h_rb_5
+b1h_rb_5 100 190.4
+01:33:09 start b2_rbpf_5
+b2_rbpf_5 100 187.9
+01:36:17 start b2_bipf_5
+b2_bipf_5 100 193.5
+01:39:31 start b1h_rb_6
+b1h_rb_6 100 184.0
+01:42:36 start b2_rbpf_6
+b2_rbpf_6 100 183.0
+01:45:39 start b2_bipf_6
+b2_bipf_6 100 185.0
+01:48:44 start b1h_rb_7
+b1h_rb_7 100 185.0
+01:51:50 start b2_rbpf_7
+b2_rbpf_7 100 187.3
+01:54:57 start b2_bipf_7
+b2_bipf_7 100 189.5
+01:58:07 start b2_rbpf_0
+b2_rbpf_0 100 179.9
+02:01:07 start b2_bipf_0
+b2_bipf_0 100 185.6
+02:04:13 start b2_rbpf_1
+b2_rbpf_1 100 186.9
+02:07:20 start b2_bipf_1
+b2_bipf_1 100 191.7
+02:10:32 start b2_rbpf_2
+b2_rbpf_2 100 187.9
+02:13:41 start b2_bipf_2
+b2_bipf_2 100 188.5
+02:16:50 start b2_rbpf_3
+b2_rbpf_3 100 183.7
+02:19:54 start b2_bipf_3
+b2_bipf_3 100 191.3
+02:23:05 QUEUEDONE jobs.txt

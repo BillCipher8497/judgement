@@ -1,0 +1,35 @@
+{
+  "qualification": "Secondary review sensitivity: three frozen cells, normal cluster SEs, Bonferroni familywise95% coverage. Discovery selection not corrected by its CIs.",
+  "cells": {
+    "n2|trump|pos2": {
+      "n_games": 4000,
+      "n_rounds": 2000,
+      "point": 0.23875,
+      "familywise95_Bonferroni_interval": [
+        0.14397068407916963,
+        0.33352931592083035
+      ],
+      "individual_coverage": 0.9833333333333333
+    },
+    "n7|trump|pos3": {
+      "n_games": 4000,
+      "n_rounds": 2000,
+      "point": 0.15175,
+      "familywise95_Bonferroni_interval": [
+        0.014206320375969694,
+        0.2892936796240303
+      ],
+      "individual_coverage": 0.9833333333333333
+    },
+    "n10|trump|pos1": {
+      "n_games": 4000,
+      "n_rounds": 2000,
+      "point": 0.13625,
+      "familywise95_Bonferroni_interval": [
+        -0.02196991935209705,
+        0.2944699193520971
+      ],
+      "individual_coverage": 0.9833333333333333
+    }
+  }
+}

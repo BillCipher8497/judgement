@@ -1,0 +1,23 @@
+f_ta__guide ta guide 6000 53.0
+f_tap3__guide tap3 guide 6000 69.2
+f_guide__guide guide guide 6000 35.9
+f_guide__tap3 guide tap3 6000 53.1
+f_guide__ta guide ta 6000 45.9
+f_guide__greedy guide greedy 6000 36.7
+f_ta__guide_p.r_hi_under-0 ta guide:p.r_hi_under=0 6000 51.5
+f_ta__guide_p.r_must-0 ta guide:p.r_must=0 6000 51.4
+f_ta__guide_p.r_win_hi-0 ta guide:p.r_win_hi=0 6000 51.5
+f_ta__guide_p.r_shed-0 ta guide:p.r_shed=0 6000 50.9
+f_ta__guide_p.r_lead_boss-0 ta guide:p.r_lead_boss=0 6000 51.5
+f_ta__guide_p.r_lead_high-0 ta guide:p.r_lead_high=0 6000 51.1
+f_ta__guide_p.r_boss_follow-0 ta guide:p.r_boss_follow=0 6000 51.0
+f_ta__guide_p.r_ruff-0 ta guide:p.r_ruff=0 6000 51.8
+f_ta__guide_p.track-13 ta guide:p.track=13 6000 52.7
+f_ta__guide_b.prior_k-99 ta guide:b.prior_k=99 6000 52.0
+f_ta__guide_b.s_K2-0_b.s_K1-0_b.prior_k-99_b.t_sub-6 ta guide:b.s_K2=0,b.s_K1=0,b.prior_k=99,b.t_sub=6 6000 51.5
+f_tap3__guide_b.prior_k-99 tap3 guide:b.prior_k=99 6000 72.1
+f_ta__guide_p.r_lead_hi-2 ta guide:p.r_lead_hi=2 6000 50.6
+f_ta__guide_p.track-9 ta guide:p.track=9 6000 50.6
+f_ta__guide_b.n_K2-1_b.n_K1-1 ta guide:b.n_K2=1,b.n_K1=1 6000 51.8
+f_ta__guide_p.track-11 ta guide:p.track=11 6000 51.8
+ALLDONE

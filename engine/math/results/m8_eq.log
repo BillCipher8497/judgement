@@ -1,0 +1,119 @@
+hook|eq
+  sweep 0 changed infosets 927
+  sweep 1 changed infosets 1575
+  sweep 2 changed infosets 1300
+  sweep 3 changed infosets 392
+  sweep 4 changed infosets 113
+  sweep 5 changed infosets 64
+  sweep 6 changed infosets 58
+  sweep 7 changed infosets 58
+  sweep 8 changed infosets 58
+  sweep 9 changed infosets 58
+  sweep 10 changed infosets 58
+  sweep 11 changed infosets 58
+  sweep 12 changed infosets 58
+  sweep 13 changed infosets 58
+  sweep 14 changed infosets 58
+  sweep 15 changed infosets 58
+  sweep 16 changed infosets 58
+  sweep 17 changed infosets 58
+  sweep 18 changed infosets 58
+  sweep 19 changed infosets 58
+  sweep 20 changed infosets 58
+  sweep 21 changed infosets 58
+  sweep 22 changed infosets 58
+  sweep 23 changed infosets 58
+  sweep 24 changed infosets 58
+hook|myopic
+  sweep 0 changed infosets 852
+  sweep 1 changed infosets 1604
+  sweep 2 changed infosets 1368
+  sweep 3 changed infosets 702
+  sweep 4 changed infosets 523
+  sweep 5 changed infosets 474
+  sweep 6 changed infosets 463
+  sweep 7 changed infosets 466
+  sweep 8 changed infosets 460
+  sweep 9 changed infosets 460
+  sweep 10 changed infosets 460
+  sweep 11 changed infosets 460
+  sweep 12 changed infosets 460
+  sweep 13 changed infosets 460
+  sweep 14 changed infosets 460
+  sweep 15 changed infosets 460
+  sweep 16 changed infosets 460
+  sweep 17 changed infosets 460
+  sweep 18 changed infosets 460
+  sweep 19 changed infosets 460
+  sweep 20 changed infosets 460
+  sweep 21 changed infosets 460
+  sweep 22 changed infosets 460
+  sweep 23 changed infosets 460
+  sweep 24 changed infosets 460
+nohook|eq
+  sweep 0 changed infosets 932
+  sweep 1 changed infosets 2262
+  sweep 2 changed infosets 1936
+  sweep 3 changed infosets 437
+  sweep 4 changed infosets 142
+  sweep 5 changed infosets 73
+  sweep 6 changed infosets 63
+  sweep 7 changed infosets 60
+  sweep 8 changed infosets 60
+  sweep 9 changed infosets 60
+  sweep 10 changed infosets 60
+  sweep 11 changed infosets 60
+  sweep 12 changed infosets 60
+  sweep 13 changed infosets 60
+  sweep 14 changed infosets 60
+  sweep 15 changed infosets 60
+  sweep 16 changed infosets 60
+  sweep 17 changed infosets 60
+  sweep 18 changed infosets 60
+  sweep 19 changed infosets 60
+  sweep 20 changed infosets 60
+  sweep 21 changed infosets 60
+  sweep 22 changed infosets 60
+  sweep 23 changed infosets 60
+  sweep 24 changed infosets 60
+nohook|myopic
+  sweep 0 changed infosets 855
+  sweep 1 changed infosets 2112
+  sweep 2 changed infosets 1775
+  sweep 3 changed infosets 452
+  sweep 4 changed infosets 235
+  sweep 5 changed infosets 212
+  sweep 6 changed infosets 184
+  sweep 7 changed infosets 184
+  sweep 8 changed infosets 183
+  sweep 9 changed infosets 183
+  sweep 10 changed infosets 183
+  sweep 11 changed infosets 183
+  sweep 12 changed infosets 183
+  sweep 13 changed infosets 183
+  sweep 14 changed infosets 183
+  sweep 15 changed infosets 183
+  sweep 16 changed infosets 183
+  sweep 17 changed infosets 183
+  sweep 18 changed infosets 183
+  sweep 19 changed infosets 183
+  sweep 20 changed infosets 183
+  sweep 21 changed infosets 183
+  sweep 22 changed infosets 183
+  sweep 23 changed infosets 183
+  sweep 24 changed infosets 183
+model bids
+M8 2-card round, trump S, TA play; 300000 deals (BR on half A, values on held-out half B, 150000 deals); 416 hand classes
+| profile | pos0 (leads) | pos1 | pos2 | dealer | table | P(Σb=2) | sweeps (infosets changed) |
+|---|---|---|---|---|---|---|---|
+| hook|eq | 7.09 ± 0.02 | 7.89 ± 0.02 | 8.21 ± 0.02 | 5.35 ± 0.03 | 28.54 ± 0.03 | 0.000 | [927, 1575, 1300, 392, 113, 64, 58, 58, 58, 58, 58, 58, 58, 58, 58, 58, 58, 58, 58, 58, 58, 58, 58, 58, 58] |
+| hook|myopic | 7.07 ± 0.02 | 7.88 ± 0.02 | 8.21 ± 0.02 | 5.37 ± 0.03 | 28.53 ± 0.03 | 0.000 | [852, 1604, 1368, 702, 523, 474, 463, 466, 460, 460, 460, 460, 460, 460, 460, 460, 460, 460, 460, 460, 460, 460, 460, 460, 460] |
+| hook|model | 6.86 ± 0.02 | 7.86 ± 0.02 | 8.11 ± 0.02 | 5.62 ± 0.03 | 28.45 ± 0.03 | – | – |
+| nohook|eq | 7.25 ± 0.02 | 7.99 ± 0.02 | 8.26 ± 0.02 | 8.64 ± 0.02 | 32.14 ± 0.04 | 0.491 | [932, 2262, 1936, 437, 142, 73, 63, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60] |
+| nohook|myopic | 7.24 ± 0.02 | 7.99 ± 0.02 | 8.27 ± 0.02 | 8.64 ± 0.02 | 32.13 ± 0.04 | 0.490 | [855, 2112, 1775, 452, 235, 212, 184, 184, 183, 183, 183, 183, 183, 183, 183, 183, 183, 183, 183, 183, 183, 183, 183, 183, 183] |
+| nohook|model | 6.91 ± 0.02 | 7.93 ± 0.02 | 8.13 ± 0.02 | 8.47 ± 0.02 | 31.44 ± 0.04 | – | – |
+Hook cost (dealer, paired on B): equilibrium 3.29 ± 0.03; model-bidder 2.84 ± 0.03; Phase-1 E5 measured 2.84 ± 0.08
+Others' change (nohook − hook, eq): 0.16 ± 0.01, 0.10 ± 0.01, 0.05 ± 0.01
+Myopic vs eq bid disagreement by seat (deal mass): 0.045 ± 0.001, 0.042 ± 0.001, 0.033 ± 0.001, 0.073 ± 0.001
+Unilateral myopic deviation from eq (value change on B): seat0 -0.024 ± 0.012 (32 infosets), seat1 -0.032 ± 0.009 (36 infosets), seat2 -0.018 ± 0.008 (64 infosets), seat3 0.002 ± 0.002 (25 infosets)
+Threshold consistency (mass fraction explained by a monotone rule; dyn = E[t|class,h,b=1], static = seat-0 E[t|class]): {"0": {"dyn": 0.837, "static": 0.837}, "1": {"dyn": 0.9544, "static": 0.8658}, "2": {"dyn": 0.9658, "static": 0.8689}, "3": {"dyn": 0.9574, "static": 0.9291}}

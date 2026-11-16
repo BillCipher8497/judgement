@@ -1,0 +1,24 @@
+Play/bid rule ablations: full guide agent (guide bid + guide play) 1 vs 3 TA, 6000 games, BASE 71M;
+value of rule = guide - guide_without_rule (per game, paired, 95% CI); P(win) ties as wins
+b.prior_k-99                                                           value  +1.45 +- 0.39/game   dP(win) +0.003 +- 0.009
+b.s_K2-0_b.s_K1-0_b.n_K2-0_b.n_K1-0_b.prior_k-99_b.t_sub-6             value  +4.05 +- 0.56/game   dP(win) +0.023 +- 0.011
+p.r_boss_follow-0                                                      value  +1.77 +- 0.26/game   dP(win) +0.020 +- 0.007
+p.r_hi_under-0                                                         value +26.29 +- 0.42/game   dP(win) +0.176 +- 0.010
+p.r_lead_boss-0                                                        value  +0.43 +- 0.35/game   dP(win) +0.006 +- 0.009
+p.r_lead_hi-0                                                          value  +0.15 +- 0.13/game   dP(win) -0.000 +- 0.005
+p.r_lead_high-0                                                        value  +2.58 +- 0.42/game   dP(win) +0.029 +- 0.009
+p.r_must-0                                                             value  +0.71 +- 0.11/game   dP(win) +0.007 +- 0.003
+p.r_ruff-0                                                             value  +2.02 +- 0.38/game   dP(win) +0.011 +- 0.009
+p.r_shed-0                                                             value  +5.41 +- 0.27/game   dP(win) +0.051 +- 0.007
+p.r_win_hi-0                                                           value  +1.45 +- 0.14/game   dP(win) +0.010 +- 0.004
+p.track-10                                                             value  +0.09 +- 0.11/game   dP(win) +0.003 +- 0.003
+p.track-13                                                             value  +2.99 +- 0.36/game   dP(win) +0.034 +- 0.009
+(pool TA+3) b.prior_k=99                                               value  +1.66 +- 0.37/game
+guide bidding cost under guide play (MB bid - guide bid), pool TA       +5.24 +- 0.67/game  dP(win) +0.055 +- 0.013
+guide play cost under MB bidding (TA+3 - guide play), pool TA           +3.81 +- 0.49/game  dP(win) +0.039 +- 0.011
+guide bidding cost under TA+3 play, pool TA                             +7.19 +- 0.67/game  dP(win) +0.075 +- 0.013
+guide play cost under guide bidding, pool TA                            +1.86 +- 0.46/game  dP(win) +0.018 +- 0.010
+guide bidding cost under guide play, pool TA+3                          +5.37 +- 0.67/game  dP(win) +0.041 +- 0.011
+guide play cost under MB bidding, pool TA+3                             +3.89 +- 0.51/game  dP(win) +0.033 +- 0.011
+guide bidding cost under TA+3 play, pool TA+3                           +7.81 +- 0.66/game  dP(win) +0.060 +- 0.012
+guide play cost under guide bidding, pool TA+3                          +1.46 +- 0.48/game  dP(win) +0.014 +- 0.010

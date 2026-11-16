@@ -1,0 +1,18 @@
+s_ta_gplay ta gplay 2000 17.4
+s_ta_gplay_p.r_boss_follow0 ta gplay:p.r_boss_follow=0 2000 17.0
+s_ta_gplay_p.r_ruff0 ta gplay:p.r_ruff=0 2000 17.1
+s_ta_gplay_p.r_lead_hi1 ta gplay:p.r_lead_hi=1 2000 17.9
+s_ta_gplay_p.r_lead_hi2 ta gplay:p.r_lead_hi=2 2000 17.9
+s_ta_gplay_p.track13 ta gplay:p.track=13 2000 17.6
+s_ta_gplay_p.track11 ta gplay:p.track=11 2000 17.5
+s_ta_gplay_p.track9 ta gplay:p.track=9 2000 17.5
+s_ta_gplay_p.r_try0 ta gplay:p.r_try=0 2000 17.7
+gplay                                    d/game vs gplay:  +0.00 +- 0.00   P(win) 0.267
+gplay:p.r_boss_follow=0                  d/game vs gplay:  -1.48 +- 0.41   P(win) 0.258
+gplay:p.r_ruff=0                         d/game vs gplay:  -1.20 +- 0.58   P(win) 0.255
+gplay:p.r_lead_hi=1                      d/game vs gplay:  -6.09 +- 0.63   P(win) 0.208
+gplay:p.r_lead_hi=2                      d/game vs gplay:  +0.30 +- 0.16   P(win) 0.263
+gplay:p.track=13                         d/game vs gplay:  -3.35 +- 0.66   P(win) 0.237
+gplay:p.track=11                         d/game vs gplay:  -0.68 +- 0.30   P(win) 0.257
+gplay:p.track=9                          d/game vs gplay:  +0.34 +- 0.24   P(win) 0.274
+gplay:p.r_try=0                          d/game vs gplay:  -0.03 +- 0.29   P(win) 0.266

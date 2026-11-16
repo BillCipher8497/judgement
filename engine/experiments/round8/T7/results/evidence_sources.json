@@ -1,0 +1,23 @@
+{
+  "no_new_randomness": true,
+  "validated_tasks": [
+    "T1",
+    "T2",
+    "T3",
+    "T4",
+    "T5",
+    "T6"
+  ],
+  "sources_sha256": {
+    "experiments/round7_audit/results/a1_surplus.json": "9d7ef267dc8fed9d4ba6a536771297b75997a621e8093adf5b617656fc4d85c7",
+    "experiments/round8/T2/results/summary.json": "7fa8a29073045288c03bcc6bc37fdad97f3cecba08b3b5274a7b0fffb2cfaa94",
+    "experiments/round8/T3/results/summary.json": "425e6aff154ee80bc315fea3355d193f47cd83f145f83f08dc67eaac44e9459a",
+    "experiments/round8/T3/results/verification.json": "f13b02c7f83640e91c9466263e47657b38546d334eb5255c4fba0f4bb01ba461",
+    "experiments/round8/T4/results/summary.json": "cb3f70329df18adeb3332be24e2fcda956b97ecbad6a035bd90e7eeb16ef673a",
+    "experiments/round8/T5/results/certificate.json": "89d7d9ccebd7c2abf3146dbf349632298911b7f84a1e3a61a8f2e778f1c78ba3",
+    "experiments/round8/T6/results/fit.json": "ef1ba5ca6306da804887656be2291169f35e1c23c5d3bd673cb502f51f5940aa",
+    "experiments/round8/T6/results/validation_summary.json": "f778eb3a04b665dec8eda75fcb17da6c9a9f53787884f11c09c9d702fcdd5bba",
+    "experiments/round8/T6/results/verification.json": "5004230ee944be6b681919a8cfc8eeeb8dc7e54f9ea69c8348603a11b7f9eaf0"
+  },
+  "evidence_sha256": "0e2ee998a9bfafbfcc0aa4c9c42a22672f47579af9921ff62bbfc3d14723f476"
+}

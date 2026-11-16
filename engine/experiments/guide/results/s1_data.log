@@ -1,0 +1,10 @@
+done s1_train.pkl 60000
+
+real	9m51.485s
+user	9m44.655s
+sys	0m0.332s
+done s1_test.pkl 40000
+
+real	8m39.185s
+user	8m35.953s
+sys	0m0.167s

@@ -1,0 +1,114 @@
+JUDGEMENT (OH HELL): A STRATEGY YOU CAN USE AT THE TABLE
+Phase 5 human guide. Rules: 4 players, hit = 10 + bid, miss = 0, dealer bids last and is hooked,
+trumps cycle S H D C NT, 13..1..13 ladder.
+Code: judgement/policies/human_guide.py (HumanBidder + HumanPlayPolicy = GuideAgent). Numbers come from
+experiments/guide/results (s1g_final.json, s1g_table.txt, s3_summary.txt, s3_ablation.txt).
+
+The guide needs no arithmetic beyond counting. You keep track of three things during a round:
+  (a) how many trumps have been played (so you know how many are still out),
+  (b) which Aces, Kings and Queens have been played,
+  (c) which players have shown out of which suit.
+Measured value of this memory: +2.34 +- 0.33 pts/game against remembering nothing, and +0.28 +- 0.14 against
+remembering only Aces and Kings. Also remembering Jacks adds +0.10 +- 0.10 (not significant).
+
+-----------------------------------------------------------------------------------------------
+HEADLINE (6,000 games per line, CRN, seats rotated, 95% CI, ties for first count as wins)
+-----------------------------------------------------------------------------------------------
+  One guide player against three TA bots:     -2.01 +- 0.78 pts/game vs a TA bot in that seat, P(win) 0.235 +- 0.011
+  One TA+3 bot (the strongest rule bot):      +7.79 +- 0.55,  P(win) 0.337 +- 0.012
+  One greedy player ("always try to win"):   -43.32 +- 0.85,  P(win) 0.019 +- 0.003
+  => The guide keeps 81% [79%, 82%] of TA+3's edge over greedy play (81% [80%, 82%] against three TA+3 bots).
+     For comparison, the TA bot (exact card tracking and probabilities) keeps 85% (vs TA) / 82% (vs TA+3).
+  Where the remaining 9.80 +- 0.74 pts/game to TA+3 goes (vs TA; s3_ablation.txt): bidding 5.50 +- 0.66 (swap
+  bids under guide play) to 7.72 +- 0.67 (under TA+3 play); play 2.08 +- 0.47 (under guide bids) to 4.31 +- 0.50
+  (under bot bids). Bidding is the bigger loss in either order.
+  Four guide players at one table score 155.3 +- 0.3 each per game (four TA: 161.8, four TA+3: 166.4); one TA+3
+  bot among three guide players: +12.49 +- 0.78 pts/game, P(win) 0.375 +- 0.012.
+
+-----------------------------------------------------------------------------------------------
+BIDDING: COUNT POINTS (2 points = 1 trick)
+-----------------------------------------------------------------------------------------------
+Value of each line = loss per round when that line is deleted, measured on 40,000 held-out bidding
+situations (counterfactual playouts on the true deal, the bidder then plays this guide). Per game = x 25.
+
+  B1  Trump rounds: 2 points for every trump, plus 1 more for the trump Ace, King and Queen.
+        value: trumps 1.81 +- 0.06 /round; the extra point for A/K/Q 0.27 +- 0.03 /round
+  B2  Every side-suit Ace: 1 point. Every side-suit King: 1 point.
+        value: 0.37 +- 0.04 /round (the Kings alone: 0.12 +- 0.03)
+  B3  No-trump rounds: every Ace is 2 points. (Kings count nothing in NT.)
+        value: 0.14 +- 0.02 /round
+  B4  Trump rounds: take off 1 point for every 4 cards in the round (1-3 cards: 0; 4-7: 1; 8-11: 2; 12-13: 3).
+        value: 0.49 +- 0.06 /round
+  B5  Your bid = points / 2, rounded down.
+  B6  Earlier bids: each player who bid before you has a fair share of n/4 tricks. If their total is more than
+      2 above the sum of their shares, bid 1 less (more than 6 above: 2 less). If it is 2 or more below, bid 1 more
+      (6 or more below: 2 more). Example: n = 8, you bid third; the two earlier players' shares are 2 + 2 = 4;
+      they bid 7 in total -> 3 above -> bid 1 less.
+        value: 0.08 +- 0.03 /round; in full games +1.53 +- 0.38 pts/game (vs TA), +1.70 +- 0.37 (vs TA+3)
+        (just under the 0.1/round bar; kept because it is the only line that uses the table)
+  B7  Dealer, if the hook forbids your bid: go up 1 if your points were odd, otherwise down 1 (up if you are at 0).
+        value: none measurable (0.00 +- 0.01 /round against "always go down"); either way is fine.
+
+  Example: hearts trump, 8 cards, you hold AH 9H 4H, KS 7S, AD, 3C 2C.
+     trumps 3 x 2 = 6, +1 for AH = 7; KS 1, AD 1 -> 9; minus 2 (8 cards) -> 7 points -> bid 3.
+
+  Bidding accuracy (held-out situations, the bidder plays this guide; ModelBidder = the fitted bot bidder):
+     matches ModelBidder's bid 61.4% of the time, matches the Monte-Carlo oracle bid 57.7% (ModelBidder 62.7%).
+     EV loss vs ModelBidder: 0.19 +- 0.05 pts/round overall (trump 0.20 +- 0.06, NT 0.14 +- 0.13).
+     In full games the guide bid costs 5.50 +- 0.66 pts/game (0.22 /round) against ModelBidder bids.
+  Lines tried and dropped (each bought < 0.1 pts/round): side Queens (<= 0.03), NT Kings (0.02), short suits /
+  voids with trumps (0), NT long suits (0), special rules for 1-3 card rounds (0.02-0.03), counting low cards,
+  Queens or Jacks (0.02-0.03 together), rounding up (costs 0.3).
+  Ceiling: even real-valued per-round-size regressions on the same hand facts lose 0.17 /round vs ModelBidder,
+  so the integer count is about as good as these hand facts allow.
+
+-----------------------------------------------------------------------------------------------
+PLAY: THE CHECKLIST (use the first rule that applies)
+-----------------------------------------------------------------------------------------------
+Words:  NEED = your bid minus the tricks you have taken.
+        BOSS = a card that no unplayed card of its suit can beat (you hold or have seen every higher A/K/Q);
+               once no trumps are left out, every trump is a boss.
+        SURE WINNER = beats the card now winning the trick and either you play last, or it is a boss that
+               cannot be ruffed (it is a trump, or it is NT, or no trumps are out, or everyone after you has
+               shown out of trumps).
+        SURE TRICKS = the number of bosses in your hand.
+Value of each rule = full games, 1 guide player vs 3 TA bots, 6,000 games, paired: guide minus guide-without-rule.
+
+  P0  You can no longer make your bid: play your lowest card.  (no effect on your own score)
+  At your bid (NEED = 0):
+  P1  Following: play your HIGHEST card that does not beat the card now winning. If every card beats it:
+      your highest if you play last, otherwise your lowest.                         value +27.46 +- 0.42 /game
+  P2  Leading: lead your lowest non-trump.                                            (baseline lead)
+  Still needing tricks (NEED > 0):
+  P3  You need every remaining trick: follow with your cheapest sure winner (if none, your highest card);
+      lead your highest boss, trumps first.                                          value +0.75 +- 0.12 /game
+  P4  Following and you hold a sure winner: if NEED = 1 win with your HIGHEST sure winner, otherwise with the
+      cheapest.                                                                       value +1.39 +- 0.14 /game
+  P5  Following, no sure winner, but a boss beats the card now winning: play it (highest if NEED = 1, else
+      cheapest).                                                                      value +1.65 +- 0.26 /game
+  P6  Following and out of the led suit: ruff with your lowest trump that beats the card now winning.
+                                                                                      value +1.86 +- 0.39 /game
+  P7  Following and not winning: if your sure tricks (not counting this card) still cover NEED, throw your
+      HIGHEST card; otherwise throw your lowest non-trump.                            value +5.26 +- 0.27 /game
+  P8  Leading with a boss: while trumps are out, lead your top trump boss; otherwise a side boss (highest if
+      NEED = 1, else cheapest).                                                       value +0.35 +- 0.34 /game (n.s.)
+  P9  Leading, no boss: lead your highest non-trump.                                  value +2.47 +- 0.41 /game
+
+  The idea behind P1, P4, P7 (math/NOTES.md M9, Props W and L): spend your dangerous cards on tricks whose
+  outcome is already decided, and keep low cards for later.
+  Rules tried and dropped: "at your bid in the 13-card round, lead your highest card that an unplayed honour
+  beats" (TA+3's Prop L; +0.22 +- 0.12 /game, and -6.1 when used in every round); draw trumps when you hold
+  the majority (-0.3); try a non-boss high card when urgent (0); shed only Q or higher (-1.5); low from the
+  longest suit in NT (-0.6 vs P9).
+  Guide play alone (with bot bids): +3.48 +- 0.61 pts/game vs TA (TA+3: +7.79 +- 0.55); guide play keeps
+  92% [91%, 93%] of TA+3's edge over greedy, guide bidding alone (with TA+3 play) 85% [84%, 86%].
+
+-----------------------------------------------------------------------------------------------
+LIMITS
+-----------------------------------------------------------------------------------------------
+  * Measured against bots (TA, TA+3), not people; the guide is assumed to be applied without mistakes.
+  * Bidding values come from situations where the other seats bid with ModelBidder and play TA+3, and the
+    bidding data were made with an earlier guide version (it also remembered Jacks); full-game numbers use the
+    final version.
+  * Play rules were chosen on separate screen seeds (91,000,000+), then measured on fresh seeds (71,000,000+).
+  * Bidding lines were picked on 60,000 training situations and measured on 40,000 held-out ones.

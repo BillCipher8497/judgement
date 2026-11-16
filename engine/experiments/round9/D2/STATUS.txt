@@ -1,0 +1,93 @@
+2026-11-16 D2 preregistration BEFORE compute.
+PRIMARY CONTRAST: mean paired ModelBidder-minus-HumanBidder hero points per full 25-round game, both arms using the unchanged HumanPlayPolicy, against three unchanged ModelBidder/TA opponents. Positive is the score cost of guide bidding. Secondary ties-as-win difference is recomputed from totals. No new guide rule or fitted weight.
+Discovery base1500000000 n4000 paired games, challenger seat g%4; fresh replication1510000000 n4000 paired games. After discovery only, freeze the 3 observed (cards, trump-vs-NT, bid-position) cells with largest positive contribution to the mean game loss; report those exact cells on replication, without reselection. Additional base1510M is recorded in BOARD Notes. Exact decomposition sums per-round paired losses by n, trump status, bid position and their joint cells; structurally absent cells are not estimated. Bid errors are guide bid minus model bid on the same hand/earlier-bid context (assert prior identity).
+CI units: independent full paired games, stratified by challenger seat (fixed balanced g%4 schedule), normal95% CIs from within-stratum variances. Per-round and bid-error-frequency CIs use a cluster ratio influence calculation, keeping repeated rounds in each game together. Report n_games and n_rounds per cell and retain all raw arms, scores, bids, counts and choices. 4000 is a fixed target for each stage; no effect-based early stopping. Hard stop17:30ET, incremental complete-pair JSONL saves.
+2026-11-16T15:28:39.851912+00:00 base=1500000000 100/4000 paired games complete
+2026-11-16T15:28:50.477652+00:00 base=1500000000 200/4000 paired games complete
+2026-11-16T15:29:00.777409+00:00 base=1500000000 300/4000 paired games complete
+2026-11-16T15:29:11.289889+00:00 base=1500000000 400/4000 paired games complete
+2026-11-16T15:29:22.469918+00:00 base=1500000000 500/4000 paired games complete
+2026-11-16T15:29:35.148667+00:00 base=1500000000 600/4000 paired games complete
+2026-11-16T15:29:47.829040+00:00 base=1500000000 700/4000 paired games complete
+2026-11-16T15:29:59.695262+00:00 base=1500000000 800/4000 paired games complete
+2026-11-16T15:30:11.548589+00:00 base=1500000000 900/4000 paired games complete
+2026-11-16T15:30:22.766293+00:00 base=1500000000 1000/4000 paired games complete
+2026-11-16T15:30:33.627560+00:00 base=1500000000 1100/4000 paired games complete
+2026-11-16T15:30:44.576137+00:00 base=1500000000 1200/4000 paired games complete
+2026-11-16T15:30:55.369826+00:00 base=1500000000 1300/4000 paired games complete
+2026-11-16T15:31:05.368736+00:00 base=1500000000 1400/4000 paired games complete
+2026-11-16T15:31:15.592808+00:00 base=1500000000 1500/4000 paired games complete
+2026-11-16T15:31:26.944894+00:00 base=1500000000 1600/4000 paired games complete
+2026-11-16T15:31:38.357070+00:00 base=1500000000 1700/4000 paired games complete
+2026-11-16T15:31:52.224050+00:00 base=1500000000 1800/4000 paired games complete
+2026-11-16T15:32:03.761405+00:00 base=1500000000 1900/4000 paired games complete
+2026-11-16T15:32:15.313198+00:00 base=1500000000 2000/4000 paired games complete
+2026-11-16T15:32:25.506781+00:00 base=1500000000 2100/4000 paired games complete
+2026-11-16T15:32:38.710211+00:00 base=1500000000 2200/4000 paired games complete
+2026-11-16T15:32:49.947454+00:00 base=1500000000 2300/4000 paired games complete
+2026-11-16T15:33:00.445661+00:00 base=1500000000 2400/4000 paired games complete
+2026-11-16T15:33:10.728987+00:00 base=1500000000 2500/4000 paired games complete
+2026-11-16T15:33:21.946007+00:00 base=1500000000 2600/4000 paired games complete
+2026-11-16T15:33:33.948635+00:00 base=1500000000 2700/4000 paired games complete
+2026-11-16T15:33:46.044103+00:00 base=1500000000 2800/4000 paired games complete
+2026-11-16T15:33:57.572746+00:00 base=1500000000 2900/4000 paired games complete
+2026-11-16T15:34:08.646540+00:00 base=1500000000 3000/4000 paired games complete
+2026-11-16T15:34:20.252242+00:00 base=1500000000 3100/4000 paired games complete
+2026-11-16T15:34:31.799428+00:00 base=1500000000 3200/4000 paired games complete
+2026-11-16T15:34:42.301781+00:00 base=1500000000 3300/4000 paired games complete
+2026-11-16T15:34:52.494844+00:00 base=1500000000 3400/4000 paired games complete
+2026-11-16T15:35:02.833241+00:00 base=1500000000 3500/4000 paired games complete
+2026-11-16T15:35:12.749402+00:00 base=1500000000 3600/4000 paired games complete
+2026-11-16T15:35:24.141806+00:00 base=1500000000 3700/4000 paired games complete
+2026-11-16T15:35:36.050272+00:00 base=1500000000 3800/4000 paired games complete
+2026-11-16T15:35:49.250308+00:00 base=1500000000 3900/4000 paired games complete
+2026-11-16T15:36:00.971924+00:00 base=1500000000 4000/4000 paired games complete
+2026-11-16T15:36:13.698083+00:00 Top3 frozen before replication: {"discovery_base": 1500000000, "n_discovery_games": 4000, "cells": ["n2|trump|pos2", "n7|trump|pos3", "n10|trump|pos1"], "raw_sha256": "f960607322f7d33dcb07d183e07dd8fbed89d16f1ba6a4636e67ad79dbaf7b01"}
+2026-11-16T15:36:24.754538+00:00 base=1510000000 100/4000 paired games complete
+2026-11-16T15:36:35.666091+00:00 base=1510000000 200/4000 paired games complete
+2026-11-16T15:36:45.852144+00:00 base=1510000000 300/4000 paired games complete
+2026-11-16T15:36:56.029319+00:00 base=1510000000 400/4000 paired games complete
+2026-11-16T15:37:06.638260+00:00 base=1510000000 500/4000 paired games complete
+2026-11-16T15:37:17.177429+00:00 base=1510000000 600/4000 paired games complete
+2026-11-16T15:37:28.729604+00:00 base=1510000000 700/4000 paired games complete
+2026-11-16T15:37:41.494696+00:00 base=1510000000 800/4000 paired games complete
+2026-11-16T15:37:53.267681+00:00 base=1510000000 900/4000 paired games complete
+2026-11-16T15:38:04.961783+00:00 base=1510000000 1000/4000 paired games complete
+2026-11-16T15:38:16.522547+00:00 base=1510000000 1100/4000 paired games complete
+2026-11-16T15:38:27.644984+00:00 base=1510000000 1200/4000 paired games complete
+2026-11-16T15:38:38.384606+00:00 base=1510000000 1300/4000 paired games complete
+2026-11-16T15:38:48.883749+00:00 base=1510000000 1400/4000 paired games complete
+2026-11-16T15:38:59.332797+00:00 base=1510000000 1500/4000 paired games complete
+2026-11-16T15:39:09.510888+00:00 base=1510000000 1600/4000 paired games complete
+2026-11-16T15:39:20.432030+00:00 base=1510000000 1700/4000 paired games complete
+2026-11-16T15:39:31.732653+00:00 base=1510000000 1800/4000 paired games complete
+2026-11-16T15:39:43.451445+00:00 base=1510000000 1900/4000 paired games complete
+2026-11-16T15:39:55.101324+00:00 base=1510000000 2000/4000 paired games complete
+2026-11-16T15:40:06.368818+00:00 base=1510000000 2100/4000 paired games complete
+2026-11-16T15:40:17.801524+00:00 base=1510000000 2200/4000 paired games complete
+2026-11-16T15:40:28.926686+00:00 base=1510000000 2300/4000 paired games complete
+2026-11-16T15:40:40.170042+00:00 base=1510000000 2400/4000 paired games complete
+2026-11-16T15:40:50.597915+00:00 base=1510000000 2500/4000 paired games complete
+2026-11-16T15:41:01.747119+00:00 base=1510000000 2600/4000 paired games complete
+2026-11-16T15:41:10.915904+00:00 base=1510000000 2700/4000 paired games complete
+2026-11-16T15:41:22.073692+00:00 base=1510000000 2800/4000 paired games complete
+2026-11-16T15:41:33.973751+00:00 base=1510000000 2900/4000 paired games complete
+2026-11-16T15:41:45.123172+00:00 base=1510000000 3000/4000 paired games complete
+2026-11-16T15:41:57.234558+00:00 base=1510000000 3100/4000 paired games complete
+2026-11-16T15:42:08.731137+00:00 base=1510000000 3200/4000 paired games complete
+2026-11-16T15:42:19.870388+00:00 base=1510000000 3300/4000 paired games complete
+2026-11-16T15:42:30.382037+00:00 base=1510000000 3400/4000 paired games complete
+2026-11-16T15:42:40.957350+00:00 base=1510000000 3500/4000 paired games complete
+2026-11-16T15:42:51.742762+00:00 base=1510000000 3600/4000 paired games complete
+2026-11-16T15:43:04.063943+00:00 base=1510000000 3700/4000 paired games complete
+2026-11-16T15:43:15.139454+00:00 base=1510000000 3800/4000 paired games complete
+2026-11-16T15:43:27.096958+00:00 base=1510000000 3900/4000 paired games complete
+2026-11-16T15:43:38.720031+00:00 base=1510000000 4000/4000 paired games complete
+2026-11-16T15:44:09.339458+00:00 READY FOR REVIEW
+Files: D2/run.py, analyze.py, STATUS.txt, results/*.jsonl/*.json.
+Exact command: from engine python experiments/round9/D2/run.py; analysis standalone python experiments/round9/D2/analyze.py.
+Seed bases1500M discovery,1510M fresh replication, n4000 paired games each, hero g%4. Stratified game-cluster95% CIs: {"1500000000": {"n_games": 4000, "primary_model_minus_guide_points": {"point": 5.29425, "half95": 0.8266507884526266, "n_games": 4000}, "ties_as_win_model_minus_guide": {"point": 0.04975, "half95": 0.015100005293371915, "n_games": 4000}}, "1510000000": {"n_games": 4000, "primary_model_minus_guide_points": {"point": 5.0595, "half95": 0.8196333606246446, "n_games": 4000}, "ties_as_win_model_minus_guide": {"point": 0.03375, "half95": 0.015331535385514303, "n_games": 4000}, "replication_of_frozen_top3": {"n2|trump|pos2": {"n_rounds": 2000, "games_with_rounds": 2000, "loss_contribution_per_game": {"point": 0.23875, "half95": 0.07759775551109942, "n_games": 4000}, "loss_per_round": {"point": 0.4775, "half95": 0.15519551102219883, "n_games": 4000}, "mean_bid_error_guide_minus_model": {"point": 0.1495, "half95": 0.01611822983248883, "n_games": 4000}, "bid_error_distribution": {"-1": {"count": 7, "fraction": {"point": 0.0035, "half95": 0.002587268667757402, "n_games": 4000}}, "0": {"count": 1688, "fraction": {"point": 0.844, "half95": 0.01591079396399075, "n_games": 4000}}, "1": {"count": 304, "fraction": {"point": 0.152, "half95": 0.015742413321253423, "n_games": 4000}}, "2": {"count": 1, "fraction": {"point": 0.0005, "half95": 0.0009800000000000002, "n_games": 4000}}}}, "n7|trump|pos3": {"n_rounds": 2000, "games_with_rounds": 1000, "loss_contribution_per_game": {"point": 0.15175, "half95": 0.11260981069411567, "n_games": 4000}, "loss_per_round": {"point": 0.3035, "half95": 0.22521962138823134, "n_games": 4000}, "mean_bid_error_guide_minus_model": {"point": 0.247, "half95": 0.033936356638594865, "n_games": 4000}, "bid_error_distribution": {"-2": {"count": 37, "fraction": {"point": 0.0185, "half95": 0.005852714469941845, "n_games": 4000}}, "-1": {"count": 114, "fraction": {"point": 0.057, "half95": 0.010422940049682685, "n_games": 4000}}, "0": {"count": 1339, "fraction": {"point": 0.6695, "half95": 0.020475094654264753, "n_games": 4000}}, "1": {"count": 338, "fraction": {"point": 0.169, "half95": 0.016574521929068636, "n_games": 4000}}, "2": {"count": 172, "fraction": {"point": 0.086, "half95": 0.012262638325364518, "n_games": 4000}}}}, "n10|trump|pos1": {"n_rounds": 2000, "games_with_rounds": 2000, "loss_contribution_per_game": {"point": 0.13625, "half95": 0.12953786909714946, "n_games": 4000}, "loss_per_round": {"point": 0.2725, "half95": 0.2590757381942989, "n_games": 4000}, "mean_bid_error_guide_minus_model": {"point": -0.0235, "half95": 0.036204864067997576, "n_games": 4000}, "bid_error_distribution": {"-3": {"count": 1, "fraction": {"point": 0.0005, "half95": 0.00098, "n_games": 4000}}, "-2": {"count": 59, "fraction": {"point": 0.0295, "half95": 0.007415450661187661, "n_games": 4000}}, "-1": {"count": 451, "fraction": {"point": 0.2255, "half95": 0.018313896100786153, "n_games": 4000}}, "0": {"count": 1032, "fraction": {"point": 0.516, "half95": 0.02189384714806749, "n_games": 4000}}, "1": {"count": 393, "fraction": {"point": 0.1965, "half95": 0.01741840517495327, "n_games": 4000}}, "2": {"count": 60, "fraction": {"point": 0.03, "half95": 0.007479541452545093, "n_games": 4000}}, "3": {"count": 4, "fraction": {"point": 0.002, "half95": 0.001958527975759303, "n_games": 4000}}}}}}}
+Limitations: whole bidder intervention includes subsequent target-aware responses, not isolated direct bid error. Joint cells selected on discovery only, fixed before replication; structurally absent ladder cells not estimated. No new rule, human playtest or validation-seed tuning. All raw scores/hands/prior contexts saved; all prior contexts identical. Full cell distributions and CIs in summary.json.
+2026-11-16 separate self-review started after D1/D3 verdicts. Predeclared audit: python engine/experiments/round9/reviews/audit_d2.py from root, fresh estimator independent of runner/analyzer. Reconstruct all200000 hero hands from1500M/1510M seeded deal streams, legal hook/prior contexts, score/trick counts/totals, seatg%4 and ties-as-win. Recompute every cell/frequency and game-cluster CI before consulting original summary; freeze discovery top3 and raw hash, compare exact cells on replication. Prespecified full-game replays g0,997,1994,2991,3988, both arms/bases (20games). Selected discovery CIs descriptive/selection-biased; replication intervals nominal95%, three tests, no new rule or isolated oracle-EV interpretation. One research compute worker, AboveNormal Windows priority under unrelated load; hard17:30ET retained.
+Resource correction: the optional ctypes priority call did not change the observed Windows priority (still Normal). Explicit PowerShell Process.PriorityClass=AboveNormal applied to auditor PID35736 and verified. Removing the unreliable optional helper from audit sources; no estimator/seed/result change.
+2026-11-16 SELF-VALIDATED (Codex), separate review. Fresh command python engine/experiments/round9/reviews/audit_d2.py from root; all raw cells/frequencies/CIs agree1e-10, all200000 seed-generated hero hands and prior/legal contexts pass,20 original full-game replays reproduce. Review audit result reviews/results/D2_raw_audit.json. Seeds1500M/1510M,n4000 paired games/stage. Primary Model-Guide discovery5.29425+-0.82665,replication5.05950+-0.81963 pts/game (95% CIs); ties-as-win0.04975+-0.01510/0.03375+-0.01533. Frozen top3 replication nominal95% contributions: n2trumpPos2 .23875+-.07760,n7trumpPos3 .15175+-.11261,n10trumpPos1 .13625+-.12954 pts/fullgame, same n4000 clusters. Secondary post-review python engine/experiments/round9/reviews/multiplicity_d2.py computes familywise95% Bonferroni sensitivity: firsttwo positive,n10 includeszero. No all-three familywise confirmation or replication ranking claim. Files: complete D2 scripts/raw/summary/frozen packet; reviews/audit_d2.py,multiplicity_d2.py,results/D2*; REVIEW/BOARD and this STATUS. Limits: fixed guide play/TA pool, ModelBidder not oracle, whole bidder intervention includes later bidding/play responses; discovery cell CIs selected/descriptive; no new guide rule or human playtest. Existing full suite262pass1skip; integration checks later. Eligible for scoped local commit, no push.

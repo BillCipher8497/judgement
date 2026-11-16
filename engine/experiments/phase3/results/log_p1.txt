@@ -1,0 +1,16 @@
+n=2 pos=1 rows=120 rc=40 22s
+n=2 pos=2 rows=240 rc=80 49s
+n=2 pos=3 rows=360 rc=120 80s
+n=3 pos=1 rows=480 rc=160 110s
+n=3 pos=2 rows=600 rc=200 147s
+n=3 pos=3 rows=720 rc=240 183s
+n=5 pos=1 rows=840 rc=280 239s
+n=5 pos=2 rows=960 rc=320 300s
+n=5 pos=3 rows=1080 rc=360 368s
+n=8 pos=1 rows=1200 rc=400 475s
+n=8 pos=2 rows=1320 rc=440 596s
+n=8 pos=3 rows=1440 rc=480 725s
+n=13 pos=1 rows=1560 rc=520 953s
+n=13 pos=2 rows=1680 rc=560 1201s
+n=13 pos=3 rows=1800 rc=600 1508s
+total 1508.3326461315155

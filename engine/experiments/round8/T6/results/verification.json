@@ -1,0 +1,15 @@
+{
+  "training_bids_checked": 60000,
+  "vector_deployment_mismatches": 0,
+  "frozen_sha256": "e55548d7a5ad943a39883563d43b9c8cbb7376935488b6aeb81fd3fdfd9c403c",
+  "games": {
+    "screen": {
+      "complete_paired_games": 2000,
+      "all_seeds_seats_scores_and_hashes_valid": true
+    },
+    "validation": {
+      "complete_paired_games": 4000,
+      "all_seeds_seats_scores_and_hashes_valid": true
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "raw_profiles_sha256": "5147941C0BADD8FAC3BC8DA3A865639B62494195A227A85623A1A381E97286A2",
+  "self_review": "self-validated (Codex)",
+  "checker_sha256": "BD594A08120A28E9F180E33F4138823696681B419FC086923EAE73A4E81FC73C",
+  "proof_sha256": "8DC36CA8A2D040B875D8763BF3A9EA5EA76901F6577193EF1DDBC19A51C5BEAF",
+  "proof_status": "proved (pending external audit)",
+  "checked_utc": "2026-11-16T21:29:03.4674947+00:00",
+  "manual_check": "All four fixed-second-plan minima and explicit pure/uniform profiles independently checked; universal claim uses analytical proof."
+}

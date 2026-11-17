@@ -1,0 +1,893 @@
+[
+  {
+    "code": 0,
+    "pure": true,
+    "probability_numerators_over2": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "score_numerator_over40": 40
+  },
+  {
+    "code": 1,
+    "pure": false,
+    "probability_numerators_over2": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "score_numerator_over40": 44
+  },
+  {
+    "code": 2,
+    "pure": true,
+    "probability_numerators_over2": [
+      2,
+      0,
+      0,
+      0
+    ],
+    "score_numerator_over40": 48
+  },
+  {
+    "code": 3,
+    "pure": false,
+    "probability_numerators_over2": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "score_numerator_over40": 56
+  },
+  {
+    "code": 4,
+    "pure": false,
+    "probability_numerators_over2": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "score_numerator_over40": 60
+  },
+  {
+    "code": 5,
+    "pure": false,
+    "probability_numerators_over2": [
+      2,
+      1,
+      0,
+      0
+    ],
+    "score_numerator_over40": 64
+  },
+  {
+    "code": 6,
+    "pure": true,
+    "probability_numerators_over2": [
+      0,
+      2,
+      0,
+      0
+    ],
+    "score_numerator_over40": 72
+  },
+  {
+    "code": 7,
+    "pure": false,
+    "probability_numerators_over2": [
+      1,
+      2,
+      0,
+      0
+    ],
+    "score_numerator_over40": 76
+  },
+  {
+    "code": 8,
+    "pure": true,
+    "probability_numerators_over2": [
+      2,
+      2,
+      0,
+      0
+    ],
+    "score_numerator_over40": 80
+  },
+  {
+    "code": 9,
+    "pure": false,
+    "probability_numerators_over2": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "score_numerator_over40": 66
+  },
+  {
+    "code": 10,
+    "pure": false,
+    "probability_numerators_over2": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "score_numerator_over40": 64
+  },
+  {
+    "code": 11,
+    "pure": false,
+    "probability_numerators_over2": [
+      2,
+      0,
+      1,
+      0
+    ],
+    "score_numerator_over40": 62
+  },
+  {
+    "code": 12,
+    "pure": false,
+    "probability_numerators_over2": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "score_numerator_over40": 64
+  },
+  {
+    "code": 13,
+    "pure": false,
+    "probability_numerators_over2": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "score_numerator_over40": 62
+  },
+  {
+    "code": 14,
+    "pure": false,
+    "probability_numerators_over2": [
+      2,
+      1,
+      1,
+      0
+    ],
+    "score_numerator_over40": 60
+  },
+  {
+    "code": 15,
+    "pure": false,
+    "probability_numerators_over2": [
+      0,
+      2,
+      1,
+      0
+    ],
+    "score_numerator_over40": 62
+  },
+  {
+    "code": 16,
+    "pure": false,
+    "probability_numerators_over2": [
+      1,
+      2,
+      1,
+      0
+    ],
+    "score_numerator_over40": 60
+  },
+  {
+    "code": 17,
+    "pure": false,
+    "probability_numerators_over2": [
+      2,
+      2,
+      1,
+      0
+    ],
+    "score_numerator_over40": 58
+  },
+  {
+    "code": 18,
+    "pure": true,
+    "probability_numerators_over2": [
+      0,
+      0,
+      2,
+      0
+    ],
+    "score_numerator_over40": 92
+  },
+  {
+    "code": 19,
+    "pure": false,
+    "probability_numerators_over2": [
+      1,
+      0,
+      2,
+      0
+    ],
+    "score_numerator_over40": 84
+  },
+  {
+    "code": 20,
+    "pure": true,
+    "probability_numerators_over2": [
+      2,
+      0,
+      2,
+      0
+    ],
+    "score_numerator_over40": 76
+  },
+  {
+    "code": 21,
+    "pure": false,
+    "probability_numerators_over2": [
+      0,
+      1,
+      2,
+      0
+    ],
+    "score_numerator_over40": 72
+  },
+  {
+    "code": 22,
+    "pure": false,
+    "probability_numerators_over2": [
+      1,
+      1,
+      2,
+      0
+    ],
+    "score_numerator_over40": 64
+  },
+  {
+    "code": 23,
+    "pure": false,
+    "probability_numerators_over2": [
+      2,
+      1,
+      2,
+      0
+    ],
+    "score_numerator_over40": 56
+  },
+  {
+    "code": 24,
+    "pure": true,
+    "probability_numerators_over2": [
+      0,
+      2,
+      2,
+      0
+    ],
+    "score_numerator_over40": 52
+  },
+  {
+    "code": 25,
+    "pure": false,
+    "probability_numerators_over2": [
+      1,
+      2,
+      2,
+      0
+    ],
+    "score_numerator_over40": 44
+  },
+  {
+    "code": 26,
+    "pure": true,
+    "probability_numerators_over2": [
+      2,
+      2,
+      2,
+      0
+    ],
+    "score_numerator_over40": 36
+  },
+  {
+    "code": 27,
+    "pure": false,
+    "probability_numerators_over2": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "score_numerator_over40": 52
+  },
+  {
+    "code": 28,
+    "pure": false,
+    "probability_numerators_over2": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "score_numerator_over40": 68
+  },
+  {
+    "code": 29,
+    "pure": false,
+    "probability_numerators_over2": [
+      2,
+      0,
+      0,
+      1
+    ],
+    "score_numerator_over40": 84
+  },
+  {
+    "code": 30,
+    "pure": false,
+    "probability_numerators_over2": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "score_numerator_over40": 68
+  },
+  {
+    "code": 31,
+    "pure": false,
+    "probability_numerators_over2": [
+      1,
+      1,
+      0,
+      1
+    ],
+    "score_numerator_over40": 84
+  },
+  {
+    "code": 32,
+    "pure": false,
+    "probability_numerators_over2": [
+      2,
+      1,
+      0,
+      1
+    ],
+    "score_numerator_over40": 100
+  },
+  {
+    "code": 33,
+    "pure": false,
+    "probability_numerators_over2": [
+      0,
+      2,
+      0,
+      1
+    ],
+    "score_numerator_over40": 84
+  },
+  {
+    "code": 34,
+    "pure": false,
+    "probability_numerators_over2": [
+      1,
+      2,
+      0,
+      1
+    ],
+    "score_numerator_over40": 100
+  },
+  {
+    "code": 35,
+    "pure": false,
+    "probability_numerators_over2": [
+      2,
+      2,
+      0,
+      1
+    ],
+    "score_numerator_over40": 116
+  },
+  {
+    "code": 36,
+    "pure": false,
+    "probability_numerators_over2": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "score_numerator_over40": 78
+  },
+  {
+    "code": 37,
+    "pure": false,
+    "probability_numerators_over2": [
+      1,
+      0,
+      1,
+      1
+    ],
+    "score_numerator_over40": 88
+  },
+  {
+    "code": 38,
+    "pure": false,
+    "probability_numerators_over2": [
+      2,
+      0,
+      1,
+      1
+    ],
+    "score_numerator_over40": 98
+  },
+  {
+    "code": 39,
+    "pure": false,
+    "probability_numerators_over2": [
+      0,
+      1,
+      1,
+      1
+    ],
+    "score_numerator_over40": 76
+  },
+  {
+    "code": 40,
+    "pure": false,
+    "probability_numerators_over2": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "score_numerator_over40": 86
+  },
+  {
+    "code": 41,
+    "pure": false,
+    "probability_numerators_over2": [
+      2,
+      1,
+      1,
+      1
+    ],
+    "score_numerator_over40": 96
+  },
+  {
+    "code": 42,
+    "pure": false,
+    "probability_numerators_over2": [
+      0,
+      2,
+      1,
+      1
+    ],
+    "score_numerator_over40": 74
+  },
+  {
+    "code": 43,
+    "pure": false,
+    "probability_numerators_over2": [
+      1,
+      2,
+      1,
+      1
+    ],
+    "score_numerator_over40": 84
+  },
+  {
+    "code": 44,
+    "pure": false,
+    "probability_numerators_over2": [
+      2,
+      2,
+      1,
+      1
+    ],
+    "score_numerator_over40": 94
+  },
+  {
+    "code": 45,
+    "pure": false,
+    "probability_numerators_over2": [
+      0,
+      0,
+      2,
+      1
+    ],
+    "score_numerator_over40": 104
+  },
+  {
+    "code": 46,
+    "pure": false,
+    "probability_numerators_over2": [
+      1,
+      0,
+      2,
+      1
+    ],
+    "score_numerator_over40": 108
+  },
+  {
+    "code": 47,
+    "pure": false,
+    "probability_numerators_over2": [
+      2,
+      0,
+      2,
+      1
+    ],
+    "score_numerator_over40": 112
+  },
+  {
+    "code": 48,
+    "pure": false,
+    "probability_numerators_over2": [
+      0,
+      1,
+      2,
+      1
+    ],
+    "score_numerator_over40": 84
+  },
+  {
+    "code": 49,
+    "pure": false,
+    "probability_numerators_over2": [
+      1,
+      1,
+      2,
+      1
+    ],
+    "score_numerator_over40": 88
+  },
+  {
+    "code": 50,
+    "pure": false,
+    "probability_numerators_over2": [
+      2,
+      1,
+      2,
+      1
+    ],
+    "score_numerator_over40": 92
+  },
+  {
+    "code": 51,
+    "pure": false,
+    "probability_numerators_over2": [
+      0,
+      2,
+      2,
+      1
+    ],
+    "score_numerator_over40": 64
+  },
+  {
+    "code": 52,
+    "pure": false,
+    "probability_numerators_over2": [
+      1,
+      2,
+      2,
+      1
+    ],
+    "score_numerator_over40": 68
+  },
+  {
+    "code": 53,
+    "pure": false,
+    "probability_numerators_over2": [
+      2,
+      2,
+      2,
+      1
+    ],
+    "score_numerator_over40": 72
+  },
+  {
+    "code": 54,
+    "pure": true,
+    "probability_numerators_over2": [
+      0,
+      0,
+      0,
+      2
+    ],
+    "score_numerator_over40": 64
+  },
+  {
+    "code": 55,
+    "pure": false,
+    "probability_numerators_over2": [
+      1,
+      0,
+      0,
+      2
+    ],
+    "score_numerator_over40": 92
+  },
+  {
+    "code": 56,
+    "pure": true,
+    "probability_numerators_over2": [
+      2,
+      0,
+      0,
+      2
+    ],
+    "score_numerator_over40": 120
+  },
+  {
+    "code": 57,
+    "pure": false,
+    "probability_numerators_over2": [
+      0,
+      1,
+      0,
+      2
+    ],
+    "score_numerator_over40": 80
+  },
+  {
+    "code": 58,
+    "pure": false,
+    "probability_numerators_over2": [
+      1,
+      1,
+      0,
+      2
+    ],
+    "score_numerator_over40": 108
+  },
+  {
+    "code": 59,
+    "pure": false,
+    "probability_numerators_over2": [
+      2,
+      1,
+      0,
+      2
+    ],
+    "score_numerator_over40": 136
+  },
+  {
+    "code": 60,
+    "pure": true,
+    "probability_numerators_over2": [
+      0,
+      2,
+      0,
+      2
+    ],
+    "score_numerator_over40": 96
+  },
+  {
+    "code": 61,
+    "pure": false,
+    "probability_numerators_over2": [
+      1,
+      2,
+      0,
+      2
+    ],
+    "score_numerator_over40": 124
+  },
+  {
+    "code": 62,
+    "pure": true,
+    "probability_numerators_over2": [
+      2,
+      2,
+      0,
+      2
+    ],
+    "score_numerator_over40": 152
+  },
+  {
+    "code": 63,
+    "pure": false,
+    "probability_numerators_over2": [
+      0,
+      0,
+      1,
+      2
+    ],
+    "score_numerator_over40": 90
+  },
+  {
+    "code": 64,
+    "pure": false,
+    "probability_numerators_over2": [
+      1,
+      0,
+      1,
+      2
+    ],
+    "score_numerator_over40": 112
+  },
+  {
+    "code": 65,
+    "pure": false,
+    "probability_numerators_over2": [
+      2,
+      0,
+      1,
+      2
+    ],
+    "score_numerator_over40": 134
+  },
+  {
+    "code": 66,
+    "pure": false,
+    "probability_numerators_over2": [
+      0,
+      1,
+      1,
+      2
+    ],
+    "score_numerator_over40": 88
+  },
+  {
+    "code": 67,
+    "pure": false,
+    "probability_numerators_over2": [
+      1,
+      1,
+      1,
+      2
+    ],
+    "score_numerator_over40": 110
+  },
+  {
+    "code": 68,
+    "pure": false,
+    "probability_numerators_over2": [
+      2,
+      1,
+      1,
+      2
+    ],
+    "score_numerator_over40": 132
+  },
+  {
+    "code": 69,
+    "pure": false,
+    "probability_numerators_over2": [
+      0,
+      2,
+      1,
+      2
+    ],
+    "score_numerator_over40": 86
+  },
+  {
+    "code": 70,
+    "pure": false,
+    "probability_numerators_over2": [
+      1,
+      2,
+      1,
+      2
+    ],
+    "score_numerator_over40": 108
+  },
+  {
+    "code": 71,
+    "pure": false,
+    "probability_numerators_over2": [
+      2,
+      2,
+      1,
+      2
+    ],
+    "score_numerator_over40": 130
+  },
+  {
+    "code": 72,
+    "pure": true,
+    "probability_numerators_over2": [
+      0,
+      0,
+      2,
+      2
+    ],
+    "score_numerator_over40": 116
+  },
+  {
+    "code": 73,
+    "pure": false,
+    "probability_numerators_over2": [
+      1,
+      0,
+      2,
+      2
+    ],
+    "score_numerator_over40": 132
+  },
+  {
+    "code": 74,
+    "pure": true,
+    "probability_numerators_over2": [
+      2,
+      0,
+      2,
+      2
+    ],
+    "score_numerator_over40": 148
+  },
+  {
+    "code": 75,
+    "pure": false,
+    "probability_numerators_over2": [
+      0,
+      1,
+      2,
+      2
+    ],
+    "score_numerator_over40": 96
+  },
+  {
+    "code": 76,
+    "pure": false,
+    "probability_numerators_over2": [
+      1,
+      1,
+      2,
+      2
+    ],
+    "score_numerator_over40": 112
+  },
+  {
+    "code": 77,
+    "pure": false,
+    "probability_numerators_over2": [
+      2,
+      1,
+      2,
+      2
+    ],
+    "score_numerator_over40": 128
+  },
+  {
+    "code": 78,
+    "pure": true,
+    "probability_numerators_over2": [
+      0,
+      2,
+      2,
+      2
+    ],
+    "score_numerator_over40": 76
+  },
+  {
+    "code": 79,
+    "pure": false,
+    "probability_numerators_over2": [
+      1,
+      2,
+      2,
+      2
+    ],
+    "score_numerator_over40": 92
+  },
+  {
+    "code": 80,
+    "pure": true,
+    "probability_numerators_over2": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "score_numerator_over40": 108
+  }
+]

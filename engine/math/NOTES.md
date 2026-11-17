@@ -1255,3 +1255,97 @@ the certificate logic and scope in `experiments/round8/REVIEW.md`, T5.
 Reproduce: `python experiments/round8/T5/certify.py` from engine (night's hard
 compute cutoff applies). The saved current and average profiles and exact BR
 diagnostics remain in the per-regime JSON/NPZ checkpoints.
+
+## M13 First-decision private-information relaxation (round 9 candidate)
+
+**Status: proved and externally validated (Claude, 2026-11-16).** Task D3 was
+separately self-validated (Codex) in round9/REVIEW.md; the proof and the exact
+enumeration were then independently rechecked and reproduced by Claude. See
+../../CLAUDE_AUDIT_2026-11-16.md. Feasible upper scores were not independently
+replayed; only their ordering against J1 was checked.
+
+Fix the hero policy and all bids. For each uniformly likely deal d, collapse
+hero actions and forced spoiler moves until the first free spoiler choice or a
+terminal. No earlier free spoiler action affects this root's probability.
+Let Q_d(a) be the PI-minimum hero score after root action a. Group roots by the
+acting spoiler's private information set I (seat, original own hand, complete
+public history); D_I is the set of deals rooted in I. Legal actions are the
+same within I. Define
+
+    J1 = [sum of terminal-root scores + sum_I min_a sum_{d in D_I} Q_d(a)] / N.
+
+For any feasible hidden team, the root action distribution sigma_I is common
+to all roots in I. Grant the team omniscience after this choice. Its expected
+hero score is at least the displayed expression before minimization over
+sigma_I. That expression is linear in each sigma_I, so minimizing selects a
+pure action separately for each I. Any coupling with decisions that are
+non-root in other deals is dropped, which only relaxes the problem. Therefore
+
+    PI minimum <= J1 <= optimal hidden-team hero score <= any feasible score.
+
+The first inequality also follows from min(sum) >= sum(min). This is a bound,
+not an equilibrium or a solution of the decentralized team problem. It covers
+the fixed-bid, fixed-hero play intervention only; no private-card pooling or
+mediator that observes all cards is allowed.
+
+**Exact enumeration awaiting external validation:** four players, three cards,
+3 suits x 4 ranks, no undealt stock, all 369,600 ordered deals per regime.
+Trump: PI = 367921/61600, J1 = 446669/73920, difference = 25819/369600 > 0.
+NT: PI = 106419/15400, J1 = 213259/30800, difference = 421/30800 > 0.
+These are integer full-population sums, so sampling CIs do not apply. If the
+proof and implementation pass audit, the positive differences certify a strict
+information cost in these toys, without relying on CFR convergence. They do
+not quantify the 52-card information cost.
+
+Sources: `experiments/round9/D3/ROOT_BOUND.md`, `root_bound.py`,
+`results/summary_final.json`. Saved feasible profiles were replayed against the
+complete cached trees; the raw PI/achieved interval remains separate from the
+tighter J1/achieved interval. Small-tree regression compares full, reduced and
+compact representations, baseline and private-BR policies/values, and checks
+PI <= J1 <= baseline. Claude's verdict belongs in round9/REVIEW.md.
+
+Separate reviewer scripts `round9/reviews/audit_d3.py` and
+`exact_policy_d3.py` reproduce all headline values from saved tree/profile
+arrays without importing the experiment evaluator, BR solver or root-bound
+routine. The latter integer-replays the already evaluated one-hot checkpoint
+50 policies: feasible upper scores are exactly 574247/92400 (trump) and
+109709/15400 (NT), over all 369,600 deals/regime, no sampling CI. Thus exact
+optimization bounds are [446669/73920,574247/92400] and
+[213259/30800,109709/15400], respectively. Neither interval solves the hidden
+team optimum. The review reuses source-fingerprinted derived tree caches;
+independent full construction remains a useful external-audit step.
+
+## M14 Pure-team sufficiency against fixed non-team policies
+
+**Status: proved and externally validated (Claude, 2026-11-16).** Elementary
+clarification, not a novelty claim; exploratory derivation documented in
+round10/R3/STATUS.txt. The derandomization argument, the matching-bit
+counterexample and the four-world arithmetic were rechecked independently; see
+../../CLAUDE_AUDIT_2026-11-16.md.
+
+In a finite full-history private-information game, fix the hero and every
+non-team policy. Team random tapes (possibly shared) are independent of the
+deal/chance and non-team tapes. Fixing the team tapes induces a feasible pure
+policy tuple on the members' own information histories. There are finitely
+many distinct pure tuples. Hence any randomized team's expected hero score is
+
+    J = sum_p lambda(p) J(p) >= min_p J(p).
+
+Pure tuples are admissible, so the global minimum over randomized private team
+policies equals an attained pure-team minimum. Legal public signaling is still
+allowed; no pooled private cards or deal-correlated random device is added.
+
+This is a fixed-policy team decision problem, not a strategic-adversary
+team-maxmin equilibrium theorem. It does not certify CFR convergence, efficient
+global optimization, a restricted heuristic family, or arbitrary profile
+rounding. Full-history/perfect-recall information and independence from chance
+are material assumptions. Every proposed achieved policy still needs replay.
+Internal team coins affect non-team decisions only via legal observed histories;
+no extra hero-observed random device is added outside the modeled game. A
+matching-bit strategic-response counterexample in R3/PROOF.md illustrates why
+the fixed-hero premise cannot be dropped.
+
+Proof/scope: experiments/round10/R3/PROOF.md. A four-world exact arithmetic
+sanity check is in R3/check.ps1 (16 pure plans,81 half-grid profiles); it is not
+a new card-game experiment or a substitute for the proof. No sampling CI or
+stochastic seed applies. External proof audit remains required.

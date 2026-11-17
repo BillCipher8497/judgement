@@ -1,0 +1,28 @@
+{
+  "probes": [
+    {
+      "S": 3,
+      "R": 4,
+      "trump": 0,
+      "deals": 250,
+      "nodes": 10582,
+      "infosets": 4977,
+      "seconds": 0.6734473705291748,
+      "one_time_warmup_seconds": 56.15569353103638,
+      "projected_seconds_conservative": 1051.7802861213684
+    },
+    {
+      "S": 3,
+      "R": 4,
+      "trump": -1,
+      "deals": 250,
+      "nodes": 11990,
+      "infosets": 5625,
+      "seconds": 1.004167079925537,
+      "one_time_warmup_seconds": 60.92924976348877,
+      "projected_seconds_conservative": 1545.4898607254029
+    }
+  ],
+  "latest_projected_GiB": 7.999598979949951,
+  "latest_feasible": true
+}

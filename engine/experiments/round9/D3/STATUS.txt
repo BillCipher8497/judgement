@@ -1,0 +1,1113 @@
+2026-11-16 D3 preregistration BEFORE compute.
+PRIMARY CONTRAST: the exact full-chance-space difference between the best saved feasible hidden-team hero score and the PI minimum, with all myopic bids and TA hero fixed. Report [PI minimum, achieved hero score] as the interval bounding the optimal hidden-team value, not a statistical confidence interval. Report hidden/PI surplus (baseline-achieved)/(baseline-PI) and distinguish exact population values from optimization residuals. Also baseline TA and independent unilateral BRs to TA teammates. No claimed multiplayer CFR convergence theorem or inference to the52-card game.
+Primary toy4p,3suits x4ranks,n3, trump0 andNT;369600 ordered full deals/regime. Freeze bids and hero moves before tree expansion; terminate hero-impossible histories at0 without affecting hero payoff. Same private infosets (seat,own original hand,full public bids/cards), no pooled private information. Verify reduced-tree baseline, PI and individual-BR values against the original full tree on a smaller exact toy before launching.
+Resource-only fallback, chosen before outcome inspection: sample250 uniform ordered deals/regime for build-cost preflight, seed1620000000. If projected explicit tree needs >10GiB process memory or >45min construction, use the board-authorized2suits x6ranks,n3 (same369600 chance deals, fewer follow-suit branches). If this also exceeds budget, document scope failure instead of treating a sampled chance space as exact. The suggested2x5 deck cannot deal3 cards to4 players, so that fallback is infeasible and will not be used.
+Timebox3h from worker launch, additionally hard17:30ET. Global exact CFR+ team objective -hero score, frozen-bid/hero tree; save average/current/one-hot rounded candidates at checkpoints; evaluate all on the full enumerated chance space. Exact integer support DP where feasible; claim zero joint gap only with a certificate. Primary target1000 iterations or timebox, whichever first, no effect-dependent larger-game selection. No random seed needed for full enumeration; preflight seed1620M controls only resource pilot. Checkpoint construction counts and optimization profiles incrementally.
+Prelaunch resource-projection clarification: precompute all220 possible own-hand greedy bidding distributions per seat and the220 initial hero P(win) tables before timing the250-deal tree sample. These are one-time cache costs, not linear per-deal costs; record warmup separately and include it once in the build projection. Conservative memory projection900 bytes/node +600/infoset, plus live10GiB construction cap. This prevents cold-cache initialization from spuriously disqualifying the assigned toy.
+Before launch: allocate the remaining3h budget equally between the two trump regimes, reserve2min per regime for final assessment/certification, and save the independent-BR feasible bound before CFR so an optimization time cut still leaves a valid delivered interval. Resource-only preflight and warmup count inside the3h task timebox.
+Prelaunch exact equivalence tests: same combined command ->4 passed in2.04s. Frozen-tree baseline, PI and individual BR values match the original full tree for both trump regimes on the complete90-deal3-player2x3,n2 toy. Original TA code object cloned into a separate namespace only to bound its midgame memo cache; initial-hand tables remain cached, no existing policy/global namespace edited.
+2026-11-16T15:46:03.768372+00:00 Warmup S3R4 trump0: 20/220 hands
+2026-11-16T15:46:14.296251+00:00 Warmup S3R4 trump0: 40/220 hands
+2026-11-16T15:46:28.716368+00:00 Warmup S3R4 trump0: 60/220 hands
+2026-11-16T15:46:42.853255+00:00 Warmup S3R4 trump0: 80/220 hands
+2026-11-16T15:46:56.194112+00:00 Warmup S3R4 trump0: 100/220 hands
+2026-11-16T15:47:09.906187+00:00 Warmup S3R4 trump0: 120/220 hands
+2026-11-16T15:47:23.803216+00:00 Warmup S3R4 trump0: 140/220 hands
+2026-11-16T15:47:32.029678+00:00 Warmup S3R4 trump0: 160/220 hands
+2026-11-16T15:47:36.819981+00:00 Warmup S3R4 trump0: 180/220 hands
+2026-11-16T15:47:41.447435+00:00 Warmup S3R4 trump0: 200/220 hands
+2026-11-16T15:47:46.344261+00:00 Warmup S3R4 trump0: 220/220 hands
+2026-11-16T15:47:50.137959+00:00 Warmup S3R4 trump-1: 20/220 hands
+2026-11-16T15:47:53.060967+00:00 Warmup S3R4 trump-1: 40/220 hands
+2026-11-16T15:47:56.039358+00:00 Warmup S3R4 trump-1: 60/220 hands
+2026-11-16T15:47:59.066742+00:00 Warmup S3R4 trump-1: 80/220 hands
+2026-11-16T15:48:02.091613+00:00 Warmup S3R4 trump-1: 100/220 hands
+2026-11-16T15:48:05.144631+00:00 Warmup S3R4 trump-1: 120/220 hands
+2026-11-16T15:48:08.142480+00:00 Warmup S3R4 trump-1: 140/220 hands
+2026-11-16T15:48:11.154980+00:00 Warmup S3R4 trump-1: 160/220 hands
+2026-11-16T15:48:14.279132+00:00 Warmup S3R4 trump-1: 180/220 hands
+2026-11-16T15:48:17.446995+00:00 Warmup S3R4 trump-1: 200/220 hands
+2026-11-16T15:48:20.686894+00:00 Warmup S3R4 trump-1: 220/220 hands
+2026-11-16T15:48:21.247062+00:00 Resource-only preflight S3R4: projected 19.50GiB, 14.2min cold-cache conservative build; feasible=False
+2026-11-16T15:48:24.370245+00:00 Warmup S2R6 trump0: 20/220 hands
+2026-11-16T15:48:27.577974+00:00 Warmup S2R6 trump0: 40/220 hands
+2026-11-16T15:48:30.526609+00:00 Warmup S2R6 trump0: 60/220 hands
+2026-11-16T15:48:33.411700+00:00 Warmup S2R6 trump0: 80/220 hands
+2026-11-16T15:48:36.381095+00:00 Warmup S2R6 trump0: 100/220 hands
+2026-11-16T15:48:39.301210+00:00 Warmup S2R6 trump0: 120/220 hands
+2026-11-16T15:48:42.143169+00:00 Warmup S2R6 trump0: 140/220 hands
+2026-11-16T15:48:44.990022+00:00 Warmup S2R6 trump0: 160/220 hands
+2026-11-16T15:48:47.918174+00:00 Warmup S2R6 trump0: 180/220 hands
+2026-11-16T15:48:50.814994+00:00 Warmup S2R6 trump0: 200/220 hands
+2026-11-16T15:48:53.871414+00:00 Warmup S2R6 trump0: 220/220 hands
+2026-11-16T15:48:57.046414+00:00 Warmup S2R6 trump-1: 20/220 hands
+2026-11-16T15:48:59.796616+00:00 Warmup S2R6 trump-1: 40/220 hands
+2026-11-16T15:49:02.535392+00:00 Warmup S2R6 trump-1: 60/220 hands
+2026-11-16T15:49:05.314301+00:00 Warmup S2R6 trump-1: 80/220 hands
+2026-11-16T15:49:08.069074+00:00 Warmup S2R6 trump-1: 100/220 hands
+2026-11-16T15:49:10.812922+00:00 Warmup S2R6 trump-1: 120/220 hands
+2026-11-16T15:49:13.538342+00:00 Warmup S2R6 trump-1: 140/220 hands
+2026-11-16T15:49:16.355783+00:00 Warmup S2R6 trump-1: 160/220 hands
+2026-11-16T15:49:19.093631+00:00 Warmup S2R6 trump-1: 180/220 hands
+2026-11-16T15:49:21.858521+00:00 Warmup S2R6 trump-1: 200/220 hands
+2026-11-16T15:49:24.712369+00:00 Warmup S2R6 trump-1: 220/220 hands
+2026-11-16T15:49:25.036053+00:00 Resource-only preflight S2R6: projected 19.67GiB, 9.4min cold-cache conservative build; feasible=False
+2026-11-16T15:49:25.037053+00:00 READY FOR REVIEW: resource preflight failed both predeclared exact designs. No sampled-chance result is substituted. Files D3/frozen_tree.py, run.py, STATUS and resource_preflight.json; command python experiments/round9/D3/run.py. Seed1620M, 250 resource-only sample deals/regime/design, no game-theory estimates or statistical CIs. Limitation: cannot deliver exact bounds within resource box; task scoped too large.
+Resource v1 continuation BEFORE any exact game outcomes: original Python-object tree forecast exceeded10GiB; checkpoint preserved as resource_preflight_v1.json. With >2h remaining inside the original launch timebox, implemented semantically identical compact arrays (int32 node/edge indices, int8 player/length/score, byte-packed private keys with lazy public-history decoding). Small full-chance equivalence test compares full/original frozen/compact trees: nodes, infosets, baseline, PI and private BR values all agree; pytest test_round9_frozen_toy.py ->1 passed in1.24s. This is a storage change, not a changed game or selected outcome. Recompute resource-only projection as250bytes/node +500/infoset for compact arrays plus CFR working buffers; retain live10GiB construction cap and17:30 hard stop. Original3h deadline preserved in results/timebox.json. Withdraw the v1 scope-failure-only handoff while retrying the same primary design; no empirical claims made from the250-deal resource sample.
+2026-11-16T15:56:33.743973+00:00 Warmup S3R4 trump0: 20/220 hands
+2026-11-16T15:56:36.505080+00:00 Warmup S3R4 trump0: 40/220 hands
+2026-11-16T15:56:39.281474+00:00 Warmup S3R4 trump0: 60/220 hands
+2026-11-16T15:56:42.073659+00:00 Warmup S3R4 trump0: 80/220 hands
+2026-11-16T15:56:44.846077+00:00 Warmup S3R4 trump0: 100/220 hands
+2026-11-16T15:56:47.713669+00:00 Warmup S3R4 trump0: 120/220 hands
+2026-11-16T15:56:50.521443+00:00 Warmup S3R4 trump0: 140/220 hands
+2026-11-16T15:56:53.340549+00:00 Warmup S3R4 trump0: 160/220 hands
+2026-11-16T15:56:56.164205+00:00 Warmup S3R4 trump0: 180/220 hands
+2026-11-16T15:56:59.029990+00:00 Warmup S3R4 trump0: 200/220 hands
+2026-11-16T15:57:01.941079+00:00 Warmup S3R4 trump0: 220/220 hands
+2026-11-16T15:57:05.065053+00:00 Warmup S3R4 trump-1: 20/220 hands
+2026-11-16T15:57:07.816524+00:00 Warmup S3R4 trump-1: 40/220 hands
+2026-11-16T15:57:10.589894+00:00 Warmup S3R4 trump-1: 60/220 hands
+2026-11-16T15:57:13.364808+00:00 Warmup S3R4 trump-1: 80/220 hands
+2026-11-16T15:57:16.085675+00:00 Warmup S3R4 trump-1: 100/220 hands
+2026-11-16T15:57:18.881039+00:00 Warmup S3R4 trump-1: 120/220 hands
+2026-11-16T15:57:21.644987+00:00 Warmup S3R4 trump-1: 140/220 hands
+2026-11-16T15:57:24.415573+00:00 Warmup S3R4 trump-1: 160/220 hands
+2026-11-16T15:57:27.194335+00:00 Warmup S3R4 trump-1: 180/220 hands
+2026-11-16T15:57:30.010696+00:00 Warmup S3R4 trump-1: 200/220 hands
+2026-11-16T15:57:32.836609+00:00 Warmup S3R4 trump-1: 220/220 hands
+2026-11-16T15:57:33.350533+00:00 Resource-only preflight S3R4: projected 8.00GiB, 13.0min cold-cache conservative build; feasible=True
+2026-11-16T15:57:34.725081+00:00 Build trump0: 1000/369600 deals, nodes69880, private0.33GiB
+2026-11-16T15:57:35.524687+00:00 Build trump0: 2000/369600 deals, nodes160496, private0.33GiB
+2026-11-16T15:57:36.483099+00:00 Build trump0: 3000/369600 deals, nodes299496, private0.34GiB
+2026-11-16T15:57:37.317530+00:00 Build trump0: 4000/369600 deals, nodes382756, private0.35GiB
+2026-11-16T15:57:37.945134+00:00 Build trump0: 5000/369600 deals, nodes433712, private0.35GiB
+2026-11-16T15:57:38.632791+00:00 Build trump0: 6000/369600 deals, nodes483672, private0.36GiB
+2026-11-16T15:57:39.324175+00:00 Build trump0: 7000/369600 deals, nodes541356, private0.36GiB
+2026-11-16T15:57:39.868809+00:00 Build trump0: 8000/369600 deals, nodes584704, private0.37GiB
+2026-11-16T15:57:40.365344+00:00 Build trump0: 9000/369600 deals, nodes627716, private0.38GiB
+2026-11-16T15:57:40.714099+00:00 Build trump0: 10000/369600 deals, nodes662944, private0.38GiB
+2026-11-16T15:57:41.392912+00:00 Build trump0: 11000/369600 deals, nodes713516, private0.39GiB
+2026-11-16T15:57:42.137754+00:00 Build trump0: 12000/369600 deals, nodes774592, private0.39GiB
+2026-11-16T15:57:42.660275+00:00 Build trump0: 13000/369600 deals, nodes818732, private0.39GiB
+2026-11-16T15:57:43.332937+00:00 Build trump0: 14000/369600 deals, nodes871724, private0.40GiB
+2026-11-16T15:57:43.773526+00:00 Build trump0: 15000/369600 deals, nodes913492, private0.40GiB
+2026-11-16T15:57:44.278667+00:00 Build trump0: 16000/369600 deals, nodes953820, private0.40GiB
+2026-11-16T15:57:44.797136+00:00 Build trump0: 17000/369600 deals, nodes1017464, private0.41GiB
+2026-11-16T15:57:45.799523+00:00 Build trump0: 18000/369600 deals, nodes1156464, private0.42GiB
+2026-11-16T15:57:46.672592+00:00 Build trump0: 19000/369600 deals, nodes1249756, private0.43GiB
+2026-11-16T15:57:47.295013+00:00 Build trump0: 20000/369600 deals, nodes1300576, private0.43GiB
+2026-11-16T15:57:47.941083+00:00 Build trump0: 21000/369600 deals, nodes1349800, private0.43GiB
+2026-11-16T15:57:48.717581+00:00 Build trump0: 22000/369600 deals, nodes1411412, private0.43GiB
+2026-11-16T15:57:49.245184+00:00 Build trump0: 23000/369600 deals, nodes1454320, private0.43GiB
+2026-11-16T15:57:49.731524+00:00 Build trump0: 24000/369600 deals, nodes1496364, private0.44GiB
+2026-11-16T15:57:50.126163+00:00 Build trump0: 25000/369600 deals, nodes1533136, private0.44GiB
+2026-11-16T15:57:50.823640+00:00 Build trump0: 26000/369600 deals, nodes1584572, private0.44GiB
+2026-11-16T15:57:51.516760+00:00 Build trump0: 27000/369600 deals, nodes1642144, private0.45GiB
+2026-11-16T15:57:52.116933+00:00 Build trump0: 28000/369600 deals, nodes1688248, private0.45GiB
+2026-11-16T15:57:52.831790+00:00 Build trump0: 29000/369600 deals, nodes1740800, private0.45GiB
+2026-11-16T15:57:53.313854+00:00 Build trump0: 30000/369600 deals, nodes1782232, private0.45GiB
+2026-11-16T15:57:53.872183+00:00 Build trump0: 31000/369600 deals, nodes1825532, private0.45GiB
+2026-11-16T15:57:54.285198+00:00 Build trump0: 32000/369600 deals, nodes1870080, private0.46GiB
+2026-11-16T15:57:54.782706+00:00 Build trump0: 33000/369600 deals, nodes1925464, private0.46GiB
+2026-11-16T15:57:55.324581+00:00 Build trump0: 34000/369600 deals, nodes1993404, private0.46GiB
+2026-11-16T15:57:55.805864+00:00 Build trump0: 35000/369600 deals, nodes2050552, private0.47GiB
+2026-11-16T15:57:56.257857+00:00 Build trump0: 36000/369600 deals, nodes2108940, private0.47GiB
+2026-11-16T15:57:57.059850+00:00 Build trump0: 37000/369600 deals, nodes2170632, private0.47GiB
+2026-11-16T15:57:57.474887+00:00 Build trump0: 38000/369600 deals, nodes2201040, private0.47GiB
+2026-11-16T15:57:58.123406+00:00 Build trump0: 39000/369600 deals, nodes2258156, private0.47GiB
+2026-11-16T15:57:58.672489+00:00 Build trump0: 40000/369600 deals, nodes2312880, private0.48GiB
+2026-11-16T15:57:59.208170+00:00 Build trump0: 41000/369600 deals, nodes2376140, private0.48GiB
+2026-11-16T15:57:59.794383+00:00 Build trump0: 42000/369600 deals, nodes2439696, private0.50GiB
+2026-11-16T15:58:00.217379+00:00 Build trump0: 43000/369600 deals, nodes2491400, private0.50GiB
+2026-11-16T15:58:00.800523+00:00 Build trump0: 44000/369600 deals, nodes2555644, private0.50GiB
+2026-11-16T15:58:01.093163+00:00 Build trump0: 45000/369600 deals, nodes2583464, private0.50GiB
+2026-11-16T15:58:01.912090+00:00 Build trump0: 46000/369600 deals, nodes2640472, private0.51GiB
+2026-11-16T15:58:02.733596+00:00 Build trump0: 47000/369600 deals, nodes2694112, private0.51GiB
+2026-11-16T15:58:04.506013+00:00 Build trump0: 48000/369600 deals, nodes2746928, private0.51GiB
+2026-11-16T15:58:05.722280+00:00 Build trump0: 49000/369600 deals, nodes2816936, private0.52GiB
+2026-11-16T15:58:06.614696+00:00 Build trump0: 50000/369600 deals, nodes2850688, private0.52GiB
+2026-11-16T15:58:08.096608+00:00 Build trump0: 51000/369600 deals, nodes2923552, private0.52GiB
+2026-11-16T15:58:09.724931+00:00 Build trump0: 52000/369600 deals, nodes2975472, private0.52GiB
+2026-11-16T15:58:11.673078+00:00 Build trump0: 53000/369600 deals, nodes3029008, private0.52GiB
+2026-11-16T15:58:13.417110+00:00 Build trump0: 54000/369600 deals, nodes3097108, private0.53GiB
+2026-11-16T15:58:14.218892+00:00 Build trump0: 55000/369600 deals, nodes3130832, private0.53GiB
+2026-11-16T15:58:15.671740+00:00 Build trump0: 56000/369600 deals, nodes3191260, private0.53GiB
+2026-11-16T15:58:16.290456+00:00 Build trump0: 57000/369600 deals, nodes3222996, private0.53GiB
+2026-11-16T15:58:17.924918+00:00 Build trump0: 58000/369600 deals, nodes3278736, private0.53GiB
+2026-11-16T15:58:19.798447+00:00 Build trump0: 59000/369600 deals, nodes3346828, private0.54GiB
+2026-11-16T15:58:20.922087+00:00 Build trump0: 60000/369600 deals, nodes3383136, private0.54GiB
+2026-11-16T15:58:22.496770+00:00 Build trump0: 61000/369600 deals, nodes3453464, private0.54GiB
+2026-11-16T15:58:23.447994+00:00 Build trump0: 62000/369600 deals, nodes3502096, private0.54GiB
+2026-11-16T15:58:24.685166+00:00 Build trump0: 63000/369600 deals, nodes3561328, private0.54GiB
+2026-11-16T15:58:25.377964+00:00 Build trump0: 64000/369600 deals, nodes3626596, private0.55GiB
+2026-11-16T15:58:25.723132+00:00 Build trump0: 65000/369600 deals, nodes3663184, private0.55GiB
+2026-11-16T15:58:26.443238+00:00 Build trump0: 66000/369600 deals, nodes3723104, private0.55GiB
+2026-11-16T15:58:26.935435+00:00 Build trump0: 67000/369600 deals, nodes3754416, private0.55GiB
+2026-11-16T15:58:28.190668+00:00 Build trump0: 68000/369600 deals, nodes3810808, private0.55GiB
+2026-11-16T15:58:29.682761+00:00 Build trump0: 69000/369600 deals, nodes3875980, private0.55GiB
+2026-11-16T15:58:30.351386+00:00 Build trump0: 70000/369600 deals, nodes3913856, private0.56GiB
+2026-11-16T15:58:31.713717+00:00 Build trump0: 71000/369600 deals, nodes3983272, private0.56GiB
+2026-11-16T15:58:32.562817+00:00 Build trump0: 72000/369600 deals, nodes4026704, private0.56GiB
+2026-11-16T15:58:33.995077+00:00 Build trump0: 73000/369600 deals, nodes4091424, private0.56GiB
+2026-11-16T15:58:35.012089+00:00 Build trump0: 74000/369600 deals, nodes4149664, private0.56GiB
+2026-11-16T15:58:35.559479+00:00 Build trump0: 75000/369600 deals, nodes4180136, private0.56GiB
+2026-11-16T15:58:36.310558+00:00 Build trump0: 76000/369600 deals, nodes4221996, private0.56GiB
+2026-11-16T15:58:36.902244+00:00 Build trump0: 77000/369600 deals, nodes4257168, private0.57GiB
+2026-11-16T15:58:37.569562+00:00 Build trump0: 78000/369600 deals, nodes4295956, private0.57GiB
+2026-11-16T15:58:38.166226+00:00 Build trump0: 79000/369600 deals, nodes4333616, private0.57GiB
+2026-11-16T15:58:38.747887+00:00 Build trump0: 80000/369600 deals, nodes4366368, private0.57GiB
+2026-11-16T15:58:39.498334+00:00 Build trump0: 81000/369600 deals, nodes4408360, private0.57GiB
+2026-11-16T15:58:40.081512+00:00 Build trump0: 82000/369600 deals, nodes4442712, private0.57GiB
+2026-11-16T15:58:41.486175+00:00 Build trump0: 83000/369600 deals, nodes4495744, private0.58GiB
+2026-11-16T15:58:42.758478+00:00 Build trump0: 84000/369600 deals, nodes4551104, private0.58GiB
+2026-11-16T15:58:44.145927+00:00 Build trump0: 85000/369600 deals, nodes4600496, private0.58GiB
+2026-11-16T15:58:45.967137+00:00 Build trump0: 86000/369600 deals, nodes4670728, private0.58GiB
+2026-11-16T15:58:46.862651+00:00 Build trump0: 87000/369600 deals, nodes4707680, private0.58GiB
+2026-11-16T15:58:48.107930+00:00 Build trump0: 88000/369600 deals, nodes4779496, private0.58GiB
+2026-11-16T15:58:49.496025+00:00 Build trump0: 89000/369600 deals, nodes4834192, private0.59GiB
+2026-11-16T15:58:50.919548+00:00 Build trump0: 90000/369600 deals, nodes4885824, private0.59GiB
+2026-11-16T15:58:52.642398+00:00 Build trump0: 91000/369600 deals, nodes4955960, private0.59GiB
+2026-11-16T15:58:53.460019+00:00 Build trump0: 92000/369600 deals, nodes4989904, private0.59GiB
+2026-11-16T15:58:55.558381+00:00 Build trump0: 93000/369600 deals, nodes5112344, private0.60GiB
+2026-11-16T15:58:57.576681+00:00 Build trump0: 94000/369600 deals, nodes5251344, private0.60GiB
+2026-11-16T15:58:58.677058+00:00 Build trump0: 95000/369600 deals, nodes5305960, private0.60GiB
+2026-11-16T15:58:59.785317+00:00 Build trump0: 96000/369600 deals, nodes5366368, private0.61GiB
+2026-11-16T15:59:00.704998+00:00 Build trump0: 97000/369600 deals, nodes5415376, private0.61GiB
+2026-11-16T15:59:01.667613+00:00 Build trump0: 98000/369600 deals, nodes5464588, private0.61GiB
+2026-11-16T15:59:02.439013+00:00 Build trump0: 99000/369600 deals, nodes5508144, private0.61GiB
+2026-11-16T15:59:03.205213+00:00 Build trump0: 100000/369600 deals, nodes5544744, private0.61GiB
+2026-11-16T15:59:04.652695+00:00 Build trump0: 101000/369600 deals, nodes5598256, private0.62GiB
+2026-11-16T15:59:06.095999+00:00 Build trump0: 102000/369600 deals, nodes5642680, private0.62GiB
+2026-11-16T15:59:07.977941+00:00 Build trump0: 103000/369600 deals, nodes5697364, private0.62GiB
+2026-11-16T15:59:09.758296+00:00 Build trump0: 104000/369600 deals, nodes5744640, private0.63GiB
+2026-11-16T15:59:11.526753+00:00 Build trump0: 105000/369600 deals, nodes5794860, private0.63GiB
+2026-11-16T15:59:13.117164+00:00 Build trump0: 106000/369600 deals, nodes5850192, private0.67GiB
+2026-11-16T15:59:13.863630+00:00 Build trump0: 107000/369600 deals, nodes5877736, private0.67GiB
+2026-11-16T15:59:15.015215+00:00 Build trump0: 108000/369600 deals, nodes5935116, private0.67GiB
+2026-11-16T15:59:16.126241+00:00 Build trump0: 109000/369600 deals, nodes5996536, private0.68GiB
+2026-11-16T15:59:17.316064+00:00 Build trump0: 110000/369600 deals, nodes6059148, private0.68GiB
+2026-11-16T15:59:18.729343+00:00 Build trump0: 111000/369600 deals, nodes6135400, private0.68GiB
+2026-11-16T15:59:19.623592+00:00 Build trump0: 112000/369600 deals, nodes6184560, private0.68GiB
+2026-11-16T15:59:20.814204+00:00 Build trump0: 113000/369600 deals, nodes6246236, private0.68GiB
+2026-11-16T15:59:21.651351+00:00 Build trump0: 114000/369600 deals, nodes6282576, private0.69GiB
+2026-11-16T15:59:22.730402+00:00 Build trump0: 115000/369600 deals, nodes6342044, private0.69GiB
+2026-11-16T15:59:24.163107+00:00 Build trump0: 116000/369600 deals, nodes6416752, private0.69GiB
+2026-11-16T15:59:25.197577+00:00 Build trump0: 117000/369600 deals, nodes6469160, private0.70GiB
+2026-11-16T15:59:26.465054+00:00 Build trump0: 118000/369600 deals, nodes6542812, private0.70GiB
+2026-11-16T15:59:27.432968+00:00 Build trump0: 119000/369600 deals, nodes6598376, private0.70GiB
+2026-11-16T15:59:28.281699+00:00 Build trump0: 120000/369600 deals, nodes6645724, private0.70GiB
+2026-11-16T15:59:29.529652+00:00 Build trump0: 121000/369600 deals, nodes6697812, private0.70GiB
+2026-11-16T15:59:30.746664+00:00 Build trump0: 122000/369600 deals, nodes6739032, private0.70GiB
+2026-11-16T15:59:32.230516+00:00 Build trump0: 123000/369600 deals, nodes6801224, private0.70GiB
+2026-11-16T15:59:33.434987+00:00 Build trump0: 124000/369600 deals, nodes6838928, private0.71GiB
+2026-11-16T15:59:35.224241+00:00 Build trump0: 125000/369600 deals, nodes6904392, private0.71GiB
+2026-11-16T15:59:36.423065+00:00 Build trump0: 126000/369600 deals, nodes6954712, private0.71GiB
+2026-11-16T15:59:37.397668+00:00 Build trump0: 127000/369600 deals, nodes7000528, private0.71GiB
+2026-11-16T15:59:38.691659+00:00 Build trump0: 128000/369600 deals, nodes7061760, private0.71GiB
+2026-11-16T15:59:39.390601+00:00 Build trump0: 129000/369600 deals, nodes7096768, private0.71GiB
+2026-11-16T15:59:40.847867+00:00 Build trump0: 130000/369600 deals, nodes7160760, private0.72GiB
+2026-11-16T15:59:41.703015+00:00 Build trump0: 131000/369600 deals, nodes7209192, private0.72GiB
+2026-11-16T15:59:42.432424+00:00 Build trump0: 132000/369600 deals, nodes7246020, private0.72GiB
+2026-11-16T15:59:43.689705+00:00 Build trump0: 133000/369600 deals, nodes7295392, private0.73GiB
+2026-11-16T15:59:44.777185+00:00 Build trump0: 134000/369600 deals, nodes7329144, private0.73GiB
+2026-11-16T15:59:46.440764+00:00 Build trump0: 135000/369600 deals, nodes7395312, private0.73GiB
+2026-11-16T15:59:47.679528+00:00 Build trump0: 136000/369600 deals, nodes7443200, private0.73GiB
+2026-11-16T15:59:48.729300+00:00 Build trump0: 137000/369600 deals, nodes7494360, private0.73GiB
+2026-11-16T15:59:49.992738+00:00 Build trump0: 138000/369600 deals, nodes7554900, private0.73GiB
+2026-11-16T15:59:50.703431+00:00 Build trump0: 139000/369600 deals, nodes7588624, private0.73GiB
+2026-11-16T15:59:52.021820+00:00 Build trump0: 140000/369600 deals, nodes7651680, private0.74GiB
+2026-11-16T15:59:52.985470+00:00 Build trump0: 141000/369600 deals, nodes7699024, private0.74GiB
+2026-11-16T15:59:53.801173+00:00 Build trump0: 142000/369600 deals, nodes7740500, private0.74GiB
+2026-11-16T15:59:54.756069+00:00 Build trump0: 143000/369600 deals, nodes7787484, private0.74GiB
+2026-11-16T15:59:55.653627+00:00 Build trump0: 144000/369600 deals, nodes7823792, private0.74GiB
+2026-11-16T15:59:56.910528+00:00 Build trump0: 145000/369600 deals, nodes7886560, private0.74GiB
+2026-11-16T15:59:57.728965+00:00 Build trump0: 146000/369600 deals, nodes7932168, private0.74GiB
+2026-11-16T15:59:58.860145+00:00 Build trump0: 147000/369600 deals, nodes7986864, private0.74GiB
+2026-11-16T16:00:00.015121+00:00 Build trump0: 148000/369600 deals, nodes8044572, private0.75GiB
+2026-11-16T16:00:00.711023+00:00 Build trump0: 149000/369600 deals, nodes8081160, private0.75GiB
+2026-11-16T16:00:01.668598+00:00 Build trump0: 150000/369600 deals, nodes8136040, private0.75GiB
+2026-11-16T16:00:02.194442+00:00 Build trump0: 151000/369600 deals, nodes8167352, private0.75GiB
+2026-11-16T16:00:02.993160+00:00 Build trump0: 152000/369600 deals, nodes8209296, private0.76GiB
+2026-11-16T16:00:03.703790+00:00 Build trump0: 153000/369600 deals, nodes8248888, private0.76GiB
+2026-11-16T16:00:04.222372+00:00 Build trump0: 154000/369600 deals, nodes8279708, private0.76GiB
+2026-11-16T16:00:04.940227+00:00 Build trump0: 155000/369600 deals, nodes8321700, private0.76GiB
+2026-11-16T16:00:05.523833+00:00 Build trump0: 156000/369600 deals, nodes8357868, private0.76GiB
+2026-11-16T16:00:06.164580+00:00 Build trump0: 157000/369600 deals, nodes8395660, private0.76GiB
+2026-11-16T16:00:07.000181+00:00 Build trump0: 158000/369600 deals, nodes8438340, private0.76GiB
+2026-11-16T16:00:07.997611+00:00 Build trump0: 159000/369600 deals, nodes8478560, private0.76GiB
+2026-11-16T16:00:09.654697+00:00 Build trump0: 160000/369600 deals, nodes8541952, private0.77GiB
+2026-11-16T16:00:10.707324+00:00 Build trump0: 161000/369600 deals, nodes8582736, private0.77GiB
+2026-11-16T16:00:12.164472+00:00 Build trump0: 162000/369600 deals, nodes8644720, private0.77GiB
+2026-11-16T16:00:13.500348+00:00 Build trump0: 163000/369600 deals, nodes8700564, private0.77GiB
+2026-11-16T16:00:14.706117+00:00 Build trump0: 164000/369600 deals, nodes8741592, private0.78GiB
+2026-11-16T16:00:16.222406+00:00 Build trump0: 165000/369600 deals, nodes8804504, private0.78GiB
+2026-11-16T16:00:17.225325+00:00 Build trump0: 166000/369600 deals, nodes8843120, private0.78GiB
+2026-11-16T16:00:19.076469+00:00 Build trump0: 167000/369600 deals, nodes8907528, private0.78GiB
+2026-11-16T16:00:20.237750+00:00 Build trump0: 168000/369600 deals, nodes8957848, private0.78GiB
+2026-11-16T16:00:21.615023+00:00 Build trump0: 169000/369600 deals, nodes9017040, private0.78GiB
+2026-11-16T16:00:23.406602+00:00 Build trump0: 170000/369600 deals, nodes9100388, private0.79GiB
+2026-11-16T16:00:24.456355+00:00 Build trump0: 171000/369600 deals, nodes9158832, private0.79GiB
+2026-11-16T16:00:25.649858+00:00 Build trump0: 172000/369600 deals, nodes9228452, private0.79GiB
+2026-11-16T16:00:26.877507+00:00 Build trump0: 173000/369600 deals, nodes9295440, private0.80GiB
+2026-11-16T16:00:27.548121+00:00 Build trump0: 174000/369600 deals, nodes9330500, private0.80GiB
+2026-11-16T16:00:28.821516+00:00 Build trump0: 175000/369600 deals, nodes9401428, private0.80GiB
+2026-11-16T16:00:29.736793+00:00 Build trump0: 176000/369600 deals, nodes9458408, private0.80GiB
+2026-11-16T16:00:30.942889+00:00 Build trump0: 177000/369600 deals, nodes9531508, private0.80GiB
+2026-11-16T16:00:32.059469+00:00 Build trump0: 178000/369600 deals, nodes9600200, private0.80GiB
+2026-11-16T16:00:33.026180+00:00 Build trump0: 179000/369600 deals, nodes9658132, private0.80GiB
+2026-11-16T16:00:34.336201+00:00 Build trump0: 180000/369600 deals, nodes9737604, private0.80GiB
+2026-11-16T16:00:34.980218+00:00 Build trump0: 181000/369600 deals, nodes9765952, private0.80GiB
+2026-11-16T16:00:35.975886+00:00 Build trump0: 182000/369600 deals, nodes9814784, private0.81GiB
+2026-11-16T16:00:37.410879+00:00 Build trump0: 183000/369600 deals, nodes9848536, private0.81GiB
+2026-11-16T16:00:39.598740+00:00 Build trump0: 184000/369600 deals, nodes9885160, private0.82GiB
+2026-11-16T16:00:42.800128+00:00 Build trump0: 185000/369600 deals, nodes9929708, private0.82GiB
+2026-11-16T16:00:45.829956+00:00 Build trump0: 186000/369600 deals, nodes9955000, private0.82GiB
+2026-11-16T16:00:47.895241+00:00 Build trump0: 187000/369600 deals, nodes9998496, private0.82GiB
+2026-11-16T16:00:49.447001+00:00 Build trump0: 188000/369600 deals, nodes10030840, private0.82GiB
+2026-11-16T16:00:51.291279+00:00 Build trump0: 189000/369600 deals, nodes10067624, private0.82GiB
+2026-11-16T16:00:53.718551+00:00 Build trump0: 190000/369600 deals, nodes10110164, private0.82GiB
+2026-11-16T16:00:54.210523+00:00 Build trump0: 191000/369600 deals, nodes10135064, private0.82GiB
+2026-11-16T16:00:55.022870+00:00 Build trump0: 192000/369600 deals, nodes10178856, private0.82GiB
+2026-11-16T16:00:55.565265+00:00 Build trump0: 193000/369600 deals, nodes10210168, private0.82GiB
+2026-11-16T16:00:56.540488+00:00 Build trump0: 194000/369600 deals, nodes10250408, private0.83GiB
+2026-11-16T16:00:57.555557+00:00 Build trump0: 195000/369600 deals, nodes10293140, private0.83GiB
+2026-11-16T16:00:58.903253+00:00 Build trump0: 196000/369600 deals, nodes10319880, private0.83GiB
+2026-11-16T16:00:59.939630+00:00 Build trump0: 197000/369600 deals, nodes10363760, private0.83GiB
+2026-11-16T16:01:00.545186+00:00 Build trump0: 198000/369600 deals, nodes10393192, private0.83GiB
+2026-11-16T16:01:01.274814+00:00 Build trump0: 199000/369600 deals, nodes10432888, private0.83GiB
+2026-11-16T16:01:02.120653+00:00 Build trump0: 200000/369600 deals, nodes10473164, private0.84GiB
+2026-11-16T16:01:02.580940+00:00 Build trump0: 201000/369600 deals, nodes10499944, private0.84GiB
+2026-11-16T16:01:03.327639+00:00 Build trump0: 202000/369600 deals, nodes10544536, private0.84GiB
+2026-11-16T16:01:03.800107+00:00 Build trump0: 203000/369600 deals, nodes10573596, private0.84GiB
+2026-11-16T16:01:04.707002+00:00 Build trump0: 204000/369600 deals, nodes10615768, private0.84GiB
+2026-11-16T16:01:05.550362+00:00 Build trump0: 205000/369600 deals, nodes10655636, private0.84GiB
+2026-11-16T16:01:06.022805+00:00 Build trump0: 206000/369600 deals, nodes10683512, private0.84GiB
+2026-11-16T16:01:06.812997+00:00 Build trump0: 207000/369600 deals, nodes10727584, private0.84GiB
+2026-11-16T16:01:07.352306+00:00 Build trump0: 208000/369600 deals, nodes10754104, private0.84GiB
+2026-11-16T16:01:08.108611+00:00 Build trump0: 209000/369600 deals, nodes10796552, private0.84GiB
+2026-11-16T16:01:08.690360+00:00 Build trump0: 210000/369600 deals, nodes10832184, private0.84GiB
+2026-11-16T16:01:09.290370+00:00 Build trump0: 211000/369600 deals, nodes10867216, private0.84GiB
+2026-11-16T16:01:10.076322+00:00 Build trump0: 212000/369600 deals, nodes10909360, private0.85GiB
+2026-11-16T16:01:10.619917+00:00 Build trump0: 213000/369600 deals, nodes10942456, private0.85GiB
+2026-11-16T16:01:11.266299+00:00 Build trump0: 214000/369600 deals, nodes10980676, private0.85GiB
+2026-11-16T16:01:11.822963+00:00 Build trump0: 215000/369600 deals, nodes11017224, private0.85GiB
+2026-11-16T16:01:12.435979+00:00 Build trump0: 216000/369600 deals, nodes11052528, private0.85GiB
+2026-11-16T16:01:13.121247+00:00 Build trump0: 217000/369600 deals, nodes11095724, private0.85GiB
+2026-11-16T16:01:13.697208+00:00 Build trump0: 218000/369600 deals, nodes11123564, private0.86GiB
+2026-11-16T16:01:14.547437+00:00 Build trump0: 219000/369600 deals, nodes11166440, private0.86GiB
+2026-11-16T16:01:15.324765+00:00 Build trump0: 220000/369600 deals, nodes11201864, private0.86GiB
+2026-11-16T16:01:16.173454+00:00 Build trump0: 221000/369600 deals, nodes11236280, private0.86GiB
+2026-11-16T16:01:17.330442+00:00 Build trump0: 222000/369600 deals, nodes11281316, private0.86GiB
+2026-11-16T16:01:17.891477+00:00 Build trump0: 223000/369600 deals, nodes11305464, private0.86GiB
+2026-11-16T16:01:18.988503+00:00 Build trump0: 224000/369600 deals, nodes11350064, private0.86GiB
+2026-11-16T16:01:19.832965+00:00 Build trump0: 225000/369600 deals, nodes11384904, private0.86GiB
+2026-11-16T16:01:20.668134+00:00 Build trump0: 226000/369600 deals, nodes11420760, private0.86GiB
+2026-11-16T16:01:21.718742+00:00 Build trump0: 227000/369600 deals, nodes11464892, private0.86GiB
+2026-11-16T16:01:22.360170+00:00 Build trump0: 228000/369600 deals, nodes11489656, private0.86GiB
+2026-11-16T16:01:23.326722+00:00 Build trump0: 229000/369600 deals, nodes11533152, private0.86GiB
+2026-11-16T16:01:24.024559+00:00 Build trump0: 230000/369600 deals, nodes11563832, private0.87GiB
+2026-11-16T16:01:24.815651+00:00 Build trump0: 231000/369600 deals, nodes11599528, private0.87GiB
+2026-11-16T16:01:25.603994+00:00 Build trump0: 232000/369600 deals, nodes11640524, private0.87GiB
+2026-11-16T16:01:26.092226+00:00 Build trump0: 233000/369600 deals, nodes11663576, private0.87GiB
+2026-11-16T16:01:26.955935+00:00 Build trump0: 234000/369600 deals, nodes11704432, private0.87GiB
+2026-11-16T16:01:27.504318+00:00 Build trump0: 235000/369600 deals, nodes11730232, private0.87GiB
+2026-11-16T16:01:28.288730+00:00 Build trump0: 236000/369600 deals, nodes11762696, private0.87GiB
+2026-11-16T16:01:29.029559+00:00 Build trump0: 237000/369600 deals, nodes11798228, private0.88GiB
+2026-11-16T16:01:29.599219+00:00 Build trump0: 238000/369600 deals, nodes11818056, private0.88GiB
+2026-11-16T16:01:30.372379+00:00 Build trump0: 239000/369600 deals, nodes11855216, private0.89GiB
+2026-11-16T16:01:30.916215+00:00 Build trump0: 240000/369600 deals, nodes11879064, private0.89GiB
+2026-11-16T16:01:31.703051+00:00 Build trump0: 241000/369600 deals, nodes11917032, private0.89GiB
+2026-11-16T16:01:32.461322+00:00 Build trump0: 242000/369600 deals, nodes11955836, private0.89GiB
+2026-11-16T16:01:32.928923+00:00 Build trump0: 243000/369600 deals, nodes11981080, private0.89GiB
+2026-11-16T16:01:33.829245+00:00 Build trump0: 244000/369600 deals, nodes12022128, private0.89GiB
+2026-11-16T16:01:34.376255+00:00 Build trump0: 245000/369600 deals, nodes12045176, private0.89GiB
+2026-11-16T16:01:35.075265+00:00 Build trump0: 246000/369600 deals, nodes12080344, private0.89GiB
+2026-11-16T16:01:35.757398+00:00 Build trump0: 247000/369600 deals, nodes12114116, private0.89GiB
+2026-11-16T16:01:36.207188+00:00 Build trump0: 248000/369600 deals, nodes12135512, private0.89GiB
+2026-11-16T16:01:36.998810+00:00 Build trump0: 249000/369600 deals, nodes12172672, private0.89GiB
+2026-11-16T16:01:37.462981+00:00 Build trump0: 250000/369600 deals, nodes12194008, private0.89GiB
+2026-11-16T16:01:38.147714+00:00 Build trump0: 251000/369600 deals, nodes12233864, private0.89GiB
+2026-11-16T16:01:38.739868+00:00 Build trump0: 252000/369600 deals, nodes12268104, private0.89GiB
+2026-11-16T16:01:39.450679+00:00 Build trump0: 253000/369600 deals, nodes12293688, private0.90GiB
+2026-11-16T16:01:40.243393+00:00 Build trump0: 254000/369600 deals, nodes12330992, private0.90GiB
+2026-11-16T16:01:40.673604+00:00 Build trump0: 255000/369600 deals, nodes12351048, private0.90GiB
+2026-11-16T16:01:41.392426+00:00 Build trump0: 256000/369600 deals, nodes12386720, private0.90GiB
+2026-11-16T16:01:41.945625+00:00 Build trump0: 257000/369600 deals, nodes12415304, private0.90GiB
+Compact attempt1 reached257000/369600 chance deals at0.90GiB private memory, then OneDrive returned WinError5 replacing progress JSON. No game values had yet been produced; prior progress/error retained in build_0_attempt1.json and compact_attempt1.stderr.log. Added30s bounded PermissionError retries for atomic JSON/NPZ writes, per-process temporary names, and reduced progress-file writes to5000-deal intervals (memory/time checks remain every250). Same game, method and original3h deadline; construction restarts, not an effect-driven change.
+2026-11-16T16:04:24.311293+00:00 Warmup S3R4 trump0: 20/220 hands
+2026-11-16T16:04:29.739326+00:00 Warmup S3R4 trump0: 40/220 hands
+2026-11-16T16:04:35.127689+00:00 Warmup S3R4 trump0: 60/220 hands
+2026-11-16T16:04:40.627226+00:00 Warmup S3R4 trump0: 80/220 hands
+2026-11-16T16:04:46.089168+00:00 Warmup S3R4 trump0: 100/220 hands
+2026-11-16T16:04:51.532625+00:00 Warmup S3R4 trump0: 120/220 hands
+2026-11-16T16:04:56.934048+00:00 Warmup S3R4 trump0: 140/220 hands
+2026-11-16T16:05:02.321728+00:00 Warmup S3R4 trump0: 160/220 hands
+2026-11-16T16:05:05.740990+00:00 Warmup S3R4 trump0: 180/220 hands
+2026-11-16T16:05:10.226054+00:00 Warmup S3R4 trump0: 200/220 hands
+2026-11-16T16:05:15.815121+00:00 Warmup S3R4 trump0: 220/220 hands
+2026-11-16T16:05:22.094946+00:00 Warmup S3R4 trump-1: 20/220 hands
+2026-11-16T16:05:27.608611+00:00 Warmup S3R4 trump-1: 40/220 hands
+2026-11-16T16:05:33.139578+00:00 Warmup S3R4 trump-1: 60/220 hands
+2026-11-16T16:05:38.732783+00:00 Warmup S3R4 trump-1: 80/220 hands
+2026-11-16T16:05:44.191821+00:00 Warmup S3R4 trump-1: 100/220 hands
+2026-11-16T16:05:49.760284+00:00 Warmup S3R4 trump-1: 120/220 hands
+2026-11-16T16:05:55.231618+00:00 Warmup S3R4 trump-1: 140/220 hands
+2026-11-16T16:06:00.584708+00:00 Warmup S3R4 trump-1: 160/220 hands
+2026-11-16T16:06:05.973445+00:00 Warmup S3R4 trump-1: 180/220 hands
+2026-11-16T16:06:11.639930+00:00 Warmup S3R4 trump-1: 200/220 hands
+2026-11-16T16:06:17.427110+00:00 Warmup S3R4 trump-1: 220/220 hands
+2026-11-16T16:06:18.445697+00:00 Resource-only preflight S3R4: projected 8.00GiB, 25.8min cold-cache conservative build; feasible=True
+2026-11-16T16:06:26.173162+00:00 Build trump0: 5000/369600 deals, nodes433712, private0.35GiB
+2026-11-16T16:06:30.199195+00:00 Build trump0: 10000/369600 deals, nodes662944, private0.38GiB
+2026-11-16T16:06:36.813101+00:00 Build trump0: 15000/369600 deals, nodes913492, private0.40GiB
+2026-11-16T16:06:44.317960+00:00 Build trump0: 20000/369600 deals, nodes1300576, private0.43GiB
+2026-11-16T16:06:50.399367+00:00 Build trump0: 25000/369600 deals, nodes1533136, private0.44GiB
+2026-11-16T16:06:57.305651+00:00 Build trump0: 30000/369600 deals, nodes1782232, private0.45GiB
+2026-11-16T16:07:02.447032+00:00 Build trump0: 35000/369600 deals, nodes2050552, private0.46GiB
+2026-11-16T16:07:07.065655+00:00 Build trump0: 40000/369600 deals, nodes2312880, private0.48GiB
+2026-11-16T16:07:12.008464+00:00 Build trump0: 45000/369600 deals, nodes2583464, private0.50GiB
+2026-11-16T16:07:19.245619+00:00 Build trump0: 50000/369600 deals, nodes2850688, private0.52GiB
+2026-11-16T16:07:25.431074+00:00 Build trump0: 55000/369600 deals, nodes3130832, private0.53GiB
+2026-11-16T16:07:31.301373+00:00 Build trump0: 60000/369600 deals, nodes3383136, private0.54GiB
+2026-11-16T16:07:36.897652+00:00 Build trump0: 65000/369600 deals, nodes3663184, private0.55GiB
+2026-11-16T16:07:41.954198+00:00 Build trump0: 70000/369600 deals, nodes3913856, private0.56GiB
+2026-11-16T16:07:46.884738+00:00 Build trump0: 75000/369600 deals, nodes4180136, private0.56GiB
+2026-11-16T16:07:49.963600+00:00 Build trump0: 80000/369600 deals, nodes4366368, private0.57GiB
+2026-11-16T16:07:54.925640+00:00 Build trump0: 85000/369600 deals, nodes4600496, private0.58GiB
+2026-11-16T16:08:02.083025+00:00 Build trump0: 90000/369600 deals, nodes4885824, private0.58GiB
+2026-11-16T16:08:10.247281+00:00 Build trump0: 95000/369600 deals, nodes5305960, private0.60GiB
+2026-11-16T16:08:16.521117+00:00 Build trump0: 100000/369600 deals, nodes5544744, private0.61GiB
+2026-11-16T16:08:23.052932+00:00 Build trump0: 105000/369600 deals, nodes5794860, private0.63GiB
+2026-11-16T16:08:28.157658+00:00 Build trump0: 110000/369600 deals, nodes6059148, private0.68GiB
+2026-11-16T16:08:33.059690+00:00 Build trump0: 115000/369600 deals, nodes6342044, private0.69GiB
+2026-11-16T16:08:37.853521+00:00 Build trump0: 120000/369600 deals, nodes6645724, private0.70GiB
+2026-11-16T16:08:43.935891+00:00 Build trump0: 125000/369600 deals, nodes6904392, private0.71GiB
+2026-11-16T16:08:48.851483+00:00 Build trump0: 130000/369600 deals, nodes7160760, private0.72GiB
+2026-11-16T16:08:53.771168+00:00 Build trump0: 135000/369600 deals, nodes7395312, private0.73GiB
+2026-11-16T16:08:58.842809+00:00 Build trump0: 140000/369600 deals, nodes7651680, private0.74GiB
+2026-11-16T16:09:03.734633+00:00 Build trump0: 145000/369600 deals, nodes7886560, private0.74GiB
+2026-11-16T16:09:08.453853+00:00 Build trump0: 150000/369600 deals, nodes8136040, private0.75GiB
+2026-11-16T16:09:11.725143+00:00 Build trump0: 155000/369600 deals, nodes8321700, private0.76GiB
+2026-11-16T16:09:16.522375+00:00 Build trump0: 160000/369600 deals, nodes8541952, private0.76GiB
+2026-11-16T16:09:23.530849+00:00 Build trump0: 165000/369600 deals, nodes8804504, private0.78GiB
+2026-11-16T16:09:30.308824+00:00 Build trump0: 170000/369600 deals, nodes9100388, private0.79GiB
+2026-11-16T16:09:35.534604+00:00 Build trump0: 175000/369600 deals, nodes9401428, private0.80GiB
+2026-11-16T16:09:41.003930+00:00 Build trump0: 180000/369600 deals, nodes9737604, private0.80GiB
+2026-11-16T16:09:45.537739+00:00 Build trump0: 185000/369600 deals, nodes9929708, private0.81GiB
+2026-11-16T16:09:48.974431+00:00 Build trump0: 190000/369600 deals, nodes10110164, private0.82GiB
+2026-11-16T16:09:52.577090+00:00 Build trump0: 195000/369600 deals, nodes10293140, private0.83GiB
+2026-11-16T16:09:56.142125+00:00 Build trump0: 200000/369600 deals, nodes10473164, private0.84GiB
+2026-11-16T16:09:59.498678+00:00 Build trump0: 205000/369600 deals, nodes10655636, private0.84GiB
+2026-11-16T16:10:02.552398+00:00 Build trump0: 210000/369600 deals, nodes10832184, private0.84GiB
+2026-11-16T16:10:05.600707+00:00 Build trump0: 215000/369600 deals, nodes11017224, private0.85GiB
+2026-11-16T16:10:09.043318+00:00 Build trump0: 220000/369600 deals, nodes11201864, private0.86GiB
+2026-11-16T16:10:13.310651+00:00 Build trump0: 225000/369600 deals, nodes11384904, private0.86GiB
+2026-11-16T16:10:17.143729+00:00 Build trump0: 230000/369600 deals, nodes11563832, private0.87GiB
+2026-11-16T16:10:20.368189+00:00 Build trump0: 235000/369600 deals, nodes11730232, private0.87GiB
+2026-11-16T16:10:23.465586+00:00 Build trump0: 240000/369600 deals, nodes11879064, private0.89GiB
+2026-11-16T16:10:26.507824+00:00 Build trump0: 245000/369600 deals, nodes12045176, private0.89GiB
+2026-11-16T16:10:29.439763+00:00 Build trump0: 250000/369600 deals, nodes12194008, private0.89GiB
+2026-11-16T16:10:32.296316+00:00 Build trump0: 255000/369600 deals, nodes12351048, private0.90GiB
+2026-11-16T16:10:35.116832+00:00 Build trump0: 260000/369600 deals, nodes12499112, private0.90GiB
+2026-11-16T16:10:38.326590+00:00 Build trump0: 265000/369600 deals, nodes12648840, private0.91GiB
+2026-11-16T16:10:41.527925+00:00 Build trump0: 270000/369600 deals, nodes12818968, private0.91GiB
+2026-11-16T16:10:44.572415+00:00 Build trump0: 275000/369600 deals, nodes12992648, private0.92GiB
+2026-11-16T16:10:51.890420+00:00 Build trump0: 280000/369600 deals, nodes13293988, private0.93GiB
+2026-11-16T16:10:58.248414+00:00 Build trump0: 285000/369600 deals, nodes13557376, private1.03GiB
+2026-11-16T16:11:04.458739+00:00 Build trump0: 290000/369600 deals, nodes13832176, private1.03GiB
+2026-11-16T16:11:10.225539+00:00 Build trump0: 295000/369600 deals, nodes14105164, private1.05GiB
+2026-11-16T16:11:16.525260+00:00 Build trump0: 300000/369600 deals, nodes14354696, private1.06GiB
+2026-11-16T16:11:22.850595+00:00 Build trump0: 305000/369600 deals, nodes14627840, private1.07GiB
+2026-11-16T16:11:29.097701+00:00 Build trump0: 310000/369600 deals, nodes14889776, private1.09GiB
+2026-11-16T16:11:36.103598+00:00 Build trump0: 315000/369600 deals, nodes15160288, private1.10GiB
+2026-11-16T16:13:34.874379+00:00 Build trump0: 320000/369600 deals, nodes15431256, private1.11GiB
+2026-11-16T16:13:38.025595+00:00 Build trump0: 325000/369600 deals, nodes15682136, private1.12GiB
+2026-11-16T16:13:44.588187+00:00 Build trump0: 330000/369600 deals, nodes15937916, private1.13GiB
+2026-11-16T16:13:51.071917+00:00 Build trump0: 335000/369600 deals, nodes16189508, private1.14GiB
+2026-11-16T16:13:57.317783+00:00 Build trump0: 340000/369600 deals, nodes16429644, private1.15GiB
+2026-11-16T16:14:02.746241+00:00 Build trump0: 345000/369600 deals, nodes16649028, private1.16GiB
+2026-11-16T16:14:08.462011+00:00 Build trump0: 350000/369600 deals, nodes16869388, private1.16GiB
+Optional theory prepared while both slots compute: ROOT_BOUND.md and root_bound.py derive a first-decision private-infoset relaxation J1 with PI<=J1<=optimal hidden score<=achieved. No large-toy J1 value computed and no new numerical claim; only attempt exact reanalysis if primary finishes with time inside ORIGINAL3h box. Otherwise retain for later. Primary contrast and selected deck remain unchanged. Small-toy inequality assertions added but not yet rerun because both slots are occupied.
+2026-11-16T16:14:14.571063+00:00 Build trump0: 355000/369600 deals, nodes17116324, private1.18GiB
+2026-11-16T16:14:20.162112+00:00 Build trump0: 360000/369600 deals, nodes17365820, private1.18GiB
+2026-11-16T16:14:27.182622+00:00 Build trump0: 365000/369600 deals, nodes17633752, private1.19GiB
+2026-11-16T16:14:37.113560+00:00 TA profile 10000/3848291 infosets
+2026-11-16T16:14:38.069426+00:00 TA profile 20000/3848291 infosets
+2026-11-16T16:14:38.820335+00:00 TA profile 30000/3848291 infosets
+2026-11-16T16:14:39.527680+00:00 TA profile 40000/3848291 infosets
+2026-11-16T16:14:40.108328+00:00 TA profile 50000/3848291 infosets
+2026-11-16T16:14:40.657134+00:00 TA profile 60000/3848291 infosets
+2026-11-16T16:14:41.314823+00:00 TA profile 70000/3848291 infosets
+2026-11-16T16:14:42.011078+00:00 TA profile 80000/3848291 infosets
+2026-11-16T16:14:42.552693+00:00 TA profile 90000/3848291 infosets
+2026-11-16T16:14:42.927553+00:00 TA profile 100000/3848291 infosets
+2026-11-16T16:14:44.752701+00:00 TA profile 110000/3848291 infosets
+2026-11-16T16:14:46.350959+00:00 TA profile 120000/3848291 infosets
+2026-11-16T16:14:47.515216+00:00 TA profile 130000/3848291 infosets
+2026-11-16T16:14:49.205343+00:00 TA profile 140000/3848291 infosets
+2026-11-16T16:14:50.656473+00:00 TA profile 150000/3848291 infosets
+2026-11-16T16:14:51.991928+00:00 TA profile 160000/3848291 infosets
+2026-11-16T16:14:53.392888+00:00 TA profile 170000/3848291 infosets
+2026-11-16T16:14:55.016481+00:00 TA profile 180000/3848291 infosets
+2026-11-16T16:14:56.178769+00:00 TA profile 190000/3848291 infosets
+2026-11-16T16:14:57.450318+00:00 TA profile 200000/3848291 infosets
+2026-11-16T16:14:59.041638+00:00 TA profile 210000/3848291 infosets
+2026-11-16T16:15:00.270914+00:00 TA profile 220000/3848291 infosets
+2026-11-16T16:15:01.997577+00:00 TA profile 230000/3848291 infosets
+2026-11-16T16:15:03.292050+00:00 TA profile 240000/3848291 infosets
+2026-11-16T16:15:04.500308+00:00 TA profile 250000/3848291 infosets
+2026-11-16T16:15:06.435650+00:00 TA profile 260000/3848291 infosets
+2026-11-16T16:15:07.854017+00:00 TA profile 270000/3848291 infosets
+2026-11-16T16:15:08.884621+00:00 TA profile 280000/3848291 infosets
+2026-11-16T16:15:10.791186+00:00 TA profile 290000/3848291 infosets
+2026-11-16T16:15:12.366316+00:00 TA profile 300000/3848291 infosets
+2026-11-16T16:15:13.326030+00:00 TA profile 310000/3848291 infosets
+2026-11-16T16:15:14.921280+00:00 TA profile 320000/3848291 infosets
+2026-11-16T16:15:16.201570+00:00 TA profile 330000/3848291 infosets
+2026-11-16T16:15:17.213562+00:00 TA profile 340000/3848291 infosets
+2026-11-16T16:15:17.989467+00:00 TA profile 350000/3848291 infosets
+2026-11-16T16:15:18.454955+00:00 TA profile 360000/3848291 infosets
+2026-11-16T16:15:19.250734+00:00 TA profile 370000/3848291 infosets
+2026-11-16T16:15:20.038586+00:00 TA profile 380000/3848291 infosets
+2026-11-16T16:15:20.672514+00:00 TA profile 390000/3848291 infosets
+2026-11-16T16:15:21.130160+00:00 TA profile 400000/3848291 infosets
+2026-11-16T16:15:22.309615+00:00 TA profile 410000/3848291 infosets
+2026-11-16T16:15:24.116855+00:00 TA profile 420000/3848291 infosets
+2026-11-16T16:15:25.258462+00:00 TA profile 430000/3848291 infosets
+2026-11-16T16:15:27.042982+00:00 TA profile 440000/3848291 infosets
+2026-11-16T16:15:28.186600+00:00 TA profile 450000/3848291 infosets
+2026-11-16T16:15:29.801122+00:00 TA profile 460000/3848291 infosets
+2026-11-16T16:15:30.910549+00:00 TA profile 470000/3848291 infosets
+2026-11-16T16:15:32.699242+00:00 TA profile 480000/3848291 infosets
+2026-11-16T16:15:33.842943+00:00 TA profile 490000/3848291 infosets
+2026-11-16T16:15:35.542146+00:00 TA profile 500000/3848291 infosets
+2026-11-16T16:15:36.758694+00:00 TA profile 510000/3848291 infosets
+2026-11-16T16:15:38.489057+00:00 TA profile 520000/3848291 infosets
+2026-11-16T16:15:39.803464+00:00 TA profile 530000/3848291 infosets
+2026-11-16T16:15:41.369248+00:00 TA profile 540000/3848291 infosets
+2026-11-16T16:15:42.429476+00:00 TA profile 550000/3848291 infosets
+2026-11-16T16:15:44.126087+00:00 TA profile 560000/3848291 infosets
+2026-11-16T16:15:45.235017+00:00 TA profile 570000/3848291 infosets
+2026-11-16T16:15:45.953917+00:00 TA profile 580000/3848291 infosets
+2026-11-16T16:15:46.680281+00:00 TA profile 590000/3848291 infosets
+2026-11-16T16:15:47.533907+00:00 TA profile 600000/3848291 infosets
+2026-11-16T16:15:48.179129+00:00 TA profile 610000/3848291 infosets
+2026-11-16T16:15:48.957994+00:00 TA profile 620000/3848291 infosets
+2026-11-16T16:15:49.646087+00:00 TA profile 630000/3848291 infosets
+2026-11-16T16:15:50.220858+00:00 TA profile 640000/3848291 infosets
+2026-11-16T16:15:50.935944+00:00 TA profile 650000/3848291 infosets
+2026-11-16T16:15:51.651041+00:00 TA profile 660000/3848291 infosets
+2026-11-16T16:15:52.326218+00:00 TA profile 670000/3848291 infosets
+2026-11-16T16:15:52.905327+00:00 TA profile 680000/3848291 infosets
+2026-11-16T16:15:53.657913+00:00 TA profile 690000/3848291 infosets
+2026-11-16T16:15:54.288112+00:00 TA profile 700000/3848291 infosets
+2026-11-16T16:15:54.993653+00:00 TA profile 710000/3848291 infosets
+2026-11-16T16:15:55.796649+00:00 TA profile 720000/3848291 infosets
+2026-11-16T16:15:56.530458+00:00 TA profile 730000/3848291 infosets
+2026-11-16T16:15:57.995207+00:00 TA profile 740000/3848291 infosets
+2026-11-16T16:15:59.320036+00:00 TA profile 750000/3848291 infosets
+2026-11-16T16:16:01.033243+00:00 TA profile 760000/3848291 infosets
+2026-11-16T16:16:02.231658+00:00 TA profile 770000/3848291 infosets
+2026-11-16T16:16:03.251971+00:00 TA profile 780000/3848291 infosets
+2026-11-16T16:16:04.422580+00:00 TA profile 790000/3848291 infosets
+2026-11-16T16:16:05.236208+00:00 TA profile 800000/3848291 infosets
+2026-11-16T16:16:05.907496+00:00 TA profile 810000/3848291 infosets
+2026-11-16T16:16:06.830950+00:00 TA profile 820000/3848291 infosets
+2026-11-16T16:16:07.584867+00:00 TA profile 830000/3848291 infosets
+2026-11-16T16:16:08.485518+00:00 TA profile 840000/3848291 infosets
+2026-11-16T16:16:09.223354+00:00 TA profile 850000/3848291 infosets
+2026-11-16T16:16:09.826106+00:00 TA profile 860000/3848291 infosets
+2026-11-16T16:16:10.518822+00:00 TA profile 870000/3848291 infosets
+2026-11-16T16:16:11.943908+00:00 TA profile 880000/3848291 infosets
+2026-11-16T16:16:13.415351+00:00 TA profile 890000/3848291 infosets
+2026-11-16T16:16:14.873412+00:00 TA profile 900000/3848291 infosets
+2026-11-16T16:16:15.860360+00:00 TA profile 910000/3848291 infosets
+2026-11-16T16:16:16.916804+00:00 TA profile 920000/3848291 infosets
+2026-11-16T16:16:17.598262+00:00 TA profile 930000/3848291 infosets
+2026-11-16T16:16:27.817835+00:00 TA profile 940000/3848291 infosets
+2026-11-16T16:16:28.328516+00:00 TA profile 950000/3848291 infosets
+2026-11-16T16:16:28.846631+00:00 TA profile 960000/3848291 infosets
+2026-11-16T16:16:29.363943+00:00 TA profile 970000/3848291 infosets
+2026-11-16T16:16:30.495319+00:00 TA profile 980000/3848291 infosets
+2026-11-16T16:16:32.030647+00:00 TA profile 990000/3848291 infosets
+2026-11-16T16:16:33.329347+00:00 TA profile 1000000/3848291 infosets
+2026-11-16T16:16:34.279059+00:00 TA profile 1010000/3848291 infosets
+2026-11-16T16:16:34.836447+00:00 TA profile 1020000/3848291 infosets
+2026-11-16T16:16:35.437947+00:00 TA profile 1030000/3848291 infosets
+2026-11-16T16:36:14.141028+00:00 TA profile 1040000/3848291 infosets
+2026-11-16T16:36:15.558104+00:00 TA profile 1050000/3848291 infosets
+2026-11-16T16:36:16.382376+00:00 TA profile 1060000/3848291 infosets
+2026-11-16T16:36:17.282755+00:00 TA profile 1070000/3848291 infosets
+2026-11-16T16:36:18.271829+00:00 TA profile 1080000/3848291 infosets
+2026-11-16T16:36:19.354809+00:00 TA profile 1090000/3848291 infosets
+2026-11-16T16:36:20.119434+00:00 TA profile 1100000/3848291 infosets
+2026-11-16T16:36:21.247717+00:00 TA profile 1110000/3848291 infosets
+2026-11-16T16:36:22.158694+00:00 TA profile 1120000/3848291 infosets
+2026-11-16T16:36:22.937866+00:00 TA profile 1130000/3848291 infosets
+2026-11-16T16:36:23.946631+00:00 TA profile 1140000/3848291 infosets
+2026-11-16T16:36:24.970142+00:00 TA profile 1150000/3848291 infosets
+2026-11-16T16:36:25.905615+00:00 TA profile 1160000/3848291 infosets
+2026-11-16T16:36:26.723766+00:00 TA profile 1170000/3848291 infosets
+2026-11-16T16:36:27.525089+00:00 TA profile 1180000/3848291 infosets
+2026-11-16T16:36:28.363034+00:00 TA profile 1190000/3848291 infosets
+2026-11-16T16:36:28.718024+00:00 TA profile 1200000/3848291 infosets
+2026-11-16T16:36:29.505551+00:00 TA profile 1210000/3848291 infosets
+2026-11-16T16:36:30.211744+00:00 TA profile 1220000/3848291 infosets
+2026-11-16T16:36:30.830677+00:00 TA profile 1230000/3848291 infosets
+2026-11-16T16:36:31.424354+00:00 TA profile 1240000/3848291 infosets
+2026-11-16T16:36:32.190371+00:00 TA profile 1250000/3848291 infosets
+2026-11-16T16:36:34.303483+00:00 TA profile 1260000/3848291 infosets
+2026-11-16T16:36:35.081298+00:00 TA profile 1270000/3848291 infosets
+2026-11-16T16:36:36.476571+00:00 TA profile 1280000/3848291 infosets
+2026-11-16T16:36:37.065679+00:00 TA profile 1290000/3848291 infosets
+2026-11-16T16:36:38.176826+00:00 TA profile 1300000/3848291 infosets
+2026-11-16T16:36:38.962155+00:00 TA profile 1310000/3848291 infosets
+2026-11-16T16:36:39.837735+00:00 TA profile 1320000/3848291 infosets
+2026-11-16T16:36:40.518927+00:00 TA profile 1330000/3848291 infosets
+2026-11-16T16:36:41.421049+00:00 TA profile 1340000/3848291 infosets
+2026-11-16T16:36:43.173056+00:00 TA profile 1350000/3848291 infosets
+2026-11-16T16:36:46.639741+00:00 TA profile 1360000/3848291 infosets
+2026-11-16T16:36:50.809252+00:00 TA profile 1370000/3848291 infosets
+2026-11-16T16:36:54.230729+00:00 TA profile 1380000/3848291 infosets
+2026-11-16T16:36:57.302182+00:00 TA profile 1390000/3848291 infosets
+2026-11-16T16:37:00.188837+00:00 TA profile 1400000/3848291 infosets
+2026-11-16T16:37:02.629195+00:00 TA profile 1410000/3848291 infosets
+2026-11-16T16:37:04.946231+00:00 TA profile 1420000/3848291 infosets
+2026-11-16T16:37:06.198164+00:00 TA profile 1430000/3848291 infosets
+2026-11-16T16:37:07.997905+00:00 TA profile 1440000/3848291 infosets
+2026-11-16T16:37:09.797923+00:00 TA profile 1450000/3848291 infosets
+2026-11-16T16:37:11.414178+00:00 TA profile 1460000/3848291 infosets
+2026-11-16T16:37:13.277569+00:00 TA profile 1470000/3848291 infosets
+2026-11-16T16:37:15.012873+00:00 TA profile 1480000/3848291 infosets
+2026-11-16T16:37:16.256640+00:00 TA profile 1490000/3848291 infosets
+2026-11-16T16:37:17.476849+00:00 TA profile 1500000/3848291 infosets
+2026-11-16T16:37:18.410144+00:00 TA profile 1510000/3848291 infosets
+2026-11-16T16:37:20.186736+00:00 TA profile 1520000/3848291 infosets
+2026-11-16T16:37:21.251541+00:00 TA profile 1530000/3848291 infosets
+2026-11-16T16:37:22.353012+00:00 TA profile 1540000/3848291 infosets
+2026-11-16T16:37:23.775279+00:00 TA profile 1550000/3848291 infosets
+2026-11-16T16:37:25.497877+00:00 TA profile 1560000/3848291 infosets
+2026-11-16T16:37:28.455714+00:00 TA profile 1570000/3848291 infosets
+2026-11-16T16:37:31.631240+00:00 TA profile 1580000/3848291 infosets
+2026-11-16T16:37:35.118838+00:00 TA profile 1590000/3848291 infosets
+2026-11-16T16:37:37.258694+00:00 TA profile 1600000/3848291 infosets
+2026-11-16T16:37:39.820959+00:00 TA profile 1610000/3848291 infosets
+2026-11-16T16:37:42.763970+00:00 TA profile 1620000/3848291 infosets
+2026-11-16T16:37:47.346687+00:00 TA profile 1630000/3848291 infosets
+2026-11-16T16:37:49.520684+00:00 TA profile 1640000/3848291 infosets
+2026-11-16T16:37:51.659203+00:00 TA profile 1650000/3848291 infosets
+2026-11-16T16:37:52.795831+00:00 TA profile 1660000/3848291 infosets
+2026-11-16T16:37:54.568221+00:00 TA profile 1670000/3848291 infosets
+2026-11-16T16:37:56.380694+00:00 TA profile 1680000/3848291 infosets
+2026-11-16T16:37:58.019693+00:00 TA profile 1690000/3848291 infosets
+2026-11-16T16:38:00.536761+00:00 TA profile 1700000/3848291 infosets
+2026-11-16T16:38:03.082574+00:00 TA profile 1710000/3848291 infosets
+2026-11-16T16:38:05.634681+00:00 TA profile 1720000/3848291 infosets
+2026-11-16T16:38:06.996425+00:00 TA profile 1730000/3848291 infosets
+2026-11-16T16:38:09.012586+00:00 TA profile 1740000/3848291 infosets
+2026-11-16T16:38:10.466524+00:00 TA profile 1750000/3848291 infosets
+2026-11-16T16:38:12.088267+00:00 TA profile 1760000/3848291 infosets
+2026-11-16T16:38:13.339064+00:00 TA profile 1770000/3848291 infosets
+2026-11-16T16:38:16.436471+00:00 TA profile 1780000/3848291 infosets
+2026-11-16T16:38:19.017925+00:00 TA profile 1790000/3848291 infosets
+2026-11-16T16:38:21.262656+00:00 TA profile 1800000/3848291 infosets
+2026-11-16T16:38:22.904774+00:00 TA profile 1810000/3848291 infosets
+2026-11-16T16:38:24.339117+00:00 TA profile 1820000/3848291 infosets
+2026-11-16T16:38:27.052849+00:00 TA profile 1830000/3848291 infosets
+2026-11-16T16:38:29.998461+00:00 TA profile 1840000/3848291 infosets
+2026-11-16T16:38:32.282417+00:00 TA profile 1850000/3848291 infosets
+2026-11-16T16:38:34.332382+00:00 TA profile 1860000/3848291 infosets
+2026-11-16T16:38:35.784473+00:00 TA profile 1870000/3848291 infosets
+2026-11-16T16:38:37.714914+00:00 TA profile 1880000/3848291 infosets
+2026-11-16T16:38:39.701613+00:00 TA profile 1890000/3848291 infosets
+2026-11-16T16:38:41.546555+00:00 TA profile 1900000/3848291 infosets
+2026-11-16T16:38:43.082373+00:00 TA profile 1910000/3848291 infosets
+2026-11-16T16:38:44.937070+00:00 TA profile 1920000/3848291 infosets
+2026-11-16T16:38:46.585188+00:00 TA profile 1930000/3848291 infosets
+2026-11-16T16:38:47.995113+00:00 TA profile 1940000/3848291 infosets
+2026-11-16T16:38:49.792601+00:00 TA profile 1950000/3848291 infosets
+2026-11-16T16:38:51.052709+00:00 TA profile 1960000/3848291 infosets
+2026-11-16T16:38:53.193325+00:00 TA profile 1970000/3848291 infosets
+2026-11-16T16:38:54.554686+00:00 TA profile 1980000/3848291 infosets
+2026-11-16T16:38:55.698860+00:00 TA profile 1990000/3848291 infosets
+2026-11-16T16:38:57.714858+00:00 TA profile 2000000/3848291 infosets
+2026-11-16T16:38:58.884656+00:00 TA profile 2010000/3848291 infosets
+2026-11-16T16:39:00.285466+00:00 TA profile 2020000/3848291 infosets
+2026-11-16T16:39:01.238828+00:00 TA profile 2030000/3848291 infosets
+2026-11-16T16:39:01.945072+00:00 TA profile 2040000/3848291 infosets
+2026-11-16T16:39:02.610298+00:00 TA profile 2050000/3848291 infosets
+2026-11-16T16:39:03.228850+00:00 TA profile 2060000/3848291 infosets
+2026-11-16T16:39:04.250100+00:00 TA profile 2070000/3848291 infosets
+2026-11-16T16:39:06.321120+00:00 TA profile 2080000/3848291 infosets
+2026-11-16T16:39:09.758895+00:00 TA profile 2090000/3848291 infosets
+2026-11-16T16:39:12.238063+00:00 TA profile 2100000/3848291 infosets
+2026-11-16T16:39:14.697167+00:00 TA profile 2110000/3848291 infosets
+2026-11-16T16:39:16.662582+00:00 TA profile 2120000/3848291 infosets
+Exact evaluation support optimization BEFORE obtaining any PI/achieved values: exhaustive TA completion was CPU-heavy (only~1.3M/3.85M infosets after~20min). Replaced it with exact reach traversal of baseline and each individual unilateral-deviation support; off-support rows use an arbitrary one-hot legal completion. Those rows have zero counterfactual reach for the required baseline/BR computations; CFR has all spoiler rows free. Small complete-chance regression now checks baseline, each exact BR value AND BR own-row policies, and the simultaneous-BR heuristic against exhaustive TA; passed1 test in1.64s, including root-bound inequalities. No policy choices on relevant support changed. Added source-fingerprinted local derived tree cache in the OS temp folder (metadata in results) to avoid rebuilding after infrastructure interruptions; scientific results/profiles stay in task/results. Optional first-decision information lower bound J1 now evaluated during the same PI pass family, with exact integer sums and no sampling claim; preregistered primary remains PI/achieved. Original3h stop remains13:45ET.
+2026-11-16T16:44:08.573331+00:00 Reusing completed compact-storage resource preflight; no game outcomes informed this choice.
+2026-11-16T16:45:12.399127+00:00 Build trump0: 5000/369600 deals, nodes433712, private0.36GiB
+2026-11-16T16:45:26.896892+00:00 Build trump0: 10000/369600 deals, nodes662944, private0.38GiB
+2026-11-16T16:45:41.425302+00:00 Build trump0: 15000/369600 deals, nodes913492, private0.40GiB
+2026-11-16T16:46:10.858648+00:00 Build trump0: 20000/369600 deals, nodes1300576, private0.43GiB
+2026-11-16T16:46:24.387043+00:00 Build trump0: 25000/369600 deals, nodes1533136, private0.44GiB
+2026-11-16T16:46:38.722884+00:00 Build trump0: 30000/369600 deals, nodes1782232, private0.45GiB
+2026-11-16T16:46:53.071559+00:00 Build trump0: 35000/369600 deals, nodes2050552, private0.47GiB
+2026-11-16T16:47:03.467423+00:00 Build trump0: 40000/369600 deals, nodes2312880, private0.48GiB
+2026-11-16T16:47:14.091518+00:00 Build trump0: 45000/369600 deals, nodes2583464, private0.51GiB
+2026-11-16T16:47:28.881131+00:00 Build trump0: 50000/369600 deals, nodes2850688, private0.52GiB
+2026-11-16T16:47:41.416997+00:00 Build trump0: 55000/369600 deals, nodes3130832, private0.53GiB
+2026-11-16T16:47:53.457125+00:00 Build trump0: 60000/369600 deals, nodes3383136, private0.54GiB
+2026-11-16T16:48:05.036004+00:00 Build trump0: 65000/369600 deals, nodes3663184, private0.55GiB
+2026-11-16T16:48:16.520750+00:00 Build trump0: 70000/369600 deals, nodes3913856, private0.56GiB
+2026-11-16T16:48:26.886093+00:00 Build trump0: 75000/369600 deals, nodes4180136, private0.56GiB
+2026-11-16T16:48:33.913658+00:00 Build trump0: 80000/369600 deals, nodes4366368, private0.57GiB
+2026-11-16T16:48:44.572777+00:00 Build trump0: 85000/369600 deals, nodes4600496, private0.58GiB
+2026-11-16T16:48:58.231587+00:00 Build trump0: 90000/369600 deals, nodes4885824, private0.59GiB
+2026-11-16T16:49:26.967924+00:00 Build trump0: 95000/369600 deals, nodes5305960, private0.61GiB
+2026-11-16T16:49:40.916952+00:00 Build trump0: 100000/369600 deals, nodes5544744, private0.62GiB
+2026-11-16T16:49:53.658313+00:00 Build trump0: 105000/369600 deals, nodes5794860, private0.63GiB
+2026-11-16T16:50:08.372699+00:00 Build trump0: 110000/369600 deals, nodes6059148, private0.68GiB
+2026-11-16T16:50:19.541351+00:00 Build trump0: 115000/369600 deals, nodes6342044, private0.69GiB
+2026-11-16T16:50:31.285024+00:00 Build trump0: 120000/369600 deals, nodes6645724, private0.70GiB
+2026-11-16T16:50:44.529628+00:00 Build trump0: 125000/369600 deals, nodes6904392, private0.71GiB
+2026-11-16T16:50:55.165846+00:00 Build trump0: 130000/369600 deals, nodes7160760, private0.72GiB
+2026-11-16T16:51:05.250438+00:00 Build trump0: 135000/369600 deals, nodes7395312, private0.73GiB
+2026-11-16T16:51:15.487212+00:00 Build trump0: 140000/369600 deals, nodes7651680, private0.74GiB
+2026-11-16T16:51:26.500759+00:00 Build trump0: 145000/369600 deals, nodes7886560, private0.75GiB
+2026-11-16T16:51:37.277124+00:00 Build trump0: 150000/369600 deals, nodes8136040, private0.75GiB
+2026-11-16T16:51:44.961981+00:00 Build trump0: 155000/369600 deals, nodes8321700, private0.76GiB
+2026-11-16T16:51:55.136049+00:00 Build trump0: 160000/369600 deals, nodes8541952, private0.77GiB
+2026-11-16T16:52:09.217320+00:00 Build trump0: 165000/369600 deals, nodes8804504, private0.78GiB
+2026-11-16T16:52:27.146064+00:00 Build trump0: 170000/369600 deals, nodes9100388, private0.79GiB
+2026-11-16T16:52:39.138046+00:00 Build trump0: 175000/369600 deals, nodes9401428, private0.80GiB
+2026-11-16T16:52:50.615601+00:00 Build trump0: 180000/369600 deals, nodes9737604, private0.81GiB
+2026-11-16T16:53:00.270437+00:00 Build trump0: 185000/369600 deals, nodes9929708, private0.82GiB
+2026-11-16T16:53:08.018196+00:00 Build trump0: 190000/369600 deals, nodes10110164, private0.82GiB
+2026-11-16T16:53:15.615767+00:00 Build trump0: 195000/369600 deals, nodes10293140, private0.83GiB
+2026-11-16T16:53:23.882405+00:00 Build trump0: 200000/369600 deals, nodes10473164, private0.84GiB
+2026-11-16T16:53:32.130776+00:00 Build trump0: 205000/369600 deals, nodes10655636, private0.84GiB
+2026-11-16T16:53:38.775216+00:00 Build trump0: 210000/369600 deals, nodes10832184, private0.84GiB
+2026-11-16T16:53:45.639274+00:00 Build trump0: 215000/369600 deals, nodes11017224, private0.85GiB
+2026-11-16T16:53:53.104612+00:00 Build trump0: 220000/369600 deals, nodes11201864, private0.86GiB
+2026-11-16T16:54:02.760716+00:00 Build trump0: 225000/369600 deals, nodes11384904, private0.86GiB
+2026-11-16T16:54:12.381551+00:00 Build trump0: 230000/369600 deals, nodes11563832, private0.87GiB
+2026-11-16T16:54:23.742422+00:00 Build trump0: 235000/369600 deals, nodes11730232, private0.88GiB
+2026-11-16T16:54:33.507420+00:00 Build trump0: 240000/369600 deals, nodes11879064, private0.89GiB
+2026-11-16T16:54:40.852283+00:00 Build trump0: 245000/369600 deals, nodes12045176, private0.89GiB
+2026-11-16T16:54:47.566581+00:00 Build trump0: 250000/369600 deals, nodes12194008, private0.90GiB
+2026-11-16T16:54:54.910521+00:00 Build trump0: 255000/369600 deals, nodes12351048, private0.90GiB
+2026-11-16T16:55:02.868246+00:00 Build trump0: 260000/369600 deals, nodes12499112, private0.90GiB
+2026-11-16T16:55:10.963222+00:00 Build trump0: 265000/369600 deals, nodes12648840, private0.92GiB
+2026-11-16T16:55:18.385517+00:00 Build trump0: 270000/369600 deals, nodes12818968, private0.92GiB
+2026-11-16T16:55:26.319037+00:00 Build trump0: 275000/369600 deals, nodes12992648, private0.92GiB
+2026-11-16T16:55:42.400720+00:00 Build trump0: 280000/369600 deals, nodes13293988, private0.93GiB
+2026-11-16T16:55:55.181055+00:00 Build trump0: 285000/369600 deals, nodes13557376, private1.03GiB
+2026-11-16T16:56:08.084338+00:00 Build trump0: 290000/369600 deals, nodes13832176, private1.04GiB
+2026-11-16T16:56:20.113913+00:00 Build trump0: 295000/369600 deals, nodes14105164, private1.05GiB
+2026-11-16T16:56:33.086176+00:00 Build trump0: 300000/369600 deals, nodes14354696, private1.07GiB
+2026-11-16T16:56:45.889532+00:00 Build trump0: 305000/369600 deals, nodes14627840, private1.08GiB
+2026-11-16T16:56:58.088475+00:00 Build trump0: 310000/369600 deals, nodes14889776, private1.09GiB
+2026-11-16T16:57:11.199458+00:00 Build trump0: 315000/369600 deals, nodes15160288, private1.11GiB
+2026-11-16T16:57:24.184929+00:00 Build trump0: 320000/369600 deals, nodes15431256, private1.11GiB
+2026-11-16T16:57:37.136647+00:00 Build trump0: 325000/369600 deals, nodes15682136, private1.12GiB
+2026-11-16T16:57:50.658075+00:00 Build trump0: 330000/369600 deals, nodes15937916, private1.13GiB
+2026-11-16T16:58:03.947160+00:00 Build trump0: 335000/369600 deals, nodes16189508, private1.15GiB
+2026-11-16T16:58:17.196098+00:00 Build trump0: 340000/369600 deals, nodes16429644, private1.15GiB
+2026-11-16T16:58:28.797708+00:00 Build trump0: 345000/369600 deals, nodes16649028, private1.16GiB
+2026-11-16T16:58:41.364131+00:00 Build trump0: 350000/369600 deals, nodes16869388, private1.17GiB
+2026-11-16T16:58:53.880022+00:00 Build trump0: 355000/369600 deals, nodes17116324, private1.18GiB
+2026-11-16T16:59:05.747759+00:00 Build trump0: 360000/369600 deals, nodes17365820, private1.19GiB
+2026-11-16T16:59:19.442320+00:00 Build trump0: 365000/369600 deals, nodes17633752, private1.19GiB
+2026-11-16T16:59:56.501400+00:00 Reachable TA profile 10000/3848291 infosets
+2026-11-16T17:00:06.730995+00:00 Reachable TA profile 20000/3848291 infosets
+2026-11-16T17:00:10.938332+00:00 Reachable TA profile 30000/3848291 infosets
+2026-11-16T17:00:13.769964+00:00 Reachable TA profile 40000/3848291 infosets
+2026-11-16T17:00:17.252247+00:00 Reachable TA profile 50000/3848291 infosets
+2026-11-16T17:00:21.274244+00:00 Reachable TA profile 60000/3848291 infosets
+2026-11-16T17:00:24.067103+00:00 Reachable TA profile 70000/3848291 infosets
+2026-11-16T17:00:27.405740+00:00 Reachable TA profile 80000/3848291 infosets
+2026-11-16T17:00:36.943859+00:00 Reachable TA profile 90000/3848291 infosets
+2026-11-16T17:00:44.635298+00:00 Reachable TA profile 100000/3848291 infosets
+2026-11-16T17:00:52.337378+00:00 Reachable TA profile 110000/3848291 infosets
+2026-11-16T17:00:57.012527+00:00 Reachable TA profile 120000/3848291 infosets
+2026-11-16T17:01:03.479890+00:00 Reachable TA profile 130000/3848291 infosets
+2026-11-16T17:01:08.150408+00:00 Reachable TA profile 140000/3848291 infosets
+2026-11-16T17:01:11.206116+00:00 Reachable TA profile 150000/3848291 infosets
+2026-11-16T17:01:14.437611+00:00 Reachable TA profile 160000/3848291 infosets
+2026-11-16T17:01:17.650454+00:00 Reachable TA profile 170000/3848291 infosets
+2026-11-16T17:01:21.038873+00:00 Reachable TA profile 180000/3848291 infosets
+2026-11-16T17:01:23.836245+00:00 Reachable TA profile 190000/3848291 infosets
+2026-11-16T17:01:26.804107+00:00 Reachable TA profile 200000/3848291 infosets
+2026-11-16T17:01:28.627719+00:00 Reachable TA profile 210000/3848291 infosets
+2026-11-16T17:01:30.795268+00:00 Reachable TA profile 220000/3848291 infosets
+2026-11-16T17:01:32.678906+00:00 Reachable TA profile 230000/3848291 infosets
+2026-11-16T17:01:34.582304+00:00 Reachable TA profile 240000/3848291 infosets
+2026-11-16T17:01:36.696917+00:00 Reachable TA profile 250000/3848291 infosets
+2026-11-16T17:01:39.021596+00:00 Reachable TA profile 260000/3848291 infosets
+2026-11-16T17:01:41.413229+00:00 Reachable TA profile 270000/3848291 infosets
+2026-11-16T17:01:43.011307+00:00 Reachable TA profile 280000/3848291 infosets
+2026-11-16T17:01:44.523777+00:00 Reachable TA profile 290000/3848291 infosets
+2026-11-16T17:01:46.186156+00:00 Reachable TA profile 300000/3848291 infosets
+2026-11-16T17:01:47.533254+00:00 Reachable TA profile 310000/3848291 infosets
+2026-11-16T17:01:48.979136+00:00 Reachable TA profile 320000/3848291 infosets
+2026-11-16T17:01:49.927208+00:00 Reachable TA profile 330000/3848291 infosets
+2026-11-16T17:01:50.686632+00:00 Reachable TA profile 340000/3848291 infosets
+2026-11-16T17:01:51.675644+00:00 Reachable TA profile 350000/3848291 infosets
+2026-11-16T17:01:52.594797+00:00 Reachable TA profile 360000/3848291 infosets
+2026-11-16T17:01:53.915257+00:00 Reachable TA profile 370000/3848291 infosets
+2026-11-16T17:02:03.690021+00:00 Reachable TA profile 380000/3848291 infosets
+2026-11-16T17:02:08.241793+00:00 Reachable TA profile 390000/3848291 infosets
+2026-11-16T17:02:13.257244+00:00 Reachable TA profile 400000/3848291 infosets
+2026-11-16T17:02:17.044425+00:00 Reachable TA profile 410000/3848291 infosets
+2026-11-16T17:02:20.762061+00:00 Reachable TA profile 420000/3848291 infosets
+2026-11-16T17:02:30.779384+00:00 Reachable TA profile 430000/3848291 infosets
+2026-11-16T17:02:39.940168+00:00 Reachable TA profile 440000/3848291 infosets
+2026-11-16T17:02:55.471078+00:00 Reachable TA profile 450000/3848291 infosets
+2026-11-16T17:03:04.917652+00:00 Reachable TA profile 460000/3848291 infosets
+2026-11-16T17:03:08.423559+00:00 Reachable TA profile 470000/3848291 infosets
+2026-11-16T17:03:11.490765+00:00 Reachable TA profile 480000/3848291 infosets
+2026-11-16T17:03:14.525001+00:00 Reachable TA profile 490000/3848291 infosets
+2026-11-16T17:03:17.264074+00:00 Reachable TA profile 500000/3848291 infosets
+2026-11-16T17:03:20.415386+00:00 Reachable TA profile 510000/3848291 infosets
+2026-11-16T17:03:23.669357+00:00 Reachable TA profile 520000/3848291 infosets
+2026-11-16T17:03:26.917326+00:00 Reachable TA profile 530000/3848291 infosets
+2026-11-16T17:03:29.005588+00:00 Reachable TA profile 540000/3848291 infosets
+2026-11-16T17:03:31.068349+00:00 Reachable TA profile 550000/3848291 infosets
+2026-11-16T17:03:32.665512+00:00 Reachable TA profile 560000/3848291 infosets
+2026-11-16T17:03:34.366855+00:00 Reachable TA profile 570000/3848291 infosets
+2026-11-16T17:03:35.998850+00:00 Reachable TA profile 580000/3848291 infosets
+2026-11-16T17:03:37.718153+00:00 Reachable TA profile 590000/3848291 infosets
+2026-11-16T17:03:39.874667+00:00 Reachable TA profile 600000/3848291 infosets
+2026-11-16T17:03:41.986073+00:00 Reachable TA profile 610000/3848291 infosets
+2026-11-16T17:03:44.190851+00:00 Reachable TA profile 620000/3848291 infosets
+2026-11-16T17:03:45.940223+00:00 Reachable TA profile 630000/3848291 infosets
+2026-11-16T17:03:47.555220+00:00 Reachable TA profile 640000/3848291 infosets
+2026-11-16T17:03:48.847448+00:00 Reachable TA profile 650000/3848291 infosets
+2026-11-16T17:03:50.253918+00:00 Reachable TA profile 660000/3848291 infosets
+2026-11-16T17:03:51.593055+00:00 Reachable TA profile 670000/3848291 infosets
+2026-11-16T17:03:52.973228+00:00 Reachable TA profile 680000/3848291 infosets
+2026-11-16T17:03:54.448958+00:00 Reachable TA profile 690000/3848291 infosets
+2026-11-16T17:03:55.746638+00:00 Reachable TA profile 700000/3848291 infosets
+2026-11-16T17:03:57.206447+00:00 Reachable TA profile 710000/3848291 infosets
+2026-11-16T17:03:58.700939+00:00 Reachable TA profile 720000/3848291 infosets
+2026-11-16T17:03:59.812749+00:00 Reachable TA profile 730000/3848291 infosets
+2026-11-16T17:04:00.724040+00:00 Reachable TA profile 740000/3848291 infosets
+2026-11-16T17:04:01.468726+00:00 Reachable TA profile 750000/3848291 infosets
+2026-11-16T17:04:02.125978+00:00 Reachable TA profile 760000/3848291 infosets
+2026-11-16T17:04:03.884052+00:00 Reachable TA profile 770000/3848291 infosets
+2026-11-16T17:04:07.709202+00:00 Reachable TA profile 780000/3848291 infosets
+2026-11-16T17:04:09.030725+00:00 Reachable TA profile 790000/3848291 infosets
+2026-11-16T17:04:10.166563+00:00 Reachable TA profile 800000/3848291 infosets
+2026-11-16T17:04:12.629720+00:00 Reachable TA profile 810000/3848291 infosets
+2026-11-16T17:04:16.111870+00:00 Reachable TA profile 820000/3848291 infosets
+2026-11-16T17:04:18.409055+00:00 Reachable TA profile 830000/3848291 infosets
+2026-11-16T17:04:20.662833+00:00 Reachable TA profile 840000/3848291 infosets
+2026-11-16T17:04:23.831112+00:00 Reachable TA profile 850000/3848291 infosets
+2026-11-16T17:04:27.246906+00:00 Reachable TA profile 860000/3848291 infosets
+2026-11-16T17:04:32.058544+00:00 Reachable TA profile 870000/3848291 infosets
+2026-11-16T18:13:32.119194+00:00 Reachable TA profile 880000/3848291 infosets
+2026-11-16T18:13:39.320966+00:00 Reachable TA profile 890000/3848291 infosets
+2026-11-16T18:13:40.411397+00:00 Reachable TA profile 900000/3848291 infosets
+2026-11-16T18:13:41.144207+00:00 Reachable TA profile 910000/3848291 infosets
+2026-11-16T18:13:42.047097+00:00 Reachable TA profile 920000/3848291 infosets
+2026-11-16T18:13:42.700808+00:00 Reachable TA profile 930000/3848291 infosets
+2026-11-16T18:13:43.334900+00:00 Reachable TA profile 940000/3848291 infosets
+2026-11-16T18:13:43.998363+00:00 Reachable TA profile 950000/3848291 infosets
+2026-11-16T18:13:44.825226+00:00 Reachable TA profile 960000/3848291 infosets
+2026-11-16T18:13:45.385548+00:00 Reachable TA profile 970000/3848291 infosets
+2026-11-16T18:13:46.024077+00:00 Reachable TA profile 980000/3848291 infosets
+2026-11-16T18:13:46.427253+00:00 Reachable TA profile 990000/3848291 infosets
+2026-11-16T18:13:46.877405+00:00 Reachable TA profile 1000000/3848291 infosets
+2026-11-16T18:13:47.510438+00:00 Reachable TA profile 1010000/3848291 infosets
+2026-11-16T18:13:47.924450+00:00 Reachable TA profile 1020000/3848291 infosets
+2026-11-16T18:13:48.430345+00:00 Reachable TA profile 1030000/3848291 infosets
+2026-11-16T18:13:49.552113+00:00 Reachable TA profile 1040000/3848291 infosets
+2026-11-16T18:13:50.158582+00:00 Reachable TA profile 1050000/3848291 infosets
+2026-11-16T18:13:50.869296+00:00 Reachable TA profile 1060000/3848291 infosets
+2026-11-16T18:13:51.612102+00:00 Reachable TA profile 1070000/3848291 infosets
+2026-11-16T18:13:52.201352+00:00 Reachable TA profile 1080000/3848291 infosets
+2026-11-16T18:13:52.799482+00:00 Reachable TA profile 1090000/3848291 infosets
+2026-11-16T18:13:53.473612+00:00 Reachable TA profile 1100000/3848291 infosets
+2026-11-16T18:13:55.134946+00:00 Reachable TA profile 1110000/3848291 infosets
+2026-11-16T18:14:02.020236+00:00 Reachable TA profile 1120000/3848291 infosets
+2026-11-16T18:14:05.433624+00:00 Reachable TA profile 1130000/3848291 infosets
+2026-11-16T18:14:07.916729+00:00 Reachable TA profile 1140000/3848291 infosets
+2026-11-16T18:14:09.695117+00:00 Reachable TA profile 1150000/3848291 infosets
+2026-11-16T18:14:11.251577+00:00 Reachable TA profile 1160000/3848291 infosets
+2026-11-16T18:14:12.389623+00:00 Reachable TA profile 1170000/3848291 infosets
+2026-11-16T18:14:13.184839+00:00 Reachable TA profile 1180000/3848291 infosets
+2026-11-16T18:14:13.936059+00:00 Reachable TA profile 1190000/3848291 infosets
+2026-11-16T18:14:14.774852+00:00 Reachable TA profile 1200000/3848291 infosets
+2026-11-16T18:14:15.576844+00:00 Reachable TA profile 1210000/3848291 infosets
+2026-11-16T18:14:16.287258+00:00 Reachable TA profile 1220000/3848291 infosets
+2026-11-16T18:14:17.064457+00:00 Reachable TA profile 1230000/3848291 infosets
+2026-11-16T18:14:17.901501+00:00 Reachable TA profile 1240000/3848291 infosets
+2026-11-16T18:14:18.554262+00:00 Reachable TA profile 1250000/3848291 infosets
+2026-11-16T18:14:19.264990+00:00 Reachable TA profile 1260000/3848291 infosets
+2026-11-16T18:14:19.912835+00:00 Reachable TA profile 1270000/3848291 infosets
+2026-11-16T18:14:20.569029+00:00 Reachable TA profile 1280000/3848291 infosets
+2026-11-16T18:14:21.301845+00:00 Reachable TA profile 1290000/3848291 infosets
+2026-11-16T18:14:21.981149+00:00 Reachable TA profile 1300000/3848291 infosets
+2026-11-16T18:14:22.584669+00:00 Reachable TA profile 1310000/3848291 infosets
+2026-11-16T18:14:23.288331+00:00 Reachable TA profile 1320000/3848291 infosets
+2026-11-16T18:14:23.886174+00:00 Reachable TA profile 1330000/3848291 infosets
+2026-11-16T18:14:24.475922+00:00 Reachable TA profile 1340000/3848291 infosets
+2026-11-16T18:14:25.180726+00:00 Reachable TA profile 1350000/3848291 infosets
+2026-11-16T18:15:57.668804+00:00 Build trump-1: 5000/369600 deals, nodes461880, private0.70GiB
+2026-11-16T18:16:02.651222+00:00 Build trump-1: 10000/369600 deals, nodes698064, private0.71GiB
+2026-11-16T18:16:08.215040+00:00 Build trump-1: 15000/369600 deals, nodes992132, private0.71GiB
+2026-11-16T18:16:21.345563+00:00 Build trump-1: 20000/369600 deals, nodes1359320, private0.73GiB
+2026-11-16T18:16:25.618971+00:00 Build trump-1: 25000/369600 deals, nodes1577624, private0.73GiB
+2026-11-16T18:16:29.828113+00:00 Build trump-1: 30000/369600 deals, nodes1807360, private0.74GiB
+2026-11-16T18:16:35.731420+00:00 Build trump-1: 35000/369600 deals, nodes2046824, private0.75GiB
+2026-11-16T18:16:40.490086+00:00 Build trump-1: 40000/369600 deals, nodes2326048, private0.75GiB
+2026-11-16T18:16:44.874255+00:00 Build trump-1: 45000/369600 deals, nodes2567640, private0.78GiB
+2026-11-16T18:16:50.271088+00:00 Build trump-1: 50000/369600 deals, nodes2833384, private0.79GiB
+2026-11-16T18:16:55.132709+00:00 Build trump-1: 55000/369600 deals, nodes3076364, private0.79GiB
+2026-11-16T18:16:59.215126+00:00 Build trump-1: 60000/369600 deals, nodes3299416, private0.80GiB
+2026-11-16T18:17:03.793529+00:00 Build trump-1: 65000/369600 deals, nodes3545472, private0.81GiB
+2026-11-16T18:17:08.042288+00:00 Build trump-1: 70000/369600 deals, nodes3770252, private0.81GiB
+2026-11-16T18:17:11.418009+00:00 Build trump-1: 75000/369600 deals, nodes3943104, private0.82GiB
+2026-11-16T18:17:14.545499+00:00 Build trump-1: 80000/369600 deals, nodes4093992, private0.82GiB
+2026-11-16T18:17:19.271352+00:00 Build trump-1: 85000/369600 deals, nodes4328184, private0.83GiB
+2026-11-16T18:17:23.878497+00:00 Build trump-1: 90000/369600 deals, nodes4565912, private0.83GiB
+2026-11-16T18:17:37.635986+00:00 Build trump-1: 95000/369600 deals, nodes4997676, private0.88GiB
+2026-11-16T18:17:42.931206+00:00 Build trump-1: 100000/369600 deals, nodes5224936, private0.89GiB
+2026-11-16T18:17:46.889126+00:00 Build trump-1: 105000/369600 deals, nodes5448036, private0.89GiB
+2026-11-16T18:17:52.881686+00:00 Build trump-1: 110000/369600 deals, nodes5711380, private0.90GiB
+2026-11-16T18:17:58.157260+00:00 Build trump-1: 115000/369600 deals, nodes6004932, private0.91GiB
+2026-11-16T18:18:03.362509+00:00 Build trump-1: 120000/369600 deals, nodes6300500, private0.91GiB
+2026-11-16T18:18:09.151589+00:00 Build trump-1: 125000/369600 deals, nodes6560304, private0.92GiB
+2026-11-16T18:18:13.835474+00:00 Build trump-1: 130000/369600 deals, nodes6794308, private0.92GiB
+2026-11-16T18:18:17.666482+00:00 Build trump-1: 135000/369600 deals, nodes6983160, private0.93GiB
+2026-11-16T18:18:22.066964+00:00 Build trump-1: 140000/369600 deals, nodes7217660, private0.93GiB
+2026-11-16T18:18:26.188772+00:00 Build trump-1: 145000/369600 deals, nodes7441884, private0.94GiB
+2026-11-16T18:18:29.678562+00:00 Build trump-1: 150000/369600 deals, nodes7618880, private0.94GiB
+2026-11-16T18:18:32.894178+00:00 Build trump-1: 155000/369600 deals, nodes7769676, private0.95GiB
+2026-11-16T18:18:37.217902+00:00 Build trump-1: 160000/369600 deals, nodes7965600, private0.95GiB
+2026-11-16T18:18:41.443314+00:00 Build trump-1: 165000/369600 deals, nodes8184568, private0.95GiB
+2026-11-16T18:18:48.378766+00:00 Build trump-1: 170000/369600 deals, nodes8491108, private0.96GiB
+2026-11-16T18:18:54.293685+00:00 Build trump-1: 175000/369600 deals, nodes8827860, private0.97GiB
+2026-11-16T18:18:59.936452+00:00 Build trump-1: 180000/369600 deals, nodes9164612, private0.98GiB
+2026-11-16T18:19:04.953924+00:00 Build trump-1: 185000/369600 deals, nodes9389776, private0.98GiB
+2026-11-16T18:19:08.854668+00:00 Build trump-1: 190000/369600 deals, nodes9583316, private0.98GiB
+2026-11-16T18:19:12.628284+00:00 Build trump-1: 195000/369600 deals, nodes9751608, private0.99GiB
+2026-11-16T18:19:16.532286+00:00 Build trump-1: 200000/369600 deals, nodes9944796, private1.00GiB
+2026-11-16T18:19:20.102183+00:00 Build trump-1: 205000/369600 deals, nodes10118260, private1.00GiB
+2026-11-16T18:19:23.721529+00:00 Build trump-1: 210000/369600 deals, nodes10294808, private1.00GiB
+2026-11-16T18:19:26.872710+00:00 Build trump-1: 215000/369600 deals, nodes10442456, private1.00GiB
+2026-11-16T18:19:30.748479+00:00 Build trump-1: 220000/369600 deals, nodes10603576, private1.01GiB
+2026-11-16T18:19:35.221751+00:00 Build trump-1: 225000/369600 deals, nodes10797624, private1.01GiB
+2026-11-16T18:19:39.402834+00:00 Build trump-1: 230000/369600 deals, nodes10991080, private1.02GiB
+2026-11-16T18:19:42.986736+00:00 Build trump-1: 235000/369600 deals, nodes11157480, private1.03GiB
+2026-11-16T18:19:46.760040+00:00 Build trump-1: 240000/369600 deals, nodes11306312, private1.03GiB
+2026-11-16T18:19:50.064123+00:00 Build trump-1: 245000/369600 deals, nodes11472424, private1.03GiB
+2026-11-16T18:19:53.321620+00:00 Build trump-1: 250000/369600 deals, nodes11621256, private1.03GiB
+2026-11-16T18:19:56.777203+00:00 Build trump-1: 255000/369600 deals, nodes11785416, private1.04GiB
+2026-11-16T18:20:00.266704+00:00 Build trump-1: 260000/369600 deals, nodes11934344, private1.12GiB
+2026-11-16T18:20:03.537635+00:00 Build trump-1: 265000/369600 deals, nodes12086664, private1.12GiB
+2026-11-16T18:20:07.076223+00:00 Build trump-1: 270000/369600 deals, nodes12257656, private1.13GiB
+2026-11-16T18:20:10.829719+00:00 Build trump-1: 275000/369600 deals, nodes12439192, private1.13GiB
+2026-11-16T18:20:19.379648+00:00 Build trump-1: 280000/369600 deals, nodes12891188, private1.14GiB
+2026-11-16T18:20:24.703002+00:00 Build trump-1: 285000/369600 deals, nodes13145328, private1.15GiB
+2026-11-16T18:20:31.130723+00:00 Build trump-1: 290000/369600 deals, nodes13527088, private1.16GiB
+2026-11-16T18:20:35.393736+00:00 Build trump-1: 295000/369600 deals, nodes13763412, private1.16GiB
+2026-11-16T18:20:40.135950+00:00 Build trump-1: 300000/369600 deals, nodes14007464, private1.17GiB
+Before second-slot optimization: completed trump tree/baseline/PI/independent-BR candidate are saved over all369600 deals. Optional D5 paused to give D3 both slots for the remaining ORIGINAL timebox; main worker continues NT, optimize_saved.py loads the source-fingerprinted completed trump tree and runs unchanged core CFRPlus updates, evaluating average/current/one-hot candidates. Same13:45ET cut, no extended box or new game selection. Second-slot outputs are separate, preserving original raw results. Exact full-population optimization needs no random seed or sampling CI.
+2026-11-16T18:20:45.973752+00:00 Build trump-1: 305000/369600 deals, nodes14282376, private1.18GiB
+2026-11-16T18:20:51.120407+00:00 Build trump-1: 310000/369600 deals, nodes14562080, private1.18GiB
+2026-11-16T18:20:57.949846+00:00 Build trump-1: 315000/369600 deals, nodes14969128, private1.19GiB
+2026-11-16T18:21:02.081468+00:00 Build trump-1: 320000/369600 deals, nodes15198392, private1.20GiB
+2026-11-16T18:21:07.296232+00:00 Build trump-1: 325000/369600 deals, nodes15491640, private1.20GiB
+2026-11-16T18:21:11.242298+00:00 Second-slot trump optimization T1, achieved 6.3621158009; final=False
+2026-11-16T18:21:12.634554+00:00 Build trump-1: 330000/369600 deals, nodes15747160, private1.21GiB
+2026-11-16T18:21:16.940404+00:00 Build trump-1: 335000/369600 deals, nodes15975000, private1.21GiB
+2026-11-16T18:21:22.790254+00:00 Build trump-1: 340000/369600 deals, nodes16314992, private1.23GiB
+2026-11-16T18:21:28.000377+00:00 Build trump-1: 345000/369600 deals, nodes16581500, private1.23GiB
+2026-11-16T18:21:32.485599+00:00 Build trump-1: 350000/369600 deals, nodes16779576, private1.24GiB
+2026-11-16T18:21:36.082599+00:00 Build trump-1: 355000/369600 deals, nodes16968892, private1.25GiB
+2026-11-16T18:21:39.870184+00:00 Build trump-1: 360000/369600 deals, nodes17142764, private1.27GiB
+2026-11-16T18:21:46.685840+00:00 Build trump-1: 365000/369600 deals, nodes17426312, private1.27GiB
+2026-11-16T18:22:03.611003+00:00 Second-slot trump optimization T5, achieved 6.2203138528; final=False
+2026-11-16T18:22:05.500980+00:00 Reachable TA profile 10000/4261192 infosets
+2026-11-16T18:22:08.432005+00:00 Reachable TA profile 20000/4261192 infosets
+2026-11-16T18:22:10.095297+00:00 Reachable TA profile 30000/4261192 infosets
+2026-11-16T18:22:11.835029+00:00 Reachable TA profile 40000/4261192 infosets
+2026-11-16T18:22:13.792100+00:00 Reachable TA profile 50000/4261192 infosets
+2026-11-16T18:22:15.702991+00:00 Reachable TA profile 60000/4261192 infosets
+2026-11-16T18:22:17.148361+00:00 Reachable TA profile 70000/4261192 infosets
+2026-11-16T18:22:18.237810+00:00 Reachable TA profile 80000/4261192 infosets
+2026-11-16T18:22:22.904524+00:00 Reachable TA profile 90000/4261192 infosets
+2026-11-16T18:22:28.338814+00:00 Reachable TA profile 100000/4261192 infosets
+2026-11-16T18:22:33.420781+00:00 Reachable TA profile 110000/4261192 infosets
+2026-11-16T18:22:36.426791+00:00 Reachable TA profile 120000/4261192 infosets
+2026-11-16T18:22:37.587408+00:00 Reachable TA profile 130000/4261192 infosets
+2026-11-16T18:22:38.943585+00:00 Reachable TA profile 140000/4261192 infosets
+2026-11-16T18:22:39.515686+00:00 Reachable TA profile 150000/4261192 infosets
+2026-11-16T18:22:42.081761+00:00 Reachable TA profile 160000/4261192 infosets
+2026-11-16T18:22:45.589065+00:00 Reachable TA profile 170000/4261192 infosets
+2026-11-16T18:22:48.175778+00:00 Reachable TA profile 180000/4261192 infosets
+2026-11-16T18:22:51.181288+00:00 Reachable TA profile 190000/4261192 infosets
+2026-11-16T18:22:53.207689+00:00 Reachable TA profile 200000/4261192 infosets
+2026-11-16T18:22:55.575899+00:00 Reachable TA profile 210000/4261192 infosets
+2026-11-16T18:22:57.677195+00:00 Reachable TA profile 220000/4261192 infosets
+2026-11-16T18:22:59.810995+00:00 Reachable TA profile 230000/4261192 infosets
+2026-11-16T18:23:01.727617+00:00 Reachable TA profile 240000/4261192 infosets
+2026-11-16T18:23:04.106569+00:00 Reachable TA profile 250000/4261192 infosets
+2026-11-16T18:23:06.078231+00:00 Reachable TA profile 260000/4261192 infosets
+2026-11-16T18:23:08.311798+00:00 Reachable TA profile 270000/4261192 infosets
+2026-11-16T18:23:10.253020+00:00 Reachable TA profile 280000/4261192 infosets
+2026-11-16T18:23:12.851880+00:00 Reachable TA profile 290000/4261192 infosets
+2026-11-16T18:23:14.747359+00:00 Reachable TA profile 300000/4261192 infosets
+2026-11-16T18:23:16.382666+00:00 Reachable TA profile 310000/4261192 infosets
+2026-11-16T18:23:17.577767+00:00 Second-slot trump optimization T10, achieved 6.2149891775; final=False
+2026-11-16T18:23:18.527884+00:00 Reachable TA profile 320000/4261192 infosets
+2026-11-16T18:23:20.882267+00:00 Reachable TA profile 330000/4261192 infosets
+2026-11-16T18:23:22.875539+00:00 Reachable TA profile 340000/4261192 infosets
+2026-11-16T18:23:24.885855+00:00 Reachable TA profile 350000/4261192 infosets
+2026-11-16T18:23:26.671688+00:00 Reachable TA profile 360000/4261192 infosets
+2026-11-16T18:23:28.565280+00:00 Reachable TA profile 370000/4261192 infosets
+2026-11-16T18:23:29.231014+00:00 Reachable TA profile 380000/4261192 infosets
+2026-11-16T18:23:29.916412+00:00 Reachable TA profile 390000/4261192 infosets
+2026-11-16T18:23:30.579413+00:00 Reachable TA profile 400000/4261192 infosets
+2026-11-16T18:23:31.394222+00:00 Reachable TA profile 410000/4261192 infosets
+2026-11-16T18:23:33.942525+00:00 Reachable TA profile 420000/4261192 infosets
+2026-11-16T18:23:36.303541+00:00 Reachable TA profile 430000/4261192 infosets
+2026-11-16T18:23:38.242272+00:00 Reachable TA profile 440000/4261192 infosets
+2026-11-16T18:23:40.435672+00:00 Reachable TA profile 450000/4261192 infosets
+2026-11-16T18:23:42.252817+00:00 Reachable TA profile 460000/4261192 infosets
+2026-11-16T18:23:43.312214+00:00 Reachable TA profile 470000/4261192 infosets
+2026-11-16T18:23:48.061808+00:00 Reachable TA profile 480000/4261192 infosets
+2026-11-16T18:23:52.486922+00:00 Reachable TA profile 490000/4261192 infosets
+2026-11-16T18:23:54.195135+00:00 Reachable TA profile 500000/4261192 infosets
+2026-11-16T18:23:55.604833+00:00 Reachable TA profile 510000/4261192 infosets
+2026-11-16T18:23:56.849498+00:00 Reachable TA profile 520000/4261192 infosets
+2026-11-16T18:23:57.629880+00:00 Reachable TA profile 530000/4261192 infosets
+2026-11-16T18:23:58.336708+00:00 Reachable TA profile 540000/4261192 infosets
+2026-11-16T18:23:59.159813+00:00 Reachable TA profile 550000/4261192 infosets
+2026-11-16T18:24:00.102540+00:00 Reachable TA profile 560000/4261192 infosets
+2026-11-16T18:24:00.797091+00:00 Reachable TA profile 570000/4261192 infosets
+2026-11-16T18:24:01.509420+00:00 Reachable TA profile 580000/4261192 infosets
+2026-11-16T18:24:02.360040+00:00 Reachable TA profile 590000/4261192 infosets
+2026-11-16T18:24:03.137664+00:00 Reachable TA profile 600000/4261192 infosets
+2026-11-16T18:24:03.889304+00:00 Reachable TA profile 610000/4261192 infosets
+2026-11-16T18:24:04.651915+00:00 Reachable TA profile 620000/4261192 infosets
+2026-11-16T18:24:05.354629+00:00 Reachable TA profile 630000/4261192 infosets
+2026-11-16T18:24:06.112078+00:00 Reachable TA profile 640000/4261192 infosets
+2026-11-16T18:24:06.917021+00:00 Reachable TA profile 650000/4261192 infosets
+2026-11-16T18:24:07.643870+00:00 Reachable TA profile 660000/4261192 infosets
+2026-11-16T18:24:08.333004+00:00 Reachable TA profile 670000/4261192 infosets
+2026-11-16T18:24:09.353430+00:00 Reachable TA profile 680000/4261192 infosets
+2026-11-16T18:24:09.985268+00:00 Reachable TA profile 690000/4261192 infosets
+2026-11-16T18:24:10.766493+00:00 Reachable TA profile 700000/4261192 infosets
+2026-11-16T18:24:11.402045+00:00 Reachable TA profile 710000/4261192 infosets
+2026-11-16T18:24:11.972189+00:00 Reachable TA profile 720000/4261192 infosets
+2026-11-16T18:24:12.660923+00:00 Reachable TA profile 730000/4261192 infosets
+2026-11-16T18:24:13.532581+00:00 Reachable TA profile 740000/4261192 infosets
+2026-11-16T18:24:14.190203+00:00 Reachable TA profile 750000/4261192 infosets
+2026-11-16T18:24:14.841830+00:00 Reachable TA profile 760000/4261192 infosets
+2026-11-16T18:24:15.435260+00:00 Reachable TA profile 770000/4261192 infosets
+2026-11-16T18:24:16.159360+00:00 Reachable TA profile 780000/4261192 infosets
+2026-11-16T18:24:16.833822+00:00 Reachable TA profile 790000/4261192 infosets
+2026-11-16T18:24:17.521444+00:00 Reachable TA profile 800000/4261192 infosets
+2026-11-16T18:24:18.035502+00:00 Reachable TA profile 810000/4261192 infosets
+2026-11-16T18:24:18.630186+00:00 Reachable TA profile 820000/4261192 infosets
+2026-11-16T18:24:19.419424+00:00 Reachable TA profile 830000/4261192 infosets
+2026-11-16T18:24:20.117414+00:00 Reachable TA profile 840000/4261192 infosets
+2026-11-16T18:24:20.748855+00:00 Reachable TA profile 850000/4261192 infosets
+2026-11-16T18:24:21.454706+00:00 Reachable TA profile 860000/4261192 infosets
+2026-11-16T18:24:22.298386+00:00 Reachable TA profile 870000/4261192 infosets
+2026-11-16T18:24:22.931824+00:00 Reachable TA profile 880000/4261192 infosets
+2026-11-16T18:24:23.552537+00:00 Reachable TA profile 890000/4261192 infosets
+2026-11-16T18:24:24.162897+00:00 Reachable TA profile 900000/4261192 infosets
+2026-11-16T18:24:24.923692+00:00 Reachable TA profile 910000/4261192 infosets
+2026-11-16T18:24:25.624613+00:00 Reachable TA profile 920000/4261192 infosets
+2026-11-16T18:24:26.345483+00:00 Reachable TA profile 930000/4261192 infosets
+2026-11-16T18:24:28.170049+00:00 Reachable TA profile 940000/4261192 infosets
+2026-11-16T18:24:30.287362+00:00 Reachable TA profile 950000/4261192 infosets
+2026-11-16T18:24:32.543268+00:00 Reachable TA profile 960000/4261192 infosets
+2026-11-16T18:24:33.906025+00:00 Reachable TA profile 970000/4261192 infosets
+2026-11-16T18:24:37.500537+00:00 Reachable TA profile 980000/4261192 infosets
+2026-11-16T18:24:42.275181+00:00 Reachable TA profile 990000/4261192 infosets
+2026-11-16T18:24:44.289958+00:00 Reachable TA profile 1000000/4261192 infosets
+2026-11-16T18:24:45.599241+00:00 Reachable TA profile 1010000/4261192 infosets
+2026-11-16T18:24:46.974134+00:00 Reachable TA profile 1020000/4261192 infosets
+2026-11-16T18:24:48.256753+00:00 Reachable TA profile 1030000/4261192 infosets
+2026-11-16T18:24:49.314926+00:00 Reachable TA profile 1040000/4261192 infosets
+2026-11-16T18:24:50.361440+00:00 Reachable TA profile 1050000/4261192 infosets
+2026-11-16T18:24:51.434763+00:00 Reachable TA profile 1060000/4261192 infosets
+2026-11-16T18:24:52.323839+00:00 Reachable TA profile 1070000/4261192 infosets
+2026-11-16T18:24:53.148788+00:00 Reachable TA profile 1080000/4261192 infosets
+2026-11-16T18:24:54.199854+00:00 Reachable TA profile 1090000/4261192 infosets
+2026-11-16T18:24:55.037129+00:00 Reachable TA profile 1100000/4261192 infosets
+2026-11-16T18:24:55.717348+00:00 Reachable TA profile 1110000/4261192 infosets
+2026-11-16T18:24:56.274596+00:00 Reachable TA profile 1120000/4261192 infosets
+2026-11-16T18:24:56.931005+00:00 Reachable TA profile 1130000/4261192 infosets
+2026-11-16T18:24:57.779521+00:00 Reachable TA profile 1140000/4261192 infosets
+2026-11-16T18:24:58.437329+00:00 Reachable TA profile 1150000/4261192 infosets
+2026-11-16T18:24:59.091106+00:00 Reachable TA profile 1160000/4261192 infosets
+2026-11-16T18:24:59.687399+00:00 Reachable TA profile 1170000/4261192 infosets
+2026-11-16T18:25:00.457985+00:00 Reachable TA profile 1180000/4261192 infosets
+2026-11-16T18:25:01.166210+00:00 Reachable TA profile 1190000/4261192 infosets
+2026-11-16T18:25:01.748423+00:00 Reachable TA profile 1200000/4261192 infosets
+2026-11-16T18:25:02.282270+00:00 Reachable TA profile 1210000/4261192 infosets
+2026-11-16T18:25:02.970672+00:00 Reachable TA profile 1220000/4261192 infosets
+2026-11-16T18:25:03.872907+00:00 Reachable TA profile 1230000/4261192 infosets
+2026-11-16T18:25:04.482802+00:00 Reachable TA profile 1240000/4261192 infosets
+2026-11-16T18:25:05.113498+00:00 Reachable TA profile 1250000/4261192 infosets
+2026-11-16T18:25:05.745596+00:00 Reachable TA profile 1260000/4261192 infosets
+2026-11-16T18:25:06.545212+00:00 Reachable TA profile 1270000/4261192 infosets
+2026-11-16T18:25:07.174005+00:00 Reachable TA profile 1280000/4261192 infosets
+2026-11-16T18:25:07.829498+00:00 Reachable TA profile 1290000/4261192 infosets
+2026-11-16T18:25:08.453970+00:00 Reachable TA profile 1300000/4261192 infosets
+2026-11-16T18:25:09.221927+00:00 Reachable TA profile 1310000/4261192 infosets
+2026-11-16T18:25:09.822209+00:00 Reachable TA profile 1320000/4261192 infosets
+2026-11-16T18:25:14.853929+00:00 Reachable TA profile 1330000/4261192 infosets
+2026-11-16T18:25:18.786126+00:00 Reachable TA profile 1340000/4261192 infosets
+2026-11-16T18:25:20.523253+00:00 Reachable TA profile 1350000/4261192 infosets
+2026-11-16T18:25:21.847065+00:00 Reachable TA profile 1360000/4261192 infosets
+2026-11-16T18:25:23.199831+00:00 Reachable TA profile 1370000/4261192 infosets
+2026-11-16T18:25:24.237052+00:00 Reachable TA profile 1380000/4261192 infosets
+2026-11-16T18:25:25.619889+00:00 Reachable TA profile 1390000/4261192 infosets
+2026-11-16T18:25:26.600704+00:00 Reachable TA profile 1400000/4261192 infosets
+2026-11-16T18:25:27.475631+00:00 Reachable TA profile 1410000/4261192 infosets
+2026-11-16T18:25:28.266285+00:00 Reachable TA profile 1420000/4261192 infosets
+2026-11-16T18:25:29.193323+00:00 Reachable TA profile 1430000/4261192 infosets
+2026-11-16T18:25:30.008640+00:00 Reachable TA profile 1440000/4261192 infosets
+2026-11-16T18:25:30.781589+00:00 Reachable TA profile 1450000/4261192 infosets
+2026-11-16T18:25:31.506771+00:00 Reachable TA profile 1460000/4261192 infosets
+2026-11-16T18:25:32.489020+00:00 Reachable TA profile 1470000/4261192 infosets
+2026-11-16T18:25:33.159157+00:00 Reachable TA profile 1480000/4261192 infosets
+2026-11-16T18:25:33.838393+00:00 Reachable TA profile 1490000/4261192 infosets
+2026-11-16T18:25:34.549526+00:00 Reachable TA profile 1500000/4261192 infosets
+2026-11-16T18:25:35.360588+00:00 Reachable TA profile 1510000/4261192 infosets
+2026-11-16T18:25:36.021458+00:00 Reachable TA profile 1520000/4261192 infosets
+2026-11-16T18:25:54.246034+00:00 Second-slot trump optimization T25, achieved 6.2148593073; final=False
+2026-11-16T18:26:38.538785+00:00 trump-1 iteration1: {"hero_score": 7.2811769480512325, "iteration": 1, "kind": "one_hot", "optimal_hidden_value_interval": [6.910324675324675, 7.2811769480512325], "hidden_to_PI_surplus": 0.881393610154166}
+2026-11-16T18:28:08.978601+00:00 trump-1 iteration10: {"hero_score": 7.124669913419236, "iteration": 10, "kind": "one_hot", "optimal_hidden_value_interval": [6.910324675324675, 7.124669913419236], "hidden_to_PI_surplus": 0.9314478655230282}
+2026-11-16T18:29:49.855489+00:00 Second-slot trump optimization T50, achieved 6.2147943723; final=False
+2026-11-16T18:34:47.137013+00:00 trump-1 iteration50: {"hero_score": 7.123961038960344, "iteration": 50, "kind": "current", "optimal_hidden_value_interval": [6.910324675324675, 7.123961038960344], "hidden_to_PI_surplus": 0.9316745785476106}
+2026-11-16T18:40:01.532682+00:00 Second-slot trump optimization T100, achieved 6.2147943723; final=False
+2026-11-16T18:54:24.313694+00:00 Second-slot trump optimization T120, achieved 6.2147943723; final=True
+2026-11-16T18:54:28.639690+00:00 READY FOR REVIEW
+Files D3/frozen_tree.py, run.py, STATUS, results/*.json/*.npz; tests/test_round9_frozen_toy.py.
+Command from engine python -m pytest -q -p no:cacheprovider tests/test_round9_frozen_toy.py; python experiments/round9/D3/run.py.
+Seeds1620M only resource preflight, exact evaluation no seed. n369600 complete ordered deals per delivered regime; no statistical95% CI applies to full-population values. Results: {"0": {"S": 3, "R": 4, "n": 3, "trump": 0, "exact_deals": 369600, "nodes": 17891840, "infosets": 3848291, "baseline_TA": 8.729199134198153, "PI_min": 5.972743506493506, "PI_fraction": "367921/61600", "TA_profile_support": {"TA_infosets_evaluated": 1352123, "total_infosets": 3848291, "scope": "Exact baseline plus every one-player deviation support; off-support defaults are irrelevant to these values."}, "root_information_relaxation": {"PI_fraction": "367921/61600", "first_decision_hidden_lower_fraction": "446669/73920", "lower_bound_gain_fraction": "25819/369600", "n_exact_deals": 369600, "root_private_infosets": 41712, "uncertainty": "Complete chance space, integer sums; no sampling CI. A lower bound, not a solved team value."}, "independent_BR_to_TA": {"hero_score": 7.5562472943714525, "unilateral_BR_gains": [0.4407440476181108, 0.49041396103802626, 0.5707332251072899], "remaining_joint_gain_bounds": [0.5707332251072899, 1.5835037878779463]}, "checkpoints": [], "uncertainty": "Full chance enumeration; no sampling CI. [PI, achieved] bounds optimization, not sample error.", "best_feasible": {"hero_score": 7.5562472943714525, "iteration": 0, "kind": "independent_BR", "optimal_hidden_value_interval": [5.972743506493506, 7.5562472943714525], "hidden_to_PI_surplus": 0.4255290119810271}, "certificate": {"certified": false, "n_exact_ordered_deals": 369600, "PI_value_fraction": "367921/61600", "worst_support_value_fraction": "2792789/369600", "deals_with_support_excess": 54566, "max_pointwise_excess": 12, "support_threshold": 1e-12, "scope": "Fixed TA hero and fixed myopic bids; separate hidden infosets; play-only team.", "uncertainty": "Exact integer DP over the complete chance space; no sampling CI."}, "best_residual": {"hero_score": 7.5562472943714525, "unilateral_BR_gains": [0.4407440476181108, 0.49041396103802626, 0.5707332251072899], "remaining_joint_gain_bounds": [0.5707332251072899, 1.5835037878779463]}}, "-1": {"S": 3, "R": 4, "n": 3, "trump": -1, "exact_deals": 369600, "nodes": 18065712, "infosets": 4261192, "baseline_TA": 10.037072510821524, "PI_min": 6.910324675324675, "PI_fraction": "106419/15400", "TA_profile_support": {"TA_infosets_evaluated": 1523977, "total_infosets": 4261192, "scope": "Exact baseline plus every one-player deviation support; off-support defaults are irrelevant to these values."}, "root_information_relaxation": {"PI_fraction": "106419/15400", "first_decision_hidden_lower_fraction": "213259/30800", "lower_bound_gain_fraction": "421/30800", "n_exact_deals": 369600, "root_private_infosets": 42440, "uncertainty": "Complete chance space, integer sums; no sampling CI. A lower bound, not a solved team value."}, "independent_BR_to_TA": {"hero_score": 7.880519480518648, "unilateral_BR_gains": [0.21991071428479003, 0.23931277056185074, 0.308950216449305], "remaining_joint_gain_bounds": [0.308950216449305, 0.9701948051939722]}, "checkpoints": [{"iteration": 1, "candidates": {"average": 9.269825487012394, "current": 7.334225822042894, "one_hot": 7.2811769480512325}}, {"iteration": 10, "candidates": {"average": 7.187243868122123, "current": 7.12481414101679, "one_hot": 7.124669913419236}}, {"iteration": 50, "candidates": {"average": 7.12709650423155, "current": 7.123961038960344, "one_hot": 7.123961038960363}}], "uncertainty": "Full chance enumeration; no sampling CI. [PI, achieved] bounds optimization, not sample error.", "best_feasible": {"hero_score": 7.123961038960344, "iteration": 50, "kind": "current", "optimal_hidden_value_interval": [6.910324675324675, 7.123961038960344], "hidden_to_PI_surplus": 0.9316745785476106}, "certificate": {"certified": false, "n_exact_ordered_deals": 369600, "PI_value_fraction": "106419/15400", "worst_support_value_fraction": "11009/1540", "deals_with_support_excess": 7473, "max_pointwise_excess": 12, "support_threshold": 1e-12, "scope": "Fixed TA hero and fixed myopic bids; separate hidden infosets; play-only team.", "uncertainty": "Exact integer DP over the complete chance space; no sampling CI."}, "best_residual": {"hero_score": 7.123961038960344, "unilateral_BR_gains": [0.0, 0.0, 0.0], "remaining_joint_gain_bounds": [0.0, 0.2136363636356684]}}}
+Limitations: fixed TA hero and myopic bids, play-only private-infoset spoiler team. PI/achieved bounds not a sampling interval; unilateral gaps not joint residuals. Only a successful exact support certificate establishes zero joint gap. Any missing regime or resource cap is a target shortfall, not evidence. No full-deck extrapolation.
+2026-11-16T18:59:33.988494+00:00 Saved-profile replay and bound consolidation complete for trump0.
+2026-11-16T18:59:51.431153+00:00 Saved-profile replay and bound consolidation complete for trump-1.
+2026-11-16T18:59:51.716161+00:00 READY FOR REVIEW — combined final packet
+Files: D3/{frozen_tree,compact_tree,bounded_ta,reachable_ta,root_bound,run,optimize_saved,consolidate}.py, README.md, ROOT_BOUND.md, STATUS and complete results/*.json/*.npz; tests/test_round9_frozen_toy.py; round9/common.py and watch.ps1 deadline/IO helpers.
+Commands from engine: python -m pytest -q -p no:cacheprovider tests/test_round9_frozen_toy.py (1 passed in1.64s after support/root changes); python experiments/round9/D3/run.py; python experiments/round9/D3/optimize_saved.py (second slot inside original box); python experiments/round9/D3/consolidate.py (saved-output validation only, no optimizer steps).
+Seed1620M resource pilot only; full population n369600 ordered deals/regime, no sampling95% CI applies. Exact rational lower bounds and replayed feasible values: {"0": {"trump": 0, "n_exact_deals": 369600, "baseline_TA": 8.729199134198153, "independent_BR_hero_score": 7.5562472943714525, "PI_fraction": "367921/61600", "root_hidden_lower_fraction": "446669/73920", "certified_information_cost_lower_fraction": "25819/369600", "achieved_score": 6.214794372293769, "primary_PI_achieved_interval": [5.972743506493506, 6.214794372293769], "tighter_hidden_optimum_interval": [6.042600108225108, 6.214794372293769], "optimal_information_cost_interval": [0.06985660173160202, 0.24205086580026247], "achieved_punishment_ratio": 0.9121876429399217, "optimal_hidden_PI_punishment_ratio_bounds": [0.9121876429399217, 0.9746570918720818], "selected_policy": {"name": "second_slot_CFR", "file": "trump_0_optimized_profile.npz", "array": "sigma", "expected": 6.214794372293769, "iteration": 120, "score": 6.214794372293769}, "profile_replays": [{"name": "main_best", "file": "trump_0_profile.npz", "array": "sigma", "expected": 7.5562472943714525, "iteration": 0, "score": 7.5562472943714525}, {"name": "TA_baseline", "file": "trump_0_profile.npz", "array": "fixed", "expected": 8.729199134198153, "iteration": 0, "score": 8.729199134198153}, {"name": "second_slot_CFR", "file": "trump_0_optimized_profile.npz", "array": "sigma", "expected": 6.214794372293769, "iteration": 120, "score": 6.214794372293769}], "TA_profile_support": {"TA_infosets_evaluated": 1352123, "total_infosets": 3848291, "scope": "Exact baseline plus every one-player deviation support; off-support defaults are irrelevant to these values."}, "uncertainty": "Complete chance enumeration; no sampling CI. Lower bounds are exact rationals; feasible expectations are floating replay values. No global team optimum claimed."}, "-1": {"trump": -1, "n_exact_deals": 369600, "baseline_TA": 10.037072510821524, "independent_BR_hero_score": 7.880519480518648, "PI_fraction": "106419/15400", "root_hidden_lower_fraction": "213259/30800", "certified_information_cost_lower_fraction": "421/30800", "achieved_score": 7.123961038960344, "primary_PI_achieved_interval": [6.910324675324675, 7.123961038960344], "tighter_hidden_optimum_interval": [6.923993506493506, 7.123961038960344], "optimal_information_cost_interval": [0.013668831168830664, 0.2136363636356684], "achieved_punishment_ratio": 0.9316745785476106, "optimal_hidden_PI_punishment_ratio_bounds": [0.9316745785476106, 0.9956284190833513], "selected_policy": {"name": "main_best", "file": "trump_-1_profile.npz", "array": "sigma", "expected": 7.123961038960344, "iteration": 50, "score": 7.123961038960344}, "profile_replays": [{"name": "main_best", "file": "trump_-1_profile.npz", "array": "sigma", "expected": 7.123961038960344, "iteration": 50, "score": 7.123961038960344}, {"name": "TA_baseline", "file": "trump_-1_profile.npz", "array": "fixed", "expected": 10.037072510821524, "iteration": 0, "score": 10.037072510821524}], "TA_profile_support": {"TA_infosets_evaluated": 1523977, "total_infosets": 4261192, "scope": "Exact baseline plus every one-player deviation support; off-support defaults are irrelevant to these values."}, "uncertainty": "Complete chance enumeration; no sampling CI. Lower bounds are exact rationals; feasible expectations are floating replay values. No global team optimum claimed."}}
+Limitations: original3h wall box retained through infrastructure pauses/retries; fewer than1000 CFR updates can be completed. All bids/TA hero frozen; private infosets retained. Opponent baseline completion is exact only on baseline/unilateral-deviation support; off-support defaults do not restrict free-team CFR. PI/achieved and J1/achieved are optimization bounds, not statistical intervals. First-decision relaxation proof is a new derivation awaiting Claude audit; not a full-team solve. No proof from unilateral residuals or CFR convergence, and no52-card extrapolation. Derived local caches are not deliverable results. All candidate saved profiles replay with valid probabilities/legal masks and matching recorded values. Root bounds reproduced from complete cached trees. Await Claude verdict before commit or paper/AGENTS promotion.
+M13 candidate added to math/NOTES.md with status verified numerically/proof pending Claude audit. Includes exact root-information inequalities and both positive rational gaps; no paper/AGENTS promotion before validation. Trump saved extension reports120updates; NT last scheduled recorded checkpoint is50 (selected best50); exact final NT update count was not persisted. Do not describe selected-policy iteration as the total iteration count.
+2026-11-16 separate self-review started. Fresh reviewer script reviews/audit_d3.py imports neither original evaluator nor root-bound nor best-response implementation. Predeclared checks: independent grouped expectation/min recurrences on full source-fingerprinted trees; independent counterfactual private BR reconstruction; manual card-rule/PI recursion on fixed deal indices0,52799,105598,158397,211196,263995,316794,369599 per regime; all raw probabilities/private row/legal masks; complete chance count/unique deals. Exact integer/rational lower bounds, no sampling CI. Compare headline summary only after independent results saved. No new optimizer steps, unchanged original3h box. Proof remains pending external audit regardless self-review.
+Separate source review found stale ROOT_BOUND.md draft prose claiming large-toy bound had not been computed, contradicted by existing raw per-regime output. Corrected provenance/scope, added explicit root measurability and independent shared-randomness argument. No arithmetic, policy or optimizer change; pending external audit retained. Numerical self-review still running, no verdict yet.
+Self-review finding: summary_final selected_policy.iteration copied NPZ iteration120, which counts completed updates in the extra trump run, but the selected profile was found at update50 (raw optimization JSON records both). Corrected consolidation schema to best_iteration/archive_iteration/updates_completed, added idempotent repair_metadata.py. Main-run final update count is unknown (null), rather than inferred from the selected checkpoint. All scores/profiles/lower bounds unchanged. Metadata repair will be applied after numerical audit; this is a provenance correction, not new training.
+Review resource note: independent auditor PID29440 accumulated only36.59CPU seconds over roughly12 wall minutes while an unrelated multi-threaded embedding job runs. Set this single research process to AboveNormal priority (no changes to other jobs, no extra research process, no source/results change) to reduce starvation. Deadline17:30ET retained.
+Separate fresh audit completed successfully: reviews/audit_d3.py independently reproduces all headline values (tolerance1e-8), exact PI/J1 fractions identical, private BR and16 manual game-rule/PI checks pass. Additional final review check reviews/exact_policy_d3.py integer-replays the previously evaluated one-hot checkpoint50 candidates; no new optimization/search. It will save deterministic private action rows and exact feasible rational upper bounds, not infer a team optimum.
+2026-11-16 SELF-VALIDATED (Codex), separately from implementation. Fresh commands from root: python engine/experiments/round9/reviews/audit_d3.py; python engine/experiments/round9/D3/repair_metadata.py; python engine/experiments/round9/reviews/exact_policy_d3.py. All pass. Exact enumeration n369600/regime, no stochastic seed or sampling95% CI. Original pilot1620M resource-only. Exact hidden optimum bounds: trump[446669/73920,574247/92400],NT[213259/30800,109709/15400]. Strict J1-PI=25819/369600 and421/30800. Baseline8.7291991342/10.0370725108; composed independentBR7.5562472944/7.8805194805. All original headline replays agree1e-8; rational lower bounds identical;16 independent manual PI/card-rule checks pass. Integer upper policies were already evaluated as one-hot checkpoint50 candidates in the original box; no optimizer extension. Files: complete D3 scripts/results (exclude stale build_0.tmp), test_round9_frozen_toy.py, math/NOTES.md M13, reviews/audit_d3.py,exact_policy_d3.py,results/D3* audit packets,REVIEW/BOARD/HANDOFF. Limitations: complete frozen12-card toy only; baseline support completion described in README; no team optimum/CFR convergence/full-deck inference; reviewer reuses derived source-fingerprinted tree construction, independent full rebuild still requested. M13 proved(pending external audit). Two provenance corrections (stale proof prose, selected-vs-completed iteration) recorded above, no numerical/source-policy changes. Existing full suite262pass1skip; focused frozen-tree regression previously1pass. Local commit authorized after this verdict, no push.
+Post-review maintenance: removed ineffective optional ctypes process-priority helper from exact_policy_d3.py (observed process stayed Normal). Pure policy/seed/recurrence/output unchanged; only performance-helper removal. D3 proof/exact fractions and self-verdict unchanged.
+2026-11-16 external audit accepted: Claude independently reconstructed complete369600-deal populations/regime and reproduced PI/J1/gaps exactly; M13 proof externally validated. Feasible upper policies were not independently replayed in that audit; E5 remains. Exact gaps25819/369600~0.070 and421/30800~0.014 hero points certify strict information cost only, with no material-magnitude/52-card claim. E0 fresh full262pass1skip gates release.

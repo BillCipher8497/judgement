@@ -1,0 +1,50 @@
+{
+  "probes": [
+    {
+      "S": 3,
+      "R": 4,
+      "trump": 0,
+      "deals": 250,
+      "nodes": 10582,
+      "infosets": 4977,
+      "seconds": 0.4446225166320801,
+      "one_time_warmup_seconds": 113.17550611495972,
+      "projected_seconds_conservative": 770.505434703827
+    },
+    {
+      "S": 3,
+      "R": 4,
+      "trump": -1,
+      "deals": 250,
+      "nodes": 11990,
+      "infosets": 5625,
+      "seconds": 0.5521547794342041,
+      "one_time_warmup_seconds": 33.88801383972168,
+      "projected_seconds_conservative": 850.1936397552491
+    },
+    {
+      "S": 2,
+      "R": 6,
+      "trump": 0,
+      "deals": 250,
+      "nodes": 12052,
+      "infosets": 5727,
+      "seconds": 0.3610520362854004,
+      "one_time_warmup_seconds": 32.62435221672058,
+      "projected_seconds_conservative": 566.4036826610566
+    },
+    {
+      "S": 2,
+      "R": 6,
+      "trump": -1,
+      "deals": 250,
+      "nodes": 10499,
+      "infosets": 4972,
+      "seconds": 0.31568288803100586,
+      "one_time_warmup_seconds": 30.471797943115234,
+      "projected_seconds_conservative": 497.1773796081543
+    }
+  ],
+  "latest_projected_GiB": 19.66579556465149,
+  "latest_feasible": false
+}

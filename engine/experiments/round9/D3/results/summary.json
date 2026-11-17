@@ -1,0 +1,171 @@
+{
+  "0": {
+    "S": 3,
+    "R": 4,
+    "n": 3,
+    "trump": 0,
+    "exact_deals": 369600,
+    "nodes": 17891840,
+    "infosets": 3848291,
+    "baseline_TA": 8.729199134198153,
+    "PI_min": 5.972743506493506,
+    "PI_fraction": "367921/61600",
+    "TA_profile_support": {
+      "TA_infosets_evaluated": 1352123,
+      "total_infosets": 3848291,
+      "scope": "Exact baseline plus every one-player deviation support; off-support defaults are irrelevant to these values."
+    },
+    "root_information_relaxation": {
+      "PI_fraction": "367921/61600",
+      "first_decision_hidden_lower_fraction": "446669/73920",
+      "lower_bound_gain_fraction": "25819/369600",
+      "n_exact_deals": 369600,
+      "root_private_infosets": 41712,
+      "uncertainty": "Complete chance space, integer sums; no sampling CI. A lower bound, not a solved team value."
+    },
+    "independent_BR_to_TA": {
+      "hero_score": 7.5562472943714525,
+      "unilateral_BR_gains": [
+        0.4407440476181108,
+        0.49041396103802626,
+        0.5707332251072899
+      ],
+      "remaining_joint_gain_bounds": [
+        0.5707332251072899,
+        1.5835037878779463
+      ]
+    },
+    "checkpoints": [],
+    "uncertainty": "Full chance enumeration; no sampling CI. [PI, achieved] bounds optimization, not sample error.",
+    "best_feasible": {
+      "hero_score": 7.5562472943714525,
+      "iteration": 0,
+      "kind": "independent_BR",
+      "optimal_hidden_value_interval": [
+        5.972743506493506,
+        7.5562472943714525
+      ],
+      "hidden_to_PI_surplus": 0.4255290119810271
+    },
+    "certificate": {
+      "certified": false,
+      "n_exact_ordered_deals": 369600,
+      "PI_value_fraction": "367921/61600",
+      "worst_support_value_fraction": "2792789/369600",
+      "deals_with_support_excess": 54566,
+      "max_pointwise_excess": 12,
+      "support_threshold": 1e-12,
+      "scope": "Fixed TA hero and fixed myopic bids; separate hidden infosets; play-only team.",
+      "uncertainty": "Exact integer DP over the complete chance space; no sampling CI."
+    },
+    "best_residual": {
+      "hero_score": 7.5562472943714525,
+      "unilateral_BR_gains": [
+        0.4407440476181108,
+        0.49041396103802626,
+        0.5707332251072899
+      ],
+      "remaining_joint_gain_bounds": [
+        0.5707332251072899,
+        1.5835037878779463
+      ]
+    }
+  },
+  "-1": {
+    "S": 3,
+    "R": 4,
+    "n": 3,
+    "trump": -1,
+    "exact_deals": 369600,
+    "nodes": 18065712,
+    "infosets": 4261192,
+    "baseline_TA": 10.037072510821524,
+    "PI_min": 6.910324675324675,
+    "PI_fraction": "106419/15400",
+    "TA_profile_support": {
+      "TA_infosets_evaluated": 1523977,
+      "total_infosets": 4261192,
+      "scope": "Exact baseline plus every one-player deviation support; off-support defaults are irrelevant to these values."
+    },
+    "root_information_relaxation": {
+      "PI_fraction": "106419/15400",
+      "first_decision_hidden_lower_fraction": "213259/30800",
+      "lower_bound_gain_fraction": "421/30800",
+      "n_exact_deals": 369600,
+      "root_private_infosets": 42440,
+      "uncertainty": "Complete chance space, integer sums; no sampling CI. A lower bound, not a solved team value."
+    },
+    "independent_BR_to_TA": {
+      "hero_score": 7.880519480518648,
+      "unilateral_BR_gains": [
+        0.21991071428479003,
+        0.23931277056185074,
+        0.308950216449305
+      ],
+      "remaining_joint_gain_bounds": [
+        0.308950216449305,
+        0.9701948051939722
+      ]
+    },
+    "checkpoints": [
+      {
+        "iteration": 1,
+        "candidates": {
+          "average": 9.269825487012394,
+          "current": 7.334225822042894,
+          "one_hot": 7.2811769480512325
+        }
+      },
+      {
+        "iteration": 10,
+        "candidates": {
+          "average": 7.187243868122123,
+          "current": 7.12481414101679,
+          "one_hot": 7.124669913419236
+        }
+      },
+      {
+        "iteration": 50,
+        "candidates": {
+          "average": 7.12709650423155,
+          "current": 7.123961038960344,
+          "one_hot": 7.123961038960363
+        }
+      }
+    ],
+    "uncertainty": "Full chance enumeration; no sampling CI. [PI, achieved] bounds optimization, not sample error.",
+    "best_feasible": {
+      "hero_score": 7.123961038960344,
+      "iteration": 50,
+      "kind": "current",
+      "optimal_hidden_value_interval": [
+        6.910324675324675,
+        7.123961038960344
+      ],
+      "hidden_to_PI_surplus": 0.9316745785476106
+    },
+    "certificate": {
+      "certified": false,
+      "n_exact_ordered_deals": 369600,
+      "PI_value_fraction": "106419/15400",
+      "worst_support_value_fraction": "11009/1540",
+      "deals_with_support_excess": 7473,
+      "max_pointwise_excess": 12,
+      "support_threshold": 1e-12,
+      "scope": "Fixed TA hero and fixed myopic bids; separate hidden infosets; play-only team.",
+      "uncertainty": "Exact integer DP over the complete chance space; no sampling CI."
+    },
+    "best_residual": {
+      "hero_score": 7.123961038960344,
+      "unilateral_BR_gains": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "remaining_joint_gain_bounds": [
+        0.0,
+        0.2136363636356684
+      ]
+    }
+  }
+}

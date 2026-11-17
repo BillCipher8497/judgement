@@ -1,0 +1,85 @@
+{
+  "trump": 0,
+  "n_exact_deals": 369600,
+  "iteration": 120,
+  "best_iteration": 50,
+  "PI_fraction": "367921/61600",
+  "baseline_TA": 8.729199134198153,
+  "best_feasible_score": 6.214794372293769,
+  "PI_achieved_interval": [
+    5.972743506493506,
+    6.214794372293769
+  ],
+  "hidden_to_PI_surplus": 0.9121876429399217,
+  "checkpoints": [
+    {
+      "iteration": 1,
+      "candidate_scores": {
+        "average": 8.689012445887176,
+        "current": 6.369156078530125,
+        "one_hot": 6.362115800865177
+      }
+    },
+    {
+      "iteration": 5,
+      "candidate_scores": {
+        "average": 6.453470583025381,
+        "current": 6.222607338753341,
+        "one_hot": 6.220313852813256
+      }
+    },
+    {
+      "iteration": 10,
+      "candidate_scores": {
+        "average": 6.285843776741387,
+        "current": 6.215163712844811,
+        "one_hot": 6.214989177488581
+      }
+    },
+    {
+      "iteration": 25,
+      "candidate_scores": {
+        "average": 6.227331100591745,
+        "current": 6.214859307301149,
+        "one_hot": 6.2148593073587115
+      }
+    },
+    {
+      "iteration": 50,
+      "candidate_scores": {
+        "average": 6.218029152456133,
+        "current": 6.214794372293769,
+        "one_hot": 6.214794372293777
+      }
+    },
+    {
+      "iteration": 100,
+      "candidate_scores": {
+        "average": 6.215613429148705,
+        "current": 6.214794372293769,
+        "one_hot": 6.214794372293777
+      }
+    },
+    {
+      "iteration": 120,
+      "candidate_scores": {
+        "average": 6.215364261982078,
+        "current": 6.214794372293769,
+        "one_hot": 6.214794372293777
+      }
+    }
+  ],
+  "same_original_deadline": 1794854752,
+  "uncertainty": "Complete chance space, no sampling CI; bounded optimizer, not a convergence claim.",
+  "certificate": {
+    "certified": false,
+    "n_exact_ordered_deals": 369600,
+    "PI_value_fraction": "367921/61600",
+    "worst_support_value_fraction": "1152857/184800",
+    "deals_with_support_excess": 8809,
+    "max_pointwise_excess": 12,
+    "support_threshold": 1e-12,
+    "scope": "Fixed TA hero and fixed myopic bids; separate hidden infosets; play-only team.",
+    "uncertainty": "Exact integer DP over the complete chance space; no sampling CI."
+  }
+}

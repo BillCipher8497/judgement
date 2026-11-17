@@ -1,0 +1,24 @@
+{
+  "0": {
+    "n_exact_deals": 369600,
+    "exact_feasible_upper_fraction": "574247/92400",
+    "hero_score_sum": 2296988,
+    "policy_file": "review_pure_trump_0.npz",
+    "policy_sha256": "0dc599132b99f6cd3e3a68f7dbbc73d3a82bbf1d4e277976856f1bd510623f59",
+    "original_one_hot_checkpoint": 50,
+    "original_one_hot_score": 6.214794372293777,
+    "source_profile_sha256": "a4ed9c13fc7e99bc89115a81b05213a8410b52493441a7a4da15c91cfcd8b723",
+    "uncertainty": "Integer replay over complete chance space; no sampling CI; feasible upper bound, not team optimum."
+  },
+  "-1": {
+    "n_exact_deals": 369600,
+    "exact_feasible_upper_fraction": "109709/15400",
+    "hero_score_sum": 2633016,
+    "policy_file": "review_pure_trump_-1.npz",
+    "policy_sha256": "4f11907409a46819983f9b8d5c62312c364911e4b449c686af4159a05a2a3b0b",
+    "original_one_hot_checkpoint": 50,
+    "original_one_hot_score": 7.123961038960363,
+    "source_profile_sha256": "306d66a0971429a84bf768d44a962292c7b259c17362a544cc9f74c6a72486a8",
+    "uncertainty": "Integer replay over complete chance space; no sampling CI; feasible upper bound, not team optimum."
+  }
+}

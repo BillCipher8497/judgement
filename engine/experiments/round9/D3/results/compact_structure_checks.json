@@ -1,0 +1,18 @@
+[
+  {
+    "R": 4,
+    "sample_deals": 250,
+    "trump": 0,
+    "infosets_match": true,
+    "S": 3,
+    "nodes_match": true
+  },
+  {
+    "R": 4,
+    "sample_deals": 250,
+    "trump": -1,
+    "infosets_match": true,
+    "S": 3,
+    "nodes_match": true
+  }
+]

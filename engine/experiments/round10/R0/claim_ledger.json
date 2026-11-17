@@ -1,5 +1,5 @@
 {
-  "role": "Publication subset: nine inherited reviewed claim groups; unreleased appendix and its local audit packets are excluded.",
+  "role": "Source-consistency ledger for a local draft; no new numerical reanalysis. EVIDENCE.md is the already-reviewed numerical map; primary artifacts are hashed for later external reproduction.",
   "evidence_source": "paper/EVIDENCE.md",
   "claims": [
     {
@@ -11,13 +11,13 @@
         "tests/test_round7_welfare.py"
       ],
       "draft_strings": [
-        "W = 40 + n \u2212 10M \u2212 U",
-        "W \u2264 30 + n",
+        "W = 40 + n − 10M − U",
+        "W ≤ 30 + n",
         "sampling CIs do not apply"
       ],
       "evidence_strings": [
-        "W = 40 + n \u2212 10M \u2212 U",
-        "W \u2264 30 + n"
+        "W = 40 + n − 10M − U",
+        "W ≤ 30 + n"
       ]
     },
     {
@@ -32,22 +32,22 @@
         "experiments/phase1/results/model_ta_final.json"
       ],
       "draft_strings": [
-        "51.661 \u00b1 1.105",
-        "40.015 \u00b1 0.605",
-        "171.708 \u00b1 1.985",
-        "154.425 \u00b1 1.628",
-        "17.282 \u00b1 0.440",
+        "51.661 ± 1.105",
+        "40.015 ± 0.605",
+        "171.708 ± 1.985",
+        "154.425 ± 1.628",
+        "17.282 ± 0.440",
         "n=4,000 paired full games",
         "133,000,000+g",
         "ta_plus_v2()",
         "ModelBidder(model_ta_final.json)"
       ],
       "evidence_strings": [
-        "51.661 \u00b1 1.105",
-        "40.015 \u00b1 0.605",
-        "171.708 \u00b1 1.985",
-        "154.425 \u00b1 1.628",
-        "17.282 \u00b1 0.440"
+        "51.661 ± 1.105",
+        "40.015 ± 0.605",
+        "171.708 ± 1.985",
+        "154.425 ± 1.628",
+        "17.282 ± 0.440"
       ],
       "primary_strings": [
         "BASE_G = 133_000_000",
@@ -112,15 +112,15 @@
         "experiments/round7_audit/AUDIT.md"
       ],
       "draft_strings": [
-        "0.739 \u00b1 0.027",
-        "0.978 \u00b1 0.009",
-        "0.982 \u00b1 0.008",
+        "0.739 ± 0.027",
+        "0.978 ± 0.009",
+        "0.982 ± 0.008",
         "n=1,000 hands"
       ],
       "evidence_strings": [
-        "0.739 \u00b1 0.027",
-        "0.978 \u00b1 0.009",
-        "0.982 \u00b1 0.008"
+        "0.739 ± 0.027",
+        "0.978 ± 0.009",
+        "0.982 ± 0.008"
       ]
     },
     {
@@ -133,20 +133,20 @@
         "experiments/phase2/results/summary_main.md"
       ],
       "draft_strings": [
-        "5.41 \u00b1 0.11",
-        "0.27 \u00b1 0.06",
-        "10.17 \u00b1 0.02",
-        "7.82 \u00b1 0.37",
+        "5.41 ± 0.11",
+        "0.27 ± 0.06",
+        "10.17 ± 0.02",
+        "7.82 ± 0.37",
         "10,000 rounds",
         "20,000 rounds",
         "2,000 deals",
         "600 deals"
       ],
       "evidence_strings": [
-        "5.41 \u00b1 0.11",
-        "0.27 \u00b1 0.06",
-        "10.17 \u00b1 0.02",
-        "7.82 \u00b1 0.37"
+        "5.41 ± 0.11",
+        "0.27 ± 0.06",
+        "10.17 ± 0.02",
+        "7.82 ± 0.37"
       ]
     },
     {
@@ -195,12 +195,54 @@
         "experiments/round9/REVIEW.md"
       ],
       "draft_strings": [
-        "5.05950 \u00b10.81963",
+        "5.05950 ±0.81963",
         "n=4,000 paired games",
         "comparator rather than an oracle"
       ],
       "evidence_strings": [
-        "5.05950 \u00b10.81963"
+        "5.05950 ±0.81963"
+      ]
+    },
+    {
+      "id": "C10",
+      "status": "externally validated (Claude,2026-11-16); implemented n5 fixed-hero/bids/K16 intervention only",
+      "kind": "paired deals, appendix only",
+      "n_per_stage": 1000,
+      "coverage": 0.95,
+      "primary_sources": [
+        "experiments/round9/D1/results/summary.json",
+        "experiments/round9/reviews/results/D1_raw_audit.json",
+        "experiments/round9/HANDOFF_CODEX.md"
+      ],
+      "draft_strings": [
+        "0.369315 [0.315244,0.424218]",
+        "0.341204 [0.289874,0.394787]",
+        "each n=1,000 paired deals"
+      ],
+      "evidence_strings": [
+        "0.369315 [0.315244,0.424218]",
+        "0.341204 [0.289874,0.394787]"
+      ]
+    },
+    {
+      "id": "C11",
+      "status": "M13 proof and complete-population lower bounds externally validated (Claude,2026-11-16); independent feasible-upper replay remains E5",
+      "kind": "complete enumeration, appendix only",
+      "n_per_regime": 369600,
+      "primary_sources": [
+        "experiments/round9/reviews/results/D3_raw_audit.json",
+        "experiments/round9/reviews/results/D3_exact_upper_audit.json",
+        "experiments/round9/D3/ROOT_BOUND.md"
+      ],
+      "draft_strings": [
+        "[446669/73920,574247/92400]",
+        "[213259/30800,109709/15400]",
+        "complete 369,600-deal",
+        "bounds, not CIs or solved team optima"
+      ],
+      "evidence_strings": [
+        "[446669/73920,574247/92400]",
+        "[213259/30800,109709/15400]"
       ]
     }
   ],
@@ -208,7 +250,9 @@
     "not a submission-ready paper",
     "or optimal punishers",
     "per-hand rollout-fitted diagnostics",
-    "not human-learning evidence"
+    "not human-learning evidence",
+    "particle-MCMC experiment is unfinished"
   ],
-  "external_gate_ids": []
+  "external_gate_ids": [],
+  "publication_reconciliation": "C10 and C11 cleared for release; original public manuscript has nine groups pending E4 reconciliation. Feasible-upper independent replay remains E5."
 }

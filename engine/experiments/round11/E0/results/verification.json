@@ -1,0 +1,13 @@
+{
+  "pytest_seconds": 49.07,
+  "wall_seconds": 53.910273,
+  "command": "python -m pytest -q -p no:cacheprovider",
+  "interpreter": "C:/Users/Arvin/AppData/Local/Programs/Python/Python312/python.exe",
+  "skipped": 1,
+  "finished_utc": "2026-11-17T00:04:13.7228706Z",
+  "wall_measurement": "redirected stdout CreationTimeUtc to LastWriteTimeUtc, includes process startup; explicit UTC ticks",
+  "exit_code": 0,
+  "passed": 262,
+  "output_created_utc": "2026-11-17T00:03:19.5213834Z",
+  "output_completed_utc": "2026-11-17T00:04:13.4316564Z"
+}

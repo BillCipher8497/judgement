@@ -1,57 +1,34 @@
 {
-  "date": "2026-11-16",
-  "validation": "Claude-reviewed baseline plus selected separately self-validated Codex artifacts; limitations in PUBLICATION.md",
-  "base_commit": "11214fe1cc6df93361dc9f8b1d84384cfceb1ba4",
-  "selected_source_commit": "0f8c724666840b79f0bbaf0188b8612615ea374c",
-  "overlay_paths": [
-    "engine/experiments/round9/D1",
-    "engine/experiments/round9/D2",
-    "engine/experiments/round9/D4",
-    "engine/experiments/round9/common.py",
-    "engine/tests/test_round9_information.py",
-    "engine/paper/guide_card.md",
-    "engine/experiments/round9/reviews/audit_d1.py",
-    "engine/experiments/round9/reviews/audit_d2.py",
-    "engine/experiments/round9/reviews/multiplicity_d2.py",
-    "engine/experiments/round9/reviews/results/D1_raw_audit.json",
-    "engine/experiments/round9/reviews/results/D1_review_bootstrap.npz",
-    "engine/experiments/round9/reviews/results/D2_raw_audit.json",
-    "engine/experiments/round9/reviews/results/D2_multiplicity.json",
-    "engine/paper/RELATED_WORK_DRAFT.md",
-    "engine/experiments/round10/R1/source_map.json",
-    "engine/experiments/round10/R1/RELATED_WORK.md",
-    "engine/experiments/round10/R1/queries.txt",
-    "engine/experiments/round10/R4"
+  "parent": "a99c9577334719a04e1b6d6484c158081a71f17d",
+  "source_local_commit": "a6b162356518e738cbd639196f1fc7ca5f4fb836",
+  "release": "round11 E1 externally cleared D3/M13 and M14/R3",
+  "included_paths": [
+    "CLAUDE_AUDIT_2026-11-16.md",
+    "engine/experiments/round9/D3",
+    "engine/experiments/round10/R3",
+    "engine/math/NOTES.md",
+    "engine/experiments/round10/R0/claim_ledger.json",
+    "engine/experiments/round9/reviews/audit_d3.py",
+    "engine/experiments/round9/reviews/exact_policy_d3.py",
+    "engine/experiments/round9/reviews/results/D3_raw_audit.json",
+    "engine/experiments/round9/reviews/results/D3_exact_upper_audit.json",
+    "engine/experiments/round11/E0",
+    "engine/tests/test_round9_frozen_toy.py"
   ],
-  "checks": {
-    "no_unreleased_proof_or_experiment_paths": true,
-    "no_m13_m14_math_sections": true,
-    "identical_agents": true,
-    "nine_claim_groups_supported": true,
-    "no_large_file_over100MiB": true,
-    "root_commit_without_private_ancestry": true
+  "test_gate": {
+    "pytest_seconds": 49.07,
+    "wall_seconds": 53.910273,
+    "command": "python -m pytest -q -p no:cacheprovider",
+    "interpreter": "C:/Users/Arvin/AppData/Local/Programs/Python/Python312/python.exe",
+    "skipped": 1,
+    "finished_utc": "2026-11-17T00:04:13.7228706Z",
+    "wall_measurement": "redirected stdout CreationTimeUtc to LastWriteTimeUtc, includes process startup; explicit UTC ticks",
+    "exit_code": 0,
+    "passed": 262,
+    "output_created_utc": "2026-11-17T00:03:19.5213834Z",
+    "output_completed_utc": "2026-11-17T00:04:13.4316564Z"
   },
-  "file_count_before_manifest": 10689,
-  "largest_blobs": [
-    [
-      30457494,
-      "engine/experiments/round9/D2/results/raw_1500000000.jsonl"
-    ],
-    [
-      30453966,
-      "engine/experiments/round9/D2/results/raw_1510000000.jsonl"
-    ],
-    [
-      19979200,
-      "engine/experiments/round8/T6/results/train.jsonl"
-    ],
-    [
-      14263867,
-      "engine/experiments/round8/T3/results/raw_4243.jsonl"
-    ],
-    [
-      13682835,
-      "engine/experiments/round8/T3/results/raw_4242.jsonl"
-    ]
-  ]
+  "held": "D5 and private mixed integration/history",
+  "upper_replay": "E5 outstanding; audit checked ordering only",
+  "manuscript_reconciliation": "E4 pending; ledger C10/C11 now cleared"
 }

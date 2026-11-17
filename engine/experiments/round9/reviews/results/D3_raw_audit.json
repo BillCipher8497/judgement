@@ -1,0 +1,468 @@
+{
+  "0": {
+    "n_exact_deals": 369600,
+    "source_sha256": "9583d741c444b1a72dc4e362f006ea47ce047b45dc65f18a939e783b11ddeeba",
+    "PI_fraction": "367921/61600",
+    "J1_fraction": "446669/73920",
+    "strict_gap_fraction": "25819/369600",
+    "scores": {
+      "baseline": 8.729199134199135,
+      "main": 7.5562472943722945,
+      "optimized": 6.214794372294373,
+      "independent_BR": 7.5562472943722945
+    },
+    "private_BR_hero_values": {
+      "1": 8.08599567099567,
+      "2": 8.02023538961039,
+      "3": 8.08172077922078
+    },
+    "manual_game_PI_checks": [
+      {
+        "deal_index": 0,
+        "PI_score": 12,
+        "hands": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            6,
+            7,
+            8
+          ],
+          [
+            9,
+            10,
+            11
+          ]
+        ]
+      },
+      {
+        "deal_index": 52799,
+        "PI_score": 10,
+        "hands": [
+          [
+            0,
+            4,
+            9
+          ],
+          [
+            2,
+            5,
+            7
+          ],
+          [
+            8,
+            10,
+            11
+          ],
+          [
+            1,
+            3,
+            6
+          ]
+        ]
+      },
+      {
+        "deal_index": 105598,
+        "PI_score": 0,
+        "hands": [
+          [
+            1,
+            2,
+            10
+          ],
+          [
+            5,
+            8,
+            9
+          ],
+          [
+            4,
+            7,
+            11
+          ],
+          [
+            0,
+            3,
+            6
+          ]
+        ]
+      },
+      {
+        "deal_index": 158397,
+        "PI_score": 10,
+        "hands": [
+          [
+            1,
+            8,
+            9
+          ],
+          [
+            0,
+            6,
+            10
+          ],
+          [
+            4,
+            5,
+            11
+          ],
+          [
+            2,
+            3,
+            7
+          ]
+        ]
+      },
+      {
+        "deal_index": 211196,
+        "PI_score": 11,
+        "hands": [
+          [
+            2,
+            6,
+            11
+          ],
+          [
+            3,
+            7,
+            9
+          ],
+          [
+            4,
+            5,
+            8
+          ],
+          [
+            0,
+            1,
+            10
+          ]
+        ]
+      },
+      {
+        "deal_index": 263995,
+        "PI_score": 12,
+        "hands": [
+          [
+            3,
+            7,
+            11
+          ],
+          [
+            0,
+            2,
+            9
+          ],
+          [
+            4,
+            8,
+            10
+          ],
+          [
+            1,
+            5,
+            6
+          ]
+        ]
+      },
+      {
+        "deal_index": 316794,
+        "PI_score": 10,
+        "hands": [
+          [
+            5,
+            6,
+            10
+          ],
+          [
+            1,
+            8,
+            11
+          ],
+          [
+            2,
+            4,
+            9
+          ],
+          [
+            0,
+            3,
+            7
+          ]
+        ]
+      },
+      {
+        "deal_index": 369599,
+        "PI_score": 10,
+        "hands": [
+          [
+            9,
+            10,
+            11
+          ],
+          [
+            6,
+            7,
+            8
+          ],
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ]
+      }
+    ],
+    "hidden_optimum_bounds": [
+      6.042600108225108,
+      6.214794372294373
+    ],
+    "uncertainty": "Complete chance population, no sampling CI; exact integer lower bounds, floating feasible expectation. Proof pending external audit."
+  },
+  "-1": {
+    "n_exact_deals": 369600,
+    "source_sha256": "9583d741c444b1a72dc4e362f006ea47ce047b45dc65f18a939e783b11ddeeba",
+    "PI_fraction": "106419/15400",
+    "J1_fraction": "213259/30800",
+    "strict_gap_fraction": "421/30800",
+    "scores": {
+      "baseline": 10.037072510822512,
+      "main": 7.123961038961039,
+      "independent_BR": 7.880519480519481
+    },
+    "private_BR_hero_values": {
+      "1": 9.018982683982683,
+      "2": 9.015600649350649,
+      "3": 9.254415584415584
+    },
+    "manual_game_PI_checks": [
+      {
+        "deal_index": 0,
+        "PI_score": 10,
+        "hands": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            6,
+            7,
+            8
+          ],
+          [
+            9,
+            10,
+            11
+          ]
+        ]
+      },
+      {
+        "deal_index": 52799,
+        "PI_score": 0,
+        "hands": [
+          [
+            0,
+            4,
+            9
+          ],
+          [
+            2,
+            5,
+            7
+          ],
+          [
+            8,
+            10,
+            11
+          ],
+          [
+            1,
+            3,
+            6
+          ]
+        ]
+      },
+      {
+        "deal_index": 105598,
+        "PI_score": 0,
+        "hands": [
+          [
+            1,
+            2,
+            10
+          ],
+          [
+            5,
+            8,
+            9
+          ],
+          [
+            4,
+            7,
+            11
+          ],
+          [
+            0,
+            3,
+            6
+          ]
+        ]
+      },
+      {
+        "deal_index": 158397,
+        "PI_score": 10,
+        "hands": [
+          [
+            1,
+            8,
+            9
+          ],
+          [
+            0,
+            6,
+            10
+          ],
+          [
+            4,
+            5,
+            11
+          ],
+          [
+            2,
+            3,
+            7
+          ]
+        ]
+      },
+      {
+        "deal_index": 211196,
+        "PI_score": 11,
+        "hands": [
+          [
+            2,
+            6,
+            11
+          ],
+          [
+            3,
+            7,
+            9
+          ],
+          [
+            4,
+            5,
+            8
+          ],
+          [
+            0,
+            1,
+            10
+          ]
+        ]
+      },
+      {
+        "deal_index": 263995,
+        "PI_score": 13,
+        "hands": [
+          [
+            3,
+            7,
+            11
+          ],
+          [
+            0,
+            2,
+            9
+          ],
+          [
+            4,
+            8,
+            10
+          ],
+          [
+            1,
+            5,
+            6
+          ]
+        ]
+      },
+      {
+        "deal_index": 316794,
+        "PI_score": 10,
+        "hands": [
+          [
+            5,
+            6,
+            10
+          ],
+          [
+            1,
+            8,
+            11
+          ],
+          [
+            2,
+            4,
+            9
+          ],
+          [
+            0,
+            3,
+            7
+          ]
+        ]
+      },
+      {
+        "deal_index": 369599,
+        "PI_score": 13,
+        "hands": [
+          [
+            9,
+            10,
+            11
+          ],
+          [
+            6,
+            7,
+            8
+          ],
+          [
+            3,
+            4,
+            5
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ]
+      }
+    ],
+    "hidden_optimum_bounds": [
+      6.923993506493506,
+      7.123961038961039
+    ],
+    "uncertainty": "Complete chance population, no sampling CI; exact integer lower bounds, floating feasible expectation. Proof pending external audit."
+  },
+  "comparison_after_recomputation": "All reported headline values agree within1e-8; exact rationals identical."
+}

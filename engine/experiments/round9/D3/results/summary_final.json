@@ -1,0 +1,142 @@
+{
+  "0": {
+    "trump": 0,
+    "n_exact_deals": 369600,
+    "baseline_TA": 8.729199134198153,
+    "independent_BR_hero_score": 7.5562472943714525,
+    "PI_fraction": "367921/61600",
+    "root_hidden_lower_fraction": "446669/73920",
+    "certified_information_cost_lower_fraction": "25819/369600",
+    "achieved_score": 6.214794372293769,
+    "primary_PI_achieved_interval": [
+      5.972743506493506,
+      6.214794372293769
+    ],
+    "tighter_hidden_optimum_interval": [
+      6.042600108225108,
+      6.214794372293769
+    ],
+    "optimal_information_cost_interval": [
+      0.06985660173160202,
+      0.24205086580026247
+    ],
+    "achieved_punishment_ratio": 0.9121876429399217,
+    "optimal_hidden_PI_punishment_ratio_bounds": [
+      0.9121876429399217,
+      0.9746570918720818
+    ],
+    "selected_policy": {
+      "name": "second_slot_CFR",
+      "file": "trump_0_optimized_profile.npz",
+      "array": "sigma",
+      "expected": 6.214794372293769,
+      "score": 6.214794372293769,
+      "archive_iteration": 120,
+      "best_iteration": 50,
+      "updates_completed": 120
+    },
+    "profile_replays": [
+      {
+        "name": "main_best",
+        "file": "trump_0_profile.npz",
+        "array": "sigma",
+        "expected": 7.5562472943714525,
+        "score": 7.5562472943714525,
+        "archive_iteration": 0,
+        "best_iteration": 0,
+        "updates_completed": null
+      },
+      {
+        "name": "TA_baseline",
+        "file": "trump_0_profile.npz",
+        "array": "fixed",
+        "expected": 8.729199134198153,
+        "score": 8.729199134198153,
+        "archive_iteration": 0,
+        "best_iteration": 0,
+        "updates_completed": 0
+      },
+      {
+        "name": "second_slot_CFR",
+        "file": "trump_0_optimized_profile.npz",
+        "array": "sigma",
+        "expected": 6.214794372293769,
+        "score": 6.214794372293769,
+        "archive_iteration": 120,
+        "best_iteration": 50,
+        "updates_completed": 120
+      }
+    ],
+    "TA_profile_support": {
+      "TA_infosets_evaluated": 1352123,
+      "total_infosets": 3848291,
+      "scope": "Exact baseline plus every one-player deviation support; off-support defaults are irrelevant to these values."
+    },
+    "uncertainty": "Complete chance enumeration; no sampling CI. Lower bounds are exact rationals; feasible expectations are floating replay values. No global team optimum claimed."
+  },
+  "-1": {
+    "trump": -1,
+    "n_exact_deals": 369600,
+    "baseline_TA": 10.037072510821524,
+    "independent_BR_hero_score": 7.880519480518648,
+    "PI_fraction": "106419/15400",
+    "root_hidden_lower_fraction": "213259/30800",
+    "certified_information_cost_lower_fraction": "421/30800",
+    "achieved_score": 7.123961038960344,
+    "primary_PI_achieved_interval": [
+      6.910324675324675,
+      7.123961038960344
+    ],
+    "tighter_hidden_optimum_interval": [
+      6.923993506493506,
+      7.123961038960344
+    ],
+    "optimal_information_cost_interval": [
+      0.013668831168830664,
+      0.2136363636356684
+    ],
+    "achieved_punishment_ratio": 0.9316745785476106,
+    "optimal_hidden_PI_punishment_ratio_bounds": [
+      0.9316745785476106,
+      0.9956284190833513
+    ],
+    "selected_policy": {
+      "name": "main_best",
+      "file": "trump_-1_profile.npz",
+      "array": "sigma",
+      "expected": 7.123961038960344,
+      "score": 7.123961038960344,
+      "archive_iteration": 50,
+      "best_iteration": 50,
+      "updates_completed": null
+    },
+    "profile_replays": [
+      {
+        "name": "main_best",
+        "file": "trump_-1_profile.npz",
+        "array": "sigma",
+        "expected": 7.123961038960344,
+        "score": 7.123961038960344,
+        "archive_iteration": 50,
+        "best_iteration": 50,
+        "updates_completed": null
+      },
+      {
+        "name": "TA_baseline",
+        "file": "trump_-1_profile.npz",
+        "array": "fixed",
+        "expected": 10.037072510821524,
+        "score": 10.037072510821524,
+        "archive_iteration": 0,
+        "best_iteration": 0,
+        "updates_completed": 0
+      }
+    ],
+    "TA_profile_support": {
+      "TA_infosets_evaluated": 1523977,
+      "total_infosets": 4261192,
+      "scope": "Exact baseline plus every one-player deviation support; off-support defaults are irrelevant to these values."
+    },
+    "uncertainty": "Complete chance enumeration; no sampling CI. Lower bounds are exact rationals; feasible expectations are floating replay values. No global team optimum claimed."
+  }
+}

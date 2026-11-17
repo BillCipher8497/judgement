@@ -9,3 +9,6 @@ Unfinished experiments, proofs awaiting external audit and dependent local integ
 No scientific estimates were recomputed for publication. Code/test files are a subset of previously passing integrated checks; no separate publication-suite run is claimed. Reproduce from engine with python -m pytest -q -p no:cacheprovider and the included round9 audit scripts. Respect assigned compute limits/windows.
 
 The manuscript/ledger are publication derivatives with the unreleased appendix removed; original full audit packets remain local. PUBLICATION_MANIFEST.json records exact source selection and checks. Publication history starts with this snapshot so withheld blobs are not included through ancestry.
+
+## Round11 ordinary-child release
+The newly cleared D3/M13 and M14/R3 scope, full external audit and eleven-group ledger are released after the fresh E0 test pass. This extends the existing publication lineage without private ancestry. D5 remains withheld. Feasible-upper replay and manuscript reconciliation are explicitly tracked as E5/E4. Initial-snapshot exclusions are historical; current scope is in PUBLICATION_MANIFEST.json.

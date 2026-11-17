@@ -98,3 +98,6 @@ Full-game 1-vs-3 comparisons use the runner in the latest round folder, e.g. `ex
 | 2026-11-16 | Round 8 overnight (Claude head, Codex compute/integration) | Integrated audit; equal-depth top-pool null and positive depth contrast; mode-match replication with conditional-law caveat; non-leading NT dependence and limited LC0 replication; exact fixed-bid toy hidden-team certificate; negative guide-feature grid. All research results Claude-validated; 256 tests passed, 1 optional skip; raw data and local task commits saved. |
 
 | 2026-11-16 | Validated publication | Curated owner-authorized GitHub snapshot; withheld unreviewed proof/experiment content and private history; source-selection checks pass. |
+
+## External-audit release,2026-11-16
+D1,D2 and M13/M14 proofs/lower bounds externally validated by Claude; full report is CLAUDE_AUDIT_2026-11-16.md. Fresh full local suite262passed/1optional skip, exit0,49.07s pytest,53.91s startup-inclusive output wall interval. D3/M13 and round10/R3 are now released. Feasible-upper independent replay remains E5; D5 remains withheld. M13 gaps are about0.070 and0.014 hero points: strict information cost only, no material-magnitude or52-card implication. The public manuscript/ledger reconciliation is tracked as E4.

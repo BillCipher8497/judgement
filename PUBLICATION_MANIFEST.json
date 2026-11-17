@@ -39,5 +39,12 @@
     "output_created_utc": "2026-11-17T00:03:19.5213834Z",
     "output_completed_utc": "2026-11-17T00:04:13.4316564Z"
   },
-  "public_tree_test": "required before push; stored in a subsequent ordinary documentation child"
+  "public_tree_test": {
+    "tested_candidate": "1aa8d6250a206842e3c16c45f2677a289357fd3b",
+    "passed": 262,
+    "skipped": 1,
+    "pytest_seconds": 28.07,
+    "wall_seconds": 29.117765699978918,
+    "exit_code": 0
+  }
 }

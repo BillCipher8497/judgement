@@ -82,6 +82,8 @@ Other reviewed results and retained limitations are in EVIDENCE.md and the
 task-level STATUS/review files. No novelty claim follows from the bounded
 related-work review.
 
+Fresh curated-export suite: 262 passed, 1 optional OpenSpiel skip; 28.07s pytest, 29.118s wall. See PUBLICATION_TESTS_2026-11-16.json for the tested candidate and complete output.
+
 ## Next steps
 
 1. Extend the primary-source literature/reproduction audit before submission.

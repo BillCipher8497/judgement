@@ -1,0 +1,25 @@
+{
+  "pass": true,
+  "tested_candidate": "1aa8d6250a206842e3c16c45f2677a289357fd3b",
+  "tested_tree": "afd1af5a9071db38110eb6dab9af76901096d7ce",
+  "command": [
+    "C:/Users/Arvin/AppData/Local/Programs/Python/Python312/python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider"
+  ],
+  "checkout": "C:\\Users\\Arvin\\AppData\\Local\\Temp\\judgement-public-4vkuvna0",
+  "passed": 262,
+  "skipped": 1,
+  "pytest_seconds": 28.07,
+  "wall_seconds": 29.117765699978918,
+  "exit_code": 0,
+  "stdout_sha256": "b81d7434a571c6a0a9705f23a0f9765d9a558a5a8f4b91d98ecc5cb685b7aa1d",
+  "checked_utc": "2026-11-17T03:18:40.638695+00:00",
+  "scope": "Fresh clean export of curated publication tree, not private working-tree inventory",
+  "public_source_audit_pass": true,
+  "public_claim_groups": 11,
+  "next_commit": "documentation-only child; scientific code/tests unchanged from this tested candidate"
+}

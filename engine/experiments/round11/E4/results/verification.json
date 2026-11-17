@@ -1,6 +1,6 @@
 {
   "pass": true,
-  "checked_utc": "2026-11-17T03:16:16.249457+00:00",
+  "checked_utc": "2026-11-17T03:18:11.502477+00:00",
   "claim_count": 11,
   "checks": [
     {
@@ -99,25 +99,25 @@
   ],
   "primary_source_sha256": {
     "math/NOTES.md": "571b231324a999b2298a6370bbe5b4e12d27aafb5cedbfee8c7d0e767f1214f1",
-    "tests/test_round7_welfare.py": "e7c577a26331899c22f4da855da679ff3b1f9198acdf30e075a331f6610d2b54",
+    "tests/test_round7_welfare.py": "aeab9543396a6f82b914246e285955347635bcb3e1a1e1cb95ae062928cdce1c",
     "experiments/round7_paper/results/welfare.json": "352b25546da3f829abda15dfa754a668cf9462e9ca8ee52f8aad8708c2475506",
-    "experiments/surplus_hidden/sim.py": "bc20dc29fd86cbe7e91f472496f474881e92f068c108fb194defedca2d50b2d9",
+    "experiments/surplus_hidden/sim.py": "721011ae4da464c5b4785aef8214c3e8c01e71f34cddbde94351190d0218fcd5",
     "experiments/phase1/results/model_ta_final.json": "5de2e4ead429a0d15236cc45a23de181450fc4ba94890ee46cba8743cd859115",
     "experiments/round7_audit/results/a1_surplus.json": "9d7ef267dc8fed9d4ba6a536771297b75997a621e8093adf5b617656fc4d85c7",
-    "experiments/surplus_hidden/STATUS.txt": "2463cb4d1672a06728d5d560dd0481e327f9e6666927f9ab33330980f370ae4b",
+    "experiments/surplus_hidden/STATUS.txt": "cb6c7ca5efc081a829c1e0d10bc6668b92bf93462ae6d8267c3d0ff34e800755",
     "experiments/round8/T5/results/certificate.json": "89d7d9ccebd7c2abf3146dbf349632298911b7f84a1e3a61a8f2e778f1c78ba3",
-    "math/results/m10_summary.json": "b5d1c86ce5b996fb459e0bfe41d5e0acabe414beb4d266025b2a2685981f5f2c",
-    "experiments/round7_audit/AUDIT.md": "8626c0dde3c3caa670d232a8819c203e6938d9d346cf28e5a39d7b93d499c74b",
-    "experiments/phase1/results/phase1_tables.md": "12e236006096e09c57704264c15fc3d2dfe1408642d28e566e9e58ecdfe2a3e5",
-    "experiments/phase2/results/summary_main.md": "1d6242a57017290c47e02de142df9c62feda4f62705f742b391fd100f2d7cbd6",
-    "experiments/guide/results/s3_summary.txt": "0ccf0a6f79d53f62a7f21edca08543961a991c8a4453e91c142e64700fd21c37",
+    "math/results/m10_summary.json": "345d95cdde7594925120035f7dc64bd0419c6903b34d83a6cb789a518b6e2543",
+    "experiments/round7_audit/AUDIT.md": "705da1f8054d5a5f2eaa437dfa2a8faf2dfd0ebe88a2d1f461b341b5d826080a",
+    "experiments/phase1/results/phase1_tables.md": "f0b73f59521ecc804d420e814b30aa78b28cba2a01021949523ff4292c5ff26b",
+    "experiments/phase2/results/summary_main.md": "24d4609d0dec9392777896f3ab5a7095b36526177e93f9015f9ce6adc09b00e9",
+    "experiments/guide/results/s3_summary.txt": "7a87dc246c1e7286919b98f587163bc712a6bd9ae369e69b46a257dd5eb52ed7",
     "experiments/round9/D2/results/summary.json": "20d3c95caa8f4fbee72747da53885ff900146744bb758de9e5cdc904bf436f96",
     "experiments/round9/reviews/results/D2_raw_audit.json": "8af82543c10ea649f874f9fe7c9a67bfcb2530c7c02e1c7fff2442fea65ff3fe",
-    "experiments/round9/REVIEW.md": "f311cc279f9ed32bc3ecbc36fb78b7470be92f77bb31671bf81c130fee496136",
-    "../CLAUDE_AUDIT_2026-11-16.md": "b97dfd425e9ba022105ae4b0298b57aa1fa25f0ad6a3e13093cf1fc2779cac59",
+    "experiments/round9/REVIEW.md": "5eb47a321e81fff0b55eea062b120f96a2f374228952e1d1302ad41c3a54cf29",
+    "../CLAUDE_AUDIT_2026-11-16.md": "aaf888a650a5445c4eb766978ee254ff430e54644866bee93742a6787318da32",
     "experiments/round9/D1/results/summary.json": "0d7fdd6302640458e830136680751079e2d2aaec973266d4c095f3b97867b62c",
     "experiments/round9/reviews/results/D1_raw_audit.json": "725aef6e600b6726a28edb43656b5202bd8b656ddae46f6996fa5280e83ac5d1",
-    "experiments/round9/D1/STATUS.txt": "6455b9c722c079c1d7daad822a438a1988fabcb225bf468b73777c331a79ec80",
+    "experiments/round9/D1/STATUS.txt": "fd2599ecfd4b858d1e2fa2a0bbfd06d154b863a00d1a718072e9e20b80e83517",
     "experiments/round9/reviews/results/D3_raw_audit.json": "c0edbf048b1b78c7e519a1d312c549e4bf11740ee08ceb2de788f81b4c71b574",
     "experiments/round9/reviews/results/D3_exact_upper_audit.json": "18acb64f979db0c455ca12c66d1329e49c2e71f3f4a3310ebf0d88ba142d4c09",
     "experiments/round9/D3/ROOT_BOUND.md": "7d1c8cfe5e070e43010eb192566596f0103484a89a13ba481b68bb58a8a68fda",
@@ -131,5 +131,6 @@
     "engine\\experiments\\round10\\R0\\claim_ledger.json": "4c5ea6c29c9ace6cd42978a573a6bdcef41f53c15cb77611f4693165b19ec8bc",
     "engine\\math\\NOTES.md": "571b231324a999b2298a6370bbe5b4e12d27aafb5cedbfee8c7d0e767f1214f1"
   },
-  "limits": "Source/citation/status/wording reconciliation only; no new raw empirical estimate or external audit"
+  "limits": "Source/citation/status/wording reconciliation only; no new raw empirical estimate or external audit",
+  "scope": "Curated public-export derivatives; a99 historical public ledger read from publication-lineage Git object"
 }

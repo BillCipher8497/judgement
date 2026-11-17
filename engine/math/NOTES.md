@@ -1256,13 +1256,14 @@ Reproduce: `python experiments/round8/T5/certify.py` from engine (night's hard
 compute cutoff applies). The saved current and average profiles and exact BR
 diagnostics remain in the per-regime JSON/NPZ checkpoints.
 
-## M13 First-decision private-information relaxation (round 9 candidate)
+## M13 First-decision private-information relaxation (round 9)
 
 **Status: proved and externally validated (Claude, 2026-11-16).** Task D3 was
 separately self-validated (Codex) in round9/REVIEW.md; the proof and the exact
 enumeration were then independently rechecked and reproduced by Claude. See
-../../CLAUDE_AUDIT_2026-11-16.md. Feasible upper scores were not independently
-replayed; only their ordering against J1 was checked.
+../../CLAUDE_AUDIT_2026-11-16.md. Claude checked only the feasible uppers' ordering against J1.
+Round11/E5 subsequently confirmed both saved uppers through a fresh forward
+replay, separately self-validated (Codex), not an external replay verdict.
 
 Fix the hero policy and all bids. For each uniformly likely deal d, collapse
 hero actions and forced spoiler moves until the first free spoiler choice or a
@@ -1288,14 +1289,15 @@ not an equilibrium or a solution of the decentralized team problem. It covers
 the fixed-bid, fixed-hero play intervention only; no private-card pooling or
 mediator that observes all cards is allowed.
 
-**Exact enumeration awaiting external validation:** four players, three cards,
+**Exact enumeration externally validated (Claude,2026-11-16):** four players, three cards,
 3 suits x 4 ranks, no undealt stock, all 369,600 ordered deals per regime.
 Trump: PI = 367921/61600, J1 = 446669/73920, difference = 25819/369600 > 0.
 NT: PI = 106419/15400, J1 = 213259/30800, difference = 421/30800 > 0.
-These are integer full-population sums, so sampling CIs do not apply. If the
-proof and implementation pass audit, the positive differences certify a strict
-information cost in these toys, without relying on CFR convergence. They do
-not quantify the 52-card information cost.
+These are integer full-population sums, so sampling CIs do not apply. The
+certified gaps are approximately 0.070 (trump) and 0.014 (NT) hero points. They
+certify a strict information cost and nothing about its magnitude: these lower
+bounds neither establish a material cost nor estimate the actual hidden-team
+optimum minus PI. No CFR convergence or 52-card information-cost claim follows.
 
 Sources: `experiments/round9/D3/ROOT_BOUND.md`, `root_bound.py`,
 `results/summary_final.json`. Saved feasible profiles were replayed against the
@@ -1313,7 +1315,16 @@ routine. The latter integer-replays the already evaluated one-hot checkpoint
 optimization bounds are [446669/73920,574247/92400] and
 [213259/30800,109709/15400], respectively. Neither interval solves the hidden
 team optimum. The review reuses source-fingerprinted derived tree caches;
-independent full construction remains a useful external-audit step.
+Claude subsequently independently reconstructed the complete lower-bound populations; round11/E5 separately confirms the feasible uppers by fresh forward replay, with unchanged fixed hero/bidder definitions and no optimizer.
+
+
+Round11/E5 fresh forward replay gives integer hero-score sums2296988(trump)
+and2633016(NT), each over all369600ordered deals, hence exactly574247/92400
+and109709/15400. Portable private-key policies and per-deal score vectors are
+saved under experiments/round11/E5/results/. Independent integer-vector,
+checkpoint/source and map checks pass. This is same-investigator
+self-validation, not Claude replaying the uppers, extra optimization, a
+solved hidden optimum or a sampling confidence interval.
 
 ## M14 Pure-team sufficiency against fixed non-team policies
 

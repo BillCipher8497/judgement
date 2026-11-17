@@ -1,6 +1,6 @@
 # First-decision private-information lower bound
 
-**Status: proved and externally validated (Claude, 2026-11-16). See the root CLAUDE_AUDIT_2026-11-16.md. Feasible upper-policy independent replay remains task E5.**
+**Status: proved and externally validated (Claude, 2026-11-16). See the root CLAUDE_AUDIT_2026-11-16.md. Feasible uppers were separately confirmed by round11/E5 fresh forward replay, self-validated (Codex); Claude did not replay them.**
 
 The compact tree already fixes all bids and hero moves, and skips forced spoiler moves. Its root for a given deal is therefore the first spoiler choice, or a terminal; no earlier free spoiler action affects the probability of reaching that root.
 

@@ -1,0 +1,24 @@
+{
+  "pass": true,
+  "checks": {
+    "0": {
+      "n_exact_deals": 369600,
+      "hero_score_sum": 2296988,
+      "exact_feasible_upper": "574247/92400",
+      "map_rows_checked": 3848291,
+      "raw_score_sha256": "b783440d2f901fb03788e4487911b0797ec252938372c599816ed5ed424ea185",
+      "pass": true
+    },
+    "-1": {
+      "n_exact_deals": 369600,
+      "hero_score_sum": 2633016,
+      "exact_feasible_upper": "109709/15400",
+      "map_rows_checked": 4261192,
+      "raw_score_sha256": "0f6287158f8935e7572ce24d07f9c9356a64a3a8005618f0788686bcf1558c3a",
+      "pass": true
+    }
+  },
+  "checked_utc": "2026-11-17T03:04:52.507800+00:00",
+  "method": "Fresh byte-vector integer sums, every block checkpoint, source hashes and all portable private-map rows; no optimizer/tree values",
+  "limits": "Same investigator; original fixed hero/bidder definitions retained, private keys exported from source-fingerprinted cache; no external replay or solved hidden optimum; exact complete populations, no sampling CI"
+}

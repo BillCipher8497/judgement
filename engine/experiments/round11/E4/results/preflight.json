@@ -1,0 +1,133 @@
+{
+  "n_wording_checks": 21,
+  "all_resolvable": true,
+  "checks": [
+    {
+      "path": "engine\\paper\\MANUSCRIPT_DRAFT.md",
+      "old_match": true,
+      "already_applied": false,
+      "old_prefix": "Round9 additions are separately self-validated by Codex, the same investigator who implemented "
+    },
+    {
+      "path": "engine\\paper\\MANUSCRIPT_DRAFT.md",
+      "old_match": true,
+      "already_applied": false,
+      "old_prefix": "The round9 information intervention and larger-toy bound remain in the externally pending appen"
+    },
+    {
+      "path": "engine\\paper\\MANUSCRIPT_DRAFT.md",
+      "old_match": true,
+      "already_applied": false,
+      "old_prefix": "Round9 separately self-validated analysis holds guide play fixed"
+    },
+    {
+      "path": "engine\\paper\\MANUSCRIPT_DRAFT.md",
+      "old_match": true,
+      "already_applied": false,
+      "old_prefix": "Before submission, extend the bounded primary-source related-work audit, complete external D1/M"
+    },
+    {
+      "path": "engine\\paper\\MANUSCRIPT_DRAFT.md",
+      "old_match": true,
+      "already_applied": false,
+      "old_prefix": "The particle-MCMC experiment is unfinished and supplies no result to this draft."
+    },
+    {
+      "path": "engine\\paper\\MANUSCRIPT_DRAFT.md",
+      "old_match": true,
+      "already_applied": false,
+      "old_prefix": "## Appendix A. Externally pending round9 material"
+    },
+    {
+      "path": "engine\\paper\\MANUSCRIPT_DRAFT.md",
+      "old_match": true,
+      "already_applied": false,
+      "old_prefix": "**Audit gate:** these are separately self-validated (Codex), not externally validated. No stron"
+    },
+    {
+      "path": "engine\\paper\\MANUSCRIPT_DRAFT.md",
+      "old_match": true,
+      "already_applied": false,
+      "old_prefix": "Scope is n=5, equal S/NT and the implemented policies. [C10]"
+    },
+    {
+      "path": "engine\\paper\\MANUSCRIPT_DRAFT.md",
+      "old_match": true,
+      "already_applied": false,
+      "old_prefix": "New proof and full reconstruction require external audit; review reused derived tree caches plu"
+    },
+    {
+      "path": "engine\\paper\\EVIDENCE.md",
+      "old_match": true,
+      "already_applied": false,
+      "old_prefix": "These are working drafts, with broader literature/novelty review and external D1/M13 audit stil"
+    },
+    {
+      "path": "engine\\paper\\EVIDENCE.md",
+      "old_match": true,
+      "already_applied": false,
+      "old_prefix": "## Round 9 \u2014 separately self-validated (Codex), external audit pending"
+    },
+    {
+      "path": "engine\\paper\\EVIDENCE.md",
+      "old_match": true,
+      "already_applied": false,
+      "old_prefix": "Codex is now head of research. These additions passed separate reviews in `experiments/round9/R"
+    },
+    {
+      "path": "engine\\paper\\EVIDENCE.md",
+      "old_match": true,
+      "already_applied": false,
+      "old_prefix": "Separate self-review is complete; causal headline wording still awaits external D1 audit."
+    },
+    {
+      "path": "engine\\paper\\EVIDENCE.md",
+      "old_match": true,
+      "already_applied": false,
+      "old_prefix": "conditional on M13's pending external audit."
+    },
+    {
+      "path": "engine\\paper\\EVIDENCE.md",
+      "old_match": true,
+      "already_applied": false,
+      "old_prefix": "Integer J1\u2212PI gaps are25819/369600 and421/30800."
+    },
+    {
+      "path": "engine\\paper\\EVIDENCE.md",
+      "old_match": true,
+      "already_applied": false,
+      "old_prefix": "The proof is **proved (pending external audit)**."
+    },
+    {
+      "path": "engine\\paper\\EVIDENCE.md",
+      "old_match": true,
+      "already_applied": false,
+      "old_prefix": "External full reconstruction remains requested."
+    },
+    {
+      "path": "engine\\math\\NOTES.md",
+      "old_match": true,
+      "already_applied": false,
+      "old_prefix": "**Exact enumeration awaiting external validation:**"
+    },
+    {
+      "path": "engine\\math\\NOTES.md",
+      "old_match": true,
+      "already_applied": false,
+      "old_prefix": "These are integer full-population sums, so sampling CIs do not apply. If the\nproof and implemen"
+    },
+    {
+      "path": "engine\\math\\NOTES.md",
+      "old_match": true,
+      "already_applied": false,
+      "old_prefix": "independent full construction remains a useful external-audit step."
+    },
+    {
+      "path": "engine\\experiments\\round9\\D3\\README.md",
+      "old_match": true,
+      "already_applied": false,
+      "old_prefix": "The first-decision proof remains pending external audit."
+    }
+  ],
+  "method": "AST literal/old-wording source inspection only; no mutation, simulation or empirical analysis"
+}

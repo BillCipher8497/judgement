@@ -2,6 +2,8 @@
 
 This map connects the outline to saved evidence. Empirical ± values are 95% intervals; counts refer to independent units used in the interval. Exact algebra and complete enumerations do not require sampling intervals.
 
+Local manuscript artifacts: `MANUSCRIPT_DRAFT.md` has an11-group quantitative source ledger under `experiments/round10/R0/`; `RELATED_WORK_DRAFT.md` has a bounded primary-source map under R1. These remain working drafts with broader literature/novelty review outstanding. Claude externally validated D1/D2 and M13/M14 on2026-11-16; M14 is a fixed-hero pure-team clarification, not a new observed card-game value. R4 execution and any resource shortfall are tracked in the local round11/E3 packet; no unexecuted or unvalidated stage supplies performance evidence. E0 freshly passed262tests/1optional OpenSpiel skip (49.07s pytest,53.910273s startup-inclusive output interval).
+
 | Claim | Evidence and uncertainty | Source | Scope |
 |---|---|---|---|
 | Score is general-sum even with fixed bids | Exact two-card engine witness: same deal and bids produce table scores 30 and 31 under different legal discards | `tests/test_round7_welfare.py::test_fixed_bids_play_changes_total_score`; M11 in `math/NOTES.md` | Standard exact-hit score; distinguish final victory utility |
@@ -33,6 +35,46 @@ The legacy H1 game summary reads split-tie wins from the saved `wins` array. M11
 The original PI/hidden comparison mixed all five trump states on the hidden side against only S/NT on the PI side. The standardized M11 ratio corrects that mixture difference. It cannot correct the hero/bid-policy difference without another experiment.
 
 The living Claude report was not accessible during this session. The local snapshot and experiment logs provide the evidence above; reconciliation with that report and literature review remain manuscript tasks.
+
+## Round 9 — separate self-review and completed external-audit updates
+
+Codex is head of research. The original separate reviews in `experiments/round9/REVIEW.md` were by the same investigator; Claude subsequently independently recomputed D1/D2 and rebuilt the complete D3 lower-bound enumeration, and externally validated M13/M14 (root CLAUDE_AUDIT_2026-11-16.md). D1 wording is confined to its audited intervention. D4 retains its original self-review label. Fresh feasible-upper forward replay has now passed separately in E5, self-validated (Codex). D5 remains outside this evidence map/publication scope.
+
+### D1: implemented information-intervention diagnostic
+
+Fixed TA+ hero, fixed ModelBidder bids, five cards, equal S/NT mixture, dealer-balanced, hero seat0 as in the a1 design. All arms use the same seeded deal and per-seat policy RNG streams. The preregistered primary is revealed-hero minus own/public-information surplus share. Original paired-deal bootstrap95% intervals:
+
+| Stage | Seed base | Paired deals | Primary share contrast |
+|---|---|---|---|
+| Discovery | 1,600M | 1,000 | 0.369315 [0.315244,0.424218] |
+| Fresh replication | 1,610M | 1,000 | 0.341204 [0.289874,0.394787] |
+
+Sources: `round9/D1/results/summary.json`, all2,000 raw five-arm files; independent legality/scoring/deal audit and bootstrap in `round9/reviews/audit_d1.py`, `results/D1_raw_audit.json`. All-information PIMC and omniscient reference trajectories match on every deal. Own/hero/all differ only in the world sampler, with K16 per active decision, identical solver/fallback/tie-breaking. Active-decision counts and total compute are endogenous. Own information includes public bids/history/voids; sampling omits bid/play likelihoods. The omniscient paranoid reference internally assumes a maximizing hero and is not a certified optimum against the actual fixed TA+ hero. These are policy-specific round diagnostics, not optimal hidden punishment or a full-game/full-deck theorem. Claude independently recomputed and externally validated the intervention. Causal wording is limited to revealing the hero hand to this particular K16 sampler at n5 with fixed TA+v2 hero/bids; it does not generalize to other heroes, optimal coalitions, the full 25-round ladder or humans. K is fixed per active decision, not total wall time.
+
+### D2: replicated guide bidder score decomposition
+
+Guide play is held fixed in both arms against3×ModelBidder/TA, challenger seatg%4, full25-round games paired by seed. ModelBidder−guide bidding gives **5.29425 ±0.82665 points/game** at1,500M discovery and **5.05950 ±0.81963** at1,510M fresh replication, each n=4,000 paired games,95% CIs. Ties-as-win differences from totals are **0.04975 ±0.01510** and **0.03375 ±0.01533**, same n/coverage. Intervals use full-game clusters within rotated-seat strata; repeated rounds stay together.
+
+The discovery-frozen cells are n2/trump/position2, n7/trump/position3(dealer), n10/trump/position1. Their replication loss contributions per full game are respectively **0.23875 ±0.07760**, **0.15175 ±0.11261**, **0.13625 ±0.12954**, each n=4,000 game clusters (2,000 contributing rounds), nominal95% CIs. Selected discovery intervals are descriptive. A post-review Bonferroni familywise95% sensitivity retains the first two positive cells but includes zero for n10; do not claim three familywise-confirmed cells or unchanged top-three ranking. No new bidding feature is validated.
+
+Sources: `round9/D2/results/raw_{1500000000,1510000000}.jsonl`, `summary.json`, `frozen_top3.json`; independent all-cell/context/deal audit `round9/reviews/audit_d2.py`, `results/D2_raw_audit.json`, `D2_multiplicity.json`. ModelBidder is a comparator, not ground truth; guide−model bid difference is not oracle error. Whole-bidder replacement includes later bid and target-aware play responses. The historical overall guide deficit versus TA must not be called its isolated bidding cost. No human playtest or feature retuning occurred.
+
+### D3: larger fixed toy, exact optimization bounds
+
+Four players,3 suits×4 ranks, three cards each, no stock; fixed myopic bids and original toy TA hero on every counterfactual branch. All369,600 ordered deals per regime are enumerated. Spoilers retain separate own-hand/public-history information sets and optimize play only. Complete-population values have no sampling95% CI.
+
+| Regime | Baseline hero | Composed independent BR | PI lower | J1 private-root lower | Exact feasible upper |
+|---|---|---|---|---|---|
+| Trump | 8.7291991342 | 7.5562472944 | 367921/61600 | 446669/73920 | 574247/92400 |
+| NT | 10.0370725108 | 7.8805194805 | 106419/15400 | 213259/30800 | 109709/15400 |
+
+Each row has n=369,600 full-population deals. The exact hidden-team optimum lies in **[446669/73920,574247/92400]** (trump) and **[213259/30800,109709/15400]** (NT), with M13's proof/lower bounds externally validated by Claude; the feasible uppers are separately confirmed by E5 fresh forward replay, self-validated (Codex). These are optimization bounds, not confidence intervals. Integer J1−PI gaps are25819/369600 ≈ 0.070 and421/30800 ≈ 0.014 hero points. They certify a strict information cost and nothing about its magnitude; they neither establish a material effect nor estimate the actual optimal hidden-team cost minus PI. M13 constrains the first free spoiler action by private information, then grants omniscience; no earlier free action changes root reach. The proof is **proved and externally validated (Claude,2026-11-16)**. No CFR convergence or solved hidden optimum is claimed. Previously evaluated one-hot checkpoint50 policies supply integer-replayed feasible uppers; later review performed no extra training. The original3-hour box includes infrastructure failures/pauses; the extra trump run completed120 updates with best selected at50; main NT final completed count is unknown.
+
+Sources: `round9/D3/results/summary_final.json`, saved profiles and `review_pure_trump_*.npz`, `D3/ROOT_BOUND.md`, M13; independent grouped recurrences/BR/manual-rule audit `round9/reviews/audit_d3.py`, integer upper audit `exact_policy_d3.py` and their result packets. Review reused source-fingerprinted derived construction caches, checked16 manual game trees, and did not independently rebuild the whole population. Claude subsequently independently reconstructed all369600deals/regime and reproduced exact PI/J1 values; Claude checked only the feasible uppers' ordering, not their replay. E5 subsequently completed that distinct numerical check: all369600deals/regime, exact integer score vectors reproduce574247/92400 and109709/15400, with portable private policies. This is same-investigator self-validation, not a new Claude upper-replay verdict. Baseline support completion and private BR caveats are in D3/README.md. Neither this toy nor its positive bound quantifies the52-card information gap.
+
+### D4: source-faithful printable card
+
+`paper/guide_card.md` condenses GUIDE.txt into bidding count/hook advice and eight ordered play rules. The supplied `round9/D4/results/guide_card.pdf` is one A4 page, with exact source-word-order and rendered visual checks recorded in `render_audit.json`. No strategy/performance result or human playtest is added; inherited source edge cases are not claimed to be resolved. Arbitrary Markdown renderers may paginate differently.
 
 ## Round 8 — Claude-validated additions (2026-11-16)
 
@@ -113,31 +155,3 @@ The frozen zero-weight rule was screened at 1,300M (n=2,000 paired games) and va
 From `engine/`, use `python experiments/round8/run_tasks.py T3` for the original/fresh grids (completed statuses skip by design; direct `T3/run.py` also resumes). Run each task's `analyze.py` where present, and `T3/verify.py`, `T5/certify.py`, `T6/verify.py` for the saved-data audits. T4 and T5 each provide a standalone `worker.py`; T6 `run.py` enforces its one-candidate freeze. Historical runners retain the overnight 07:30 ET hard deadline and therefore deliberately will not start compute after that date; use saved raw data for analysis, and preregister a fresh deadline and seeds for a new experiment. Exact commands and all seed bases are recorded in each STATUS.txt.
 
 The final integrated suite passed **256 tests, 1 optional OpenSpiel module skipped** using `python -m pytest -q -p no:cacheprovider` (16.08 s). Existing core modules and existing policies are unchanged; only the new experimental guide-v2 policy was added.
-
-## Released round9 additions
-
-D1,D2,D4 passed separate Codex self-reviews. These are not independent external audits; strong D1 causal language remains gated.
-
-### D1: implemented information-intervention diagnostic
-
-Fixed TA+ hero, fixed ModelBidder bids, five cards, equal S/NT mixture, dealer-balanced, hero seat0 as in the a1 design. All arms use the same seeded deal and per-seat policy RNG streams. The preregistered primary is revealed-hero minus own/public-information surplus share. Original paired-deal bootstrap95% intervals:
-
-| Stage | Seed base | Paired deals | Primary share contrast |
-|---|---|---|---|
-| Discovery | 1,600M | 1,000 | 0.369315 [0.315244,0.424218] |
-| Fresh replication | 1,610M | 1,000 | 0.341204 [0.289874,0.394787] |
-
-Sources: `round9/D1/results/summary.json`, all2,000 raw five-arm files; independent legality/scoring/deal audit and bootstrap in `round9/reviews/audit_d1.py`, `results/D1_raw_audit.json`. All-information PIMC and omniscient reference trajectories match on every deal. Own/hero/all differ only in the world sampler, with K16 per active decision, identical solver/fallback/tie-breaking. Active-decision counts and total compute are endogenous. Own information includes public bids/history/voids; sampling omits bid/play likelihoods. The omniscient paranoid reference internally assumes a maximizing hero and is not a certified optimum against the actual fixed TA+ hero. These are policy-specific round diagnostics, not optimal hidden punishment or a full-game/full-deck theorem. Separate self-review is complete; causal headline wording still awaits external D1 audit.
-
-### D2: replicated guide bidder score decomposition
-
-Guide play is held fixed in both arms against3×ModelBidder/TA, challenger seatg%4, full25-round games paired by seed. ModelBidder−guide bidding gives **5.29425 ±0.82665 points/game** at1,500M discovery and **5.05950 ±0.81963** at1,510M fresh replication, each n=4,000 paired games,95% CIs. Ties-as-win differences from totals are **0.04975 ±0.01510** and **0.03375 ±0.01533**, same n/coverage. Intervals use full-game clusters within rotated-seat strata; repeated rounds stay together.
-
-The discovery-frozen cells are n2/trump/position2, n7/trump/position3(dealer), n10/trump/position1. Their replication loss contributions per full game are respectively **0.23875 ±0.07760**, **0.15175 ±0.11261**, **0.13625 ±0.12954**, each n=4,000 game clusters (2,000 contributing rounds), nominal95% CIs. Selected discovery intervals are descriptive. A post-review Bonferroni familywise95% sensitivity retains the first two positive cells but includes zero for n10; do not claim three familywise-confirmed cells or unchanged top-three ranking. No new bidding feature is validated.
-
-Sources: `round9/D2/results/raw_{1500000000,1510000000}.jsonl`, `summary.json`, `frozen_top3.json`; independent all-cell/context/deal audit `round9/reviews/audit_d2.py`, `results/D2_raw_audit.json`, `D2_multiplicity.json`. ModelBidder is a comparator, not ground truth; guide−model bid difference is not oracle error. Whole-bidder replacement includes later bid and target-aware play responses. The historical overall guide deficit versus TA must not be called its isolated bidding cost. No human playtest or feature retuning occurred.
-
-### D4: source-faithful printable card
-
-`paper/guide_card.md` condenses GUIDE.txt into bidding count/hook advice and eight ordered play rules. The supplied `round9/D4/results/guide_card.pdf` is one A4 page, with exact source-word-order and rendered visual checks recorded in `render_audit.json`. No strategy/performance result or human playtest is added; inherited source edge cases are not claimed to be resolved. Arbitrary Markdown renderers may paginate differently.
-

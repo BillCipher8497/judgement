@@ -1,21 +1,32 @@
 {
-  "parent": "a99c9577334719a04e1b6d6484c158081a71f17d",
-  "source_local_commit": "a6b162356518e738cbd639196f1fc7ca5f4fb836",
-  "release": "round11 E1 externally cleared D3/M13 and M14/R3",
+  "parent": "4f95e77c5445fd666fbbf9ef936b2dde43f070b1",
+  "source_local_commit": "46ec2f5b1763b2c8c815e97fd2ba0504184beb2d",
+  "release": "audited manuscript/eleven-group ledger reconciliation",
   "included_paths": [
-    "CLAUDE_AUDIT_2026-11-16.md",
-    "engine/experiments/round9/D3",
-    "engine/experiments/round10/R3",
-    "engine/math/NOTES.md",
+    "engine/paper/MANUSCRIPT_DRAFT.md",
+    "engine/paper/EVIDENCE.md",
     "engine/experiments/round10/R0/claim_ledger.json",
-    "engine/experiments/round9/reviews/audit_d3.py",
-    "engine/experiments/round9/reviews/exact_policy_d3.py",
-    "engine/experiments/round9/reviews/results/D3_raw_audit.json",
-    "engine/experiments/round9/reviews/results/D3_exact_upper_audit.json",
-    "engine/experiments/round11/E0",
-    "engine/tests/test_round9_frozen_toy.py"
+    "engine/math/NOTES.md",
+    "engine/experiments/round9/D3/README.md",
+    "engine/experiments/round9/D3/ROOT_BOUND.md",
+    "engine/experiments/round9/D3/STATUS.txt",
+    "engine/experiments/round11/E4/reconcile.py",
+    "engine/experiments/round11/E4/audit.py",
+    "engine/experiments/round11/E4/STATUS.txt",
+    "engine/experiments/round11/E4/results/preflight.json",
+    "engine/experiments/round11/E4/results/verification.json",
+    "engine/experiments/round11/E5",
+    "engine/tests/test_round11_replay_rules.py"
   ],
-  "test_gate": {
+  "E5_forward_replay_included": true,
+  "held": [
+    "D5",
+    "unvalidated NT stages",
+    "mixed private history",
+    "third-party PDF"
+  ],
+  "validation": "Claude external proof/lower-bound audit; source reconciliation and optional E5 fresh forward replay self-validated(Codex)",
+  "E0_local_test_gate": {
     "pytest_seconds": 49.07,
     "wall_seconds": 53.910273,
     "command": "python -m pytest -q -p no:cacheprovider",
@@ -28,7 +39,5 @@
     "output_created_utc": "2026-11-17T00:03:19.5213834Z",
     "output_completed_utc": "2026-11-17T00:04:13.4316564Z"
   },
-  "held": "D5 and private mixed integration/history",
-  "upper_replay": "E5 outstanding; audit checked ordering only",
-  "manuscript_reconciliation": "E4 pending; ledger C10/C11 now cleared"
+  "public_tree_test": "required before push; stored in a subsequent ordinary documentation child"
 }

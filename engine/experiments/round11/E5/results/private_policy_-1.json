@@ -1,0 +1,11 @@
+{
+  "trump": -1,
+  "n_private_keys": 4261192,
+  "policy_sha256": "4f11907409a46819983f9b8d5c62312c364911e4b449c686af4159a05a2a3b0b",
+  "mapping_sha256": "db3f92381f76644d8001ee9196a44d78e0337ae36f2880bba0086b6785179ba7",
+  "derived_cache_sha256": "a4bb349e97160162e584507df66e0f26e6c3d7fb1e59e22a7c3d81771d04124b",
+  "canonical_cache_source_sha256": "9583d741c444b1a72dc4e362f006ea47ce047b45dc65f18a939e783b11ddeeba",
+  "cache_source_sha256": "9583d741c444b1a72dc4e362f006ea47ce047b45dc65f18a939e783b11ddeeba",
+  "semantics": "private seat+sorted own initial hand+full public bids/cards -> card",
+  "cache_use": "keys/action validity ONLY; no edges, terminal values, roots or optimization read"
+}

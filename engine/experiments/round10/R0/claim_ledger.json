@@ -185,14 +185,15 @@
     },
     {
       "id": "C09",
-      "status": "self-validated (Codex), whole-bidder intervention",
+      "status": "externally validated (Claude,2026-11-16), whole-bidder intervention only; multiplicity caveat retained",
       "kind": "paired games",
       "n": 4000,
       "coverage": 0.95,
       "primary_sources": [
         "experiments/round9/D2/results/summary.json",
         "experiments/round9/reviews/results/D2_raw_audit.json",
-        "experiments/round9/REVIEW.md"
+        "experiments/round9/REVIEW.md",
+        "../CLAUDE_AUDIT_2026-11-16.md"
       ],
       "draft_strings": [
         "5.05950 ±0.81963",
@@ -212,7 +213,8 @@
       "primary_sources": [
         "experiments/round9/D1/results/summary.json",
         "experiments/round9/reviews/results/D1_raw_audit.json",
-        "experiments/round9/HANDOFF_CODEX.md"
+        "experiments/round9/D1/STATUS.txt",
+        "../CLAUDE_AUDIT_2026-11-16.md"
       ],
       "draft_strings": [
         "0.369315 [0.315244,0.424218]",
@@ -226,13 +228,17 @@
     },
     {
       "id": "C11",
-      "status": "M13 proof and complete-population lower bounds externally validated (Claude,2026-11-16); independent feasible-upper replay remains E5",
+      "status": "M13 proof/lower bounds externally validated(Claude,2026-11-16); feasible uppers freshly forward-replayed and self-validated(Codex,round11/E5)",
       "kind": "complete enumeration, appendix only",
       "n_per_regime": 369600,
       "primary_sources": [
         "experiments/round9/reviews/results/D3_raw_audit.json",
         "experiments/round9/reviews/results/D3_exact_upper_audit.json",
-        "experiments/round9/D3/ROOT_BOUND.md"
+        "experiments/round9/D3/ROOT_BOUND.md",
+        "../CLAUDE_AUDIT_2026-11-16.md",
+        "experiments/round11/E5/results/replay_0.json",
+        "experiments/round11/E5/results/replay_-1.json",
+        "experiments/round11/E5/results/verification.json"
       ],
       "draft_strings": [
         "[446669/73920,574247/92400]",
@@ -251,8 +257,40 @@
     "or optimal punishers",
     "per-hand rollout-fitted diagnostics",
     "not human-learning evidence",
-    "particle-MCMC experiment is unfinished"
+    "particle-MCMC experiment supplies no validated improvement"
   ],
   "external_gate_ids": [],
-  "publication_reconciliation": "C10 and C11 cleared for release; original public manuscript has nine groups pending E4 reconciliation. Feasible-upper independent replay remains E5."
+  "publication_reconciliation": {
+    "historical_original_public_groups": [
+      "C01",
+      "C02",
+      "C03",
+      "C04",
+      "C05",
+      "C06",
+      "C07",
+      "C08",
+      "C09"
+    ],
+    "current_cleared_groups": [
+      "C01",
+      "C02",
+      "C03",
+      "C04",
+      "C05",
+      "C06",
+      "C07",
+      "C08",
+      "C09",
+      "C10",
+      "C11"
+    ],
+    "newly_cleared": {
+      "C10": "audited D1 intervention only",
+      "C11": "M13 proof/lower bounds externalClaude; feasible uppers fresh forward replay self-validatedCodex(E5), not externally replayed"
+    },
+    "local_only_claim_groups_after_reconciliation": [],
+    "withheld_research": "D5; completed R4/E3 packet pending publication/reproduction cross-check; mixed private history. None is another manuscript quantitative group",
+    "why_original_difference": "C10 strong D1 wording and C11 new proof were externally gated at original9-group publication; those gates are now cleared, not silently lost or relabelled"
+  }
 }

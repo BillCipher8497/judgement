@@ -12,3 +12,6 @@ The manuscript/ledger are publication derivatives with the unreleased appendix r
 
 ## Round11 ordinary-child release
 The newly cleared D3/M13 and M14/R3 scope, full external audit and eleven-group ledger are released after the fresh E0 test pass. This extends the existing publication lineage without private ancestry. D5 remains withheld. Feasible-upper replay and manuscript reconciliation are explicitly tracked as E5/E4. Initial-snapshot exclusions are historical; current scope is in PUBLICATION_MANIFEST.json.
+
+## Round11 manuscript reconciliation
+C10/C11 external gates are cleared and the manuscript/ledger now agree on11claim groups. C3 magnitude limits and D1 intervention scope are explicit. New same-investigator checks are labelled; D5 and unvalidated NT stages remain local. The initial snapshot manifest is historical, not the current exclusion list.

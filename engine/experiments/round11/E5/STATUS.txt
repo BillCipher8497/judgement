@@ -1,0 +1,81 @@
+2026-11-16 ET PREDECLARATION, before E5 replay. Acceptance: fresh forward play of the unchanged saved private pure policies on all369600ordered deals/regime reproduces exact hero means574247/92400(trump) and109709/15400(NT). Complete enumeration, no seed/samplingCI. No optimizer, search, cached transitions/terminal values/root sums or existing evaluator used. Derived source-fingerprinted cache supplies only the private-key-to-saved-action association, exported to a portable gzipped map. Original fixed myopic bidder/TA hero definitions retained because they define the game; manual fresh deal/legality/trick/scoring path, every requested action checked legal. Lookup uses only acting seat+own initial hand+public bids/cards. This is an independent evaluation path by the same investigator, not a new external validation.
+Hard stop23:00ET(2026-11-17T04:00Z), one Judgement worker only after E2/E3 stop. Incremental append-only checkpoint each1000completed deals; progress10000, raw portable policies/source hashes and integer score sum retained. If mismatch, report/fix evaluator independently, never tune/change saved policy to expected score. If resource deadline prevents full populations, preserve checkpoint and report incomplete rather than claiming pass. No original D3 timebox reset or additional optimization.
+Pre-execution reproducibility review: portable private action maps retain raw cache/policy SHA256 plus line-ending-normalized builder fingerprints for equivalent Git checkouts. No substantive source change is accepted; fixed D5 hashes are unaffected. Forward replay may stop a deal at mathematical hit impossibility, because its hero score is then exactly zero; this is not optimization. Complete deal count and card rules have new exhaustive regression checks, queued in the integrated suite after E2 exits.
+Before execution, added incrementally saved one-byte-per-deal hero-score vectors to strengthen later cross-checking. Blocks of1000 precede sum checkpoints; preserve any uncheckpointed tail, verify retained length/sum and final SHA256. No candidate, population or expected rational changed.
+2026-11-16 21:57ET BEFORE actual replay launch. E0-E4 tasks complete/reviewed; no owned scientific child remains. Confirmed23:00ET ABSOLUTE stop, one worker, checkpoint/vector blocks every1000deals. Fresh manual forward evaluation of unchanged source/policy hashes on all369600deals/regime; no optimiser/cached edges/values; expected574247/92400 and109709/15400 exact, no samplingCI. Export portable private-key maps plus rawscorevectors; all output incremental. Later equivalent-checkout source validation canonicalizes CRLF only, retaining rawSHA; fresh output-directory override supports a genuine independent retraversal instead of skipping completed checkpoints. Original D3 optimisation timebox is not reset.
+2026-11-17T02:58:04.003902+00:00 trump0: fresh replay10000/369600deals
+2026-11-17T02:58:09.795218+00:00 trump0: fresh replay20000/369600deals
+2026-11-17T02:58:11.175674+00:00 trump0: fresh replay30000/369600deals
+2026-11-17T02:58:13.498942+00:00 trump0: fresh replay40000/369600deals
+2026-11-17T02:58:14.708151+00:00 trump0: fresh replay50000/369600deals
+2026-11-17T02:58:15.578800+00:00 trump0: fresh replay60000/369600deals
+2026-11-17T02:58:16.318387+00:00 trump0: fresh replay70000/369600deals
+2026-11-17T02:58:17.099736+00:00 trump0: fresh replay80000/369600deals
+2026-11-17T02:58:18.094225+00:00 trump0: fresh replay90000/369600deals
+2026-11-17T02:58:23.944599+00:00 trump0: fresh replay100000/369600deals
+2026-11-17T02:58:25.969936+00:00 trump0: fresh replay110000/369600deals
+2026-11-17T02:58:27.113667+00:00 trump0: fresh replay120000/369600deals
+2026-11-17T02:58:28.159876+00:00 trump0: fresh replay130000/369600deals
+2026-11-17T02:58:29.022623+00:00 trump0: fresh replay140000/369600deals
+2026-11-17T02:58:29.863831+00:00 trump0: fresh replay150000/369600deals
+2026-11-17T02:58:30.685819+00:00 trump0: fresh replay160000/369600deals
+2026-11-17T02:58:32.868204+00:00 trump0: fresh replay170000/369600deals
+2026-11-17T02:58:34.171360+00:00 trump0: fresh replay180000/369600deals
+2026-11-17T02:58:35.094055+00:00 trump0: fresh replay190000/369600deals
+2026-11-17T02:58:35.794320+00:00 trump0: fresh replay200000/369600deals
+2026-11-17T02:58:36.409796+00:00 trump0: fresh replay210000/369600deals
+2026-11-17T02:58:37.205558+00:00 trump0: fresh replay220000/369600deals
+2026-11-17T02:58:38.081541+00:00 trump0: fresh replay230000/369600deals
+2026-11-17T02:58:39.228595+00:00 trump0: fresh replay240000/369600deals
+2026-11-17T02:58:40.201502+00:00 trump0: fresh replay250000/369600deals
+2026-11-17T02:58:41.170606+00:00 trump0: fresh replay260000/369600deals
+2026-11-17T02:58:42.205778+00:00 trump0: fresh replay270000/369600deals
+2026-11-17T02:58:43.151898+00:00 trump0: fresh replay280000/369600deals
+2026-11-17T02:58:43.912649+00:00 trump0: fresh replay290000/369600deals
+2026-11-17T02:58:44.773242+00:00 trump0: fresh replay300000/369600deals
+2026-11-17T02:58:45.665082+00:00 trump0: fresh replay310000/369600deals
+2026-11-17T02:58:46.451788+00:00 trump0: fresh replay320000/369600deals
+2026-11-17T02:58:47.295019+00:00 trump0: fresh replay330000/369600deals
+2026-11-17T02:58:48.247499+00:00 trump0: fresh replay340000/369600deals
+2026-11-17T02:58:49.047765+00:00 trump0: fresh replay350000/369600deals
+2026-11-17T02:58:49.985805+00:00 trump0: fresh replay360000/369600deals
+2026-11-17T02:58:50.764237+00:00 {"trump": 0, "n_exact_deals": 369600, "hero_score_sum": 2296988, "exact_feasible_upper": "574247/92400", "expected": "574247/92400", "match": true, "private_policy_lookups": 1204671, "raw_hero_scores_file": "hero_scores_0.bin", "raw_hero_scores_sha256": "b783440d2f901fb03788e4487911b0797ec252938372c599816ed5ed424ea185", "seconds_current_segment": 63.66511400003219, "mapping": {"trump": 0, "n_private_keys": 3848291, "policy_sha256": "0dc599132b99f6cd3e3a68f7dbbc73d3a82bbf1d4e277976856f1bd510623f59", "mapping_sha256": "2051ff39a04b89528b4f6851b385570b6732f24eb7c7da751e72786a64c1ba28", "derived_cache_sha256": "67de7fae8845dd79e1b9f6d02347bcd27cc1d19dc32c1f8fef79ab8c32403a22", "canonical_cache_source_sha256": "9583d741c444b1a72dc4e362f006ea47ce047b45dc65f18a939e783b11ddeeba", "cache_source_sha256": "9583d741c444b1a72dc4e362f006ea47ce047b45dc65f18a939e783b11ddeeba", "semantics": "private seat+sorted own initial hand+full public bids/cards -> card", "cache_use": "keys/action validity ONLY; no edges, terminal values, roots or optimization read"}, "source_sha256": {"experiments\\round11\\E5\\replay.py": "d934bfb0939ce471aee14e7740b10960db2937b4f971b2eafa72f0f938d20489", "experiments\\round9\\D3\\bounded_ta.py": "eb6566aaa59c876e0517dccd06ed8a0b90d228b12488ef91006407565aa33d4e", "judgement\\cfr\\heuristics.py": "e4f0afd7d417a3114b887a02b826b010e9c9f010eef7ebf0fe0617be0764f0c9", "judgement\\cfr\\toy.py": "7b3233939421dadfd16dc7e4d8cf11fd935e6eb89c011487f29fa2bb5815ff93"}, "source_raw_sha256": {"experiments\\round11\\E5\\replay.py": "d934bfb0939ce471aee14e7740b10960db2937b4f971b2eafa72f0f938d20489", "experiments\\round9\\D3\\bounded_ta.py": "eb6566aaa59c876e0517dccd06ed8a0b90d228b12488ef91006407565aa33d4e", "judgement\\cfr\\heuristics.py": "e4f0afd7d417a3114b887a02b826b010e9c9f010eef7ebf0fe0617be0764f0c9", "judgement\\cfr\\toy.py": "7b3233939421dadfd16dc7e4d8cf11fd935e6eb89c011487f29fa2bb5815ff93"}, "source_hash_convention": "Python source CRLF normalized to LF; raw SHA also retained", "method": "Independent forward deals/legality/trick/scoring; original fixed hero/bidder definitions; no optimizer/cached edges/values", "uncertainty": "Complete finite chance population, exact rational; no sampling CI; feasible upper, not solved optimum"}
+2026-11-17T02:59:21.177938+00:00 trump-1: fresh replay10000/369600deals
+2026-11-17T02:59:26.479099+00:00 trump-1: fresh replay20000/369600deals
+2026-11-17T02:59:27.734932+00:00 trump-1: fresh replay30000/369600deals
+2026-11-17T02:59:30.232947+00:00 trump-1: fresh replay40000/369600deals
+2026-11-17T02:59:31.593150+00:00 trump-1: fresh replay50000/369600deals
+2026-11-17T02:59:32.510096+00:00 trump-1: fresh replay60000/369600deals
+2026-11-17T02:59:33.460355+00:00 trump-1: fresh replay70000/369600deals
+2026-11-17T02:59:34.467735+00:00 trump-1: fresh replay80000/369600deals
+2026-11-17T02:59:35.472476+00:00 trump-1: fresh replay90000/369600deals
+2026-11-17T02:59:42.404756+00:00 trump-1: fresh replay100000/369600deals
+2026-11-17T02:59:44.710324+00:00 trump-1: fresh replay110000/369600deals
+2026-11-17T02:59:46.045123+00:00 trump-1: fresh replay120000/369600deals
+2026-11-17T02:59:47.122968+00:00 trump-1: fresh replay130000/369600deals
+2026-11-17T02:59:47.978098+00:00 trump-1: fresh replay140000/369600deals
+2026-11-17T02:59:48.981188+00:00 trump-1: fresh replay150000/369600deals
+2026-11-17T02:59:50.173704+00:00 trump-1: fresh replay160000/369600deals
+2026-11-17T02:59:52.597665+00:00 trump-1: fresh replay170000/369600deals
+2026-11-17T02:59:53.967794+00:00 trump-1: fresh replay180000/369600deals
+2026-11-17T02:59:54.909975+00:00 trump-1: fresh replay190000/369600deals
+2026-11-17T02:59:55.891846+00:00 trump-1: fresh replay200000/369600deals
+2026-11-17T02:59:56.610117+00:00 trump-1: fresh replay210000/369600deals
+2026-11-17T02:59:57.871291+00:00 trump-1: fresh replay220000/369600deals
+2026-11-17T02:59:59.202188+00:00 trump-1: fresh replay230000/369600deals
+2026-11-17T03:00:00.184498+00:00 trump-1: fresh replay240000/369600deals
+2026-11-17T03:00:01.255046+00:00 trump-1: fresh replay250000/369600deals
+2026-11-17T03:00:02.404048+00:00 trump-1: fresh replay260000/369600deals
+2026-11-17T03:00:03.515859+00:00 trump-1: fresh replay270000/369600deals
+2026-11-17T03:00:04.602804+00:00 trump-1: fresh replay280000/369600deals
+2026-11-17T03:00:05.638456+00:00 trump-1: fresh replay290000/369600deals
+2026-11-17T03:00:06.923276+00:00 trump-1: fresh replay300000/369600deals
+2026-11-17T03:00:08.046640+00:00 trump-1: fresh replay310000/369600deals
+2026-11-17T03:00:09.117523+00:00 trump-1: fresh replay320000/369600deals
+2026-11-17T03:00:10.451098+00:00 trump-1: fresh replay330000/369600deals
+2026-11-17T03:00:11.865528+00:00 trump-1: fresh replay340000/369600deals
+2026-11-17T03:00:13.011151+00:00 trump-1: fresh replay350000/369600deals
+2026-11-17T03:00:14.307683+00:00 trump-1: fresh replay360000/369600deals
+2026-11-17T03:00:15.649382+00:00 {"trump": -1, "n_exact_deals": 369600, "hero_score_sum": 2633016, "exact_feasible_upper": "109709/15400", "expected": "109709/15400", "match": true, "private_policy_lookups": 1243384, "raw_hero_scores_file": "hero_scores_-1.bin", "raw_hero_scores_sha256": "0f6287158f8935e7572ce24d07f9c9356a64a3a8005618f0788686bcf1558c3a", "seconds_current_segment": 70.50456269999268, "mapping": {"trump": -1, "n_private_keys": 4261192, "policy_sha256": "4f11907409a46819983f9b8d5c62312c364911e4b449c686af4159a05a2a3b0b", "mapping_sha256": "db3f92381f76644d8001ee9196a44d78e0337ae36f2880bba0086b6785179ba7", "derived_cache_sha256": "a4bb349e97160162e584507df66e0f26e6c3d7fb1e59e22a7c3d81771d04124b", "canonical_cache_source_sha256": "9583d741c444b1a72dc4e362f006ea47ce047b45dc65f18a939e783b11ddeeba", "cache_source_sha256": "9583d741c444b1a72dc4e362f006ea47ce047b45dc65f18a939e783b11ddeeba", "semantics": "private seat+sorted own initial hand+full public bids/cards -> card", "cache_use": "keys/action validity ONLY; no edges, terminal values, roots or optimization read"}, "source_sha256": {"experiments\\round11\\E5\\replay.py": "d934bfb0939ce471aee14e7740b10960db2937b4f971b2eafa72f0f938d20489", "experiments\\round9\\D3\\bounded_ta.py": "eb6566aaa59c876e0517dccd06ed8a0b90d228b12488ef91006407565aa33d4e", "judgement\\cfr\\heuristics.py": "e4f0afd7d417a3114b887a02b826b010e9c9f010eef7ebf0fe0617be0764f0c9", "judgement\\cfr\\toy.py": "7b3233939421dadfd16dc7e4d8cf11fd935e6eb89c011487f29fa2bb5815ff93"}, "source_raw_sha256": {"experiments\\round11\\E5\\replay.py": "d934bfb0939ce471aee14e7740b10960db2937b4f971b2eafa72f0f938d20489", "experiments\\round9\\D3\\bounded_ta.py": "eb6566aaa59c876e0517dccd06ed8a0b90d228b12488ef91006407565aa33d4e", "judgement\\cfr\\heuristics.py": "e4f0afd7d417a3114b887a02b826b010e9c9f010eef7ebf0fe0617be0764f0c9", "judgement\\cfr\\toy.py": "7b3233939421dadfd16dc7e4d8cf11fd935e6eb89c011487f29fa2bb5815ff93"}, "source_hash_convention": "Python source CRLF normalized to LF; raw SHA also retained", "method": "Independent forward deals/legality/trick/scoring; original fixed hero/bidder definitions; no optimizer/cached edges/values", "uncertainty": "Complete finite chance population, exact rational; no sampling CI; feasible upper, not solved optimum"}
+Forward replay complete before23:00ET: both full369600deal means match exactexpectedrational; new scorevectors/maps retained. Separate verification now checks every integer-vector block/sum/source hash and every portable map record, under the same23:00ET stop with each1M-map-row progress checkpoint. No optimiser/candidate/source change; one worker after replay exits. Cross-platform fresh reproduction uses empty-output override; historical checkpoint relative-path keys are Windows-style, documented rather than rewriting frozen provenance.
+2026-11-16 READY-FOR-REVIEW then SELF-VALIDATED(Codex), separate REVIEW entry. Files replay.py,verify.py,integrate.py,README/STATUS; portable private policy maps+metadata, per-deal scorevectors,1000deal checkpoints, exactresults/verification; test_round11_replay_rules.py; updated D3/notes/paper/ledger attribution. Commands python engine/experiments/round11/E5/replay.py; verify.py; integrate.py; python engine/experiments/round11/E4/audit.py. No seed, all369600ordereddeals/regime complete, no samplingCI. Exact sums2296988(trump)/2633016(NT) yield574247/92400 and109709/15400; everyvector/checkpoint/source and all3848291/4261192private-map rows pass. Fresh forward deals/legality/tricks/scoring, originalfixedhero/bidderdefinitions; cacheonlykey/action associations, nooldoptimizer/evaluator/edges/values, noextraoptimization/timeboxreset. Sameinvestigatornotexternalupperreplay, notsolvedhiddenoptimum. Portable maps removeOStempdependencyforfreshreplay; archivedWindowscheckpointkeysplatform-specific, usefreshoutputforcross-platformretrace. No sourcechangesafterreplay. Integrated267pass1optionalskip67.91s/70.0882wall retained; freshcuratedtreegatebeforepush. Eligiblelocalcommit/validatedpublication.

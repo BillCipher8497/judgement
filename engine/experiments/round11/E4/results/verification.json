@@ -1,0 +1,135 @@
+{
+  "pass": true,
+  "checked_utc": "2026-11-17T03:16:16.249457+00:00",
+  "claim_count": 11,
+  "checks": [
+    {
+      "id": "C01",
+      "pass": true,
+      "status": "Claude-validated exact proof/witness"
+    },
+    {
+      "id": "C02",
+      "pass": true,
+      "status": "Claude-validated empirical reanalysis"
+    },
+    {
+      "id": "C03",
+      "pass": true,
+      "status": "Claude-validated descriptive policy ratios"
+    },
+    {
+      "id": "C04",
+      "pass": true,
+      "status": "Claude-validated finite-game certificate"
+    },
+    {
+      "id": "C05",
+      "pass": true,
+      "status": "Claude-validated per-hand rollout diagnostic"
+    },
+    {
+      "id": "C06",
+      "pass": true,
+      "status": "Claude-validated descriptive hook regimes"
+    },
+    {
+      "id": "C07",
+      "pass": true,
+      "status": "Previously validated exact conditional threshold"
+    },
+    {
+      "id": "C08",
+      "pass": true,
+      "status": "Claude-validated guide ratio, bot evaluation"
+    },
+    {
+      "id": "C09",
+      "pass": true,
+      "status": "externally validated (Claude,2026-11-16), whole-bidder intervention only; multiplicity caveat retained"
+    },
+    {
+      "id": "C10",
+      "pass": true,
+      "status": "externally validated (Claude,2026-11-16); implemented n5 fixed-hero/bids/K16 intervention only"
+    },
+    {
+      "id": "C11",
+      "pass": true,
+      "status": "M13 proof/lower bounds externally validated(Claude,2026-11-16); feasible uppers freshly forward-replayed and self-validated(Codex,round11/E5)"
+    }
+  ],
+  "historical_public_ids": [
+    "C01",
+    "C02",
+    "C03",
+    "C04",
+    "C05",
+    "C06",
+    "C07",
+    "C08",
+    "C09"
+  ],
+  "newly_cleared": [
+    "C10",
+    "C11"
+  ],
+  "current_local_only_quantitative_groups": [],
+  "held": "D5; R4/E3 packet pending publication/reproduction cross-check; mixed private history",
+  "upper_replay": "E5 fresh forward replay passed, self-validated(Codex); not externally replayed by Claude",
+  "links_checked": [
+    "RELATED_WORK_DRAFT.md",
+    "EVIDENCE.md",
+    "../math/NOTES.md",
+    "../tests/test_round7_welfare.py",
+    "../experiments/round7_paper/results/welfare.json",
+    "../experiments/round7_audit/AUDIT.md",
+    "../experiments/round7_audit/results/a1_surplus.json",
+    "../experiments/round8/T5/results/certificate.json",
+    "../experiments/round8/REVIEW.md",
+    "../math/results/m10_summary.json",
+    "../experiments/round7_audit/AUDIT.md",
+    "../experiments/phase1/results/phase1_tables.md",
+    "../experiments/phase2/results/summary_main.md",
+    "../experiments/guide/results/s3_summary.txt",
+    "../experiments/guide/GUIDE.txt",
+    "../experiments/round9/REVIEW.md",
+    "../../CLAUDE_AUDIT_2026-11-16.md",
+    "../experiments/round10/R3/PROOF.md"
+  ],
+  "primary_source_sha256": {
+    "math/NOTES.md": "571b231324a999b2298a6370bbe5b4e12d27aafb5cedbfee8c7d0e767f1214f1",
+    "tests/test_round7_welfare.py": "e7c577a26331899c22f4da855da679ff3b1f9198acdf30e075a331f6610d2b54",
+    "experiments/round7_paper/results/welfare.json": "352b25546da3f829abda15dfa754a668cf9462e9ca8ee52f8aad8708c2475506",
+    "experiments/surplus_hidden/sim.py": "bc20dc29fd86cbe7e91f472496f474881e92f068c108fb194defedca2d50b2d9",
+    "experiments/phase1/results/model_ta_final.json": "5de2e4ead429a0d15236cc45a23de181450fc4ba94890ee46cba8743cd859115",
+    "experiments/round7_audit/results/a1_surplus.json": "9d7ef267dc8fed9d4ba6a536771297b75997a621e8093adf5b617656fc4d85c7",
+    "experiments/surplus_hidden/STATUS.txt": "2463cb4d1672a06728d5d560dd0481e327f9e6666927f9ab33330980f370ae4b",
+    "experiments/round8/T5/results/certificate.json": "89d7d9ccebd7c2abf3146dbf349632298911b7f84a1e3a61a8f2e778f1c78ba3",
+    "math/results/m10_summary.json": "b5d1c86ce5b996fb459e0bfe41d5e0acabe414beb4d266025b2a2685981f5f2c",
+    "experiments/round7_audit/AUDIT.md": "8626c0dde3c3caa670d232a8819c203e6938d9d346cf28e5a39d7b93d499c74b",
+    "experiments/phase1/results/phase1_tables.md": "12e236006096e09c57704264c15fc3d2dfe1408642d28e566e9e58ecdfe2a3e5",
+    "experiments/phase2/results/summary_main.md": "1d6242a57017290c47e02de142df9c62feda4f62705f742b391fd100f2d7cbd6",
+    "experiments/guide/results/s3_summary.txt": "0ccf0a6f79d53f62a7f21edca08543961a991c8a4453e91c142e64700fd21c37",
+    "experiments/round9/D2/results/summary.json": "20d3c95caa8f4fbee72747da53885ff900146744bb758de9e5cdc904bf436f96",
+    "experiments/round9/reviews/results/D2_raw_audit.json": "8af82543c10ea649f874f9fe7c9a67bfcb2530c7c02e1c7fff2442fea65ff3fe",
+    "experiments/round9/REVIEW.md": "f311cc279f9ed32bc3ecbc36fb78b7470be92f77bb31671bf81c130fee496136",
+    "../CLAUDE_AUDIT_2026-11-16.md": "b97dfd425e9ba022105ae4b0298b57aa1fa25f0ad6a3e13093cf1fc2779cac59",
+    "experiments/round9/D1/results/summary.json": "0d7fdd6302640458e830136680751079e2d2aaec973266d4c095f3b97867b62c",
+    "experiments/round9/reviews/results/D1_raw_audit.json": "725aef6e600b6726a28edb43656b5202bd8b656ddae46f6996fa5280e83ac5d1",
+    "experiments/round9/D1/STATUS.txt": "6455b9c722c079c1d7daad822a438a1988fabcb225bf468b73777c331a79ec80",
+    "experiments/round9/reviews/results/D3_raw_audit.json": "c0edbf048b1b78c7e519a1d312c549e4bf11740ee08ceb2de788f81b4c71b574",
+    "experiments/round9/reviews/results/D3_exact_upper_audit.json": "18acb64f979db0c455ca12c66d1329e49c2e71f3f4a3310ebf0d88ba142d4c09",
+    "experiments/round9/D3/ROOT_BOUND.md": "7d1c8cfe5e070e43010eb192566596f0103484a89a13ba481b68bb58a8a68fda",
+    "experiments/round11/E5/results/replay_0.json": "ff4bd1bee857d09819f939ce82a8be697e1ce9874cc02b72c9a177e219ca8b38",
+    "experiments/round11/E5/results/replay_-1.json": "7ef77d7b02e629cbc536a6a56b6f183f22519d9db03594b404eb8c885917c3a9",
+    "experiments/round11/E5/results/verification.json": "72fc6e38d53a90b2341a164364862a679aa2239812967907c2e4c3c7aa42f6b0"
+  },
+  "document_sha256": {
+    "engine\\paper\\MANUSCRIPT_DRAFT.md": "cc7a317bc8909f487718d6368765b633383ec1cd3808da1af05d786cf4d3b3f8",
+    "engine\\paper\\EVIDENCE.md": "5dc6718efb65ff6ba255003e1ac97ffab7619edc4dd19f6c28a157c0fecfe9e2",
+    "engine\\experiments\\round10\\R0\\claim_ledger.json": "4c5ea6c29c9ace6cd42978a573a6bdcef41f53c15cb77611f4693165b19ec8bc",
+    "engine\\math\\NOTES.md": "571b231324a999b2298a6370bbe5b4e12d27aafb5cedbfee8c7d0e767f1214f1"
+  },
+  "limits": "Source/citation/status/wording reconciliation only; no new raw empirical estimate or external audit"
+}

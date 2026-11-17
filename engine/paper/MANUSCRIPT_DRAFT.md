@@ -1,6 +1,6 @@
 # Score incentives and policy-dependent punishment in Judgement
 
-Local working draft, 2026-11-16. This document assembles validated project evidence; it is not a submission-ready paper. Round9 additions are separately self-validated by Codex, the same investigator who implemented them. A [bounded related-work draft](RELATED_WORK_DRAFT.md) is available; broader coverage and external review remain outstanding. Quantitative claim IDs map to `experiments/round10/R0/claim_ledger.json` and the [evidence map](EVIDENCE.md).
+Local working draft, 2026-11-16. This document assembles validated project evidence; it is not a submission-ready paper. D1/D2 and the M13/M14 proofs/lower-bound enumeration are externally validated (Claude, 2026-11-16); other additions retain their separate validation labels. The fresh E0 full-suite gate passed locally; external validation did not include a test-suite rerun. A [bounded related-work draft](RELATED_WORK_DRAFT.md) is available; broader coverage and external review remain outstanding. Quantitative claim IDs map to `experiments/round10/R0/claim_ledger.json` and the [evidence map](EVIDENCE.md).
 
 ## Abstract
 
@@ -56,6 +56,7 @@ The earlier cross-policy hidden/PI ratio is retained in the evidence archive as 
 
 In an eight-card finite toy, 4 players with 2 cards each, fixed myopic bids and a fixed toy-TA hero, saved private-information team policies attain the PI lower bound on every deal. The certified mean hero scores are 1257/140 (trump) and 946/105 (NT), each over all 2,520 ordered deals. Exact integer support checks certify zero pointwise excess, so no sampling CI applies. This is a joint optimality certificate within that game. The tiny toy does not bound the 52-card hidden/PI ratio. [C04]
 
+The externally audited round9 information intervention and larger-toy bound are detailed in Appendix A. D1 supports the implemented information intervention only; M13 certifies a strict toy information cost, with no material-magnitude claim or solved hidden-team optimum.
 
 ## 6. Lead diagnostics and hook costs
 
@@ -76,7 +77,7 @@ The regimes change policies and bidding as well as information. They should not 
 
 Against the TA bot pool, the existing guide retains **0.808 [0.794, 0.822]** of TA+3's edge over greedy, n=6,000 paired games,95% CI. This is a bot evaluation under correct rule execution, not human-learning evidence. [C08]
 
-Round9 separately self-validated analysis holds guide play fixed while replacing only the hero bidder. On fresh 1,510M seeds, ModelBidder−guide score is **5.05950 ±0.81963 points/game**, n=4,000 paired games,95% CI. ModelBidder is a comparator rather than an oracle; later bids and target-aware play can respond to the changed bid. This is the whole-bidder score cost, distinct from the guide's historical overall deficit versus TA. The discovery-selected cells and their multiple-testing qualification are in EVIDENCE; no new rule was fitted. [C09]
+Round9 analysis, independently recomputed and externally validated by Claude, holds guide play fixed while replacing only the hero bidder. On fresh 1,510M seeds, ModelBidder−guide score is **5.05950 ±0.81963 points/game**, n=4,000 paired games,95% CI. ModelBidder is a comparator rather than an oracle; later bids and target-aware play can respond to the changed bid. This is the whole-bidder score cost, distinct from the guide's historical overall deficit versus TA. The discovery-selected cells and their multiple-testing qualification are in EVIDENCE; no new rule was fitted. [C09]
 
 The source-faithful table card has a checked one-page A4 PDF. Its printed form adds no strategy or measured improvement. Human playtesting remains necessary.
 
@@ -84,7 +85,17 @@ The source-faithful table card has a checked one-page A4 PDF. Its printed form a
 
 The evidence supports general-sum score incentives and measured dependence on specified opponents. It does not establish general multiplayer CFR convergence, optimal decentralized punishment in the full game, or universal superiority of a bot or guide. Finite-rollout fits and policy selection need their own out-of-sample checks. Negative and failed-replication results remain part of the evidence map.
 
-Before submission, extend the bounded primary-source related-work audit, complete independent external review, and perform a claim-by-claim reproduction pass. Make no novelty or priority claim from the current literature coverage. The external living report has not been rewritten. 
+Before submission, extend the bounded primary-source related-work audit and perform a claim-by-claim reproduction pass. External D1/M13/M14 review is complete; a fresh feasible-upper forward replay also passed as a separate Codex self-check (E5). Make no novelty or priority claim from the current literature coverage. The external living report has not been rewritten. The particle-MCMC experiment supplies no validated improvement to this draft and remains outside the publication scope.
+
+## Appendix A. Externally audited information intervention and finite-toy bounds
+
+**External status:** D1 and the M13/M14 proofs/lower-bound enumeration were independently checked and externally validated by Claude on 2026-11-16. The feasible uppers were also confirmed by a fresh forward replay in E5, self-validated (Codex); Claude checked their ordering only. Validation is limited to the stated interventions and finite games.
+
+D1 holds hero/bids fixed and changes the information available to a K16 PIMC sampler. The primary revealed-hero minus own/public surplus-share contrast is **0.369315 [0.315244,0.424218]** on 1,600M discovery and **0.341204 [0.289874,0.394787]** on fresh 1,610M, each n=1,000 paired deals,95% CIs. The omniscient paranoid reference is not certified optimal against the actual fixed hero; equal K per active decision does not equal equal total compute. The supported causal statement is only that revealing the hero hand to this implemented sampler changes its punishment performance: n=5, equal S/NT, fixed TA+v2 hero, fixed bids and K16 per active decision. It does not identify a policy-independent information effect, optimal coalition punishment, human performance or a general effect across the full 25-round ladder using the standard 52-card deck. [C10]
+
+D3 fixes all bids and hero moves in a 12-card, 4-player, n=3 toy. The complete 369,600-deal populations give exact optimization intervals **[446669/73920,574247/92400]** (trump) and **[213259/30800,109709/15400]** (NT). They are bounds, not CIs or solved team optima. Lower endpoints use M13's private first-decision relaxation; upper endpoints are feasible saved policies, confirmed by a fresh forward replay in E5 (self-validated, Codex). Claude independently reconstructed every deal and exactly reproduced the PI/J1 lower values, and rechecked M13. The certified J1−PI gaps are 25819/369600 ≈ 0.070 and 421/30800 ≈ 0.014 hero points, respectively. They certify a strict information cost and nothing about its magnitude: these lower bounds do not establish a material cost, nor estimate the actual hidden-team optimum minus PI. No 52-card extrapolation. [C11]
+
+M14, also externally validated, shows that team randomization cannot improve the global minimum against fixed non-team policies: conditioning on tapes gives a mixture of feasible pure private-information tuples, whose mean cost cannot beat the best tuple. Team tapes may be shared, but must be independent of chance and non-team tapes. The fixed-hero premise and full own/public histories are essential; fixing the team tapes must not change hero observations outside those histories. This is not a strategic-adversary team-maxmin or CFR convergence theorem. No novelty claim is made.
 
 ## Evidence references
 
@@ -95,4 +106,6 @@ Before submission, extend the bounded primary-source related-work audit, complet
 - C05: [M10 diagnostic summary](../math/results/m10_summary.json), [audit qualification](../experiments/round7_audit/AUDIT.md).
 - C06: [hidden hook tables](../experiments/phase1/results/phase1_tables.md), [PI summaries](../experiments/phase2/results/summary_main.md).
 - C08: [guide summary](../experiments/guide/results/s3_summary.txt), [guide source](../experiments/guide/GUIDE.txt).
-- C09: [separate round9 reviews](../experiments/round9/REVIEW.md), task raw files and independent scripts under `experiments/round9/reviews/`.
+- C09–C11: [separate round9 reviews](../experiments/round9/REVIEW.md), task raw files and independent scripts under `experiments/round9/reviews/`.
+
+- External audit: [Claude verdicts and retained limits](../../CLAUDE_AUDIT_2026-11-16.md); [M14 proof](../experiments/round10/R3/PROOF.md).

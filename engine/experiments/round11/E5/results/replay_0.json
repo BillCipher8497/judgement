@@ -1,0 +1,38 @@
+{
+  "trump": 0,
+  "n_exact_deals": 369600,
+  "hero_score_sum": 2296988,
+  "exact_feasible_upper": "574247/92400",
+  "expected": "574247/92400",
+  "match": true,
+  "private_policy_lookups": 1204671,
+  "raw_hero_scores_file": "hero_scores_0.bin",
+  "raw_hero_scores_sha256": "b783440d2f901fb03788e4487911b0797ec252938372c599816ed5ed424ea185",
+  "seconds_current_segment": 63.66511400003219,
+  "mapping": {
+    "trump": 0,
+    "n_private_keys": 3848291,
+    "policy_sha256": "0dc599132b99f6cd3e3a68f7dbbc73d3a82bbf1d4e277976856f1bd510623f59",
+    "mapping_sha256": "2051ff39a04b89528b4f6851b385570b6732f24eb7c7da751e72786a64c1ba28",
+    "derived_cache_sha256": "67de7fae8845dd79e1b9f6d02347bcd27cc1d19dc32c1f8fef79ab8c32403a22",
+    "canonical_cache_source_sha256": "9583d741c444b1a72dc4e362f006ea47ce047b45dc65f18a939e783b11ddeeba",
+    "cache_source_sha256": "9583d741c444b1a72dc4e362f006ea47ce047b45dc65f18a939e783b11ddeeba",
+    "semantics": "private seat+sorted own initial hand+full public bids/cards -> card",
+    "cache_use": "keys/action validity ONLY; no edges, terminal values, roots or optimization read"
+  },
+  "source_sha256": {
+    "experiments\\round11\\E5\\replay.py": "d934bfb0939ce471aee14e7740b10960db2937b4f971b2eafa72f0f938d20489",
+    "experiments\\round9\\D3\\bounded_ta.py": "eb6566aaa59c876e0517dccd06ed8a0b90d228b12488ef91006407565aa33d4e",
+    "judgement\\cfr\\heuristics.py": "e4f0afd7d417a3114b887a02b826b010e9c9f010eef7ebf0fe0617be0764f0c9",
+    "judgement\\cfr\\toy.py": "7b3233939421dadfd16dc7e4d8cf11fd935e6eb89c011487f29fa2bb5815ff93"
+  },
+  "source_raw_sha256": {
+    "experiments\\round11\\E5\\replay.py": "d934bfb0939ce471aee14e7740b10960db2937b4f971b2eafa72f0f938d20489",
+    "experiments\\round9\\D3\\bounded_ta.py": "eb6566aaa59c876e0517dccd06ed8a0b90d228b12488ef91006407565aa33d4e",
+    "judgement\\cfr\\heuristics.py": "e4f0afd7d417a3114b887a02b826b010e9c9f010eef7ebf0fe0617be0764f0c9",
+    "judgement\\cfr\\toy.py": "7b3233939421dadfd16dc7e4d8cf11fd935e6eb89c011487f29fa2bb5815ff93"
+  },
+  "source_hash_convention": "Python source CRLF normalized to LF; raw SHA also retained",
+  "method": "Independent forward deals/legality/trick/scoring; original fixed hero/bidder definitions; no optimizer/cached edges/values",
+  "uncertainty": "Complete finite chance population, exact rational; no sampling CI; feasible upper, not solved optimum"
+}

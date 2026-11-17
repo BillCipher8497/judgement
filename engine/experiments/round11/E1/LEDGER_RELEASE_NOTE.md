@@ -1,3 +1,3 @@
-# Cleared ledger scope
+# Ledger release reconciliation
 
-The local ledger has eleven claim groups. Original public manuscript used C01-C09; C10(D1 intervention) and C11(D3/M13) are now cleared. E4 will reconcile the manuscript/evidence derivative. M13/M14 proofs and exact lower bounds were externally validated; feasible upper independent replay remains E5. D5 is still unfinished and withheld. See the full audit for retained limitations. These bounds are not sampling intervals or solved hidden-team optima.
+The initial a99c957 derivative had C01-C09. C10(D1) and C11(M13) were withheld by external gates that Claude cleared on2026-11-16. The current manuscript and ledger both have11groups; none of these quantitative manuscript groups remains local-only. This does not release D5, unvalidated NT implementation stages or mixed private history. D1 is limited to its audited intervention. M13 gaps of about0.070/0.014hero points establish strict cost, not material magnitude. E5 supplies a fresh complete-population forward replay by Codex, separately self-validated; Claude did not replay those uppers.

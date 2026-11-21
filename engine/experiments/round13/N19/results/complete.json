@@ -1,0 +1,80 @@
+{
+  "scope": "Exact deterministic LP bounds with exact rational vertex certificates.",
+  "sources_sha256": "40f21d1d5eded9a0f83895bb4b9c802b2ef9423ca2e4525070f26e719a57de42",
+  "summaries": {
+    "S2R4n2_t-1": {
+      "n_Splus": 57,
+      "n_certified": 57,
+      "n_identified_by_marginals": 51,
+      "n_not_identified": 6,
+      "n_uncertified": 0,
+      "not_identified_key_ids": [
+        29,
+        107,
+        158,
+        161,
+        199,
+        203
+      ],
+      "reach_Splus": 317,
+      "sampling_CI": null,
+      "scope": "Exact enumeration + exact rational vertex certificates over the complete S+ set; no sampling interval.",
+      "tag": "S2R4n2_t-1",
+      "uncertified_key_ids": [],
+      "worst_case_polytope_regret_exact": "0",
+      "worst_case_polytope_regret_float": 0.0
+    },
+    "S2R4n2_t0": {
+      "n_Splus": 54,
+      "n_certified": 54,
+      "n_identified_by_marginals": 53,
+      "n_not_identified": 1,
+      "n_uncertified": 0,
+      "not_identified_key_ids": [
+        2305
+      ],
+      "reach_Splus": 231,
+      "sampling_CI": null,
+      "scope": "Exact enumeration + exact rational vertex certificates over the complete S+ set; no sampling interval.",
+      "tag": "S2R4n2_t0",
+      "uncertified_key_ids": [],
+      "worst_case_polytope_regret_exact": "0",
+      "worst_case_polytope_regret_float": 0.0
+    },
+    "S3R4n3_t-1": {
+      "n_Splus": 60,
+      "n_certified": 60,
+      "n_identified_by_marginals": 59,
+      "n_not_identified": 1,
+      "n_uncertified": 0,
+      "not_identified_key_ids": [
+        1068474
+      ],
+      "reach_Splus": 205,
+      "sampling_CI": null,
+      "scope": "Exact enumeration + exact rational vertex certificates over the complete S+ set; no sampling interval.",
+      "tag": "S3R4n3_t-1",
+      "uncertified_key_ids": [],
+      "worst_case_polytope_regret_exact": "0",
+      "worst_case_polytope_regret_float": 0.0
+    },
+    "S3R4n3_t0": {
+      "n_Splus": 53,
+      "n_certified": 53,
+      "n_identified_by_marginals": 52,
+      "n_not_identified": 1,
+      "n_uncertified": 0,
+      "not_identified_key_ids": [
+        1667487
+      ],
+      "reach_Splus": 235,
+      "sampling_CI": null,
+      "scope": "Exact enumeration + exact rational vertex certificates over the complete S+ set; no sampling interval.",
+      "tag": "S3R4n3_t0",
+      "uncertified_key_ids": [],
+      "worst_case_polytope_regret_exact": "0",
+      "worst_case_polytope_regret_float": 0.0
+    }
+  },
+  "utc": "2026-11-21T02:08:31.561734+00:00"
+}

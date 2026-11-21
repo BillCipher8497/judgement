@@ -129,3 +129,15 @@ in this public tree, so it documents and verifies a result here but is not
 reproducible from this tree alone. Integrity receipts retain absolute local
 source paths, as elsewhere in this repository, because rewriting them would
 break hash provenance.
+
+### 2026-11-21 addendum: N19
+
+`engine/experiments/round13/N19/` asks why N17's regret is zero and answers it.
+Bounding the action-value difference over the entire polytope of beliefs that
+match the true posterior's card-holder marginals, with no family restriction,
+**zero of the 224 decision-relevant contexts admit a marginal-consistent belief
+that strictly prefers the inferior action**; 215 are strictly identified by
+those marginals and the other 9 reach exact indifference, where an adversarial
+tie rule would cost 48/77, 910/317, 12/47 and 66/205 hero points per unit reach.
+Exact linear-programming bounds with exact rational vertex certificates; no
+floating LP status is accepted as a feasibility or sign certificate.

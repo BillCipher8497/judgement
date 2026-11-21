@@ -1,0 +1,17 @@
+{
+  "n_Splus": 60,
+  "n_certified": 60,
+  "n_identified_by_marginals": 59,
+  "n_not_identified": 1,
+  "n_uncertified": 0,
+  "not_identified_key_ids": [
+    1068474
+  ],
+  "reach_Splus": 205,
+  "sampling_CI": null,
+  "scope": "Exact enumeration + exact rational vertex certificates over the complete S+ set; no sampling interval.",
+  "tag": "S3R4n3_t-1",
+  "uncertified_key_ids": [],
+  "worst_case_polytope_regret_exact": "0",
+  "worst_case_polytope_regret_float": 0.0
+}

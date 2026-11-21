@@ -1,0 +1,75 @@
+{
+  "conditions": {
+    "S2R4n2_t-1": {
+      "A_posterior_satisfies_rebuilt_constraints": 57,
+      "B_endpoint_certificates_exact": 57,
+      "C_contexts_checked": 57,
+      "C_contexts_where_a_marginal_consistent_belief_strictly_prefers_the_inferior_action": 0,
+      "C_strict_wrong_key_ids": [],
+      "D_contexts_whose_polytope_reaches_exact_indifference": 6,
+      "D_tie_reachable_key_ids": [
+        29,
+        107,
+        158,
+        161,
+        199,
+        203
+      ],
+      "D_tie_sensitive_worst_case_regret_exact": "910/317",
+      "D_tie_sensitive_worst_case_regret_float": 2.8706624605678233,
+      "E_N17_projection_inside_interval": 57,
+      "n_Splus": 57,
+      "reach_Splus": 317
+    },
+    "S2R4n2_t0": {
+      "A_posterior_satisfies_rebuilt_constraints": 54,
+      "B_endpoint_certificates_exact": 54,
+      "C_contexts_checked": 54,
+      "C_contexts_where_a_marginal_consistent_belief_strictly_prefers_the_inferior_action": 0,
+      "C_strict_wrong_key_ids": [],
+      "D_contexts_whose_polytope_reaches_exact_indifference": 1,
+      "D_tie_reachable_key_ids": [
+        2305
+      ],
+      "D_tie_sensitive_worst_case_regret_exact": "48/77",
+      "D_tie_sensitive_worst_case_regret_float": 0.6233766233766234,
+      "E_N17_projection_inside_interval": 54,
+      "n_Splus": 54,
+      "reach_Splus": 231
+    },
+    "S3R4n3_t-1": {
+      "A_posterior_satisfies_rebuilt_constraints": 60,
+      "B_endpoint_certificates_exact": 60,
+      "C_contexts_checked": 60,
+      "C_contexts_where_a_marginal_consistent_belief_strictly_prefers_the_inferior_action": 0,
+      "C_strict_wrong_key_ids": [],
+      "D_contexts_whose_polytope_reaches_exact_indifference": 1,
+      "D_tie_reachable_key_ids": [
+        1068474
+      ],
+      "D_tie_sensitive_worst_case_regret_exact": "66/205",
+      "D_tie_sensitive_worst_case_regret_float": 0.32195121951219513,
+      "E_N17_projection_inside_interval": 60,
+      "n_Splus": 60,
+      "reach_Splus": 205
+    },
+    "S3R4n3_t0": {
+      "A_posterior_satisfies_rebuilt_constraints": 53,
+      "B_endpoint_certificates_exact": 53,
+      "C_contexts_checked": 53,
+      "C_contexts_where_a_marginal_consistent_belief_strictly_prefers_the_inferior_action": 0,
+      "C_strict_wrong_key_ids": [],
+      "D_contexts_whose_polytope_reaches_exact_indifference": 1,
+      "D_tie_reachable_key_ids": [
+        1667487
+      ],
+      "D_tie_sensitive_worst_case_regret_exact": "12/47",
+      "D_tie_sensitive_worst_case_regret_float": 0.2553191489361702,
+      "E_N17_projection_inside_interval": 53,
+      "n_Splus": 53,
+      "reach_Splus": 235
+    }
+  },
+  "utc": "2026-11-21T02:09:27.325669+00:00",
+  "verdict": "No marginal-consistent belief strictly prefers the inferior action at any decision-relevant context; the only reachable failure is exact indifference, whose cost depends on the tie rule and is bounded in D."
+}

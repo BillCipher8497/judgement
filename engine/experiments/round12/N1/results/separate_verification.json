@@ -1,0 +1,22 @@
+{
+  "status": "ready-for-Claude-external",
+  "raw_label_rounds": {
+    "train": 30800,
+    "validation": 4400,
+    "confirmation": 3520
+  },
+  "both_model_selections": {
+    "bids": true,
+    "full": true
+  },
+  "primary_recomputed": {
+    "mean": -0.04831556421620075,
+    "ci95": [
+      -0.05312558029282312,
+      -0.04350554813957838
+    ],
+    "n_decisions": 3520
+  },
+  "utc": "2026-11-18T01:22:46.286412+00:00",
+  "limitations": "Independent numerical forward/label reconstruction; validated core supplies original histories. ECE bootstrap and fresh sampler/game-prefix replay still need external checking."
+}

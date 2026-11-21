@@ -1,0 +1,13 @@
+{
+  "wrapper_sha256": "A6C56ED3175605F37C0DC23050EDA07FAEBEA534F91365C116AC963E7DBE73AC",
+  "source_fingerprint": "7c7ba88609951b1b6a4be672984bf7adc3dc1bc7ababaeff7afa5d9ab10173b7",
+  "hard_stopUTC": "2026-11-18T05:03:32.0000000+00:00",
+  "source_authority": "self-reviewed(Codex),pending external audit, owner-authorized independent continuation",
+  "stdout": "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N2\\worker_20261118T020332Z_stdout.txt",
+  "pre_run_source_commit": "1c0c7192f65464b79afa7a525e121f76543218c1",
+  "stderr": "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N2\\worker_20261118T020332Z_stderr.txt",
+  "startedUTC": "2026-11-18T02:03:32.8468567+00:00",
+  "hard_stop_epoch": 1794978212,
+  "pid": 31120,
+  "status": "launch receipt, not proof of liveness"
+}

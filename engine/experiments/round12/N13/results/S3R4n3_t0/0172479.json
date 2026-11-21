@@ -1,0 +1,42 @@
+{
+  "tag": "S3R4n3_t0",
+  "key_id": 172479,
+  "reach": 2,
+  "n_structural_worlds": 6,
+  "n_posterior_worlds": 2,
+  "lp_success": true,
+  "lp_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "lp_proposal_exact_feasible": true,
+  "lp_proposal_weights": {
+    "2": "1/2",
+    "3": "1/2"
+  },
+  "fallback_P_if_infeasible": false,
+  "epsilon": "0",
+  "mixture_weights": {
+    "2": "1/2",
+    "3": "1/2"
+  },
+  "entropy_gain_enclosure_exact_nats": [
+    "-1143477/340282366920938463463374607431768211456",
+    "1143477/340282366920938463463374607431768211456"
+  ],
+  "certified_KL_lower_nats": "0",
+  "numeric_free_potential_KL": 5.020883708795054e-11,
+  "numeric_gradient_linf": 5.020883708795054e-11,
+  "numeric_optimizer_success": true,
+  "numeric_optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+  "numeric_iterations": 33,
+  "theta": [
+    -5.4239985527812244,
+    2.7120021604122284,
+    2.7120021604122284,
+    10.84800281240242,
+    -5.4239985527812244,
+    -5.4239985527812244,
+    -5.4239985527812244,
+    2.7120021604122284,
+    2.7120021604122284
+  ],
+  "scope": "Exact rational moment/entropy certificate under pending external lemma; numeric potential objective not a rigorous optimum/certificate. Known deterministic toy keys, no samplingCI."
+}

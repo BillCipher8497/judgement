@@ -1,0 +1,146 @@
+{
+  "hard": {
+    "n": 2400,
+    "mean": 0.42830729166666665,
+    "ci95": [
+      0.3881031318928268,
+      0.4685114514405065
+    ],
+    "method": "paired normal; strata fixed"
+  },
+  "uniform": {
+    "n": 2400,
+    "mean": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "method": "paired normal; strata fixed"
+  },
+  "set": {
+    "n": 2400,
+    "mean": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "method": "paired normal; strata fixed"
+  },
+  "student-hard": {
+    "n": 2400,
+    "mean": 0.26171875,
+    "ci95": [
+      0.22045631923099335,
+      0.30298118076900665
+    ],
+    "method": "paired normal; strata fixed"
+  },
+  "student-uniform": {
+    "n": 2400,
+    "mean": 0.26171875,
+    "ci95": [
+      0.22045631923099335,
+      0.30298118076900665
+    ],
+    "method": "paired normal; strata fixed"
+  },
+  "student-set": {
+    "n": 2400,
+    "mean": 0.26171875,
+    "ci95": [
+      0.22045631923099335,
+      0.30298118076900665
+    ],
+    "method": "paired normal; strata fixed"
+  },
+  "student-q": {
+    "n": 2400,
+    "mean": 0.26171875,
+    "ci95": [
+      0.22045631923099335,
+      0.30298118076900665
+    ],
+    "method": "paired normal; strata fixed"
+  },
+  "student-direct": {
+    "n": 2400,
+    "mean": 0.26171875,
+    "ci95": [
+      0.22045631923099335,
+      0.30298118076900665
+    ],
+    "method": "paired normal; strata fixed"
+  },
+  "student-linear-hard": {
+    "n": 2400,
+    "mean": 0.26171875,
+    "ci95": [
+      0.22045631923099335,
+      0.30298118076900665
+    ],
+    "method": "paired normal; strata fixed"
+  },
+  "student-linear-set": {
+    "n": 2400,
+    "mean": 0.26171875,
+    "ci95": [
+      0.22045631923099335,
+      0.30298118076900665
+    ],
+    "method": "paired normal; strata fixed"
+  },
+  "student-no-offset-set": {
+    "n": 2400,
+    "mean": 0.26171875,
+    "ci95": [
+      0.22045631923099335,
+      0.30298118076900665
+    ],
+    "method": "paired normal; strata fixed"
+  },
+  "set-minus-hard": {
+    "n": 2400,
+    "mean": -0.42830729166666665,
+    "ci95": [
+      -0.4685114514405065,
+      -0.3881031318928268
+    ],
+    "method": "paired normal; strata fixed"
+  },
+  "set-minus-uniform": {
+    "n": 2400,
+    "mean": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "method": "paired normal; strata fixed"
+  },
+  "student-set-minus-student-hard": {
+    "n": 2400,
+    "mean": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "method": "paired normal; strata fixed"
+  },
+  "baseline": {
+    "n": 2400,
+    "mean": 0.26171875,
+    "ci95": [
+      0.22045631923099335,
+      0.30298118076900665
+    ],
+    "method": "paired normal; strata fixed"
+  },
+  "meta": {
+    "n_contexts": 2400,
+    "n_strata": 96,
+    "n_worlds_per_context": 16,
+    "distinct_original_hands": 2334,
+    "fixed_ensemble_uncertainty": "context draws only, not refitting or true posterior uncertainty",
+    "frozen_models_sha256": "1c96582eb2eaba25602eaacda28aabe352a876f43758ba29874973ac589ab287",
+    "scope": "Finite-K PI-continuation surrogate, not actual TA continuation or true hidden value"
+  }
+}

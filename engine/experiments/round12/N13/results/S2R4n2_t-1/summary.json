@@ -1,0 +1,10 @@
+{
+  "n_keys": 64,
+  "reach": 135,
+  "n_strict_positive_certificates": 1,
+  "n_exact_LP_reconstruction_failures": 0,
+  "n_numerical_optimizer_failures": 1,
+  "reach_weighted_certified_lower_exact_nats": "18907152591265203651055096192727094353/5742264941790836570944446500411088568320",
+  "reach_weighted_numeric_potential_KL": 0.0053339449345908155,
+  "sampling_CI": null
+}

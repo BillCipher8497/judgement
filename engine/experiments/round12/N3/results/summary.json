@@ -1,0 +1,1666 @@
+{
+  "status": "All fixed targets complete, separate verification and external audit pending",
+  "source_freeze_sha256": "28604b73e2824340e6ea69f1adf2d59fa81ad0b128a52299b81dfc668f7bc572",
+  "frozen_models_sha256": "1c96582eb2eaba25602eaacda28aabe352a876f43758ba29874973ac589ab287",
+  "labels": {
+    "hard": {
+      "n": 2400,
+      "mean": 0.42830729166666665,
+      "ci95": [
+        0.3881031318928268,
+        0.4685114514405065
+      ],
+      "method": "paired normal; strata fixed"
+    },
+    "uniform": {
+      "n": 2400,
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "method": "paired normal; strata fixed"
+    },
+    "set": {
+      "n": 2400,
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "method": "paired normal; strata fixed"
+    },
+    "student-hard": {
+      "n": 2400,
+      "mean": 0.26171875,
+      "ci95": [
+        0.22045631923099335,
+        0.30298118076900665
+      ],
+      "method": "paired normal; strata fixed"
+    },
+    "student-uniform": {
+      "n": 2400,
+      "mean": 0.26171875,
+      "ci95": [
+        0.22045631923099335,
+        0.30298118076900665
+      ],
+      "method": "paired normal; strata fixed"
+    },
+    "student-set": {
+      "n": 2400,
+      "mean": 0.26171875,
+      "ci95": [
+        0.22045631923099335,
+        0.30298118076900665
+      ],
+      "method": "paired normal; strata fixed"
+    },
+    "student-q": {
+      "n": 2400,
+      "mean": 0.26171875,
+      "ci95": [
+        0.22045631923099335,
+        0.30298118076900665
+      ],
+      "method": "paired normal; strata fixed"
+    },
+    "student-direct": {
+      "n": 2400,
+      "mean": 0.26171875,
+      "ci95": [
+        0.22045631923099335,
+        0.30298118076900665
+      ],
+      "method": "paired normal; strata fixed"
+    },
+    "student-linear-hard": {
+      "n": 2400,
+      "mean": 0.26171875,
+      "ci95": [
+        0.22045631923099335,
+        0.30298118076900665
+      ],
+      "method": "paired normal; strata fixed"
+    },
+    "student-linear-set": {
+      "n": 2400,
+      "mean": 0.26171875,
+      "ci95": [
+        0.22045631923099335,
+        0.30298118076900665
+      ],
+      "method": "paired normal; strata fixed"
+    },
+    "student-no-offset-set": {
+      "n": 2400,
+      "mean": 0.26171875,
+      "ci95": [
+        0.22045631923099335,
+        0.30298118076900665
+      ],
+      "method": "paired normal; strata fixed"
+    },
+    "set-minus-hard": {
+      "n": 2400,
+      "mean": -0.42830729166666665,
+      "ci95": [
+        -0.4685114514405065,
+        -0.3881031318928268
+      ],
+      "method": "paired normal; strata fixed"
+    },
+    "set-minus-uniform": {
+      "n": 2400,
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "method": "paired normal; strata fixed"
+    },
+    "student-set-minus-student-hard": {
+      "n": 2400,
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "method": "paired normal; strata fixed"
+    },
+    "baseline": {
+      "n": 2400,
+      "mean": 0.26171875,
+      "ci95": [
+        0.22045631923099335,
+        0.30298118076900665
+      ],
+      "method": "paired normal; strata fixed"
+    },
+    "meta": {
+      "n_contexts": 2400,
+      "n_strata": 96,
+      "n_worlds_per_context": 16,
+      "distinct_original_hands": 2334,
+      "fixed_ensemble_uncertainty": "context draws only, not refitting or true posterior uncertainty",
+      "frozen_models_sha256": "1c96582eb2eaba25602eaacda28aabe352a876f43758ba29874973ac589ab287",
+      "scope": "Finite-K PI-continuation surrogate, not actual TA continuation or true hidden value"
+    }
+  },
+  "screen": {
+    "stage": "screen",
+    "base": 2130000000,
+    "contrasts": {
+      "PRIMARY_set-minus-hard": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "ties_as_win": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "table_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "opponents_mean_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        }
+      },
+      "PRIMARY_best-minus-baseline": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "ties_as_win": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "table_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "opponents_mean_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        }
+      },
+      "hard-minus-baseline": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "ties_as_win": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "table_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "opponents_mean_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        }
+      },
+      "uniform-minus-baseline": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "ties_as_win": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "table_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "opponents_mean_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        }
+      },
+      "set-minus-baseline": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "ties_as_win": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "table_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "opponents_mean_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        }
+      },
+      "q-minus-baseline": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "ties_as_win": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "table_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "opponents_mean_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        }
+      },
+      "direct-minus-baseline": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "ties_as_win": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "table_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "opponents_mean_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        }
+      },
+      "linear-hard-minus-baseline": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "ties_as_win": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "table_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "opponents_mean_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        }
+      },
+      "linear-set-minus-baseline": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "ties_as_win": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "table_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "opponents_mean_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        }
+      },
+      "no-offset-set-minus-baseline": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "ties_as_win": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "table_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "opponents_mean_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        }
+      },
+      "uniform-minus-hard": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "ties_as_win": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "table_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "opponents_mean_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        }
+      },
+      "set-minus-uniform": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "ties_as_win": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "table_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "opponents_mean_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        }
+      },
+      "set-minus-linear-set": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "ties_as_win": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "table_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "opponents_mean_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        }
+      },
+      "hard-minus-linear-hard": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "ties_as_win": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "table_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "opponents_mean_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        }
+      },
+      "set-minus-no-offset-set": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "ties_as_win": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "table_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "opponents_mean_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        }
+      },
+      "exploratory_label_gain_interaction_MLP-minus-linear": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "scope": "Selected-pipeline difference-in-differences, not an isolated nonlinearity effect"
+      }
+    },
+    "absolute_scores": {
+      "hard": {
+        "n": 2000,
+        "mean": 169.9805,
+        "ci95": [
+          168.75590869286765,
+          171.20509130713236
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "uniform": {
+        "n": 2000,
+        "mean": 169.9805,
+        "ci95": [
+          168.75590869286765,
+          171.20509130713236
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "set": {
+        "n": 2000,
+        "mean": 169.9805,
+        "ci95": [
+          168.75590869286765,
+          171.20509130713236
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "q": {
+        "n": 2000,
+        "mean": 169.9805,
+        "ci95": [
+          168.75590869286765,
+          171.20509130713236
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "direct": {
+        "n": 2000,
+        "mean": 169.9805,
+        "ci95": [
+          168.75590869286765,
+          171.20509130713236
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "linear-hard": {
+        "n": 2000,
+        "mean": 169.9805,
+        "ci95": [
+          168.75590869286765,
+          171.20509130713236
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "linear-set": {
+        "n": 2000,
+        "mean": 169.9805,
+        "ci95": [
+          168.75590869286765,
+          171.20509130713236
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "no-offset-set": {
+        "n": 2000,
+        "mean": 169.9805,
+        "ci95": [
+          168.75590869286765,
+          171.20509130713236
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "baseline": {
+        "n": 2000,
+        "mean": 169.9805,
+        "ci95": [
+          168.75590869286765,
+          171.20509130713236
+        ],
+        "method": "paired normal; strata fixed"
+      }
+    },
+    "absolute_ties_as_win": {
+      "hard": {
+        "n": 2000,
+        "mean": 0.331,
+        "ci95": [
+          0.3103974321246559,
+          0.3516025678753441
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "uniform": {
+        "n": 2000,
+        "mean": 0.331,
+        "ci95": [
+          0.3103974321246559,
+          0.3516025678753441
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "set": {
+        "n": 2000,
+        "mean": 0.331,
+        "ci95": [
+          0.3103974321246559,
+          0.3516025678753441
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "q": {
+        "n": 2000,
+        "mean": 0.331,
+        "ci95": [
+          0.3103974321246559,
+          0.3516025678753441
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "direct": {
+        "n": 2000,
+        "mean": 0.331,
+        "ci95": [
+          0.3103974321246559,
+          0.3516025678753441
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "linear-hard": {
+        "n": 2000,
+        "mean": 0.331,
+        "ci95": [
+          0.3103974321246559,
+          0.3516025678753441
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "linear-set": {
+        "n": 2000,
+        "mean": 0.331,
+        "ci95": [
+          0.3103974321246559,
+          0.3516025678753441
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "no-offset-set": {
+        "n": 2000,
+        "mean": 0.331,
+        "ci95": [
+          0.3103974321246559,
+          0.3516025678753441
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "baseline": {
+        "n": 2000,
+        "mean": 0.331,
+        "ci95": [
+          0.3103974321246559,
+          0.3516025678753441
+        ],
+        "method": "paired normal; strata fixed"
+      }
+    },
+    "n_complete_blocks": 2000,
+    "frozen_models_sha256": "1c96582eb2eaba25602eaacda28aabe352a876f43758ba29874973ac589ab287",
+    "limitations": "Two fixed primary tests; all secondary controls exploratory without familywise correction. Same selected pipelines, not isolated architecture effects."
+  },
+  "confirmation": {
+    "stage": "confirmation",
+    "base": 2140000000,
+    "contrasts": {
+      "PRIMARY_set-minus-hard": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "ties_as_win": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "table_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "opponents_mean_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        }
+      },
+      "PRIMARY_best-minus-baseline": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "ties_as_win": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "table_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "opponents_mean_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        }
+      },
+      "hard-minus-baseline": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "ties_as_win": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "table_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "opponents_mean_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        }
+      },
+      "uniform-minus-baseline": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "ties_as_win": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "table_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "opponents_mean_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        }
+      },
+      "set-minus-baseline": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "ties_as_win": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "table_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "opponents_mean_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        }
+      },
+      "q-minus-baseline": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "ties_as_win": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "table_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "opponents_mean_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        }
+      },
+      "direct-minus-baseline": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "ties_as_win": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "table_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "opponents_mean_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        }
+      },
+      "linear-hard-minus-baseline": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "ties_as_win": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "table_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "opponents_mean_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        }
+      },
+      "linear-set-minus-baseline": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "ties_as_win": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "table_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "opponents_mean_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        }
+      },
+      "no-offset-set-minus-baseline": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "ties_as_win": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "table_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "opponents_mean_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        }
+      },
+      "uniform-minus-hard": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "ties_as_win": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "table_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "opponents_mean_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        }
+      },
+      "set-minus-uniform": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "ties_as_win": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "table_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "opponents_mean_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        }
+      },
+      "set-minus-linear-set": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "ties_as_win": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "table_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "opponents_mean_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        }
+      },
+      "hard-minus-linear-hard": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "ties_as_win": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "table_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "opponents_mean_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        }
+      },
+      "set-minus-no-offset-set": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "ties_as_win": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "table_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "opponents_mean_score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        }
+      },
+      "exploratory_label_gain_interaction_MLP-minus-linear": {
+        "score": {
+          "n": 2000,
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired normal; strata fixed"
+        },
+        "scope": "Selected-pipeline difference-in-differences, not an isolated nonlinearity effect"
+      }
+    },
+    "absolute_scores": {
+      "hard": {
+        "n": 2000,
+        "mean": 169.8565,
+        "ci95": [
+          168.63890105783847,
+          171.07409894216156
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "uniform": {
+        "n": 2000,
+        "mean": 169.8565,
+        "ci95": [
+          168.63890105783847,
+          171.07409894216156
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "set": {
+        "n": 2000,
+        "mean": 169.8565,
+        "ci95": [
+          168.63890105783847,
+          171.07409894216156
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "q": {
+        "n": 2000,
+        "mean": 169.8565,
+        "ci95": [
+          168.63890105783847,
+          171.07409894216156
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "direct": {
+        "n": 2000,
+        "mean": 169.8565,
+        "ci95": [
+          168.63890105783847,
+          171.07409894216156
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "linear-hard": {
+        "n": 2000,
+        "mean": 169.8565,
+        "ci95": [
+          168.63890105783847,
+          171.07409894216156
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "linear-set": {
+        "n": 2000,
+        "mean": 169.8565,
+        "ci95": [
+          168.63890105783847,
+          171.07409894216156
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "no-offset-set": {
+        "n": 2000,
+        "mean": 169.8565,
+        "ci95": [
+          168.63890105783847,
+          171.07409894216156
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "baseline": {
+        "n": 2000,
+        "mean": 169.8565,
+        "ci95": [
+          168.63890105783847,
+          171.07409894216156
+        ],
+        "method": "paired normal; strata fixed"
+      }
+    },
+    "absolute_ties_as_win": {
+      "hard": {
+        "n": 2000,
+        "mean": 0.333,
+        "ci95": [
+          0.3123515233402422,
+          0.35364847665975785
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "uniform": {
+        "n": 2000,
+        "mean": 0.333,
+        "ci95": [
+          0.3123515233402422,
+          0.35364847665975785
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "set": {
+        "n": 2000,
+        "mean": 0.333,
+        "ci95": [
+          0.3123515233402422,
+          0.35364847665975785
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "q": {
+        "n": 2000,
+        "mean": 0.333,
+        "ci95": [
+          0.3123515233402422,
+          0.35364847665975785
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "direct": {
+        "n": 2000,
+        "mean": 0.333,
+        "ci95": [
+          0.3123515233402422,
+          0.35364847665975785
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "linear-hard": {
+        "n": 2000,
+        "mean": 0.333,
+        "ci95": [
+          0.3123515233402422,
+          0.35364847665975785
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "linear-set": {
+        "n": 2000,
+        "mean": 0.333,
+        "ci95": [
+          0.3123515233402422,
+          0.35364847665975785
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "no-offset-set": {
+        "n": 2000,
+        "mean": 0.333,
+        "ci95": [
+          0.3123515233402422,
+          0.35364847665975785
+        ],
+        "method": "paired normal; strata fixed"
+      },
+      "baseline": {
+        "n": 2000,
+        "mean": 0.333,
+        "ci95": [
+          0.3123515233402422,
+          0.35364847665975785
+        ],
+        "method": "paired normal; strata fixed"
+      }
+    },
+    "n_complete_blocks": 2000,
+    "frozen_models_sha256": "1c96582eb2eaba25602eaacda28aabe352a876f43758ba29874973ac589ab287",
+    "limitations": "Two fixed primary tests; all secondary controls exploratory without familywise correction. Same selected pipelines, not isolated architecture effects."
+  },
+  "utc": "2026-11-18T04:15:37Z"
+}

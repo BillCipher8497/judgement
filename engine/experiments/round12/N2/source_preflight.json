@@ -1,0 +1,91 @@
+{
+  "raw_sources": {
+    "engine/experiments/round12/learning.py": "297a95bd644c5bc86aaf85e3a31773ac37df846ab76a7dd055fb7f248b510378",
+    "engine/experiments/round12/N2/bid_premise.py": "9265132188d485d4c3f9ed32f8822252b81706dde5f22b666f248a13a0593d69",
+    "engine/experiments/round12/N2/corpus.py": "73cf71018ed22356d0f7a2bf0ffea4f297bc39322c2fc5ee046d9af97dd5f28d",
+    "engine/experiments/round12/N2/determinism_check.py": "1c889bffb10e857f903f72fa128977a631b9fec4a4df9663cd63619f898a8a67",
+    "engine/experiments/round12/N2/evaluate.py": "1d0f088cb357c6387821de1776618249d7218bc32796ccee61e2212109a3a855",
+    "engine/experiments/round12/N2/export.py": "c6296ee52eaf7be88d9fb8a247e596bfd1fa6695d8b99e6f1b800c67854f0687",
+    "engine/experiments/round12/N2/features.py": "624f642fab6a2728471fd3e5fa809e322c093510530504b450db41157f11880d",
+    "engine/experiments/round12/N2/fit.py": "96e06f6bdb896262a2ff7e5a0961bfc49b05216638faee973fa339e3440fce1f",
+    "engine/experiments/round12/N2/joint.py": "b2af65e500a340ccfeaf12ceaf7b02214bbcab4674fdb9388bd744572c9d70ba",
+    "engine/experiments/round12/N2/neural.py": "35e03c229295d4c40d12adf027e08aa5603e984dfefe36ed8aa786aac62c21dc",
+    "engine/experiments/round12/N2/PROTOCOL.md": "50a72cbf3d01c041b2285333b75ac9fc5e8b351b33d39caab22d8df4aa83c8b9",
+    "engine/experiments/round12/N2/reference.py": "558c51a302a729e46017db81f5271b41361a833c2be4115868cde664da1a4773",
+    "engine/experiments/round12/N2/run.py": "56e1f0a2524207ae7846a8cbd95a598df9426862eedcf21bd3f636174a4b2a83",
+    "engine/experiments/round12/N2/seed_audit.py": "74469710a966878415e1da34d1c2fac49c314a4c4171727e0992a0502b5f68d8",
+    "engine/experiments/round12/N2/self_check.py": "e28737a7ab28a1f78edb606f8ff9fa80eda51272163597d0c0b6c1eab824fb52",
+    "engine/experiments/round12/N2/verify.py": "3421427e2eedc200add28f10fa8582a0d7940944d8b907d56f57eb0fef0a7302",
+    "engine/experiments/round9/D3/bounded_ta.py": "eb6566aaa59c876e0517dccd06ed8a0b90d228b12488ef91006407565aa33d4e",
+    "engine/judgement/__init__.py": "0838f728afe0cbe159c152e51e7a242ff6640c530e416b700a81c0ee6bf9ada0",
+    "engine/judgement/cards.py": "385a219c7754d9f2ae0c32d0114d514c0fdee108060d3f38315ea167d5845438",
+    "engine/judgement/cfr/heuristics.py": "e4f0afd7d417a3114b887a02b826b010e9c9f010eef7ebf0fe0617be0764f0c9",
+    "engine/judgement/cfr/toy.py": "7b3233939421dadfd16dc7e4d8cf11fd935e6eb89c011487f29fa2bb5815ff93",
+    "engine/judgement/engine.py": "004d1d41427a002e98e546e005ffca6403cd820f99539f3450c0557c0c6cc9ba",
+    "engine/judgement/rules.py": "f89916d039bdfd515db015d59a5343f4c416b57c65c43cc7776a9d712ce5f6ed",
+    "engine/judgement/state.py": "799a9be6d540a453d6ae4cf71f9ae569c76ab66edb22f3742a4286d6298d0c8d"
+  },
+  "canonical_sources": {
+    "engine/experiments/round12/learning.py": "297a95bd644c5bc86aaf85e3a31773ac37df846ab76a7dd055fb7f248b510378",
+    "engine/experiments/round12/N2/bid_premise.py": "94fb7dd7d04a61920b04b825e834d6ccd363df0c19b8d500ac73b8ef1abd5c65",
+    "engine/experiments/round12/N2/corpus.py": "73cf71018ed22356d0f7a2bf0ffea4f297bc39322c2fc5ee046d9af97dd5f28d",
+    "engine/experiments/round12/N2/determinism_check.py": "6e655940b0e90a43478a02e0ebac31451b11454f8218a64487a586bd30666530",
+    "engine/experiments/round12/N2/evaluate.py": "8f463be10be9f2e8a8d10c485839890367b414e68b6212c896cb6d80a6dfb091",
+    "engine/experiments/round12/N2/export.py": "04d340a34ceb422ef4bcf6f9aa2a5b11cb1d6a0c4b7c9a7074aac18a21779cfc",
+    "engine/experiments/round12/N2/features.py": "600538fdbea1c19faf38ee573dc0f08c523bcb3f3fd5b7eabfe433f824cfa698",
+    "engine/experiments/round12/N2/fit.py": "c5d2c990c5a76750a2e36a3b768ccabfe61de04e12aab53d4063a3e3a1d59453",
+    "engine/experiments/round12/N2/joint.py": "1c9b244055ef95ab8c5864dfc266b2c6422cc0be91baec59ac3c61d9ec785f29",
+    "engine/experiments/round12/N2/neural.py": "e07b0d791f479fe469bc5ae9c69c8b0a8b14ffd8f99c6fbfb4ed9dea033e6085",
+    "engine/experiments/round12/N2/PROTOCOL.md": "221fb4d99047bf1b5339a40df9d6c81bc5b76c97df569749900ec7ae7c238e54",
+    "engine/experiments/round12/N2/reference.py": "98ce85828d47f079ef8467ba36ba1f6259c65fcbb8098d4fabc7f75b6921b3f1",
+    "engine/experiments/round12/N2/run.py": "801b4e66ad55be99dd67f2552359d9179d50c7c743e63d35f9e9f584d0a1bf53",
+    "engine/experiments/round12/N2/seed_audit.py": "1ef484f2403042e49be2fad449c2e001843b7db893de0ed1d6a598565893311c",
+    "engine/experiments/round12/N2/self_check.py": "b6a83347eb02b1cff695acd823dca050316b4d66814a2b70877bf1d90780ed8b",
+    "engine/experiments/round12/N2/verify.py": "811921b2565e38491f9f5d3efac2b017c4ec15ec5af8d3293d3ffec55d56ba99",
+    "engine/experiments/round9/D3/bounded_ta.py": "eb6566aaa59c876e0517dccd06ed8a0b90d228b12488ef91006407565aa33d4e",
+    "engine/judgement/__init__.py": "0838f728afe0cbe159c152e51e7a242ff6640c530e416b700a81c0ee6bf9ada0",
+    "engine/judgement/cards.py": "385a219c7754d9f2ae0c32d0114d514c0fdee108060d3f38315ea167d5845438",
+    "engine/judgement/cfr/heuristics.py": "e4f0afd7d417a3114b887a02b826b010e9c9f010eef7ebf0fe0617be0764f0c9",
+    "engine/judgement/cfr/toy.py": "7b3233939421dadfd16dc7e4d8cf11fd935e6eb89c011487f29fa2bb5815ff93",
+    "engine/judgement/engine.py": "004d1d41427a002e98e546e005ffca6403cd820f99539f3450c0557c0c6cc9ba",
+    "engine/judgement/rules.py": "f89916d039bdfd515db015d59a5343f4c416b57c65c43cc7776a9d712ce5f6ed",
+    "engine/judgement/state.py": "799a9be6d540a453d6ae4cf71f9ae569c76ab66edb22f3742a4286d6298d0c8d"
+  },
+  "source_fingerprint": "7c7ba88609951b1b6a4be672984bf7adc3dc1bc7ababaeff7afa5d9ab10173b7",
+  "numpy": "2.5.4",
+  "BLAS": "{'Compilers': {'c': {'name': 'msvc', 'linker': 'link', 'version': '19.44.35229', 'commands': 'cl'}, 'cython': {'name': 'cython', 'linker': 'cython', 'version': '3.3.0', 'commands': 'cython'}, 'c++': {'name': 'msvc', 'linker': 'link', 'version': '19.44.35229', 'commands': 'cl'}}, 'Machine Information': {'host': {'cpu': 'x86_64', 'family': 'x86_64', 'endian': 'little', 'system': 'windows'}, 'build': {'cpu': 'x86_64', 'family': 'x86_64', 'endian': 'little', 'system': 'windows'}}, 'Build Dependencies': {'blas': {'name': 'scipy-openblas', 'found': True, 'version': '0.3.34.106.0', 'detection method': 'pkgconfig', 'include directory': 'C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j3umgqti/cp312-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include', 'lib directory': 'C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j3umgqti/cp312-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib', 'openblas configuration': 'OpenBLAS 0.3.34.106.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=24', 'pc file directory': 'D:/a/numpy-release/numpy-release/.openblas'}, 'lapack': {'name': 'scipy-openblas', 'found': True, 'version': '0.3.34.106.0', 'detection method': 'pkgconfig', 'include directory': 'C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j3umgqti/cp312-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include', 'lib directory': 'C:/Users/runneradmin/AppData/Local/Temp/cibw-run-j3umgqti/cp312-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib', 'openblas configuration': 'OpenBLAS 0.3.34.106.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=24', 'pc file directory': 'D:/a/numpy-release/numpy-release/.openblas'}}, 'Python Information': {'path': 'C:\\\\Users\\\\runneradmin\\\\AppData\\\\Local\\\\Temp\\\\build-env-1rr8oud1\\\\Scripts\\\\python.exe', 'version': '3.12'}, 'SIMD Extensions': {'baseline': ['X86_V2'], 'found': ['X86_V3']}}",
+  "conditions": [
+    [
+      2,
+      2,
+      0,
+      2520
+    ],
+    [
+      2,
+      2,
+      -1,
+      2520
+    ],
+    [
+      3,
+      3,
+      0,
+      369600
+    ],
+    [
+      3,
+      3,
+      -1,
+      369600
+    ]
+  ],
+  "profile": "Four private/public deterministic toy TA policies, myopic bids, no pruning; every play decision recorded",
+  "fit_counts": {
+    "train_key_cap": 30000,
+    "validation_key_cap": 4000,
+    "seeds_per_condition": 5,
+    "epochs": 20
+  },
+  "primary": "Per-condition net-minus-BI joint KL on complete reached test-hand population; fit seed t95%CI only, chance fully enumerated"
+}

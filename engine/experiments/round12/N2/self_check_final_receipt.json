@@ -1,0 +1,7 @@
+{
+  "exit_code": 0,
+  "wall_seconds": 0.9859916,
+  "command": "python bounded_job.py N2/self_check.py",
+  "finishedUTC": "2026-11-18T01:51:16.6290509+00:00",
+  "scope": "final code C1/C2/key/split/DP/gradient fixtures; no experiment data"
+}

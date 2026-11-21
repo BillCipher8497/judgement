@@ -1,0 +1,66 @@
+{
+  "stages": {
+    "screen": {
+      "canonical": {
+        "n_games": 2000,
+        "mean": 166.7965,
+        "ci95": [
+          165.5675235007858,
+          168.02547649921422
+        ],
+        "halfwidth": 1.2289764992142207
+      },
+      "N-L": {
+        "n_games": 2000,
+        "mean": 1.1400000000000001,
+        "ci95": [
+          0.7545422171579527,
+          1.5254577828420475
+        ],
+        "halfwidth": 0.38545778284204746
+      },
+      "R-L_ratio_of_canonical_mean": null,
+      "R-canonical_fraction": {
+        "n_games": 2000,
+        "mean": 0.006465963014811462,
+        "ci95": [
+          0.004100759441667049,
+          0.008831166587955875
+        ],
+        "method": "paired delta-method equal-seat95%CI; posthoc scale diagnostic"
+      }
+    },
+    "confirmation": {
+      "canonical": {
+        "n_games": 2000,
+        "mean": 166.2625,
+        "ci95": [
+          165.03640554806648,
+          167.4885944519335
+        ],
+        "halfwidth": 1.226094451933506
+      },
+      "N-L": {
+        "n_games": 2000,
+        "mean": 0.8925,
+        "ci95": [
+          0.4932397477317801,
+          1.2917602522682199
+        ],
+        "halfwidth": 0.3992602522682199
+      },
+      "R-L_ratio_of_canonical_mean": null,
+      "R-canonical_fraction": {
+        "n_games": 2000,
+        "mean": 0.004126005563491467,
+        "ci95": [
+          0.0017576665090242001,
+          0.0064943446179587345
+        ],
+        "method": "paired delta-method equal-seat95%CI; posthoc scale diagnostic"
+      }
+    }
+  },
+  "utc": "2026-11-17T21:15:06.103022+00:00",
+  "scope": "Deterministic saved-raw diagnostic; no new games or seeds. Rounded ratios descriptive."
+}

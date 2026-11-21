@@ -1359,4 +1359,71 @@ the fixed-hero premise cannot be dropped.
 Proof/scope: experiments/round10/R3/PROOF.md. A four-world exact arithmetic
 sanity check is in R3/check.ps1 (16 pure plans,81 half-grid profiles); it is not
 a new card-game experiment or a substitute for the proof. No sampling CI or
-stochastic seed applies. External proof audit remains required.
+stochastic seed applies. External proof audit completed by Claude on2026-11-16
+for this fixed-policy scope; the status line and audit above govern.
+
+## M15 — Privileged root supervision and decomposed private decision risk
+
+Status: externally validated (Claude,2026-11-17); audit documentation corrections applied. See experiments/round12/M2/PROOF.md for assumptions, elementary PI<=J1<=J_phi<=J_student decomposition, binary public-payoff optimal-membership alignment and exact categorical tie counterexamples. Executable diagnostics reproduce four full-population roots with integer arithmetic; finite learned-model gains are a separate preregistered experiment. No novelty, full hidden-team, equilibrium or52-card guarantee. Preserve this gate in any future publication derivative.
+
+## M16 — N2 finite posterior identities
+
+Status: **proved (externally checked by Claude,2026-11-17), conditional on the deterministic-profile and matched-hook-legal-bidder premises**. Original candidate was logged2026-11-17T22:20Z; the actual external verdict is preserved in round12/N2/CLAUDE_PROTOCOL_REVIEW.md and round12/REVIEW.md. See N2/PROOF.md; PROOF_DRAFT.md retains the pre-review version.
+
+Uniform complete-reaching posterior for uniform chance and fixed deterministic private policies; capacity-proportional product joint conditioned on fixed capacities equals uniform on the structural support; matched epsilon1/50 BI-style integer partitions and pointwise KL ordering; finite allocation recursion. These are narrow nats-valued posterior-model statements, not game-score bounds, a five-way cost decomposition, a team optimum or a neural guarantee. Source fixtures check deterministic ties/no RNG and hook legality; every exported key must additionally satisfy the matched-bid premise. New implementation/data results remain separately held for audit; no N2numerical outcome is claimed here.
+
+## M17 — A PI-optimal action need not be private-optimal (N11)
+
+**Status: externally validated by Claude, 2026-11-20 (certificate algebra);
+posterior support enumeration inherited from the audited N2 machinery, not
+independently re-derived.** See CLAUDE_AUDIT_2026-11-20.md.
+Finite known-phenomenon certificate, no novelty or universal PIMC-decoder claim.
+See `experiments/round12/N11/PROOF_PENDING_EXTERNAL.md` and the full14-world
+certificate `results/certificates/S3R4n3_t0_0507870.json` in that task.
+
+S3R4n3trump0,hero1ownhand[4,6,10],bids[0,0,2,0],lead1,exact original
+all-private-TA/myopic reach posterior14equiprobable deals. Currentcards4/6/10
+have PI-future score sums140/140/140 versus private-BR100/140/140, with identical
+private opponents and one shared current action. Lower-card PIMC tie loses20/7
+conditional hero points; best PI tie loses0. Thus a PI-optimal action need not
+be private-optimal, but every PI decoder need not lose. All current actions
+are per-world PI-optimal here; complete PIoptimal-set supervision supplies no
+private sequential preference in this context. This changes continuation
+constraints and does not refute M15's same-objective alignment theorem.
+
+No samplingCI, prevalence/full-game/52-card/magnitude or joint-team claim.
+All512new fixed-selector N11keys were independently replayed; all7positive
+any-action gaps have full world/future-infoset matrices and separate algebra
+checks. OriginalN6null remains. The Claude audit recomputed the PI row-maxima sums and private-BR column sums
+from the certificate tables alone, without the recursive solver, and reproduced
+140/140/140 versus 100/140/140 and the 20/7 fixed-tie loss exactly. The
+reduction of 560 structural assignments to the 14-world support remains
+inherited from N2.
+
+## M18 — Exact-moment entropy witnesses for a conditional-product belief family
+
+**Status: externally validated by Claude, 2026-11-20** (lemma re-derived by
+hand, all per-key certified lower bounds recomputed independently as
+H(q)-log|R|; see CLAUDE_AUDIT_2026-11-20.md). No novelty claim: standard finite entropy variational inequality. For uniform P on reaching support R and any q on structural F with the same card-holder moments, KL(P||Q_theta)>=H(q)-H(P). See experiments/round12/N13/BOUND.md and RELATED_WORK.md.
+
+All256 fixed known-hand contexts have exact rational moment checks and alternate rational log enclosures;15 strict positive witnesses, all zeros/three numerical optimizer status failures retained. Numerical free-potential objectives are NOT certified optima or solved generic floors. These are exact finite nats bounds, no samplingCI, no52-card/decision-score/NN guarantee. Reach-weighted certified lower bounds reproduce exactly: 0.0660799372 (S3R4n3_t-1,
+64 keys/reach170), 0.0881641563 (S3R4n3_t0), 0.0032926298 (S2R4n2_t-1),
+0.0081165408 (S2R4n2_t0) nats. Audit note: the inequality is in fact tight, since
+the max-entropy moment-matching distribution lies in the exponential family, so
+inf KL(P||Q_theta)=H(q*)-H(P) by the I-projection identity; BOUND.md states only
+the conservative direction.
+
+## M19 — One exact belief-family infimum with zero current decision regret
+
+**Status: externally validated by Claude, 2026-11-20** — moment face, RREF
+dimension, entropy maximizer t=1/9 and the full 12-allocation partition
+polynomial Z(e)=9+8e+6e^2 all re-derived by hand; see CLAUDE_AUDIT_2026-11-20.md. See experiments/round12/N15/PROOF_PENDING_EXTERNAL.md. Illustrative posthoc smallest-by-F N13context, not selected by score and not a new replication.
+
+Large NT key105013,hero0originalhand[2,4,6],bids[0,0,2,0],publicplays[2,0,3,1,11,10]. Full12structural allocations/3uniform reaching worlds. The unrestricted card-holder conditional-product closure has KL infimum log3-(4/3)log2, approximately0.174416047921516nats. A rational moment-matching q*=(2/9,4/9,2/9,1/9) supplies the entropy lower; positive factor models with exact partition9+8epsilon+6epsilon^2 attain the same limit as epsilon->0. No finite-positive-potential attainment or general solved posterior floor claimed.
+
+Both legal current hero actions4and6 score10in each of the three true worlds with fixed private TA opponents; final hero card forced. Thus either has exact zero one-step regret in this SAME context despite positive irreducible belief-family KL. All six integer outcomes manually replayed separately. No samplingCI, prevalence, fullgame/52-card/neural/novelty claim. Cross-artifact consistency: N13's certified lower bound for this key is
+0.166389086604960, this infimum is 0.174416047921516, and N13's numerical
+free-potential optimizer reached 0.174416047921740 — lower bound < infimum <
+numerical upper, agreeing to eleven decimals across three independent code paths.
+The context is action-indifferent by selection; N17 tests whether zero regret
+survives when actions genuinely differ in value.

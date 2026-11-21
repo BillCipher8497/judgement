@@ -1,0 +1,12 @@
+{
+  "engine/experiments/round12/M9/run.py": "09169381fb3512a1f654d2baff3f3c20c411d3e46ad7bf68f39c3ee273fac4fd",
+  "engine/experiments/round12/M9/PROTOCOL.md": "80bf2f12a8bfa7f091aa7d23263affeaaf8939b19bca2c196446c21b219271ef",
+  "engine/experiments/round12/root_features.py": "35168d00dcd708dcba8db77c17e06495f90172f1d5b5da85706ab3591e8e2a0a",
+  "engine/experiments/round12/learning.py": "297a95bd644c5bc86aaf85e3a31773ac37df846ab76a7dd055fb7f248b510378",
+  "engine/experiments/round12/common.py": "1aa6d0df6a32546ea4a33a4d929eae618eed69f83d1905922299688f37a4413a",
+  "engine/experiments/round12/M1/verify.py": "7518cbfe95cbf2980cc977ec2d8148e98f339afa17e7c5ecbedb3d4342e7877c",
+  "engine/experiments/round9/D3/compact_tree.py": "10dab241a708d3a1756a6a83f2f5d2f83dd1ceed2e10c4753a34a9ebba2b831a",
+  "engine/experiments/round9/D3/bounded_ta.py": "eb6566aaa59c876e0517dccd06ed8a0b90d228b12488ef91006407565aa33d4e",
+  "engine/judgement/cfr/toy.py": "7b3233939421dadfd16dc7e4d8cf11fd935e6eb89c011487f29fa2bb5815ff93",
+  "engine/judgement/cfr/heuristics.py": "e4f0afd7d417a3114b887a02b826b010e9c9f010eef7ebf0fe0617be0764f0c9"
+}

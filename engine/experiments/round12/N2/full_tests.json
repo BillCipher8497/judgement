@@ -1,0 +1,11 @@
+{
+  "pytest_seconds": 14.96,
+  "passed": 283,
+  "scope": "expanded local engine/tests only; separate N1audits/N2self_check have own receipts; no N2experiment data",
+  "command": "cd engine && python -m pytest -q -p no:cacheprovider",
+  "exit_code": 0,
+  "finishedUTC": "2026-11-18T01:52:29.0244905+00:00",
+  "skipped": 1,
+  "startedUTC": "2026-11-18T01:52:13.3006280+00:00",
+  "wall_seconds": 15.6149912
+}

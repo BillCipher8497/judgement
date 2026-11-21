@@ -1,0 +1,9 @@
+{
+  "start": 4096,
+  "end": 5120,
+  "freeze_sha256": "92d32879faa79ecf53372647c8b6b1038dccbff1bec97f069982bf391ff1051d",
+  "model_packet_sha256": "20c32ce4952f7813b2ec488457d5eaa5ddd98cbb11162ad4eddc085fa543d939",
+  "posterior_sha256": "19868859d6596b4369c04b6e87e34ef69fd68c00d34ac8faaa24aa343a2dff7e",
+  "arrays_sha256": "87a081e4addc290636fb64c5454049e1cc2e781c744d155ed5bf4b227048a85e",
+  "utc": "2026-11-18T02:19:21Z"
+}

@@ -1,0 +1,11 @@
+{
+  "adapter_commit": "1d4eafb8e2652175288725e825484fe1ebbc8402",
+  "stderr": "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N2/windows_20261118T025308Z_stderr.txt",
+  "hard_stopUTC": "2026-11-18T05:53:08.0000000+00:00",
+  "max_windows": 2,
+  "window": 2,
+  "startedUTC": "2026-11-18T02:53:08.0664884+00:00",
+  "pid": 6812,
+  "stdout": "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N2/windows_20261118T025308Z_stdout.txt",
+  "hard_stop_epoch": 1794981188
+}

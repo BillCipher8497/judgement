@@ -1,0 +1,8 @@
+{
+  "utc": "2026-11-20T01:42:17.117820+00:00",
+  "n_certificates": 7,
+  "all_world_partitions_leaf_scores_PI_max_private_column_sums_and_tie_ranges_match": true,
+  "fourteen_world_tie_sensitive_witness_pass": true,
+  "source_sha256": "2f4d762e7f77b6b4028b0c31ad2e38f3f1bc0af6fca4e00b0629106007b605d3",
+  "verdict": "Algebra-only separate Codex check; pending external audit; policy reach/transitions separately verified by direct enumerator."
+}

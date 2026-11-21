@@ -1,0 +1,9 @@
+{
+  "utc": "2026-11-20T06:58:39.114953+00:00",
+  "gates_passed": false,
+  "scientific_game_blocks": 0,
+  "source_sha256": "b97b2ccf9cf75406ac79aa5df678006500551b977c40507212e5b1d026d0ad3e",
+  "models_sha256": "38f42034e47bb6630e75deca4a17cd4bd51339cafaef273d611f9dead0d36271",
+  "held_report_sha256": "b451b96b7f54fb6002fc6ffc31c3b29128f24e8bae48befcc5408d62f0dffb38",
+  "status": "fixedtargetsfinished or prespecifiedgatefailure; separate audit/external review pending"
+}

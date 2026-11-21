@@ -1,0 +1,21 @@
+{
+  "condition": {
+    "N": 4,
+    "S": 2,
+    "R": 4,
+    "n": 2,
+    "trump": -1
+  },
+  "source_freeze_sha256": "92d32879faa79ecf53372647c8b6b1038dccbff1bec97f069982bf391ff1051d",
+  "n_exact_chance_deals": 2520,
+  "n_recorded_decision_worlds": 20160,
+  "n_private_play_infosets": 12613,
+  "raw_hashes": {
+    "000000.npz": "87cbe737eb74277847372fd812fcf36591f2639a5b3fc0b28a9af1baf3c48966",
+    "000256.npz": "11d8d3d6ec763f0c41f070f3a80fc9730b497127efc5ef42eb57e6c6596bd822",
+    "001280.npz": "f250878015b8fe25e4c0ac02ab606b843522d73b3c3862119bf031a8ee8c8144",
+    "002304.npz": "5ed60a63ce8ffcc68de89be99dd52ef6070aaa35e61f7ff54a3b05ef55fb47be"
+  },
+  "posterior_sha256": "19868859d6596b4369c04b6e87e34ef69fd68c00d34ac8faaa24aa343a2dff7e",
+  "definition": "Uniform complete chance deals reaching each full private/public play key under one fixed deterministic profile; no hidden root-stage flag; all forced nodes retained."
+}

@@ -1,0 +1,124 @@
+{
+  "utc": "2026-11-17T21:32:42.488585+00:00",
+  "reserved_bases_M": [
+    2100,
+    2110,
+    2120,
+    2130,
+    2140,
+    2150,
+    2160
+  ],
+  "registered_text_hits": [
+    {
+      "path": "AGENTS.md",
+      "line": 103,
+      "text": "0. M8externallyvalidated (M6validated98d0ee76); proceed N1\u2192N2\u2192N3\u2192N4\u2192N5\u2192N6\u2192N7 in ML addendum order. M3/M4/M5/M7/M9/M10 are validated and locally committed. N1source-only preflight approved; matching pre-run commit before pilot; no N0edits or PyTorch without Arvin. N2/N6 must enumerate all worlds reaching declared private/public histories, with no hi"
+    },
+    {
+      "path": "engine/AGENTS.md",
+      "line": 103,
+      "text": "0. M8externallyvalidated (M6validated98d0ee76); proceed N1\u2192N2\u2192N3\u2192N4\u2192N5\u2192N6\u2192N7 in ML addendum order. M3/M4/M5/M7/M9/M10 are validated and locally committed. N1source-only preflight approved; matching pre-run commit before pilot; no N0edits or PyTorch without Arvin. N2/N6 must enumerate all worlds reaching declared private/public histories, with no hi"
+    },
+    {
+      "path": "engine/experiments/round12/AUDIT_FIXES/preflight_and_paper_receipt.py",
+      "line": 39,
+      "text": "N0 is untouched. Bases2100M/2110M only, remaining reservations unused."
+    },
+    {
+      "path": "engine/experiments/round12/BOARD.md",
+      "line": 77,
+      "text": "New seed bases (collision-check before use): 2100M N0/N1 belief data, 2110M N1 confirmation, 2120M N3 policy data, 2130M/2140M N3 screen/confirmation games, 2150M N4 belief-in-search games, 2160M N5 learned-curve seeds."
+    },
+    {
+      "path": "engine/experiments/round12/BOARD.md",
+      "line": 82,
+      "text": "| N1 | **Learned belief model at scale.** Read N0/RESULTS.md first (leakage lesson: 4 holder classes incl. undealt; bids-only vs history ablation). Turn N0 into a predeclared experiment. Train on 2100M (\u2265 30k rounds, n\u2208{3..13}, S/NT, TA and TA+ tables) and confirm on 2110M (\u2265 3k decisions with K=256 bid-informed and uniform baselines). Primary: net"
+    },
+    {
+      "path": "engine/experiments/round12/BOARD.md",
+      "line": 84,
+      "text": "| N3 | **Privileged-teacher distillation for full-game card play.** For hero play decisions, generate labels from the PI solver per world (MaxN move values on K sampled worlds): (a) hard per-world argmax, (b) PIMC mean value, (c) per-world optimal-set membership (the M3 lesson), (d) direct expected-cost. Train numpy MLP residual policies over TA+ ("
+    },
+    {
+      "path": "engine/experiments/round12/BOARD.md",
+      "line": 85,
+      "text": "| N4 | **Belief-in-search.** Swap N1's net into Hybrid as the world proposal: sample worlds from the factorized net marginals under constraints, with importance weight = bid likelihood. Compare to Hybrid-BI at equal K and equal wall-clock on 2150M (n \u2265 300 paired games). Report the SIR reset/ESS diagnostics that D5 lacked. | Codex | todo | New modu"
+    },
+    {
+      "path": "engine/experiments/round12/BOARD.md",
+      "line": 86,
+      "text": "| N5 | **Certified gap curves.** On the four exact toys (plus one larger toy if enumeration fits a 3 h budget), plot information cost (hidden interval \u2212 PI), label cost, representation cost and student regret against model capacity and training size, with 5 paired seeds (2160M). This is the paper's main figure. | Codex | todo | Uses M1/M3/M15 machi"
+    },
+    {
+      "path": "engine/experiments/round12/N1/PREFLIGHT.md",
+      "line": 22,
+      "text": "N0 is untouched. Bases2100M/2110M only, remaining reservations unused."
+    },
+    {
+      "path": "engine/experiments/round12/N1/PROTOCOL.md",
+      "line": 24,
+      "text": "[2100M,0x4E31,20,seedindex]. Calibration bootstrap uses2110M namespace/stage90."
+    },
+    {
+      "path": "engine/experiments/round12/N1/STATUS.txt",
+      "line": 6,
+      "text": "2026-11-17T21:32:39.3792901+00:00 FRESHLAUNCHBOUND: absolutehardstop2026-11-18T03:00:00Z(22:00ET17Nov), oneJudgementworker/BLAS1. Source-onlyClaudeapproval andpre-runcommit4c610703aaf4366d17927186a5ff25a46d6465a9 checkedbyrunnerbeforeanydata. Command cd engine; N1APPROVEDCOMMIT=4c610703... JUDGEMENTN1DEADLINE=1794970800 python experiments/round12/N"
+    },
+    {
+      "path": "engine/experiments/round12/N1/run.py",
+      "line": 24,
+      "text": "STAGES={'pilot':(2100000000,0,176,256),'train':(2100000000,1,30800,0),'validation':(2100000000,2,4400,0),'confirmation':(2110000000,3,3520,256)}"
+    },
+    {
+      "path": "engine/experiments/round12/N1/run.py",
+      "line": 155,
+      "text": "            p=init(np.random.SeedSequence([2100000000,DOMAIN,20,seed]));adam=Adam(p);first=1;best=None;bestepoch=None;active=folder/'checkpoint.npz'"
+    },
+    {
+      "path": "engine/experiments/round12/N1/run.py",
+      "line": 169,
+      "text": "                checkstop();checksources();order=np.random.defaultrng([2100000000,DOMAIN,21,seed,epoch]).permutation(STAGES['train'][2])"
+    },
+    {
+      "path": "engine/experiments/round12/N1/run.py",
+      "line": 211,
+      "text": "        rng=np.random.defaultrng([2110000000,DOMAIN,90]);strata=[np.arange(s,len(records),176) for s in range(176)]"
+    },
+    {
+      "path": "engine/experiments/round12/N1/seed_audit.py",
+      "line": 26,
+      "text": "    for g in range(6000):add([2100000000,g],f'N0/train/{g}')"
+    },
+    {
+      "path": "engine/experiments/round12/N1/seed_audit.py",
+      "line": 27,
+      "text": "    for g in range(600):add([2100000000,10000000+g],f'N0/test/{g}')"
+    },
+    {
+      "path": "engine/experiments/round12/N1/seed_audit.py",
+      "line": 28,
+      "text": "    for stage,base,n in ((0,2100000000,176),(1,2100000000,30800),(2,2100000000,4400),(3,2110000000,3520)):"
+    },
+    {
+      "path": "engine/experiments/round12/N1/seed_audit.py",
+      "line": 32,
+      "text": "        add([2100000000,DOMAIN,20,seed],f'N1/init/{seed}')"
+    },
+    {
+      "path": "engine/experiments/round12/N1/seed_audit.py",
+      "line": 33,
+      "text": "        for epoch in range(1,51):add([2100000000,DOMAIN,21,seed,epoch],f'N1/batch/{seed}/{epoch}')"
+    },
+    {
+      "path": "engine/experiments/round12/N1/seed_audit.py",
+      "line": 34,
+      "text": "    add([2110000000,DOMAIN,90],'N1/calibration-bootstrap')"
+    }
+  ],
+  "unexpected": [],
+  "checked_distinct128bit_root_states": 123544,
+  "collisions": 0,
+  "N0_untouched": "N0 two-integer streams checked; N1 has explicit disjoint namespace/stage/tail.",
+  "limitation": "Tracked protocol/source text<=2MB, not a claim about unknowable external uses; no game labels generated."
+}

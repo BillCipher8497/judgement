@@ -1,0 +1,39 @@
+{
+  "contrasts": {
+    "net_full-net_bids": {
+      "mean": -0.03720912767923094,
+      "ci95": [
+        -0.0388529567925348,
+        -0.03556529856592707
+      ],
+      "n_decisions": 3520
+    },
+    "net_full-prop": {
+      "mean": -0.07488307101755144,
+      "ci95": [
+        -0.07713946187797954,
+        -0.07262668015712334
+      ],
+      "n_decisions": 3520
+    },
+    "net_full-uniform": {
+      "mean": -0.07275534743448639,
+      "ci95": [
+        -0.07508154938678444,
+        -0.07042914548218834
+      ],
+      "n_decisions": 3520
+    },
+    "net_bids-bi": {
+      "mean": -0.01110643653696981,
+      "ci95": [
+        -0.01581862666265915,
+        -0.00639424641128047
+      ],
+      "n_decisions": 3520
+    }
+  },
+  "n_decisions": 3520,
+  "method": "paired equal176stratum normal95%CI; fixed five-fit ensembles",
+  "report_sha256": "d17e5d4da4b6083e7bf985976bc6457dec8369e5ad2a4fe1d6dfefffe0a37c96"
+}

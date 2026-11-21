@@ -1,0 +1,9 @@
+{
+  "stderr": "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N2/cached_audit_20261118T034502Z_stderr.txt",
+  "pid": 9100,
+  "stdout": "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N2/cached_audit_20261118T034502Z_stdout.txt",
+  "hard_stopUTC": "2026-11-18T04:45:02.0000000+00:00",
+  "hard_stop_epoch": 1794977102,
+  "scope": "verification only, cached read layer, original checks unchanged",
+  "startedUTC": "2026-11-18T03:45:02.4222043+00:00"
+}

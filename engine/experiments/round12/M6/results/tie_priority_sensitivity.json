@@ -1,0 +1,202 @@
+{
+  "conditions": {
+    "S2R4n2_t-1": {
+      "n_exact_deals": 2520,
+      "n_global_priorities": 2,
+      "priorities": [
+        {
+          "priority": [
+            0,
+            1
+          ],
+          "score_sum": 23160,
+          "exact_mean": "193/21",
+          "Bayes_excess_above_J1": "19/105"
+        },
+        {
+          "priority": [
+            1,
+            0
+          ],
+          "score_sum": 22764,
+          "exact_mean": "271/30",
+          "Bayes_excess_above_J1": "1/42"
+        }
+      ],
+      "min_exact_Bayes_excess": "1/42",
+      "max_exact_Bayes_excess": "19/105",
+      "averaged_priority_labels_equal_uniform_optimal": true,
+      "scope": "Exploratory complete priority enumeration afterM3outcomes; no new fitting or retuning, no sampling interval."
+    },
+    "S2R4n2_t0": {
+      "n_exact_deals": 2520,
+      "n_global_priorities": 2,
+      "priorities": [
+        {
+          "priority": [
+            0,
+            1
+          ],
+          "score_sum": 22626,
+          "exact_mean": "1257/140",
+          "Bayes_excess_above_J1": "0"
+        },
+        {
+          "priority": [
+            1,
+            0
+          ],
+          "score_sum": 22626,
+          "exact_mean": "1257/140",
+          "Bayes_excess_above_J1": "0"
+        }
+      ],
+      "min_exact_Bayes_excess": "0",
+      "max_exact_Bayes_excess": "0",
+      "averaged_priority_labels_equal_uniform_optimal": true,
+      "scope": "Exploratory complete priority enumeration afterM3outcomes; no new fitting or retuning, no sampling interval."
+    },
+    "S3R4n3_t-1": {
+      "n_exact_deals": 369600,
+      "n_global_priorities": 6,
+      "priorities": [
+        {
+          "priority": [
+            0,
+            1,
+            2
+          ],
+          "score_sum": 2723307,
+          "exact_mean": "907769/123200",
+          "Bayes_excess_above_J1": "7819/17600"
+        },
+        {
+          "priority": [
+            0,
+            2,
+            1
+          ],
+          "score_sum": 2704636,
+          "exact_mean": "61469/8400",
+          "Bayes_excess_above_J1": "18191/46200"
+        },
+        {
+          "priority": [
+            1,
+            0,
+            2
+          ],
+          "score_sum": 2732126,
+          "exact_mean": "1366063/184800",
+          "Bayes_excess_above_J1": "86509/184800"
+        },
+        {
+          "priority": [
+            1,
+            2,
+            0
+          ],
+          "score_sum": 2755667,
+          "exact_mean": "2755667/369600",
+          "Bayes_excess_above_J1": "17869/33600"
+        },
+        {
+          "priority": [
+            2,
+            0,
+            1
+          ],
+          "score_sum": 2675264,
+          "exact_mean": "41801/5775",
+          "Bayes_excess_above_J1": "29039/92400"
+        },
+        {
+          "priority": [
+            2,
+            1,
+            0
+          ],
+          "score_sum": 2688298,
+          "exact_mean": "1344149/184800",
+          "Bayes_excess_above_J1": "12919/36960"
+        }
+      ],
+      "min_exact_Bayes_excess": "29039/92400",
+      "max_exact_Bayes_excess": "17869/33600",
+      "averaged_priority_labels_equal_uniform_optimal": true,
+      "scope": "Exploratory complete priority enumeration afterM3outcomes; no new fitting or retuning, no sampling interval."
+    },
+    "S3R4n3_t0": {
+      "n_exact_deals": 369600,
+      "n_global_priorities": 6,
+      "priorities": [
+        {
+          "priority": [
+            0,
+            1,
+            2
+          ],
+          "score_sum": 2334966,
+          "exact_mean": "389161/61600",
+          "Bayes_excess_above_J1": "101621/369600"
+        },
+        {
+          "priority": [
+            0,
+            2,
+            1
+          ],
+          "score_sum": 2351922,
+          "exact_mean": "391987/61600",
+          "Bayes_excess_above_J1": "118577/369600"
+        },
+        {
+          "priority": [
+            1,
+            0,
+            2
+          ],
+          "score_sum": 2334779,
+          "exact_mean": "2334779/369600",
+          "Bayes_excess_above_J1": "50717/184800"
+        },
+        {
+          "priority": [
+            1,
+            2,
+            0
+          ],
+          "score_sum": 2346657,
+          "exact_mean": "782219/123200",
+          "Bayes_excess_above_J1": "3541/11550"
+        },
+        {
+          "priority": [
+            2,
+            0,
+            1
+          ],
+          "score_sum": 2332039,
+          "exact_mean": "2332039/369600",
+          "Bayes_excess_above_J1": "16449/61600"
+        },
+        {
+          "priority": [
+            2,
+            1,
+            0
+          ],
+          "score_sum": 2352575,
+          "exact_mean": "94103/14784",
+          "Bayes_excess_above_J1": "11923/36960"
+        }
+      ],
+      "min_exact_Bayes_excess": "16449/61600",
+      "max_exact_Bayes_excess": "11923/36960",
+      "averaged_priority_labels_equal_uniform_optimal": true,
+      "scope": "Exploratory complete priority enumeration afterM3outcomes; no new fitting or retuning, no sampling interval."
+    }
+  },
+  "source_sha256": "b93e112cc0d9c1a3375ba15c528ee56fa43931725993822bde0fcd81931fc487",
+  "utc": "2026-11-17T06:03:46.095346+00:00"
+}

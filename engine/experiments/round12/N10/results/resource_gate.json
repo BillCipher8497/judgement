@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-20T06:54:30.020481+00:00",
+  "pilot_contexts": 96,
+  "pilot_elapsed_seconds": 1.4711061000125483,
+  "old_N3_per_game_seconds": 0.012138888889037643,
+  "projection_seconds": 1238.7425516032963,
+  "max_two_window_seconds": 21600,
+  "accepted": true,
+  "scope": "timing-only oldgame extrapolation not equal-compute claim/guarantee; no models/counts changed if fails"
+}

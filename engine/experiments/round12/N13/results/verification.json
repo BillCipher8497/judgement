@@ -1,0 +1,29 @@
+{
+  "utc": "2026-11-20T07:09:11.512611+00:00",
+  "checks": [
+    {
+      "tag": "S2R4n2_t0",
+      "n_keys": 64,
+      "all_exact_moments_and_alternate_log_enclosures_pass": true
+    },
+    {
+      "tag": "S2R4n2_t-1",
+      "n_keys": 64,
+      "all_exact_moments_and_alternate_log_enclosures_pass": true
+    },
+    {
+      "tag": "S3R4n3_t0",
+      "n_keys": 64,
+      "all_exact_moments_and_alternate_log_enclosures_pass": true
+    },
+    {
+      "tag": "S3R4n3_t-1",
+      "n_keys": 64,
+      "all_exact_moments_and_alternate_log_enclosures_pass": true
+    }
+  ],
+  "n_keys": 256,
+  "source_sha256": "9f79c2a4b918eff833119291ae7e014e2b4df0ce592076c0090b06646a8a9a51",
+  "complete_sha256": "23dcd54da205358528367d6817de4288ad3b2abf780c35d4e0b923b91b466637",
+  "scope": "Separate Codex exact rational/moment/log-series and independent floating potential check. New entropy-bound proof and certificate implementation PENDING Claude external; no solved optimum or novel theorem claim."
+}

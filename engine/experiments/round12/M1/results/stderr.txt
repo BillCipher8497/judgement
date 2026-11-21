@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "C:\Users\Arvin\OneDrive\Desktop\Judgement Research\engine\experiments\round12\M1\export.py", line 141, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "C:\Users\Arvin\OneDrive\Desktop\Judgement Research\engine\experiments\round12\M1\export.py", line 137, in main
+    for trump in [0, -1]: export(ToyGame(N=4, S=S, R=4, n=n, trump=trump))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arvin\OneDrive\Desktop\Judgement Research\engine\experiments\round12\M1\export.py", line 71, in export
+    t = CompactTree(g, checkpoint=checkpoint); cache_hash = None
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arvin\OneDrive\Desktop\Judgement Research\engine\experiments\round9\D3\compact_tree.py", line 56, in __init__
+    if (d+1)%250==0 and checkpoint:checkpoint(d+1,len(lengths),len(ip))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arvin\OneDrive\Desktop\Judgement Research\engine\experiments\round12\M1\export.py", line 69, in checkpoint
+    save(directory/'build_progress.json', {'deals': d, 'nodes': nodes, 'infosets': infos})
+  File "C:\Users\Arvin\OneDrive\Desktop\Judgement Research\engine\experiments\round12\M1\export.py", line 36, in save
+    tmp.write_text(json.dumps(row, indent=2)+'\n', encoding='utf-8'); os.replace(tmp, path)
+                                                                      ^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\M1\\results\\S2R4n2_t0\\build_progress.json.tmp' -> 'C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\M1\\results\\S2R4n2_t0\\build_progress.json'

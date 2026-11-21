@@ -1,0 +1,15 @@
+{
+  "condition": {
+    "N": 4,
+    "S": 3,
+    "R": 4,
+    "n": 3,
+    "trump": 0
+  },
+  "start_deal": 0,
+  "n_deals": 256,
+  "n_records": 3072,
+  "source_freeze_sha256": "92d32879faa79ecf53372647c8b6b1038dccbff1bec97f069982bf391ff1051d",
+  "raw_sha256": "594b7e74adbfb13dbab302784d2a5f0dadae63d584c30bc1350df2701b9264fd",
+  "wall_seconds": 3.365140699999756
+}

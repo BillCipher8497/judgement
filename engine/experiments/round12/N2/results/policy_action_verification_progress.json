@@ -1,0 +1,28 @@
+{
+  "conditions": {
+    "S2R4n2_t0": {
+      "all_private_keys": 11464,
+      "nonforced_TA_choices_recomputed": 1587,
+      "all_raw_decision_world_actions_match": 20160,
+      "policy_function": "Frozen bounded_ta.ta_card reused as fixed profile definition; this is action/input replay, not a second independently coded TA heuristic"
+    },
+    "S2R4n2_t-1": {
+      "all_private_keys": 12613,
+      "nonforced_TA_choices_recomputed": 1695,
+      "all_raw_decision_world_actions_match": 20160,
+      "policy_function": "Frozen bounded_ta.ta_card reused as fixed profile definition; this is action/input replay, not a second independently coded TA heuristic"
+    },
+    "S3R4n3_t0": {
+      "all_private_keys": 2148865,
+      "nonforced_TA_choices_recomputed": 492602,
+      "all_raw_decision_world_actions_match": 4435200,
+      "policy_function": "Frozen bounded_ta.ta_card reused as fixed profile definition; this is action/input replay, not a second independently coded TA heuristic"
+    },
+    "S3R4n3_t-1": {
+      "all_private_keys": 2228532,
+      "nonforced_TA_choices_recomputed": 523351,
+      "all_raw_decision_world_actions_match": 4435200,
+      "policy_function": "Frozen bounded_ta.ta_card reused as fixed profile definition; this is action/input replay, not a second independently coded TA heuristic"
+    }
+  }
+}

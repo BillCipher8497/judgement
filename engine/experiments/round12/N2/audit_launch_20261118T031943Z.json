@@ -1,0 +1,9 @@
+{
+  "scope": "verification only, serial worker",
+  "stderr": "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N2/audit_20261118T031943Z_stderr.txt",
+  "hard_stop_epoch": 1794975583,
+  "pid": 26488,
+  "startedUTC": "2026-11-18T03:19:43.2494194+00:00",
+  "hard_stopUTC": "2026-11-18T04:19:43.0000000+00:00",
+  "stdout": "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N2/audit_20261118T031943Z_stdout.txt"
+}

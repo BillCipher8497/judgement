@@ -1,0 +1,8 @@
+{
+  "adapter_commit": "1d4eafb8e2652175288725e825484fe1ebbc8402",
+  "adapter_raw_sha256": "e36aaf61a28c906205bd2b89a0e9bab3446f984f690e238ebe6aef1d29ccec86",
+  "scientific_and_schedule_files": "unchanged; original source manifests and continuation source checks still enforced",
+  "reason": "WinError5 first continuation epoch2; original stderr retained. Resume source also leaves np.load(checkpoint.npz) open; memory-backed load prevents self-lock. Original first-error cause not independently established.",
+  "semantics": "Only checkpoint disk-handle lifetime and bounded result-file PermissionError retries; identical NPZ arrays/API. No changes to math, counts, seeds, selected completed conditions or targets.",
+  "utc": "2026-11-18T02:53:08Z"
+}

@@ -1,0 +1,9 @@
+{
+  "original_failed_gate_unchanged": true,
+  "immutable_scientific_source_freeze_checked": true,
+  "resource_only_schedule_source_checked": true,
+  "additional_windows": 2,
+  "scientific_verifier_receipt_sha256": "6ff60d3cb4d4c2529ac51524ab85c5e32afa4e14d6afb6955af66604f94902b5",
+  "status": "self-verified(Codex), resource amendment/result external audit pending",
+  "utc": "2026-11-18T03:49:48Z"
+}

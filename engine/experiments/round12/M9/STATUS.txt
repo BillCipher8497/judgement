@@ -1,0 +1,45 @@
+2026-11-17 00:24ET beforeM3held-out outcomes: fixed optional sequentialdeployment stress inPROTOCOL.md,40frozenMLPfits across4conditions/twoobjectives/fiveseeds, nofittingchanges. Primarydescriptive largeNT setBCE−hardCE fullprivateteamcost,exactall369600deals/fit +pairedseed95%CI(n5),noIIDdealCI; mixedteammatehandsnotheldoutgeneralization. Allsource/action/perdealvectorssaved;128fixedfreshforwardchecks/model, anynewupperrequiresfullindependentforwardreplay. Deadline06:45ET within07:00;afterM4/M5/M7,oneworker.
+2026-11-17T05:55:51.010931+00:00 S2R4n2_t0/hard_ce_s0: exact1257/140, n2520deals; fresh forward128; no global optimality claim.
+2026-11-17T05:55:51.042785+00:00 S2R4n2_t0/hard_ce_s1: exact1257/140, n2520deals; fresh forward128; no global optimality claim.
+2026-11-17T05:55:51.072783+00:00 S2R4n2_t0/hard_ce_s2: exact1257/140, n2520deals; fresh forward128; no global optimality claim.
+2026-11-17T05:55:51.104916+00:00 S2R4n2_t0/hard_ce_s3: exact1257/140, n2520deals; fresh forward128; no global optimality claim.
+2026-11-17T05:55:51.134672+00:00 S2R4n2_t0/hard_ce_s4: exact1257/140, n2520deals; fresh forward128; no global optimality claim.
+2026-11-17T05:55:51.170480+00:00 S2R4n2_t0/set_bce_s0: exact68/7, n2520deals; fresh forward128; no global optimality claim.
+2026-11-17T05:55:51.200716+00:00 S2R4n2_t0/set_bce_s1: exact68/7, n2520deals; fresh forward128; no global optimality claim.
+2026-11-17T05:55:51.237288+00:00 S2R4n2_t0/set_bce_s2: exact4615/504, n2520deals; fresh forward128; no global optimality claim.
+2026-11-17T05:55:51.265289+00:00 S2R4n2_t0/set_bce_s3: exact1257/140, n2520deals; fresh forward128; no global optimality claim.
+2026-11-17T05:55:51.297288+00:00 S2R4n2_t0/set_bce_s4: exact1257/140, n2520deals; fresh forward128; no global optimality claim.
+2026-11-17T05:55:51.672018+00:00 S2R4n2_t-1/hard_ce_s0: exact328/35, n2520deals; fresh forward128; no global optimality claim.
+2026-11-17T05:55:51.704042+00:00 S2R4n2_t-1/hard_ce_s1: exact328/35, n2520deals; fresh forward128; no global optimality claim.
+2026-11-17T05:55:51.736290+00:00 S2R4n2_t-1/hard_ce_s2: exact328/35, n2520deals; fresh forward128; no global optimality claim.
+2026-11-17T05:55:51.766288+00:00 S2R4n2_t-1/hard_ce_s3: exact328/35, n2520deals; fresh forward128; no global optimality claim.
+2026-11-17T05:55:51.796572+00:00 S2R4n2_t-1/hard_ce_s4: exact328/35, n2520deals; fresh forward128; no global optimality claim.
+2026-11-17T05:55:51.826710+00:00 S2R4n2_t-1/set_bce_s0: exact328/35, n2520deals; fresh forward128; no global optimality claim.
+2026-11-17T05:55:51.857897+00:00 S2R4n2_t-1/set_bce_s1: exact328/35, n2520deals; fresh forward128; no global optimality claim.
+2026-11-17T05:55:51.890309+00:00 S2R4n2_t-1/set_bce_s2: exact328/35, n2520deals; fresh forward128; no global optimality claim.
+2026-11-17T05:55:51.921971+00:00 S2R4n2_t-1/set_bce_s3: exact328/35, n2520deals; fresh forward128; no global optimality claim.
+2026-11-17T05:55:51.953971+00:00 S2R4n2_t-1/set_bce_s4: exact328/35, n2520deals; fresh forward128; no global optimality claim.
+2026-11-17T05:57:39.381417+00:00 S3R4n3_t0/hard_ce_s0: exact965207/123200, n369600deals; fresh forward128; no global optimality claim.
+2026-11-17T05:57:49.711204+00:00 S3R4n3_t0/hard_ce_s1: exact480283/61600, n369600deals; fresh forward128; no global optimality claim.
+2026-11-17T05:57:59.780256+00:00 S3R4n3_t0/hard_ce_s2: exact1450637/184800, n369600deals; fresh forward128; no global optimality claim.
+2026-11-17T05:58:09.877370+00:00 S3R4n3_t0/hard_ce_s3: exact180127/23100, n369600deals; fresh forward128; no global optimality claim.
+2026-11-17T05:58:19.985603+00:00 S3R4n3_t0/hard_ce_s4: exact144077/18480, n369600deals; fresh forward128; no global optimality claim.
+2026-11-17T05:58:30.555340+00:00 S3R4n3_t0/set_bce_s0: exact2782393/369600, n369600deals; fresh forward128; no global optimality claim.
+2026-11-17T05:58:40.922280+00:00 S3R4n3_t0/set_bce_s1: exact397997/52800, n369600deals; fresh forward128; no global optimality claim.
+2026-11-17T05:58:51.092825+00:00 S3R4n3_t0/set_bce_s2: exact50833/6720, n369600deals; fresh forward128; no global optimality claim.
+2026-11-17T05:59:01.607483+00:00 S3R4n3_t0/set_bce_s3: exact133431/17600, n369600deals; fresh forward128; no global optimality claim.
+2026-11-17T05:59:12.159403+00:00 S3R4n3_t0/set_bce_s4: exact918791/123200, n369600deals; fresh forward128; no global optimality claim.
+2026-11-17T06:01:33.877482+00:00 S3R4n3_t-1/hard_ce_s0: exact3026411/369600, n369600deals; fresh forward128; no global optimality claim.
+2026-11-17T06:01:45.733399+00:00 S3R4n3_t-1/hard_ce_s1: exact1523659/184800, n369600deals; fresh forward128; no global optimality claim.
+2026-11-17T06:01:57.400833+00:00 S3R4n3_t-1/hard_ce_s2: exact72553/8800, n369600deals; fresh forward128; no global optimality claim.
+2026-11-17T06:02:09.126340+00:00 S3R4n3_t-1/hard_ce_s3: exact121903/14784, n369600deals; fresh forward128; no global optimality claim.
+2026-11-17T06:02:20.681452+00:00 S3R4n3_t-1/hard_ce_s4: exact138667/16800, n369600deals; fresh forward128; no global optimality claim.
+2026-11-17T06:02:32.351519+00:00 S3R4n3_t-1/set_bce_s0: exact955193/123200, n369600deals; fresh forward128; no global optimality claim.
+2026-11-17T06:02:43.789794+00:00 S3R4n3_t-1/set_bce_s1: exact241621/30800, n369600deals; fresh forward128; no global optimality claim.
+2026-11-17T06:02:55.661426+00:00 S3R4n3_t-1/set_bce_s2: exact60537/7700, n369600deals; fresh forward128; no global optimality claim.
+2026-11-17T06:03:07.608897+00:00 S3R4n3_t-1/set_bce_s3: exact260963/33600, n369600deals; fresh forward128; no global optimality claim.
+2026-11-17T06:03:19.407373+00:00 S3R4n3_t-1/set_bce_s4: exact481519/61600, n369600deals; fresh forward128; no global optimality claim.
+
+2026-11-17T20:38:46.257203+00:00 Completedpriorfixedscope; separateM6optional_verification.json passes; RESULTS.md givesallpairedseedCIs/n/limitations. Source/raw/models retained; no newcompute. ReadyforClaudeexternal, no unreviewedcommit/push.
+
+2026-11-17T21:13:09.824498+00:00 Claude external17Nov validated with changes: all requested RESULTS/provenance/scale/selection/level limitations applied; frozen sources/data/seeds unchanged. Post-run scoped commit authorized by external verdict. Exact command for documentation: python engine/experiments/round12/AUDIT_FIXES/review_followup.py. Raw n and 95%CIs in RESULTS; no new experimental draws.

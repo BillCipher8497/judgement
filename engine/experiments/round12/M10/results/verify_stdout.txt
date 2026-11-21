@@ -1,0 +1,1 @@
+Exact risk/alignment/coarsening and feature-injectivity checks pass in all four conditions; proof externally checked Claude2026-11-17.

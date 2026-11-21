@@ -1,0 +1,11 @@
+{
+  "utc": "2026-11-20T07:00:26.243024+00:00",
+  "all_new_data_prefixes_rejection_firstness_and_private_rollouts_replayed": true,
+  "n_data_contexts": 10080,
+  "all10fitselections_andbothgates_forward_CIs_match": true,
+  "gate_pass": false,
+  "scientific_game_blocks_checked": 0,
+  "n_complete_game_replays": 0,
+  "source_sha256": "923081977aaf66c87b236e24a4e00bff418cf0ee12c6decf5f9377fe0126adb7",
+  "scope": "separate Codex source/chance/replay/math check; same fixed immutable TApolicy definitions, not external validation or new-game estimate; pending Claude"
+}

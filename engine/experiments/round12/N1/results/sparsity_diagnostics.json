@@ -1,0 +1,3183 @@
+{
+  "seed_collision_check": {
+    "address": [
+      2110000000,
+      20017,
+      91
+    ],
+    "checked_prior_roots": 123544,
+    "collisions": 0,
+    "scope": "bounded known N0/N1 roots; prior distinct-root audit preserved"
+  },
+  "sensitivity": {
+    "bi": {
+      "declared_floor": {
+        "net_minus_sampler": {
+          "mean": -0.04831556421620075,
+          "ci95": [
+            -0.05312558029282312,
+            -0.04350554813957838
+          ],
+          "n_decisions": 3520,
+          "n_strata": 176,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        },
+        "sampler_loss": {
+          "mean": 0.8853512410064299,
+          "ci95": [
+            0.8771761016575979,
+            0.893526380355262
+          ],
+          "n_decisions": 3520,
+          "n_strata": 176,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        }
+      },
+      "1": {
+        "net_minus_sampler": {
+          "mean": -0.04627617764378185,
+          "ci95": [
+            -0.05087991359895535,
+            -0.04167244168860835
+          ],
+          "n_decisions": 3520,
+          "n_strata": 176,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        },
+        "sampler_loss": {
+          "mean": 0.883311854434011,
+          "ci95": [
+            0.8752786461718934,
+            0.8913450626961285
+          ],
+          "n_decisions": 3520,
+          "n_strata": 176,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        }
+      },
+      "4": {
+        "net_minus_sampler": {
+          "mean": -0.04315411965774513,
+          "ci95": [
+            -0.0474379785426552,
+            -0.03887026077283506
+          ],
+          "n_decisions": 3520,
+          "n_strata": 176,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        },
+        "sampler_loss": {
+          "mean": 0.8801897964479742,
+          "ci95": [
+            0.8723781453752364,
+            0.8880014475207121
+          ],
+          "n_decisions": 3520,
+          "n_strata": 176,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        }
+      },
+      "16": {
+        "net_minus_sampler": {
+          "mean": -0.037928280171195615,
+          "ci95": [
+            -0.04165697203326634,
+            -0.03419958830912489
+          ],
+          "n_decisions": 3520,
+          "n_strata": 176,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        },
+        "sampler_loss": {
+          "mean": 0.8749639569614247,
+          "ci95": [
+            0.8675410395865389,
+            0.8823868743363105
+          ],
+          "n_decisions": 3520,
+          "n_strata": 176,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        }
+      }
+    },
+    "uniform": {
+      "declared_floor": {
+        "net_minus_sampler": {
+          "mean": -0.07275534743448639,
+          "ci95": [
+            -0.07508154938678444,
+            -0.07042914548218834
+          ],
+          "n_decisions": 3520,
+          "n_strata": 176,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        },
+        "sampler_loss": {
+          "mean": 0.9097910242247156,
+          "ci95": [
+            0.9039804262784893,
+            0.9156016221709419
+          ],
+          "n_decisions": 3520,
+          "n_strata": 176,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        }
+      },
+      "1": {
+        "net_minus_sampler": {
+          "mean": -0.0727162820552848,
+          "ci95": [
+            -0.07504127642034422,
+            -0.07039128769022537
+          ],
+          "n_decisions": 3520,
+          "n_strata": 176,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        },
+        "sampler_loss": {
+          "mean": 0.909751958845514,
+          "ci95": [
+            0.9039421163830559,
+            0.915561801307972
+          ],
+          "n_decisions": 3520,
+          "n_strata": 176,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        }
+      },
+      "4": {
+        "net_minus_sampler": {
+          "mean": -0.07258916756514032,
+          "ci95": [
+            -0.07491100781198319,
+            -0.07026732731829745
+          ],
+          "n_decisions": 3520,
+          "n_strata": 176,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        },
+        "sampler_loss": {
+          "mean": 0.9096248443553695,
+          "ci95": [
+            0.9038174224185007,
+            0.9154322662922383
+          ],
+          "n_decisions": 3520,
+          "n_strata": 176,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        }
+      },
+      "16": {
+        "net_minus_sampler": {
+          "mean": -0.07216468244324974,
+          "ci95": [
+            -0.07447614085312829,
+            -0.06985322403337119
+          ],
+          "n_decisions": 3520,
+          "n_strata": 176,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        },
+        "sampler_loss": {
+          "mean": 0.9092003592334789,
+          "ci95": [
+            0.9034019086542285,
+            0.9149988098127292
+          ],
+          "n_decisions": 3520,
+          "n_strata": 176,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        }
+      }
+    }
+  },
+  "zero_count": {
+    "bi": {
+      "round_equal_fraction": {
+        "mean": 0.0011631063668297566,
+        "ci95": [
+          0.0009250975005535319,
+          0.0014011152331059812
+        ],
+        "n_decisions": 3520,
+        "n_strata": 176,
+        "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+      },
+      "pooled_card_fraction": {
+        "mean": 0.0012245332576134025,
+        "ci95": [
+          0.0009772877233545567,
+          0.0014717787918722483
+        ],
+        "n_round_clusters": 3520,
+        "n_cards": 112696,
+        "method": "equal-stratum paired delta-method ratio95%CI"
+      },
+      "n_zero_card_labels": 138
+    },
+    "uniform": {
+      "round_equal_fraction": {
+        "mean": 6.456611570247934e-06,
+        "ci95": [
+          -6.198347107438015e-06,
+          1.9111570247933882e-05
+        ],
+        "n_decisions": 3520,
+        "n_strata": 176,
+        "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+      },
+      "pooled_card_fraction": {
+        "mean": 8.87342940299567e-06,
+        "ci95": [
+          0,
+          2.6265493866834784e-05
+        ],
+        "n_round_clusters": 3520,
+        "n_cards": 112696,
+        "method": "equal-stratum paired delta-method ratio95%CI"
+      },
+      "n_zero_card_labels": 1
+    }
+  },
+  "BI_by_n": {
+    "3": {
+      "ess": {
+        "mean": {
+          "mean": 250.86373750825433,
+          "ci95": [
+            244.7077652527225,
+            257.0197097637861
+          ],
+          "n_decisions": 320,
+          "n_strata": 16,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        },
+        "observed_sample_range_exact": [
+          17.566788710223182,
+          317.04040485796145
+        ],
+        "quartiles": [
+          {
+            "quantile": 0.25,
+            "value": 257.4230195220018,
+            "ci95": [
+              256.386802562209,
+              258.22998542174986
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.5,
+            "value": 264.6456909382101,
+            "ci95": [
+              263.1146935152536,
+              266.66417185247565
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.75,
+            "value": 276.6888860505205,
+            "ci95": [
+              273.1467788084559,
+              279.40192159453045
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          }
+        ]
+      },
+      "M": {
+        "mean": {
+          "mean": 1032.8,
+          "ci95": [
+            967.0378914923766,
+            1098.5621085076232
+          ],
+          "n_decisions": 320,
+          "n_strata": 16,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        },
+        "observed_sample_range_exact": [
+          256.0,
+          2048.0
+        ],
+        "quartiles": [
+          {
+            "quantile": 0.25,
+            "value": 448.0,
+            "ci95": [
+              448.0,
+              512.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.5,
+            "value": 832.0,
+            "ci95": [
+              704.0,
+              960.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.75,
+            "value": 1552.0,
+            "ci95": [
+              1360.0,
+              1856.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          }
+        ]
+      }
+    },
+    "4": {
+      "ess": {
+        "mean": {
+          "mean": 214.5789435628422,
+          "ci95": [
+            206.5727217207646,
+            222.5851654049198
+          ],
+          "n_decisions": 320,
+          "n_strata": 16,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        },
+        "observed_sample_range_exact": [
+          5.670295889357679,
+          302.1480750530136
+        ],
+        "quartiles": [
+          {
+            "quantile": 0.25,
+            "value": 159.75258018907465,
+            "ci95": [
+              145.67079938054312,
+              189.30666586703188
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.5,
+            "value": 257.79936134368324,
+            "ci95": [
+              256.58872615537115,
+              259.80214609854306
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.75,
+            "value": 265.1921172657101,
+            "ci95": [
+              263.4520006795363,
+              267.46510010143095
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          }
+        ]
+      },
+      "M": {
+        "mean": {
+          "mean": 1512.6,
+          "ci95": [
+            1451.3945267531699,
+            1573.80547324683
+          ],
+          "n_decisions": 320,
+          "n_strata": 16,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        },
+        "observed_sample_range_exact": [
+          256.0,
+          2048.0
+        ],
+        "quartiles": [
+          {
+            "quantile": 0.25,
+            "value": 960.0,
+            "ci95": [
+              832.0,
+              1088.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.5,
+            "value": 1792.0,
+            "ci95": [
+              1600.0,
+              1920.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.75,
+            "value": 2048.0,
+            "ci95": [
+              2048.0,
+              2048.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          }
+        ]
+      }
+    },
+    "5": {
+      "ess": {
+        "mean": {
+          "mean": 182.14195510385065,
+          "ci95": [
+            172.23550961763908,
+            192.04840059006222
+          ],
+          "n_decisions": 320,
+          "n_strata": 16,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        },
+        "observed_sample_range_exact": [
+          3.14744387265203,
+          302.1272219558565
+        ],
+        "quartiles": [
+          {
+            "quantile": 0.25,
+            "value": 98.40582651187408,
+            "ci95": [
+              78.17723530681236,
+              126.04546354331802
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.5,
+            "value": 212.30735402453337,
+            "ci95": [
+              189.03845871837748,
+              246.7670171677113
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.75,
+            "value": 262.27874892843846,
+            "ci95": [
+              261.33627403065674,
+              263.4172186994806
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          }
+        ]
+      },
+      "M": {
+        "mean": {
+          "mean": 1668.4,
+          "ci95": [
+            1613.0442933213321,
+            1723.755706678668
+          ],
+          "n_decisions": 320,
+          "n_strata": 16,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        },
+        "observed_sample_range_exact": [
+          320.0,
+          2048.0
+        ],
+        "quartiles": [
+          {
+            "quantile": 0.25,
+            "value": 1264.0,
+            "ci95": [
+              1088.0,
+              1408.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.5,
+            "value": 2048.0,
+            "ci95": [
+              2048.0,
+              2048.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.75,
+            "value": 2048.0,
+            "ci95": [
+              2048.0,
+              2048.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          }
+        ]
+      }
+    },
+    "6": {
+      "ess": {
+        "mean": {
+          "mean": 174.3853884753065,
+          "ci95": [
+            164.649354868847,
+            184.121422081766
+          ],
+          "n_decisions": 320,
+          "n_strata": 16,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        },
+        "observed_sample_range_exact": [
+          5.18867271862099,
+          298.8250852941232
+        ],
+        "quartiles": [
+          {
+            "quantile": 0.25,
+            "value": 88.86839009905509,
+            "ci95": [
+              74.49579479233483,
+              102.78472580305993
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.5,
+            "value": 196.174789496913,
+            "ci95": [
+              167.4025638853809,
+              226.9296408727791
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.75,
+            "value": 261.27060613009763,
+            "ci95": [
+              259.43584645327843,
+              263.57391581913726
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          }
+        ]
+      },
+      "M": {
+        "mean": {
+          "mean": 1676.8,
+          "ci95": [
+            1617.9178062193582,
+            1735.6821937806417
+          ],
+          "n_decisions": 320,
+          "n_strata": 16,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        },
+        "observed_sample_range_exact": [
+          320.0,
+          2048.0
+        ],
+        "quartiles": [
+          {
+            "quantile": 0.25,
+            "value": 1280.0,
+            "ci95": [
+              1024.0,
+              1536.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.5,
+            "value": 2048.0,
+            "ci95": [
+              2048.0,
+              2048.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.75,
+            "value": 2048.0,
+            "ci95": [
+              2048.0,
+              2048.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          }
+        ]
+      }
+    },
+    "7": {
+      "ess": {
+        "mean": {
+          "mean": 156.57087873432522,
+          "ci95": [
+            146.3305990507235,
+            166.81115841792695
+          ],
+          "n_decisions": 320,
+          "n_strata": 16,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        },
+        "observed_sample_range_exact": [
+          1.8094663609140313,
+          289.7427009298981
+        ],
+        "quartiles": [
+          {
+            "quantile": 0.25,
+            "value": 63.07086332073662,
+            "ci95": [
+              54.87951861449826,
+              80.30245525429935
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.5,
+            "value": 154.25763419982914,
+            "ci95": [
+              129.50867765309397,
+              175.96715048886554
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.75,
+            "value": 258.4735434804873,
+            "ci95": [
+              257.6078235384751,
+              260.65407649846594
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          }
+        ]
+      },
+      "M": {
+        "mean": {
+          "mean": 1750.4,
+          "ci95": [
+            1693.837210282452,
+            1806.9627897175483
+          ],
+          "n_decisions": 320,
+          "n_strata": 16,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        },
+        "observed_sample_range_exact": [
+          384.0,
+          2048.0
+        ],
+        "quartiles": [
+          {
+            "quantile": 0.25,
+            "value": 1600.0,
+            "ci95": [
+              1280.0,
+              1968.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.5,
+            "value": 2048.0,
+            "ci95": [
+              2048.0,
+              2048.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.75,
+            "value": 2048.0,
+            "ci95": [
+              2048.0,
+              2048.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          }
+        ]
+      }
+    },
+    "8": {
+      "ess": {
+        "mean": {
+          "mean": 139.8723081279728,
+          "ci95": [
+            129.2202932735022,
+            150.52432298244338
+          ],
+          "n_decisions": 320,
+          "n_strata": 16,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        },
+        "observed_sample_range_exact": [
+          3.6206189791079826,
+          304.0723205825993
+        ],
+        "quartiles": [
+          {
+            "quantile": 0.25,
+            "value": 45.87877770584408,
+            "ci95": [
+              35.62419291118155,
+              56.39595665868526
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.5,
+            "value": 118.99342420465581,
+            "ci95": [
+              97.94605316625287,
+              139.79751310403805
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.75,
+            "value": 258.28471629616865,
+            "ci95": [
+              249.98410974383594,
+              261.52260406830817
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          }
+        ]
+      },
+      "M": {
+        "mean": {
+          "mean": 1752.4,
+          "ci95": [
+            1695.7660489700468,
+            1809.0339510299534
+          ],
+          "n_decisions": 320,
+          "n_strata": 16,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        },
+        "observed_sample_range_exact": [
+          320.0,
+          2048.0
+        ],
+        "quartiles": [
+          {
+            "quantile": 0.25,
+            "value": 1728.0,
+            "ci95": [
+              1376.0,
+              2048.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.5,
+            "value": 2048.0,
+            "ci95": [
+              2048.0,
+              2048.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.75,
+            "value": 2048.0,
+            "ci95": [
+              2048.0,
+              2048.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          }
+        ]
+      }
+    },
+    "9": {
+      "ess": {
+        "mean": {
+          "mean": 127.16276625080206,
+          "ci95": [
+            116.60619422165907,
+            137.71933827994508
+          ],
+          "n_decisions": 320,
+          "n_strata": 16,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        },
+        "observed_sample_range_exact": [
+          1.416097424305915,
+          289.3785428926218
+        ],
+        "quartiles": [
+          {
+            "quantile": 0.25,
+            "value": 43.533269678878476,
+            "ci95": [
+              33.481770932861835,
+              53.557272793995445
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.5,
+            "value": 99.5439955512009,
+            "ci95": [
+              77.870713011699,
+              109.59082709266062
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.75,
+            "value": 256.2323378128963,
+            "ci95": [
+              201.6698626390151,
+              257.5543488086022
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          }
+        ]
+      },
+      "M": {
+        "mean": {
+          "mean": 1825.4,
+          "ci95": [
+            1775.7736669901958,
+            1875.0263330098044
+          ],
+          "n_decisions": 320,
+          "n_strata": 16,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        },
+        "observed_sample_range_exact": [
+          384.0,
+          2048.0
+        ],
+        "quartiles": [
+          {
+            "quantile": 0.25,
+            "value": 2048.0,
+            "ci95": [
+              1664.0,
+              2048.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.5,
+            "value": 2048.0,
+            "ci95": [
+              2048.0,
+              2048.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.75,
+            "value": 2048.0,
+            "ci95": [
+              2048.0,
+              2048.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          }
+        ]
+      }
+    },
+    "10": {
+      "ess": {
+        "mean": {
+          "mean": 144.51344874560255,
+          "ci95": [
+            133.78367787015702,
+            155.24321962104807
+          ],
+          "n_decisions": 320,
+          "n_strata": 16,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        },
+        "observed_sample_range_exact": [
+          1.2454390598051341,
+          291.6199990152146
+        ],
+        "quartiles": [
+          {
+            "quantile": 0.25,
+            "value": 47.01033463755806,
+            "ci95": [
+              40.622841473968556,
+              58.777275969028985
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.5,
+            "value": 136.8705152392189,
+            "ci95": [
+              120.91314564020456,
+              156.86571103403497
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.75,
+            "value": 258.5914904897292,
+            "ci95": [
+              250.45298451454423,
+              261.4669465306263
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          }
+        ]
+      },
+      "M": {
+        "mean": {
+          "mean": 1775.4,
+          "ci95": [
+            1721.2163867381912,
+            1829.583613261809
+          ],
+          "n_decisions": 320,
+          "n_strata": 16,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        },
+        "observed_sample_range_exact": [
+          320.0,
+          2048.0
+        ],
+        "quartiles": [
+          {
+            "quantile": 0.25,
+            "value": 1728.0,
+            "ci95": [
+              1408.0,
+              2048.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.5,
+            "value": 2048.0,
+            "ci95": [
+              2048.0,
+              2048.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.75,
+            "value": 2048.0,
+            "ci95": [
+              2048.0,
+              2048.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          }
+        ]
+      }
+    },
+    "11": {
+      "ess": {
+        "mean": {
+          "mean": 120.86384056620513,
+          "ci95": [
+            110.03570096484349,
+            131.69198016756675
+          ],
+          "n_decisions": 320,
+          "n_strata": 16,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        },
+        "observed_sample_range_exact": [
+          1.2221189747247057,
+          294.29093106147246
+        ],
+        "quartiles": [
+          {
+            "quantile": 0.25,
+            "value": 32.1901546641242,
+            "ci95": [
+              26.35563936271951,
+              38.58853316189831
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.5,
+            "value": 86.03508227727946,
+            "ci95": [
+              71.5802204807714,
+              103.11215841058255
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.75,
+            "value": 236.48249379130664,
+            "ci95": [
+              192.59141429917696,
+              258.7545860411422
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          }
+        ]
+      },
+      "M": {
+        "mean": {
+          "mean": 1820.6,
+          "ci95": [
+            1768.8287328622077,
+            1872.371267137792
+          ],
+          "n_decisions": 320,
+          "n_strata": 16,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        },
+        "observed_sample_range_exact": [
+          320.0,
+          2048.0
+        ],
+        "quartiles": [
+          {
+            "quantile": 0.25,
+            "value": 2048.0,
+            "ci95": [
+              1728.0,
+              2048.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.5,
+            "value": 2048.0,
+            "ci95": [
+              2048.0,
+              2048.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.75,
+            "value": 2048.0,
+            "ci95": [
+              2048.0,
+              2048.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          }
+        ]
+      }
+    },
+    "12": {
+      "ess": {
+        "mean": {
+          "mean": 131.4910579965232,
+          "ci95": [
+            120.59965062108904,
+            142.38246537195738
+          ],
+          "n_decisions": 320,
+          "n_strata": 16,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        },
+        "observed_sample_range_exact": [
+          1.3381985916232566,
+          312.0250592183785
+        ],
+        "quartiles": [
+          {
+            "quantile": 0.25,
+            "value": 40.78558487581881,
+            "ci95": [
+              34.00179367043073,
+              47.52006364731092
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.5,
+            "value": 95.70273600926734,
+            "ci95": [
+              80.20103319187328,
+              134.70955658002072
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.75,
+            "value": 256.0461492678737,
+            "ci95": [
+              219.74164073704932,
+              258.4972647809935
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          }
+        ]
+      },
+      "M": {
+        "mean": {
+          "mean": 1757.4,
+          "ci95": [
+            1699.3372492774097,
+            1815.4627507225905
+          ],
+          "n_decisions": 320,
+          "n_strata": 16,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        },
+        "observed_sample_range_exact": [
+          256.0,
+          2048.0
+        ],
+        "quartiles": [
+          {
+            "quantile": 0.25,
+            "value": 1648.0,
+            "ci95": [
+              1344.0,
+              2048.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.5,
+            "value": 2048.0,
+            "ci95": [
+              2048.0,
+              2048.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.75,
+            "value": 2048.0,
+            "ci95": [
+              2048.0,
+              2048.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          }
+        ]
+      }
+    },
+    "13": {
+      "ess": {
+        "mean": {
+          "mean": 141.69347550639893,
+          "ci95": [
+            130.28794751127504,
+            153.09900350152282
+          ],
+          "n_decisions": 320,
+          "n_strata": 16,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        },
+        "observed_sample_range_exact": [
+          1.105276105423418,
+          313.02036395630665
+        ],
+        "quartiles": [
+          {
+            "quantile": 0.25,
+            "value": 41.75115407928841,
+            "ci95": [
+              32.80641780911602,
+              55.19738236060811
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.5,
+            "value": 124.00706468634475,
+            "ci95": [
+              94.58920165592164,
+              156.9166548828423
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.75,
+            "value": 258.0547474852867,
+            "ci95": [
+              256.0,
+              260.0733724481734
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          }
+        ]
+      },
+      "M": {
+        "mean": {
+          "mean": 1681.0,
+          "ci95": [
+            1613.1902016830202,
+            1748.8097983169798
+          ],
+          "n_decisions": 320,
+          "n_strata": 16,
+          "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+        },
+        "observed_sample_range_exact": [
+          256.0,
+          2048.0
+        ],
+        "quartiles": [
+          {
+            "quantile": 0.25,
+            "value": 1408.0,
+            "ci95": [
+              960.0,
+              1856.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.5,
+            "value": 2048.0,
+            "ci95": [
+              2048.0,
+              2048.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          },
+          {
+            "quantile": 0.75,
+            "value": 2048.0,
+            "ci95": [
+              2048.0,
+              2048.0
+            ],
+            "n_rounds": 320,
+            "bootstrap_reps": 2000
+          }
+        ]
+      }
+    }
+  },
+  "source_sha256": "7a8197c393200058f9c678372a5e4c7f9ed712d63e4b0535a21c5a3f86b16182",
+  "raw_hashes": {
+    "results\\confirmation\\00000.npz": "146de227fd256cb63fd1ef39f0b149cc783a3e3230d9a505ffc5f8239ca3d6fd",
+    "results\\confirmation\\00000.jsonl": "8e6e04d8fa95c843013aacbbb48003cfcbe315d26bce7c3b12390e9becb2c233",
+    "results\\confirmation\\00064.npz": "0c474f2ba1eb533f193f17bab0e392bb2b04cd152379db6d1e2809ef0af7ac76",
+    "results\\confirmation\\00064.jsonl": "c774da3ddce602528d0069c77e99e4e1674ec5fcda12da83f7318cc266391990",
+    "results\\confirmation\\00128.npz": "dd41883b978e0a0009206a8cd59afd2aa512acd5ac433886a39c5106e8a2797c",
+    "results\\confirmation\\00128.jsonl": "aab43df5c4fa98dc36b432ad714e701f1d561c95fcdc26973cedf1c327e502e8",
+    "results\\confirmation\\00192.npz": "9291617b8df86db506fc73cf79897ba375e8eb075c5d0d582c221cf1540c8727",
+    "results\\confirmation\\00192.jsonl": "9570de65b9f936c05b66ca2b35cb79dc8cc995f8a2d62e0d650f5fabf3257767",
+    "results\\confirmation\\00256.npz": "f3a141f61a5cd142138603ed821b82be70f07c4e2a8d1360d1aaf68d0555010d",
+    "results\\confirmation\\00256.jsonl": "1aba681c65c8d37e905a95b8a05aeff3282921200722fb53cd293f509ab5d95b",
+    "results\\confirmation\\00320.npz": "c8ee681597b958bb27181ecfd59dd4f0fa96fa13d07d9107801038bd0bfef04f",
+    "results\\confirmation\\00320.jsonl": "026b5b4546f037dd8c535c44a2140ec6ef839f9c55e84669ca82660e4f074002",
+    "results\\confirmation\\00384.npz": "ae4e30a5c90d48a5a5ac84dc79f0155a96f7b76bad318e539dc207455ec8c9f3",
+    "results\\confirmation\\00384.jsonl": "35bbd03dce2be566b4281ee3797a489f270e88c9e60c34768f84d456c764bf0f",
+    "results\\confirmation\\00448.npz": "152ca9741b0ecd434135cb92e4a4cdd5102b90688318975c92d96dcdaf0f8294",
+    "results\\confirmation\\00448.jsonl": "0333d8bd05f6de6f340cf5e8e014a91c2e2e9ce4115596e42b2e5062a00228e6",
+    "results\\confirmation\\00512.npz": "f5fe7634f5d56e66f0aac56861d925a789e4565ee3a0214abfbfa99dff4d240c",
+    "results\\confirmation\\00512.jsonl": "450879f3f593524a138e18b3586ba6b3bdbc759cf120f4c7548ac534f0add475",
+    "results\\confirmation\\00576.npz": "d4c7386b32b181f7c003829d03063ee4c7c074ddefbb3b423a12e59b6f0ff94c",
+    "results\\confirmation\\00576.jsonl": "00bd1729c6e4ed772d2451c84900f85b3ba506e4c2e63be52d4a76df8d38ca6d",
+    "results\\confirmation\\00640.npz": "0377be044cbda1584268a9961530c8a43522cfd348a8205422605dd3868673a9",
+    "results\\confirmation\\00640.jsonl": "2c7c4a44909274f49e5af0107a51efbb5c863d4284280066433fdace4271ad71",
+    "results\\confirmation\\00704.npz": "0a1b79ce3b36933942143473963fb827d720bbab5195f2e690f3bf0ce7e15988",
+    "results\\confirmation\\00704.jsonl": "7c07a14c3266490e057aa5728a806f091e9f2030197a5826ecfe3e058768f34c",
+    "results\\confirmation\\00768.npz": "c96f80d52912445496a0d42e28a6a6a687e72fd0ba06c3a4016a1373c355d934",
+    "results\\confirmation\\00768.jsonl": "8398d6c4e8eeebec38163dfc2e5871d8d19a41d2ceb53ec78257b13a9b3012f8",
+    "results\\confirmation\\00832.npz": "d0e6b52e2ba327de6446c6f1c721ae9dc950a7a7df5095acb97450fdbfa1e77b",
+    "results\\confirmation\\00832.jsonl": "f121f81b2e3b05f2e0c2f8fd18428379e6995e75d5d6a0c1c3ff4192aea59b29",
+    "results\\confirmation\\00896.npz": "a1840dd9c47f3cdf71bdb25cfd4c49bc7f4a0478d2778ced81057e3053a026a8",
+    "results\\confirmation\\00896.jsonl": "b72737117fc59f8a707759c347f7637f9df49a19fa47ccb07300f7b8c1629bef",
+    "results\\confirmation\\00960.npz": "8b4a5e15f5c1a7ad45acecbb66ad263fe392238726a985bf6f7d2a317551c4d3",
+    "results\\confirmation\\00960.jsonl": "5601151e41a3d37166df43f816c33aff9b9a9a837d7a932b60d900827109546c",
+    "results\\confirmation\\01024.npz": "1a1f1306c2c0df01e260894a229f025b698cc28c119cb53f0c78f8dd3aa5ae29",
+    "results\\confirmation\\01024.jsonl": "1744e4f52aa6eb0b0e3144963950ac5cd0d45219ef0731b4157439e5902c01bb",
+    "results\\confirmation\\01088.npz": "fee4bb6fcb5b585d466f182961eacf95b44a9f73d043bab8e641fff3c5e3c9ba",
+    "results\\confirmation\\01088.jsonl": "0e6e7cf58e54355f37502799749f32862e14ffe2f56b62fe8b2ae0ff428d6a17",
+    "results\\confirmation\\01152.npz": "db4ffe33e831735c794af63e2dc97551a2ba6cd71651c56e568389472dd6f95f",
+    "results\\confirmation\\01152.jsonl": "2c734d5b062de439863a7be6153261c42eb36941975242089d796555fbfeba3a",
+    "results\\confirmation\\01216.npz": "5f755904587023c2b04d0d1003e40b37a94c54576889f5c7644383f42e4a02d5",
+    "results\\confirmation\\01216.jsonl": "b7429b6c1d8e1fa73a0795596380f343d8243f0783191b56550cf78f7bbee3f1",
+    "results\\confirmation\\01280.npz": "4ac85bba329fc5c9667fe27ace16f5110901ea79aba7bfe87ddaf74a0054a490",
+    "results\\confirmation\\01280.jsonl": "ebe6f611d5c821da738c1f8bb206162b1f00f369a5f62e6e703d59a682a7e242",
+    "results\\confirmation\\01344.npz": "c7ff2752ad198c9603d3584f2260356278cb9003920915f5ee5082bd231b5b00",
+    "results\\confirmation\\01344.jsonl": "5da6d00d70db7072875d0caa7fd8628c53464848c3a97aefbe5f3967f0d7b3c2",
+    "results\\confirmation\\01408.npz": "279bb65e5f70bc0fc78fcbdfc98b225b5e341aba6bbad9cb4c5d59f502be75f5",
+    "results\\confirmation\\01408.jsonl": "ede99b89294b31d084a16b6b23de39e680fa19032903e6abe2bc5e06fd6a3dfe",
+    "results\\confirmation\\01472.npz": "f9daf007b98af2e5bd8ee7df3c2c61a336d7ddde08f195ce229fcae3c9b7b9d5",
+    "results\\confirmation\\01472.jsonl": "1675e6bef68e8adac607c6a60c65979a05aca8349661cbfed29dcb9e244c314b",
+    "results\\confirmation\\01536.npz": "e6af4a77ad1ac509e7a18d8fa445f45fb6fc5b6641167e03fb5986172e71f12f",
+    "results\\confirmation\\01536.jsonl": "e6085940dd672c1469bf5c195a39860ef8faef166fa03b20acbd3eb20be68bb7",
+    "results\\confirmation\\01600.npz": "62fe8a5912ad9791ede3b609ad6ee9314a64313fd7ad25ee131f819fe8fad023",
+    "results\\confirmation\\01600.jsonl": "45644418274c971ef0c8940242173141cf5b76574b049dcf80d9c9faccd7288d",
+    "results\\confirmation\\01664.npz": "846d9cfeebb44ccb136443ec963396065f258ff55acced7d436c75b4cadbe4de",
+    "results\\confirmation\\01664.jsonl": "032577e269be7acf89986455b0f66dea0771427bfb0bf4ad0690a4e90833f6c8",
+    "results\\confirmation\\01728.npz": "d72004087349dceb01ff8e3881a1958ca5993cecb8219f9f33101cfa22ac919f",
+    "results\\confirmation\\01728.jsonl": "ac76314f1ae33cb87283accf0ab8032dd2b815363bd69fdbf8438ab8bafb97cf",
+    "results\\confirmation\\01792.npz": "291295954fb16401cf3af91735dd784521fa130973b7c636baa810589a2a39f5",
+    "results\\confirmation\\01792.jsonl": "3c4278c85f0db6fc7d30a902e5160f166033e0d542d37d88693c02662de23afa",
+    "results\\confirmation\\01856.npz": "906d8e4d097f5c8f8ce9eb01502777c0578939b359482015b434eeb77eddbdee",
+    "results\\confirmation\\01856.jsonl": "66985d236bcffd5cc9431be493f636e28113fc295edbfd388d01422e517d4b2d",
+    "results\\confirmation\\01920.npz": "f3a0d48b702c4d50c5076393101dbd267698f441860b85a5b5ee8644008a8ea6",
+    "results\\confirmation\\01920.jsonl": "24fc6c25cfd6460f48ad08e15d71d7ef8de1accc67b64af016ea64a100c6b422",
+    "results\\confirmation\\01984.npz": "3e4c578d1ee4a545ece9cd5c8f2bd8bd1e5ed3638c4b2943ada59047a2f91e47",
+    "results\\confirmation\\01984.jsonl": "2a06552c898778b27e323be78b6ff1cefb37d1a75b271845e0cb8bbbcfbaf7a9",
+    "results\\confirmation\\02048.npz": "f7904acb46da5b58227bfaca9956a661ab59dcead145ea90c6bc3322d4c662f2",
+    "results\\confirmation\\02048.jsonl": "cdf1d1ccb747c57723f7a5a73a82316404b90ab92bdebef78d47656ce0ac36ba",
+    "results\\confirmation\\02112.npz": "e6862cd095b289ae09aa8f2ab46397a1ac37c69cc07762e34c7f93955b84e546",
+    "results\\confirmation\\02112.jsonl": "131f2c7a3ebff4e3e038d8e67be8d10ca775daed3d23c6e3fa54a61eacbff14f",
+    "results\\confirmation\\02176.npz": "3bfc1bd1cb52b8c9559d78815a600842998f757988ad8c54d160426039673c79",
+    "results\\confirmation\\02176.jsonl": "4f48fd0679411d22402c781560b426aeae50724bc4d6846253f0f1276a75e3e5",
+    "results\\confirmation\\02240.npz": "5b0333b7d3d15f7dd8c18437a98999d62ac43754dabd03e717dea2533f823786",
+    "results\\confirmation\\02240.jsonl": "6b35e65a530f228ce6be7caea4b6796e4fbe5071ddd3de79bcaa9c466706a544",
+    "results\\confirmation\\02304.npz": "a01beaee6fdae9f1605021d44f87464609c91b914de998736710e458ece2aeaf",
+    "results\\confirmation\\02304.jsonl": "cb1865080aab3423a189477a67d2919d8e1a800d94c6b7d7fef065ce2a14e622",
+    "results\\confirmation\\02368.npz": "c135e59fb3b27c0292e6f2cdc53a594cb5423ff4f5751dc91901e2512874341e",
+    "results\\confirmation\\02368.jsonl": "bf63362a76ff83798f0ce641ea0afa8e32b941458c5d71bee433fcd2237bbc45",
+    "results\\confirmation\\02432.npz": "cb6cdc7c391c56abf2f401004394fbbc55c0e3d42bf08f6116d4ebb1187623c5",
+    "results\\confirmation\\02432.jsonl": "22a1cdc92aeb3e40a5f1cb8eb039b2745a4cacf148d9fea308f8608b39f97e90",
+    "results\\confirmation\\02496.npz": "948f2de6fc879187f7ba5e014aeb9639e202edf56e061db3cc3f9640fab317b7",
+    "results\\confirmation\\02496.jsonl": "2e447ce486fc7a90364da931f1664c683235d1de0bd29ed30a1f1fdbca28ba0c",
+    "results\\confirmation\\02560.npz": "a333ef2b1b68c6c5fe05cde7bcc5c12baca73b7962cedd792083eeb522958bb7",
+    "results\\confirmation\\02560.jsonl": "f8c538cc6f08807c5ee8cabeb9c03b668a232f15c48be319afa5c6cc797ad850",
+    "results\\confirmation\\02624.npz": "60dc81e0ad12f98c1eb80f8ec9c4ac5fe620acb0232bd9546aaf1883889464a6",
+    "results\\confirmation\\02624.jsonl": "a82800a100e1d27d948a4ea0d6b6dfb2298b766696ec05fbb28a8bc1198a2761",
+    "results\\confirmation\\02688.npz": "eadca7b74ca0775adcbb5fb7fe47acdbec14cc6834147c12113fb72b55ac1cda",
+    "results\\confirmation\\02688.jsonl": "5c2d54bbced2c18e053934d0db33c39f0bee9a2e5f457a1aa47724b96903314e",
+    "results\\confirmation\\02752.npz": "1c1bf07ca88cdf9b1d6ad0efc898aa5ad729b3fb7126e16d8b6e8bcc2678ecf0",
+    "results\\confirmation\\02752.jsonl": "1ea066b5f40e6525bf4ab022f6c361fe8452f57ab0f892678b90b6d06637f4cd",
+    "results\\confirmation\\02816.npz": "a604e8e004dc8ad9bb441645a813067767d47f0d7af282046ade2ed2989583a7",
+    "results\\confirmation\\02816.jsonl": "22cc3897ed4273b20a53f66e6b91346a6d1b58879c0ee29c441a0a10d5a5219e",
+    "results\\confirmation\\02880.npz": "41fb339cbfbf7c55d2759e844d614fbbe48f4ec13be53bae9616c2f8ba648826",
+    "results\\confirmation\\02880.jsonl": "f52f8985896048793a92ce5e0491319e2d746192c888c739c45d2fa9eef73083",
+    "results\\confirmation\\02944.npz": "2c2834155df3958da3b7183b503a1a6767a7c40d81487b751e54031ed8924529",
+    "results\\confirmation\\02944.jsonl": "ebc3112ddd1f83735caf89625643d78a5fdec6193022eda0dfd91aef44833c14",
+    "results\\confirmation\\03008.npz": "7240067681a8ad91d6a78ab84e7ab888931ea291046e7a4d554465d18e916844",
+    "results\\confirmation\\03008.jsonl": "3695fba2cafdd432fa542a3abab1bf7f59a0aa37ac07d3b7d8d7ffb70eeea564",
+    "results\\confirmation\\03072.npz": "af3958c29c22fab56ad9aa00cf85e050dc17511e209ad16aa089fa3485eb59f1",
+    "results\\confirmation\\03072.jsonl": "bb7d1e45acc12eb7126a23f07da115fbc8367f66e169abfef680adc2cc6cdd81",
+    "results\\confirmation\\03136.npz": "171632b692ddada1b410b8a3ebd9af032f1c64fa932ef8c21a28ddcd699858a2",
+    "results\\confirmation\\03136.jsonl": "673d1e74bd24b1e63a271da396fc131b6628620691275c2d1f36cb3ffb9a01f4",
+    "results\\confirmation\\03200.npz": "7b3a8f1d6ccfe9cb036207a34e7bf7199151896626f549209cb10630dd4a6f8c",
+    "results\\confirmation\\03200.jsonl": "2c2481198092dc106a3adfa361519c760b7b9cc567cf1bededc8d1ef54165e5f",
+    "results\\confirmation\\03264.npz": "a022aa1caf2da3a9becc2013756ea2e6609821f3b054eacbf639731b64b01ffe",
+    "results\\confirmation\\03264.jsonl": "a92b3dd8c0d29d7affb295b69925a094e608342890cace87a437d1b169f0da92",
+    "results\\confirmation\\03328.npz": "f031f8a359f4f24c4654ea84d41a20a0af308a2e1b05cc68aac8a9780c540d17",
+    "results\\confirmation\\03328.jsonl": "98157aee9b5dc380058308cec365b1053d4d95e112a0a94b3c1f7d37d2107f83",
+    "results\\confirmation\\03392.npz": "3e0d3db7c311026fb5b11d8d6433158f6754e3b062c9c74ab16e0ba464e7507a",
+    "results\\confirmation\\03392.jsonl": "2a2f1824568ccf613ed8d05f2ef090d375b4464149fe48f3c1414047376f45fb",
+    "results\\confirmation\\03456.npz": "8cb6f94d1eaacbe123a44a86e4914ed62d90028713db96bfee0bf30f88a2d4da",
+    "results\\confirmation\\03456.jsonl": "96bf4175cbc7a2de7e2a33122fafb1ee9261219108862203b089c78f77557f9b"
+  },
+  "primary_floor_effective_pseudocount": 0.25625625625625625,
+  "n_confirmation_rounds": 3520,
+  "n_fit_seeds": 5,
+  "n_scored_cards": 112696,
+  "scope": "pre-data Claude secondary sensitivity; primary unchanged; round intervals conditional on selected fixed ensemble; not a posterior proof",
+  "reliability_with_CIs": {
+    "prop": {
+      "ECE": 0.018239097101809428,
+      "ci95": [
+        0.017403290971006426,
+        0.01939072739330045
+      ],
+      "n_rounds": 3520,
+      "bins": [
+        {
+          "bin": [
+            0.0,
+            0.1
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 0,
+          "n_raw_cards": 0,
+          "round_weighted_mass": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 0,
+          "predicted_confidence": {
+            "mean": null,
+            "ci95": null
+          },
+          "observed_accuracy": {
+            "mean": null,
+            "ci95": null
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.1,
+            0.2
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 0,
+          "n_raw_cards": 0,
+          "round_weighted_mass": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 0,
+          "predicted_confidence": {
+            "mean": null,
+            "ci95": null
+          },
+          "observed_accuracy": {
+            "mean": null,
+            "ci95": null
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.2,
+            0.3
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 318,
+          "n_raw_cards": 7823,
+          "round_weighted_mass": {
+            "mean": 0.0792189204671687,
+            "ci95": [
+              0.07277559649635859,
+              0.08566224443797882
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.2748724009172381,
+            "ci95": [
+              0.2732805618304597,
+              0.27636258702030253
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.2752326609257306,
+            "ci95": [
+              0.27092189944530604,
+              0.27953606399524283
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.3,
+            0.4
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 671,
+          "n_raw_cards": 13289,
+          "round_weighted_mass": {
+            "mean": 0.14643986911532048,
+            "ci95": [
+              0.1388726705379343,
+              0.15400706769270664
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.3390806885955904,
+            "ci95": [
+              0.3373830640225909,
+              0.34069409763549074
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.33472163632510116,
+            "ci95": [
+              0.329949057475677,
+              0.3395551918473492
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.4,
+            0.5
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 458,
+          "n_raw_cards": 8202,
+          "round_weighted_mass": {
+            "mean": 0.08220805931355077,
+            "ci95": [
+              0.0749737075890814,
+              0.08944241103802014
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.4354418037358229,
+            "ci95": [
+              0.432563817521643,
+              0.43843874797341653
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.4133903473782883,
+            "ci95": [
+              0.4057623808554053,
+              0.420722688783004
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.5,
+            0.6
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 697,
+          "n_raw_cards": 10339,
+          "round_weighted_mass": {
+            "mean": 0.1064262523429389,
+            "ci95": [
+              0.09862276188953462,
+              0.11422974279634318
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.539424634296861,
+            "ci95": [
+              0.5369883379481211,
+              0.5418883855750289
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.5104924821872203,
+            "ci95": [
+              0.502512827399594,
+              0.5181587380018499
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.6,
+            0.7
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 625,
+          "n_raw_cards": 10866,
+          "round_weighted_mass": {
+            "mean": 0.10122787738722867,
+            "ci95": [
+              0.09347884067923011,
+              0.10897691409522724
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.6473313171347533,
+            "ci95": [
+              0.644990691814543,
+              0.6495927752864518
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.6174003405632321,
+            "ci95": [
+              0.6109743865019708,
+              0.6239634305167487
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.7,
+            0.8
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 739,
+          "n_raw_cards": 14797,
+          "round_weighted_mass": {
+            "mean": 0.12181885969926104,
+            "ci95": [
+              0.11403320192057682,
+              0.12960451747794527
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.7435484945107321,
+            "ci95": [
+              0.741681158696005,
+              0.7453662744680577
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.7154143697833351,
+            "ci95": [
+              0.7103707293309867,
+              0.7201518242778354
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.8,
+            0.9
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 1274,
+          "n_raw_cards": 29531,
+          "round_weighted_mass": {
+            "mean": 0.22960529012605815,
+            "ci95": [
+              0.21980926167825737,
+              0.23940131857385893
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.847131394916477,
+            "ci95": [
+              0.8456764469880491,
+              0.8486324150541468
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.8251445981634808,
+            "ci95": [
+              0.8224860211706365,
+              0.8279586659910344
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.9,
+            1.0
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 902,
+          "n_raw_cards": 17849,
+          "round_weighted_mass": {
+            "mean": 0.1330548715484733,
+            "ci95": [
+              0.1254864739602783,
+              0.14062326913666834
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.9304641649875275,
+            "ci95": [
+              0.9292703111501607,
+              0.9316372432554592
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.921634201717645,
+            "ci95": [
+              0.9194270191865849,
+              0.9239827080762303
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        }
+      ]
+    },
+    "uniform": {
+      "ECE": 0.006519240313329632,
+      "ci95": [
+        0.0052180924890513295,
+        0.00888929749258575
+      ],
+      "n_rounds": 3520,
+      "bins": [
+        {
+          "bin": [
+            0.0,
+            0.1
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 0,
+          "n_raw_cards": 0,
+          "round_weighted_mass": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 0,
+          "predicted_confidence": {
+            "mean": null,
+            "ci95": null
+          },
+          "observed_accuracy": {
+            "mean": null,
+            "ci95": null
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.1,
+            0.2
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 0,
+          "n_raw_cards": 0,
+          "round_weighted_mass": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 0,
+          "predicted_confidence": {
+            "mean": null,
+            "ci95": null
+          },
+          "observed_accuracy": {
+            "mean": null,
+            "ci95": null
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.2,
+            0.3
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 474,
+          "n_raw_cards": 4515,
+          "round_weighted_mass": {
+            "mean": 0.04377137690676916,
+            "ci95": [
+              0.039825067523827445,
+              0.047717686289710876
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.28287723338394055,
+            "ci95": [
+              0.2823968990074178,
+              0.28338162331627836
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.2675946506342896,
+            "ci95": [
+              0.25483781717234955,
+              0.2805548916022562
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.3,
+            0.4
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 1156,
+          "n_raw_cards": 17277,
+          "round_weighted_mass": {
+            "mean": 0.1835757521477268,
+            "ci95": [
+              0.17691429007388906,
+              0.19023721422156456
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.349873017928238,
+            "ci95": [
+              0.3489036094435438,
+              0.3508486675102082
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.3313964918579894,
+            "ci95": [
+              0.3250292701273865,
+              0.33738766281540433
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.4,
+            0.5
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 1146,
+          "n_raw_cards": 10018,
+          "round_weighted_mass": {
+            "mean": 0.10621873743350195,
+            "ci95": [
+              0.1003513183632857,
+              0.1120861565037182
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.4459187214428274,
+            "ci95": [
+              0.44472141533293524,
+              0.4470549374098062
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.44123321110662683,
+            "ci95": [
+              0.43376135088379925,
+              0.44916098113677494
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.5,
+            0.6
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 1179,
+          "n_raw_cards": 10589,
+          "round_weighted_mass": {
+            "mean": 0.10722072191977919,
+            "ci95": [
+              0.10116597234934717,
+              0.11327547149021121
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.5487062395944612,
+            "ci95": [
+              0.5475789901407112,
+              0.5499357406402439
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.5557373558860427,
+            "ci95": [
+              0.546796461093968,
+              0.5642438817593745
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.6,
+            0.7
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 1253,
+          "n_raw_cards": 12662,
+          "round_weighted_mass": {
+            "mean": 0.11543482460510832,
+            "ci95": [
+              0.1094492962210412,
+              0.12142035298917543
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.6516032900960814,
+            "ci95": [
+              0.6504865278525798,
+              0.6527311223082042
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.6541104208714263,
+            "ci95": [
+              0.6472392198519843,
+              0.6609951741168079
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.7,
+            0.8
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 1479,
+          "n_raw_cards": 17362,
+          "round_weighted_mass": {
+            "mean": 0.14302198493434282,
+            "ci95": [
+              0.13683288515262354,
+              0.1492110847160621
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.7523087404434544,
+            "ci95": [
+              0.7514204965196866,
+              0.7532619645513692
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.7525087266208211,
+            "ci95": [
+              0.7479019978414823,
+              0.7572786304041768
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.8,
+            0.9
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 1665,
+          "n_raw_cards": 26749,
+          "round_weighted_mass": {
+            "mean": 0.1999964760661958,
+            "ci95": [
+              0.1935782395964085,
+              0.20641471253598312
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.8524736177628156,
+            "ci95": [
+              0.8516296209079155,
+              0.8533230389560414
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.8505704766611127,
+            "ci95": [
+              0.8475606233755272,
+              0.8534523212684076
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.9,
+            1.0
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 1116,
+          "n_raw_cards": 13524,
+          "round_weighted_mass": {
+            "mean": 0.10076012598657595,
+            "ci95": [
+              0.09579824356330469,
+              0.10572200840984722
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.9353373183931655,
+            "ci95": [
+              0.9341811432047528,
+              0.9365294803932863
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.9302931210353271,
+            "ci95": [
+              0.9269463349504001,
+              0.9338157316861663
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        }
+      ]
+    },
+    "bi": {
+      "ECE": 0.017099536359809025,
+      "ci95": [
+        0.015108462952288374,
+        0.019123309903079554
+      ],
+      "n_rounds": 3520,
+      "bins": [
+        {
+          "bin": [
+            0.0,
+            0.1
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 0,
+          "n_raw_cards": 0,
+          "round_weighted_mass": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 0,
+          "predicted_confidence": {
+            "mean": null,
+            "ci95": null
+          },
+          "observed_accuracy": {
+            "mean": null,
+            "ci95": null
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.1,
+            0.2
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 0,
+          "n_raw_cards": 0,
+          "round_weighted_mass": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 0,
+          "predicted_confidence": {
+            "mean": null,
+            "ci95": null
+          },
+          "observed_accuracy": {
+            "mean": null,
+            "ci95": null
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.2,
+            0.3
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 449,
+          "n_raw_cards": 1409,
+          "round_weighted_mass": {
+            "mean": 0.013965610176272061,
+            "ci95": [
+              0.012483944456964645,
+              0.015447275895579477
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.2857500132844992,
+            "ci95": [
+              0.2851345915837428,
+              0.2864003409666598
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.276127275055838,
+            "ci95": [
+              0.25126051463130544,
+              0.30156289368203987
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.3,
+            0.4
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 1363,
+          "n_raw_cards": 13184,
+          "round_weighted_mass": {
+            "mean": 0.13312542161216195,
+            "ci95": [
+              0.12785982710619795,
+              0.13839101611812596
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.3556778215616768,
+            "ci95": [
+              0.3548120529414035,
+              0.3565081735085531
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.33783218701753265,
+            "ci95": [
+              0.32978590987435447,
+              0.3460298772793736
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.4,
+            0.5
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 1807,
+          "n_raw_cards": 13283,
+          "round_weighted_mass": {
+            "mean": 0.13755331423831932,
+            "ci95": [
+              0.13309989640547357,
+              0.14200673207116507
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.449150976823282,
+            "ci95": [
+              0.4482701473799696,
+              0.45001590796878016
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.4192698000840096,
+            "ci95": [
+              0.411134462374035,
+              0.4270486210542927
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.5,
+            0.6
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 2054,
+          "n_raw_cards": 12052,
+          "round_weighted_mass": {
+            "mean": 0.12213339677584041,
+            "ci95": [
+              0.11769785940393371,
+              0.12656893414774711
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.5488887659638504,
+            "ci95": [
+              0.5481448927780395,
+              0.5496682403476135
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.5315426389339368,
+            "ci95": [
+              0.5223138298191002,
+              0.540103391940631
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.6,
+            0.7
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 2202,
+          "n_raw_cards": 13648,
+          "round_weighted_mass": {
+            "mean": 0.12572236017688593,
+            "ci95": [
+              0.12124532719788877,
+              0.13019939315588308
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.6516207239536039,
+            "ci95": [
+              0.6509056425384068,
+              0.6523578979813888
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.6348867514390553,
+            "ci95": [
+              0.6268186109782906,
+              0.6426461758859872
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.7,
+            0.8
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 2260,
+          "n_raw_cards": 17021,
+          "round_weighted_mass": {
+            "mean": 0.14142933445915756,
+            "ci95": [
+              0.1368303192175085,
+              0.14602834970080664
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.7512446380893903,
+            "ci95": [
+              0.7505922250870054,
+              0.7519125791496656
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.7352351183814965,
+            "ci95": [
+              0.7296530699856726,
+              0.7409833869363058
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.8,
+            0.9
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 2149,
+          "n_raw_cards": 24094,
+          "round_weighted_mass": {
+            "mean": 0.18183573307296255,
+            "ci95": [
+              0.1767551450486029,
+              0.1869163210973222
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.8514357779600482,
+            "ci95": [
+              0.850736568904023,
+              0.8521283085554116
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.8421141113728202,
+            "ci95": [
+              0.8374420196650939,
+              0.8463057361110025
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.9,
+            1.0
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 1839,
+          "n_raw_cards": 18005,
+          "round_weighted_mass": {
+            "mean": 0.1442348294884002,
+            "ci95": [
+              0.13881644022430867,
+              0.1496532187524917
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.9506754749929394,
+            "ci95": [
+              0.9495010185750096,
+              0.9518912363827642
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.9347460166839178,
+            "ci95": [
+              0.9292969203622741,
+              0.9397467512477792
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        }
+      ]
+    },
+    "net_bids": {
+      "ECE": 0.004313127320482512,
+      "ci95": [
+        0.0035207710152391986,
+        0.00713440112575278
+      ],
+      "n_rounds": 3520,
+      "bins": [
+        {
+          "bin": [
+            0.0,
+            0.1
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 0,
+          "n_raw_cards": 0,
+          "round_weighted_mass": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 0,
+          "predicted_confidence": {
+            "mean": null,
+            "ci95": null
+          },
+          "observed_accuracy": {
+            "mean": null,
+            "ci95": null
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.1,
+            0.2
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 0,
+          "n_raw_cards": 0,
+          "round_weighted_mass": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 0,
+          "predicted_confidence": {
+            "mean": null,
+            "ci95": null
+          },
+          "observed_accuracy": {
+            "mean": null,
+            "ci95": null
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.2,
+            0.3
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 476,
+          "n_raw_cards": 2927,
+          "round_weighted_mass": {
+            "mean": 0.028647288401115308,
+            "ci95": [
+              0.026065624366512972,
+              0.031228952435717643
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.28497152006230914,
+            "ci95": [
+              0.28428362568105947,
+              0.2856836428919945
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.2804709570367401,
+            "ci95": [
+              0.26452771747826626,
+              0.29731574615317224
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.3,
+            0.4
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 1251,
+          "n_raw_cards": 16046,
+          "round_weighted_mass": {
+            "mean": 0.16668874935356956,
+            "ci95": [
+              0.16105118023684553,
+              0.1723263184702936
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.351988244036824,
+            "ci95": [
+              0.351160318544786,
+              0.3528209096254429
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.35473390471309907,
+            "ci95": [
+              0.3473964747605325,
+              0.3621588003437258
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.4,
+            0.5
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 1571,
+          "n_raw_cards": 12642,
+          "round_weighted_mass": {
+            "mean": 0.1340422306212424,
+            "ci95": [
+              0.1292350215713308,
+              0.138849439671154
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.4464138683071204,
+            "ci95": [
+              0.44558832621991284,
+              0.44722672841157196
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.4465778798720168,
+            "ci95": [
+              0.4381886259372969,
+              0.45534143638555075
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.5,
+            0.6
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 1694,
+          "n_raw_cards": 10985,
+          "round_weighted_mass": {
+            "mean": 0.10969150978423824,
+            "ci95": [
+              0.10496307505527314,
+              0.11441994451320334
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.5483179158076146,
+            "ci95": [
+              0.5474122734171225,
+              0.5491870132669362
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.5564536940113851,
+            "ci95": [
+              0.547278018375784,
+              0.5655028354377428
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.6,
+            0.7
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 1773,
+          "n_raw_cards": 12505,
+          "round_weighted_mass": {
+            "mean": 0.1139938501366562,
+            "ci95": [
+              0.10927664047230382,
+              0.11871105980100857
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.6512132831001025,
+            "ci95": [
+              0.6503602408786495,
+              0.6521065975135514
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.6581190107562345,
+            "ci95": [
+              0.6506696540388216,
+              0.6659162908162528
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.7,
+            0.8
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 1956,
+          "n_raw_cards": 16576,
+          "round_weighted_mass": {
+            "mean": 0.1368164862097855,
+            "ci95": [
+              0.13182224235653608,
+              0.14181073006303493
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.7516856905557541,
+            "ci95": [
+              0.7509013934644952,
+              0.7524993264357341
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.7503271353498044,
+            "ci95": [
+              0.7444847363808547,
+              0.7557268519040256
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.8,
+            0.9
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 2169,
+          "n_raw_cards": 25692,
+          "round_weighted_mass": {
+            "mean": 0.19368272415763949,
+            "ci95": [
+              0.1882684492326351,
+              0.19909699908264386
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.851728065465726,
+            "ci95": [
+              0.8510144399079094,
+              0.8524252778764084
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.8571540714754525,
+            "ci95": [
+              0.854048534257041,
+              0.860378325505141
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.9,
+            1.0
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 1629,
+          "n_raw_cards": 15323,
+          "round_weighted_mass": {
+            "mean": 0.1164371613357533,
+            "ci95": [
+              0.1114429388093542,
+              0.1214313838621524
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.9380990510490262,
+            "ci95": [
+              0.9371820570214459,
+              0.9389889952961974
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.944867599091404,
+            "ci95": [
+              0.9419777255533686,
+              0.947755039630605
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        }
+      ]
+    },
+    "net_full": {
+      "ECE": 0.007323952519236965,
+      "ci95": [
+        0.00598677950879031,
+        0.009412094093545015
+      ],
+      "n_rounds": 3520,
+      "bins": [
+        {
+          "bin": [
+            0.0,
+            0.1
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 0,
+          "n_raw_cards": 0,
+          "round_weighted_mass": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 0,
+          "predicted_confidence": {
+            "mean": null,
+            "ci95": null
+          },
+          "observed_accuracy": {
+            "mean": null,
+            "ci95": null
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.1,
+            0.2
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 0,
+          "n_raw_cards": 0,
+          "round_weighted_mass": {
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 0,
+          "predicted_confidence": {
+            "mean": null,
+            "ci95": null
+          },
+          "observed_accuracy": {
+            "mean": null,
+            "ci95": null
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.2,
+            0.3
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 380,
+          "n_raw_cards": 2044,
+          "round_weighted_mass": {
+            "mean": 0.01826235781629514,
+            "ci95": [
+              0.016230630952769123,
+              0.020294084679821155
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.285648714833842,
+            "ci95": [
+              0.2848580287550008,
+              0.28640481579058713
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.28285934108821925,
+            "ci95": [
+              0.2634841201026664,
+              0.3020739871746956
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.3,
+            0.4
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 1285,
+          "n_raw_cards": 14319,
+          "round_weighted_mass": {
+            "mean": 0.1420653605918299,
+            "ci95": [
+              0.13694860523978597,
+              0.14718211594387381
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.3547626859933192,
+            "ci95": [
+              0.3539485740298856,
+              0.35558913444113893
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.35280309444672886,
+            "ci95": [
+              0.34567858053783546,
+              0.3603201087375375
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.4,
+            0.5
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 1700,
+          "n_raw_cards": 13686,
+          "round_weighted_mass": {
+            "mean": 0.14454479336713116,
+            "ci95": [
+              0.14007065096631344,
+              0.1490189357679489
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.4483438902428716,
+            "ci95": [
+              0.44763756580447783,
+              0.4490573275662359
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.45448748479859963,
+            "ci95": [
+              0.4465230987829259,
+              0.462387422338301
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.5,
+            0.6
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 2022,
+          "n_raw_cards": 12327,
+          "round_weighted_mass": {
+            "mean": 0.12399432362842186,
+            "ci95": [
+              0.11946912511644546,
+              0.12851952214039827
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.5484770031093511,
+            "ci95": [
+              0.5476921634243626,
+              0.5492586681367886
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.5580983551191824,
+            "ci95": [
+              0.5499024557344189,
+              0.5666603833238755
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.6,
+            0.7
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 2130,
+          "n_raw_cards": 12978,
+          "round_weighted_mass": {
+            "mean": 0.11855173298527415,
+            "ci95": [
+              0.11425884332224434,
+              0.12284462264830395
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.6506896893836184,
+            "ci95": [
+              0.6498445403805839,
+              0.6515435582289673
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.6603586969089089,
+            "ci95": [
+              0.6526955674174532,
+              0.6679396563946215
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.7,
+            0.8
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 2305,
+          "n_raw_cards": 16470,
+          "round_weighted_mass": {
+            "mean": 0.13835058774059777,
+            "ci95": [
+              0.13379728283232725,
+              0.1429038926488683
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.7518383785423777,
+            "ci95": [
+              0.7511018929806947,
+              0.7525581952125914
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.7578365599445176,
+            "ci95": [
+              0.752300645056862,
+              0.7633666865944582
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.8,
+            0.9
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 2359,
+          "n_raw_cards": 23986,
+          "round_weighted_mass": {
+            "mean": 0.18321992277420135,
+            "ci95": [
+              0.17848282883764668,
+              0.18795701671075601
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.8519219256187278,
+            "ci95": [
+              0.8513020726929206,
+              0.8525685555591054
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.8616609746993715,
+            "ci95": [
+              0.8580008028499512,
+              0.8653138341365972
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        },
+        {
+          "bin": [
+            0.9,
+            1.0
+          ],
+          "n_round_clusters": 3520,
+          "n_rounds_with_cards_in_bin": 1925,
+          "n_raw_cards": 16886,
+          "round_weighted_mass": {
+            "mean": 0.13101092109624868,
+            "ci95": [
+              0.12614083416173777,
+              0.1358810080307596
+            ],
+            "n_decisions": 3520,
+            "n_strata": 176,
+            "method": "equal-stratum normal95%CI; independent rounds, fixed fitted ensemble"
+          },
+          "n_nonempty_bootstrap_draws": 2000,
+          "predicted_confidence": {
+            "mean": 0.9427158570968324,
+            "ci95": [
+              0.9419030200084162,
+              0.9435017897881365
+            ]
+          },
+          "observed_accuracy": {
+            "mean": 0.9515173135468972,
+            "ci95": [
+              0.948620951984531,
+              0.9544173951227922
+            ]
+          },
+          "scope": "Paired176-stratum round bootstrap,2000draws; marginal not simultaneous; sparse bins exploratory and intervals conditional on nonempty resamples."
+        }
+      ]
+    }
+  },
+  "utc": "2026-11-18T01:30:11.460349+00:00"
+}

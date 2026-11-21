@@ -1,0 +1,1 @@
+HEAD:engine/experiments/phase1/results/fixed_point_ta.json:78:     "mean_sum_minus_n": -0.20500000000000007

@@ -1,0 +1,9 @@
+{
+  "finished": "2026-11-17T01:10:47.2876350-05:00",
+  "pytest_seconds": 16.62,
+  "exit_code": 0,
+  "passed": 280,
+  "command": "cd engine; python -m pytest -q -p no:cacheprovider",
+  "wall_seconds": 17.3283146,
+  "skipped": 1
+}

@@ -1,0 +1,50 @@
+{
+  "tag": "S2R4n2_t-1",
+  "key_id": 2273,
+  "reach": 3,
+  "n_structural_worlds": 30,
+  "n_posterior_worlds": 3,
+  "lp_success": true,
+  "lp_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "lp_proposal_exact_feasible": true,
+  "lp_proposal_weights": {
+    "23": "1/3",
+    "26": "1/3",
+    "29": "1/3"
+  },
+  "fallback_P_if_infeasible": false,
+  "epsilon": "0",
+  "mixture_weights": {
+    "26": "1/3",
+    "29": "1/3",
+    "23": "1/3"
+  },
+  "entropy_gain_enclosure_exact_nats": [
+    "-2282717/340282366920938463463374607431768211456",
+    "1147713/340282366920938463463374607431768211456"
+  ],
+  "certified_KL_lower_nats": "0",
+  "numeric_free_potential_KL": 1.3630956363641644e-09,
+  "numeric_gradient_linf": 6.176595346296665e-09,
+  "numeric_optimizer_success": true,
+  "numeric_optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+  "numeric_iterations": 33,
+  "theta": [
+    -4.014253666092935,
+    -7.077882134612151,
+    11.092135724011587,
+    -8.330896520639522,
+    8.271410938095647,
+    0.05948549239525445,
+    4.115041773276291,
+    -0.3978512206810922,
+    -3.717190650750407,
+    4.1150617473337565,
+    -0.39783122836756873,
+    -3.717230617600638,
+    4.115046461940247,
+    -0.3978465484100565,
+    -3.7172000247492996
+  ],
+  "scope": "Exact rational moment/entropy certificate under pending external lemma; numeric potential objective not a rigorous optimum/certificate. Known deterministic toy keys, no samplingCI."
+}

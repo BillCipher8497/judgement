@@ -1,0 +1,11 @@
+{
+  "tag": "S3R4n3_t0",
+  "n_keys": 256,
+  "reach_weight": 7645,
+  "positive_first_action_loss_keys": 1,
+  "positive_max_value_gap_keys": 2,
+  "positive_any_action_PI_gap_keys": 4,
+  "first_action_loss_numerator": 40,
+  "relaxation_gap_numerator": 64,
+  "scope": "Exact fixed stage-stratified diagnostic, not population estimate; no sampling CI"
+}

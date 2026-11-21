@@ -1,0 +1,4 @@
+{
+  "utc": "2026-11-17T06:08:53.402329+00:00",
+  "full_tests": "Run fresh python -m pytest -q -p no:cacheprovider next; not yet executed."
+}

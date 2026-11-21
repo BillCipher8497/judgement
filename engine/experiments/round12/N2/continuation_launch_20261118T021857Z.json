@@ -1,0 +1,13 @@
+{
+  "pid": 10072,
+  "stdout": "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N2\\continuation_20261118T021857Z_stdout.txt",
+  "max_windows": 2,
+  "pre_run_scheduling_commit": "ba6505d43fa41e1c6a2e00d3d6ed5abe32c405dc",
+  "startedUTC": "2026-11-18T02:18:57.7430395+00:00",
+  "hard_stopUTC": "2026-11-18T05:18:57.0000000+00:00",
+  "hard_stop_epoch": 1794979137,
+  "original_scientific_commit": "1c0c7192f65464b79afa7a525e121f76543218c1",
+  "window": 1,
+  "status": "launch receipt",
+  "stderr": "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N2\\continuation_20261118T021857Z_stderr.txt"
+}

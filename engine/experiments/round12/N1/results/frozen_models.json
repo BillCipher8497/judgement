@@ -1,0 +1,178 @@
+{
+  "models": {
+    "bids": {
+      "alpha": 1.0,
+      "selected_models": [
+        "bids_s0/selected.npz",
+        "bids_s1/selected.npz",
+        "bids_s2/selected.npz",
+        "bids_s3/selected.npz",
+        "bids_s4/selected.npz"
+      ],
+      "selection_trials": [
+        {
+          "alpha": 0.0,
+          "loss": 0.9112810599200374,
+          "net_minus_prop": {
+            "n_decisions": 4400,
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "half95": 0.0,
+            "n_strata": 176,
+            "scope": "Marginal equal-stratum paired normal95%CI across independent rounds, conditional on frozen ensemble."
+          }
+        },
+        {
+          "alpha": 0.25,
+          "loss": 0.8954015842802626,
+          "net_minus_prop": {
+            "n_decisions": 4400,
+            "mean": -0.015879475639774706,
+            "ci95": [
+              -0.01633771233245466,
+              -0.015421238947094755
+            ],
+            "half95": 0.00045823669267995083,
+            "n_strata": 176,
+            "scope": "Marginal equal-stratum paired normal95%CI across independent rounds, conditional on frozen ensemble."
+          }
+        },
+        {
+          "alpha": 0.5,
+          "loss": 0.884189693862488,
+          "net_minus_prop": {
+            "n_decisions": 4400,
+            "mean": -0.02709136605754938,
+            "ci95": [
+              -0.027943855444000264,
+              -0.026238876671098497
+            ],
+            "half95": 0.0008524893864508815,
+            "n_strata": 176,
+            "scope": "Marginal equal-stratum paired normal95%CI across independent rounds, conditional on frozen ensemble."
+          }
+        },
+        {
+          "alpha": 1.0,
+          "loss": 0.873778032926599,
+          "net_minus_prop": {
+            "n_decisions": 4400,
+            "mean": -0.03750302699343827,
+            "ci95": [
+              -0.03909035266377353,
+              -0.03591570132310301
+            ],
+            "half95": 0.00158732567033526,
+            "n_strata": 176,
+            "scope": "Marginal equal-stratum paired normal95%CI across independent rounds, conditional on frozen ensemble."
+          }
+        }
+      ]
+    },
+    "full": {
+      "alpha": 1.0,
+      "selected_models": [
+        "full_s0/selected.npz",
+        "full_s1/selected.npz",
+        "full_s2/selected.npz",
+        "full_s3/selected.npz",
+        "full_s4/selected.npz"
+      ],
+      "selection_trials": [
+        {
+          "alpha": 0.0,
+          "loss": 0.9112810599200374,
+          "net_minus_prop": {
+            "n_decisions": 4400,
+            "mean": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "half95": 0.0,
+            "n_strata": 176,
+            "scope": "Marginal equal-stratum paired normal95%CI across independent rounds, conditional on frozen ensemble."
+          }
+        },
+        {
+          "alpha": 0.25,
+          "loss": 0.8817202019546434,
+          "net_minus_prop": {
+            "n_decisions": 4400,
+            "mean": -0.029560857965393924,
+            "ci95": [
+              -0.030196294162155256,
+              -0.02892542176863259
+            ],
+            "half95": 0.0006354361967613341,
+            "n_strata": 176,
+            "scope": "Marginal equal-stratum paired normal95%CI across independent rounds, conditional on frozen ensemble."
+          }
+        },
+        {
+          "alpha": 0.5,
+          "loss": 0.8605970969975201,
+          "net_minus_prop": {
+            "n_decisions": 4400,
+            "mean": -0.050683962922517305,
+            "ci95": [
+              -0.051833374454251964,
+              -0.049534551390782645
+            ],
+            "half95": 0.0011494115317346577,
+            "n_strata": 176,
+            "scope": "Marginal equal-stratum paired normal95%CI across independent rounds, conditional on frozen ensemble."
+          }
+        },
+        {
+          "alpha": 1.0,
+          "loss": 0.8375094471594842,
+          "net_minus_prop": {
+            "n_decisions": 4400,
+            "mean": -0.0737716127605532,
+            "ci95": [
+              -0.07587593136512721,
+              -0.0716672941559792
+            ],
+            "half95": 0.002104318604574008,
+            "n_strata": 176,
+            "scope": "Marginal equal-stratum paired normal95%CI across independent rounds, conditional on frozen ensemble."
+          }
+        }
+      ]
+    }
+  },
+  "model_sha256": {
+    "bids_s0/selected.npz": "c5327c1f6a76176852a361e25605bb4d38501f956e55a658ab32bdfa811320b8",
+    "bids_s1/selected.npz": "355a9dd370a0faa267c84aa19fc85e40649fd32327dbd5afc6860f9f666c5697",
+    "bids_s2/selected.npz": "67b8e082ee2f5a2f3115a3beb8a91a6a83c7f3fbeaf2b6e632a5887e910ade87",
+    "bids_s3/selected.npz": "35f9ff27dcc37608437eebc6c99faa8e34dca4649052c12841d6a2ca0dbb911a",
+    "bids_s4/selected.npz": "36b16c5b2637e7ca1fb4db1e9688a5f873c7245f98b363c67bdb0cd23c1c9d4b",
+    "full_s0/selected.npz": "10e0058a789276535f30da23d211867ac97b0c8c2781c9168d38fce38dbcdcd1",
+    "full_s1/selected.npz": "e377cb12eec880af179c18e0875f0b8a4d48863c330c893d1391492913fd23a3",
+    "full_s2/selected.npz": "e36b5a34a1c1fb0fa32e20c14c7139b67a65dbef84e208371b2595a70c6ba6e8",
+    "full_s3/selected.npz": "3dfe8ef363000394299ce5e5b0d034398cf2551591c745b8debe2de4b2b9f30d",
+    "full_s4/selected.npz": "2f1dc6a90846a298d7322462c47f6aa352da53d351e06d761879ca5121e46f3c"
+  },
+  "source_freeze_sha256": "9fdd1c72d6b12447de69bf53af92d32293bd4ca220ff285f1e75d261b3a45ae8",
+  "data_manifests": {
+    "train": "8edd363ef44dad6bae96ff4ecceba50e0ccc1d0b56dc654579854394e4a3edd5",
+    "validation": "5a5d73a7a7b857aaa0039d5debf3f1fde1dad39a57f07fbf5b16e6fcfe447bc6"
+  },
+  "selection_gate": {
+    "n_decisions": 4400,
+    "mean": -0.0737716127605532,
+    "ci95": [
+      -0.07587593136512721,
+      -0.0716672941559792
+    ],
+    "half95": 0.002104318604574008,
+    "n_strata": 176,
+    "scope": "Marginal equal-stratum paired normal95%CI across independent rounds, conditional on frozen ensemble."
+  },
+  "confirmation_allowed": true,
+  "frozen_before_confirmation_utc": "2026-11-17T23:09:33.328223+00:00"
+}

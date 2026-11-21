@@ -1,0 +1,8 @@
+{
+  "utc": "2026-11-20T02:07:26.485661+00:00",
+  "sources": {
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N9\\api_resume.py": "a20f30d1373a69311fe69973b290a08b8daca0e5561a94d5c9f6056c4bcd9f58"
+  },
+  "original_source_freeze_sha256": "725cafe5f6e5f5953499c62446efc20ad607cf7606b6814f73f316a67e706635",
+  "scope": "Only maps4encoderreturnvalues to5withunusedNone; preserves prior selectionIDs/UTC; no original scientific source or target/count/seed/model change. Zero rows/fits existed at failure."
+}

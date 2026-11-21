@@ -1,0 +1,41 @@
+{
+  "condition": "S2R4n2_t-1",
+  "N": 4,
+  "S": 2,
+  "R": 4,
+  "n": 2,
+  "trump": -1,
+  "n_exact_deals": 2520,
+  "n_root_decision_worlds": 1944,
+  "n_private_groups": 767,
+  "terminal_root_score_sum": 6048,
+  "PI_sum": 22704,
+  "J1_sum": 22704,
+  "PI_fraction": "946/105",
+  "J1_fraction": "946/105",
+  "source_sha256": {
+    "engine/experiments/round12/M1/export.py": "f5be59a8c42b2459c5434cd2fce9d62b71b8acf0b5e9fa41fb1005b812fca32e",
+    "engine/experiments/round9/D3/compact_tree.py": "10dab241a708d3a1756a6a83f2f5d2f83dd1ceed2e10c4753a34a9ebba2b831a",
+    "engine/experiments/round9/D3/bounded_ta.py": "eb6566aaa59c876e0517dccd06ed8a0b90d228b12488ef91006407565aa33d4e",
+    "engine/judgement/cfr/toy.py": "7b3233939421dadfd16dc7e4d8cf11fd935e6eb89c011487f29fa2bb5815ff93",
+    "engine/judgement/cfr/heuristics.py": "e4f0afd7d417a3114b887a02b826b010e9c9f010eef7ebf0fe0617be0764f0c9",
+    "engine/experiments/round12/M3/PROTOCOL.md": "b4a6b779b1ae7bb9dc261bdf8fe926d8e52bf29f512c2ddfa3e2f67656588023"
+  },
+  "cache_sha256": null,
+  "data_sha256": "8b501ca8aa6dd6dbcddca620b433e3ec9b46e4c7543a3b557345bb9d618ec20f",
+  "contexts_sha256": "00a033810ed870c9bffbe21832d30b7223257f56bc79567fcd85c60a36fea13d",
+  "split_group_counts": [
+    470,
+    178,
+    41,
+    78
+  ],
+  "split_world_counts": [
+    1134,
+    486,
+    162,
+    162
+  ],
+  "scope": "Exact first-free-team-decision relaxation, PI continuation afterward; not feasible full hidden teamwork; no sampling CI",
+  "created_utc": "2026-11-17T05:03:42.324411+00:00"
+}

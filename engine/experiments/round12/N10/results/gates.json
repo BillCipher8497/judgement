@@ -1,0 +1,72 @@
+{
+  "utc": "2026-11-20T06:58:07.598830+00:00",
+  "arms": {
+    "hard": {
+      "changed_fixture_actions": 0,
+      "n_fixtures": 768,
+      "n_distinct_changed_hands": 0,
+      "changed_seats": [],
+      "min_changed_score_margin": null,
+      "activation_gate": false,
+      "global_identity_bound": {
+        "residual_difference_bound_exact": "0",
+        "baseline_margin_exact": "1/4",
+        "strict_slack_exact": "1/4",
+        "global_baseline_identity_by_tanh_margin": true,
+        "scope": "Same bounded-tanh argument as auditedN3, exact binary coefficients; new numericalbound pending external check, not a new convergence theorem"
+      },
+      "diagnostic_activation_rate": {
+        "n": 768,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.04900626723123034
+        ],
+        "method": "conservative Hoeffding95%for independent bounded conditional fixture draws; not natural game frequency"
+      },
+      "validation_rollout_minus_baseline": {
+        "n_contexts": 1536,
+        "value": 0.0,
+        "ci95": null,
+        "kind": "exact baseline-policy identity under margin bound, not a sampling interval"
+      },
+      "selection_reused_validation_gate": true,
+      "pass": false
+    },
+    "set": {
+      "changed_fixture_actions": 0,
+      "n_fixtures": 768,
+      "n_distinct_changed_hands": 0,
+      "changed_seats": [],
+      "min_changed_score_margin": null,
+      "activation_gate": false,
+      "global_identity_bound": {
+        "residual_difference_bound_exact": "0",
+        "baseline_margin_exact": "1/4",
+        "strict_slack_exact": "1/4",
+        "global_baseline_identity_by_tanh_margin": true,
+        "scope": "Same bounded-tanh argument as auditedN3, exact binary coefficients; new numericalbound pending external check, not a new convergence theorem"
+      },
+      "diagnostic_activation_rate": {
+        "n": 768,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.04900626723123034
+        ],
+        "method": "conservative Hoeffding95%for independent bounded conditional fixture draws; not natural game frequency"
+      },
+      "validation_rollout_minus_baseline": {
+        "n_contexts": 1536,
+        "value": 0.0,
+        "ci95": null,
+        "kind": "exact baseline-policy identity under margin bound, not a sampling interval"
+      },
+      "selection_reused_validation_gate": true,
+      "pass": false
+    }
+  },
+  "both_pass": false,
+  "scientific_games_authorized": false,
+  "scope": "Prespecified finite activation proof and selection-reused conditional validation safeguard, not independent noninferiority/generalization guarantee; failedgate=>0games,notzeroeffect"
+}

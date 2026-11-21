@@ -1,0 +1,8 @@
+{
+  "utc": "2026-11-18T04:15:37Z",
+  "known_prior_roots": 123650,
+  "total_root_addresses": 201978,
+  "total_root_and_child_states": 1211868,
+  "collisions": 0,
+  "scope": "Declared N0/N1/N2 roots and five derived child states, plus every actual N3attempt/fit/game root and children. Does not certify unknown external uses or all historic RNG descendants. Namespaced SHA hand split is not random."
+}

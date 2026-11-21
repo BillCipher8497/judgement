@@ -1,0 +1,181 @@
+2026-11-20T02:24:42.4694664+00:00 PROTOCOL DRAFTED BEFORE ANY N10CHANCE DRAW/FIT/GAME: freshdata2180M/domain0x4e40,fit2190M,screen2200M/confirmation2210M,fixtures2220M,all collisionchecked beforeactualdraw. Original N3old2120-2140M frozen. NewprivateTA+hero/TAopponent continuation (strict snapshots,noMaxN), eligible2cards=>atmostoneNNintervention/round and nofuturefreeherochoice; notafusionrepair. Pilot96/train6144/val1536/held1536/fixtures768, K16structuraluniform(proxybelief). HardCE/setBCEfivepairedfits,50epochs,.25baseoffset,predeclaredalpha/checkpoints, botharmsactivation>=16/768/all4seats/>=8hands/strictmargin and validationLB>=-.05 requiredBEFORE2000three-armgames(1000/stage). Ifeitherfails,zero scientificgames/scopefailure,notzeroeffect. N9stillsoleworker; N10sourceonlynotexecuted. Newsource/protocol/tests willfinishandfreeze before data; freshabsolutecut required, max2x3h count-onlywindows, no retuning. AllpendingClaude/local, no commit/push.
+2026-11-20T06:53:15.7159318+00:00 PRE-DATA REVISION: archived earlier proxy-primary draft in pre_run_proxy_draft/. No N10draw/preflight/fit/game exists. Primary offline labels now paired actual-hidden-deal private-policy counterfactual rewards(K1), with strict observable683prediction inputs. K16proxy retained AUXILIARY only, never fits/selection/gates; both label-only hindsight decoders zero by construction, not privateBayesrisk. Counts, models, gates and2180M-2220Mseeds unchanged. Primary fullgame set-hard remains conditional on BOTH gates. Namespace metadata/selfchecks hardstop 2026-11-20T07:13:15.7159318+00:00, checkpoint preflight.json/self_check.json; one worker, no unrelated jobs touched. Exact commands: python bounded_job.py N10/run.py --preflight; then self_check.py before any freshdata.
+2026-11-20T06:53:57.0148118+00:00 PREFLIGHT:2256namespace roots/root+5children,0known collisions before draw. Syntheticgradient/activation checks reached old-context fixture, seed guard caught alias at [2190M,0x4e40,99,0,0] BEFORE its rollout: zero-padded entropy aliases existing synthetic root. No fresh N10chance data/fits/games. Preserve failed checker source; move old immutable-fixture rollout addresses to [2190M,domain,98,1000+k,1000+w] and rerun guard/check. This is synthetic namespace repair, no scientific seed/target change.
+2026-11-20T06:54:21.8906585+00:00 SCIENTIFIC WINDOW1 PREDECLARATION before newdata: primary set-hard hero score/game on2200M and2210M,n1000complete CRNtriplets/stage,hero g%4,paired4seatnormal95%CI,onlyif BOTH fixed activation/validationgates pass. Data2180M/domain0x4e40 train6144/val1536/held1536/pilot96; actual-deal teacher reward, K16auxonly; fivepaired2190Mfits/arm,2220Mlabel-free768fixtures. Hard stop 2026-11-20T09:54:21.8906585+00:00, epoch 1795168461; checkpoint each64data/perfit-epoch/pergamearm. Max2x3h scientificwindows, no count/model/seed/gate/alpha retuning. Synthetic/private32pairs pass,maxgradienterror9.7256467e-12; guard alias repair before data preserved. Command(cd engine): JUDGEMENT_JOB_DEADLINE=1795168461 python experiments/round12/bounded_job.py experiments/round12/N10/run.py. One worker, numpy2.5.4; sources freeze at launch, all local pendingClaude.
+2026-11-20T06:54:29.473134+00:00 Data pilot 64/96
+2026-11-20T06:54:29.997459+00:00 Data pilot 96/96
+2026-11-20T06:54:31.068691+00:00 Data train 64/6144
+2026-11-20T06:54:32.287599+00:00 Data train 128/6144
+2026-11-20T06:54:33.327973+00:00 Data train 192/6144
+2026-11-20T06:54:34.434624+00:00 Data train 256/6144
+2026-11-20T06:54:35.743731+00:00 Data train 320/6144
+2026-11-20T06:54:36.846681+00:00 Data train 384/6144
+2026-11-20T06:54:37.883051+00:00 Data train 448/6144
+2026-11-20T06:54:39.175895+00:00 Data train 512/6144
+2026-11-20T06:54:40.167770+00:00 Data train 576/6144
+2026-11-20T06:54:41.317195+00:00 Data train 640/6144
+2026-11-20T06:54:42.358444+00:00 Data train 704/6144
+2026-11-20T06:54:43.403969+00:00 Data train 768/6144
+2026-11-20T06:54:44.452259+00:00 Data train 832/6144
+2026-11-20T06:54:45.640612+00:00 Data train 896/6144
+2026-11-20T06:54:46.683703+00:00 Data train 960/6144
+2026-11-20T06:54:47.913018+00:00 Data train 1024/6144
+2026-11-20T06:54:49.002617+00:00 Data train 1088/6144
+2026-11-20T06:54:50.073125+00:00 Data train 1152/6144
+2026-11-20T06:54:51.257579+00:00 Data train 1216/6144
+2026-11-20T06:54:52.504667+00:00 Data train 1280/6144
+2026-11-20T06:54:53.582965+00:00 Data train 1344/6144
+2026-11-20T06:54:54.757983+00:00 Data train 1408/6144
+2026-11-20T06:54:55.878800+00:00 Data train 1472/6144
+2026-11-20T06:54:56.883399+00:00 Data train 1536/6144
+2026-11-20T06:54:58.090295+00:00 Data train 1600/6144
+2026-11-20T06:54:59.162581+00:00 Data train 1664/6144
+2026-11-20T06:55:00.287744+00:00 Data train 1728/6144
+2026-11-20T06:55:01.465984+00:00 Data train 1792/6144
+2026-11-20T06:55:02.671816+00:00 Data train 1856/6144
+2026-11-20T06:55:03.708596+00:00 Data train 1920/6144
+2026-11-20T06:55:04.811982+00:00 Data train 1984/6144
+2026-11-20T06:55:05.937601+00:00 Data train 2048/6144
+2026-11-20T06:55:07.141012+00:00 Data train 2112/6144
+2026-11-20T06:55:08.206718+00:00 Data train 2176/6144
+2026-11-20T06:55:09.424740+00:00 Data train 2240/6144
+2026-11-20T06:55:10.416829+00:00 Data train 2304/6144
+2026-11-20T06:55:11.477555+00:00 Data train 2368/6144
+2026-11-20T06:55:12.612168+00:00 Data train 2432/6144
+2026-11-20T06:55:13.805403+00:00 Data train 2496/6144
+2026-11-20T06:55:15.011425+00:00 Data train 2560/6144
+2026-11-20T06:55:16.195165+00:00 Data train 2624/6144
+2026-11-20T06:55:17.194436+00:00 Data train 2688/6144
+2026-11-20T06:55:18.353314+00:00 Data train 2752/6144
+2026-11-20T06:55:19.472411+00:00 Data train 2816/6144
+2026-11-20T06:55:20.718285+00:00 Data train 2880/6144
+2026-11-20T06:55:21.736594+00:00 Data train 2944/6144
+2026-11-20T06:55:22.986978+00:00 Data train 3008/6144
+2026-11-20T06:55:23.977835+00:00 Data train 3072/6144
+2026-11-20T06:55:25.185252+00:00 Data train 3136/6144
+2026-11-20T06:55:26.292460+00:00 Data train 3200/6144
+2026-11-20T06:55:27.295608+00:00 Data train 3264/6144
+2026-11-20T06:55:28.549817+00:00 Data train 3328/6144
+2026-11-20T06:55:29.698562+00:00 Data train 3392/6144
+2026-11-20T06:55:30.805599+00:00 Data train 3456/6144
+2026-11-20T06:55:31.840943+00:00 Data train 3520/6144
+2026-11-20T06:55:32.929542+00:00 Data train 3584/6144
+2026-11-20T06:55:33.954860+00:00 Data train 3648/6144
+2026-11-20T06:55:35.013780+00:00 Data train 3712/6144
+2026-11-20T06:55:36.058766+00:00 Data train 3776/6144
+2026-11-20T06:55:36.979552+00:00 Pre-run self-check failure receipt: AssertionError seed collision(2190000000,20032,99,0,0), before old-context rollout/freshdata. Failedsource archived; repaired namespace predata,rerun32private manual transition pairs and gradient pass. N10pipeline accepted timing-only pilot forecast1238.743s/21600s; this forecast is not a scientific performance estimate.
+2026-11-20T06:55:37.349778+00:00 Data train 3840/6144
+2026-11-20T06:55:38.554635+00:00 Data train 3904/6144
+2026-11-20T06:55:39.828551+00:00 Data train 3968/6144
+2026-11-20T06:55:41.030313+00:00 Data train 4032/6144
+2026-11-20T06:55:42.212773+00:00 Data train 4096/6144
+2026-11-20T06:55:43.364407+00:00 Data train 4160/6144
+2026-11-20T06:55:44.515732+00:00 Data train 4224/6144
+2026-11-20T06:55:45.563570+00:00 Data train 4288/6144
+2026-11-20T06:55:46.803950+00:00 Data train 4352/6144
+2026-11-20T06:55:47.970801+00:00 Data train 4416/6144
+2026-11-20T06:55:49.040293+00:00 Data train 4480/6144
+2026-11-20T06:55:50.374000+00:00 Data train 4544/6144
+2026-11-20T06:55:51.517733+00:00 Data train 4608/6144
+2026-11-20T06:55:52.544114+00:00 Data train 4672/6144
+2026-11-20T06:55:53.733723+00:00 Data train 4736/6144
+2026-11-20T06:55:54.733351+00:00 Data train 4800/6144
+2026-11-20T06:55:55.941125+00:00 Data train 4864/6144
+2026-11-20T06:55:57.248991+00:00 Data train 4928/6144
+2026-11-20T06:55:58.385317+00:00 Data train 4992/6144
+2026-11-20T06:55:59.578035+00:00 Data train 5056/6144
+2026-11-20T06:56:00.694111+00:00 Data train 5120/6144
+2026-11-20T06:56:01.811017+00:00 Data train 5184/6144
+2026-11-20T06:56:03.005354+00:00 Data train 5248/6144
+2026-11-20T06:56:04.176068+00:00 Data train 5312/6144
+2026-11-20T06:56:05.300567+00:00 Data train 5376/6144
+2026-11-20T06:56:06.335808+00:00 Data train 5440/6144
+2026-11-20T06:56:07.501787+00:00 Data train 5504/6144
+2026-11-20T06:56:08.569284+00:00 Data train 5568/6144
+2026-11-20T06:56:09.772550+00:00 Data train 5632/6144
+2026-11-20T06:56:10.991330+00:00 Data train 5696/6144
+2026-11-20T06:56:12.194088+00:00 Data train 5760/6144
+2026-11-20T06:56:13.187603+00:00 Data train 5824/6144
+2026-11-20T06:56:14.432827+00:00 Data train 5888/6144
+2026-11-20T06:56:15.569830+00:00 Data train 5952/6144
+2026-11-20T06:56:16.591994+00:00 Data train 6016/6144
+2026-11-20T06:56:17.800226+00:00 Data train 6080/6144
+2026-11-20T06:56:18.854468+00:00 Data train 6144/6144
+2026-11-20T06:56:20.256423+00:00 Data validation 64/1536
+2026-11-20T06:56:21.719088+00:00 Data validation 128/1536
+2026-11-20T06:56:23.012956+00:00 Data validation 192/1536
+2026-11-20T06:56:24.234514+00:00 Data validation 256/1536
+2026-11-20T06:56:25.516732+00:00 Data validation 320/1536
+2026-11-20T06:56:26.698156+00:00 Data validation 384/1536
+2026-11-20T06:56:28.174911+00:00 Data validation 448/1536
+2026-11-20T06:56:29.628319+00:00 Data validation 512/1536
+2026-11-20T06:56:30.867920+00:00 Data validation 576/1536
+2026-11-20T06:56:32.008070+00:00 Data validation 640/1536
+2026-11-20T06:56:33.252673+00:00 Data validation 704/1536
+2026-11-20T06:56:34.585495+00:00 Data validation 768/1536
+2026-11-20T06:56:35.912874+00:00 Data validation 832/1536
+2026-11-20T06:56:37.108441+00:00 Data validation 896/1536
+2026-11-20T06:56:38.451765+00:00 Data validation 960/1536
+2026-11-20T06:56:39.706564+00:00 Data validation 1024/1536
+2026-11-20T06:56:40.989400+00:00 Data validation 1088/1536
+2026-11-20T06:56:42.255059+00:00 Data validation 1152/1536
+2026-11-20T06:56:43.458889+00:00 Data validation 1216/1536
+2026-11-20T06:56:44.723647+00:00 Data validation 1280/1536
+2026-11-20T06:56:46.109139+00:00 Data validation 1344/1536
+2026-11-20T06:56:47.422457+00:00 Data validation 1408/1536
+2026-11-20T06:56:48.928388+00:00 Data validation 1472/1536
+2026-11-20T06:56:50.144087+00:00 Data validation 1536/1536
+2026-11-20T06:56:58.461578+00:00 Frozen hard/s0,epoch5,alpha0.0
+2026-11-20T06:57:06.056533+00:00 Frozen hard/s1,epoch5,alpha0.0
+2026-11-20T06:57:13.712665+00:00 Frozen hard/s2,epoch5,alpha0.0
+2026-11-20T06:57:21.442668+00:00 Frozen hard/s3,epoch5,alpha0.0
+2026-11-20T06:57:29.076948+00:00 Frozen hard/s4,epoch5,alpha0.0
+2026-11-20T06:57:36.607502+00:00 Frozen set/s0,epoch5,alpha0.0
+2026-11-20T06:57:44.009284+00:00 Frozen set/s1,epoch5,alpha0.0
+2026-11-20T06:57:51.451218+00:00 Frozen set/s2,epoch5,alpha0.0
+2026-11-20T06:57:58.796523+00:00 Frozen set/s3,epoch5,alpha0.0
+2026-11-20T06:58:05.998109+00:00 Frozen set/s4,epoch5,alpha0.0
+2026-11-20T06:58:06.180291+00:00 Data fixtures 64/768
+2026-11-20T06:58:06.285954+00:00 Data fixtures 128/768
+2026-11-20T06:58:06.381939+00:00 Data fixtures 192/768
+2026-11-20T06:58:06.485869+00:00 Data fixtures 256/768
+2026-11-20T06:58:06.605474+00:00 Data fixtures 320/768
+2026-11-20T06:58:06.711856+00:00 Data fixtures 384/768
+2026-11-20T06:58:06.849090+00:00 Data fixtures 448/768
+2026-11-20T06:58:06.965611+00:00 Data fixtures 512/768
+2026-11-20T06:58:07.068704+00:00 Data fixtures 576/768
+2026-11-20T06:58:07.196623+00:00 Data fixtures 640/768
+2026-11-20T06:58:07.392729+00:00 Data fixtures 704/768
+2026-11-20T06:58:07.504856+00:00 Data fixtures 768/768
+2026-11-20T06:58:08.716007+00:00 Data held 64/1536
+2026-11-20T06:58:10.039191+00:00 Data held 128/1536
+2026-11-20T06:58:11.363453+00:00 Data held 192/1536
+2026-11-20T06:58:12.572979+00:00 Data held 256/1536
+2026-11-20T06:58:13.948697+00:00 Data held 320/1536
+2026-11-20T06:58:15.272752+00:00 Data held 384/1536
+2026-11-20T06:58:16.532687+00:00 Data held 448/1536
+2026-11-20T06:58:17.961428+00:00 Data held 512/1536
+2026-11-20T06:58:19.249988+00:00 Data held 576/1536
+2026-11-20T06:58:20.498147+00:00 Data held 640/1536
+2026-11-20T06:58:21.890082+00:00 Data held 704/1536
+2026-11-20T06:58:23.165572+00:00 Data held 768/1536
+2026-11-20T06:58:24.705548+00:00 Data held 832/1536
+2026-11-20T06:58:25.988732+00:00 Data held 896/1536
+2026-11-20T06:58:27.191507+00:00 Data held 960/1536
+2026-11-20T06:58:28.450976+00:00 Data held 1024/1536
+2026-11-20T06:58:29.898959+00:00 Data held 1088/1536
+2026-11-20T06:58:31.127178+00:00 Data held 1152/1536
+2026-11-20T06:58:32.308190+00:00 Data held 1216/1536
+2026-11-20T06:58:33.821352+00:00 Data held 1280/1536
+2026-11-20T06:58:35.091585+00:00 Data held 1344/1536
+2026-11-20T06:58:36.391824+00:00 Data held 1408/1536
+2026-11-20T06:58:37.783319+00:00 Data held 1472/1536
+2026-11-20T06:58:38.944952+00:00 Data held 1536/1536
+2026-11-20T06:58:39.067992+00:00 N10fixed models andheldreport complete; gate failed, ZERO scientific games, no effect promoted.
+2026-11-20T06:58:39.131952+00:00 N10primary pipeline complete; separate independent checks next, no push.
+2026-11-20T06:59:25.9448507+00:00 SEPARATE READ-ONLY AUDIT predeclared: scientific window1 completed06:58:39Z. Bothselectedensemblesalpha0,exactTA+identity/strictslack1/4; activation0/768each,Hoeffding95%[0,.04900627], no scientificgames, notzeroeffect. Replayall10080context prefixes/rejectionfirstness/allactual2andproxy32counterfactualactions,all10fitselections/forwards/gates/heldCIs. Hardstop 2026-11-20T08:59:25.9448507+00:00,epoch1795165165,progress every64data. Command(cd engine): JUDGEMENT_JOB_DEADLINE=1795165165 python experiments/round12/bounded_job.py experiments/round12/N10/verify.py. No refit/newchance/retuning, pendingClaude/local.
+2026-11-20T07:00:26.245018+00:00 N10separate audit passed for allfixeddata/models/gates/heldmetrics; prespecifiedgatefailure, no scientificgames; pending external/local.
+2026-11-20T07:00:59.758021+00:00 READY-FOR-REVIEW: N10allfixeddata/10fits/gates/heldmetrics/240candidate diagnostic, independent all10080prefix/private reward replays pass. Actual data2180M/fit2190M/fixtures2220M/domain0x4e40; no2200M/2210Mscientificgames. Bothalpha0/TA+identity; gatefailure null retained,notzero measured gameeffect. n1536held96stratum95%CIs inRESULTS/raw, privileged labelzeros identities not samplingCIs. Allcommands/hardstops/failurelogs retained, no frozen/core/policy change, pendingClaude/local,no commit/push.
+2026-11-20T07:01:30.3771309+00:00 POSTHOC diagnostic ONLY: all240fixed rejected checkpoint/alpha candidates saved with validation counts/Hoeffding95% and paired scoreCIs; no reselection/refit/deployment. Separate check_diagnostics.py independentforward/counts/CI command under newhardstop 2026-11-20T07:11:30.3771309+00:00,oneworker. Main N10all10080manualprefix/private-rollout/10fit checks passed. Report rawgeneric labelzero[0,0] helper objects explicitly reclassified as target identities, no samplingCI. AlllocalpendingClaude.
+2026-11-20T07:01:33.176180+00:00 All240posthoc candidate diagnostic independent forwards/counts/intervals pass; no selection changed.
+2026-11-20T07:20:30.499277+00:00 SESSIONCLOSURE: allfixedtasktargets orpredeclaredgatefailure complete; separate Codexchecks pass, ready-for-review/notClaudeexternal. Fulltestreceipt283pass1skip16.37s/16.9177089swall separatelyscoped. No ownedcompute; allfiles/raw/models/errors preserved, originalsciencehashes rechecked at finalseal. Handoff HANDOFF_CLAUDE_20261120.md and LOCAL_REVIEW_LOGBOOK current; allnewlocal/uncommitted/no push.

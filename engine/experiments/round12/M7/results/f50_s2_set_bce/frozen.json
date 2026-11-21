@@ -1,0 +1,21 @@
+{
+  "name": "f50_s2_set_bce",
+  "fraction": 0.5,
+  "seed_index": 2,
+  "seed_base": 2020000000,
+  "objective": "set_bce",
+  "n_training_groups": 12729,
+  "n_training_worlds": 109253,
+  "selected_epoch": 100,
+  "validation_score_sum": 586502,
+  "source_sha256": {
+    "engine/experiments/round12/M7/run.py": "b03db0ad268b8e91de8eb0345f972e2ed9561a8a2bdeb87ca0c8e322a55dd62f",
+    "engine/experiments/round12/M7/PROTOCOL.md": "6e48d10fdf89cfffbe11a971d1acbbc4ef250520a5420b402c6d0748346522ff",
+    "engine/experiments/round12/common.py": "1aa6d0df6a32546ea4a33a4d929eae618eed69f83d1905922299688f37a4413a",
+    "engine/experiments/round12/learning.py": "297a95bd644c5bc86aaf85e3a31773ac37df846ab76a7dd055fb7f248b510378",
+    "engine/experiments/round12/root_features.py": "35168d00dcd708dcba8db77c17e06495f90172f1d5b5da85706ab3591e8e2a0a"
+  },
+  "data_sha256": "91da03e8f67f262d2d40aeb637801d972085c0e2170dc4aa48391e954fe4b76f",
+  "model_sha256": "e288938ec25d7807d8d4a847501de77bf0c4af8fd490253ecddf8c793f70c2ce",
+  "frozen_utc": "2026-11-17T05:53:10.853633+00:00"
+}

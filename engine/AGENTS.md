@@ -141,3 +141,25 @@ those marginals and the other 9 reach exact indifference, where an adversarial
 tie rule would cost 48/77, 910/317, 12/47 and 66/205 hero points per unit reach.
 Exact linear-programming bounds with exact rational vertex certificates; no
 floating LP status is accepted as a feasibility or sign certificate.
+
+### 2026-11-21 addendum: the audit-cleared round12 ML track is now published
+
+`engine/experiments/round12/` now contains the round12 tasks that carry a
+recorded external-validation verdict: M0 through M10, N0 through N3, and the six
+packets cleared by the 2026-11-20 audit (N9, N10, N11, N12, N13, N15). The
+per-task verdicts, what is withheld and what is omitted from each published task
+are listed in `engine/experiments/round12/PUBLISHED_SCOPE.md`, which replaces the
+private working copy's BOARD and REVIEW files for the published scope. The
+round12 entries of `engine/math/NOTES.md` now include M15 through M19; M18 and
+M19 are validated proofs.
+
+Still withheld: N4, N5, N6 and N7 (no external verdict; N7 is the workshop paper
+draft, so the draft is withheld with it), N14 (complete and separately verified
+but with no independent external verdict), N16 (code only), and round13's N18
+(its results quote N4's interval). Also withheld everywhere: neural model
+weights and `data/` caches, about 2.6 GB across the round, and the bulk
+per-block result trees of the six tasks whose results exceed 10 MB. The exact
+records the 2026-11-20 audit rests on — N11's certificates, N12's integer action
+tables, N13's rational certificates and N15's enumeration — are published in
+full. Some published tasks can therefore be read and checked but not re-run end
+to end from this tree alone.

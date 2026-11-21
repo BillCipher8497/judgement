@@ -1,0 +1,8 @@
+{
+  "tag": "S3R4n3_t-1",
+  "config": "rich_mlp",
+  "loss": "joint",
+  "seed": 4,
+  "epoch": 80,
+  "utc": "2026-11-20T06:32:54.058825+00:00"
+}

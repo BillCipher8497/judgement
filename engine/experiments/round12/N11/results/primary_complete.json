@@ -1,0 +1,39 @@
+{
+  "summaries": [
+    {
+      "tag": "S3R4n3_t0",
+      "n_keys": 256,
+      "reach_weight": 7645,
+      "positive_first_action_loss_keys": 1,
+      "positive_max_value_gap_keys": 2,
+      "positive_any_action_PI_gap_keys": 4,
+      "first_action_loss_numerator": 40,
+      "relaxation_gap_numerator": 64,
+      "scope": "Exact fixed stage-stratified diagnostic, not population estimate; no sampling CI"
+    },
+    {
+      "tag": "S3R4n3_t-1",
+      "n_keys": 256,
+      "reach_weight": 9154,
+      "positive_first_action_loss_keys": 0,
+      "positive_max_value_gap_keys": 2,
+      "positive_any_action_PI_gap_keys": 3,
+      "first_action_loss_numerator": 0,
+      "relaxation_gap_numerator": 220,
+      "scope": "Exact fixed stage-stratified diagnostic, not population estimate; no sampling CI"
+    }
+  ],
+  "sources": {
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N6\\run.py": "c9e86a3f20ebdd9bd2ae5cb6c597abb6234394eea340fc5e8498c6233d9e0d84",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N6\\verify.py": "d7fbcac6425019ab0cc0e48c27f03d0841538774fa80fdf38707ecb9da0a6b83",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N6\\pipeline.py": "9f2a1517967786bdaf3a3165c1411a30933675b562b2ff4e5ceaf043926472fd",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N6\\PROTOCOL.md": "17d26e1de853df2992476ac2c68973381ddbc9a811064e30b0d4fbd756a40a02",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N2\\export.py": "c6296ee52eaf7be88d9fb8a247e596bfd1fa6695d8b99e6f1b800c67854f0687",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N2\\reference.py": "558c51a302a729e46017db81f5271b41361a833c2be4115868cde664da1a4773",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round9\\D3\\bounded_ta.py": "eb6566aaa59c876e0517dccd06ed8a0b90d228b12488ef91006407565aa33d4e",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\judgement\\cfr\\toy.py": "7b3233939421dadfd16dc7e4d8cf11fd935e6eb89c011487f29fa2bb5815ff93",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\judgement\\cfr\\heuristics.py": "e4f0afd7d417a3114b887a02b826b010e9c9f010eef7ebf0fe0617be0764f0c9",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N11\\run.py": "77eafd997e563f1e9ae52d2e134d8125476edd3f65028936b6c484b11c37469c",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N11\\PROTOCOL.md": "319e1f2318fbea87a9d91370f0d61404f3dd1fc241053bdea5a32ea801a02afc"
+  }
+}

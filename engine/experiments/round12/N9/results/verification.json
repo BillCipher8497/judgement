@@ -1,0 +1,39 @@
+{
+  "utc": "2026-11-20T06:42:49.297311+00:00",
+  "n_selected_models": 240,
+  "n_arm_and_contrast_intervals": 112,
+  "cache_checks": [
+    {
+      "tag": "S2R4n2_t0",
+      "n_keys": 3584,
+      "n_test_hands": 6,
+      "all_structural_supports_targets_richfeatures_checked": true,
+      "private_reach_reenumeration": "allsmall selectedkeys;32fixedlarge keys, remainingRfrom unchanged previouslyvalidated N2hash"
+    },
+    {
+      "tag": "S2R4n2_t-1",
+      "n_keys": 3584,
+      "n_test_hands": 6,
+      "all_structural_supports_targets_richfeatures_checked": true,
+      "private_reach_reenumeration": "allsmall selectedkeys;32fixedlarge keys, remainingRfrom unchanged previouslyvalidated N2hash"
+    },
+    {
+      "tag": "S3R4n3_t0",
+      "n_keys": 3584,
+      "n_test_hands": 44,
+      "all_structural_supports_targets_richfeatures_checked": true,
+      "private_reach_reenumeration": "allsmall selectedkeys;32fixedlarge keys, remainingRfrom unchanged previouslyvalidated N2hash"
+    },
+    {
+      "tag": "S3R4n3_t-1",
+      "n_keys": 3584,
+      "n_test_hands": 44,
+      "all_structural_supports_targets_richfeatures_checked": true,
+      "private_reach_reenumeration": "allsmall selectedkeys;32fixedlarge keys, remainingRfrom unchanged previouslyvalidated N2hash"
+    }
+  ],
+  "all_independent_forward_DP_normalizers_selection_splits_raw_and_CIs_pass": true,
+  "source_sha256": "bb99585a3ab1ef15c60e9cc6f4d8a9e6e294284f766ef2a3f93bf8a9fde9aabf",
+  "evaluation_sha256": "a7a19a869b148844a53aa268022c1e19e0774e97e98268ba8340cc20d36fa234",
+  "scope": "Codex separate check, not independent investigator; newrich fields/F/Rmembership allkeys, fullprivateRcheck allsmall/32large, frozenpriorN2posteriorassumption otherwise; pending Claude external"
+}

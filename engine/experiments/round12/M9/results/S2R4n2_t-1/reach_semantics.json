@@ -1,0 +1,6 @@
+{
+  "n_root_keys": 767,
+  "n_later_keys": 1998,
+  "n_root_keys_also_later": 192,
+  "interpretation": "Root selection is a relaxation, no hidden root-stage flag allowed for deployed policy."
+}

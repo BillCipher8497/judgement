@@ -1,0 +1,24 @@
+{
+  "name": "S2R4n2_t-1_linear_s3_q_reg",
+  "condition": "S2R4n2_t-1",
+  "architecture": "linear",
+  "seed_index": 3,
+  "seed_base": 2010000000,
+  "objective": "q_reg",
+  "selected_epoch": 100,
+  "validation_score_sum": 4064,
+  "validation_worlds": 486,
+  "training_groups": 470,
+  "training_worlds": 1134,
+  "model_sha256": "79c7520f5662380f1f49b9b1349b19894b2fce673faeaeeac940fa9cd95e8cb4",
+  "source_sha256": {
+    "engine/experiments/round12/M3/train.py": "10402f2709a58dee34a5d549864d9c7eec156a443b084c991301d2ade62b5290",
+    "engine/experiments/round12/learning.py": "297a95bd644c5bc86aaf85e3a31773ac37df846ab76a7dd055fb7f248b510378",
+    "engine/experiments/round12/root_features.py": "35168d00dcd708dcba8db77c17e06495f90172f1d5b5da85706ab3591e8e2a0a",
+    "engine/experiments/round12/common.py": "1aa6d0df6a32546ea4a33a4d929eae618eed69f83d1905922299688f37a4413a",
+    "engine/experiments/round12/M3/PROTOCOL.md": "b4a6b779b1ae7bb9dc261bdf8fe926d8e52bf29f512c2ddfa3e2f67656588023"
+  },
+  "data_sha256": "8b501ca8aa6dd6dbcddca620b433e3ec9b46e4c7543a3b557345bb9d618ec20f",
+  "frozen_utc": "2026-11-17T05:11:10.307291+00:00",
+  "held_out_evaluation": "Not accessed by training/selection; separate evaluation only after all model freezes."
+}

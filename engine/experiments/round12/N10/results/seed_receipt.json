@@ -1,0 +1,7 @@
+{
+  "utc": "2026-11-20T06:58:39.048981+00:00",
+  "prior_known_states": 1236178,
+  "new_root_addresses": 208451,
+  "collisions": 0,
+  "scope": "known N0-N9roots/journals and declaredchildren, not unknown external uses; N6/N11noRNG; intentional CRN roots counted once"
+}

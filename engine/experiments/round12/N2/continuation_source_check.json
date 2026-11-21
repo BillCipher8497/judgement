@@ -1,0 +1,9 @@
+{
+  "recordedUTC": "2026-11-18T02:18:07.143298+00:00",
+  "scheduling_fingerprint": "86912e0064b78c880d63cf880af9b75b68e151453e0ffa5546a28af50d1ecd15",
+  "no_science_attribute_mutation_in_AST": true,
+  "no_RNG_or_new_seed_in_scheduler": true,
+  "original_scientific_fingerprint_unchanged": true,
+  "no_model_outcome_at_allocation": true,
+  "compile_and_metadata_exit_code": 0
+}

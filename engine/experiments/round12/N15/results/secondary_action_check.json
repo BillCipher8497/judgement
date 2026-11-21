@@ -1,0 +1,30 @@
+{
+  "utc": "2026-11-20T07:15:58.361192+00:00",
+  "n_exact_posterior_worlds": 3,
+  "actions": [
+    4,
+    6
+  ],
+  "manual_world_action_scores": [
+    [
+      10,
+      10
+    ],
+    [
+      10,
+      10
+    ],
+    [
+      10,
+      10
+    ]
+  ],
+  "exact_private_values": [
+    "10",
+    "10"
+  ],
+  "regret_of_either_current_action_exact": "0",
+  "source_sha256": "242deb33bbd0ab5c81099f2240b70dd4b4aa913eb80a468a741b298bcc6d8983",
+  "certificate_sha256": "70ea39a67fbcc60500f2608dc7d4e6d484af0fc3bdcd5b9ba4c0163e1d9fdae2",
+  "scope": "Exact same fixed illustrative toy context, no samplingCI/population/game-strength claim; pending external"
+}

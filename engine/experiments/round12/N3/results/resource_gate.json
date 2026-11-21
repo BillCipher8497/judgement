@@ -1,0 +1,13 @@
+{
+  "pilot_contexts": 192,
+  "pilot_nine_arm_game_blocks": 16,
+  "data_seconds": 0.7179999999934807,
+  "games_seconds": 1.7480000000214204,
+  "overhead_and_timing_margin_multiplier": 1.5,
+  "projection_data_fit_games_seconds": 1636.2750000072992,
+  "allocated_additional_seconds": 21597.533999999985,
+  "fitting_reserve_seconds": 900,
+  "accepted": true,
+  "scope": "Timing-only scheduling forecast, not an accuracy result or guarantee; at most two3hscientific windows, fixed counts even if null.",
+  "utc": "2026-11-18T03:58:28Z"
+}

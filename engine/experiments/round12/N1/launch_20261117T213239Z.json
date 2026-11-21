@@ -1,0 +1,9 @@
+{
+  "hard_stopUTC": "2026-11-18T03:00:00.0000000+00:00",
+  "status": "launch receipt, not proof of liveness",
+  "stderr": "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N1\\worker_20261117T213239Z_stderr.txt",
+  "pid": 32728,
+  "startedUTC": "2026-11-17T21:32:39.3792901+00:00",
+  "stdout": "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N1\\worker_20261117T213239Z_stdout.txt",
+  "pre_run_commit": "4c610703aaf4366d17927186a5ff25a46d6465a9"
+}

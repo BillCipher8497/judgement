@@ -1,0 +1,24 @@
+{
+  "name": "S2R4n2_t0_mlp_s0_uniform_ce",
+  "condition": "S2R4n2_t0",
+  "architecture": "mlp",
+  "seed_index": 0,
+  "seed_base": 2010000000,
+  "objective": "uniform_ce",
+  "selected_epoch": 25,
+  "validation_score_sum": 4370,
+  "validation_worlds": 486,
+  "training_groups": 423,
+  "training_worlds": 1134,
+  "model_sha256": "21934c9692e500a81eaaac136dc13bc008a78fac26de629930a1eed779da3d39",
+  "source_sha256": {
+    "engine/experiments/round12/M3/train.py": "10402f2709a58dee34a5d549864d9c7eec156a443b084c991301d2ade62b5290",
+    "engine/experiments/round12/learning.py": "297a95bd644c5bc86aaf85e3a31773ac37df846ab76a7dd055fb7f248b510378",
+    "engine/experiments/round12/root_features.py": "35168d00dcd708dcba8db77c17e06495f90172f1d5b5da85706ab3591e8e2a0a",
+    "engine/experiments/round12/common.py": "1aa6d0df6a32546ea4a33a4d929eae618eed69f83d1905922299688f37a4413a",
+    "engine/experiments/round12/M3/PROTOCOL.md": "b4a6b779b1ae7bb9dc261bdf8fe926d8e52bf29f512c2ddfa3e2f67656588023"
+  },
+  "data_sha256": "b1c4f6af75f876e82ea1079d1ff77d530a48cb0ccff2e7a7593d77f454364c7a",
+  "frozen_utc": "2026-11-17T05:10:09.191765+00:00",
+  "held_out_evaluation": "Not accessed by training/selection; separate evaluation only after all model freezes."
+}

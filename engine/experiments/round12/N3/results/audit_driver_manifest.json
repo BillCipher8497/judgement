@@ -1,0 +1,10 @@
+{
+  "driver_sha256": "d5ffb2a4bd8a5d9711be1c6c26dcb61f17c77fbad4431fe5157517c53a307610",
+  "scripts_sha256": {
+    "N3\\verify.py": "656e5b6d8d3df761cd0c58822028431a47c61e1aee32b0360bebc06b254f3c4e",
+    "n3_report.py": "600fe9862f28c8750806f1d9323c667a23b8565654b135b2175f6795df384dc8"
+  },
+  "deadline_epoch": 1794978975.0,
+  "scope": "Separate checks on original frozen dataset/models/seeded games; no new experiment, samples or tuning",
+  "startedUTC": "2026-11-18T04:16:15Z"
+}

@@ -1,0 +1,11 @@
+{
+  "utc": "2026-11-20T07:07:40.465254+00:00",
+  "synthetic_uniform_four_vs_correlated_two_entropy_gain_enclosure": [
+    "117932881612756647068972071382076100841/170141183460469231731687303715884105728",
+    "14741610201594580883621508922759727007/21267647932558653966460912964485513216"
+  ],
+  "n_scaled_rational_log_cases": 7,
+  "alternate40term_containment": true,
+  "scope": "synthetic arithmetic only, no game outcome/LP/model/seed draw",
+  "source_sha256": "1e22272c1652d86794bcb767a83a8ea41d3bc5f07fabfb2de2138201ddb685ce"
+}

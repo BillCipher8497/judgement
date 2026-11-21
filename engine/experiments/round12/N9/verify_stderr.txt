@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "C:\Users\Arvin\OneDrive\Desktop\Judgement Research\engine\experiments\round12\bounded_job.py", line 8, in <module>
+    try:runpy.run_path(str(script),run_name='__main__')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Arvin\OneDrive\Desktop\Judgement Research\engine\experiments\round12\N9\verify.py", line 113, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\Users\Arvin\OneDrive\Desktop\Judgement Research\engine\experiments\round12\N9\verify.py", line 47, in main
+    packed=np.frombuffer(raw['keys'].tobytes(),np.uint8).reshape(-1,20);masks=packed[:,2].astype(int)+256*packed[:,3];eligible=np.array([i.bit_count()>=2 for i in range(4096)])[raw['unseen_mask']];expected_ids=[];expected_splits=[]
+                                                                                                      ~~~^~~~~~~~~~~~
+OverflowError: Python integer 256 out of bounds for uint8

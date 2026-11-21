@@ -1,0 +1,7 @@
+{
+  "status": "pass",
+  "n_models": 10,
+  "all_candidate_scores_and_epoch_blend_choices_match": true,
+  "selection_contexts": 12000,
+  "utc": "2026-11-17T06:07:48.613970+00:00"
+}

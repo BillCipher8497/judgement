@@ -1,0 +1,33 @@
+{
+  "condition": "S3R4n3_t-1",
+  "objective": "set_bce",
+  "seed_index": 3,
+  "n_exact_deals": 369600,
+  "n_private_keys": 4261192,
+  "hero_score_sum": 2870593,
+  "exact_mean": "260963/33600",
+  "hero_mean": 7.766755952380953,
+  "prior_feasible_upper": "109709/15400",
+  "beats_prior_upper": false,
+  "fresh_forward_verification": {
+    "n_deals": 128,
+    "full_population": false,
+    "all_scores_agree": true,
+    "fresh_encoded_private_keys": 452,
+    "queried_keys_outside_pruned_tree": 16,
+    "hero_score_sum": 1053,
+    "path": "Fresh manual deals/legal/winners/transitions, saved private-key policy; network completion outside zero-pruned tree."
+  },
+  "model_sha256": "bc0c00eb942b33a8974479e4e83e97e18b8d14158201464a9952644380418cb0",
+  "policy_sha256": "d3a412579c4b6b9bf1b7355afe180c69d2bea595ca2b27fb974c37c144b25869",
+  "private_keys_sha256": "9c68525ee53219031332bd9ab42e9f9ed94fce6889b89f499924c0f090143f64",
+  "tree_cache_sha256": "a4bb349e97160162e584507df66e0f26e6c3d7fb1e59e22a7c3d81771d04124b",
+  "feature_cache": {
+    "encoder_sha256": "35168d00dcd708dcba8db77c17e06495f90172f1d5b5da85706ab3591e8e2a0a",
+    "n_private_keys": 4261192,
+    "width": 241,
+    "data_sha256": "d2f78a70444b8c7f328e8396acb402e2c891a17940e82b16a0f9a4db7eea84b0"
+  },
+  "scope": "Fully private feasible pure profile with fixed hero/bids; all-deal evaluation mixes trained/held teammate hands, not held-out team generalization.",
+  "utc": "2026-11-17T06:03:07.606718+00:00"
+}

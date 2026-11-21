@@ -1,0 +1,15 @@
+{
+  "adapter_source_sha256": "7c2598822466bd59133d080139b5b528d43b304bbb641625bf5e2b2d2901a6ab",
+  "scope": "Verification-only raw NPZ eager member cache; all original scientific sources/data/verifier checks unchanged",
+  "fixture": {
+    "status": "pass",
+    "arrays_dtypes_keys_empty_and_NPZ_context_API_match": true,
+    "immutable_source_bytes_unchanged": true,
+    "repeated_member_reads_cached": true,
+    "original_NPZ_members_are_reloaded_on_repeated_getitem_observed": true,
+    "source_sha256": "7c2598822466bd59133d080139b5b528d43b304bbb641625bf5e2b2d2901a6ab",
+    "scope": "Verification I/O fixture only, no scientific data modified",
+    "utc": "2026-11-18T03:44:34Z"
+  },
+  "startedUTC": "2026-11-18T03:45:02Z"
+}

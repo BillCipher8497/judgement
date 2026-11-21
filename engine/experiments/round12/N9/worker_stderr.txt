@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "C:\Users\Arvin\OneDrive\Desktop\Judgement Research\engine\experiments\round12\bounded_job.py", line 8, in <module>
+    try:runpy.run_path(str(script),run_name='__main__')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Arvin\OneDrive\Desktop\Judgement Research\engine\experiments\round12\N9\run.py", line 49, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\Users\Arvin\OneDrive\Desktop\Judgement Research\engine\experiments\round12\N9\run.py", line 41, in main
+    start=time.perf_counter();datasets={tag:build(tag,sources) for tag in TAGS}
+                                            ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arvin\OneDrive\Desktop\Judgement Research\engine\experiments\round12\N9\n9lib.py", line 71, in build
+    check();obs=observation(g,d['keys'][i]);x,mask,prop,_,public=encode(g,obs);cards=public['cards'];U=len(cards);assert U>=2
+                                            ^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 5, got 4)

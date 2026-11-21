@@ -1,0 +1,26 @@
+{
+  "actions": [
+    2,
+    3,
+    6
+  ],
+  "PI_Q_sums": [
+    11,
+    11,
+    11
+  ],
+  "BR_Q_sums": [
+    11,
+    11,
+    11
+  ],
+  "PIMC_action": 2,
+  "BR_action": 2,
+  "first_action_loss_sum": 0,
+  "relaxation_gap_sum": 0,
+  "support_n": 2,
+  "key_index": 1640939,
+  "key_hex": "03074c00020001010a0904000000000000000000",
+  "support_ids_sha256": "de74952b80758166f6808b514afe43884917e8cfa134b01aedfbffdf93100a55",
+  "utc": "2026-11-20T00:51:22.484922+00:00"
+}

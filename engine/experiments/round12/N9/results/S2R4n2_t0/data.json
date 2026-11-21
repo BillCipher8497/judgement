@@ -1,0 +1,41 @@
+{
+  "tag": "S2R4n2_t0",
+  "sources": {
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N9\\n9lib.py": "18bd859b094c93c97b9e2399ba8cb8170d2778f0d555f8fa7deb38036f378b61",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N9\\run.py": "f49720e30781a6f22f070aaea1a033dd271734a37f3c81d52465da95ca989884",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N9\\evaluate.py": "2c1e1697a6186d706069da4bd02ca1a60d62f4a48953ed29150884c021cf7691",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N9\\PROTOCOL.md": "1ba1d3c72f3fddeee0421f03e398b9e0bea6f051dd9bdb00206e298b342418b0",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N9\\preflight.py": "19b725d129f718fb696bd75e874531ab6d4b22a6ac0bcc3cac2717344936cab6",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N9\\self_check.py": "09b9615875c8e1e0bc07e1ebf0795392660f3719b130a57715b11fdbc2aa1925",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\learning.py": "297a95bd644c5bc86aaf85e3a31773ac37df846ab76a7dd055fb7f248b510378",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\common.py": "1aa6d0df6a32546ea4a33a4d929eae618eed69f83d1905922299688f37a4413a",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N2\\features.py": "624f642fab6a2728471fd3e5fa809e322c093510530504b450db41157f11880d",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N2\\corpus.py": "73cf71018ed22356d0f7a2bf0ffea4f297bc39322c2fc5ee046d9af97dd5f28d",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N2\\export.py": "c6296ee52eaf7be88d9fb8a247e596bfd1fa6695d8b99e6f1b800c67854f0687",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N2\\joint.py": "b2af65e500a340ccfeaf12ceaf7b02214bbcab4674fdb9388bd744572c9d70ba",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N2\\reference.py": "558c51a302a729e46017db81f5271b41361a833c2be4115868cde664da1a4773",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N2\\bid_premise.py": "9265132188d485d4c3f9ed32f8822252b81706dde5f22b666f248a13a0593d69",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\judgement\\cfr\\toy.py": "7b3233939421dadfd16dc7e4d8cf11fd935e6eb89c011487f29fa2bb5815ff93",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\judgement\\cfr\\heuristics.py": "e4f0afd7d417a3114b887a02b826b010e9c9f010eef7ebf0fe0617be0764f0c9"
+  },
+  "posterior_sha256": "601f0e3baeede64f9f80db40adabc2a7af79b80910b69feb4f37b6138c79b28b",
+  "data_sha256": "452a383d5014bcc07631c96b7e0d02936c0c82c9ff0d9a2e2a1b7be3b9b28b7e",
+  "selection": {
+    "0": {
+      "n_keys": 2048,
+      "n_hands": 16,
+      "reach": 4666
+    },
+    "1": {
+      "n_keys": 512,
+      "n_hands": 6,
+      "reach": 1330
+    },
+    "2": {
+      "n_keys": 1024,
+      "n_hands": 6,
+      "reach": 2520
+    }
+  },
+  "utc": "2026-11-20T02:07:29.453193+00:00"
+}

@@ -1,0 +1,5 @@
+{
+  "source_sha256": "b38851b7581910c6b5a8db71c77e48ea03c42dc5163ca5ec2d0d5ab52676699b",
+  "adapter_sha256": "1dbae3ab7a4ae2d254d93458e04731bfa057833ea2ff995f75c96662c471a99b",
+  "scope": "ONLY numpy scalar to identical native JSON number; no data/payoff/model/selection/seed/decoder change"
+}

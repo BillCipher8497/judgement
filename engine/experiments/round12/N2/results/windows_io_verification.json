@@ -1,0 +1,10 @@
+{
+  "status": "self-checked(Codex), external implementation/results review pending",
+  "adapter_commit": "1d4eafb8e2652175288725e825484fe1ebbc8402",
+  "adapter_sha256": "e36aaf61a28c906205bd2b89a0e9bab3446f984f690e238ebe6aef1d29ccec86",
+  "source_hashes_match_original_and_all_extensions": true,
+  "windows_used": 2,
+  "memory_backed_checkpoint_reads": 1,
+  "bounded_replace_retries": 0,
+  "scope": "I/O-only adapter source/provenance and synthetic array/API equivalence; scientific raw/model/CI checks are the separate original verifier receipt."
+}

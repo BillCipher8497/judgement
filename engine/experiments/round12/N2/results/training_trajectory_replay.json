@@ -1,0 +1,20 @@
+{
+  "status": "pass, self-checked(Codex); external audit pending",
+  "condition": "S3R4n3_t-1",
+  "fit_seed_index": 0,
+  "n_replayed_epochs": 20,
+  "checkpoints": [
+    {
+      "epoch": 2,
+      "target_sha256": "05b08af2fe50687e69186d676eee1a063909586cd7050f5d49b19e63384d4823",
+      "parameters_and_Adam_state_bit_exact": true
+    },
+    {
+      "epoch": 20,
+      "target_sha256": "d72f01729f2a529fdec19369028ca148e8107bf90f8aca2dd21c3d2cfd57f085",
+      "parameters_and_Adam_state_bit_exact": true
+    }
+  ],
+  "scope": "Original gradient/optimizer definitions reused; vectorized batch gathering independently reconstructs interrupted epoch2and finalepoch20state. This is a numerical replay, not another stochastic experiment or new estimate.",
+  "utc": "2026-11-18T03:50:01Z"
+}

@@ -1,0 +1,6 @@
+{
+  "status": "pass",
+  "exact_mean": "574247/92400",
+  "baseline_policy_sha256": "0dc599132b99f6cd3e3a68f7dbbc73d3a82bbf1d4e277976856f1bd510623f59",
+  "n_exact_deals": 369600
+}

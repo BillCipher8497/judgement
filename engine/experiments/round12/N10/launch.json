@@ -1,0 +1,8 @@
+{
+  "start_utc": "2026-11-20T06:54:21.8906585+00:00",
+  "deadline_utc": "2026-11-20T09:54:21.8906585+00:00",
+  "pid": 38480,
+  "deadline_epoch": "1795168461",
+  "window": 1,
+  "primary": "set-hard,1000CRNtriplets/stage,2200M/2210M,onlyif bothgatespass"
+}

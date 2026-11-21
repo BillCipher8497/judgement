@@ -1,0 +1,96 @@
+{
+  "conditions": {
+    "S2R4n2_t0": {
+      "matched_bid_premise": {
+        "n_exact_chance_deals": 2520,
+        "n_recorded_key_worlds": 20160,
+        "R_subset_F_bid_every_exported_key": true,
+        "all_hook_legal_argmax_and_true_holders": true,
+        "independent_manual_turn_follow_suit_and_prefix_chaining": true
+      },
+      "raw": {
+        "all_raw_records_checked": 20160,
+        "all_private_key_actions_consistent": true,
+        "all_counts_labels_and_CSR_match": true
+      },
+      "models_checked": 5,
+      "direct": {
+        "direct_normalizer_and_full_reach_contexts": 11464,
+        "selection": "allsmallinfosets;64fixedsortedlargekeys",
+        "independent_rules": true,
+        "policy_functions_reused_as_definition": true
+      },
+      "summary_CIs_recomputed": true
+    },
+    "S2R4n2_t-1": {
+      "matched_bid_premise": {
+        "n_exact_chance_deals": 2520,
+        "n_recorded_key_worlds": 20160,
+        "R_subset_F_bid_every_exported_key": true,
+        "all_hook_legal_argmax_and_true_holders": true,
+        "independent_manual_turn_follow_suit_and_prefix_chaining": true
+      },
+      "raw": {
+        "all_raw_records_checked": 20160,
+        "all_private_key_actions_consistent": true,
+        "all_counts_labels_and_CSR_match": true
+      },
+      "models_checked": 5,
+      "direct": {
+        "direct_normalizer_and_full_reach_contexts": 12613,
+        "selection": "allsmallinfosets;64fixedsortedlargekeys",
+        "independent_rules": true,
+        "policy_functions_reused_as_definition": true
+      },
+      "summary_CIs_recomputed": true
+    },
+    "S3R4n3_t0": {
+      "matched_bid_premise": {
+        "n_exact_chance_deals": 369600,
+        "n_recorded_key_worlds": 4435200,
+        "R_subset_F_bid_every_exported_key": true,
+        "all_hook_legal_argmax_and_true_holders": true,
+        "independent_manual_turn_follow_suit_and_prefix_chaining": true
+      },
+      "raw": {
+        "all_raw_records_checked": 4435200,
+        "all_private_key_actions_consistent": true,
+        "all_counts_labels_and_CSR_match": true
+      },
+      "models_checked": 5,
+      "direct": {
+        "direct_normalizer_and_full_reach_contexts": 64,
+        "selection": "allsmallinfosets;64fixedsortedlargekeys",
+        "independent_rules": true,
+        "policy_functions_reused_as_definition": true
+      },
+      "summary_CIs_recomputed": true
+    },
+    "S3R4n3_t-1": {
+      "matched_bid_premise": {
+        "n_exact_chance_deals": 369600,
+        "n_recorded_key_worlds": 4435200,
+        "R_subset_F_bid_every_exported_key": true,
+        "all_hook_legal_argmax_and_true_holders": true,
+        "independent_manual_turn_follow_suit_and_prefix_chaining": true
+      },
+      "raw": {
+        "all_raw_records_checked": 4435200,
+        "all_private_key_actions_consistent": true,
+        "all_counts_labels_and_CSR_match": true
+      },
+      "models_checked": 5,
+      "direct": {
+        "direct_normalizer_and_full_reach_contexts": 64,
+        "selection": "allsmallinfosets;64fixedsortedlargekeys",
+        "independent_rules": true,
+        "policy_functions_reused_as_definition": true
+      },
+      "summary_CIs_recomputed": true
+    }
+  },
+  "status": "self-verified(Codex), implementation/results pending external audit; M16 conditional proof externally checked17Nov",
+  "verifier_sha256": "3421427e2eedc200add28f10fa8582a0d7940944d8b907d56f57eb0fef0a7302",
+  "utc": "2026-11-18T03:49:48Z",
+  "limitations": "Every raw grouping/label/action consistency/model selection/summary checked. Fresh policy-conditioned posterior direct enumeration covers all small keys and64large contexts, not every large posterior; existing private policy functions reused, rules/normalizers independent."
+}

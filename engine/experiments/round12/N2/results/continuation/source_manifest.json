@@ -1,0 +1,21 @@
+{
+  "raw_sources": {
+    "engine/experiments/round12/N2/count_continue.py": "8fb77d75a79e103286fb0585f86d3c598e28cef333b9c1558b65bf554d39e664",
+    "engine/experiments/round12/N2/verify_continuation.py": "ba5649678612d0f20188eba8964435da10d84c81128c4e1aae5805e7b329933f",
+    "engine/experiments/round12/N2/RESOURCE_CONTINUATION.md": "3e74c44783515946bac09e4c62133c6b0a2ecb4f92b36d4b7bf5cfb8eefe6520"
+  },
+  "canonical_sources": {
+    "engine/experiments/round12/N2/count_continue.py": "6abf8fba96a1626d70a65b4d6ada44a2c6692d724c60ab9f08c11a7ce761e626",
+    "engine/experiments/round12/N2/verify_continuation.py": "850b91790905469bb42e6b20079dbc8327637bf14558163ca3f68fb5ba80f493",
+    "engine/experiments/round12/N2/RESOURCE_CONTINUATION.md": "3ceda6f7862157fe5988e1e56d01d61da665506ff27d8dfd8354d9620e5f0569"
+  },
+  "scheduling_source_fingerprint": "86912e0064b78c880d63cf880af9b75b68e151453e0ffa5546a28af50d1ecd15",
+  "original_scientific_freeze_sha256": "92d32879faa79ecf53372647c8b6b1038dccbff1bec97f069982bf391ff1051d",
+  "original_failed_resource_gate_sha256": "c5a7bfc8e5db53072d45cb746db696840f9394eb08685dda897dff2b6021665b",
+  "original_scope_failure_sha256": "33725707d0816fffecca93e766a81a23bc41213c685e4e9071b12cf5728ea85b",
+  "original_pre_run_commit": "1c0c7192f65464b79afa7a525e121f76543218c1",
+  "original_scientific_fingerprint": "7c7ba88609951b1b6a4be672984bf7adc3dc1bc7ababaeff7afa5d9ab10173b7",
+  "scheduling_pre_run_commit": "ba6505d43fa41e1c6a2e00d3d6ed5abe32c405dc",
+  "source_review_authority": "self-reviewed(Codex), pending external implementation/result audit; independent owner authorization",
+  "scope": "Resource scheduling only; scientific target/producers/hypotheses/counts/seeds unchanged; original gate remains a failure."
+}

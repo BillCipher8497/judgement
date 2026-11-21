@@ -1,0 +1,26 @@
+{
+  "stages": {
+    "pilot": {
+      "contexts": 200,
+      "counterfactual_rounds": 1631,
+      "all_seed_deals_bids_hits_scores_match": true,
+      "raw_sha256": "f8f1755565aea106bb83042ef377fca27325300114b92c4fbdc955da4bc35f0e"
+    },
+    "train": {
+      "contexts": 40000,
+      "counterfactual_rounds": 326102,
+      "all_seed_deals_bids_hits_scores_match": true,
+      "raw_sha256": "a314fdef99b22eea312caac8ec657ff6ca0b2839d59731224fdc3a5c66220da9"
+    },
+    "selection": {
+      "contexts": 12000,
+      "counterfactual_rounds": 97830,
+      "all_seed_deals_bids_hits_scores_match": true,
+      "raw_sha256": "ec1ddb8b3115caca1cb64a768f225b8aa541b472b931b5428cf3078678d5c4d2"
+    }
+  },
+  "status": "pass",
+  "all_training_mean_sd_recomputed": true,
+  "utc": "2026-11-17T06:07:38.685875+00:00",
+  "verifier_sha256": "9b39eaaeb77683becacec07ed8631392de2d916b8d082107c33a894d445ba33d"
+}

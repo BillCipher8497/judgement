@@ -1,0 +1,970 @@
+{
+  "condition": "S3R4n3_t0",
+  "key_index": 1641696,
+  "hero": 3,
+  "own_hand": [
+    6,
+    7,
+    10
+  ],
+  "public_history": [
+    0,
+    2,
+    0,
+    0,
+    0,
+    2,
+    1
+  ],
+  "support_n": 12,
+  "worlds": [
+    {
+      "deal_index": 45968,
+      "hands": [
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          2,
+          3,
+          8
+        ],
+        [
+          1,
+          9,
+          11
+        ],
+        [
+          6,
+          7,
+          10
+        ]
+      ]
+    },
+    {
+      "deal_index": 45988,
+      "hands": [
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          2,
+          3,
+          9
+        ],
+        [
+          1,
+          8,
+          11
+        ],
+        [
+          6,
+          7,
+          10
+        ]
+      ]
+    },
+    {
+      "deal_index": 50968,
+      "hands": [
+        [
+          0,
+          4,
+          8
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          1,
+          9,
+          11
+        ],
+        [
+          6,
+          7,
+          10
+        ]
+      ]
+    },
+    {
+      "deal_index": 52648,
+      "hands": [
+        [
+          0,
+          4,
+          9
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          1,
+          8,
+          11
+        ],
+        [
+          6,
+          7,
+          10
+        ]
+      ]
+    },
+    {
+      "deal_index": 61048,
+      "hands": [
+        [
+          0,
+          5,
+          8
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          9,
+          11
+        ],
+        [
+          6,
+          7,
+          10
+        ]
+      ]
+    },
+    {
+      "deal_index": 62728,
+      "hands": [
+        [
+          0,
+          5,
+          9
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          8,
+          11
+        ],
+        [
+          6,
+          7,
+          10
+        ]
+      ]
+    },
+    {
+      "deal_index": 86242,
+      "hands": [
+        [
+          0,
+          8,
+          11
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          5,
+          9
+        ],
+        [
+          6,
+          7,
+          10
+        ]
+      ]
+    },
+    {
+      "deal_index": 86262,
+      "hands": [
+        [
+          0,
+          8,
+          11
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          1,
+          4,
+          9
+        ],
+        [
+          6,
+          7,
+          10
+        ]
+      ]
+    },
+    {
+      "deal_index": 86320,
+      "hands": [
+        [
+          0,
+          8,
+          11
+        ],
+        [
+          2,
+          3,
+          9
+        ],
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          6,
+          7,
+          10
+        ]
+      ]
+    },
+    {
+      "deal_index": 89602,
+      "hands": [
+        [
+          0,
+          9,
+          11
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          5,
+          8
+        ],
+        [
+          6,
+          7,
+          10
+        ]
+      ]
+    },
+    {
+      "deal_index": 89622,
+      "hands": [
+        [
+          0,
+          9,
+          11
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          1,
+          4,
+          8
+        ],
+        [
+          6,
+          7,
+          10
+        ]
+      ]
+    },
+    {
+      "deal_index": 89680,
+      "hands": [
+        [
+          0,
+          9,
+          11
+        ],
+        [
+          2,
+          3,
+          8
+        ],
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          6,
+          7,
+          10
+        ]
+      ]
+    }
+  ],
+  "actions": [
+    6,
+    7,
+    10
+  ],
+  "PI_Q_sums": [
+    120,
+    120,
+    40
+  ],
+  "BR_Q_sums": [
+    80,
+    80,
+    40
+  ],
+  "PI_optimal_cards": [
+    6,
+    7
+  ],
+  "BR_optimal_cards": [
+    6,
+    7
+  ],
+  "fixed_lower_card_PIMC_action": 6,
+  "fixed_tie_loss_exact": "0",
+  "best_PI_tie_loss_exact": "0",
+  "worst_PI_tie_loss_exact": "0",
+  "tie_robust_strict_loss": false,
+  "tables": [
+    {
+      "current_card": 6,
+      "terminal_constant_sum": 0,
+      "terminal_worlds": [],
+      "future_private_infoset_tables": [
+        {
+          "future_public_history": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            2,
+            1,
+            6,
+            3,
+            11
+          ],
+          "future_legal_cards": [
+            7,
+            10
+          ],
+          "world_score_rows": [
+            {
+              "deal_index": 45968,
+              "scores_by_card": [
+                0,
+                10
+              ]
+            },
+            {
+              "deal_index": 45988,
+              "scores_by_card": [
+                0,
+                10
+              ]
+            },
+            {
+              "deal_index": 50968,
+              "scores_by_card": [
+                10,
+                0
+              ]
+            },
+            {
+              "deal_index": 52648,
+              "scores_by_card": [
+                10,
+                0
+              ]
+            },
+            {
+              "deal_index": 61048,
+              "scores_by_card": [
+                10,
+                0
+              ]
+            },
+            {
+              "deal_index": 62728,
+              "scores_by_card": [
+                10,
+                0
+              ]
+            }
+          ],
+          "private_column_sums": [
+            40,
+            20
+          ],
+          "private_optimal_card": 7,
+          "PI_worldwise_max_sum": 60,
+          "private_common_action_max_sum": 40,
+          "illegal_fusion_optimism_sum": 20
+        },
+        {
+          "future_public_history": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            2,
+            1,
+            6,
+            3,
+            5
+          ],
+          "future_legal_cards": [
+            7,
+            10
+          ],
+          "world_score_rows": [
+            {
+              "deal_index": 86242,
+              "scores_by_card": [
+                10,
+                0
+              ]
+            },
+            {
+              "deal_index": 86320,
+              "scores_by_card": [
+                0,
+                10
+              ]
+            },
+            {
+              "deal_index": 89602,
+              "scores_by_card": [
+                10,
+                0
+              ]
+            },
+            {
+              "deal_index": 89680,
+              "scores_by_card": [
+                0,
+                10
+              ]
+            }
+          ],
+          "private_column_sums": [
+            20,
+            20
+          ],
+          "private_optimal_card": 7,
+          "PI_worldwise_max_sum": 40,
+          "private_common_action_max_sum": 20,
+          "illegal_fusion_optimism_sum": 20
+        },
+        {
+          "future_public_history": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            2,
+            1,
+            6,
+            3,
+            9
+          ],
+          "future_legal_cards": [
+            7,
+            10
+          ],
+          "world_score_rows": [
+            {
+              "deal_index": 86262,
+              "scores_by_card": [
+                10,
+                0
+              ]
+            }
+          ],
+          "private_column_sums": [
+            10,
+            0
+          ],
+          "private_optimal_card": 7,
+          "PI_worldwise_max_sum": 10,
+          "private_common_action_max_sum": 10,
+          "illegal_fusion_optimism_sum": 0
+        },
+        {
+          "future_public_history": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            2,
+            1,
+            6,
+            3,
+            4
+          ],
+          "future_legal_cards": [
+            7,
+            10
+          ],
+          "world_score_rows": [
+            {
+              "deal_index": 89622,
+              "scores_by_card": [
+                10,
+                0
+              ]
+            }
+          ],
+          "private_column_sums": [
+            10,
+            0
+          ],
+          "private_optimal_card": 7,
+          "PI_worldwise_max_sum": 10,
+          "private_common_action_max_sum": 10,
+          "illegal_fusion_optimism_sum": 0
+        }
+      ],
+      "PI_Q_sum": 120,
+      "BR_Q_sum": 80
+    },
+    {
+      "current_card": 7,
+      "terminal_constant_sum": 0,
+      "terminal_worlds": [],
+      "future_private_infoset_tables": [
+        {
+          "future_public_history": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            2,
+            1,
+            7,
+            3,
+            11
+          ],
+          "future_legal_cards": [
+            6,
+            10
+          ],
+          "world_score_rows": [
+            {
+              "deal_index": 45968,
+              "scores_by_card": [
+                0,
+                10
+              ]
+            },
+            {
+              "deal_index": 45988,
+              "scores_by_card": [
+                0,
+                10
+              ]
+            },
+            {
+              "deal_index": 50968,
+              "scores_by_card": [
+                10,
+                0
+              ]
+            },
+            {
+              "deal_index": 52648,
+              "scores_by_card": [
+                10,
+                0
+              ]
+            },
+            {
+              "deal_index": 61048,
+              "scores_by_card": [
+                10,
+                0
+              ]
+            },
+            {
+              "deal_index": 62728,
+              "scores_by_card": [
+                10,
+                0
+              ]
+            }
+          ],
+          "private_column_sums": [
+            40,
+            20
+          ],
+          "private_optimal_card": 6,
+          "PI_worldwise_max_sum": 60,
+          "private_common_action_max_sum": 40,
+          "illegal_fusion_optimism_sum": 20
+        },
+        {
+          "future_public_history": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            2,
+            1,
+            7,
+            3,
+            5
+          ],
+          "future_legal_cards": [
+            6,
+            10
+          ],
+          "world_score_rows": [
+            {
+              "deal_index": 86242,
+              "scores_by_card": [
+                10,
+                0
+              ]
+            },
+            {
+              "deal_index": 86320,
+              "scores_by_card": [
+                0,
+                10
+              ]
+            },
+            {
+              "deal_index": 89602,
+              "scores_by_card": [
+                10,
+                0
+              ]
+            },
+            {
+              "deal_index": 89680,
+              "scores_by_card": [
+                0,
+                10
+              ]
+            }
+          ],
+          "private_column_sums": [
+            20,
+            20
+          ],
+          "private_optimal_card": 6,
+          "PI_worldwise_max_sum": 40,
+          "private_common_action_max_sum": 20,
+          "illegal_fusion_optimism_sum": 20
+        },
+        {
+          "future_public_history": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            2,
+            1,
+            7,
+            3,
+            9
+          ],
+          "future_legal_cards": [
+            6,
+            10
+          ],
+          "world_score_rows": [
+            {
+              "deal_index": 86262,
+              "scores_by_card": [
+                10,
+                0
+              ]
+            }
+          ],
+          "private_column_sums": [
+            10,
+            0
+          ],
+          "private_optimal_card": 6,
+          "PI_worldwise_max_sum": 10,
+          "private_common_action_max_sum": 10,
+          "illegal_fusion_optimism_sum": 0
+        },
+        {
+          "future_public_history": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            2,
+            1,
+            7,
+            3,
+            4
+          ],
+          "future_legal_cards": [
+            6,
+            10
+          ],
+          "world_score_rows": [
+            {
+              "deal_index": 89622,
+              "scores_by_card": [
+                10,
+                0
+              ]
+            }
+          ],
+          "private_column_sums": [
+            10,
+            0
+          ],
+          "private_optimal_card": 6,
+          "PI_worldwise_max_sum": 10,
+          "private_common_action_max_sum": 10,
+          "illegal_fusion_optimism_sum": 0
+        }
+      ],
+      "PI_Q_sum": 120,
+      "BR_Q_sum": 80
+    },
+    {
+      "current_card": 10,
+      "terminal_constant_sum": 0,
+      "terminal_worlds": [],
+      "future_private_infoset_tables": [
+        {
+          "future_public_history": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            2,
+            1,
+            10,
+            3,
+            11
+          ],
+          "future_legal_cards": [
+            6,
+            7
+          ],
+          "world_score_rows": [
+            {
+              "deal_index": 45968,
+              "scores_by_card": [
+                10,
+                10
+              ]
+            },
+            {
+              "deal_index": 45988,
+              "scores_by_card": [
+                10,
+                10
+              ]
+            },
+            {
+              "deal_index": 50968,
+              "scores_by_card": [
+                0,
+                0
+              ]
+            },
+            {
+              "deal_index": 52648,
+              "scores_by_card": [
+                0,
+                0
+              ]
+            },
+            {
+              "deal_index": 61048,
+              "scores_by_card": [
+                0,
+                0
+              ]
+            },
+            {
+              "deal_index": 62728,
+              "scores_by_card": [
+                0,
+                0
+              ]
+            }
+          ],
+          "private_column_sums": [
+            20,
+            20
+          ],
+          "private_optimal_card": 6,
+          "PI_worldwise_max_sum": 20,
+          "private_common_action_max_sum": 20,
+          "illegal_fusion_optimism_sum": 0
+        },
+        {
+          "future_public_history": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            2,
+            1,
+            10,
+            3,
+            5
+          ],
+          "future_legal_cards": [
+            6,
+            7
+          ],
+          "world_score_rows": [
+            {
+              "deal_index": 86242,
+              "scores_by_card": [
+                0,
+                0
+              ]
+            },
+            {
+              "deal_index": 86320,
+              "scores_by_card": [
+                10,
+                10
+              ]
+            },
+            {
+              "deal_index": 89602,
+              "scores_by_card": [
+                0,
+                0
+              ]
+            },
+            {
+              "deal_index": 89680,
+              "scores_by_card": [
+                10,
+                10
+              ]
+            }
+          ],
+          "private_column_sums": [
+            20,
+            20
+          ],
+          "private_optimal_card": 6,
+          "PI_worldwise_max_sum": 20,
+          "private_common_action_max_sum": 20,
+          "illegal_fusion_optimism_sum": 0
+        },
+        {
+          "future_public_history": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            2,
+            1,
+            10,
+            3,
+            9
+          ],
+          "future_legal_cards": [
+            6,
+            7
+          ],
+          "world_score_rows": [
+            {
+              "deal_index": 86262,
+              "scores_by_card": [
+                0,
+                0
+              ]
+            }
+          ],
+          "private_column_sums": [
+            0,
+            0
+          ],
+          "private_optimal_card": 6,
+          "PI_worldwise_max_sum": 0,
+          "private_common_action_max_sum": 0,
+          "illegal_fusion_optimism_sum": 0
+        },
+        {
+          "future_public_history": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            2,
+            1,
+            10,
+            3,
+            4
+          ],
+          "future_legal_cards": [
+            6,
+            7
+          ],
+          "world_score_rows": [
+            {
+              "deal_index": 89622,
+              "scores_by_card": [
+                0,
+                0
+              ]
+            }
+          ],
+          "private_column_sums": [
+            0,
+            0
+          ],
+          "private_optimal_card": 6,
+          "PI_worldwise_max_sum": 0,
+          "private_common_action_max_sum": 0,
+          "illegal_fusion_optimism_sum": 0
+        }
+      ],
+      "PI_Q_sum": 40,
+      "BR_Q_sum": 40
+    }
+  ],
+  "sampling_CI": null,
+  "verdict": "Exact finite computational certificate, independently replayed support/table; pending Claude external audit",
+  "source_sha256": "48e2d23712df1f764d97802c5851c52a362600b55b05da407b55e67926ee7100"
+}

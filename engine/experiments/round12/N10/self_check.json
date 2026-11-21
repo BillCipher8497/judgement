@@ -1,0 +1,18 @@
+{
+  "utc": "2026-11-20T06:54:04.064072+00:00",
+  "n_gradient_entries": 34,
+  "max_gradient_error": 9.725646693157716e-12,
+  "activation_counterexample_and_zero_head_identity": true,
+  "n_private_rollout_transition_pairs": 32,
+  "immutable_old_observable_features_match": true,
+  "no_fullstate_capability": true,
+  "seed_receipt": {
+    "utc": "2026-11-20T06:54:04.064072+00:00",
+    "prior_known_states": 1236178,
+    "new_root_addresses": 2272,
+    "collisions": 0,
+    "scope": "known N0-N9roots/journals and declaredchildren, not unknown external uses; N6/N11noRNG; intentional CRN roots counted once"
+  },
+  "source_sha256": "f7c2181d5bb27e565dbc6369502852b8b9b79d8f8c2ba75d54202c0721e3b0e9",
+  "scope": "Synthetic/old immutable fixtures only; no newN10data/fits/games"
+}

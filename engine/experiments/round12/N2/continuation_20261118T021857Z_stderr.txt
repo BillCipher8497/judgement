@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "C:\Users\Arvin\OneDrive\Desktop\Judgement Research\engine\experiments\round12\bounded_job.py", line 8, in <module>
+    try:runpy.run_path(str(script),run_name='__main__')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Arvin\OneDrive\Desktop\Judgement Research\engine\experiments\round12\N2\count_continue.py", line 83, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\Users\Arvin\OneDrive\Desktop\Judgement Research\engine\experiments\round12\N2\count_continue.py", line 78, in main
+    corpus=science.Corpus(g,f);science.fit_models(corpus,f/'models',origin['original_scientific_freeze_sha256'],deadline,source_check,status);result=science.evaluate(corpus,f/'models',f/'joint_KL',origin['original_scientific_freeze_sha256'],deadline,source_check,status,science.myopic_bid);results.append(result);science.clear_mid()
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arvin\OneDrive\Desktop\Judgement Research\engine\experiments\round12\N2\fit.py", line 67, in fit_models
+    atomic_npz(active,epoch=epoch,step=adam.t,best=-1 if best is None else best,best_epoch=-1 if best_epoch is None else best_epoch,trace_row=np.array(json.dumps(row)),**{f'p{i}':v for i,v in enumerate(p)},**{f'm{i}':v for i,v in enumerate(adam.m)},**{f'v{i}':v for i,v in enumerate(adam.v)})
+  File "C:\Users\Arvin\OneDrive\Desktop\Judgement Research\engine\experiments\round12\N2\export.py", line 55, in atomic_npz
+    temp.replace(path)
+  File "C:\Users\Arvin\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 1376, in replace
+    os.replace(self, target)
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N2\\results\\S3R4n3_t-1\\models\\s0\\checkpoint.tmp' -> 'C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N2\\results\\S3R4n3_t-1\\models\\s0\\checkpoint.npz'

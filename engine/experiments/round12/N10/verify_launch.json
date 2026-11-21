@@ -1,0 +1,7 @@
+{
+  "deadline_epoch": "1795165165",
+  "start_utc": "2026-11-20T06:59:25.9448507+00:00",
+  "stage": "separate read-only audit",
+  "pid": 27620,
+  "deadline_utc": "2026-11-20T08:59:25.9448507+00:00"
+}

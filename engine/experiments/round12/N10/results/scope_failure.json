@@ -1,0 +1,8 @@
+{
+  "utc": "2026-11-20T06:58:39.049990+00:00",
+  "reason": "Prespecifiedactivation/selectiongatefailed",
+  "scientific_games": 0,
+  "gates_sha256": "de80adce3c76039169069d7ffa0dcb426fe3cdb315b6746a16a84691eb868978",
+  "models_sha256": "38f42034e47bb6630e75deca4a17cd4bd51339cafaef273d611f9dead0d36271",
+  "scope": "Not a zero effect/CI; no replacementmodels/thresholds/n/epochs/alpha retuning"
+}

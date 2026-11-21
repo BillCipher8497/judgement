@@ -1,0 +1,155 @@
+{
+  "selection_scope": "posthoc smallest positive witness for illustration, not another confirmatory task or prevalence estimate",
+  "tag": "S3R4n3_t-1",
+  "key_id": 105013,
+  "hero": 0,
+  "own_initial_hand": [
+    2,
+    4,
+    6
+  ],
+  "public_history": [
+    0,
+    0,
+    2,
+    0,
+    2,
+    0,
+    3,
+    1,
+    11,
+    10
+  ],
+  "structural_owner_arrays": [
+    [
+      0,
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      0,
+      2,
+      1
+    ],
+    [
+      0,
+      1,
+      0,
+      2
+    ],
+    [
+      0,
+      2,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      2,
+      0
+    ],
+    [
+      0,
+      2,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      2
+    ],
+    [
+      2,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      2,
+      0
+    ],
+    [
+      2,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      2,
+      0,
+      0
+    ],
+    [
+      2,
+      1,
+      0,
+      0
+    ]
+  ],
+  "posterior_structural_indices": [
+    0,
+    5,
+    10
+  ],
+  "exact_reach": 3,
+  "certificate": {
+    "tag": "S3R4n3_t-1",
+    "key_id": 105013,
+    "reach": 3,
+    "n_structural_worlds": 12,
+    "n_posterior_worlds": 3,
+    "lp_success": true,
+    "lp_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "lp_proposal_exact_feasible": true,
+    "lp_proposal_weights": {
+      "5": "2/3",
+      "6": "1/3"
+    },
+    "fallback_P_if_infeasible": false,
+    "epsilon": "1/4",
+    "mixture_weights": {
+      "0": "1/4",
+      "10": "1/4",
+      "5": "5/12",
+      "6": "1/12"
+    },
+    "entropy_gain_enclosure_exact_nats": [
+      "56619272219749015862726884890032381861/340282366920938463463374607431768211456",
+      "56619272219749015862726884890036002871/340282366920938463463374607431768211456"
+    ],
+    "certified_KL_lower_nats": "56619272219749015862726884890032381861/340282366920938463463374607431768211456",
+    "numeric_free_potential_KL": 0.1744160479217396,
+    "numeric_gradient_linf": 1.9814590968003643e-08,
+    "numeric_optimizer_success": true,
+    "numeric_optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "numeric_iterations": 47,
+    "theta": [
+      0.37514507516508827,
+      14.580876216122114,
+      -14.956021324116561,
+      -0.37519498413219654,
+      -14.148503877131175,
+      14.523698826587331,
+      -0.3751347360757444,
+      14.52374349627609,
+      -14.148608793807345,
+      0.3751845800593428,
+      -14.956115868451679,
+      14.58093125634211
+    ],
+    "scope": "Exact rational moment/entropy certificate under pending external lemma; numeric potential objective not a rigorous optimum/certificate. Known deterministic toy keys, no samplingCI."
+  },
+  "meaning_of_owner_classes": "relative opponents hero+1,hero+2,hero+3 mod4; unseen cards ascending; original hands recoverable from own/public key",
+  "source_hashes": {
+    "N9_data": "290cb7a63512dd9a6bdfe2e33ab39e42d8248ec334401f53c8e1295f7a4fa78d",
+    "complete": "23dcd54da205358528367d6817de4288ad3b2abf780c35d4e0b923b91b466637"
+  }
+}

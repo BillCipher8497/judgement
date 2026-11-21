@@ -1,0 +1,8 @@
+{
+  "utc": "2026-11-20T02:04:05.190807+00:00",
+  "n_finite_difference_entries": 36,
+  "max_error": 1.3983345731327645e-11,
+  "joint_direct_probability_and_logshift_invariance": true,
+  "source_sha256": "09b9615875c8e1e0bc07e1ebf0795392660f3719b130a57715b11fdbc2aa1925",
+  "scope": "synthetic proper loss/gradient, no N9data or fits yet"
+}

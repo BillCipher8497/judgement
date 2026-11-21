@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "array_and_NPZ_API_equivalence": true,
+  "open_memory_NPZ_does_not_lock_disk_replacement": true,
+  "bounded_transient_retry_fixture": true,
+  "source_sha256": "e36aaf61a28c906205bd2b89a0e9bab3446f984f690e238ebe6aef1d29ccec86",
+  "scope": "Synthetic I/O test only; no frozen scientific artifact modified",
+  "utc": "2026-11-18T02:52:28Z"
+}

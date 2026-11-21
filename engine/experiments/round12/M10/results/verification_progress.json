@@ -1,0 +1,359 @@
+{
+  "stages": {
+    "screen": {
+      "base": 2040000000,
+      "n_quadruplets": 2000,
+      "contrasts": {
+        "R-L": {
+          "score": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": 0.9079999999999999,
+            "ci95": [
+              0.5746162789894056,
+              1.2413837210105942
+            ],
+            "halfwidth": 0.33338372101059427,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "ties_as_win": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": 0.006,
+            "ci95": [
+              -0.0036026011005243566,
+              0.015602601100524357
+            ],
+            "halfwidth": 0.009602601100524357,
+            "method": "equal-seat paired normal95%CI"
+          }
+        },
+        "R-N": {
+          "score": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": -0.232,
+            "ci95": [
+              -0.49968119649073117,
+              0.03568119649073112
+            ],
+            "halfwidth": 0.26768119649073113,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "ties_as_win": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": -0.0025,
+            "ci95": [
+              -0.01098591500705811,
+              0.005985915007058109
+            ],
+            "halfwidth": 0.00848591500705811,
+            "method": "equal-seat paired normal95%CI"
+          }
+        },
+        "R-canonical": {
+          "score": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": 1.0785,
+            "ci95": [
+              0.6857233999813068,
+              1.4712766000186932
+            ],
+            "halfwidth": 0.3927766000186932,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "ties_as_win": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": 0.012,
+            "ci95": [
+              0.0009229858678356673,
+              0.023077014132164335
+            ],
+            "halfwidth": 0.011077014132164333,
+            "method": "equal-seat paired normal95%CI"
+          }
+        },
+        "L-canonical": {
+          "score": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": 0.17049999999999998,
+            "ci95": [
+              -0.10023837859470192,
+              0.4412383785947019
+            ],
+            "halfwidth": 0.2707383785947019,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "ties_as_win": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": 0.006,
+            "ci95": [
+              -0.002306544248645728,
+              0.014306544248645728
+            ],
+            "halfwidth": 0.008306544248645728,
+            "method": "equal-seat paired normal95%CI"
+          }
+        },
+        "N-canonical": {
+          "score": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": 1.3105,
+            "ci95": [
+              0.8829607208228949,
+              1.738039279177105
+            ],
+            "halfwidth": 0.42753927917710505,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "ties_as_win": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": 0.0145,
+            "ci95": [
+              0.0023875996563782493,
+              0.02661240034362175
+            ],
+            "halfwidth": 0.012112400343621751,
+            "method": "equal-seat paired normal95%CI"
+          }
+        }
+      },
+      "n_fresh_replay_games": 80
+    },
+    "confirmation": {
+      "base": 2050000000,
+      "n_quadruplets": 2000,
+      "contrasts": {
+        "R-L": {
+          "score": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": 0.5675,
+            "ci95": [
+              0.22735583884367871,
+              0.9076441611563213
+            ],
+            "halfwidth": 0.3401441611563213,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "ties_as_win": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": 0.0085,
+            "ci95": [
+              -0.0022778573203041438,
+              0.019277857320304147
+            ],
+            "halfwidth": 0.010777857320304144,
+            "method": "equal-seat paired normal95%CI"
+          }
+        },
+        "R-N": {
+          "score": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": -0.325,
+            "ci95": [
+              -0.6074753209317072,
+              -0.04252467906829288
+            ],
+            "halfwidth": 0.28247532093170713,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "ties_as_win": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": -0.002,
+            "ci95": [
+              -0.0107673624133701,
+              0.006767362413370099
+            ],
+            "halfwidth": 0.0087673624133701,
+            "method": "equal-seat paired normal95%CI"
+          }
+        },
+        "R-canonical": {
+          "score": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": 0.686,
+            "ci95": [
+              0.2931351613272949,
+              1.0788648386727053
+            ],
+            "halfwidth": 0.39286483867270516,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "ties_as_win": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": 0.0135,
+            "ci95": [
+              0.002122898467599178,
+              0.024877101532400824
+            ],
+            "halfwidth": 0.011377101532400822,
+            "method": "equal-seat paired normal95%CI"
+          }
+        },
+        "L-canonical": {
+          "score": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": 0.1185,
+            "ci95": [
+              -0.15423271878634798,
+              0.39123271878634797
+            ],
+            "halfwidth": 0.27273271878634797,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "ties_as_win": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": 0.005,
+            "ci95": [
+              -0.003433930802274529,
+              0.013433930802274528
+            ],
+            "halfwidth": 0.008433930802274529,
+            "method": "equal-seat paired normal95%CI"
+          }
+        },
+        "N-canonical": {
+          "score": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": 1.0110000000000001,
+            "ci95": [
+              0.5856579222227648,
+              1.4363420777772355
+            ],
+            "halfwidth": 0.4253420777772353,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "ties_as_win": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": 0.0155,
+            "ci95": [
+              0.002775418610300527,
+              0.028224581389699473
+            ],
+            "halfwidth": 0.012724581389699473,
+            "method": "equal-seat paired normal95%CI"
+          }
+        }
+      },
+      "n_fresh_replay_games": 80
+    }
+  },
+  "utc": "2026-11-17T20:34:47.954988+00:00"
+}

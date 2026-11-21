@@ -1,0 +1,55 @@
+{
+  "tag": "S2R4n2_t-1",
+  "key_id": 163,
+  "reach": 4,
+  "n_structural_worlds": 90,
+  "n_posterior_worlds": 4,
+  "lp_success": true,
+  "lp_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "lp_proposal_exact_feasible": true,
+  "lp_proposal_weights": {
+    "28": "1/4",
+    "52": "1/4",
+    "68": "1/4",
+    "70": "1/4"
+  },
+  "fallback_P_if_infeasible": false,
+  "epsilon": "0",
+  "mixture_weights": {
+    "70": "1/4",
+    "28": "1/4",
+    "52": "1/4",
+    "68": "1/4"
+  },
+  "entropy_gain_enclosure_exact_nats": [
+    "-2286953/340282366920938463463374607431768211456",
+    "2286953/340282366920938463463374607431768211456"
+  ],
+  "certified_KL_lower_nats": "0",
+  "numeric_free_potential_KL": 1.5337286995986688e-11,
+  "numeric_gradient_linf": 7.367091905963186e-08,
+  "numeric_optimizer_success": false,
+  "numeric_optimizer_message": "ABNORMAL: ",
+  "numeric_iterations": 44,
+  "theta": [
+    -0.6950420819634484,
+    -0.6955077237635195,
+    1.3905498038857191,
+    -0.6950418347091113,
+    -0.6955078259105165,
+    1.390549658768108,
+    7.583554480820499,
+    7.5830884672941705,
+    -15.166642949859877,
+    -12.571734424652004,
+    -12.571143992992933,
+    25.142878415930095,
+    -11.265666318895951,
+    17.644328795426617,
+    -6.378662478131851,
+    17.643930175893697,
+    -11.2652577234562,
+    -6.378672454117794
+  ],
+  "scope": "Exact rational moment/entropy certificate under pending external lemma; numeric potential objective not a rigorous optimum/certificate. Known deterministic toy keys, no samplingCI."
+}

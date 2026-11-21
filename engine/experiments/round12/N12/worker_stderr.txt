@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "C:\Users\Arvin\OneDrive\Desktop\Judgement Research\engine\experiments\round12\bounded_job.py", line 8, in <module>
+    try:runpy.run_path(str(script),run_name='__main__')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Arvin\OneDrive\Desktop\Judgement Research\engine\experiments\round12\N12\run.py", line 45, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\Users\Arvin\OneDrive\Desktop\Judgement Research\engine\experiments\round12\N12\run.py", line 43, in main
+    row={'tag':tag,'config':cfg,'loss':loss,'seed':seed,'budget':budget,'n_keys':len(tables[tag]),'reach':reach,'regret_numerator':num,'private_regret_exact':str(Fraction(num,reach)),'private_regret':num/reach,'joint_KL':kl/reach,'n_numeric_nearties':nearties,'selected_model_sha256':sha(folder/f'selected{budget}.npz'),'held_output_sha256':sha(folder/f'held_{budget}.npz')};results.append(row);save(O/tag/f'{cfg}_{loss}_s{seed}_b{budget}.json',row|{'decisions_key_choice_deficit':decisions});save(O/'progress.json',{'stage':'frozen_models','complete':len(results),'target':240,'utc':stamp()})
+                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arvin\OneDrive\Desktop\Judgement Research\engine\experiments\round12\common.py", line 28, in save
+    temp.write_text(json.dumps(data, indent=2)+'\n', encoding='utf-8'); replace(temp, path)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arvin\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\Arvin\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "C:\Users\Arvin\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\Arvin\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\Arvin\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "C:\Users\Arvin\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type int64 is not JSON serializable

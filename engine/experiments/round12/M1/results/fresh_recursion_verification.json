@@ -1,0 +1,38 @@
+{
+  "conditions": {
+    "S2R4n2_t0": {
+      "checked_deals": 2520,
+      "checked_free_roots": 1944,
+      "selection": "all2520 small;64fixed evenly spaced lexicographic large indices",
+      "exact_PI_if_full_population": "1257/140",
+      "data_sha256": "b1c4f6af75f876e82ea1079d1ff77d530a48cb0ccff2e7a7593d77f454364c7a",
+      "status": "pass"
+    },
+    "S2R4n2_t-1": {
+      "checked_deals": 2520,
+      "checked_free_roots": 1944,
+      "selection": "all2520 small;64fixed evenly spaced lexicographic large indices",
+      "exact_PI_if_full_population": "946/105",
+      "data_sha256": "8b501ca8aa6dd6dbcddca620b433e3ec9b46e4c7543a3b557345bb9d618ec20f",
+      "status": "pass"
+    },
+    "S3R4n3_t0": {
+      "checked_deals": 64,
+      "checked_free_roots": 62,
+      "selection": "all2520 small;64fixed evenly spaced lexicographic large indices",
+      "exact_PI_if_full_population": null,
+      "data_sha256": "43282f02d3b3e1c432f8cffa93f26e30dfb6d681b45e95d97957ffec6dc9f664",
+      "status": "pass"
+    },
+    "S3R4n3_t-1": {
+      "checked_deals": 64,
+      "checked_free_roots": 62,
+      "selection": "all2520 small;64fixed evenly spaced lexicographic large indices",
+      "exact_PI_if_full_population": null,
+      "data_sha256": "91da03e8f67f262d2d40aeb637801d972085c0e2170dc4aa48391e954fe4b76f",
+      "status": "pass"
+    }
+  },
+  "verifier_sha256": "7518cbfe95cbf2980cc977ec2d8148e98f339afa17e7c5ecbedb3d4342e7877c",
+  "utc": "2026-11-17T05:09:32.000338+00:00"
+}

@@ -1,0 +1,39 @@
+{
+  "utc": "2026-11-20T06:53:23.613030+00:00",
+  "sources": {
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N10\\n10lib.py": "eaf4cd735ade8727efae3b641551409629d9158892609f8d723501ed52dae0a0",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N10\\run.py": "745365c160d324d51099cb4e44623562d422b92e07353c5a777592e884f6da64",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N10\\fit.py": "abf9e8e9e881bcd1282bebeb8c940d7a1bbdd29c014b0a9e71e344386011f9b7",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N10\\evaluate.py": "2e2418a8c65f6ce9a8213bc642cb8e9279ae6c946f78bb426146f8c826f73240",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N10\\reference.py": "611e3f9bdd71a99212077f81dc72240c78a361ef0ba959e7820d50a21557921c",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N10\\self_check.py": "df5daa7635f1ed2857ec951dad148513af15192e01ccf451e2528b19cccab04c",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N10\\PROTOCOL.md": "99d45476e78d69fbcd6fecbaf4fb5a5fd081059d0b692e49486eadf2b5fdd32a",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\learning.py": "297a95bd644c5bc86aaf85e3a31773ac37df846ab76a7dd055fb7f248b510378",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\common.py": "1aa6d0df6a32546ea4a33a4d929eae618eed69f83d1905922299688f37a4413a",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N3\\observables.py": "56c9e6c9dc97e1e2460dde041908d8dbf961e2332e6092662ff9397554460f51",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\phase1\\results\\model_ta_final.json": "5de2e4ead429a0d15236cc45a23de181450fc4ba94890ee46cba8743cd859115",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\judgement\\__init__.py": "0838f728afe0cbe159c152e51e7a242ff6640c530e416b700a81c0ee6bf9ada0",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\judgement\\bidding\\__init__.py": "be1112beaa3932b2cb9c94854034d85bc3bfecb28ef025834f19547f70b448c9",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\judgement\\bidding\\features.py": "047f596b75b72d3bf0315395c17231c1acdcd733805be12d60d88776a659a2ca",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\judgement\\bidding\\model.py": "1765ef35d51701fc2a6d4c09e1495da0574d64f0a78358ec2ab4d66d0e75b3d7",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\judgement\\cards.py": "385a219c7754d9f2ae0c32d0114d514c0fdee108060d3f38315ea167d5845438",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\judgement\\engine.py": "004d1d41427a002e98e546e005ffca6403cd820f99539f3450c0557c0c6cc9ba",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\judgement\\policies\\__init__.py": "2ce84f97204e3a592288a4f6b917de563580894c0ed3eb1da91c7eb5ef6b10e0",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\judgement\\policies\\base.py": "8bd5f0feb12817ab500ccbd4f8bb5d8378ebd1d04170aff337bd15ab442a2d08",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\judgement\\policies\\greedy.py": "9b2c3a82a08218760670ad20ea55ac0e691d8c9d2e8a5abbf869cadb3868322f",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\judgement\\policies\\random_p.py": "5871187357a09b00b2368526b5c0617d8b541f1bd58e22b5a0854ddc6e02cc01",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\judgement\\policies\\ta_plus.py": "e2a64374c15e6c7e9fee4dd900fd70206cab8063e4e0250846818e318c25da4f",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\judgement\\policies\\target_aware.py": "f2fd65bbf3c90908ee6d351105ccbf6f32733f6b95aecbd144da3a51d2888fc7",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\judgement\\rules.py": "f89916d039bdfd515db015d59a5343f4c416b57c65c43cc7776a9d712ce5f6ed",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\judgement\\sampling.py": "6a323f0f116d05dc60719a3aaef4a7d7e36dfe4c7a7dba45d41717b26054e881",
+    "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\judgement\\state.py": "799a9be6d540a453d6ae4cf71f9ae569c76ab66edb22f3742a4286d6298d0c8d"
+  },
+  "seed_receipt": {
+    "utc": "2026-11-20T06:53:23.613030+00:00",
+    "prior_known_states": 1236178,
+    "new_root_addresses": 2256,
+    "collisions": 0,
+    "scope": "known N0-N9roots/journals and declaredchildren, not unknown external uses; N6/N11noRNG; intentional CRN roots counted once"
+  },
+  "scope": "metadata only; noN10chance data/models/games yet"
+}

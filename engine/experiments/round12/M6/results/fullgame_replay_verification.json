@@ -1,0 +1,207 @@
+{
+  "status": "pass",
+  "stages": {
+    "screen": {
+      "n_fresh_games": 60,
+      "n_triplets": 20,
+      "g_addresses": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        1000,
+        1001,
+        1002,
+        1003,
+        1992,
+        1993,
+        1994,
+        1995,
+        1996,
+        1997,
+        1998,
+        1999
+      ],
+      "seat_counts": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "all_totals_rounds_bids_tricks_scores_match": true
+    },
+    "confirmation": {
+      "n_fresh_games": 60,
+      "n_triplets": 20,
+      "g_addresses": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        1000,
+        1001,
+        1002,
+        1003,
+        1992,
+        1993,
+        1994,
+        1995,
+        1996,
+        1997,
+        1998,
+        1999
+      ],
+      "seat_counts": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "all_totals_rounds_bids_tricks_scores_match": true
+    },
+    "human_screen": {
+      "n_fresh_games": 60,
+      "n_triplets": 20,
+      "g_addresses": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        500,
+        501,
+        502,
+        503,
+        992,
+        993,
+        994,
+        995,
+        996,
+        997,
+        998,
+        999
+      ],
+      "seat_counts": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "all_totals_rounds_bids_tricks_scores_match": true
+    },
+    "human_confirmation": {
+      "n_fresh_games": 60,
+      "n_triplets": 20,
+      "g_addresses": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        500,
+        501,
+        502,
+        503,
+        992,
+        993,
+        994,
+        995,
+        996,
+        997,
+        998,
+        999
+      ],
+      "seat_counts": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "all_totals_rounds_bids_tricks_scores_match": true
+    },
+    "greedy_screen": {
+      "n_fresh_games": 60,
+      "n_triplets": 20,
+      "g_addresses": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        500,
+        501,
+        502,
+        503,
+        992,
+        993,
+        994,
+        995,
+        996,
+        997,
+        998,
+        999
+      ],
+      "seat_counts": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "all_totals_rounds_bids_tricks_scores_match": true
+    },
+    "greedy_confirmation": {
+      "n_fresh_games": 60,
+      "n_triplets": 20,
+      "g_addresses": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        500,
+        501,
+        502,
+        503,
+        992,
+        993,
+        994,
+        995,
+        996,
+        997,
+        998,
+        999
+      ],
+      "seat_counts": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "all_totals_rounds_bids_tricks_scores_match": true
+    }
+  },
+  "n_total_fresh_games": 360,
+  "source_sha256": "0ba3bd097971ed1fbcc3d4909bc58580ac23204e2d98c5214833a020285c6fe7",
+  "utc": "2026-11-17T06:08:43.389777+00:00",
+  "limitation": "Fresh driver and frozen predictors on the same validated core engine, not a second engine implementation."
+}

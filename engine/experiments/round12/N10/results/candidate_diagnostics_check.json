@@ -1,0 +1,24 @@
+{
+  "utc": "2026-11-20T07:01:33.171181+00:00",
+  "n_candidates_independently_checked": 240,
+  "independent_forwards_counts_CIs_match": true,
+  "all_candidate_summary": {
+    "hard": {
+      "n_candidates": 120,
+      "n_with_changed_validation_actions": 100,
+      "max_changed_contexts": 948,
+      "max_validation_score_delta": 0.0,
+      "scope": "posthoc on1536selection-reused contexts, no deployment or independent effect claim"
+    },
+    "set": {
+      "n_candidates": 120,
+      "n_with_changed_validation_actions": 71,
+      "max_changed_contexts": 948,
+      "max_validation_score_delta": 0.0,
+      "scope": "posthoc on1536selection-reused contexts, no deployment or independent effect claim"
+    }
+  },
+  "diagnostic_sha256": "762a89f510f4b0c072914249842ec20058e506832ddc965e6df6789139a620e7",
+  "source_sha256": "177f044e0eb32a8b8cb8ac4584e4253f8c103322e17146cf81f395876b848ca7",
+  "pending_Claude_external": true
+}

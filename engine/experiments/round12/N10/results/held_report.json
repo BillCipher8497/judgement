@@ -1,0 +1,91 @@
+{
+  "baseline": {
+    "n": 1536,
+    "mean": 0.4016927083333333,
+    "ci95": [
+      0.2903861722804072,
+      0.5129992443862594
+    ],
+    "method": "paired/equal-stratum normal95%; fixed selected ensemble, selection validation optimistic where used"
+  },
+  "hard": {
+    "n": 1536,
+    "mean": 0.4016927083333333,
+    "ci95": [
+      0.2903861722804072,
+      0.5129992443862594
+    ],
+    "method": "paired/equal-stratum normal95%; fixed selected ensemble, selection validation optimistic where used"
+  },
+  "label_hard": {
+    "n": 1536,
+    "mean": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "method": "paired/equal-stratum normal95%; fixed selected ensemble, selection validation optimistic where used"
+  },
+  "set": {
+    "n": 1536,
+    "mean": 0.4016927083333333,
+    "ci95": [
+      0.2903861722804072,
+      0.5129992443862594
+    ],
+    "method": "paired/equal-stratum normal95%; fixed selected ensemble, selection validation optimistic where used"
+  },
+  "label_set": {
+    "n": 1536,
+    "mean": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "method": "paired/equal-stratum normal95%; fixed selected ensemble, selection validation optimistic where used"
+  },
+  "set_minus_hard_regret": {
+    "n_contexts": 1536,
+    "value": 0.0,
+    "ci95": null,
+    "kind": "exact baseline-policy identity under margin bound; not a sampling interval or equivalence test"
+  },
+  "privileged_label_decoder_scope": "qhas ONE actual-deal counterfactual reward vector/context. Both per-world hard/set hindsightdecoders have0regret byconstruction; neither is a private Bayes-risk diagnostic.",
+  "proxy_hard_actual_hindsight_regret": {
+    "n": 1536,
+    "mean": 0.6412760416666666,
+    "ci95": [
+      0.5053804008674698,
+      0.7771716824658634
+    ],
+    "method": "paired/equal-stratum normal95%; fixed selected ensemble, selection validation optimistic where used"
+  },
+  "proxy_hard_actual_score_minus_baseline": {
+    "n": 1536,
+    "mean": -0.23958333333333334,
+    "ci95": [
+      -0.38420598710604115,
+      -0.09496067956062557
+    ],
+    "method": "paired/equal-stratum normal95%; fixed selected ensemble, selection validation optimistic where used"
+  },
+  "proxy_set_actual_hindsight_regret": {
+    "n": 1536,
+    "mean": 0.236328125,
+    "ci95": [
+      0.1547673667926151,
+      0.3178888832073849
+    ],
+    "method": "paired/equal-stratum normal95%; fixed selected ensemble, selection validation optimistic where used"
+  },
+  "proxy_set_actual_score_minus_baseline": {
+    "n": 1536,
+    "mean": 0.16536458333333334,
+    "ci95": [
+      0.055295160038933686,
+      0.275434006627733
+    ],
+    "method": "paired/equal-stratum normal95%; fixed selected ensemble, selection validation optimistic where used"
+  },
+  "scope": "n1536independent conditional activecontexts,96strata,actual hidden-deal privateTAcounterfactual rewards,fixedensemble. Unbiased reward samples for the conditional generator,not exact posterior/privateBR/fullgame guarantees; K16uniformproxyauxiliaryonly."
+}

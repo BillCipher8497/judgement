@@ -1,0 +1,12 @@
+{
+  "deadline_epoch": 1794977102.0,
+  "driver_sha256": "34d52089aff1d8f071732205d911f45a3ff5b9c2cb89ee1e278b8a777bf0c869",
+  "scripts_sha256": {
+    "N2\\verify_continuation.py": "ba5649678612d0f20188eba8964435da10d84c81128c4e1aae5805e7b329933f",
+    "n2_training_replay.py": "599b0a83d4bf6ed7d66e892620578a3b17f0574f35e490f0c48e889afb70b052",
+    "n2_windows_check.py": "ba4429ffcc8c65fa4ec072a5aa95d04042bdf7dc90ade75012c3a3a260f4532c",
+    "n2_report.py": "3bca6ae513737922d80ac6ac8536fc63f399c8f68cf0008fa4b2d83313f62164"
+  },
+  "startedUTC": "2026-11-18T03:45:02Z",
+  "scope": "Post-outcome independent verification only, no new scientific seed/sample/selection. Exact commands are runpy versions of the listed standalone scripts."
+}

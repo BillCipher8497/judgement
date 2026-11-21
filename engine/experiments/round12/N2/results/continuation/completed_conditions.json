@@ -1,0 +1,10 @@
+{
+  "conditions": [
+    "S2R4n2_t0",
+    "S2R4n2_t-1",
+    "S3R4n3_t0",
+    "S3R4n3_t-1"
+  ],
+  "scheduling_manifest_sha256": "e727c4a0667bd142e4ba0a4b1c36b184212816adf39e37a68621cb7cbf5bb5f6",
+  "original_failed_gate_preserved": true
+}

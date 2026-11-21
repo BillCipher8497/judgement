@@ -1,0 +1,132 @@
+2026-11-20T02:03:46.4321085+00:00 PREDECLARED BEFORE N9DATA/FITS. Primary largeNT summaryMLP80 joint-minus-marginal held jointKL, n5paired2170M/domain0x4e39optimizer seeds/t95%df4 only; known N2benchmark key subsets, not fresh-hand replication. Three matched245input configurations,2losses,80epochs,5seeds,4conditions=120trajectories/240selected20/80recipes; cap2048/512/1024hand-balanced keys bysplit, unseen>=2, completeF/R. Feature/capacity/duration controls and allnulls retained. Metadata sourcegrep before reservation found no2170M-2220Mbase uses. NumPy2.5.4fixed, no Torch/core/policy/N0/oldsource/data/seeds changes. Seed audit and synthetic finite-difference/normalizer checks next, no experiment compute yet. Fresh absolute jobbound will be recorded at launch; max2x3h count-only/resource-only windows predeclared before outcomes, no scientific target/selector/loss/seed changes between. All new scope local pending Claude external, no commit/push.
+2026-11-20T02:05:46.9865425+00:00 PRIMARY/FRESH WINDOW1 BEFORE DATA/FITS: largeNT summaryMLP80 joint-minus-marginal held jointKL,n5pairedoptimizer t95%df4,known N2benchmark not new-hand replication. Complete fixed120trajectories/240selectedmodels,20/80budget,rich/summary/linear controls,2048/512/1024eligible hand-balanced cap/condition. Preflight1216732knownstates/3241newroots+5children(19446states),0collisions; finite-difference maxerror1.398e-11 and normalization/logshiftchecks passed. Fresh hardstop 2026-11-20T05:05:46.9865425+00:00, immutable per-epoch states/atomicpointers and data progress128keys; same-process bounded timer, at mostoneworker. Command cd engine; JUDGEMENT_JOB_DEADLINE=1795151146 python experiments/round12/bounded_job.py experiments/round12/N9/run.py. Frozen sources computed atjobstart, N2posteriors hashchecked; allheldevaluation afterallfitsfreeze. Max2x3hcount-onlyresource continuation predeclared; no scientific tuning/targetchanges. All uncommitted/local awaiting Claude external, no push.
+2026-11-20T02:07:26.0515201+00:00 ZERO-ROW API failure preserved worker_stderr.txt: callerexpected5encoderreturns, frozenN2encode returns4. No data.npz,fit/model/NNoutcome existed. OriginalN9sources.json,allscientificsources,seed/selector/protocol unchanged. New source-preserving api_resume.py insertsunusedNone compatibilityslot only, exact public-array fixture and adapterSHAguard; preexisting selectionIDs/UTC retained unchanged. Resume one worker WITHINoriginalhardstop 11/20/2026 00:05:46, no extra scientific window/counts/tuning. Command cd engine; JUDGEMENT_JOB_DEADLINE=1795151146 python experiments/round12/bounded_job.py experiments/round12/N9/api_resume.py. Separate api_adapter.json binds newadapterto originalfreeze; all pending external/local.
+2026-11-20T02:07:26.881927+00:00 Encoderarity adapter public fixture passed; originalsource/selection guards active; unchanged science/count resume.
+2026-11-20T02:10:37.490374+00:00 Frozen rich_mlp_joint_s0/S3R4n3_t-1
+2026-11-20T02:10:57.368497+00:00 Frozen summary_linear_marginal_s0/S2R4n2_t0
+2026-11-20T02:11:16.410997+00:00 Frozen summary_linear_marginal_s1/S2R4n2_t0
+2026-11-20T02:11:35.423918+00:00 Frozen summary_linear_marginal_s2/S2R4n2_t0
+2026-11-20T02:11:54.660120+00:00 Frozen summary_linear_marginal_s3/S2R4n2_t0
+2026-11-20T02:12:13.849648+00:00 Frozen summary_linear_marginal_s4/S2R4n2_t0
+2026-11-20T02:12:36.648800+00:00 Frozen summary_linear_joint_s0/S2R4n2_t0
+2026-11-20T02:12:59.515470+00:00 Frozen summary_linear_joint_s1/S2R4n2_t0
+2026-11-20T02:13:22.692073+00:00 Frozen summary_linear_joint_s2/S2R4n2_t0
+2026-11-20T02:13:46.373603+00:00 Frozen summary_linear_joint_s3/S2R4n2_t0
+2026-11-20T02:16:53.076943+00:00 Frozen summary_linear_joint_s4/S2R4n2_t0
+2026-11-20T02:17:13.315626+00:00 Frozen summary_mlp_marginal_s0/S2R4n2_t0
+2026-11-20T02:17:37.527154+00:00 Frozen summary_mlp_marginal_s1/S2R4n2_t0
+2026-11-20T02:18:02.115127+00:00 Frozen summary_mlp_marginal_s2/S2R4n2_t0
+2026-11-20T02:18:28.696756+00:00 Frozen summary_mlp_marginal_s3/S2R4n2_t0
+2026-11-20T02:18:55.715892+00:00 Frozen summary_mlp_marginal_s4/S2R4n2_t0
+2026-11-20T02:19:17.980682+00:00 Frozen summary_mlp_joint_s0/S2R4n2_t0
+2026-11-20T02:19:43.266534+00:00 Frozen summary_mlp_joint_s1/S2R4n2_t0
+2026-11-20T02:20:12.671643+00:00 Frozen summary_mlp_joint_s2/S2R4n2_t0
+2026-11-20T02:20:41.074705+00:00 Frozen summary_mlp_joint_s3/S2R4n2_t0
+2026-11-20T02:21:09.884875+00:00 Frozen summary_mlp_joint_s4/S2R4n2_t0
+2026-11-20T02:21:34.023752+00:00 Frozen rich_mlp_marginal_s0/S2R4n2_t0
+2026-11-20T02:21:57.586656+00:00 Frozen rich_mlp_marginal_s1/S2R4n2_t0
+2026-11-20T02:22:21.208534+00:00 Frozen rich_mlp_marginal_s2/S2R4n2_t0
+2026-11-20T02:22:45.245288+00:00 Frozen rich_mlp_marginal_s3/S2R4n2_t0
+2026-11-20T02:23:10.342091+00:00 Frozen rich_mlp_marginal_s4/S2R4n2_t0
+2026-11-20T02:23:37.581150+00:00 Frozen rich_mlp_joint_s0/S2R4n2_t0
+2026-11-20T02:23:58.983045+00:00 Frozen rich_mlp_joint_s1/S2R4n2_t0
+2026-11-20T02:24:28.356604+00:00 Frozen rich_mlp_joint_s2/S2R4n2_t0
+2026-11-20T02:24:52.259903+00:00 Frozen rich_mlp_joint_s3/S2R4n2_t0
+2026-11-20T02:25:14.996733+00:00 Frozen rich_mlp_joint_s4/S2R4n2_t0
+2026-11-20T02:25:29.220071+00:00 Frozen summary_linear_marginal_s0/S2R4n2_t-1
+2026-11-20T02:25:43.224001+00:00 Frozen summary_linear_marginal_s1/S2R4n2_t-1
+2026-11-20T02:25:58.639727+00:00 Frozen summary_linear_marginal_s2/S2R4n2_t-1
+2026-11-20T02:26:17.251696+00:00 Frozen summary_linear_marginal_s3/S2R4n2_t-1
+2026-11-20T02:26:37.675338+00:00 Frozen summary_linear_marginal_s4/S2R4n2_t-1
+2026-11-20T02:26:55.945817+00:00 Frozen summary_linear_joint_s0/S2R4n2_t-1
+2026-11-20T02:27:12.917554+00:00 Frozen summary_linear_joint_s1/S2R4n2_t-1
+2026-11-20T02:27:29.123233+00:00 Frozen summary_linear_joint_s2/S2R4n2_t-1
+2026-11-20T02:27:45.025092+00:00 Frozen summary_linear_joint_s3/S2R4n2_t-1
+2026-11-20T06:15:59.1632786+00:00 WINDOW1CUTOFF honored; long host wallclockgap observed, original05:05:46Zcut assertion stopped worker before nextbatch.40/120trajectories frozen,nextmodel checkpoint preserved atlastcompleteepoch; no heldevaluation/primarycontrast exists. Originaldata/cache/source/seed/selector/hyperparameters/counts unchanged. Starting PREDECLARED window2of2, freshabsolutehardstop 2026-11-20T09:15:59.1632786+00:00, oneworker; immutablepointerresume discards/replays only incompleteepoch deterministically. Command cd engine; JUDGEMENT_JOB_DEADLINE=1795166159 python experiments/round12/bounded_job.py experiments/round12/N9/api_resume.py. Priorerror/logs retained, source/adapterhashguards active. N10sourceonly/notdrawn. No outcome-based extension,tuning,commit/push; allpendingClaude external.
+2026-11-20T06:15:59.751530+00:00 Encoderarity adapter public fixture passed; originalsource/selection guards active; unchanged science/count resume.
+2026-11-20T06:16:07.072746+00:00 Frozen summary_linear_joint_s4/S2R4n2_t-1
+2026-11-20T06:16:19.455153+00:00 Frozen summary_mlp_marginal_s0/S2R4n2_t-1
+2026-11-20T06:16:31.893136+00:00 Frozen summary_mlp_marginal_s1/S2R4n2_t-1
+2026-11-20T06:16:44.309537+00:00 Frozen summary_mlp_marginal_s2/S2R4n2_t-1
+2026-11-20T06:16:56.638152+00:00 Frozen summary_mlp_marginal_s3/S2R4n2_t-1
+2026-11-20T06:17:09.217243+00:00 Frozen summary_mlp_marginal_s4/S2R4n2_t-1
+2026-11-20T06:17:22.899823+00:00 Frozen summary_mlp_joint_s0/S2R4n2_t-1
+2026-11-20T06:17:36.643589+00:00 Frozen summary_mlp_joint_s1/S2R4n2_t-1
+2026-11-20T06:17:51.575305+00:00 Frozen summary_mlp_joint_s2/S2R4n2_t-1
+2026-11-20T06:18:06.452291+00:00 Frozen summary_mlp_joint_s3/S2R4n2_t-1
+2026-11-20T06:18:20.141576+00:00 Frozen summary_mlp_joint_s4/S2R4n2_t-1
+2026-11-20T06:18:32.402118+00:00 Frozen rich_mlp_marginal_s0/S2R4n2_t-1
+2026-11-20T06:18:44.558504+00:00 Frozen rich_mlp_marginal_s1/S2R4n2_t-1
+2026-11-20T06:18:56.719570+00:00 Frozen rich_mlp_marginal_s2/S2R4n2_t-1
+2026-11-20T06:19:09.137743+00:00 Frozen rich_mlp_marginal_s3/S2R4n2_t-1
+2026-11-20T06:19:21.306237+00:00 Frozen rich_mlp_marginal_s4/S2R4n2_t-1
+2026-11-20T06:19:34.722481+00:00 Frozen rich_mlp_joint_s0/S2R4n2_t-1
+2026-11-20T06:19:48.335793+00:00 Frozen rich_mlp_joint_s1/S2R4n2_t-1
+2026-11-20T06:20:02.131691+00:00 Frozen rich_mlp_joint_s2/S2R4n2_t-1
+2026-11-20T06:20:15.910352+00:00 Frozen rich_mlp_joint_s3/S2R4n2_t-1
+2026-11-20T06:20:29.517439+00:00 Frozen rich_mlp_joint_s4/S2R4n2_t-1
+2026-11-20T06:20:40.418007+00:00 Frozen summary_linear_marginal_s0/S3R4n3_t0
+2026-11-20T06:20:51.317843+00:00 Frozen summary_linear_marginal_s1/S3R4n3_t0
+2026-11-20T06:21:01.519651+00:00 Frozen summary_linear_marginal_s2/S3R4n3_t0
+2026-11-20T06:21:11.433121+00:00 Frozen summary_linear_marginal_s3/S3R4n3_t0
+2026-11-20T06:21:21.364779+00:00 Frozen summary_linear_marginal_s4/S3R4n3_t0
+2026-11-20T06:21:32.976493+00:00 Frozen summary_linear_joint_s0/S3R4n3_t0
+2026-11-20T06:21:44.375172+00:00 Frozen summary_linear_joint_s1/S3R4n3_t0
+2026-11-20T06:21:55.669666+00:00 Frozen summary_linear_joint_s2/S3R4n3_t0
+2026-11-20T06:22:07.044171+00:00 Frozen summary_linear_joint_s3/S3R4n3_t0
+2026-11-20T06:22:18.461153+00:00 Frozen summary_linear_joint_s4/S3R4n3_t0
+2026-11-20T06:22:31.621207+00:00 Frozen summary_mlp_marginal_s0/S3R4n3_t0
+2026-11-20T06:22:44.496064+00:00 Frozen summary_mlp_marginal_s1/S3R4n3_t0
+2026-11-20T06:22:57.340894+00:00 Frozen summary_mlp_marginal_s2/S3R4n3_t0
+2026-11-20T06:23:10.299754+00:00 Frozen summary_mlp_marginal_s3/S3R4n3_t0
+2026-11-20T06:23:23.103189+00:00 Frozen summary_mlp_marginal_s4/S3R4n3_t0
+2026-11-20T06:23:37.290972+00:00 Frozen summary_mlp_joint_s0/S3R4n3_t0
+2026-11-20T06:23:51.593753+00:00 Frozen summary_mlp_joint_s1/S3R4n3_t0
+2026-11-20T06:24:05.771559+00:00 Frozen summary_mlp_joint_s2/S3R4n3_t0
+2026-11-20T06:24:20.060363+00:00 Frozen summary_mlp_joint_s3/S3R4n3_t0
+2026-11-20T06:24:34.404929+00:00 Frozen summary_mlp_joint_s4/S3R4n3_t0
+2026-11-20T06:24:47.198180+00:00 Frozen rich_mlp_marginal_s0/S3R4n3_t0
+2026-11-20T06:25:00.076612+00:00 Frozen rich_mlp_marginal_s1/S3R4n3_t0
+2026-11-20T06:25:12.774668+00:00 Frozen rich_mlp_marginal_s2/S3R4n3_t0
+2026-11-20T06:25:25.479099+00:00 Frozen rich_mlp_marginal_s3/S3R4n3_t0
+2026-11-20T06:25:38.328264+00:00 Frozen rich_mlp_marginal_s4/S3R4n3_t0
+2026-11-20T06:25:52.367316+00:00 Frozen rich_mlp_joint_s0/S3R4n3_t0
+2026-11-20T06:26:06.674370+00:00 Frozen rich_mlp_joint_s1/S3R4n3_t0
+2026-11-20T06:26:20.850158+00:00 Frozen rich_mlp_joint_s2/S3R4n3_t0
+2026-11-20T06:26:35.064533+00:00 Frozen rich_mlp_joint_s3/S3R4n3_t0
+2026-11-20T06:26:49.251130+00:00 Frozen rich_mlp_joint_s4/S3R4n3_t0
+2026-11-20T06:26:59.236780+00:00 Frozen summary_linear_marginal_s0/S3R4n3_t-1
+2026-11-20T06:27:09.220129+00:00 Frozen summary_linear_marginal_s1/S3R4n3_t-1
+2026-11-20T06:27:19.314603+00:00 Frozen summary_linear_marginal_s2/S3R4n3_t-1
+2026-11-20T06:27:29.247548+00:00 Frozen summary_linear_marginal_s3/S3R4n3_t-1
+2026-11-20T06:27:39.291985+00:00 Frozen summary_linear_marginal_s4/S3R4n3_t-1
+2026-11-20T06:27:50.835698+00:00 Frozen summary_linear_joint_s0/S3R4n3_t-1
+2026-11-20T06:28:02.215898+00:00 Frozen summary_linear_joint_s1/S3R4n3_t-1
+2026-11-20T06:28:13.646075+00:00 Frozen summary_linear_joint_s2/S3R4n3_t-1
+2026-11-20T06:28:25.037794+00:00 Frozen summary_linear_joint_s3/S3R4n3_t-1
+2026-11-20T06:28:36.586586+00:00 Frozen summary_linear_joint_s4/S3R4n3_t-1
+2026-11-20T06:28:49.562991+00:00 Frozen summary_mlp_marginal_s0/S3R4n3_t-1
+2026-11-20T06:29:02.370376+00:00 Frozen summary_mlp_marginal_s1/S3R4n3_t-1
+2026-11-20T06:29:15.121369+00:00 Frozen summary_mlp_marginal_s2/S3R4n3_t-1
+2026-11-20T06:29:27.854388+00:00 Frozen summary_mlp_marginal_s3/S3R4n3_t-1
+2026-11-20T06:29:40.824832+00:00 Frozen summary_mlp_marginal_s4/S3R4n3_t-1
+2026-11-20T06:29:54.843518+00:00 Frozen summary_mlp_joint_s0/S3R4n3_t-1
+2026-11-20T06:30:08.920304+00:00 Frozen summary_mlp_joint_s1/S3R4n3_t-1
+2026-11-20T06:30:22.980859+00:00 Frozen summary_mlp_joint_s2/S3R4n3_t-1
+2026-11-20T06:30:37.141554+00:00 Frozen summary_mlp_joint_s3/S3R4n3_t-1
+2026-11-20T06:30:51.422358+00:00 Frozen summary_mlp_joint_s4/S3R4n3_t-1
+2026-11-20T06:31:04.894662+00:00 Frozen rich_mlp_marginal_s0/S3R4n3_t-1
+2026-11-20T06:31:17.801294+00:00 Frozen rich_mlp_marginal_s1/S3R4n3_t-1
+2026-11-20T06:31:30.643572+00:00 Frozen rich_mlp_marginal_s2/S3R4n3_t-1
+2026-11-20T06:31:43.458849+00:00 Frozen rich_mlp_marginal_s3/S3R4n3_t-1
+2026-11-20T06:31:56.632255+00:00 Frozen rich_mlp_marginal_s4/S3R4n3_t-1
+2026-11-20T06:32:10.896940+00:00 Frozen rich_mlp_joint_s1/S3R4n3_t-1
+2026-11-20T06:32:25.473998+00:00 Frozen rich_mlp_joint_s2/S3R4n3_t-1
+2026-11-20T06:32:40.141151+00:00 Frozen rich_mlp_joint_s3/S3R4n3_t-1
+2026-11-20T06:32:54.077285+00:00 Frozen rich_mlp_joint_s4/S3R4n3_t-1
+2026-11-20T06:33:14.958306+00:00 Held N9evaluation complete: {"mean": -0.01704724550615184, "ci95": [-0.024499829219037518, -0.009594661793266167], "n_optimizer_seeds": 5, "method": "paired where contrasted; t95%df4, optimization seeds only on known deterministic held-key subset"}; allcells/nulls retained, pending separate audit/external validation.
+2026-11-20T06:37:12.9002913+00:00 All120trajectories/240selectedmodels andheldevaluation finished inwindow2; no fitterrunning. SEPARATE READ-ONLY AUDIT freshabsolute cut 2026-11-20T08:37:12.9002913+00:00, oneworker, nonewfits/chanceoutcomes/seeds. Command cd engine; JUDGEMENT_JOB_DEADLINE=1795163832 python experiments/round12/bounded_job.py experiments/round12/N9/verify.py. Independentlyreconstruct SHAselectors/richfeatures/Fsets/Rmemberships,policy-reachallsmall+32large,sourcepriorBI,allforwardfactor/DPjointKL/candidatevalidation/selection/112CIs. No resultpromotion until pass; no core/policy/olddata/source/model changes orpush.
+2026-11-20T06:40:36.9463356+00:00 Audit-reader failure preserved verify.py/verify_stderr.txt: NumPyuint8 highbyte*256 overflow in independentselector decoder, beforemodels audited. Primarydecoder casts BOTHbytes touint16 anddata/modelsources unchanged. Newverify_v2.py casts highbyte toint BEFOREmultiply, nothingelse; no target/selection/source/data/fit changes. Freshread-onlyauditcut 2026-11-20T08:40:36.9463356+00:00, oneworker, command cd engine; JUDGEMENT_JOB_DEADLINE=1795164036 python experiments/round12/bounded_job.py experiments/round12/N9/verify_v2.py. All findings stillhelduntilfullcheckpasses, no push.
+2026-11-20T06:42:49.301313+00:00 N9separate verifier complete,240selectedmodels andallreportedintervals pass; pending external/local.
+2026-11-20T06:52:47.471345+00:00 READY-FOR-REVIEW: N9newprotocol/source+adapter/preflight/caches/all120trajectories/240selectedmodels/rawlogits/KLs/verification/RESULTS/plots. Commands recordedpreflight,self_check,bounded api_resume.py,verify_v2.py,report.py.2170M/domain0x4e39,n5pairedoptimizer t95%CIs; primary {"mean": -0.01704724550615184, "ci95": [-0.024499829219037518, -0.009594661793266167], "n_optimizer_seeds": 5, "method": "paired where contrasted; t95%df4, optimization seeds only on known deterministic held-key subset"}. Allnull/adversecells retained; exact finite knownsubset/nochanceCI,feature/capacity/duration/selection limits stated; nooldsource/core/policy/seed changes, no game/causalundertraining/noveltyclaim. Separately self-checkedCodex,pendingClaudeexternal/local,no commit/push.
+2026-11-20T07:20:30.499277+00:00 SESSIONCLOSURE: allfixedtasktargets orpredeclaredgatefailure complete; separate Codexchecks pass, ready-for-review/notClaudeexternal. Fulltestreceipt283pass1skip16.37s/16.9177089swall separatelyscoped. No ownedcompute; allfiles/raw/models/errors preserved, originalsciencehashes rechecked at finalseal. Handoff HANDOFF_CLAUDE_20261120.md and LOCAL_REVIEW_LOGBOOK current; allnewlocal/uncommitted/no push.

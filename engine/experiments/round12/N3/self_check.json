@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "gradient_max_error": 2.098730581684416e-09,
+  "binary_ordering_exhaustive_16world_multisets": true,
+  "feature_length": 683,
+  "detached_observation_fixture": true,
+  "manual_prefix_and_solver_fixture": true,
+  "independent_solver_fixtures": 96,
+  "fixed_seed42_end_to_end_contexts": 4,
+  "manual_vs_engine_full_game_fixtures": 2,
+  "scope": "Synthetic diagnostic only; fixed nonreserved42fixtures, no scientific seed consumed or experiment dataset created",
+  "utc": "2026-11-18T03:53:21Z"
+}

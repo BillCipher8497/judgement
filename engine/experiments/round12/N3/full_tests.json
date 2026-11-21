@@ -1,0 +1,11 @@
+{
+  "command": "cd engine && python -m pytest -q -p no:cacheprovider",
+  "interpreter": "C:\\Users\\Arvin\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+  "exit_code": 0,
+  "wall_seconds": 16.894114899994747,
+  "passed": 283,
+  "skipped": 1,
+  "pytest_seconds": 16.26,
+  "scope": "expanded working tree; pytest testpaths engine/tests, standalone N3self_check has separate receipt; source files uncommitted pre-run gate, not clean-public checkout",
+  "completedUTC": "2026-11-18T03:55:29.779867+00:00"
+}

@@ -1,0 +1,30 @@
+{
+  "screen": {
+    "n_games": 2000,
+    "canonical_mean": 166.3465,
+    "canonical_ci95": [
+      165.0871870259162,
+      167.6058129740838
+    ],
+    "gain_fraction": 0.007310042591818884,
+    "gain_fraction_ci95": [
+      0.004945534165007282,
+      0.009674551018630486
+    ],
+    "scope": "Descriptive equal-seat normal mean CI; paired delta-method ratio CI, fixed ensembles, post hoc scale only."
+  },
+  "confirmation": {
+    "n_games": 2000,
+    "canonical_mean": 164.4895,
+    "canonical_ci95": [
+      163.23456036809213,
+      165.74443963190785
+    ],
+    "gain_fraction": 0.006760309928597267,
+    "gain_fraction_ci95": [
+      0.004276990604244756,
+      0.009243629252949777
+    ],
+    "scope": "Descriptive equal-seat normal mean CI; paired delta-method ratio CI, fixed ensembles, post hoc scale only."
+  }
+}

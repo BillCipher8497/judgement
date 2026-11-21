@@ -1,0 +1,182 @@
+{
+  "utc": "2026-11-17T20:17:12.391942+00:00",
+  "conditions": {
+    "S2R4n2_t-1": {
+      "decoder_risks": {
+        "hard": {
+          "tied_group_count": 16,
+          "best_excess": "1/42",
+          "worst_excess": "19/105"
+        },
+        "uniform": {
+          "tied_group_count": 718,
+          "best_excess": "0",
+          "worst_excess": "0"
+        },
+        "set": {
+          "tied_group_count": 718,
+          "best_excess": "0",
+          "worst_excess": "0"
+        }
+      },
+      "held_out": {
+        "discovery": {
+          "n_worlds": 162,
+          "n_keys": 41,
+          "actual_own_hands": 1,
+          "information_floor": 0.0,
+          "label_excess": {
+            "hard": 0.6111111111111112,
+            "uniform": 0.0,
+            "set": 0.0
+          }
+        },
+        "confirmation": {
+          "n_worlds": 162,
+          "n_keys": 78,
+          "actual_own_hands": 1,
+          "information_floor": 0.0,
+          "label_excess": {
+            "hard": 0.0,
+            "uniform": 0.0,
+            "set": 0.0
+          }
+        }
+      },
+      "n_exact_deals": 2520
+    },
+    "S2R4n2_t0": {
+      "decoder_risks": {
+        "hard": {
+          "tied_group_count": 0,
+          "best_excess": "0",
+          "worst_excess": "0"
+        },
+        "uniform": {
+          "tied_group_count": 696,
+          "best_excess": "0",
+          "worst_excess": "0"
+        },
+        "set": {
+          "tied_group_count": 696,
+          "best_excess": "0",
+          "worst_excess": "0"
+        }
+      },
+      "held_out": {
+        "discovery": {
+          "n_worlds": 162,
+          "n_keys": 41,
+          "actual_own_hands": 1,
+          "information_floor": 0.0,
+          "label_excess": {
+            "hard": 0.0,
+            "uniform": 0.0,
+            "set": 0.0
+          }
+        },
+        "confirmation": {
+          "n_worlds": 162,
+          "n_keys": 59,
+          "actual_own_hands": 1,
+          "information_floor": 0.0,
+          "label_excess": {
+            "hard": 0.0,
+            "uniform": 0.0,
+            "set": 0.0
+          }
+        }
+      },
+      "n_exact_deals": 2520
+    },
+    "S3R4n3_t-1": {
+      "decoder_risks": {
+        "hard": {
+          "tied_group_count": 722,
+          "best_excess": "141121/369600",
+          "worst_excess": "7819/17600"
+        },
+        "uniform": {
+          "tied_group_count": 37841,
+          "best_excess": "3/30800",
+          "worst_excess": "17/26400"
+        },
+        "set": {
+          "tied_group_count": 37850,
+          "best_excess": "0",
+          "worst_excess": "0"
+        }
+      },
+      "held_out": {
+        "discovery": {
+          "n_worlds": 38753,
+          "n_keys": 4967,
+          "actual_own_hands": 20,
+          "information_floor": 0.008825123216267128,
+          "label_excess": {
+            "hard": 0.3533919954584161,
+            "uniform": 0.0027868810156633033,
+            "set": 0.0
+          }
+        },
+        "confirmation": {
+          "n_worlds": 24340,
+          "n_keys": 2549,
+          "actual_own_hands": 16,
+          "information_floor": 0.03134757600657354,
+          "label_excess": {
+            "hard": 0.5658175842235004,
+            "uniform": 0.0009860312243221035,
+            "set": 0.0
+          }
+        }
+      },
+      "n_exact_deals": 369600
+    },
+    "S3R4n3_t0": {
+      "decoder_risks": {
+        "hard": {
+          "tied_group_count": 355,
+          "best_excess": "8293/33600",
+          "worst_excess": "101621/369600"
+        },
+        "uniform": {
+          "tied_group_count": 36286,
+          "best_excess": "191/52800",
+          "worst_excess": "2819/369600"
+        },
+        "set": {
+          "tied_group_count": 36421,
+          "best_excess": "0",
+          "worst_excess": "0"
+        }
+      },
+      "held_out": {
+        "discovery": {
+          "n_worlds": 38071,
+          "n_keys": 4672,
+          "actual_own_hands": 20,
+          "information_floor": 0.06821465157206273,
+          "label_excess": {
+            "hard": 0.20713929237477344,
+            "uniform": 0.008247747629429224,
+            "set": 0.0
+          }
+        },
+        "confirmation": {
+          "n_worlds": 24655,
+          "n_keys": 3163,
+          "actual_own_hands": 16,
+          "information_floor": 0.09856012979111742,
+          "label_excess": {
+            "hard": 0.3776921516933685,
+            "uniform": 0.014155343743662544,
+            "set": 0.0
+          }
+        }
+      },
+      "n_exact_deals": 369600
+    }
+  },
+  "scope": "Additional diagnostics; original scientific arrays/freezes untouched."
+}

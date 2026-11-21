@@ -1,0 +1,13 @@
+{
+  "reason": "Predeclared resource-only gate",
+  "gate": {
+    "pilot_deals_per_condition": 256,
+    "projected_full_traversal_seconds": 9488.445743438675,
+    "fixed_fit_joint_audit_reserve_seconds": 5400,
+    "projected_total_seconds": 14888.445743438675,
+    "remaining_seconds": 10790.37706065178,
+    "accepted": false,
+    "utc": "2026-11-18T02:03:41Z"
+  },
+  "no_complete_posterior_claim": true
+}

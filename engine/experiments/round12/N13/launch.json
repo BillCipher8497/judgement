@@ -1,0 +1,7 @@
+{
+  "start_utc": "2026-11-20T07:07:51.9550167+00:00",
+  "pid": 23324,
+  "deadline_epoch": "1795162071",
+  "seed": "NONE,deterministic fixed256key oracle diagnostic",
+  "deadline_utc": "2026-11-20T08:07:51.9550167+00:00"
+}

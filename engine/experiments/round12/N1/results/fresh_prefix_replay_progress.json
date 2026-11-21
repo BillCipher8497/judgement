@@ -1,0 +1,25 @@
+{
+  "status": "partial audit, not task validation",
+  "current_stage": "confirmation",
+  "selected_prefixes_checked_in_stage": 880,
+  "n_manual_prefixes_checked": 2816,
+  "n_sampler_decisions_checked": 880,
+  "completed_stages": {
+    "pilot": {
+      "n_manual_prefixes": 176,
+      "selected_g": "first min(704,n) and last176, de-duplicated",
+      "n_sampler_replay_decisions": 176
+    },
+    "train": {
+      "n_manual_prefixes": 880,
+      "selected_g": "first min(704,n) and last176, de-duplicated",
+      "n_sampler_replay_decisions": 0
+    },
+    "validation": {
+      "n_manual_prefixes": 880,
+      "selected_g": "first min(704,n) and last176, de-duplicated",
+      "n_sampler_replay_decisions": 0
+    }
+  },
+  "utc": "2026-11-18T01:26:28Z"
+}

@@ -1,0 +1,8 @@
+{
+  "utc": "2026-11-20T02:10:05.532662+00:00",
+  "first_largeNT_rich_joint_epoch_seconds": 0.361765200010268,
+  "projected_remaining_seconds": 6109.418880147859,
+  "remaining_window_seconds": 10540.467337846756,
+  "fits_in_window": true,
+  "scope": "timing-only conservative worst-condition extrapolation, not guaranteed; actual epoch1 retained"
+}

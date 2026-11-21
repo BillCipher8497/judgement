@@ -1,0 +1,195 @@
+{
+  "conditions": {
+    "S2R4n2_t-1": {
+      "n_exact_deals": 2520,
+      "n_private_groups": 767,
+      "n_free_root_worlds": 1944,
+      "PI": "946/105",
+      "J1": "946/105",
+      "information_floor": "0",
+      "exact_teacher_Bayes_risks": {
+        "hard_teacher_mode": {
+          "score_sum": 23160,
+          "mean": "193/21",
+          "avoidable_cost": "19/105"
+        },
+        "uniform_teacher_mode": {
+          "score_sum": 22704,
+          "mean": "946/105",
+          "avoidable_cost": "0"
+        },
+        "set_membership_mode": {
+          "score_sum": 22704,
+          "mean": "946/105",
+          "avoidable_cost": "0"
+        },
+        "J1_cost_minimizer": {
+          "score_sum": 22704,
+          "mean": "946/105",
+          "avoidable_cost": "0"
+        }
+      },
+      "coarsenings": {
+        "public_mask": {
+          "n_representation_classes": 281,
+          "exact_score_sum": 22704,
+          "exact_mean": "946/105",
+          "representation_excess": "0"
+        },
+        "own_hand_seat_mask": {
+          "n_representation_classes": 36,
+          "exact_score_sum": 23160,
+          "exact_mean": "193/21",
+          "representation_excess": "19/105"
+        }
+      },
+      "injective_full_features": true,
+      "interval": "none; exact finite population, no sampling CI",
+      "data_sha256": "8b501ca8aa6dd6dbcddca620b433e3ec9b46e4c7543a3b557345bb9d618ec20f"
+    },
+    "S2R4n2_t0": {
+      "n_exact_deals": 2520,
+      "n_private_groups": 702,
+      "n_free_root_worlds": 1944,
+      "PI": "1257/140",
+      "J1": "1257/140",
+      "information_floor": "0",
+      "exact_teacher_Bayes_risks": {
+        "hard_teacher_mode": {
+          "score_sum": 22626,
+          "mean": "1257/140",
+          "avoidable_cost": "0"
+        },
+        "uniform_teacher_mode": {
+          "score_sum": 22626,
+          "mean": "1257/140",
+          "avoidable_cost": "0"
+        },
+        "set_membership_mode": {
+          "score_sum": 22626,
+          "mean": "1257/140",
+          "avoidable_cost": "0"
+        },
+        "J1_cost_minimizer": {
+          "score_sum": 22626,
+          "mean": "1257/140",
+          "avoidable_cost": "0"
+        }
+      },
+      "coarsenings": {
+        "public_mask": {
+          "n_representation_classes": 221,
+          "exact_score_sum": 22626,
+          "exact_mean": "1257/140",
+          "representation_excess": "0"
+        },
+        "own_hand_seat_mask": {
+          "n_representation_classes": 36,
+          "exact_score_sum": 22626,
+          "exact_mean": "1257/140",
+          "representation_excess": "0"
+        }
+      },
+      "injective_full_features": true,
+      "interval": "none; exact finite population, no sampling CI",
+      "data_sha256": "b1c4f6af75f876e82ea1079d1ff77d530a48cb0ccff2e7a7593d77f454364c7a"
+    },
+    "S3R4n3_t-1": {
+      "n_exact_deals": 369600,
+      "n_private_groups": 42440,
+      "n_free_root_worlds": 361608,
+      "PI": "106419/15400",
+      "J1": "213259/30800",
+      "information_floor": "421/30800",
+      "exact_teacher_Bayes_risks": {
+        "hard_teacher_mode": {
+          "score_sum": 2723307,
+          "mean": "907769/123200",
+          "avoidable_cost": "7819/17600"
+        },
+        "uniform_teacher_mode": {
+          "score_sum": 2559336,
+          "mean": "106639/15400",
+          "avoidable_cost": "19/30800"
+        },
+        "set_membership_mode": {
+          "score_sum": 2559108,
+          "mean": "213259/30800",
+          "avoidable_cost": "0"
+        },
+        "J1_cost_minimizer": {
+          "score_sum": 2559108,
+          "mean": "213259/30800",
+          "avoidable_cost": "0"
+        }
+      },
+      "coarsenings": {
+        "public_mask": {
+          "n_representation_classes": 6743,
+          "exact_score_sum": 2638683,
+          "exact_mean": "879561/123200",
+          "representation_excess": "1061/4928"
+        },
+        "own_hand_seat_mask": {
+          "n_representation_classes": 1044,
+          "exact_score_sum": 2619002,
+          "exact_mean": "1309501/184800",
+          "representation_excess": "29947/184800"
+        }
+      },
+      "injective_full_features": true,
+      "interval": "none; exact finite population, no sampling CI",
+      "data_sha256": "91da03e8f67f262d2d40aeb637801d972085c0e2170dc4aa48391e954fe4b76f"
+    },
+    "S3R4n3_t0": {
+      "n_exact_deals": 369600,
+      "n_private_groups": 41712,
+      "n_free_root_worlds": 361608,
+      "PI": "367921/61600",
+      "J1": "446669/73920",
+      "information_floor": "25819/369600",
+      "exact_teacher_Bayes_risks": {
+        "hard_teacher_mode": {
+          "score_sum": 2334966,
+          "mean": "389161/61600",
+          "avoidable_cost": "101621/369600"
+        },
+        "uniform_teacher_mode": {
+          "score_sum": 2235144,
+          "mean": "93131/15400",
+          "avoidable_cost": "257/52800"
+        },
+        "set_membership_mode": {
+          "score_sum": 2233345,
+          "mean": "446669/73920",
+          "avoidable_cost": "0"
+        },
+        "J1_cost_minimizer": {
+          "score_sum": 2233345,
+          "mean": "446669/73920",
+          "avoidable_cost": "0"
+        }
+      },
+      "coarsenings": {
+        "public_mask": {
+          "n_representation_classes": 6388,
+          "exact_score_sum": 2265294,
+          "exact_mean": "377549/61600",
+          "representation_excess": "31949/369600"
+        },
+        "own_hand_seat_mask": {
+          "n_representation_classes": 1026,
+          "exact_score_sum": 2392944,
+          "exact_mean": "49853/7700",
+          "representation_excess": "14509/33600"
+        }
+      },
+      "injective_full_features": true,
+      "interval": "none; exact finite population, no sampling CI",
+      "data_sha256": "43282f02d3b3e1c432f8cffa93f26e30dfb6d681b45e95d97957ffec6dc9f664"
+    }
+  },
+  "source_sha256": "a1d1e08266e506572a471f466a00c1023cc0209771f7f2e184732956a4098fa4",
+  "utc": "2026-11-17T05:09:50.459388+00:00",
+  "proof_status": "pending external audit"
+}

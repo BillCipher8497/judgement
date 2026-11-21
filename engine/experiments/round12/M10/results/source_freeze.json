@@ -1,0 +1,51 @@
+{
+  "source_sha256": {
+    "engine/experiments/phase1/results/model_ta_final.json": "5de2e4ead429a0d15236cc45a23de181450fc4ba94890ee46cba8743cd859115",
+    "engine/experiments/round11/E3/predictor.py": "5ca195c4ae6e1bb5fdeae07bde4afc04809546558a8df99571a98d352f8d539a",
+    "engine/experiments/round12/common.py": "1aa6d0df6a32546ea4a33a4d929eae618eed69f83d1905922299688f37a4413a",
+    "engine/experiments/round12/learning.py": "297a95bd644c5bc86aaf85e3a31773ac37df846ab76a7dd055fb7f248b510378",
+    "engine/experiments/round12/M10/PROTOCOL.md": "483f8160bc9ad8927905d0f279cd2d1a9fcf9d7fe6201d2ccf304035cd9457c0",
+    "engine/experiments/round12/M10/RESUMPTION_2026-11-17.md": "2ba5cbbb6a3654132d9993dff347a386298910133346a3425e4616cd547e5134",
+    "engine/experiments/round12/M10/run.py": "bf674a884cff278441b62c0a17df67bb2c01b75c281dce17d1683e6887ec3be0",
+    "engine/experiments/round12/M4/pipeline.py": "464bbc18df74093b9234b665b0bc947f4c758f35020c1c301d72eb54d14c1d86",
+    "engine/experiments/round12/M4/PROTOCOL.md": "49068fd2f48f632d58e23da6029c4f148f1d16c9dee18398aedc738ba3139451",
+    "engine/experiments/round12/M4/residual.py": "f9d070b4e36c74ac7a5b893fbb3281536fea5b01a170312609c531b6feae249a",
+    "engine/experiments/round12/M5/PROTOCOL.md": "5f9d9ca209b8a306dab8b259042cc06b22c277ab170d7da44169e312a6f65fbd",
+    "engine/judgement/__init__.py": "0838f728afe0cbe159c152e51e7a242ff6640c530e416b700a81c0ee6bf9ada0",
+    "engine/judgement/bidding/__init__.py": "be1112beaa3932b2cb9c94854034d85bc3bfecb28ef025834f19547f70b448c9",
+    "engine/judgement/bidding/features.py": "047f596b75b72d3bf0315395c17231c1acdcd733805be12d60d88776a659a2ca",
+    "engine/judgement/bidding/model.py": "1765ef35d51701fc2a6d4c09e1495da0574d64f0a78358ec2ab4d66d0e75b3d7",
+    "engine/judgement/cards.py": "385a219c7754d9f2ae0c32d0114d514c0fdee108060d3f38315ea167d5845438",
+    "engine/judgement/engine.py": "004d1d41427a002e98e546e005ffca6403cd820f99539f3450c0557c0c6cc9ba",
+    "engine/judgement/policies/__init__.py": "2ce84f97204e3a592288a4f6b917de563580894c0ed3eb1da91c7eb5ef6b10e0",
+    "engine/judgement/policies/base.py": "8bd5f0feb12817ab500ccbd4f8bb5d8378ebd1d04170aff337bd15ab442a2d08",
+    "engine/judgement/policies/greedy.py": "9b2c3a82a08218760670ad20ea55ac0e691d8c9d2e8a5abbf869cadb3868322f",
+    "engine/judgement/policies/human_guide.py": "608bc2660665e70beae8825f7eda6588e90da9ec54b16af3e1b44f0f60adce80",
+    "engine/judgement/policies/random_p.py": "5871187357a09b00b2368526b5c0617d8b541f1bd58e22b5a0854ddc6e02cc01",
+    "engine/judgement/policies/ta_plus.py": "e2a64374c15e6c7e9fee4dd900fd70206cab8063e4e0250846818e318c25da4f",
+    "engine/judgement/policies/target_aware.py": "f2fd65bbf3c90908ee6d351105ccbf6f32733f6b95aecbd144da3a51d2888fc7",
+    "engine/judgement/rules.py": "f89916d039bdfd515db015d59a5343f4c416b57c65c43cc7776a9d712ce5f6ed",
+    "engine/judgement/state.py": "799a9be6d540a453d6ae4cf71f9ae569c76ab66edb22f3742a4286d6298d0c8d"
+  },
+  "originalM4_source_freeze_sha256": "8eb1d0ad29aba1062e6b171a71e72a38646305797b90a618a0f69cf5df8d1329",
+  "training_raw_sha256": {
+    "train_contexts.jsonl": "a314fdef99b22eea312caac8ec657ff6ca0b2839d59731224fdc3a5c66220da9",
+    "selection_contexts.jsonl": "ec1ddb8b3115caca1cb64a768f225b8aa541b472b931b5428cf3078678d5c4d2"
+  },
+  "normalization_sha256": "d27798429fc8e68e72f6c7ebaa48b9c03163e249e5dbd52ebfcd049fe27814ff",
+  "variants": {
+    "L": {
+      "architecture": "linear",
+      "offset": true
+    },
+    "R": {
+      "architecture": "mlp",
+      "offset": true
+    },
+    "N": {
+      "architecture": "mlp",
+      "offset": false
+    }
+  },
+  "seed_base_optimizer": 2060000000
+}

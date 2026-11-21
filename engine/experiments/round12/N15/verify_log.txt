@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "C:\Users\Arvin\OneDrive\Desktop\Judgement Research\engine\experiments\round12\bounded_job.py", line 8, in <module>
+    try:runpy.run_path(str(script),run_name='__main__')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Arvin\OneDrive\Desktop\Judgement Research\engine\experiments\round12\N15\verify.py", line 41, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\Users\Arvin\OneDrive\Desktop\Judgement Research\engine\experiments\round12\N15\verify.py", line 39, in main
+    spec=importlib.util.spec_from_file_location('n15_independent_log_reader',R/'N13/verify.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);l3,h3=m.fresh_log(F(3));l2,h2=m.fresh_log(F(2));lo=l3-F(4,3)*h2;hi=h3-F(4,3)*l2;oldlo,oldhi=map(F,a['strict_infimum_enclosure_exact_nats']);assert 0<oldlo<=lo<=hi<=oldhi
+                                                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\Arvin\OneDrive\Desktop\Judgement Research\engine\experiments\round12\N13\verify.py", line 2, in <module>
+    from lib13 import *
+ModuleNotFoundError: No module named 'lib13'

@@ -1,0 +1,1 @@
+N15manual3worldx2action check passed: both exactprivatevalues10,one-step regret0; belief-familyinfimumpositive remains separate, pendingexternal/local.

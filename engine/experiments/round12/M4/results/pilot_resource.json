@@ -1,0 +1,9 @@
+{
+  "n_contexts": 200,
+  "seconds": 0.8266577998292632,
+  "projected_context_seconds": 214.93102795560844,
+  "reserve_seconds": 7200,
+  "remaining_seconds": 21836.152913570404,
+  "performance_inspected": false,
+  "accepted": true
+}

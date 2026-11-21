@@ -1,0 +1,10 @@
+{
+  "status": "self-reviewed(Codex),pendingexternalresultaudit",
+  "smoothing_CIs_recomputed_independently": 8,
+  "zero_count_CIs_recomputed": 2,
+  "all_calibration_bin_counts_means_and_bootstrap_CIs_recomputed": 5,
+  "n_decisions": 3520,
+  "methods": "reshape/variance CI, algebraically equivalent pseudocount law, reduceat loss aggregation, bootstrap multiplicity-matrix path independent of index-mean path",
+  "checker_sha256": "d9ffa5d5d967ddda84e0f1480e3a0ee81d853e3371355aa9a795a3e1be8c10fc",
+  "utc": "2026-11-18T01:38:33Z"
+}

@@ -1,0 +1,355 @@
+{
+  "condition": "S2R4n2_t-1",
+  "summaries": {
+    "all": {
+      "n_private_keys": 12613,
+      "n_reached_own_hands": 28,
+      "exact_reach_weight": 20160,
+      "uniform_KL": 0.8940182672568043,
+      "prop_joint_KL": 0.8940182672568043,
+      "BI_KL": 0.1453869753459656,
+      "hard_bid_KL": 0.13838154732934477,
+      "share_uniform_KL_removed": {
+        "hard_bid": 0.8452139599407145,
+        "soft_BI": 0.8373780708172001,
+        "net_by_seed": [
+          0.5165187954150201,
+          0.5121723875394071,
+          0.530635682376758,
+          0.5089231165846168,
+          0.524165153210592
+        ],
+        "net_seed_summary": {
+          "mean": 0.5184830270252788,
+          "ci95": [
+            0.507463515172364,
+            0.5295025388781937
+          ],
+          "n_optimization_seeds": 5,
+          "method": "t95%CI df4 over fitting seeds only; complete chance population per fixed fit"
+        },
+        "scope": "Descriptive share of mean uniform joint KL removed; not additive, negative shares retained, no game-score meaning."
+      },
+      "raw_marginal_card_logloss": {
+        "capacity_prop": 0.727702903073374,
+        "net_by_seed": [
+          0.5561819878142021,
+          0.5596680571775666,
+          0.5542241516160907,
+          0.5642424714092055,
+          0.5541874479408121
+        ],
+        "net_seed_summary": {
+          "mean": 0.5577008231915754,
+          "ci95": [
+            0.5523818803107285,
+            0.5630197660724223
+          ],
+          "n_optimization_seeds": 5,
+          "method": "t95%CI df4 over fitting seeds only; complete chance population per fixed fit"
+        },
+        "scope": "Raw capacity/net per-card probabilities; not marginals of their structurally conditioned joint laws. Zero-card keys have zero loss but retain denominator."
+      },
+      "net_KL_by_seed_exact_population_float": [
+        0.4322410287742963,
+        0.43612679681204314,
+        0.41962027395370327,
+        0.4390317044008926,
+        0.42540504522707356
+      ],
+      "raw_unclipped_net_KL_by_seed": [
+        0.4322410287742963,
+        0.43612679681204314,
+        0.41962027395370327,
+        0.4390317044008926,
+        0.42540504522707356
+      ],
+      "net_seed_summary": {
+        "mean": 0.4304849698336018,
+        "ci95": [
+          0.4206333249408431,
+          0.4403366147263605
+        ],
+        "n_optimization_seeds": 5,
+        "method": "t95%CI df4 over fitting seeds only; complete chance population per fixed fit"
+      },
+      "primary_net_minus_BI": {
+        "mean": 0.2850979944876362,
+        "ci95": [
+          0.27524634959487754,
+          0.2949496393803948
+        ],
+        "n_optimization_seeds": 5,
+        "method": "t95%CI df4 over fitting seeds only; complete chance population per fixed fit"
+      },
+      "scope": "Full fixed-condition reached population for this split; no chance-sampling CI. Optimization interval only. All/train/validation descriptive; test primary."
+    },
+    "train": {
+      "n_private_keys": 7421,
+      "n_reached_own_hands": 16,
+      "exact_reach_weight": 11520,
+      "uniform_KL": 0.9102862466561065,
+      "prop_joint_KL": 0.9102862466561065,
+      "BI_KL": 0.14026854901533853,
+      "hard_bid_KL": 0.13292521200193513,
+      "share_uniform_KL_removed": {
+        "hard_bid": 0.8539742718400617,
+        "soft_BI": 0.845907208275849,
+        "net_by_seed": [
+          0.510901641444868,
+          0.5102146556910123,
+          0.5268768368724942,
+          0.5071983067038881,
+          0.5201326413641405
+        ],
+        "net_seed_summary": {
+          "mean": 0.5150648164152807,
+          "ci95": [
+            0.5049024065004638,
+            0.5252272263300976
+          ],
+          "n_optimization_seeds": 5,
+          "method": "t95%CI df4 over fitting seeds only; complete chance population per fixed fit"
+        },
+        "scope": "Descriptive share of mean uniform joint KL removed; not additive, negative shares retained, no game-score meaning."
+      },
+      "raw_marginal_card_logloss": {
+        "capacity_prop": 0.7075497525869435,
+        "net_by_seed": [
+          0.5362939783121913,
+          0.5387454587092516,
+          0.5337339517267576,
+          0.5429640322888336,
+          0.5331992260460043
+        ],
+        "net_seed_summary": {
+          "mean": 0.5369873294166077,
+          "ci95": [
+            0.5320118760663859,
+            0.5419627827668294
+          ],
+          "n_optimization_seeds": 5,
+          "method": "t95%CI df4 over fitting seeds only; complete chance population per fixed fit"
+        },
+        "scope": "Raw capacity/net per-card probabilities; not marginals of their structurally conditioned joint laws. Zero-card keys have zero loss but retain denominator."
+      },
+      "net_KL_by_seed_exact_population_float": [
+        0.44521950905481367,
+        0.4458448627381972,
+        0.43067750836940205,
+        0.44859060373629145,
+        0.4368166567854163
+      ],
+      "raw_unclipped_net_KL_by_seed": [
+        0.44521950905481367,
+        0.4458448627381972,
+        0.43067750836940205,
+        0.44859060373629145,
+        0.4368166567854163
+      ],
+      "net_seed_summary": {
+        "mean": 0.44142982813682413,
+        "ci95": [
+          0.43217912615848464,
+          0.4506805301151636
+        ],
+        "n_optimization_seeds": 5,
+        "method": "t95%CI df4 over fitting seeds only; complete chance population per fixed fit"
+      },
+      "primary_net_minus_BI": {
+        "mean": 0.3011612791214856,
+        "ci95": [
+          0.2919105771431461,
+          0.3104119810998251
+        ],
+        "n_optimization_seeds": 5,
+        "method": "t95%CI df4 over fitting seeds only; complete chance population per fixed fit"
+      },
+      "scope": "Full fixed-condition reached population for this split; no chance-sampling CI. Optimization interval only. All/train/validation descriptive; test primary."
+    },
+    "validation": {
+      "n_private_keys": 2629,
+      "n_reached_own_hands": 6,
+      "exact_reach_weight": 4320,
+      "uniform_KL": 0.8623651459955882,
+      "prop_joint_KL": 0.8623651459955882,
+      "BI_KL": 0.13938591542156356,
+      "hard_bid_KL": 0.13284423058977904,
+      "share_uniform_KL_removed": {
+        "hard_bid": 0.8459536181318967,
+        "soft_BI": 0.8383678699576331,
+        "net_by_seed": [
+          0.5167259954616329,
+          0.508488523875249,
+          0.5279279868241756,
+          0.5047988899856033,
+          0.5264889217008043
+        ],
+        "net_seed_summary": {
+          "mean": 0.5168860635694931,
+          "ci95": [
+            0.504000501172222,
+            0.5297716259667642
+          ],
+          "n_optimization_seeds": 5,
+          "method": "t95%CI df4 over fitting seeds only; complete chance population per fixed fit"
+        },
+        "scope": "Descriptive share of mean uniform joint KL removed; not additive, negative shares retained, no game-score meaning."
+      },
+      "raw_marginal_card_logloss": {
+        "capacity_prop": 0.7391208150432317,
+        "net_by_seed": [
+          0.5703570821006549,
+          0.574637101979775,
+          0.5692745697247773,
+          0.5793949454061794,
+          0.5683316783327848
+        ],
+        "net_seed_summary": {
+          "mean": 0.5723990755088343,
+          "ci95": [
+            0.5666946140924761,
+            0.5781035369251925
+          ],
+          "n_optimization_seeds": 5,
+          "method": "t95%CI df4 over fitting seeds only; complete chance population per fixed fit"
+        },
+        "scope": "Raw capacity/net per-card probabilities; not marginals of their structurally conditioned joint laws. Zero-card keys have zero loss but retain denominator."
+      },
+      "net_KL_by_seed_exact_population_float": [
+        0.4167586574796015,
+        0.42386236586682796,
+        0.40709845056280103,
+        0.4270441775347425,
+        0.4083394501680143
+      ],
+      "raw_unclipped_net_KL_by_seed": [
+        0.4167586574796015,
+        0.42386236586682796,
+        0.40709845056280103,
+        0.4270441775347425,
+        0.4083394501680143
+      ],
+      "net_seed_summary": {
+        "mean": 0.41662062032239744,
+        "ci95": [
+          0.4055085604244395,
+          0.4277326802203554
+        ],
+        "n_optimization_seeds": 5,
+        "method": "t95%CI df4 over fitting seeds only; complete chance population per fixed fit"
+      },
+      "primary_net_minus_BI": {
+        "mean": 0.2772347049008339,
+        "ci95": [
+          0.266122645002876,
+          0.2883467647987918
+        ],
+        "n_optimization_seeds": 5,
+        "method": "t95%CI df4 over fitting seeds only; complete chance population per fixed fit"
+      },
+      "scope": "Full fixed-condition reached population for this split; no chance-sampling CI. Optimization interval only. All/train/validation descriptive; test primary."
+    },
+    "test": {
+      "n_private_keys": 2563,
+      "n_reached_own_hands": 6,
+      "exact_reach_weight": 4320,
+      "uniform_KL": 0.8822901101198631,
+      "prop_joint_KL": 0.8822901101198631,
+      "BI_KL": 0.16503717215204086,
+      "hard_bid_KL": 0.1584690916086706,
+      "share_uniform_KL_removed": {
+        "hard_bid": 0.8203889063347408,
+        "soft_BI": 0.8129445516173588,
+        "net_by_seed": [
+          0.5317706561792683,
+          0.5211593324670482,
+          0.543623878037079,
+          0.5176996453224412,
+          0.5329884451786795
+        ],
+        "net_seed_summary": {
+          "mean": 0.5294483914369033,
+          "ci95": [
+            0.5166404174203062,
+            0.5422563654535003
+          ],
+          "n_optimization_seeds": 5,
+          "method": "t95%CI df4 over fitting seeds only; complete chance population per fixed fit"
+        },
+        "scope": "Descriptive share of mean uniform joint KL removed; not additive, negative shares retained, no game-score meaning."
+      },
+      "raw_marginal_card_logloss": {
+        "capacity_prop": 0.7700267257340073,
+        "net_by_seed": [
+          0.59504158553311,
+          0.6004926082908676,
+          0.5938142665456272,
+          0.6058325017332257,
+          0.5960118092683279
+        ],
+        "net_seed_summary": {
+          "mean": 0.5982385542742317,
+          "ci95": [
+            0.5921082627620988,
+            0.6043688457863645
+          ],
+          "n_optimization_seeds": 5,
+          "method": "t95%CI df4 over fitting seeds only; complete chance population per fixed fit"
+        },
+        "scope": "Raw capacity/net per-card probabilities; not marginals of their structurally conditioned joint laws. Zero-card keys have zero loss but retain denominator."
+      },
+      "net_KL_by_seed_exact_population_float": [
+        0.41311411932094455,
+        0.42247638528751685,
+        0.40265613890274166,
+        0.4255288330393124,
+        0.4120396761305514
+      ],
+      "raw_unclipped_net_KL_by_seed": [
+        0.41311411932094455,
+        0.42247638528751685,
+        0.40265613890274166,
+        0.4255288330393124,
+        0.4120396761305514
+      ],
+      "net_seed_summary": {
+        "mean": 0.4151630305362134,
+        "ci95": [
+          0.4038626817306976,
+          0.4264633793417292
+        ],
+        "n_optimization_seeds": 5,
+        "method": "t95%CI df4 over fitting seeds only; complete chance population per fixed fit"
+      },
+      "primary_net_minus_BI": {
+        "mean": 0.2501258583841725,
+        "ci95": [
+          0.23882550957865675,
+          0.2614262071896883
+        ],
+        "n_optimization_seeds": 5,
+        "method": "t95%CI df4 over fitting seeds only; complete chance population per fixed fit"
+      },
+      "scope": "Full fixed-condition reached population for this split; no chance-sampling CI. Optimization interval only. All/train/validation descriptive; test primary."
+    }
+  },
+  "raw_chunks_sha256": {
+    "0000000.npz": "655aee3c4a481a6797a6573697a0cdf01508ed533b0d54e09b2ac5a2d4904ff3",
+    "0001024.npz": "9593e16d0b725ec99d7f58b9eb3b4dd5aa066f79cf1a8fc0cd0091e051ecaa0d",
+    "0002048.npz": "8883c0d41f723cb19080f93acf4ab1b5abea2b837f7dcc7f277eb6c03db6476b",
+    "0003072.npz": "22d90aa7f0c8ee653343b64463dd2196a8992a8bb5406ef736db33ca3a1603e3",
+    "0004096.npz": "87a081e4addc290636fb64c5454049e1cc2e781c744d155ed5bf4b227048a85e",
+    "0005120.npz": "0d7109b6c9a036ce2bd802ae9dfd58bb3ed7ce2402afcc27e5d1b84efa062761",
+    "0006144.npz": "078471db85fa540ba2b7e4594580840120467352d6c36420f1974e199198b9ec",
+    "0007168.npz": "bdd440b5bdf8017c70a3c43a297b890ee6966e42a4d8994b559d7637c07aa001",
+    "0008192.npz": "afbbae65b52f35da39331140b443b3a9f01f48326df79ccf6f003664d57c5938",
+    "0009216.npz": "07b7ce63e5c34886279faac9b339b724a83c368690b4af8f79b49833cc06a67e",
+    "0010240.npz": "0ee5957f53c76cbcf4a5f3d14f65752ebcb415987b88196b55095761c480ac54",
+    "0011264.npz": "f9404a7bfff6231809274f24a2f37e5704cc5e3f3ac0d9ee57941eb6d8bfad77",
+    "0012288.npz": "90ef9c91a7dbaec945dc531f136be719e84d620e5f5e1681947d5150e4c0492f"
+  },
+  "source_freeze_sha256": "92d32879faa79ecf53372647c8b6b1038dccbff1bec97f069982bf391ff1051d",
+  "limitations": "Fixed private all-TA/myopic profile, tiny all-dealt game. Summary features and factorized-joint family may lose information. Own-hand/key split shares latent deals across actors. New algebra pending external audit; no team score/bound or strategy-fusion claim.",
+  "utc": "2026-11-18T02:19:24Z"
+}

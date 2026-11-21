@@ -1,0 +1,11 @@
+{
+  "hard_stop_epoch": 1794985095,
+  "source_commit": "55971df8371c3e38cf6a4d77de62d323af72d986",
+  "stdout": "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N3/worker_20261118T035815Z_stdout.txt",
+  "hard_stopUTC": "2026-11-18T06:58:15.0000000+00:00",
+  "max_windows": 2,
+  "pid": 26432,
+  "stderr": "C:\\Users\\Arvin\\OneDrive\\Desktop\\Judgement Research\\engine\\experiments\\round12\\N3/worker_20261118T035815Z_stderr.txt",
+  "startedUTC": "2026-11-18T03:58:15.8815690+00:00",
+  "window": 1
+}

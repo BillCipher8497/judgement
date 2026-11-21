@@ -1,0 +1,49 @@
+{
+  "labels": {
+    "pilot": {
+      "all_raw_features_and_sample_prefixes": 192,
+      "independent_manual_MaxN_worlds": 3072,
+      "sampler_replay_scope": "Every saved context/seed prefix and all16worlds; same defined structural sampler, independent solver/rules"
+    },
+    "train": {
+      "all_raw_features_and_sample_prefixes": 9600,
+      "independent_manual_MaxN_worlds": 153600,
+      "sampler_replay_scope": "Every saved context/seed prefix and all16worlds; same defined structural sampler, independent solver/rules"
+    },
+    "validation": {
+      "all_raw_features_and_sample_prefixes": 2400,
+      "independent_manual_MaxN_worlds": 38400,
+      "sampler_replay_scope": "Every saved context/seed prefix and all16worlds; same defined structural sampler, independent solver/rules"
+    },
+    "held": {
+      "all_raw_features_and_sample_prefixes": 2400,
+      "independent_manual_MaxN_worlds": 38400,
+      "sampler_replay_scope": "Every saved context/seed prefix and all16worlds; same defined structural sampler, independent solver/rules"
+    }
+  },
+  "models": {
+    "models": 40,
+    "candidates_per_fit": 16,
+    "best_student_checked": true
+  },
+  "held_report": {
+    "n_contexts": 2400,
+    "all_label_and_student_surrogate_costs_and_paired_CIs_checked": true,
+    "scope": "Same finite-K surrogate, not actual TA continuation or true posterior"
+  },
+  "games": {
+    "screen": {
+      "n_complete_blocks": 2000,
+      "all_round_scores_hook_ties_and_paired_CIs_checked": true,
+      "independent_deal_rules_and_forward_full_game_replays": 72
+    },
+    "confirmation": {
+      "n_complete_blocks": 2000,
+      "all_round_scores_hook_ties_and_paired_CIs_checked": true,
+      "independent_deal_rules_and_forward_full_game_replays": 72
+    }
+  },
+  "status": "self-checked(Codex); pending external audit",
+  "limitations": "Every saved context and sampled teacher root checked by manual solver/rules/seed-prefix path; this does not enumerate the full52card chance posterior. Sampler and fixed baseline policy functions reused as definitions. All game totals/CIs and144manual game/deal/forward replays checked; not every game independently re-simulated.",
+  "utc": "2026-11-18T04:17:40Z"
+}

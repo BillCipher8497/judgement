@@ -1,0 +1,7 @@
+{
+  "job": 1,
+  "startedUTC": "2026-11-18T02:18:58Z",
+  "absolute_cutoff_epoch": 1794979137.0,
+  "source_manifest_sha256": "e727c4a0667bd142e4ba0a4b1c36b184212816adf39e37a68621cb7cbf5bb5f6",
+  "status": "started; see append-only event log for completion"
+}

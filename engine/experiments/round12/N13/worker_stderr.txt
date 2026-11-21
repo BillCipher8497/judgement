@@ -1,0 +1,2 @@
+C:\Users\Arvin\OneDrive\Desktop\Judgement Research\engine\experiments\round12\N13\run.py:22: OptimizeWarning: Unrecognized options detected: {'threads': 1}. These will be passed to HiGHS verbatim.
+  outside=np.ones(len(r.F));outside[r.posterior]=0;lp=linprog(-outside,A_eq=A,b_eq=counts/r.count,bounds=(0,None),method='highs',options={'threads':1,'primal_feasibility_tolerance':1e-9,'dual_feasibility_tolerance':1e-9})

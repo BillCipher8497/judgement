@@ -1,0 +1,2 @@
+{'C1_no_RNG_source_check': True, 'C1_no_RNG_dynamic_fixture': True, 'C1_cold_warm_repeatability': True, 'fixed_lower_bid_and_card_ties': True, 'C2_manual_hook_argmax_fixture': True, 'scope': 'Synthetic fixtures only; no experiment observations or training labels collected; in-memory patches restored.'}
+Synthetic exact allocation/DP/direct-KL, soft-label gradient and observable encoder checks pass; no game data generated

@@ -1,0 +1,36 @@
+{
+  "status": "pass",
+  "n_models": 200,
+  "n_held_out_rows": 400,
+  "primary_recomputed_from_world_costs": {
+    "discovery": {
+      "n_training_seeds": 5,
+      "mean": -0.3334296699610353,
+      "ci95": [
+        -0.3590730565792,
+        -0.30778628334287056
+      ]
+    },
+    "confirmation": {
+      "n_training_seeds": 5,
+      "mean": -0.5378471651602301,
+      "ci95": [
+        -0.5801773242169993,
+        -0.4955170061034609
+      ]
+    }
+  },
+  "checks": [
+    "independent241encoder",
+    "raw-world group sums/membership identity",
+    "own-hand SHA partitions",
+    "independent forward/decoder",
+    "all four candidate validation selections",
+    "all100epochs",
+    "raw-world held-out integer scores",
+    "seed-t95CIs"
+  ],
+  "source_sha256": "d9fd24df3da6bc62e780669ba0e4ed77be98eae493915a55d925b400ce001812",
+  "utc": "2026-11-17T06:03:45.870261+00:00",
+  "external_audit": false
+}

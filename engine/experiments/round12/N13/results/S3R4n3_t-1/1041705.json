@@ -1,0 +1,52 @@
+{
+  "tag": "S3R4n3_t-1",
+  "key_id": 1041705,
+  "reach": 1,
+  "n_structural_worlds": 60,
+  "n_posterior_worlds": 1,
+  "lp_success": true,
+  "lp_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "lp_proposal_exact_feasible": true,
+  "lp_proposal_weights": {
+    "28": "1"
+  },
+  "fallback_P_if_infeasible": false,
+  "epsilon": "0",
+  "mixture_weights": {
+    "28": "1"
+  },
+  "entropy_gain_enclosure_exact_nats": [
+    "0",
+    "0"
+  ],
+  "certified_KL_lower_nats": "0",
+  "numeric_free_potential_KL": 1.9632295789051568e-10,
+  "numeric_gradient_linf": 7.880240904256652e-11,
+  "numeric_optimizer_success": true,
+  "numeric_optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+  "numeric_iterations": 32,
+  "theta": [
+    4.872827955690931,
+    -4.8728163366962685,
+    0.0,
+    -7.1626138291440125,
+    7.162625916187051,
+    0.0,
+    4.872828353741129,
+    -4.872816313942002,
+    0.0,
+    -3.1842652508116887,
+    -2.760575351367753,
+    5.944852341358407,
+    -5.0063555820401,
+    10.482279805659363,
+    -5.475911862721048,
+    -3.1842651770831267,
+    -2.7605752952987985,
+    5.9448525184063925,
+    8.791878989539077,
+    -2.378097976600293,
+    -6.41376921184036
+  ],
+  "scope": "Exact rational moment/entropy certificate under pending external lemma; numeric potential objective not a rigorous optimum/certificate. Known deterministic toy keys, no samplingCI."
+}

@@ -1,0 +1,962 @@
+{
+  "stages": {
+    "screen": {
+      "stage": "screen",
+      "base": 1920000000,
+      "pool": "model",
+      "n_triplets": 2000,
+      "n_round_records_checked": 150000,
+      "contrasts": {
+        "bce-canonical": {
+          "score": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": 1.216,
+            "ci95": [
+              0.8242435978329419,
+              1.607756402167058
+            ],
+            "halfwidth": 0.3917564021670581,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "ties_as_win": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": 0.0205,
+            "ci95": [
+              0.008575606282453515,
+              0.03242439371754649
+            ],
+            "halfwidth": 0.011924393717546486,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "score_familywise_sensitivity": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": 1.216,
+            "ci95": [
+              0.71676933146492,
+              1.71523066853508
+            ],
+            "halfwidth": 0.49923066853507997,
+            "method": "Bonferroni4-stage sensitivity98.75%normalCI"
+          }
+        },
+        "direct-canonical": {
+          "score": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": 1.319,
+            "ci95": [
+              0.9356090513465154,
+              1.7023909486534845
+            ],
+            "halfwidth": 0.38339094865348455,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "ties_as_win": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": 0.022,
+            "ci95": [
+              0.010525116248334868,
+              0.03347488375166513
+            ],
+            "halfwidth": 0.011474883751665131,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "score_familywise_sensitivity": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": 1.319,
+            "ci95": [
+              0.8304297595449175,
+              1.8075702404550824
+            ],
+            "halfwidth": 0.4885702404550825,
+            "method": "Bonferroni4-stage sensitivity98.75%normalCI"
+          }
+        },
+        "bce-direct": {
+          "score": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": -0.10300000000000001,
+            "ci95": [
+              -0.409238333260741,
+              0.20323833326074095
+            ],
+            "halfwidth": 0.30623833326074096,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "ties_as_win": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": -0.0015,
+            "ci95": [
+              -0.01144784866119162,
+              0.008447848661191621
+            ],
+            "halfwidth": 0.009947848661191621,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "score_familywise_sensitivity": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": -0.10300000000000001,
+            "ci95": [
+              -0.4932516129899356,
+              0.2872516129899355
+            ],
+            "halfwidth": 0.39025161298993555,
+            "method": "Bonferroni4-stage sensitivity98.75%normalCI"
+          }
+        }
+      }
+    },
+    "confirmation": {
+      "stage": "confirmation",
+      "base": 1930000000,
+      "pool": "model",
+      "n_triplets": 2000,
+      "n_round_records_checked": 150000,
+      "contrasts": {
+        "bce-canonical": {
+          "score": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": 1.112,
+            "ci95": [
+              0.7052910961691267,
+              1.5187089038308734
+            ],
+            "halfwidth": 0.40670890383087344,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "ties_as_win": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": 0.01,
+            "ci95": [
+              -0.0009075258900487684,
+              0.020907525890048767
+            ],
+            "halfwidth": 0.010907525890048769,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "score_familywise_sensitivity": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": 1.112,
+            "ci95": [
+              0.593714767555802,
+              1.6302852324441983
+            ],
+            "halfwidth": 0.5182852324441981,
+            "method": "Bonferroni4-stage sensitivity98.75%normalCI"
+          }
+        },
+        "direct-canonical": {
+          "score": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": 0.9944999999999999,
+            "ci95": [
+              0.6173813676943763,
+              1.3716186323056236
+            ],
+            "halfwidth": 0.3771186323056236,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "ties_as_win": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": 0.01,
+            "ci95": [
+              -0.0004543357067840637,
+              0.020454335706784066
+            ],
+            "halfwidth": 0.010454335706784064,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "score_familywise_sensitivity": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": 0.9944999999999999,
+            "ci95": [
+              0.5139228201976207,
+              1.4750771798023792
+            ],
+            "halfwidth": 0.48057717980237924,
+            "method": "Bonferroni4-stage sensitivity98.75%normalCI"
+          }
+        },
+        "bce-direct": {
+          "score": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": 0.1175,
+            "ci95": [
+              -0.19062644290166086,
+              0.42562644290166085
+            ],
+            "halfwidth": 0.30812644290166086,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "ties_as_win": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": 0.0,
+            "ci95": [
+              -0.008643999946213574,
+              0.008643999946213574
+            ],
+            "halfwidth": 0.008643999946213574,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "score_familywise_sensitivity": {
+            "n_games": 2000,
+            "n_by_seat": [
+              500,
+              500,
+              500,
+              500
+            ],
+            "mean": 0.1175,
+            "ci95": [
+              -0.2751577057381072,
+              0.5101577057381073
+            ],
+            "halfwidth": 0.3926577057381072,
+            "method": "Bonferroni4-stage sensitivity98.75%normalCI"
+          }
+        }
+      }
+    },
+    "human_screen": {
+      "stage": "human_screen",
+      "base": 1950000000,
+      "pool": "human",
+      "n_triplets": 1000,
+      "n_round_records_checked": 75000,
+      "contrasts": {
+        "bce-canonical": {
+          "score": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": 0.443,
+            "ci95": [
+              -0.15836893700421067,
+              1.0443689370042106
+            ],
+            "halfwidth": 0.6013689370042107,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "ties_as_win": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": -0.003,
+            "ci95": [
+              -0.021004445858807508,
+              0.01500444585880751
+            ],
+            "halfwidth": 0.01800444585880751,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "score_familywise_sensitivity": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": 0.443,
+            "ci95": [
+              -0.3233482071923302,
+              1.2093482071923303
+            ],
+            "halfwidth": 0.7663482071923302,
+            "method": "Bonferroni4-stage sensitivity98.75%normalCI"
+          }
+        },
+        "direct-canonical": {
+          "score": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": 0.26,
+            "ci95": [
+              -0.32385429832337687,
+              0.8438542983233769
+            ],
+            "halfwidth": 0.5838542983233769,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "ties_as_win": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": -0.007,
+            "ci95": [
+              -0.023961368248210567,
+              0.009961368248210568
+            ],
+            "halfwidth": 0.016961368248210568,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "score_familywise_sensitivity": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": 0.26,
+            "ci95": [
+              -0.48402861080688453,
+              1.0040286108068845
+            ],
+            "halfwidth": 0.7440286108068845,
+            "method": "Bonferroni4-stage sensitivity98.75%normalCI"
+          }
+        },
+        "bce-direct": {
+          "score": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": 0.183,
+            "ci95": [
+              -0.29720954207386924,
+              0.6632095420738693
+            ],
+            "halfwidth": 0.48020954207386923,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "ties_as_win": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": 0.004,
+            "ci95": [
+              -0.010936214581482698,
+              0.0189362145814827
+            ],
+            "halfwidth": 0.014936214581482699,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "score_familywise_sensitivity": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": 0.183,
+            "ci95": [
+              -0.42895000107294007,
+              0.79495000107294
+            ],
+            "halfwidth": 0.6119500010729401,
+            "method": "Bonferroni4-stage sensitivity98.75%normalCI"
+          }
+        }
+      }
+    },
+    "human_confirmation": {
+      "stage": "human_confirmation",
+      "base": 1970000000,
+      "pool": "human",
+      "n_triplets": 1000,
+      "n_round_records_checked": 75000,
+      "contrasts": {
+        "bce-canonical": {
+          "score": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": 0.04299999999999997,
+            "ci95": [
+              -0.5363351547085026,
+              0.6223351547085024
+            ],
+            "halfwidth": 0.5793351547085025,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "ties_as_win": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": -0.014,
+            "ci95": [
+              -0.032144009023747075,
+              0.004144009023747076
+            ],
+            "halfwidth": 0.018144009023747076,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "score_familywise_sensitivity": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": 0.04299999999999997,
+            "ci95": [
+              -0.6952696874668196,
+              0.7812696874668195
+            ],
+            "halfwidth": 0.7382696874668195,
+            "method": "Bonferroni4-stage sensitivity98.75%normalCI"
+          }
+        },
+        "direct-canonical": {
+          "score": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": 0.20400000000000001,
+            "ci95": [
+              -0.36538831512774833,
+              0.7733883151277483
+            ],
+            "halfwidth": 0.5693883151277483,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "ties_as_win": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": -0.01,
+            "ci95": [
+              -0.02815930823302496,
+              0.00815930823302496
+            ],
+            "halfwidth": 0.01815930823302496,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "score_familywise_sensitivity": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": 0.20400000000000001,
+            "ci95": [
+              -0.5215940366127629,
+              0.9295940366127629
+            ],
+            "halfwidth": 0.7255940366127629,
+            "method": "Bonferroni4-stage sensitivity98.75%normalCI"
+          }
+        },
+        "bce-direct": {
+          "score": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": -0.16099999999999998,
+            "ci95": [
+              -0.6288043826714178,
+              0.30680438267141785
+            ],
+            "halfwidth": 0.46780438267141783,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "ties_as_win": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": -0.004,
+            "ci95": [
+              -0.017601982373830365,
+              0.009601982373830366
+            ],
+            "halfwidth": 0.013601982373830366,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "score_familywise_sensitivity": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": -0.16099999999999998,
+            "ci95": [
+              -0.757141616098215,
+              0.43514161609821506
+            ],
+            "halfwidth": 0.596141616098215,
+            "method": "Bonferroni4-stage sensitivity98.75%normalCI"
+          }
+        }
+      }
+    },
+    "greedy_screen": {
+      "stage": "greedy_screen",
+      "base": 1960000000,
+      "pool": "greedy",
+      "n_triplets": 1000,
+      "n_round_records_checked": 75000,
+      "contrasts": {
+        "bce-canonical": {
+          "score": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": 0.030999999999999958,
+            "ci95": [
+              -0.5413875910464305,
+              0.6033875910464304
+            ],
+            "halfwidth": 0.5723875910464304,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "ties_as_win": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": -0.006,
+            "ci95": [
+              -0.02436880015888649,
+              0.012368800158886492
+            ],
+            "halfwidth": 0.018368800158886492,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "score_familywise_sensitivity": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": 0.030999999999999958,
+            "ci95": [
+              -0.6984161324706024,
+              0.7604161324706022
+            ],
+            "halfwidth": 0.7294161324706023,
+            "method": "Bonferroni4-stage sensitivity98.75%normalCI"
+          }
+        },
+        "direct-canonical": {
+          "score": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": -0.09300000000000003,
+            "ci95": [
+              -0.67499306176187,
+              0.48899306176187
+            ],
+            "halfwidth": 0.58199306176187,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "ties_as_win": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": 0.003999999999999999,
+            "ci95": [
+              -0.01476762657420793,
+              0.02276762657420793
+            ],
+            "halfwidth": 0.01876762657420793,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "score_familywise_sensitivity": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": -0.09300000000000003,
+            "ci95": [
+              -0.8346567634860418,
+              0.6486567634860416
+            ],
+            "halfwidth": 0.7416567634860417,
+            "method": "Bonferroni4-stage sensitivity98.75%normalCI"
+          }
+        },
+        "bce-direct": {
+          "score": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": 0.12399999999999999,
+            "ci95": [
+              -0.3377394034904786,
+              0.5857394034904786
+            ],
+            "halfwidth": 0.4617394034904786,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "ties_as_win": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": -0.01,
+            "ci95": [
+              -0.02543705363401962,
+              0.005437053634019619
+            ],
+            "halfwidth": 0.015437053634019619,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "score_familywise_sensitivity": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": 0.12399999999999999,
+            "ci95": [
+              -0.4644127733928941,
+              0.7124127733928941
+            ],
+            "halfwidth": 0.5884127733928941,
+            "method": "Bonferroni4-stage sensitivity98.75%normalCI"
+          }
+        }
+      }
+    },
+    "greedy_confirmation": {
+      "stage": "greedy_confirmation",
+      "base": 1980000000,
+      "pool": "greedy",
+      "n_triplets": 1000,
+      "n_round_records_checked": 75000,
+      "contrasts": {
+        "bce-canonical": {
+          "score": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": 0.168,
+            "ci95": [
+              -0.3955654835357926,
+              0.7315654835357926
+            ],
+            "halfwidth": 0.5635654835357926,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "ties_as_win": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": 0.009000000000000001,
+            "ci95": [
+              -0.007746247340822361,
+              0.025746247340822363
+            ],
+            "halfwidth": 0.016746247340822362,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "score_familywise_sensitivity": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": 0.168,
+            "ci95": [
+              -0.5501737721516357,
+              0.8861737721516357
+            ],
+            "halfwidth": 0.7181737721516357,
+            "method": "Bonferroni4-stage sensitivity98.75%normalCI"
+          }
+        },
+        "direct-canonical": {
+          "score": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": -0.06600000000000003,
+            "ci95": [
+              -0.6137521764022611,
+              0.481752176402261
+            ],
+            "halfwidth": 0.547752176402261,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "ties_as_win": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": 0.013000000000000001,
+            "ci95": [
+              -0.0030394443513608524,
+              0.029039444351360855
+            ],
+            "halfwidth": 0.016039444351360854,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "score_familywise_sensitivity": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": -0.06600000000000003,
+            "ci95": [
+              -0.7640222498067448,
+              0.6320222498067447
+            ],
+            "halfwidth": 0.6980222498067448,
+            "method": "Bonferroni4-stage sensitivity98.75%normalCI"
+          }
+        },
+        "bce-direct": {
+          "score": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": 0.234,
+            "ci95": [
+              -0.2202270184632438,
+              0.6882270184632439
+            ],
+            "halfwidth": 0.4542270184632438,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "ties_as_win": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": -0.004,
+            "ci95": [
+              -0.020415462590137164,
+              0.012415462590137163
+            ],
+            "halfwidth": 0.016415462590137164,
+            "method": "equal-seat paired normal95%CI"
+          },
+          "score_familywise_sensitivity": {
+            "n_games": 1000,
+            "n_by_seat": [
+              250,
+              250,
+              250,
+              250
+            ],
+            "mean": 0.234,
+            "ci95": [
+              -0.34483944420492585,
+              0.8128394442049258
+            ],
+            "halfwidth": 0.5788394442049258,
+            "method": "Bonferroni4-stage sensitivity98.75%normalCI"
+          }
+        }
+      }
+    }
+  },
+  "utc": "2026-11-17T06:08:38.628074+00:00",
+  "status": "pass",
+  "verifier_sha256": "9b39eaaeb77683becacec07ed8631392de2d916b8d082107c33a894d445ba33d",
+  "scope": "Separate same-investigator raw/replay/selection/CI checks, not an external audit.95%normal intervals approximate and marginal."
+}

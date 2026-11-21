@@ -1,0 +1,43 @@
+{
+  "tag": "S2R4n2_t0",
+  "key_id": 4916,
+  "reach": 1,
+  "n_structural_worlds": 3,
+  "n_posterior_worlds": 1,
+  "lp_success": true,
+  "lp_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "lp_proposal_exact_feasible": true,
+  "lp_proposal_weights": {
+    "2": "1"
+  },
+  "fallback_P_if_infeasible": false,
+  "epsilon": "0",
+  "mixture_weights": {
+    "2": "1"
+  },
+  "entropy_gain_enclosure_exact_nats": [
+    "0",
+    "0"
+  ],
+  "certified_KL_lower_nats": "0",
+  "numeric_free_potential_KL": 9.376321941090282e-11,
+  "numeric_gradient_linf": 9.376321941090282e-11,
+  "numeric_optimizer_success": true,
+  "numeric_optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+  "numeric_iterations": 32,
+  "theta": [
+    0.0,
+    0.0,
+    -8.865405608684685e-07,
+    -7.9278001981749044,
+    7.927799488103876,
+    0.0,
+    3.9638992762115506,
+    -3.9639000990874433,
+    0.0,
+    3.9638992762115506,
+    -3.9639000990874433,
+    0.0
+  ],
+  "scope": "Exact rational moment/entropy certificate under pending external lemma; numeric potential objective not a rigorous optimum/certificate. Known deterministic toy keys, no samplingCI."
+}

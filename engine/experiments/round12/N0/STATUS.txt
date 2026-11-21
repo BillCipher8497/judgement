@@ -1,0 +1,3 @@
+2026-11-17T20:19:02Z PREDECLARED (Claude pilot): primary = net - bi mean log-loss per decision on test (base 2100M offset 10M, K=200). Pilot only. Hard stop 2026-11-17 21:00 UTC.
+2026-11-17T20:23:07Z pilot finished rc=0
+2026-11-17T20:23:49Z Pilot analysed; raw fit.json comparison invalid (in-play selection leakage); valid conditional comparison in RESULTS.md.

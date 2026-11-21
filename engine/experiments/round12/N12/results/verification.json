@@ -1,0 +1,11 @@
+{
+  "utc": "2026-11-20T07:04:46.538312+00:00",
+  "all_structural_F_sets_and_integer_payoffs_manually_replayed": true,
+  "n_integer_world_action_values": 49126,
+  "n_selected_recipes": 240,
+  "all_forwards_probability_decisions_rationals_match": true,
+  "n_intervals_recomputed": 160,
+  "source_sha256": "20ef0de75a6533e4b8aa54d2005ae8cbd57b9398126804d841c169a3f2667e46",
+  "evaluation_sha256": "74345a6358cc1b11d62f48a13aea35cd61dbb1f5fe3d736b94ccaf6f26e6334e",
+  "scope": "Separate Codex check; original R membership relies on separately audited immutable N9/N2supports; not external validation, new seed replication or a solved private game. Pending Claude, local."
+}

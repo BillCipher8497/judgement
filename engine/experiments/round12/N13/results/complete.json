@@ -1,0 +1,57 @@
+{
+  "utc": "2026-11-20T07:07:55.017063+00:00",
+  "summaries": {
+    "S2R4n2_t0": {
+      "n_keys": 64,
+      "reach": 123,
+      "n_strict_positive_certificates": 1,
+      "n_exact_LP_reconstruction_failures": 0,
+      "n_numerical_optimizer_failures": 0,
+      "reach_weighted_certified_lower_exact_nats": "14154818054937253965681721222507380263/1743947130469809625249794863087812083712",
+      "reach_weighted_numeric_potential_KL": 0.013534147762072478,
+      "sampling_CI": null
+    },
+    "S2R4n2_t-1": {
+      "n_keys": 64,
+      "reach": 135,
+      "n_strict_positive_certificates": 1,
+      "n_exact_LP_reconstruction_failures": 0,
+      "n_numerical_optimizer_failures": 1,
+      "reach_weighted_certified_lower_exact_nats": "18907152591265203651055096192727094353/5742264941790836570944446500411088568320",
+      "reach_weighted_numeric_potential_KL": 0.0053339449345908155,
+      "sampling_CI": null
+    },
+    "S3R4n3_t0": {
+      "n_keys": 64,
+      "reach": 236,
+      "n_strict_positive_certificates": 7,
+      "n_exact_LP_reconstruction_failures": 0,
+      "n_numerical_optimizer_failures": 1,
+      "reach_weighted_certified_lower_exact_nats": "7080167034194504108440530309239629598087/80306638593341477377356407353897297903616",
+      "reach_weighted_numeric_potential_KL": 0.34188802932908113,
+      "sampling_CI": null
+    },
+    "S3R4n3_t-1": {
+      "n_keys": 64,
+      "reach": 170,
+      "n_strict_positive_certificates": 6,
+      "n_exact_LP_reconstruction_failures": 0,
+      "n_numerical_optimizer_failures": 1,
+      "reach_weighted_certified_lower_exact_nats": "119456011386581294114109985962707667077/1807750074267485587149177601981268623360",
+      "reach_weighted_numeric_potential_KL": 0.20300688413125925,
+      "sampling_CI": null
+    }
+  },
+  "primary_largeNT": {
+    "n_keys": 64,
+    "reach": 170,
+    "n_strict_positive_certificates": 6,
+    "n_exact_LP_reconstruction_failures": 0,
+    "n_numerical_optimizer_failures": 1,
+    "reach_weighted_certified_lower_exact_nats": "119456011386581294114109985962707667077/1807750074267485587149177601981268623360",
+    "reach_weighted_numeric_potential_KL": 0.20300688413125925,
+    "sampling_CI": null
+  },
+  "sources_sha256": "195142975f70e5c5a326a154fc4586962ae32765165807804fa962a2f9c2ecbc",
+  "status": "complete, separate arithmetic audit/Claude external pending"
+}

@@ -1,0 +1,91 @@
+FrozenR_s0; selectionepoch10; held-out ablationgames untouched.
+FrozenR_s1; selectionepoch10; held-out ablationgames untouched.
+FrozenR_s2; selectionepoch25; held-out ablationgames untouched.
+FrozenR_s3; selectionepoch10; held-out ablationgames untouched.
+FrozenR_s4; selectionepoch10; held-out ablationgames untouched.
+FrozenN_s0; selectionepoch50; held-out ablationgames untouched.
+FrozenN_s1; selectionepoch25; held-out ablationgames untouched.
+FrozenN_s2; selectionepoch50; held-out ablationgames untouched.
+FrozenN_s3; selectionepoch25; held-out ablationgames untouched.
+FrozenN_s4; selectionepoch50; held-out ablationgames untouched.
+screen: saved50/2000complete quadruplets
+screen: saved100/2000complete quadruplets
+screen: saved150/2000complete quadruplets
+screen: saved200/2000complete quadruplets
+screen: saved250/2000complete quadruplets
+screen: saved300/2000complete quadruplets
+screen: saved350/2000complete quadruplets
+screen: saved400/2000complete quadruplets
+screen: saved450/2000complete quadruplets
+screen: saved500/2000complete quadruplets
+screen: saved550/2000complete quadruplets
+screen: saved600/2000complete quadruplets
+screen: saved650/2000complete quadruplets
+screen: saved700/2000complete quadruplets
+screen: saved750/2000complete quadruplets
+screen: saved800/2000complete quadruplets
+screen: saved850/2000complete quadruplets
+screen: saved900/2000complete quadruplets
+screen: saved950/2000complete quadruplets
+screen: saved1000/2000complete quadruplets
+screen: saved1050/2000complete quadruplets
+screen: saved1100/2000complete quadruplets
+screen: saved1150/2000complete quadruplets
+screen: saved1200/2000complete quadruplets
+screen: saved1250/2000complete quadruplets
+screen: saved1300/2000complete quadruplets
+screen: saved1350/2000complete quadruplets
+screen: saved1400/2000complete quadruplets
+screen: saved1450/2000complete quadruplets
+screen: saved1500/2000complete quadruplets
+screen: saved1550/2000complete quadruplets
+screen: saved1600/2000complete quadruplets
+screen: saved1650/2000complete quadruplets
+screen: saved1700/2000complete quadruplets
+screen: saved1750/2000complete quadruplets
+screen: saved1800/2000complete quadruplets
+screen: saved1850/2000complete quadruplets
+screen: saved1900/2000complete quadruplets
+screen: saved1950/2000complete quadruplets
+screen: saved2000/2000complete quadruplets
+confirmation: saved50/2000complete quadruplets
+confirmation: saved100/2000complete quadruplets
+confirmation: saved150/2000complete quadruplets
+confirmation: saved200/2000complete quadruplets
+confirmation: saved250/2000complete quadruplets
+confirmation: saved300/2000complete quadruplets
+confirmation: saved350/2000complete quadruplets
+confirmation: saved400/2000complete quadruplets
+confirmation: saved450/2000complete quadruplets
+confirmation: saved500/2000complete quadruplets
+confirmation: saved550/2000complete quadruplets
+confirmation: saved600/2000complete quadruplets
+confirmation: saved650/2000complete quadruplets
+confirmation: saved700/2000complete quadruplets
+confirmation: saved750/2000complete quadruplets
+confirmation: saved800/2000complete quadruplets
+confirmation: saved850/2000complete quadruplets
+confirmation: saved900/2000complete quadruplets
+confirmation: saved950/2000complete quadruplets
+confirmation: saved1000/2000complete quadruplets
+confirmation: saved1050/2000complete quadruplets
+confirmation: saved1100/2000complete quadruplets
+confirmation: saved1150/2000complete quadruplets
+confirmation: saved1200/2000complete quadruplets
+confirmation: saved1250/2000complete quadruplets
+confirmation: saved1300/2000complete quadruplets
+confirmation: saved1350/2000complete quadruplets
+confirmation: saved1400/2000complete quadruplets
+confirmation: saved1450/2000complete quadruplets
+confirmation: saved1500/2000complete quadruplets
+confirmation: saved1550/2000complete quadruplets
+confirmation: saved1600/2000complete quadruplets
+confirmation: saved1650/2000complete quadruplets
+confirmation: saved1700/2000complete quadruplets
+confirmation: saved1750/2000complete quadruplets
+confirmation: saved1800/2000complete quadruplets
+confirmation: saved1850/2000complete quadruplets
+confirmation: saved1900/2000complete quadruplets
+confirmation: saved1950/2000complete quadruplets
+confirmation: saved2000/2000complete quadruplets
+All15fits/4000freshquadruplets complete; separateanalysis/review/fullsuite pending.

@@ -1,0 +1,1 @@
+N13fixed projection/witness diagnostic complete; separate arithmetic audit next, pendingClaude/local.

@@ -1,0 +1,8 @@
+{
+  "scope": "synthetic fixtures only; no experimental trajectory or model outcomes",
+  "startedUTC": "2026-11-18T01:44:03.9994568+00:00",
+  "exit_code": 0,
+  "finishedUTC": "2026-11-18T01:44:05.1063781+00:00",
+  "wall_seconds": 0.8014684,
+  "command": "python bounded_job.py N2/self_check.py"
+}

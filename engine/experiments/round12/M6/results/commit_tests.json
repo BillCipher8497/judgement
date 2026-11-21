@@ -1,0 +1,12 @@
+{
+  "command": "cd engine && python -m pytest -q -p no:cacheprovider",
+  "startedUTC": "2026-11-17T21:26:55.9831077+00:00",
+  "wall_seconds": 14.1869305,
+  "skipped": 1,
+  "pytest_seconds": 13.77,
+  "finishedUTC": "2026-11-17T21:27:10.2033797+00:00",
+  "exit_code": 0,
+  "head": "98d0ee76c4e5ad91319fcf409ed74a081eb9d88e",
+  "scope": "expanded working tree at approved M6 commit, including three uncommitted N1 tests and N1 implementation; not a clean checkout test",
+  "passed": 283
+}

@@ -1,0 +1,58 @@
+{
+  "conditions": {
+    "S2R4n2_t-1": {
+      "A_keys_revalidated": 419,
+      "B_Splus_refit_identical_choice_and_zero_regret": 57,
+      "C_Splus_sign_invariant_over_theta_scales": 57,
+      "C_sign_flip_key_ids": [],
+      "D_Splus_keys_where_some_point_mass_belief_would_err": 4,
+      "D_measurement_nonvacuous": true,
+      "D_uniform_structural_control_regret_Splus_exact": "100/317",
+      "max_decision_margin_shift_vs_primary": 1.77404757550903e-11,
+      "max_gradient_linf_after_tight_refit": 4.252878729738008e-08,
+      "min_decision_margin_Splus": 0.6181239697225245,
+      "n_Splus": 57
+    },
+    "S2R4n2_t0": {
+      "A_keys_revalidated": 388,
+      "B_Splus_refit_identical_choice_and_zero_regret": 54,
+      "C_Splus_sign_invariant_over_theta_scales": 54,
+      "C_sign_flip_key_ids": [],
+      "D_Splus_keys_where_some_point_mass_belief_would_err": 0,
+      "D_measurement_nonvacuous": false,
+      "D_uniform_structural_control_regret_Splus_exact": "0",
+      "max_decision_margin_shift_vs_primary": 3.35306005183611e-10,
+      "max_gradient_linf_after_tight_refit": 2.177957658666685e-08,
+      "min_decision_margin_Splus": 5.999999981673697,
+      "n_Splus": 54
+    },
+    "S3R4n3_t-1": {
+      "A_keys_revalidated": 274,
+      "B_Splus_refit_identical_choice_and_zero_regret": 60,
+      "C_Splus_sign_invariant_over_theta_scales": 60,
+      "C_sign_flip_key_ids": [],
+      "D_Splus_keys_where_some_point_mass_belief_would_err": 4,
+      "D_measurement_nonvacuous": true,
+      "D_uniform_structural_control_regret_Splus_exact": "11/205",
+      "max_decision_margin_shift_vs_primary": 1.6607950570346475e-09,
+      "max_gradient_linf_after_tight_refit": 5.262863178590038e-08,
+      "min_decision_margin_Splus": 3.333333323797637,
+      "n_Splus": 60
+    },
+    "S3R4n3_t0": {
+      "A_keys_revalidated": 294,
+      "B_Splus_refit_identical_choice_and_zero_regret": 53,
+      "C_Splus_sign_invariant_over_theta_scales": 53,
+      "C_sign_flip_key_ids": [],
+      "D_Splus_keys_where_some_point_mass_belief_would_err": 7,
+      "D_measurement_nonvacuous": true,
+      "D_uniform_structural_control_regret_Splus_exact": "4/47",
+      "max_decision_margin_shift_vs_primary": 2.2447821379500965e-11,
+      "max_gradient_linf_after_tight_refit": 5.557183330173743e-08,
+      "min_decision_margin_Splus": 2.1999999999999997,
+      "n_Splus": 53
+    }
+  },
+  "utc": "2026-11-21T01:54:01.631577+00:00",
+  "verdict": "All S+ keys revalidated; projection choice and zero regret stable under tighter refit and theta rescaling; measurement shown non-vacuous by controls that do incur positive regret."
+}

@@ -1,0 +1,506 @@
+{
+  "S2R4n2_t-1": {
+    "cells": {
+      "rich_mlp/joint/20": {
+        "Splus_regret_exact": "20/317",
+        "per_seed_numerators": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      },
+      "rich_mlp/joint/80": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "rich_mlp/marginal/20": {
+        "Splus_regret_exact": "20/317",
+        "per_seed_numerators": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      },
+      "rich_mlp/marginal/80": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "summary_linear/joint/20": {
+        "Splus_regret_exact": "20/317",
+        "per_seed_numerators": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      },
+      "summary_linear/joint/80": {
+        "Splus_regret_exact": "20/317",
+        "per_seed_numerators": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      },
+      "summary_linear/marginal/20": {
+        "Splus_regret_exact": "20/317",
+        "per_seed_numerators": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      },
+      "summary_linear/marginal/80": {
+        "Splus_regret_exact": "20/317",
+        "per_seed_numerators": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      },
+      "summary_mlp/joint/20": {
+        "Splus_regret_exact": "20/317",
+        "per_seed_numerators": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      },
+      "summary_mlp/joint/80": {
+        "Splus_regret_exact": "20/317",
+        "per_seed_numerators": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      },
+      "summary_mlp/marginal/20": {
+        "Splus_regret_exact": "20/317",
+        "per_seed_numerators": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      },
+      "summary_mlp/marginal/80": {
+        "Splus_regret_exact": "20/317",
+        "per_seed_numerators": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      }
+    },
+    "n_Splus": 57,
+    "reach_Splus": 317
+  },
+  "S2R4n2_t0": {
+    "cells": {
+      "rich_mlp/joint/20": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "rich_mlp/joint/80": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "rich_mlp/marginal/20": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "rich_mlp/marginal/80": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "summary_linear/joint/20": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "summary_linear/joint/80": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "summary_linear/marginal/20": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "summary_linear/marginal/80": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "summary_mlp/joint/20": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "summary_mlp/joint/80": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "summary_mlp/marginal/20": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "summary_mlp/marginal/80": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "n_Splus": 54,
+    "reach_Splus": 231
+  },
+  "S3R4n3_t-1": {
+    "cells": {
+      "rich_mlp/joint/20": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "rich_mlp/joint/80": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "rich_mlp/marginal/20": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "rich_mlp/marginal/80": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "summary_linear/joint/20": {
+        "Splus_regret_exact": "11/205",
+        "per_seed_numerators": [
+          11,
+          11,
+          11,
+          11,
+          11
+        ]
+      },
+      "summary_linear/joint/80": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "summary_linear/marginal/20": {
+        "Splus_regret_exact": "11/205",
+        "per_seed_numerators": [
+          11,
+          11,
+          11,
+          11,
+          11
+        ]
+      },
+      "summary_linear/marginal/80": {
+        "Splus_regret_exact": "11/205",
+        "per_seed_numerators": [
+          11,
+          11,
+          11,
+          11,
+          11
+        ]
+      },
+      "summary_mlp/joint/20": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "summary_mlp/joint/80": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "summary_mlp/marginal/20": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "summary_mlp/marginal/80": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "n_Splus": 60,
+    "reach_Splus": 205
+  },
+  "S3R4n3_t0": {
+    "cells": {
+      "rich_mlp/joint/20": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "rich_mlp/joint/80": {
+        "Splus_regret_exact": "66/1175",
+        "per_seed_numerators": [
+          66,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "rich_mlp/marginal/20": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "rich_mlp/marginal/80": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "summary_linear/joint/20": {
+        "Splus_regret_exact": "4/47",
+        "per_seed_numerators": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      },
+      "summary_linear/joint/80": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "summary_linear/marginal/20": {
+        "Splus_regret_exact": "4/47",
+        "per_seed_numerators": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      },
+      "summary_linear/marginal/80": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "summary_mlp/joint/20": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "summary_mlp/joint/80": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "summary_mlp/marginal/20": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "summary_mlp/marginal/80": {
+        "Splus_regret_exact": "0",
+        "per_seed_numerators": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "n_Splus": 53,
+    "reach_Splus": 235
+  }
+}

@@ -99,3 +99,33 @@ Fresh curated-export suite: 262 passed, 1 optional OpenSpiel skip; 28.07s pytest
 | Date (ET) | Session | Outcome |
 |---|---|---|
 | 2026-11-16 | Round11 audited release | Fresh local test gates; externally cleared M13/M14 and D1/D2 scopes; 11-group manuscript reconciliation; separate exact feasible-upper replay. New empirical packets remain local; publication ancestry stays separate from private master. |
+
+## Published addition — 2026-11-21: ML-track audit verdicts and N17
+
+`CLAUDE_AUDIT_2026-11-20.md` records an external audit of the local
+machine-learning track (round12 N-series). Each verdict was reached by
+independent recomputation over the raw arrays rather than by re-running the
+task's own analyzer, and the two new proofs were re-derived by hand. N9, N10,
+N12, N13/M18, N15/M19 and N11/M17 all passed; M18 and M19 are validated proofs;
+N12 required one reporting change, which was applied locally.
+
+`engine/experiments/round13/` publishes N17, which answers the obvious
+objection to that track's main negative result. Stratifying 1375 exactly
+enumerable contexts by the spread of their true action values leaves 224 where
+the two legal actions genuinely differ, and the exact conditional-product
+projection of the true posterior incurs **zero** one-step decision regret on
+every one of them. A uniform belief on the same contexts does lose points in
+three of the four conditions, so the measurement has power; the fourth
+condition has none and its zero is excluded from the evidence. These are exact
+enumerations over complete finite context sets and carry **no sampling
+confidence intervals**.
+
+What is still withheld, and why: the round12 task folders themselves, their
+model weights and raw caches (about 2.6 GB), and the workshop paper draft. The
+paper is task N7, which has not been externally reviewed, and N5, N6 and N4
+also remain pending. The round12 export and licensing gate is still open. As a
+result `engine/experiments/round13/N17/` reads input arrays that are not present
+in this public tree, so it documents and verifies a result here but is not
+reproducible from this tree alone. Integrity receipts retain absolute local
+source paths, as elsewhere in this repository, because rewriting them would
+break hash provenance.

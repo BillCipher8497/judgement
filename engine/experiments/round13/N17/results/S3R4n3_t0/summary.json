@@ -1,0 +1,39 @@
+{
+  "ambiguous_worst_case_added_regret_exact": "0",
+  "bands": {
+    "large": {
+      "n_keys": 12,
+      "n_positive_regret_keys": 0,
+      "projection_regret_exact": "0",
+      "reach": 45
+    },
+    "medium": {
+      "n_keys": 31,
+      "n_positive_regret_keys": 0,
+      "projection_regret_exact": "0",
+      "reach": 89
+    },
+    "small": {
+      "n_keys": 10,
+      "n_positive_regret_keys": 0,
+      "projection_regret_exact": "0",
+      "reach": 101
+    }
+  },
+  "min_decision_margin_Splus": 2.1999999999999997,
+  "n_S0": 241,
+  "n_Splus": 53,
+  "n_keys": 294,
+  "n_numerically_ambiguous_Splus": 0,
+  "n_positive_regret_keys_Splus": 0,
+  "n_projection_nonconverged": 54,
+  "positive_regret_key_ids": [],
+  "projection_regret_Splus_exact": "0",
+  "projection_regret_Splus_float": 0.0,
+  "reach_Splus": 235,
+  "reach_total": 806,
+  "sampling_CI": null,
+  "scope": "Exact enumeration over the complete frozen N12 key set; no sampling interval applies.",
+  "tag": "S3R4n3_t0",
+  "uniform_control_regret_Splus_exact": "4/47"
+}
